@@ -1,0 +1,131 @@
+word,pos,tr,en
+ni,pron,ben,I
+su,pron,sen,you
+ha,pron,o,he/she/it
+nasu,pron,biz (sen ve ben),we (you and I)
+ti,det,bu,this
+tu,det,şu/o,that
+ta,part,geçmiş zaman işareti,past marker
+ne,part,gelecek zaman işareti,future marker
+sa,part,şimdiki zaman (-iyor),progressive marker
+ko,part,değil/hayır,not/no
+re,part,soru işareti (cümle sonu),question particle (final)
+zo,part,sadece aramızda (cümle sonu),just between us (final)
+yo,part,emir (cümle sonu),imperative (final)
+ve,conj,ve,and
+lo,conj,veya,or
+ye,verb,olmak (isimlerle),be (with nouns)
+de,prep,-in (aitlik),of/possessive
+to,prep,-e (yön),to
+ka,prep,-de (yer),in/at
+ma,prep,ile,with
+pe,prep,için,for
+li,suffix,çoğul eki,plural suffix
+-a,suffix,fiilden isim,verb to noun
+-ru,suffix,yapan kişi,doer
+-ki,suffix,küçültme,diminutive
+-mo,suffix,büyütme,augmentative
+ge-,prefix,zıt anlam,opposite
+kam,verb,gitmek,go
+vem,verb,gelmek,come
+ten,verb,görmek,see
+ruk,verb,duymak,hear
+kon,verb,konuşmak,speak
+moş,verb,yemek,eat
+pun,verb,içmek,drink
+sin,verb,uyumak,sleep
+lov,verb,sevmek,love
+dan,verb,vermek,give
+tak,verb,almak,take
+fer,verb,yapmak,make/do
+nov,verb,bilmek,know
+vol,verb,istemek,want
+dum,verb,düşünmek,think
+ref,verb,kalmak,stay
+ran,verb,koşmak,run
+lek,verb,yürümek,walk
+ruş,verb,beklemek,wait
+pek,verb,sormak,ask
+hasa,verb,gülmek,laugh
+elu,verb,ağlamak,cry
+yoba,verb,oynamak,play
+mako,verb,çalışmak,work
+leru,verb,okumak,read
+şiri,verb,yazmak,write
+toma,verb,satın almak,buy
+uka,verb,açmak,open
+kira,verb,kapatmak,close
+feşi,verb,bulmak,find
+sapo,verb,yardım etmek,help
+nem,noun,insan,person
+iyo,noun,arkadaş,friend
+tavi,noun,bizim çevre/ekip,our circle
+emi,noun,anne,mother
+abu,noun,baba,father
+kasi,noun,ev,house
+oşa,noun,göz,eye
+mani,noun,el,hand
+hori,noun,kalp,heart
+buku,noun,baş,head
+nomi,noun,isim,name
+kona,noun,kelime/söz,word
+diya,noun,gün,day
+noka,noun,gece,night
+aşi,noun,sabah,morning
+esa,noun,güneş,sun
+mivu,noun,ay,moon
+tiki,noun,yıldız,star
+arin,noun,gök,sky
+tera,noun,yer/toprak,earth
+lasi,noun,deniz,sea
+ebo,noun,ağaç,tree
+pata,noun,yol,road
+ayu,noun,su,water
+yaşu,noun,ateş,fire
+şaya,noun,çay,tea
+kavo,noun,kahve,coffee
+ruti,noun,ekmek,bread
+mela,noun,para,money
+bako,noun,kitap,book
+fono,noun,telefon,phone
+nuk,adv,şimdi,now
+poşa,adv,sonra,later
+hene,adv,her zaman,always
+sufa,adj,iyi,good
+mora,adj,büyük,big
+kiti,adj,küçük,small
+ahe,adj,sıcak,hot
+iku,adj,soğuk,cold
+nuvi,adj,yeni,new
+reba,adj,eski,old
+zepi,adj,hızlı,fast
+luro,adj,yavaş,slow
+belu,adj,güzel,beautiful
+haru,adj,mutlu,happy
+umi,adj,üzgün,sad
+yoku,adj,yorgun,tired
+bosa,adj,aç,hungry
+tana,adj,doğru,true
+kuno,q,ne,what
+kuse,q,kim,who
+kuri,q,nerede,where
+kuta,q,ne zaman,when
+kubo,q,neden,why
+kuhin,q,nasıl,how
+zira,num,sıfır,0
+ika,num,bir,1
+duve,num,iki,2
+teri,num,üç,3
+boti,num,dört,4
+pema,num,beş,5
+şeko,num,altı,6
+sebi,num,yedi,7
+ahu,num,sekiz,8
+zeno,num,dokuz,9
+desa,num,on,10
+eya,interj,evet,yes
+pare,interj,lütfen,please
+dama,interj,teşekkürler,thanks
+sepa,interj,özür dilerim,sorry
+heya,interj,merhaba,hello
+hele,interj,görüşürüz,bye
