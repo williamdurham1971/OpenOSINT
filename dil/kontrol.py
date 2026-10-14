@@ -1,52 +1,68 @@
 #!/usr/bin/env python3
-"""Sözlüğü doğrular: hece yapısı, yinelenen kelime, benzer kelimeler.
+"""gizli/sozluk.csv dosyasını doğrular.
 
-Kullanım: python3 dil/kontrol.py
+Kontroller: hece yapısı, türün son harfiyle uyumu, yinelenen kelime/anlam,
+kelimeler arası en az 2 harf fark, sert ses oranı.
+Kullanım: python3 dil/uret.py && python3 dil/kontrol.py
 """
 import csv
-import itertools
 import re
 import sys
+from collections import Counter
 from pathlib import Path
 
-# Hece yapısı: (C)V(n). Kelime sonunda herhangi bir ünsüz de olabilir.
 C = "pbtdkgmnszşhvlryf"
-SYLLABLE = rf"[{C}]?[aeiou]n?"
-WORD = re.compile(rf"^(?:{SYLLABLE})*(?:{SYLLABLE}|[{C}]?[aeiou][{C}])$")
+SYL = rf"[{C}]?[aeiou]n?"
+WORD = re.compile(rf"^(?:{SYL})*(?:{SYL}|[{C}]?[aeiou][{C}])$")
+ENDING = {"noun": "aeu", "adj": "i", "adv": "o", "verb": "n"}
+HARD = set("ptkbdg")
 
-rows = list(csv.DictReader(open(Path(__file__).with_name("sozluk.csv"), encoding="utf-8")))
-errors = []
-
+rows = list(csv.DictReader(open(Path(__file__).parent / "gizli" / "sozluk.csv", encoding="utf-8")))
+errors, warns = [], []
 words = {}
 for r in rows:
-    w = r["word"]
+    w, pos = r["word"], r["pos"]
     core = w.strip("-")
-    if r["pos"] in ("suffix", "prefix"):
+    if pos in ("suffix", "prefix"):
         continue
     if not WORD.match(core):
-        errors.append(f"hece yapısına uymuyor: {w}")
+        errors.append(f"hece yapısı: {w}")
+    if r["cat"] != "islev" and core[-1] not in ENDING.get(pos, ""):
+        errors.append(f"tür/son harf uyumsuz: {w} ({pos})")
     if w in words:
         errors.append(f"yinelenen kelime: {w}")
     words[w] = r
 
-# Tek harf farkı olan çiftler (karışma riski) -> uyarı, hata değil
-def one_off(a, b):
-    if abs(len(a) - len(b)) > 1:
-        return False
-    if len(a) == len(b):
-        return sum(x != y for x, y in zip(a, b)) == 1
-    s, l = sorted((a, b), key=len)
-    return any(l[:i] + l[i + 1:] == s for i in range(len(l)))
+en = Counter((r["en"], r["pos"]) for r in rows)
+for (e, p), n in en.items():
+    if n > 1:
+        warns.append(f"aynı anlam birden çok kez: {e} ({p}) x{n}")
 
-warns = []
-for a, b in itertools.combinations(words, 2):
-    # Kısa işlev kelimelerini atla (2 harf), uyarı gürültüsü olur
-    if len(a) > 3 and len(b) > 3 and one_off(a, b):
-        warns.append(f"{a} ~ {b}")
+# En az 2 harf fark: tüm tek-düzenleme komşuluklarına bak
+alpha = "abdefhilmnorstuvyzşkgpf"
+def nb(w):
+    s = set()
+    for i in range(len(w)):
+        s.add(w[:i] + w[i + 1:])
+        for ch in alpha:
+            s.add(w[:i] + ch + w[i + 1:])
+    for i in range(len(w) + 1):
+        for ch in alpha:
+            s.add(w[:i] + ch + w[i:])
+    s.discard(w)
+    return s
+for w in words:
+    if len(w) > 3 and (nb(w) & set(words)):
+        hit = sorted(nb(w) & set(words))
+        warns.append(f"çok benzer: {w} ~ {', '.join(hit)}")
 
-print(f"{len(words)} kelime, {len(rows) - len(words)} ek")
+body = "".join(w for w, r in words.items() if r["cat"] != "islev")
+hard = sum(ch in HARD for ch in body) / len(body)
+print(f"{len(words)} kelime; üretilen kısımda sert ünsüz oranı: {hard:.1%}")
+print("türler:", dict(Counter(r["pos"] for r in words.values())))
 for e in errors:
     print("HATA:", e)
-for w in warns:
-    print("uyarı (çok benzer):", w)
+for w in warns[:20]:
+    print("uyarı:", w)
+print(f"{len(errors)} hata, {len(warns)} uyarı")
 sys.exit(1 if errors else 0)

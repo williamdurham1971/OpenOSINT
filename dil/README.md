@@ -1,104 +1,74 @@
-# Tavi: yakın çevre için dil (taslak v0.1)
+# Tavi: yakın çevre için dil (taslak v0.2)
 
-"Tavi" çalışma adıdır ve "bizim çevre" demektir. Değiştirmek serbest.
+"Tavi" çalışma adıdır ("bizim çevre"). Hedefler: **sır tutmak**, **yumuşak ses**, **~2000 kelime**.
 
-Tasarım hedefleri:
-1. **Öğrenmesi kolay.** Çekim yok, cinsiyet yok, düzensiz fiil yok. Bir akşamda 100 kelime ve 8 kural öğrenilir.
-2. **Yazması kolay.** Ekstra harf yok (Türkçe klavyede `ş` yeter). Her harf tek bir ses.
-3. **Okunması kolay.** Hece yapısı sade, sonraki aşamada sesli uygulama yazmak için uygun.
-4. **Bir kişilik.** Cümle sonu parçacıkları (`zo`, `yo`) dile "sadece bizim" tadı verir.
+> **Gizlilik modeli.** Bu repo herkese açık olduğu için burada yalnızca *kurallar* ve *anlam listesi* var. Kelimelerin kendisi (`sozluk.csv`) ve onları üreten gizli tohum **`dil/gizli/`** klasöründedir ve `.gitignore` ile git'e girmez. Gizli klasörü açık bir yere koymayın. Not: bir dil, şifreleme değildir. Sözlüğü ele geçiren biri her şeyi okur, konuşulanı dinleyen biri ise yeterince örnekle yapıyı çözebilir. Gerçek gizlilik için bu bir *ek katman*dır, tek katman değil.
 
-> Güvenlik notu: bu bir *dil*, şifreleme değil. Sözlüğü ve kuralları bilen biri okur. Aidiyet ve eğlence için ideal, gerçek gizlilik için yetersiz.
+> **Eski sürüm uyarısı.** v0.1 (ilk commit) sözlüğü ve örnekleri git geçmişinde hâlâ görünür. Onlar artık **kullanımdan kalktı**, v0.2 ile hiçbir içerik paylaşmaz (işlev sözcükleri hariç). Geçmişi tamamen silmek istersen repoyu gizli yapmak veya yeni bir gizli repo açmak gerekir.
 
----
+## Dosyalar
 
-## 1. Sesler ve yazım
-
-**Ünlüler (5):** `a e i o u`. Her biri her zaman aynı okunur. Uzun/kısa ayrımı yok.
-
-**Ünsüzler (17):** `p b t d k g m n s z ş h v l r y f`
-`ş` = Türkçedeki ş. `y` = Türkçedeki y. `g` her zaman sert g. Çift ünsüz yok.
-
-**Hece:** `(Ü)Ü(n)`, yani isteğe bağlı ünsüz, ünlü, isteğe bağlı `n`. Kelime sonunda herhangi bir ünsüz olabilir (`kam`, `moş`). Ünsüz kümesi yok (`st`, `rk` olmaz).
-
-**Vurgu:** her zaman ilk hecede: **KA**-si, **BE**-lu.
-
-Yazım Türkçe okuyana doğal gelir: `ni lov su` okunduğu gibi yazılıdır.
-
-## 2. Dilbilgisi: 8 kural
-
-1. **Sıra: Özne – Fiil – Nesne** (Türkçenin tersine Fiil ortada).
-   `ni ten ha` = Ben onu görüyorum / gördüm.
-
-2. **Fiil çekimlenmez.** Zaman fiilden önce gelen küçük kelimeyle gösterilir:
-   - hiçbiri = genel/şimdi: `ni moş`
-   - `ta` = geçmiş: `ni ta moş` (yedim)
-   - `ne` = gelecek: `ni ne moş` (yiyeceğim)
-   - `sa` = şu an oluyor: `ni sa moş` (yiyorum)
-
-3. **Olumsuzluk:** `ko` fiilden/sıfattan önce. `ni ko moş` = yemiyorum. `ha ko haru` = o mutlu değil.
-
-4. **Soru:** cümlenin sonuna `re`. `su sa moş re?` = Yiyor musun?
-   Soru sözcükleri yerinde kalır: `su kam to kuri re?` = Nereye gidiyorsun?
-
-5. **Çoğul:** isme `-li`. `iyo` → `iyoli` (arkadaşlar). Sayıdan sonra çoğul eki **yok**: `duve iyo` (iki arkadaş).
-   Zamirlerde de aynı: `ni`→`nili` (biz), `su`→`suli` (siz), `ha`→`hali` (onlar).
-   `nasu` özel bir zamir: **"sen ve ben"** (kapsayıcı biz).
-
-6. **Sıfat isimden sonra gelir:** `kasi mora` = büyük ev. Sıfatı yüklem yapmak için özneyi ayrı yaz: `ha mora` = o büyük (zamirden sonra sıfat yüklemdir). İsimlerle "olmak" için `ye` kullan: `ha ye iyo` = o bir arkadaş.
-   - Aitlik: sahip olunan + `de` + sahip: `kasi de ni` = benim evim.
-
-7. **Edatlar isimden önce:** `to` (-e), `ka` (-de), `ma` (ile), `pe` (için).
-   `ni kam to ayu` = suya gidiyorum.
-
-8. **Cümle sonu parçacıkları:**
-   - `zo` = "bu sadece aramızda" (fısıltı/sır tonu). `ni lov ha zo.`
-   - `yo` = emir. `vem yo!` = gel!
-   - `re` = soru (yukarıda).
-   Cümle sonunda en fazla biri durur.
-
-### Türetme (yeni kelimeyi ücretsiz üretme)
-
-| Ek | Anlam | Örnek |
+| Dosya | Açık/gizli | Ne işe yarar |
 |---|---|---|
-| `-a` | fiilden isim | `moş` yemek → `moşa` yemek (yiyecek); `lov` sevmek → `lova` aşk; `kon` konuşmak → `kona` söz (bu zaten sözlükte) |
-| `-ru` | yapan kişi | `kon` → `konru` konuşan; `mako` → `makoru` işçi |
-| `-ki` | küçültme | `kasi` → `kasiki` kulübe; `iyo` → `iyoki` ufaklık, tatlı dost |
-| `-mo` | büyütme | `ayu` → `ayumo` nehir/büyük su |
-| `ge-` | zıt anlam | `sufa` → `gesufa` kötü; `vol` → `gevol` istememek, nefret etmek; `nuvi` → `genuvi` eski gibi (ama `reba` zaten var, kısa yol seçimi sizde) |
+| `kaynak/*.txt` | açık | 1960+ anlam (Türkçe\|İngilizce), kategorilere ayrılmış |
+| `islev.csv` | açık | Sabit işlev sözcükleri (zamirler, parçacıklar, sayılar...) |
+| `uret.py` | açık | Anlam listesinden, gizli tohumla kelime üretir |
+| `kontrol.py` | açık | Üretilen sözlüğü doğrular |
+| `gizli/` | **gizli** | tohum, `sozluk.csv`, okunabilir sözlükler, örnek cümleler |
 
-Bunlar *önerilen* kalıplar. Çevre içinde alışkanlık oluştukça "resmî" kelimeler olur.
+Çalıştırma: `python3 dil/uret.py && python3 dil/kontrol.py`
+`gizli/sozluk.csv` aynı zamanda kilit dosyasıdır: kaybedersen kelimeler yeniden rastgele atanır. **`gizli/` klasörünü yedekle.**
 
----
+## 1. Sesler (yumuşak)
 
-## 3. Örnek cümleler
+- Ünlüler: `a e i o u`. Ünsüzler: `l m n r v y s ş f h z` (yaygın) ve `d b t k` (nadir, ~%3).
+- Hece: `(Ü)Ü(n)`. Sert patlamalılar (`p g` neredeyse hiç) ve ünsüz kümeleri yok.
+- Vurgu ilk hecede.
+- Yazım fonetik: bir harf bir ses. `ş` = Türkçe ş.
 
-| Tavi | Kelime kelime | Türkçe |
+## 2. Kelime biçimi
+
+**Son harf kelimenin türünü verir**, böylece kelimeyi görünce ne olduğunu bilirsin:
+
+| Tür | Son harf | Örnek biçim |
 |---|---|---|
-| `Ni lov su.` | ben sevmek sen | Seni seviyorum. |
-| `Su sa moş re?` | sen -iyor yemek ? | Yiyor musun? |
-| `Ni ta ten ti kasi.` | ben geçmiş görmek bu ev | Bu evi gördüm. |
-| `Nasu ne kam to ayu zo.` | biz(sen+ben) gelecek gitmek -e su (sır) | Sen ve ben suya gideriz, aramızda kalsın. |
-| `Iyoli de ni ko vem.` | arkadaş-lar -in ben değil gelmek | Arkadaşlarım gelmiyor. |
-| `Su vol kuno re?` | sen istemek ne ? | Ne istiyorsun? |
-| `Ha ye iyo sufa de ni.` | o olmak arkadaş iyi -in ben | O benim iyi arkadaşım. |
-| `Ni yoku. Ni vol sin.` | ben yorgun. ben istemek uyumak. | Yorgunum. Uyumak istiyorum. |
-| `Dama, tavi.` | teşekkürler, çevre | Sağ ol, ekibim. |
-| `Vem yo, ni sa ruş su!` | gel!, ben -iyor beklemek sen | Gel, seni bekliyorum! |
+| isim | `a` `e` `u` | `….a` |
+| fiil | `-n` | `….an` |
+| sıfat | `i` | `….i` |
+| zarf, bağlaç, edat | `o` | `….o` |
 
-## 4. Sayılar
+**İlk hece kategoriyi verir** (hayvanlar hep aynı iki heceden birinle başlar, yiyecekler başka bir üçüyle, vb.). Önek tablosu `gizli/` içinde. Bu ezberi kolaylaştırır.
 
-0 `zira` · 1 `ika` · 2 `duve` · 3 `teri` · 4 `boti` · 5 `pema` · 6 `şeko` · 7 `sebi` · 8 `ahu` · 9 `zeno` · 10 `desa`
-11–19: `desa` + sayı → `desa ika` (11). Yirmi: `duve desa`. 21: `duve desa ika`.
+## 3. Dilbilgisi (8 kural, v0.1 ile aynı)
 
-## 5. Dosyalar
+1. **Sıra: Özne–Fiil–Nesne.**
+2. **Fiil çekimlenmez.** Zaman: hiçbiri = genel; `ta` geçmiş; `ne` gelecek; `sa` şu an olan.
+3. **Olumsuz:** `ko` fiilden/sıfattan önce.
+4. **Soru:** cümle sonu `re`. Soru sözcükleri yerinde kalır (`kuno` ne, `kuse` kim, `kuri` nerede, `kuta` ne zaman, `kubo` neden, `kuhin` nasıl). `ku-` ile başlayan başka kelime üretilmez.
+5. **Çoğul:** isme `-li` (sayıdan sonra yok). Zamirler: `ni nili`, `su suli`, `ha hali`. `nasu` = sen ve ben.
+6. **Sıfat isimden sonra.** İsimlerle "olmak" için `ye`. Aitlik: `sahip olunan de sahip`.
+7. **Edatlar isimden önce:** `to` -e, `ka` -de, `ma` ile, `pe` için.
+8. **Cümle sonu parçacıkları:** `zo` sadece aramızda, `yo` emir, `re` soru; cümle sonunda en fazla biri.
 
-- `sozluk.csv`: tüm sözlük (kelime, tür, Türkçe, İngilizce). Sonraki aşamada uygulama doğrudan bundan beslenir.
-- `kontrol.py`: sözlük doğrulama betiği. Hece kuralına uymayan, yinelenen ve konuşmada karışabilecek kadar benzer kelimeleri bulur. `python3 dil/kontrol.py`
+## 4. Türetme (v0.2'de biçime uyacak şekilde değişti)
 
-## 6. Sıradaki adımlar (öneri)
+| Ek | İş | Kural | Sonuç türü |
+|---|---|---|---|
+| `-a` | fiilden isim | fiil + `a` (`…an` → `…ana`) | isim ✓ |
+| `-ru` | yapan kişi | fiil kökü (son `n` düşer) + `ru` | isim ✓ |
+| `-le` | küçültme | isim + `le` | isim ✓ |
+| `-mu` | büyütme | isim + `mu` | isim ✓ |
+| `ge-` | zıt anlam | `ge` + sıfat/fiil | aynı tür |
+| `-o` | sıfattan zarf | son `i` yerine `o` | zarf ✓ |
 
-1. Çevrenle ortak kararlar: ad, ses tonu, hangi konuşma konuları (sözlük genişlemesi).
-2. Sözlüğü ~300 kelimeye çıkar. Önce sizin ortak sohbet konularından (şakalar, ortak anılar, yer adları).
-3. Telaffuz uygulaması: yazım zaten fonetik olduğundan kelimeden sese çevirmek kolay, basit bir kural tablosu yeter. Kayıtlı ses de eklenebilir.
-4. Alıştırma modülü (flashcard, "cümle çevir").
+Ekli kelimenin son harfi hâlâ türü gösterir.
+
+## 5. Sayılar ve işlev sözcükleri
+
+`islev.csv` dosyasında. Sayılar: 0 `zira`, 1 `ika`, 2 `duve`, 3 `teri`, 4 `boti`, 5 `pema`, 6 `şeko`, 7 `sebi`, 8 `ahu`, 9 `zeno`, 10 `desa`. 11 = `desa ika`, 20 = `duve desa`.
+
+## 6. Sıradaki adımlar
+
+1. Sizin kişisel kelimeleriniz (isimler, ortak şakalar, yer adları): `kaynak/` altına ekleyin, yeniden üretin. `uret.py` mevcut `gizli/sozluk.csv`'yi kilit olarak okur: var olan kelimeler **değişmez**, sadece yeni girişler için kelime üretilir.
+2. Telaffuz uygulaması: yazım fonetik olduğundan kural tablosu yeter.
+3. Alıştırma modülü: flashcard + sözlük arama. Veri `gizli/sozluk.csv`.

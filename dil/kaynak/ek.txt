@@ -1,0 +1,205 @@
+[gunluk-ek|n|ne,na]
+gün ışığı|daylight
+gölgelik|shade
+akşamüstü|dusk
+şafak|dawn
+yarım saat|half hour
+ara|break
+bekleme|waiting
+buluşma|meeting up
+sohbet|chat
+dedikodu|gossip
+şakacı|joker
+espri|witty remark
+laf|remark
+cevap hakkı|right to reply
+selam|greeting
+veda|farewell
+teşekkür|thanks (noun)
+özür|apology
+rica|request
+hatıra|keepsake
+fotoğraf albümü|photo album
+anı defteri|memory book
+yolculuk arkadaşı|travel companion
+kahve molası|coffee break
+çay saati|tea time
+mangal|barbecue
+piknik|picnic
+kamp|camping
+sahil|coast
+manzara|view
+gün batımı manzarası|sunset view
+yıldızlı gece|starry night
+gece yarısı|midnight
+hafta sonu|weekend
+akşam gezintisi|evening stroll
+film gecesi|movie night
+oyun gecesi|game night
+doğum|birth
+yıldönümü|anniversary
+sürpriz|surprise
+dilek|wish (noun)
+kutlama|celebration
+hediye paketi|gift wrap
+kart (mesaj)|greeting card
+çiçek buketi|bouquet
+pasta mumu|birthday candle
+[ek-isim-2|n|ri,ra]
+dert|trouble
+keyif|pleasure
+tat|taste (noun)
+alışkanlık|habit
+özellik|feature
+fark|difference
+benzerlik|similarity
+neden-sonuç|cause and effect
+yön (anlam)|aspect
+düzey|level
+aşama|stage
+adım|step
+iz|trace
+işaret|sign
+simge|symbol
+bayrak|flag
+logo|logo
+marka|brand
+kalite|quality
+çeşitlilik|diversity
+denge|balance
+uyum|harmony
+ahenk|accord
+ritüel|ritual
+hikmet|insight
+tecrübe|know-how
+ipucu|hint
+tuzak|trap
+engel|obstacle
+kısayol|shortcut
+yol ayrımı|crossroads
+sınav kağıdı|exam paper
+ödev|homework
+tez|thesis
+makale|article
+kaynakça|bibliography
+lisan|tongue
+lehçe|dialect
+aksan|accent
+şive|dialect (regional)
+hece|syllable
+harf|letter
+alfabe|alphabet
+nokta|dot
+virgül|comma
+[ek-isim-3|n|so,sa]
+yağmur damlası|raindrop
+kar tanesi|snowflake
+gökyüzü|heavens
+ufuk|horizon
+güneş ışığı|sunlight
+ay ışığı|moonlight
+gölet|pond
+dere|stream
+bataklık|swamp
+uçurum|cliff
+patika|path
+çit|fence
+çatı katı|attic
+bodrum|basement
+avlu|courtyard
+teras|terrace
+çatal bıçak|cutlery
+sehpa|side table
+vazo|vase
+tablo|painting (framed)
+saksı çiçeği|houseplant
+fener|lantern
+şömine|fireplace
+soba|heater
+klima|air conditioner
+radyatör|radiator
+ütü|iron (appliance)
+çamaşır|laundry
+sepet (çamaşır)|hamper
+çöp kutusu|trash can
+paspas|mop
+deterjan|detergent
+şampuan|shampoo
+parfüm|perfume
+krem|lotion
+[ek-fiil|v|ra,re]
+paylaşmak (yemek)|split a meal
+uğramak|drop by
+sürpriz yapmak|surprise someone
+kandırmak|trick
+şımartmak|pamper
+takılmak|hang out
+tembellik etmek|laze
+özenmek|aspire
+dalga geçmek|tease
+iltifat etmek|compliment
+söz vermek|promise
+sır vermek|confide
+sır saklamak|keep a secret
+ifşa etmek|reveal
+fısıldaşmak|murmur together
+göz kırpmak|wink
+elini sıkmak|shake hands
+yola çıkmak|set out
+yol almak|make progress
+mola vermek|pause
+ışık yakmak|light up
+kapıyı çalmak|knock
+çağırmak (telefon)|ring
+bekletmek|keep waiting
+unutturmak|make forget
+hatırlatmak|remind
+önemsemek|care about
+umursamamak|not care
+özgürleşmek|liberate oneself
+yakınlaşmak|grow closer
+ayrışmak|drift apart
+kaynaşmak|bond
+gülüşmek|laugh together
+sarılışmak|embrace each other
+[ek-sifat|a|ze,zu]
+gizemli|mysterious
+sırlı|secretive
+saklı|concealed
+masum|innocent
+suçlu|guilty
+vefalı|loyal
+sadakatsiz|disloyal
+iyi niyetli|well-meaning
+kötü niyetli|malicious
+şakacı (sıfat)|playful
+oyuncu (sıfat)|frisky
+kibar|courteous
+saygılı|respectful
+ilgili|attentive
+ilgisiz|indifferent
+dikkatli|careful
+dikkatsiz|careless
+bakımlı (kişi)|groomed
+şık|stylish
+rahat|comfortable
+huzurlu|peaceful
+tedirgin|uneasy
+gergin|tense
+rahatsız|disturbed
+mutsuz|unhappy
+umutlu|hopeful
+umutsuz|hopeless
+mağrur|haughty
+alçakgönüllü|humble
+kıymetli|precious
+değersiz|worthless
+karanlık (ruh)|gloomy
+neşeli|cheerful
+hüzünlü|melancholic
+büyüleyici|enchanting
+sıkıcı|dull
+ilginç|interesting
+sürprizli|surprising
+tanıdık (sıfat)|familiar
+bilinmedik|unfamiliar

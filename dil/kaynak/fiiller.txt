@@ -1,0 +1,382 @@
+[hareket|v|ma,mo]
+gitmek|go
+gelmek|come
+dönmek|return
+girmek|enter
+çıkmak|exit
+koşmak|run
+yürümek|walk
+atlamak|jump
+düşmek|fall
+kalkmak|get up
+oturmak|sit
+durmak|stop
+beklemek|wait
+kaçmak|flee
+kovalamak|chase
+yaklaşmak|approach
+uzaklaşmak|move away
+geçmek|pass
+ilerlemek|advance
+geri çekilmek|retreat
+yüzmek|swim
+uçmak|fly
+tırmanmak|climb
+inmek|descend
+binmek|ride
+sürmek|drive
+yolculuk etmek|travel
+dolaşmak|wander
+kaymak|slide
+sallanmak|swing
+dönmek (kendi etrafında)|spin
+eğilmek|bend
+uzanmak|lie down
+yatmak|lie
+doğrulmak|straighten
+taşımak|carry
+itmek|push
+çekmek|pull
+kaldırmak|lift
+indirmek|lower
+fırlatmak|throw
+yakalamak|catch
+tutmak|hold
+bırakmak|release
+sürüklemek|drag
+yuvarlamak|roll
+koymak|put
+yerleştirmek|place
+götürmek|take away
+getirmek|bring
+ulaşmak|reach
+varmak|arrive
+ayrılmak|depart
+katılmak|join
+[zihin|v|me,mi]
+düşünmek|think
+bilmek|know
+anlamak|understand
+öğrenmek|learn
+öğretmek|teach
+hatırlamak|remember
+unutmak|forget
+sanmak|suppose
+inanmak|believe
+şüphelenmek|suspect
+karar vermek|decide
+seçmek|choose
+planlamak|plan
+hayal etmek|imagine
+merak etmek|wonder
+dikkat etmek|pay attention
+fark etmek|notice
+tanımak|recognize
+karşılaştırmak|compare
+ölçmek|measure
+saymak|count
+hesaplamak|calculate
+tahmin etmek|guess
+çözmek|solve
+araştırmak|research
+incelemek|examine
+test etmek|test
+kanıtlamak|prove
+açıklamak|explain
+yorumlamak|interpret
+değerlendirmek|evaluate
+eleştirmek|criticize
+önermek|suggest
+kabul etmek|accept
+reddetmek|reject
+onaylamak|approve
+itiraz etmek|object
+bahsetmek|mention
+düşünmek (derin)|ponder
+odaklanmak|focus
+dalmak|zone out
+[iletişim|v|so,si]
+söylemek|say
+konuşmak|speak
+sormak|ask
+cevaplamak|answer
+anlatmak|tell
+fısıldamak|whisper
+bağırmak|shout
+çağırmak|call
+seslenmek|call out
+dinlemek|listen
+duymak|hear
+okumak|read
+yazmak|write
+çizmek|draw
+şarkı söylemek|sing
+gülmek|laugh
+ağlamak|cry
+gülümsemek|smile
+selamlamak|greet
+tanıştırmak|introduce
+teşekkür etmek|thank
+özür dilemek|apologize
+rica etmek|request
+emretmek|command
+izin vermek|allow
+yasaklamak|forbid
+uyarmak|warn
+tavsiye etmek|advise
+ikna etmek|persuade
+tartışmak|argue
+anlaşmak|agree
+kutlamak|celebrate
+şaka yapmak|joke
+yalan söylemek|lie
+itiraf etmek|confess
+paylaşmak|share
+mesaj atmak|text
+aramak (telefon)|phone
+cevap yazmak|reply
+[günlük|v|ra,ri]
+yemek yemek|eat
+içmek|drink
+uyumak|sleep
+uyanmak|wake
+yıkanmak|wash oneself
+yıkamak|wash
+giyinmek|dress
+soyunmak|undress
+taranmak|comb one's hair
+pişirmek|cook
+kaynatmak|boil
+kızartmak|fry
+doğramak|chop
+karıştırmak|stir
+dökmek|pour
+doldurmak|fill
+boşaltmak|empty
+açmak|open
+kapatmak|close
+yakmak|burn
+söndürmek|extinguish
+silmek|wipe
+süpürmek|sweep
+temizlemek|clean
+toplamak|collect
+dağıtmak|distribute
+saklamak|hide
+aramak (bulmaya)|search
+bulmak|find
+kaybetmek|lose
+almak|take
+vermek|give
+satın almak|buy
+satmak|sell
+ödemek|pay
+borçlanmak|borrow
+ödünç vermek|lend
+saymak (para)|count money
+kullanmak|use
+bozmak|break
+tamir etmek|repair
+yapmak|do
+etmek|make
+kurmak|build
+yıkmak|demolish
+boyamak|paint
+kesmek|cut
+yırtmak|tear
+dikmek|sew
+örmek|knit
+bağlamak|tie
+çözmek (bağ)|untie
+katlamak|fold
+ütülemek|iron
+asmak|hang
+doldurmak (form)|fill out
+çalışmak|work
+dinlenmek|rest
+oynamak|play
+gezmek|stroll
+alışveriş yapmak|shop
+beklemek (sıra)|queue
+buluşmak|meet up
+davet etmek|invite
+ağırlamak|host
+kutu açmak|unbox
+[duygusal|v|ya,yi]
+sevmek|love
+nefret etmek|hate
+istemek|want
+özlemek|miss
+korkmak|fear
+üzülmek|grieve
+sevinmek|rejoice
+kızmak|get angry
+affetmek|forgive
+kıskanmak|envy
+utanmak|be ashamed
+gurur duymak|take pride
+şaşırmak|be surprised
+heyecanlanmak|be excited
+sıkılmak|get bored
+rahatlamak|relax
+sakinleşmek|calm down
+endişelenmek|worry
+umut etmek|hope
+güvenmek|trust
+saygı göstermek|respect
+beğenmek|like
+hoşlanmak|enjoy
+sarılmak|hug
+öpmek|kiss
+dokunmak|touch
+okşamak|stroke
+korumak|protect
+bakmak (ilgilenmek)|take care of
+özen göstermek|care
+cesaret etmek|dare
+pes etmek|give up
+denemek|try
+başarmak|succeed
+başarısız olmak|fail
+kazanmak|win
+yenilmek|lose (game)
+[beden|v|ne,ni]
+görmek|see
+bakmak|look
+göz kırpmak|blink
+koklamak|smell
+tatmak|taste
+dokunmak (his)|feel
+hissetmek|sense
+nefes almak|breathe
+öksürmek|cough
+hapşırmak|sneeze
+esnemek|yawn
+titremek|shiver
+terlemek|sweat
+acıkmak|get hungry
+susamak|get thirsty
+doymak|be full
+yorulmak|get tired
+hastalanmak|get sick
+iyileşmek|recover
+yaralanmak|get hurt
+doğmak|be born
+büyümek|grow
+yaşlanmak|age
+ölmek|die
+yaşamak|live
+dinlenmek (uyku)|nap
+rüya görmek|dream
+horlamak|snore
+bayılmak|faint
+[değişim|v|fe,fi]
+olmak|become
+kalmak|remain
+başlamak|begin
+bitirmek|finish
+bitmek|end
+devam etmek|continue
+değişmek|change
+dönüşmek|transform
+artmak|increase
+azalmak|decrease
+büyütmek|enlarge
+küçültmek|shrink
+birleştirmek|unite
+ayırmak|separate
+karışmak|mix
+bölmek|divide
+çoğalmak|multiply
+doğurmak|give birth
+yaratmak|create
+yok etmek|destroy
+ortaya çıkmak|appear
+kaybolmak|vanish
+açılmak|open up
+kapanmak|close up
+dolmak|fill up
+boşalmak|drain
+ısınmak|warm up
+soğumak|cool down
+donmak|freeze
+erimek|melt
+kurumak|dry
+ıslanmak|get wet
+parlamak|shine
+solmak|fade
+çürümek|rot
+yanmak|burn (intr)
+patlamak|burst
+kırılmak|break (intr)
+eskimek|wear out
+yenilemek|renew
+düzeltmek|fix
+geliştirmek|improve
+bozulmak|spoil
+[toplumsal|v|zi,zu]
+yardım etmek|help
+paylaşmak (hak)|share out
+yönetmek|manage
+liderlik etmek|lead
+izlemek|follow
+uymak|obey
+karşı gelmek|defy
+savaşmak|fight
+barışmak|make peace
+anlaşmak (iş)|deal
+pazarlık etmek|bargain
+anlaşma yapmak|contract
+toplanmak|gather
+oy vermek|vote
+seçmek (oy)|elect
+yargılamak|judge
+cezalandırmak|punish
+ödüllendirmek|reward
+suçlamak|accuse
+savunmak|defend
+korumak (güvenlik)|guard
+saldırmak|attack
+teslim olmak|surrender
+kurtarmak|rescue
+iyilik etmek|do a favor
+nezaket göstermek|be polite
+hediye etmek|gift
+davranmak|behave
+kutsamak|bless
+ziyaret etmek|visit
+evlenmek|marry
+boşanmak|divorce
+göç etmek|migrate
+yerleşmek|settle
+[yaratıcı|v|li,la]
+çizmek (sanat)|sketch
+çalmak (müzik)|play music
+dans etmek|dance
+resmetmek|depict
+yazı yazmak|compose text
+tasarlamak|design
+üretmek|produce
+geliştirmek (proje)|develop
+programlamak|program
+kaydetmek|record
+yüklemek|upload
+indirmek (dosya)|download
+silmek (dosya)|delete
+göndermek|send
+almak (mesaj)|receive
+bağlanmak|connect
+kapatmak (cihaz)|switch off
+başlatmak|start
+durdurmak|halt
+kopyalamak|copy
+yapıştırmak|paste
+aramak (internet)|browse
+paylaşmak (internet)|post
+fotoğraf çekmek|photograph
+çekmek (film)|shoot
+izlemek (film)|watch
+tiyatro oynamak|perform
+söylemek (şiir)|recite
+hikaye anlatmak|narrate
+şakalaşmak|banter

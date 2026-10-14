@@ -1,0 +1,318 @@
+[hayvan|n|fa,fo]
+hayvan|animal
+kedi|cat
+köpek|dog
+at|horse
+inek|cow
+koyun|sheep
+keçi|goat
+eşek|donkey
+tavuk|chicken
+horoz|rooster
+ördek|duck
+kaz|goose
+kuş|bird
+serçe|sparrow
+güvercin|pigeon
+kartal|eagle
+baykuş|owl
+karga|crow
+papağan|parrot
+balık|fish
+köpekbalığı|shark
+yunus|dolphin
+balina|whale
+ahtapot|octopus
+yengeç|crab
+karides|shrimp
+kaplumbağa|turtle
+kurbağa|frog
+yılan|snake
+kertenkele|lizard
+timsah|crocodile
+tavşan|rabbit
+fare|mouse
+sincap|squirrel
+kirpi|hedgehog
+kurt|wolf
+tilki|fox
+ayı|bear
+aslan|lion
+kaplan|tiger
+fil|elephant
+zürafa|giraffe
+zebra|zebra
+maymun|monkey
+geyik|deer
+domuz|pig
+deve|camel
+kanguru|kangaroo
+yarasa|bat
+arı|bee
+kelebek|butterfly
+karınca|ant
+sinek|fly
+sivrisinek|mosquito
+örümcek|spider
+solucan|worm
+böcek|insect
+salyangoz|snail
+yavru|baby animal
+sürü|herd
+kanat|wing
+tüy|feather
+pati|paw
+kuyruk|tail
+boynuz|horn
+yuva|nest
+kürk|fur
+yumurta|egg
+kovan|beehive
+kafes|cage
+[bitki|n|li,lu]
+bitki|plant
+ağaç|tree
+çiçek|flower
+gül|rose
+çimen|grass
+yaprak|leaf
+dal|branch
+kök|root
+tohum|seed
+orman|forest
+çalı|bush
+meyve|fruit
+sebze|vegetable
+mantar|mushroom
+lale|tulip
+papatya|daisy
+ayçiçeği|sunflower
+bahçe|garden
+saksı|flowerpot
+kaktüs|cactus
+palmiye|palm tree
+çam|pine
+meşe|oak
+söğüt|willow
+zeytin ağacı|olive tree
+bambu|bamboo
+yosun|moss
+sarmaşık|ivy
+diken|thorn
+kabuk|bark
+filiz|sprout
+buğday|wheat
+arpa|barley
+pirinç tarlası|rice field
+tarla|field
+çayır|meadow
+fide|seedling
+nilüfer|water lily
+[yiyecek|n|ma,me,mo]
+yemek|food
+su|water
+çay|tea
+kahve|coffee
+süt|milk
+ekmek|bread
+peynir|cheese
+tereyağı|butter
+yağ|oil
+tuz|salt
+şeker|sugar
+bal|honey
+reçel|jam
+pirinç|rice
+makarna|pasta
+çorba|soup
+salata|salad
+et|meat
+tavuk eti|chicken meat
+balık eti|fish meat
+sosis|sausage
+yumurta sarısı|yolk
+elma|apple
+armut|pear
+muz|banana
+portakal|orange
+limon|lemon
+üzüm|grape
+çilek|strawberry
+kiraz|cherry
+şeftali|peach
+kayısı|apricot
+karpuz|watermelon
+kavun|melon
+nar|pomegranate
+incir|fig
+hurma|date
+ananas|pineapple
+mango|mango
+domates|tomato
+patates|potato
+soğan|onion
+sarımsak|garlic
+havuç|carrot
+salatalık|cucumber
+biber|pepper
+patlıcan|eggplant
+kabak|zucchini
+ıspanak|spinach
+marul|lettuce
+mısır|corn
+fasulye|bean
+nohut|chickpea
+mercimek|lentil
+fındık|hazelnut
+ceviz|walnut
+badem|almond
+fıstık|peanut
+çikolata|chocolate
+dondurma|ice cream
+pasta|cake
+kurabiye|cookie
+bisküvi|biscuit
+tatlı|dessert
+kahvaltı|breakfast
+öğle yemeği|lunch
+akşam yemeği|dinner
+atıştırmalık|snack
+pizza|pizza
+hamburger|burger
+sandviç|sandwich
+çorba kaşığı|soup spoon
+meşrubat|soft drink
+meyve suyu|juice
+bira|beer
+şarap|wine
+içki|alcohol
+buz|ice
+baharat|spice
+sirke|vinegar
+un|flour
+hamur|dough
+sos|sauce
+yoğurt|yogurt
+ayran|buttermilk drink
+krema|cream
+kırıntı|crumb
+dilim|slice
+porsiyon|portion
+tarif|recipe
+lezzet|flavor
+sofra|dining table
+[vücut|n|na,ni]
+vücut|body
+baş|head
+saç|hair
+yüz|face
+göz|eye
+kulak|ear
+burun|nose
+ağız|mouth
+dil|tongue
+diş|tooth
+dudak|lip
+çene|chin
+boyun|neck
+omuz|shoulder
+kol|arm
+dirsek|elbow
+el|hand
+parmak|finger
+tırnak|nail
+göğüs|chest
+sırt|back
+karın|belly
+bel|waist
+kalça|hip
+bacak|leg
+diz|knee
+ayak|foot
+topuk|heel
+deri|skin
+kemik|bone
+kas|muscle
+kalp|heart
+akciğer|lung
+beyin|brain
+mide|stomach
+kan|blood
+damar|vein
+nefes|breath
+ses|voice
+gözyaşı|tear
+ter|sweat
+sakal|beard
+kaş|eyebrow
+kirpik|eyelash
+yanak|cheek
+alın|forehead
+gülümseme|smile
+kahkaha|laughter
+uyku|sleep
+rüya|dream
+yara|wound
+hastalık|illness
+ağrı|pain
+sağlık|health
+ilaç|medicine
+ateş (hastalık)|fever
+öksürük|cough
+grip|flu
+yaş|age
+boy|height
+kilo|weight
+[aile|n|ya,yo]
+aile|family
+anne|mother
+baba|father
+kardeş|sibling
+abla|older sister
+abi|older brother
+kız kardeş|sister
+erkek kardeş|brother
+oğul|son
+kız çocuk|daughter
+çocuk|child
+bebek|baby
+dede|grandfather
+nine|grandmother
+amca|uncle (paternal)
+dayı|uncle (maternal)
+hala|aunt (paternal)
+teyze|aunt (maternal)
+kuzen|cousin
+yeğen|niece/nephew
+eş|spouse
+koca|husband
+karı|wife
+sevgili|lover
+arkadaş|friend
+yakın arkadaş|close friend
+komşu|neighbor
+akraba|relative
+misafir|guest
+düğün|wedding
+doğum günü|birthday
+nişan|engagement
+kuşak|generation
+atalar|ancestors
+yetim|orphan
+tanıdık|acquaintance
+düşman|enemy
+rakip|rival
+yabancı|stranger
+çevre|circle of people
+grup|group
+takım|team
+topluluk|community
+halk|the people
+millet|nation
+erkek|man
+kadın|woman
+oğlan|boy
+kız|girl
+yaşlı|elderly person
+genç|young person
+insan|person

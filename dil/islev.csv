@@ -1,0 +1,52 @@
+word,pos,tr,en
+ni,pron,ben,I
+su,pron,sen,you
+ha,pron,o,he/she/it
+nasu,pron,biz (sen ve ben),we (you and I)
+ti,det,bu,this
+tu,det,şu/o,that
+ta,part,geçmiş zaman işareti,past marker
+ne,part,gelecek zaman işareti,future marker
+sa,part,şimdiki zaman (-iyor),progressive marker
+ko,part,değil/hayır,not/no
+re,part,soru işareti (cümle sonu),question particle (final)
+zo,part,sadece aramızda (cümle sonu),just between us (final)
+yo,part,emir (cümle sonu),imperative (final)
+ve,conj,ve,and
+lo,conj,veya,or
+ye,verb,olmak (isimlerle),be (with nouns)
+de,prep,-in (aitlik),of/possessive
+to,prep,-e (yön),to
+ka,prep,-de (yer),in/at
+ma,prep,ile,with
+pe,prep,için,for
+li,suffix,çoğul eki,plural suffix
+-a,suffix,fiilden isim (fiil+a),verb to noun
+-ru,suffix,yapan kişi (fiil kökü+ru),doer
+-le,suffix,küçültme (isim+le),diminutive
+-mu,suffix,büyütme (isim+mu),augmentative
+ge-,prefix,zıt anlam,opposite
+-o,suffix,sıfattan zarf (son -i yerine -o),adjective to adverb
+kuno,q,ne,what
+kuse,q,kim,who
+kuri,q,nerede,where
+kuta,q,ne zaman,when
+kubo,q,neden,why
+kuhin,q,nasıl,how
+zira,num,sıfır,0
+ika,num,bir,1
+duve,num,iki,2
+teri,num,üç,3
+boti,num,dört,4
+pema,num,beş,5
+şeko,num,altı,6
+sebi,num,yedi,7
+ahu,num,sekiz,8
+zeno,num,dokuz,9
+desa,num,on,10
+eya,interj,evet,yes
+pare,interj,lütfen,please
+dama,interj,teşekkürler,thanks
+sepa,interj,özür dilerim,sorry
+heya,interj,merhaba,hello
+hele,interj,görüşürüz,bye

@@ -1,0 +1,357 @@
+[teknoloji|n|fi,fu]
+telefon|phone
+bilgisayar|computer
+ekran|screen
+klavye|keyboard
+fare (bilgisayar)|computer mouse
+internet|internet
+ağ|network
+site (web)|website
+uygulama|app
+program|program
+dosya|file
+klasör|folder
+şifre|password
+hesap|account
+mesaj|message
+e-posta|email
+arama|call
+fotoğraf|photo
+video|video
+kamera|camera
+hoparlör|speaker
+kulaklık|headphones
+mikrofon|microphone
+şarj|charge
+bağlantı|connection
+sinyal|signal
+veri|data
+bilgi|information
+yazılım|software
+donanım|hardware
+robot|robot
+yapay zeka|artificial intelligence
+oyun (dijital)|game (digital)
+sosyal medya|social media
+paylaşım|post
+beğeni|like
+takipçi|follower
+bildirim|notification
+ayar|setting
+güncelleme|update
+hata|error
+yedek|backup
+kod|code
+dil (kod)|language (programming)
+tuş|key (button)
+düğme (cihaz)|button (device)
+televizyon|television
+radyo|radio
+gazete|newspaper
+dergi|magazine
+kitap|book
+defter|notebook
+kalem|pen
+silgi|eraser
+kağıt|paper
+mektup|letter
+zarf|envelope
+pul|stamp
+imza|signature
+belge|document
+kimlik|identity card
+pasaport|passport
+bilet|ticket
+harita (dijital)|digital map
+teknoloji|technology
+buluş|invention
+deney|experiment
+[duygu|n|yu,hu]
+duygu|emotion
+sevgi|love
+aşk|romance
+nefret|hatred
+öfke|anger
+korku|fear
+endişe|worry
+mutluluk|happiness
+üzüntü|sadness
+neşe|joy
+heyecan|excitement
+sıkıntı|boredom
+yalnızlık|loneliness
+umut|hope
+hayal|fantasy
+özlem|longing
+sabır|patience
+cesaret|courage
+gurur|pride
+utanç|shame
+suçluluk|guilt
+kıskançlık|jealousy
+şükür|gratitude
+merak|curiosity
+şaşkınlık|surprise
+huzur|peace
+rahatlık|comfort
+yorgunluk|fatigue
+stres|stress
+sevinç|delight
+keder|grief
+vicdan|conscience
+kalp (duygu)|heart (emotional)
+ruh|soul
+zihin|mind
+akıl|reason
+düşünce|thought
+fikir|idea
+bilinç|consciousness
+hafıza|memory
+anı|recollection
+bilgelik|wisdom
+zeka|intelligence
+dikkat|attention
+niyet|intention
+amaç|goal
+plan|plan
+karar|decision
+seçim|choice
+şüphe|doubt
+inanç|belief
+güven|trust
+saygı|respect
+dürüstlük|honesty
+yalan|lie
+sır|secret
+gerçek|truth
+soru|question
+cevap|answer
+sebep|reason (cause)
+sonuç|result
+[soyut|n|ru,ri]
+hayat|life
+ölüm|death
+varlık|existence
+özgürlük|freedom
+adalet|justice
+barış|peace (political)
+savaş|war
+güç|power
+şans|luck
+kader|fate
+düzen|order
+kaos|chaos
+başarı|success
+başarısızlık|failure
+sorun|problem
+çözüm|solution
+fırsat|opportunity
+risk|risk
+tehlike|danger
+güvenlik|safety
+yardım|help
+destek|support
+ihtiyaç|need
+istek|wish
+hak|right
+görev|duty
+kural|rule
+yasa|law
+suç|crime
+ceza|punishment
+ödül|reward
+söz (vaat)|promise
+anlaşma|agreement
+tartışma|argument
+kavga|fight
+uzlaşma|compromise
+dostluk|friendship
+ilişki|relationship
+evlilik|marriage
+boşanma|divorce
+toplum|society
+kültür|culture
+gelenek|tradition
+din|religion
+dua|prayer
+inanış|faith
+tarih (bilim)|history
+bilim|science
+eğitim|education
+ders|lesson
+sınav|exam
+not|grade
+bilgi (öğrenilen)|knowledge
+beceri|skill
+yetenek|talent
+deneyim|experience
+hata (yanlış)|mistake
+ders (çıkarılan)|moral
+örnek|example
+sayı|number
+miktar|amount
+oran|ratio
+çoğunluk|majority
+parça|piece
+bütün|whole
+yarım|half
+çift|pair
+grup (sayısal)|set
+tür|kind
+çeşit|variety
+şekil|shape
+boyut|size (dimension)
+ağırlık|heaviness
+hız|speed
+güç (fiziksel)|force
+enerji|energy
+ses (fiziksel)|sound
+renk (özellik)|hue
+ad|name
+unvan|title
+kelime|word
+cümle|sentence
+dil (konuşma)|language
+anlam|meaning
+konu|topic
+hikaye|story
+masal|fairy tale
+şaka|joke
+söylenti|rumor
+haber|news
+duyuru|announcement
+mesaj (özlü)|note
+[sanat|n|mi,mu]
+sanat|art
+müzik|music
+şarkı|song
+melodi|melody
+ritim|rhythm
+nota|note (music)
+gitar|guitar
+piyano|piano
+keman|violin
+davul|drum
+flüt|flute
+konser|concert
+dans|dance
+resim|painting
+heykel|sculpture
+fotoğraf (sanat)|photography
+film|movie
+dizi|series
+sahne|stage
+rol|role
+şiir|poem
+roman|novel
+öykü|short story
+edebiyat|literature
+oyun|game
+oyun (tiyatro)|play
+bulmaca|puzzle
+yarış|race
+maç|match
+gol|goal (sports)
+takım (spor)|squad
+antrenman|training
+spor|sport
+futbol|football
+basketbol|basketball
+voleybol|volleyball
+tenis|tennis
+yüzme|swimming
+koşu|running
+yoga|yoga
+satranç|chess
+iskambil|playing cards
+zar|dice
+kazanan|winner
+kaybeden|loser
+puan|score
+kupa|trophy
+eğlence|fun
+parti|party
+festival|festival
+tatil gezisi|trip
+macera|adventure
+hobi|hobby
+koleksiyon|collection
+[ulaşım|n|şa,şo]
+yol|road
+araba|car
+otobüs|bus
+tren|train
+metro|subway
+tramvay|tram
+uçak|airplane
+gemi|ship
+tekne|boat
+bisiklet (taşıt)|bike
+motosiklet|motorcycle
+kamyon|truck
+taksi|taxi
+vapur|ferry
+kayık|rowboat
+yelken|sail
+tekerlek|wheel
+lastik|tire
+motor|engine
+benzin|gasoline
+harita (yol)|road map
+sürücü|driver (general)
+yolcu|passenger
+yolculuk|journey
+varış|arrival
+kalkış|departure
+bagaj|luggage
+trafik|traffic
+ışık (trafik)|traffic light
+kaza|accident
+otopark|parking lot
+tünel|tunnel
+şerit|lane
+yürüyüş|walk
+[para|n|ze,za]
+para|money
+nakit|cash
+kart|card
+maaş|salary
+fiyat|price
+ücret|fee
+borç|debt
+vergi|tax
+kira|rent
+fatura|bill
+bütçe|budget
+tasarruf|savings
+yatırım|investment
+kâr|profit
+zarar|loss
+hesap (para)|account (money)
+alışveriş|shopping
+indirim|discount
+hediye|gift
+sipariş|order
+teslimat|delivery
+paket|package
+ürün|product
+mal|goods
+iş|job
+görev (iş)|task
+proje|project
+toplantı|meeting
+rapor|report
+şirket|company
+sözleşme|contract
+masrafı|expense
+gelir|income
+pazar (ticaret)|market (trade)
+ticaret|trade
+sanayi|industry
+emek|labor
+mesai|shift
+izin|leave
+emeklilik|retirement
+işsizlik|unemployment
+yönetim|management
+sorumluluk|responsibility

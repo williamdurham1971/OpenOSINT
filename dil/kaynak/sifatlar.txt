@@ -1,0 +1,343 @@
+[boyut|a|ma,mo]
+büyük|big
+küçük|small
+uzun|long/tall
+kısa|short
+geniş|wide
+dar|narrow
+kalın|thick
+ince|thin
+derin|deep
+sığ|shallow
+yüksek|high
+alçak|low
+ağır|heavy
+hafif|light (weight)
+dolu|full
+boş|empty
+tam|complete
+yarım (sıfat)|half (adj)
+kalabalık|crowded
+tenha|deserted
+yuvarlak|round
+düz|flat
+eğri|curved
+sivri|pointed
+[nitelik|a|ne,ni]
+iyi|good
+kötü|bad
+güzel|beautiful
+çirkin|ugly
+yeni|new
+eski|old
+genç|young
+yaşlı|aged
+taze|fresh
+bayat|stale
+temiz|clean
+kirli|dirty
+doğru|correct
+yanlış|wrong
+gerçek|real
+sahte|fake
+kolay|easy
+zor|difficult
+basit|simple
+karmaşık|complex
+önemli|important
+gereksiz|unnecessary
+özel|special
+sıradan|ordinary
+nadir|rare
+yaygın|common
+güçlü|strong
+zayıf|weak
+sağlam|sturdy
+kırılgan|fragile
+pahalı|expensive
+ucuz|cheap
+zengin|rich
+fakir|poor
+bol|plentiful
+az|scarce
+farklı|different
+aynı|same
+benzer|similar
+doğal|natural
+yapay|artificial
+açık|open
+kapalı|closed
+serbest|free
+yasak|forbidden
+güvenli|safe
+tehlikeli|dangerous
+kullanışlı|useful
+işe yaramaz|useless
+[duyu|a|sa,si]
+sıcak|hot
+soğuk|cold
+ılık|lukewarm
+serin|cool
+ıslak|wet
+kuru|dry
+yumuşak|soft
+sert|hard
+pürüzsüz|smooth
+pürüzlü|rough
+tatlı (tat)|sweet
+ekşi|sour
+acı|bitter
+tuzlu|salty
+lezzetli|delicious
+yakıcı|spicy
+kokulu|fragrant
+parlak|bright
+loş|dim
+karanlık (sıfat)|dark
+sessiz|quiet
+gürültülü|noisy
+yüksek sesli|loud
+net|clear
+bulanık|blurry
+şeffaf|transparent
+keskin|sharp
+kör|blunt
+yapışkan|sticky
+kaygan|slippery
+[renk|a|za,zi]
+kırmızı|red
+mavi|blue
+yeşil|green
+sarı|yellow
+turuncu|orange (color)
+mor|purple
+pembe|pink
+kahverengi|brown
+siyah|black
+beyaz|white
+gri|gray
+altın rengi|golden
+gümüş rengi|silvery
+açık renkli|pale
+koyu renkli|deep-colored
+renkli|colorful
+[insan|a|ya,yi]
+mutlu|happy
+üzgün|sad
+kızgın|angry
+korkmuş|afraid
+şaşkın|surprised
+yorgun|tired
+aç|hungry
+tok|full (fed)
+susuz|thirsty
+hasta|sick
+sağlıklı|healthy
+uykulu|sleepy
+uyanık|awake
+sakin|calm
+heyecanlı|excited
+sıkılmış|bored
+yalnız|alone
+kalabalık içinde|among many
+nazik|polite
+kaba|rude
+cömert|generous
+cimri|stingy
+dürüst|honest
+yalancı|lying
+akıllı|smart
+aptal|foolish
+bilge|wise
+cesur|brave
+korkak|cowardly
+tembel|lazy
+çalışkan|hardworking
+sabırlı|patient
+sabırsız|impatient
+meraklı|curious
+utangaç|shy
+cana yakın|friendly
+soğuk (insan)|distant
+komik|funny
+ciddi|serious
+tatlı (kişi)|cute
+sevimli|lovable
+inatçı|stubborn
+esnek|flexible
+bencil|selfish
+fedakar|selfless
+hevesli|eager
+isteksiz|reluctant
+hazır|ready
+meşgul|busy
+müsait|available
+şanslı|lucky
+şanssız|unlucky
+bilinçli|aware
+kayıp|lost
+[durum|a|ra,ri]
+canlı|alive
+ölü|dead
+uyanmış|woken
+sarhoş|drunk
+sağ|right (direction)
+sol|left
+ileri|forward
+geri|backward
+yakın|near
+uzak|far
+dik|steep
+yatay|horizontal
+ortada|central
+ilk|first
+son (sıfat)|last
+sonraki|next
+önceki|previous
+tek|single
+çift (sıfat)|double
+çok|many
+birkaç|several
+hiç|none
+bütün (sıfat)|all
+her|every
+bazı|some
+sonsuz|infinite
+geçici|temporary
+kalıcı|permanent
+hızlı|fast
+yavaş|slow
+erken|early
+geç|late
+sık|frequent
+nadiren|infrequent
+sürekli|continuous
+ani|sudden
+sıcak kanlı|warm-hearted
+gizli|hidden
+açık sözlü|frank
+özgür|liberated
+bağımsız|independent
+ortak|shared
+kişisel|personal
+resmi|official
+samimi|intimate
+[karşıt|a|fa,fi]
+doğru yönde|aligned
+eğik|tilted
+kıvrık|curly
+dalgalı|wavy
+tüylü|fluffy
+çıplak|bare
+örtülü|covered
+dikenli|spiky
+şişman|plump
+zayıf (beden)|slim
+kısa boylu|petite
+uzun boylu|tall (person)
+ağır kilolu|heavyset
+çevik|agile
+hantal|clumsy
+dayanıklı|durable
+çabuk bozulan|perishable
+bakımlı|well-kept
+bakımsız|neglected
+modern|modern
+antik|ancient
+yerli|local
+yabancı (sıfat)|foreign
+ünlü|famous
+bilinmeyen|unknown
+meşhur|renowned
+kutsal|sacred
+lanetli|cursed
+büyülü|magical
+sıradışı|unusual
+tuhaf|strange
+garip|odd
+korkunç|terrible
+harika|wonderful
+muhteşem|magnificent
+berbat|awful
+eşsiz|unique
+kusursuz|flawless
+yetersiz|insufficient
+yeterli|sufficient
+fazla|excess
+[zarf|x|la,lo]
+çok (zarf)|very
+biraz|a little
+daha|more
+en|most
+çok az|barely
+hep|always
+bazen|sometimes
+asla|never
+sık sık|often
+nadiren (zarf)|rarely
+hemen|immediately
+yavaşça|slowly
+sessizce|quietly
+birlikte|together
+tek başına|alone
+belki|maybe
+kesinlikle|certainly
+galiba|probably
+bile|even
+sadece|only
+de/da|also
+ama|but
+çünkü|because
+yüzden|so
+eğer|if
+o zaman|then
+sonra|afterwards
+önce|before
+beri|since
+kadar|until
+hala|still
+artık|no longer
+zaten|already
+yine|again
+hiç (zarf)|ever
+her yerde|everywhere
+hiçbir yerde|nowhere
+bir yerde|somewhere
+burada|here
+orada|there
+nerede ise|almost
+neredeyse|nearly
+yakında|soon
+şimdilik|for now
+hala (bekleme)|yet
+dışında|except
+yerine|instead
+aracılığıyla|via
+üzerinde|on
+altında|under
+yanında|beside
+arasında|between
+karşısında|opposite
+içinde|within
+etrafında|around
+boyunca|along
+doğru (yön)|toward
+-den (kaynak)|from
+gibi|like
+kadar (eşit)|as much as
+hakkında|about
+sayesinde|thanks to
+rağmen|despite
+her zaman|at all times
+bir kez|once
+iki kez|twice
+tekrar|repeatedly
+birden|suddenly
+yavaş yavaş|gradually
+önemli ölçüde|significantly
+mutlaka|certainly (must)
+tabii|of course
+lütfen (zarf)|kindly
+ayrıca|moreover
+yani|that is
+örneğin|for example
