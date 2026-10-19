@@ -32,6 +32,7 @@ import sys
 import time
 import urllib.error
 import urllib.request
+from collections import Counter
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
 
@@ -80,12 +81,12 @@ def _user_agent() -> str:
     return ua
 
 
-def sec_get(url: str) -> bytes:
+def sec_get(url: str, cache: bool = True) -> bytes:
     """GET a SEC URL with the declared User-Agent, a rate limit and a disk cache."""
     global _last_request
     CACHE_DIR.mkdir(exist_ok=True)
     cache_file = CACHE_DIR / re.sub(r"[^A-Za-z0-9._-]", "_", url.split("://", 1)[-1])
-    if cache_file.exists():
+    if cache and cache_file.exists():
         return cache_file.read_bytes()
 
     wait = SEC_MIN_INTERVAL - (time.monotonic() - _last_request)
@@ -106,7 +107,8 @@ def sec_get(url: str) -> bytes:
         raise
     finally:
         _last_request = time.monotonic()
-    cache_file.write_bytes(data)
+    if cache:
+        cache_file.write_bytes(data)
     return data
 
 
@@ -142,27 +144,39 @@ def _primary_doc_from_index(cik: int, acc_nodash: str) -> str:
 
 
 def latest_10ks(cik: int, count: int = 2) -> list[Filing]:
+    """The most recent `count` 10-K filings, newest first (at least two, or exit).
+
+    The submissions JSON lists only the latest ~1,000 filings inline; heavy
+    filers such as banks push older 10-Ks into extra pages under
+    `filings.files`, which are read until enough 10-Ks are found.
+    """
     sub = json.loads(sec_get(f"https://data.sec.gov/submissions/CIK{cik:010d}.json"))
-    recent = sub["filings"]["recent"]
+    pages = [sub["filings"]["recent"]]
+    extra = [f["name"] for f in sub["filings"].get("files", [])]
     out: list[Filing] = []
-    for i, form in enumerate(recent["form"]):
-        if form != "10-K":  # amendments (10-K/A) usually lack a full Item 1A
-            continue
-        acc = recent["accessionNumber"][i]
-        acc_nodash = acc.replace("-", "")
-        primary = (recent.get("primaryDocument") or [None] * len(recent["form"]))[i]
-        if not primary:
-            primary = _primary_doc_from_index(cik, acc_nodash)
-        out.append(Filing(
-            accession=acc,
-            filing_date=recent["filingDate"][i],
-            report_date=recent.get("reportDate", [""] * len(recent["form"]))[i],
-            url=f"https://www.sec.gov/Archives/edgar/data/{cik}/{acc_nodash}/{primary}",
-        ))
-        if len(out) == count:
-            break
-    if len(out) < count:
-        sys.exit(f"Found only {len(out)} 10-K filing(s) in the recent submissions list")
+    while pages:
+        page = pages.pop(0)
+        n = len(page["form"])
+        for i, form in enumerate(page["form"]):
+            if form != "10-K":  # amendments (10-K/A) usually lack a full Item 1A
+                continue
+            acc = page["accessionNumber"][i]
+            acc_nodash = acc.replace("-", "")
+            primary = (page.get("primaryDocument") or [None] * n)[i]
+            if not primary:
+                primary = _primary_doc_from_index(cik, acc_nodash)
+            out.append(Filing(
+                accession=acc,
+                filing_date=page["filingDate"][i],
+                report_date=(page.get("reportDate") or [""] * n)[i],
+                url=f"https://www.sec.gov/Archives/edgar/data/{cik}/{acc_nodash}/{primary}",
+            ))
+            if len(out) == count:
+                return out
+        if not pages and extra:
+            pages.append(json.loads(sec_get(f"https://data.sec.gov/submissions/{extra.pop(0)}")))
+    if len(out) < 2:
+        sys.exit(f"Found only {len(out)} 10-K filing(s) on EDGAR")
     return out
 
 
@@ -172,7 +186,7 @@ def latest_10ks(cik: int, count: int = 2) -> list[Filing]:
 
 _WS = re.compile(r"\s+")
 _PAGE_JUNK = re.compile(
-    r"^(\d{1,3}|page \d+|table of contents|.{0,80}\|\s*\d{4}\s+form\s+10-k\s*\|.*)$",
+    r"^(\d{1,3}|page \d+|part [ivx]+|table of contents|[•·▪■◦●\-–—]+|.{0,80}\|\s*\d{4}\s+form\s+10-k\s*\|.*)$",
     re.IGNORECASE,
 )
 
@@ -220,11 +234,18 @@ def html_to_paragraphs(html: bytes) -> list[str]:
     return _merge_split_headings(paragraphs)
 
 
-_ITEM_ONLY = re.compile(r"^item\s*\d+[a-z]?\s*[.:]?$", re.IGNORECASE)
+_ITEM_ONLY = re.compile(r"^item\s*\d+[a-z]?(\s*,\s*\d+[a-z]?)*\s*[.:]?$", re.IGNORECASE)
 
 
 def _merge_split_headings(paragraphs: list[str]) -> list[str]:
-    """Join 'Item 1A.' and 'Risk Factors' when a table put them in separate cells."""
+    """Join 'Item 1A.' and 'Risk Factors' when a table put them in separate cells.
+
+    Some filers (e.g. Microsoft) print a bare 'Item 1A' tab on every page as a
+    running header; a label that repeats three or more times is that header
+    and is dropped instead of being glued onto the next paragraph.
+    """
+    counts = Counter(p.lower() for p in paragraphs if _ITEM_ONLY.match(p))
+    paragraphs = [p for p in paragraphs if not (_ITEM_ONLY.match(p) and counts[p.lower()] >= 3)]
     out: list[str] = []
     i = 0
     while i < len(paragraphs):

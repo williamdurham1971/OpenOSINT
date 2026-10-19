@@ -1,0 +1,480 @@
+<title>10-K Risk Delta</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+/* Layout: a blackline filing. Ledger of companies on the left, the redlined section on the right; one column on phones. */
+:root {
+  --paper: #f7f8fa;
+  --sheet: #ffffff;
+  --ink: #18202c;
+  --ink-2: #4a5566;
+  --ink-3: #7a8494;
+  --rule: #dfe3ea;
+  --rule-2: #c9cfd9;
+  --accent: #1f3a5f;            /* filing-cover navy */
+  --accent-soft: #e8eef6;
+  --mod: #b7791f;               /* modified paragraph */
+  --ins: #2b6cb0;               /* inserted text / new paragraph */
+  --del: #c53030;               /* deleted text / removed paragraph */
+  --ins-bg: #e6f0fa;
+  --del-bg: #fbeaea;
+  --ok: #2f7a4a;
+  --warn: #9a6a12;
+  --bad: #a83232;
+  --f-display: "Spectral", "Iowan Old Style", Georgia, serif;
+  --f-ui: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  --r: 6px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #14181f; --sheet: #1b2029; --ink: #e6e9ef; --ink-2: #b1b9c6; --ink-3: #828b99;
+    --rule: #2a313d; --rule-2: #39414f; --accent: #9dbbe3; --accent-soft: #223047;
+    --mod: #b5812a; --ins: #4a8fd6; --del: #e05252; --ins-bg: #1a2c42; --del-bg: #3a1f22;
+    --ok: #6cc08a; --warn: #d6aa55; --bad: #ec7d7d; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #14181f; --sheet: #1b2029; --ink: #e6e9ef; --ink-2: #b1b9c6; --ink-3: #828b99;
+  --rule: #2a313d; --rule-2: #39414f; --accent: #9dbbe3; --accent-soft: #223047;
+  --mod: #b5812a; --ins: #4a8fd6; --del: #e05252; --ins-bg: #1a2c42; --del-bg: #3a1f22;
+  --ok: #6cc08a; --warn: #d6aa55; --bad: #ec7d7d; color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--paper); color: var(--ink); font: 15px/1.55 var(--f-ui);
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.wrap { max-width: 1240px; margin: 0 auto; padding-block: 0 64px; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible, input:focus-visible, tr:focus-visible { outline: 2px solid var(--ins); outline-offset: 2px; }
+.mono, .num { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+
+/* Masthead */
+.mast { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: baseline; justify-content: space-between;
+  padding-block: 20px 14px; border-bottom: 3px double var(--rule-2); }
+.brand { font: 600 20px/1.2 var(--f-display); letter-spacing: .01em; }
+.brand small { font: 500 11px var(--f-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); margin-left: 10px; }
+.live { display: flex; align-items: center; gap: 8px; font: 12px var(--f-mono); color: var(--ink-2); }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--ink-3); flex: none; }
+.dot.on { background: var(--ok); box-shadow: 0 0 0 3px color-mix(in srgb, var(--ok) 25%, transparent); }
+
+/* Intro */
+.intro { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 32px; padding-block: 36px 28px; align-items: end; }
+.intro h1 { font: 400 clamp(28px, 4.2vw, 46px)/1.12 var(--f-display); margin: 0 0 14px; text-wrap: balance; letter-spacing: -.01em; }
+.intro h1 del { color: var(--del); text-decoration-thickness: 2px; }
+.intro h1 ins { color: var(--ins); text-decoration: underline double; text-underline-offset: 6px; }
+.intro p { margin: 0; max-width: 62ch; color: var(--ink-2); font-size: 16px; }
+.facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--rule-2); }
+.facts div { padding: 12px 0 10px; border-bottom: 1px solid var(--rule); }
+.facts dt { font: 500 11px var(--f-ui); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
+.facts dd { margin: 2px 0 0; font: 500 24px var(--f-mono); font-variant-numeric: tabular-nums; }
+.facts dd small { font-size: 12px; color: var(--ink-3); font-weight: 400; }
+
+/* Two-pane workspace */
+.work { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 24px; align-items: start; }
+.pane { background: var(--sheet); border: 1px solid var(--rule); border-radius: var(--r); min-width: 0; }
+.pane-head { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; padding: 14px 16px; border-bottom: 1px solid var(--rule); }
+.pane-head h2 { font: 600 13px var(--f-ui); letter-spacing: .08em; text-transform: uppercase; margin: 0; color: var(--ink-2); }
+.legend { display: flex; flex-wrap: wrap; gap: 12px; font-size: 12px; color: var(--ink-2); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.sw { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+.sw.mod { background: var(--mod); } .sw.ins { background: var(--ins); } .sw.del { background: var(--del); }
+input[type="search"] { font: 14px var(--f-ui); color: var(--ink); background: var(--paper); border: 1px solid var(--rule-2); border-radius: 4px; padding: 6px 10px; width: 180px; max-width: 100%; }
+
+.ledger-scroll { overflow-x: auto; }
+table.ledger { width: 100%; border-collapse: collapse; font-size: 14px; }
+.ledger th { text-align: left; font: 500 11px var(--f-ui); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); padding: 8px 12px; border-bottom: 1px solid var(--rule); white-space: nowrap; }
+.ledger th button { all: unset; cursor: pointer; }
+.ledger th button:hover { color: var(--ink); }
+.ledger td { padding: 9px 12px; border-bottom: 1px solid var(--rule); vertical-align: middle; }
+.ledger tbody tr { cursor: pointer; }
+.ledger tbody tr:hover { background: var(--accent-soft); }
+.ledger tbody tr[aria-selected="true"] { background: var(--accent-soft); box-shadow: inset 3px 0 0 var(--accent); }
+.tk { font: 500 13px var(--f-mono); }
+.co { color: var(--ink-2); font-size: 13px; display: block; max-width: 22ch; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.bar { display: flex; gap: 2px; height: 12px; width: 140px; background: var(--rule); border-radius: 3px; overflow: hidden; }
+.bar i { display: block; height: 100%; }
+.bar i.mod { background: var(--mod); } .bar i.ins { background: var(--ins); } .bar i.del { background: var(--del); }
+.bar i:hover { filter: brightness(1.12); }
+.pill { display: inline-flex; align-items: center; gap: 5px; font: 500 11px var(--f-ui); letter-spacing: .04em; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--rule-2); color: var(--ink-2); white-space: nowrap; }
+.pill.ok::before, .pill.partial::before, .pill.error::before, .pill.wait::before { content: ""; width: 6px; height: 6px; border-radius: 50%; }
+.pill.ok::before { background: var(--ok); } .pill.partial::before { background: var(--warn); }
+.pill.error::before { background: var(--bad); } .pill.wait::before { background: var(--ink-3); }
+.empty { padding: 28px 16px; color: var(--ink-3); font-size: 14px; }
+
+/* Blackline viewer */
+.viewer { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 12px); }
+.vhead { padding: 18px 20px 12px; border-bottom: 1px solid var(--rule); display: grid; gap: 10px; }
+.vhead h3 { margin: 0; font: 600 22px/1.2 var(--f-display); text-wrap: balance; }
+.vhead .sub { font-size: 13px; color: var(--ink-2); display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.tabs, .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.tab, .chip { font: 500 13px var(--f-ui); color: var(--ink-2); background: transparent; border: 1px solid var(--rule-2); border-radius: 4px; padding: 5px 10px; cursor: pointer; }
+.tab[aria-pressed="true"], .chip[aria-pressed="true"] { background: var(--ink); color: var(--sheet); border-color: var(--ink); }
+.chip .n { font-family: var(--f-mono); margin-left: 4px; opacity: .8; }
+.changes { max-height: 72vh; overflow-y: auto; padding: 6px 20px 20px; }
+.chg { padding: 16px 0; border-bottom: 1px solid var(--rule); display: grid; gap: 8px; }
+.chg:last-child { border-bottom: 0; }
+.chg-top { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 12px; color: var(--ink-3); }
+.kind { font: 600 11px var(--f-ui); letter-spacing: .06em; text-transform: uppercase; padding: 1px 7px; border-radius: 3px; border: 1px solid currentColor; }
+.kind.new { color: var(--ins); } .kind.removed { color: var(--del); } .kind.modified { color: var(--mod); }
+.sect { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 46ch; }
+.para { font: 16px/1.62 var(--f-display); color: var(--ink); margin: 0; overflow-wrap: anywhere; }
+.para.new-p { border-left: 3px solid var(--ins); padding-left: 12px; }
+.para.removed-p { border-left: 3px solid var(--del); padding-left: 12px; color: var(--ink-2); text-decoration: line-through; text-decoration-color: color-mix(in srgb, var(--del) 60%, transparent); }
+.para del { color: var(--del); background: var(--del-bg); text-decoration-thickness: 1.5px; }
+.para ins { color: var(--ins); background: var(--ins-bg); text-decoration: underline double; text-underline-offset: 3px; }
+.assess { display: grid; gap: 4px; padding: 10px 12px; background: var(--paper); border-radius: 4px; font-size: 14px; }
+.assess .m { font: 500 12px var(--f-mono); }
+.assess blockquote { margin: 0; font: italic 14px/1.5 var(--f-display); color: var(--ink-2); }
+.flag { color: var(--bad); font-size: 12px; }
+.more { font: 500 13px var(--f-ui); background: none; border: 0; color: var(--accent); cursor: pointer; padding: 0; justify-self: start; }
+
+/* Reference sections */
+.ref { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; padding-block: 48px 0; }
+.ref h2 { font: 600 24px/1.2 var(--f-display); margin: 0 0 12px; }
+.ref p, .ref li { color: var(--ink-2); max-width: 64ch; }
+.ref ol { padding-left: 20px; display: grid; gap: 6px; margin: 0; }
+.schema { width: 100%; border-collapse: collapse; font-size: 13px; }
+.schema td { border-bottom: 1px solid var(--rule); padding: 7px 8px 7px 0; vertical-align: top; }
+.schema td:first-child { font-family: var(--f-mono); white-space: nowrap; color: var(--ink); }
+.schema td:last-child { color: var(--ink-2); }
+.access { margin-top: 48px; padding: 24px; border: 1px solid var(--rule-2); border-radius: var(--r); display: flex; flex-wrap: wrap; gap: 16px 32px; align-items: center; justify-content: space-between; background: var(--sheet); }
+.access h2 { margin: 0 0 4px; font: 600 20px var(--f-display); }
+.access p { margin: 0; color: var(--ink-2); max-width: 70ch; }
+.btn { font: 500 14px var(--f-ui); padding: 9px 16px; border-radius: 4px; border: 1px solid var(--ink); background: var(--ink); color: var(--sheet); cursor: pointer; }
+.btn.ghost { background: transparent; color: var(--ink); }
+.btn[disabled] { opacity: .45; cursor: not-allowed; }
+.btns { display: flex; flex-wrap: wrap; gap: 8px; }
+.foot { margin-top: 40px; font-size: 12px; color: var(--ink-3); border-top: 1px solid var(--rule); padding-top: 14px; }
+#tip { position: fixed; pointer-events: none; z-index: 20; background: var(--ink); color: var(--sheet); font: 12px/1.4 var(--f-ui); padding: 6px 9px; border-radius: 4px; max-width: 240px; }
+
+@media (max-width: 900px) {
+  .intro, .work, .ref { grid-template-columns: minmax(0, 1fr); }
+  .viewer { position: static; }
+  .changes { max-height: none; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+  <header class="mast">
+    <div class="brand">10-K Risk Delta <small>Item 1A · year over year</small></div>
+    <div class="live" aria-live="polite"><span class="dot" id="liveDot"></span><span id="liveText">Loading dataset…</span></div>
+  </header>
+
+  <section class="intro">
+    <div>
+      <h1>What large US companies <del>stopped</del> and <ins>started</ins> warning investors about.</h1>
+      <p>Every 10-K filed with the SEC has a Risk Factors section (Item 1A). This dataset compares it paragraph by paragraph against the prior year for 50 large US companies, three years back, and marks each paragraph as new, removed or rewritten. The diff is computed in code from the original EDGAR filings; a Claude assessment of each change is added on top.</p>
+    </div>
+    <dl class="facts">
+      <div><dt>Companies processed</dt><dd><span id="fCompanies">–</span> <small id="fPlanned"></small></dd></div>
+      <div><dt>Year-over-year comparisons</dt><dd id="fPairs">–</dd></div>
+      <div><dt>Changed paragraphs</dt><dd id="fChanges">–</dd></div>
+      <div><dt>Assessed by Claude</dt><dd id="fScored">–</dd></div>
+    </dl>
+  </section>
+
+  <section class="work">
+    <div class="pane">
+      <div class="pane-head">
+        <h2>Ledger · latest fiscal year</h2>
+        <input type="search" id="q" placeholder="Filter ticker or name" aria-label="Filter companies">
+      </div>
+      <div class="pane-head" style="border-bottom:1px solid var(--rule)">
+        <div class="legend" aria-label="Bar legend">
+          <span><i class="sw mod"></i>Rewritten</span><span><i class="sw ins"></i>New</span><span><i class="sw del"></i>Removed</span>
+        </div>
+        <span style="font-size:12px;color:var(--ink-3)">Bar = share of the section's paragraphs</span>
+      </div>
+      <div class="ledger-scroll">
+        <table class="ledger" id="ledger">
+          <thead><tr>
+            <th><button data-sort="ticker">Company</button></th>
+            <th>Changed share</th>
+            <th><button data-sort="churn">Churn</button></th>
+            <th>Status</th>
+          </tr></thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+      <div class="empty" id="ledgerEmpty" hidden>Companies appear here as the build finishes each one.</div>
+    </div>
+
+    <div class="pane viewer" id="viewer">
+      <div class="vhead">
+        <h3 id="vTitle">Select a company</h3>
+        <div class="sub" id="vSub">Pick a row in the ledger to read its redlined Risk Factors changes.</div>
+        <div class="tabs" id="vTabs" role="group" aria-label="Fiscal year"></div>
+        <div class="chips" id="vChips" role="group" aria-label="Change type"></div>
+      </div>
+      <div class="changes" id="vList"></div>
+    </div>
+  </section>
+
+  <section class="ref">
+    <div>
+      <h2>How it is built</h2>
+      <ol>
+        <li>The four most recent 10-K filings per company are downloaded from SEC EDGAR, at no more than five requests per second.</li>
+        <li>Item 1A is cut out of each filing. The table-of-contents entry, page numbers and hidden XBRL data are dropped.</li>
+        <li>Each paragraph of the newer year is matched to its closest paragraph in the older year. Unmatched paragraphs are new or removed; matched ones that differ beyond numbers and dates are rewritten.</li>
+        <li>Only the changed paragraphs go to Claude, which assigns a category and a 1–5 materiality score and quotes the supporting text. Quotes are checked against the filing; a quote that is not in the text is flagged.</li>
+      </ol>
+      <h2 style="margin-top:28px">Limits</h2>
+      <p>A paragraph that was split or merged shows up as one removal plus new text. Some filers place risk factors in an exhibit, and those years are marked as not extracted. Assessments are model judgements, not measurements, and nothing here is investment advice.</p>
+    </div>
+    <div>
+      <h2>Record layout</h2>
+      <table class="schema">
+        <tr><td>change_id</td><td>Ticker, fiscal year of the newer filing, sequence (AAPL-2025-c12)</td></tr>
+        <tr><td>kind</td><td>new · removed · modified</td></tr>
+        <tr><td>section</td><td>Nearest risk heading above the paragraph</td></tr>
+        <tr><td>old, new</td><td>Full paragraph text from each filing</td></tr>
+        <tr><td>similarity</td><td>0–1 character similarity of a rewritten pair</td></tr>
+        <tr><td>fy_new, fy_old</td><td>Fiscal period end years being compared</td></tr>
+        <tr><td>url_new, url_old</td><td>Source documents on sec.gov</td></tr>
+        <tr><td>category</td><td>new_risk · expanded · softened · removed_risk · reworded · other</td></tr>
+        <tr><td>materiality</td><td>1 (cosmetic) to 5 (could change an investor's view)</td></tr>
+        <tr><td>quote_verified</td><td>Whether the model's quote appears verbatim in the filing</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section class="access">
+    <div>
+      <h2>Sample and licensing</h2>
+      <p>The full dataset ships as JSON Lines and CSV. Licensing terms are being prepared; the summary below can be downloaded now.</p>
+    </div>
+    <div class="btns">
+      <button class="btn" id="dlSummary" type="button">Download summary CSV</button>
+      <button class="btn ghost" id="dlCompany" type="button" disabled>Download selected company</button>
+    </div>
+  </section>
+
+  <p class="foot">Source: U.S. Securities and Exchange Commission, EDGAR full-text filings. Paragraph diff computed deterministically; assessments generated by Claude. Not investment advice.</p>
+</div>
+<div id="tip" hidden></div>
+
+<script>
+(() => {
+  const $ = (id) => document.getElementById(id);
+  const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+  const fmt = (n) => (n == null ? "–" : Number(n).toLocaleString("en-US"));
+
+  const state = { companies: new Map(), meta: null, sort: "ticker", q: "", sel: null, detail: null, pairIdx: 0, kind: "all", scores: null, unsubScores: null, db: null, live: false };
+
+  // ---- Data: the published file first, then the live database on top ----
+  fetch("data/companies.json").then((r) => r.ok ? r.json() : null).then((d) => {
+    if (!d) return;
+    d.companies.forEach((c) => { if (!state.companies.has(c.ticker)) state.companies.set(c.ticker, c); });
+    if (!state.meta) state.meta = d.meta;
+    render();
+  }).catch(() => {});
+
+  (async () => {
+    const db = await window.claude?.use?.("db");
+    if (!db) return;
+    state.db = db;
+    db.collection("companies").onSnapshot((snap) => {
+      snap.docs.forEach((d) => { const v = d.data(); if (v) state.companies.set(v.ticker, v); });
+      state.live = true; render();
+    }, () => {});
+    db.doc("meta/run").onSnapshot((d) => { if (d.exists) { state.meta = d.data(); render(); } }, () => {});
+  })();
+
+  // ---- Ledger ----
+  function latest(c) { return (c.pairs || []).find((p) => p.status === "ok"); }
+  // One denominator for all three segments: paragraphs in the new section plus those removed from the old one.
+  function shares(p) {
+    const s = p.stats || {}; const total = Math.max((p.paragraphs_new || 0) + (s.removed || 0), 1);
+    return { mod: (s.modified || 0) / total, ins: (s.new || 0) / total, del: (s.removed || 0) / total, counts: s, total };
+  }
+  function churn(c) { const p = latest(c); if (!p) return -1; const sh = shares(p); return sh.mod + sh.ins + sh.del; }
+
+  function render() {
+    const m = state.meta || {};
+    const n = state.companies.size;
+    $("fCompanies").textContent = fmt(Math.max(n, m.processed || 0));
+    $("fPlanned").textContent = m.planned ? `of ${m.planned}` : "";
+    $("fPairs").textContent = fmt(m.pairs);
+    $("fChanges").textContent = fmt(m.changes);
+    $("fScored").textContent = m.scored ? fmt(m.scored) : "pending";
+    $("liveDot").classList.toggle("on", state.live);
+    const when = m.updated ? new Date(m.updated).toISOString().slice(11, 16) + " UTC" : "";
+    $("liveText").textContent = (state.live ? "Live" : "Snapshot") + (when ? ` · updated ${when}` : "") + (m.planned && n < m.planned ? ` · building ${n}/${m.planned}` : "");
+
+    let list = [...state.companies.values()];
+    const q = state.q.trim().toLowerCase();
+    if (q) list = list.filter((c) => c.ticker.toLowerCase().includes(q) || (c.name || "").toLowerCase().includes(q));
+    list.sort(state.sort === "churn" ? (a, b) => churn(b) - churn(a) : (a, b) => a.ticker.localeCompare(b.ticker));
+
+    const tb = $("rows"); tb.replaceChildren();
+    $("ledgerEmpty").hidden = list.length > 0;
+    for (const c of list) {
+      const tr = el("tr"); tr.tabIndex = 0; tr.setAttribute("aria-selected", String(state.sel === c.ticker));
+      const td1 = el("td"); td1.append(el("span", "tk", c.ticker), el("span", "co", c.name || "")); tr.append(td1);
+      const td2 = el("td"); const p = latest(c);
+      if (p) {
+        const sh = shares(p); const bar = el("div", "bar"); bar.setAttribute("role", "img");
+        bar.setAttribute("aria-label", `FY${p.fy_new}: ${sh.counts.modified || 0} rewritten, ${sh.counts.new || 0} new, ${sh.counts.removed || 0} removed of ${sh.total} paragraphs (new section plus removed)`);
+        [["mod", "Rewritten", sh.mod, sh.counts.modified], ["ins", "New", sh.ins, sh.counts.new], ["del", "Removed", sh.del, sh.counts.removed]].forEach(([k, label, v, cnt]) => {
+          if (!cnt) return; const seg = el("i", k); seg.style.width = Math.max(v * 100, 2) + "%";
+          seg.dataset.tip = `${c.ticker} FY${p.fy_new} vs FY${p.fy_old}\n${label}: ${cnt} paragraph${cnt === 1 ? "" : "s"} (${Math.round(v * 100)}%)`;
+          bar.append(seg);
+        });
+        td2.append(bar);
+      } else td2.append(el("span", "co", "—"));
+      tr.append(td2);
+      const ch = churn(c); tr.append(el("td", "num", ch < 0 ? "—" : Math.round(ch * 100) + "%"));
+      const td4 = el("td"); const st = c.status || "wait";
+      td4.append(el("span", "pill " + st, { ok: "Complete", partial: "Partial", error: "Not extracted" }[st] || "Queued")); tr.append(td4);
+      tr.addEventListener("click", () => select(c.ticker));
+      tr.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); select(c.ticker); } });
+      tb.append(tr);
+    }
+  }
+
+  $("q").addEventListener("input", (e) => { state.q = e.target.value; render(); });
+  document.querySelectorAll("th button").forEach((b) => b.addEventListener("click", () => { state.sort = b.dataset.sort; render(); }));
+
+  // ---- Tooltip on bar segments ----
+  const tip = $("tip");
+  document.addEventListener("pointermove", (e) => {
+    const t = e.target.closest?.("[data-tip]");
+    if (!t) { tip.hidden = true; return; }
+    tip.textContent = t.dataset.tip; tip.style.whiteSpace = "pre-line"; tip.hidden = false;
+    const x = Math.min(e.clientX + 14, window.innerWidth - tip.offsetWidth - 8);
+    tip.style.left = x + "px"; tip.style.top = (e.clientY + 16) + "px";
+  });
+
+  // ---- Viewer ----
+  async function select(ticker) {
+    state.sel = ticker; state.pairIdx = 0; state.kind = "all"; state.detail = null; state.scores = null;
+    $("dlCompany").disabled = false;
+    render(); renderViewer();
+    if (state.unsubScores) state.unsubScores();
+    if (state.db) state.unsubScores = state.db.doc("scores/" + ticker).onSnapshot((d) => { state.scores = d.exists ? d.data() : null; renderViewer(); }, () => {});
+    try {
+      const r = await fetch("data/changes/" + encodeURIComponent(ticker) + ".json");
+      state.detail = r.ok ? await r.json() : { pairs: [] };
+    } catch { state.detail = { pairs: [] }; }
+    if (state.sel === ticker) renderViewer();
+    if (window.innerWidth < 900) $("viewer").scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  function renderViewer() {
+    const c = state.companies.get(state.sel);
+    if (!c) return;
+    $("vTitle").textContent = `${c.name || c.ticker} (${c.ticker})`;
+    const sub = $("vSub"); sub.replaceChildren();
+    const list = $("vList"); list.replaceChildren();
+    const tabs = $("vTabs"); tabs.replaceChildren();
+    const chips = $("vChips"); chips.replaceChildren();
+    if (!state.detail) { sub.append(el("span", null, "Loading changes…")); return; }
+    const pairs = state.detail.pairs || [];
+    if (!pairs.length) { sub.append(el("span", null, c.status === "error" ? "Item 1A could not be extracted for this company." : "Change text for this company is not published yet; it arrives with the next update.")); return; }
+
+    pairs.forEach((p, i) => {
+      const b = el("button", "tab", `FY${p.fy_new} vs FY${p.fy_old}`); b.type = "button";
+      b.setAttribute("aria-pressed", String(i === state.pairIdx));
+      b.addEventListener("click", () => { state.pairIdx = i; state.kind = "all"; renderViewer(); });
+      tabs.append(b);
+    });
+    const p = pairs[state.pairIdx];
+    if (p.status !== "ok") { sub.append(el("span", null, "Item 1A could not be extracted from one of these two filings.")); return; }
+    const aNew = el("a", null, `FY${p.fy_new} filing (${p.filed_new})`); aNew.href = p.url_new; aNew.target = "_blank"; aNew.rel = "noopener";
+    const aOld = el("a", null, `FY${p.fy_old} filing (${p.filed_old})`); aOld.href = p.url_old; aOld.target = "_blank"; aOld.rel = "noopener";
+    sub.append(aNew, aOld, el("span", "mono", `${fmt(p.words_old)} → ${fmt(p.words_new)} words`));
+
+    const items = p.items || [];
+    const counts = { all: items.length, new: 0, removed: 0, modified: 0 };
+    items.forEach((it) => counts[it.kind]++);
+    [["all", "All"], ["new", "New"], ["removed", "Removed"], ["modified", "Rewritten"]].forEach(([k, label]) => {
+      const b = el("button", "chip", label); b.type = "button"; b.append(el("span", "n", String(counts[k])));
+      b.setAttribute("aria-pressed", String(state.kind === k));
+      b.addEventListener("click", () => { state.kind = k; renderViewer(); });
+      chips.append(b);
+    });
+
+    const sc = (state.scores && state.scores.items) || {};
+    let shown = items.filter((it) => state.kind === "all" || it.kind === state.kind);
+    shown.sort((a, b) => ((sc[b.id]?.materiality || 0) - (sc[a.id]?.materiality || 0)));
+    if (!shown.length) { list.append(el("div", "empty", "No changes of this type.")); return; }
+    for (const it of shown) list.append(changeCard(it, sc[it.id]));
+  }
+
+  function changeCard(it, a) {
+    const box = el("article", "chg");
+    const top = el("div", "chg-top");
+    top.append(el("span", "kind " + it.kind, { new: "New", removed: "Removed", modified: "Rewritten" }[it.kind]), el("span", "sect", it.section || ""));
+    if (it.kind === "modified") top.append(el("span", "mono", `similarity ${Math.round((it.similarity || 0) * 100)}%`));
+    box.append(top);
+    if (a) {
+      const as = el("div", "assess");
+      as.append(el("span", "m", `Materiality ${a.materiality}/5 · ${String(a.category || "").replace("_", " ")}`), el("span", null, a.summary || ""));
+      if (a.quote) { const bq = el("blockquote", null, "“" + a.quote + "”"); as.append(bq); if (!a.quote_verified) as.append(el("span", "flag", "Quote not found verbatim in the filing; check it manually.")); }
+      box.append(as);
+    }
+    let para;
+    if (it.kind === "modified") { para = el("p", "para"); blackline(para, it.old, it.new); }
+    else if (it.kind === "new") para = el("p", "para new-p", it.new);
+    else para = el("p", "para removed-p", it.old);
+    box.append(para);
+    return box;
+  }
+
+  // Word-level redline: deletions struck through, insertions double-underlined.
+  function blackline(target, a, b) {
+    const A = a.split(/\s+/).filter(Boolean), B = b.split(/\s+/).filter(Boolean);
+    const n = A.length, m = B.length;
+    if (n * m > 2500000) { target.append(el("del", null, a), document.createTextNode(" "), el("ins", null, b)); return; }
+    const L = Array.from({ length: n + 1 }, () => new Uint16Array(m + 1));
+    for (let i = n - 1; i >= 0; i--) for (let j = m - 1; j >= 0; j--)
+      L[i][j] = A[i] === B[j] ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1]);
+    let i = 0, j = 0; const out = [];
+    const push = (t, w) => { const last = out[out.length - 1]; if (last && last.t === t) last.w.push(w); else out.push({ t, w: [w] }); };
+    while (i < n && j < m) {
+      if (A[i] === B[j]) { push("=", A[i]); i++; j++; }
+      else if (L[i + 1][j] >= L[i][j + 1]) push("-", A[i++]); else push("+", B[j++]);
+    }
+    while (i < n) push("-", A[i++]); while (j < m) push("+", B[j++]);
+    out.forEach((seg, k) => {
+      const text = seg.w.join(" ");
+      if (k) target.append(document.createTextNode(" "));
+      target.append(seg.t === "=" ? document.createTextNode(text) : el(seg.t === "-" ? "del" : "ins", null, text));
+    });
+  }
+
+  // ---- Downloads ----
+  const csvCell = (v) => { const s = String(v ?? ""); return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; };
+  const toCsv = (rows) => rows.map((r) => r.map(csvCell).join(",")).join("\n");
+  async function save(filename, text) {
+    const dl = await window.claude?.use?.("downloads");
+    if (!dl) { $("dlSummary").textContent = "Download not available here"; return; }
+    try { await dl.save({ filename, data: new Blob([text], { type: "text/csv" }) }); } catch {}
+  }
+  $("dlSummary").addEventListener("click", () => {
+    const rows = [["ticker", "name", "fy_new", "fy_old", "paragraphs_old", "paragraphs_new", "words_old", "words_new", "unchanged", "minor", "modified", "new", "removed", "url_new", "url_old"]];
+    for (const c of state.companies.values()) for (const p of c.pairs || []) if (p.status === "ok") {
+      const s = p.stats || {};
+      rows.push([c.ticker, c.name, p.fy_new, p.fy_old, p.paragraphs_old, p.paragraphs_new, p.words_old, p.words_new, s.unchanged, s.minor, s.modified, s.new, s.removed, p.url_new, p.url_old]);
+    }
+    save("risk-delta-summary.csv", toCsv(rows));
+  });
+  $("dlCompany").addEventListener("click", () => {
+    if (!state.detail) return;
+    const sc = (state.scores && state.scores.items) || {};
+    const rows = [["change_id", "fy_new", "fy_old", "kind", "section", "old", "new", "similarity", "category", "materiality", "summary", "quote_verified"]];
+    for (const p of state.detail.pairs || []) for (const it of p.items || []) {
+      const a = sc[it.id] || {};
+      rows.push([it.id, p.fy_new, p.fy_old, it.kind, it.section, it.old, it.new, it.similarity, a.category, a.materiality, a.summary, a.quote_verified]);
+    }
+    save(`risk-delta-${state.sel}.csv`, toCsv(rows));
+  });
+})();
+</script>
