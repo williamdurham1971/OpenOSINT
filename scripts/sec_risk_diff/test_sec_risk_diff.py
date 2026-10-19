@@ -147,7 +147,7 @@ class AssessTest(unittest.TestCase):
                 return _FakeStream("Here you go:\n" + reply)
 
         fake = types.ModuleType("anthropic")
-        fake.Anthropic = lambda: types.SimpleNamespace(messages=FakeMessages())
+        fake.Anthropic = lambda **kw: types.SimpleNamespace(messages=FakeMessages())
         with mock.patch.dict(sys.modules, {"anthropic": fake}):
             usage = srd.assess_changes(changes, "claude-sonnet-5-5", "Turkish")
 
