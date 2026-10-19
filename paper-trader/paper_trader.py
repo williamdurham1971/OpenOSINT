@@ -30,9 +30,10 @@ def norm_cdf(x):
 
 
 def fee_per_share(p, rate, exp):
-    """Taker fee in $/share. rate=0.25, exp=2 gives the ~1.56% of notional peak at 50c
-    reported for 15m crypto markets. VERIFY against Polymarket docs before trusting."""
-    return p * rate * (p * (1 - p)) ** exp
+    """Taker fee in $/share = rate * (p*(1-p))**exp. Polymarket docs: fee = C * feeRate * p * (1-p),
+    feeRate 0.07 for crypto; the market's feeSchedule says rate 0.07, exponent 1, takerOnly.
+    That is 1.75c/share (3.5% of notional) at 50c and 1.12c (1.4%) at 80c. Makers pay no fee."""
+    return rate * (p * (1 - p)) ** exp
 
 
 def twap_var(sigma, tau, twap_len=60.0):
@@ -206,12 +207,13 @@ class State:
 
     def push(self, ts, px):
         if self.hist_ts and ts <= self.hist_ts[-1]:
-            return
+            return False
         self.price, self.ts = px, ts
         self.vol.update(ts, px)
         self.hist_ts.append(ts); self.hist_px.append(px)
         if len(self.hist_ts) > 4000:
             del self.hist_ts[:1000]; del self.hist_px[:1000]
+        return True
 
     def at(self, t):
         """First sample at/after t (None if not yet seen)."""
@@ -224,16 +226,28 @@ class State:
         return sum(seg) / len(seg) if seg else None
 
 
-async def run_feed(name, state, lag_sink=None):
+def boundary_value(state, B, lookback=60.0):
+    """Our estimate of Polymarket's official price at boundary B: mean of the feed over [B-lookback, B).
+    (cryptoMarketConfig says twapEnabled, twapLookbackSeconds=60; `verify` tests this against Gamma's
+    official priceToBeat/finalPrice.) None until the feed covers the whole lookback and has reached B."""
+    if not state.hist_ts or state.hist_ts[0] > B - lookback + 5 or state.hist_ts[-1] < B:
+        return None
+    return state.twap(B - lookback, B - 1e-6)
+
+
+async def run_feed(name, state, lag_sink=None, log_path=None):
     """Keep `state` fed. `lag_sink` collects (receive time - source timestamp) in seconds,
     skipping the snapshot burst Chainlink sends on connect."""
     backoff = 1
+    logf = open(log_path, "a", buffering=1) if log_path else None
     async with aiohttp.ClientSession() as s:
         while True:
             t_conn = time.time()
             try:
                 async for ts, px in FEEDS[name](s):
-                    state.push(ts, px); backoff = 1
+                    if state.push(ts, px) and logf:
+                        logf.write(f"{ts:.3f},{px}\n")
+                    backoff = 1
                     if lag_sink is not None and ts > t_conn:
                         lag_sink.append(time.time() - ts)
             except Exception as e:
@@ -420,26 +434,30 @@ async def trade_window(args, state, session, start, records, tickcsv):
     tokens, meta = await fetch_market(session, start)
     if not tokens:
         print(f"[{start}] market not found", file=sys.stderr); return
+    strike = None
     for _ in range(60):                       # feed can lag the wall clock by a few seconds
-        strike = state.at(start)
+        strike = boundary_value(state, start)
         if strike is not None:
             break
         await asyncio.sleep(0.5)
-    if strike is None or not state.hist_ts or state.hist_ts[0] > start + 2:
+    if strike is None:
         print(f"[{start}] no feed history covering the window start, skipping")
-        await asyncio.sleep(max(0, end - time.time())); return
+        await asyncio.sleep(max(0, end - time.time())); return None
+    fs = meta.get("feeSchedule") or {}
+    fee_rate, fee_exp = float(fs.get("rate", args.fee_rate)), float(fs.get("exponent", args.fee_exp))
     tick = float(meta.get("orderPriceMinTickSize") or 0.01)
     taker_on, maker_on = args.mode in ("taker", "both"), args.mode in ("maker", "both")
     maker = MakerSim(args, tick) if maker_on else None
     entered, tick_at = False, 0.0
-    print(f"[{start}] {meta['question']}  strike={strike:.2f}  tick={tick}  mode={args.mode}")
+    calc = dict(at=0.0, sigma=None, pu=None, fair=None)
+    print(f"[{start}] {meta['question']}  strike~{strike:.2f}  tick={tick}  fee={fee_rate}*(p(1-p))^{fee_exp}  mode={args.mode}")
 
     async def taker_fill(books, side, fair, seen_ask, edge, tau):
         await asyncio.sleep(args.latency_ms / 1000)          # our order reaches the book late
         filled, avg = books[side].fill_buy(args.size)
         if filled < 1:
             print(f"[{start}] taker {side} no fill after latency (ask gone)"); return
-        fee = fee_per_share(avg, args.fee_rate, args.fee_exp) * filled
+        fee = fee_per_share(avg, fee_rate, fee_exp) * filled
         records.append(dict(mode="taker", window=start, side=side, shares=filled, seen_ask=seen_ask, fill=avg,
                             fee=fee, fair=fair, edge=edge, tau=tau, btc=state.price, strike=strike, t=time.time()))
         print(f"[{start}] PAPER TAKER BUY {side} {filled:.0f}@{avg:.3f} fair={fair:.3f} edge={edge:+.3f} tau={tau:.0f}s")
@@ -449,11 +467,15 @@ async def trade_window(args, state, session, start, records, tickcsv):
         if state.price is None or now > end:
             return
         tau = end - now
-        sigma = state.vol.sigma()
+        if now - calc["at"] >= 0.1:        # vol/fair value barely move in 100ms; recomputing per message made us a slow consumer
+            sigma = state.vol.sigma()
+            if sigma is None:
+                return
+            pu = fair_up(state.price, strike, sigma * args.vol_mult, tau)
+            calc.update(at=now, sigma=sigma, pu=pu, fair={"up": pu, "down": 1 - pu})
+        sigma, pu, fair = calc["sigma"], calc["pu"], calc["fair"]
         if sigma is None:
             return
-        pu = fair_up(state.price, strike, sigma * args.vol_mult, tau)
-        fair = {"up": pu, "down": 1 - pu}
         if maker:
             maker.on_event(now, tau, kind, tr, books, fair, state.price)
         if kind != "book" or tau <= args.stop_before:
@@ -468,7 +490,7 @@ async def trade_window(args, state, session, start, records, tickcsv):
                 ask = books[side].best_ask()
                 if ask is None:
                     continue
-                edge = fair[side] - ask - fee_per_share(ask, args.fee_rate, args.fee_exp)
+                edge = fair[side] - ask - fee_per_share(ask, fee_rate, fee_exp)
                 if edge >= args.min_edge and args.min_p <= ask <= args.max_p:
                     entered = True
                     asyncio.create_task(taker_fill(books, side, fair[side], ask, edge, tau))
@@ -484,50 +506,102 @@ async def trade_window(args, state, session, start, records, tickcsv):
         for r in recs:
             print(f"[{start}] MAKER {r['side']} {r['shares']:.0f}/{r['size']:.0f} @ {r['fill']:.3f} "
                   f"fair@place={r['fair']:.3f} queue={r['queue_init']:.0f} ({r['reason']})")
+    return strike
 
 
-def settle(state, start, records, outfile):
+UA = {"User-Agent": "Mozilla/5.0"}
+
+
+async def official_result(session, start):
+    """(outcome 'up'/'down' or None, priceToBeat, finalPrice) for window `start` from Gamma.
+    The outcome appears ~1-2 min after the close; the two prices can take ~20 min."""
+    async with session.get("https://gamma-api.polymarket.com/events", params={"slug": f"btc-updown-15m-{start}"},
+                           headers=UA) as r:
+        if r.status != 200:
+            return None, None, None
+        d = await r.json()
+    if not d:
+        return None, None, None
+    e = d[0]
+    md = e.get("eventMetadata") or {}
+    out, m = None, (e.get("markets") or [{}])[0]
+    try:
+        prices = [float(x) for x in json.loads(m["outcomePrices"])]
+        outs = [o.lower() for o in json.loads(m["outcomes"])]
+        if m.get("closed") and max(prices) >= 0.999 and min(prices) <= 0.001:
+            out = outs[prices.index(max(prices))]
+    except (KeyError, ValueError, TypeError):
+        pass
+    return out, md.get("priceToBeat"), md.get("finalPrice")
+
+
+async def settle(state, session, start, records, strike_proxy):
+    """Settle with Polymarket's official result; keep our own estimate alongside for `verify`."""
     end = start + WINDOW
-    strike = state.at(start)
-    final = state.twap(end - 60, end)       # proxy for Chainlink 60s TWAP stream
-    if final is None or strike is None:
-        return
-    up = final >= strike
-    with open(outfile, "a") as f:
+    await asyncio.sleep(max(0, end + 2 - time.time()))
+    final_proxy = boundary_value(state, end)
+    proxy = None
+    if final_proxy is not None and strike_proxy is not None:
+        proxy = "up" if final_proxy >= strike_proxy else "down"
+    outcome = beat = fin = None
+    for _ in range(40):                                  # resolution usually lands 1-2 min after the close
+        try:
+            outcome, beat, fin = await official_result(session, start)
+        except Exception as e:
+            print(f"[{start}] gamma lookup failed: {type(e).__name__}", file=sys.stderr)
+        if outcome:
+            break
+        await asyncio.sleep(15)
+    result, src = (outcome, "gamma") if outcome else (proxy, "proxy")
+    with open(OUT / "windows.jsonl", "a") as f:
+        f.write(json.dumps(dict(window=start, strike_proxy=strike_proxy, final_proxy=final_proxy,
+                                outcome_proxy=proxy, outcome_official=outcome,
+                                price_to_beat=beat, final_price=fin)) + "\n")
+    if outcome and proxy and outcome != proxy:
+        print(f"[{start}] PROXY MISMATCH: we said {proxy} (final {final_proxy:.2f} vs strike {strike_proxy:.2f}), "
+              f"Polymarket resolved {outcome}")
+    if result is None:
+        print(f"[{start}] could not determine an outcome; trades left unsettled"); return
+    with open(OUT / "trades.jsonl", "a") as f:
         for r in records:
-            won = (r["side"] == "up") == up
-            r.update(final=final, outcome="up" if up else "down",
+            won = (r["side"] == "up") == (result == "up")
+            r.update(final=final_proxy, outcome=result, outcome_source=src, outcome_proxy=proxy,
                      pnl=r["shares"] * (1.0 if won else 0.0) - r["shares"] * r["fill"] - r["fee"])
             f.write(json.dumps(r) + "\n")
             if r["shares"] > 0:
-                print(f"[{start}] SETTLED {r['mode']} {r['side']} -> {r['outcome']}  pnl=${r['pnl']:+.2f}")
+                print(f"[{start}] SETTLED ({src}) {r['mode']} {r['side']} -> {result}  pnl=${r['pnl']:+.2f}")
 
 
 async def run(args):
     OUT.mkdir(exist_ok=True)
     state = State()
-    asyncio.create_task(run_feed(args.feed, state))
+    asyncio.create_task(run_feed(args.feed, state, log_path=OUT / f"feed_{args.feed}.csv"))
     tickf = open(OUT / "ticks.csv", "a", newline="")
     tickcsv = csv.writer(tickf)
+    pending = []
     async with aiohttp.ClientSession() as session:
         while True:
             now = time.time()
-            start = int(now - now % WINDOW) + WINDOW        # always begin at the next boundary
-            if start - now < 90:                              # need ~60s of ticks to estimate vol
+            cand = int(now - now % WINDOW)
+            start = cand if now - cand < 3 else cand + WINDOW   # a boundary that just passed is still ours
+            if state.vol.sigma() is None and start - now < 90:    # first window: need ~60s of ticks to estimate vol
                 start += WINDOW
             if args.max_windows is not None and args.max_windows <= 0:
                 break
             await asyncio.sleep(max(0, start - now))
-            records = []
+            records, strike = [], None
             try:
-                await trade_window(args, state, session, start, records, tickcsv)
+                strike = await trade_window(args, state, session, start, records, tickcsv)
             except Exception as e:
                 print(f"[{start}] error {type(e).__name__}: {e}", file=sys.stderr)
             tickf.flush()
-            await asyncio.sleep(max(0, start + WINDOW - time.time()) + 2)
-            settle(state, start, records, OUT / "trades.jsonl")
+            if strike is not None:                           # settle in the background; the next window starts on time
+                pending.append(asyncio.create_task(settle(state, session, start, records, strike)))
             if args.max_windows is not None:
                 args.max_windows -= 1
+        if pending:
+            print("waiting for official results ...")
+            await asyncio.gather(*pending)
 
 
 # ---------- latency measurement ----------
@@ -624,7 +698,7 @@ async def measure(args):
     states = {f: State() for f in feeds}
     stale = {f: [] for f in feeds}
     for f in feeds:
-        asyncio.create_task(run_feed(f, states[f], stale[f]))
+        asyncio.create_task(run_feed(f, states[f], stale[f], log_path=OUT / f"feed_{f}.csv"))
     stop_at = time.time() + args.minutes * 60
     mid = {"v": None, "win": None}
     clob_lag, trades_seen, rows = [], [], []
@@ -711,6 +785,124 @@ def report(_):
         print(f"\nNOTE: n={len(filled)} filled trades is far too small to conclude anything (aim for several hundred windows).")
 
 
+
+# ---------- verify: our boundary price vs Polymarket's official one ----------
+
+class Series:
+    def __init__(self, ts, px):
+        self.ts, self.px = ts, px
+
+    def mean(self, a, b, min_n=20):
+        i, j = bisect.bisect_left(self.ts, a), bisect.bisect_left(self.ts, b)
+        return sum(self.px[i:j]) / (j - i) if j - i >= min_n else None
+
+    def last_before(self, B, max_gap=5.0):
+        i = bisect.bisect_left(self.ts, B) - 1
+        return self.px[i] if i >= 0 and B - self.ts[i] <= max_gap else None
+
+    def first_at(self, B, max_gap=5.0):
+        i = bisect.bisect_left(self.ts, B)
+        return self.px[i] if i < len(self.ts) and self.ts[i] - B <= max_gap else None
+
+
+CANDIDATES = {
+    "spot just before B":  lambda s, B: s.last_before(B),
+    "spot just after B":   lambda s, B: s.first_at(B),
+    "mean [B-60, B)":      lambda s, B: s.mean(B - 60, B),
+    "mean [B-30, B+30)":   lambda s, B: s.mean(B - 30, B + 30),
+    "mean [B, B+60)":      lambda s, B: s.mean(B, B + 60),
+    "mean [B-120, B)":     lambda s, B: s.mean(B - 120, B),
+}
+
+
+def load_feed(path):
+    pts = {}
+    for line in open(path):
+        a = line.strip().split(",")
+        if len(a) == 2:
+            try:
+                pts[float(a[0])] = float(a[1])
+            except ValueError:
+                pass
+    ts = sorted(pts)
+    return ts, [pts[t] for t in ts]
+
+
+async def gamma_event(session, start):
+    async with session.get("https://gamma-api.polymarket.com/events", params={"slug": f"btc-updown-15m-{start}"},
+                           headers=UA) as r:
+        d = await r.json() if r.status == 200 else []
+    return d[0] if d else None
+
+
+async def verify(_):
+    OUT.mkdir(exist_ok=True)
+    wf = OUT / "windows.jsonl"
+    if wf.exists():
+        rows = [json.loads(l) for l in wf.open()]
+        both = [r for r in rows if r["outcome_proxy"] and r["outcome_official"]]
+        bad = [r for r in both if r["outcome_proxy"] != r["outcome_official"]]
+        print(f"A) live trader: {len(rows)} windows logged, {len(both)} with proxy and official outcome, "
+              f"{len(bad)} mismatches ({len(bad)/len(both):.0%})" if both else f"A) live trader: {len(rows)} windows logged, none comparable yet")
+        for r in bad:
+            print(f"   MISMATCH {r['window']}: proxy {r['outcome_proxy']} (final-strike={r['final_proxy']-r['strike_proxy']:+.2f}) vs official {r['outcome_official']}")
+    path = OUT / "feed_chainlink.csv"
+    if not path.exists():
+        print("B) no data/feed_chainlink.csv yet: run `run` or `measure` for a while first"); return
+    ts, px = load_feed(path)
+    ser = Series(ts, px)
+    B0, B1 = int(math.ceil((ts[0] + 120) / WINDOW)) * WINDOW, int((ts[-1] - 60) // WINDOW) * WINDOW
+    Bs = list(range(B0, B1 + 1, WINDOW))
+    if not Bs:
+        print(f"B) feed log covers only {(ts[-1]-ts[0])/60:.0f} min; needs a full 15m boundary plus 2 min either side"); return
+    async with aiohttp.ClientSession() as session:
+        ev = {s_: await gamma_event(session, s_) for s_ in range(B0 - WINDOW, B1 + 1, WINDOW)}
+    official = {}
+    for B in Bs:
+        v = ((ev.get(B) or {}).get("eventMetadata") or {}).get("priceToBeat")
+        if v is None:
+            v = ((ev.get(B - WINDOW) or {}).get("eventMetadata") or {}).get("finalPrice")
+        if v is not None:
+            official[B] = float(v)
+    print(f"\nB) feed log covers {len(Bs)} boundaries; official Polymarket value available for {len(official)} "
+          f"(finalPrice/priceToBeat appear ~20 min after the close)")
+    if not official:
+        return
+    print(f"   error = candidate - official, in $ (BTC ~ ${px[-1]:,.0f}); mean = constant basis, std = real definition error")
+    print(f"   {'candidate':22s} {'n':>3s} {'mean':>8s} {'std':>8s} {'MAE':>8s} {'max|e|':>8s}")
+    best = None
+    vals = {}
+    for name, f in CANDIDATES.items():
+        errs = {B: f(ser, B) - official[B] for B in official if f(ser, B) is not None}
+        vals[name] = {B: f(ser, B) for B in errs}
+        if len(errs) < 1:
+            print(f"   {name:22s}   0   (no coverage)"); continue
+        e = list(errs.values())
+        sd = statistics.pstdev(e) if len(e) > 1 else float("nan")
+        mae = statistics.mean(abs(x) for x in e)
+        print(f"   {name:22s} {len(e):3d} {statistics.mean(e):+8.2f} {sd:8.2f} {mae:8.2f} {max(abs(x) for x in e):8.2f}")
+        if best is None or mae < best[1]:
+            best = (name, mae)
+    if best:
+        print(f"   best by MAE: {best[0]}   (the model uses `mean [B-60, B)`)")
+    # outcome agreement on consecutive official boundaries
+    pairs = [(B, B + WINDOW) for B in official if B + WINDOW in official]
+    if pairs:
+        print(f"\n   outcome agreement over {len(pairs)} windows with both boundaries official:")
+        for name in CANDIDATES:
+            ok = tot = 0
+            for a, b in pairs:
+                va, vb = vals[name].get(a), vals[name].get(b)
+                if va is None or vb is None:
+                    continue
+                tot += 1; ok += ((vb >= va) == (official[b] >= official[a]))
+            if tot:
+                print(f"   {name:22s} {ok}/{tot}")
+    if len(official) < 12:
+        print("\nNOTE: few boundaries; definitions that differ by less than the price noise cannot be told apart yet. "
+              "Keep `run`/`measure` going for hours to separate them.")
+
+
 # ---------- self-test ----------
 
 def selftest():
@@ -719,7 +911,7 @@ def selftest():
     assert fair_up(101, 100, 1e-4, 300) > 0.9 and fair_up(99, 100, 1e-4, 300) < 0.1
     assert fair_up(100.01, 100, 1e-4, 0) == 1.0 and fair_up(99.99, 100, 1e-4, 0) == 0.0
     assert abs(twap_var(1, 60) - twap_var(1, 60 - 1e-9)) < 1e-6          # continuity at 60s
-    assert abs(fee_per_share(0.5, 0.25, 2) / 0.5 - 0.015625) < 1e-9       # 1.56% of notional at 50c
+    assert abs(fee_per_share(0.5, 0.07, 1) - 0.0175) < 1e-12 and abs(fee_per_share(0.8, 0.07, 1) - 0.0112) < 1e-12   # docs table: 100 sh = $1.75 / $1.12
     b = Book(); b.snapshot([{"price": "0.4", "size": "10"}], [{"price": "0.5", "size": "10"}, {"price": "0.6", "size": "10"}])
     assert b.best_ask() == 0.5 and b.fill_buy(15) == (15, (10 * 0.5 + 5 * 0.6) / 15) and abs(b.mid() - 0.45) < 1e-12
     b.level("SELL", 0.5, 0); assert b.best_ask() == 0.6
@@ -773,6 +965,16 @@ def selftest():
     assert o2.state == "done" and o2.reason == "cancelled" and abs(o2.filled - 3) < 1e-9
     rec = ms2.records(0, 1.0)[0]
     assert rec["mode"] == "maker" and rec["shares"] == 3 and rec["fee"] == 0
+    # verify helpers + boundary_value on a synthetic 1 Hz ramp: price == timestamp
+    st = State()
+    for i in range(1000, 1300):
+        st.push(float(i), float(i))
+    assert boundary_value(st, 1200) == statistics.mean(range(1140, 1200))        # mean over [1140, 1200)
+    assert boundary_value(st, 1500) is None and boundary_value(st, 1010) is None  # not reached / not covered
+    ser = Series([float(i) for i in range(1000, 1300)], [float(i) for i in range(1000, 1300)])
+    assert ser.last_before(1200) == 1199 and ser.first_at(1200) == 1200
+    assert CANDIDATES["mean [B-60, B)"](ser, 1200) == statistics.mean(range(1140, 1200))
+    assert CANDIDATES["mean [B, B+60)"](ser, 1290) is None                       # no coverage after the log ends
     print("selftest OK")
 
 
@@ -788,7 +990,8 @@ if __name__ == "__main__":
     r.add_argument("--latency-ms", type=int, default=400, help="simulated order/cancel latency (see `measure` for a real floor)")
     r.add_argument("--stop-before", type=float, default=15, help="no entries / cancel resting orders in last N seconds")
     r.add_argument("--vol-mult", type=float, default=1.0, help="scale model vol (stress test)")
-    r.add_argument("--fee-rate", type=float, default=0.25); r.add_argument("--fee-exp", type=float, default=2)
+    r.add_argument("--fee-rate", type=float, default=0.07); r.add_argument("--fee-exp", type=float, default=1,
+                   help="fallback only: the market's own feeSchedule from Gamma is used when present")
     r.add_argument("--maker-min-edge", type=float, default=0.02, help="maker: required fair - limit price, $/share (no fee)")
     r.add_argument("--maker-cancel-edge", type=float, default=0.0, help="cancel when fair - price falls below this")
     r.add_argument("--maker-max-orders", type=int, default=3, help="max orders per window while unfilled")
@@ -801,10 +1004,11 @@ if __name__ == "__main__":
     m.add_argument("--bin", type=float, default=0.5, help="sampling bin, seconds")
     m.add_argument("--horizon", type=float, default=1.0, help="price-change horizon, seconds")
     m.add_argument("--max-lag", type=float, default=20, help="largest lag searched, seconds")
-    sp.add_parser("report"); sp.add_parser("selftest")
+    sp.add_parser("report"); sp.add_parser("selftest"); sp.add_parser("verify")
     a = ap.parse_args()
     if a.cmd == "selftest": selftest()
     elif a.cmd == "report": report(a)
+    elif a.cmd == "verify": asyncio.run(verify(a))
     else:
         try: asyncio.run(run(a) if a.cmd == "run" else measure(a))
         except KeyboardInterrupt: pass
