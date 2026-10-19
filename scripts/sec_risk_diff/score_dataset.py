@@ -1,6 +1,6 @@
 """Add Claude's assessment to every change in dataset/changes.jsonl.
 
-  export ANTHROPIC_API_KEY=...
+  export RISK_DELTA_API_KEY=...   # or ANTHROPIC_API_KEY
   python score_dataset.py --max-usd 40            # stops before passing the budget
   python score_dataset.py --tickers AAPL --max-usd 2
 

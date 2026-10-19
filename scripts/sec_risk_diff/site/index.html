@@ -3,7 +3,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap">
 <style>
-/* Layout: a blackline filing. Ledger of companies on the left, the redlined section on the right; one column on phones. */
+/* Layout: a blackline filing. Signals and a theme matrix on top; a ledger of companies on the left and the redlined section on the right; one column on phones. */
 :root {
   --paper: #f7f8fa;
   --sheet: #ffffff;
@@ -14,14 +14,16 @@
   --rule-2: #c9cfd9;
   --accent: #1f3a5f;            /* filing-cover navy */
   --accent-soft: #e8eef6;
-  --mod: #b7791f;               /* modified paragraph */
-  --ins: #2b6cb0;               /* inserted text / new paragraph */
-  --del: #c53030;               /* deleted text / removed paragraph */
+  --mod: #b7791f;               /* rewritten paragraph */
+  --ins: #2b6cb0;               /* inserted text / new paragraph / theme rising */
+  --del: #c53030;               /* deleted text / removed paragraph / theme fading */
   --ins-bg: #e6f0fa;
   --del-bg: #fbeaea;
   --ok: #2f7a4a;
   --warn: #9a6a12;
   --bad: #a83232;
+  --good: #0ca30c;              /* status: positive signal (always with icon + label) */
+  --serious: #ec835a;           /* status: attention signal (always with icon + label) */
   --f-display: "Spectral", "Iowan Old Style", Georgia, serif;
   --f-ui: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
   --f-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
@@ -32,14 +34,14 @@
     --paper: #14181f; --sheet: #1b2029; --ink: #e6e9ef; --ink-2: #b1b9c6; --ink-3: #828b99;
     --rule: #2a313d; --rule-2: #39414f; --accent: #9dbbe3; --accent-soft: #223047;
     --mod: #b5812a; --ins: #4a8fd6; --del: #e05252; --ins-bg: #1a2c42; --del-bg: #3a1f22;
-    --ok: #6cc08a; --warn: #d6aa55; --bad: #ec7d7d; color-scheme: dark;
+    --ok: #6cc08a; --warn: #d6aa55; --bad: #ec7d7d; --good: #0ca30c; --serious: #ec835a; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --paper: #14181f; --sheet: #1b2029; --ink: #e6e9ef; --ink-2: #b1b9c6; --ink-3: #828b99;
   --rule: #2a313d; --rule-2: #39414f; --accent: #9dbbe3; --accent-soft: #223047;
   --mod: #b5812a; --ins: #4a8fd6; --del: #e05252; --ins-bg: #1a2c42; --del-bg: #3a1f22;
-  --ok: #6cc08a; --warn: #d6aa55; --bad: #ec7d7d; color-scheme: dark;
+  --ok: #6cc08a; --warn: #d6aa55; --bad: #ec7d7d; --good: #0ca30c; --serious: #ec835a; color-scheme: dark;
 }
 
 * { box-sizing: border-box; }
@@ -52,6 +54,9 @@ body {
 a { color: var(--accent); }
 a:focus-visible, button:focus-visible, input:focus-visible, tr:focus-visible { outline: 2px solid var(--ins); outline-offset: 2px; }
 .mono, .num { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+h2.sec { font: 600 24px/1.2 var(--f-display); margin: 0; }
+.sechead { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px 16px; border-bottom: 1px solid var(--rule-2); padding-bottom: 8px; margin-bottom: 14px; }
+.sechead p { margin: 0; font-size: 13px; color: var(--ink-3); max-width: 72ch; }
 
 /* Masthead */
 .mast { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: baseline; justify-content: space-between;
@@ -68,11 +73,59 @@ a:focus-visible, button:focus-visible, input:focus-visible, tr:focus-visible { o
 .intro h1 del { color: var(--del); text-decoration-thickness: 2px; }
 .intro h1 ins { color: var(--ins); text-decoration: underline double; text-underline-offset: 6px; }
 .intro p { margin: 0; max-width: 62ch; color: var(--ink-2); font-size: 16px; }
-.facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--rule-2); }
+.facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--rule-2); margin: 0; }
 .facts div { padding: 12px 0 10px; border-bottom: 1px solid var(--rule); }
 .facts dt { font: 500 11px var(--f-ui); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
 .facts dd { margin: 2px 0 0; font: 500 24px var(--f-mono); font-variant-numeric: tabular-nums; }
 .facts dd small { font-size: 12px; color: var(--ink-3); font-weight: 400; }
+
+/* Signals */
+.sigwrap { padding-block: 8px 28px; }
+.signals { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; align-items: start; }
+.sig-col { display: grid; gap: 10px; min-width: 0; align-content: start; }
+.sig-col h3 { font: 500 11px var(--f-ui); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); margin: 6px 0 0; }
+.sig { background: var(--sheet); border: 1px solid var(--rule); border-left: 4px solid var(--ink-3); border-radius: var(--r); padding: 12px 14px; display: grid; gap: 7px; min-width: 0; }
+.sig.attention { border-left-color: var(--serious); }
+.sig.positive { border-left-color: var(--good); }
+.sig h4 { margin: 0; font: 600 15px/1.35 var(--f-ui); text-wrap: balance; }
+.sig-top { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.sev { display: inline-flex; align-items: center; gap: 5px; font: 600 11px var(--f-ui); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); }
+.sev-i { font-style: normal; font-size: 11px; }
+.sev-i.attention { color: var(--serious); } .sev-i.positive { color: var(--good); } .sev-i.info { color: var(--ink-3); }
+.tag { font: 500 11px var(--f-mono); color: var(--ink-3); border: 1px solid var(--rule-2); border-radius: 3px; padding: 1px 6px; white-space: nowrap; }
+.tag.src-news { color: var(--accent); border-color: var(--accent); }
+.sig-detail { margin: 0; font-size: 13px; color: var(--ink-2); }
+.ev { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip-s { font: 12px var(--f-ui); color: var(--ink-2); background: var(--paper); border-radius: 3px; padding: 2px 7px; max-width: 100%; overflow-wrap: anywhere; }
+.chip-s.link { color: var(--accent); background: transparent; border: 1px solid var(--rule-2); cursor: pointer; }
+.chip-s.link:hover { background: var(--accent-soft); }
+.reading { background: var(--paper); border-radius: 4px; padding: 8px 10px; display: grid; gap: 4px; }
+.reading .lab { font: 500 11px var(--f-ui); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); }
+.reading p { margin: 0; font-size: 13px; }
+.reading p.caution { color: var(--ink-3); font-style: italic; }
+.news { margin: 0; padding: 0; list-style: none; display: grid; gap: 5px; font-size: 13px; }
+.news li { display: grid; gap: 1px; }
+.news a { overflow-wrap: anywhere; }
+.nmeta { font-size: 11px; color: var(--ink-3); font-family: var(--f-mono); }
+.nwhy { font-size: 12px; color: var(--ink-2); }
+.more { font: 500 13px var(--f-ui); background: none; border: 0; color: var(--accent); cursor: pointer; padding: 0; justify-self: start; }
+
+/* Theme matrix */
+.matrix-wrap { overflow-x: auto; margin-top: 24px; background: var(--sheet); border: 1px solid var(--rule); border-radius: var(--r); }
+.matrix-wrap .pane-head { border-bottom: 1px solid var(--rule); }
+table.matrix { width: 100%; border-collapse: collapse; font-size: 13px; }
+.matrix th { text-align: left; font: 500 11px var(--f-ui); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); padding: 8px 12px; border-bottom: 1px solid var(--rule); white-space: nowrap; }
+.matrix td { padding: 7px 12px; border-bottom: 1px solid var(--rule); vertical-align: middle; }
+.matrix tr:last-child td { border-bottom: 0; }
+.th-row { color: var(--ink); white-space: nowrap; }
+.mcell { min-width: 150px; }
+.mcell.thin { opacity: .5; }
+.cellbar { position: relative; height: 10px; background: var(--rule); border-radius: 2px; overflow: hidden; }
+.cellbar::after { content: ""; position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: var(--rule-2); }
+.cellbar i { position: absolute; top: 0; bottom: 0; display: block; }
+.cellbar i.inc { left: 50%; background: var(--ins); }
+.cellbar i.dec { right: 50%; background: var(--del); }
+.mcount { font-size: 11px; color: var(--ink-3); display: block; margin-top: 3px; }
 
 /* Two-pane workspace */
 .work { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 24px; align-items: start; }
@@ -95,6 +148,7 @@ table.ledger { width: 100%; border-collapse: collapse; font-size: 14px; }
 .ledger tbody tr:hover { background: var(--accent-soft); }
 .ledger tbody tr[aria-selected="true"] { background: var(--accent-soft); box-shadow: inset 3px 0 0 var(--accent); }
 .tk { font: 500 13px var(--f-mono); }
+.tk .mark { color: var(--serious); margin-left: 5px; font-size: 10px; }
 .co { color: var(--ink-2); font-size: 13px; display: block; max-width: 22ch; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .bar { display: flex; gap: 2px; height: 12px; width: 140px; background: var(--rule); border-radius: 3px; overflow: hidden; }
 .bar i { display: block; height: 100%; }
@@ -111,6 +165,11 @@ table.ledger { width: 100%; border-collapse: collapse; font-size: 14px; }
 .vhead { padding: 18px 20px 12px; border-bottom: 1px solid var(--rule); display: grid; gap: 10px; }
 .vhead h3 { margin: 0; font: 600 22px/1.2 var(--f-display); text-wrap: balance; }
 .vhead .sub { font-size: 13px; color: var(--ink-2); display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.vhead .sub .warn { font-style: italic; color: var(--ink-3); flex-basis: 100%; }
+.vsigs { display: grid; gap: 2px; }
+.vsig { all: unset; display: flex; gap: 7px; align-items: baseline; font: 13px var(--f-ui); color: var(--ink-2); cursor: pointer; padding: 3px 6px; border-radius: 3px; }
+.vsig:hover { background: var(--accent-soft); color: var(--ink); }
+.vsig:focus-visible { outline: 2px solid var(--ins); }
 .tabs, .chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .tab, .chip { font: 500 13px var(--f-ui); color: var(--ink-2); background: transparent; border: 1px solid var(--rule-2); border-radius: 4px; padding: 5px 10px; cursor: pointer; }
 .tab[aria-pressed="true"], .chip[aria-pressed="true"] { background: var(--ink); color: var(--sheet); border-color: var(--ink); }
@@ -118,10 +177,13 @@ table.ledger { width: 100%; border-collapse: collapse; font-size: 14px; }
 .changes { max-height: 72vh; overflow-y: auto; padding: 6px 20px 20px; }
 .chg { padding: 16px 0; border-bottom: 1px solid var(--rule); display: grid; gap: 8px; }
 .chg:last-child { border-bottom: 0; }
+.chg.focused { box-shadow: inset 3px 0 0 var(--accent); padding-left: 12px; }
 .chg-top { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 12px; color: var(--ink-3); }
 .kind { font: 600 11px var(--f-ui); letter-spacing: .06em; text-transform: uppercase; padding: 1px 7px; border-radius: 3px; border: 1px solid currentColor; }
 .kind.new { color: var(--ins); } .kind.removed { color: var(--del); } .kind.modified { color: var(--mod); }
 .sect { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 46ch; }
+.ttag { font: 500 11px var(--f-ui); padding: 1px 6px; border-radius: 3px; border: 1px solid var(--rule-2); color: var(--ink-2); }
+.ttag.up { border-color: var(--ins); } .ttag.down { border-color: var(--del); }
 .para { font: 16px/1.62 var(--f-display); color: var(--ink); margin: 0; overflow-wrap: anywhere; }
 .para.new-p { border-left: 3px solid var(--ins); padding-left: 12px; }
 .para.removed-p { border-left: 3px solid var(--del); padding-left: 12px; color: var(--ink-2); text-decoration: line-through; text-decoration-color: color-mix(in srgb, var(--del) 60%, transparent); }
@@ -131,7 +193,6 @@ table.ledger { width: 100%; border-collapse: collapse; font-size: 14px; }
 .assess .m { font: 500 12px var(--f-mono); }
 .assess blockquote { margin: 0; font: italic 14px/1.5 var(--f-display); color: var(--ink-2); }
 .flag { color: var(--bad); font-size: 12px; }
-.more { font: 500 13px var(--f-ui); background: none; border: 0; color: var(--accent); cursor: pointer; padding: 0; justify-self: start; }
 
 /* Reference sections */
 .ref { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; padding-block: 48px 0; }
@@ -150,14 +211,14 @@ table.ledger { width: 100%; border-collapse: collapse; font-size: 14px; }
 .btn[disabled] { opacity: .45; cursor: not-allowed; }
 .btns { display: flex; flex-wrap: wrap; gap: 8px; }
 .foot { margin-top: 40px; font-size: 12px; color: var(--ink-3); border-top: 1px solid var(--rule); padding-top: 14px; }
-#tip { position: fixed; pointer-events: none; z-index: 20; background: var(--ink); color: var(--sheet); font: 12px/1.4 var(--f-ui); padding: 6px 9px; border-radius: 4px; max-width: 240px; }
+#tip { position: fixed; pointer-events: none; z-index: 20; background: var(--ink); color: var(--sheet); font: 12px/1.4 var(--f-ui); padding: 6px 9px; border-radius: 4px; max-width: 280px; white-space: pre-line; }
 
 @media (max-width: 900px) {
-  .intro, .work, .ref { grid-template-columns: minmax(0, 1fr); }
+  .intro, .work, .ref, .signals { grid-template-columns: minmax(0, 1fr); }
   .viewer { position: static; }
   .changes { max-height: none; }
 }
-@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
 </style>
 
 <div class="wrap">
@@ -169,14 +230,33 @@ table.ledger { width: 100%; border-collapse: collapse; font-size: 14px; }
   <section class="intro">
     <div>
       <h1>What large US companies <del>stopped</del> and <ins>started</ins> warning investors about.</h1>
-      <p>Every 10-K filed with the SEC has a Risk Factors section (Item 1A). This dataset compares it paragraph by paragraph against the prior year for 50 large US companies, three years back, and marks each paragraph as new, removed or rewritten. The diff is computed in code from the original EDGAR filings; a Claude assessment of each change is added on top.</p>
+      <p>Every 10-K filed with the SEC has a Risk Factors section (Item 1A). This dataset compares it paragraph by paragraph against the prior year for 50 large US companies, three years back, marks each paragraph as new, removed or rewritten, and tracks twenty risk themes across all of them. The diff and the theme counts are computed in code from the original EDGAR filings; news checks and readings are added by Claude and cite their sources.</p>
     </div>
     <dl class="facts">
       <div><dt>Companies processed</dt><dd><span id="fCompanies">–</span> <small id="fPlanned"></small></dd></div>
       <div><dt>Year-over-year comparisons</dt><dd id="fPairs">–</dd></div>
       <div><dt>Changed paragraphs</dt><dd id="fChanges">–</dd></div>
-      <div><dt>Assessed by Claude</dt><dd id="fScored">–</dd></div>
+      <div><dt>Signals · news-checked</dt><dd id="fSignals">–</dd></div>
     </dl>
+  </section>
+
+  <section class="sigwrap">
+    <div class="sechead">
+      <h2 class="sec">Signals</h2>
+      <p>Rule-based signals come from counting theme keywords in each company's section and comparing years. A signal marked “News checked” was tested against public news with web search; its sources are listed. Fading risk language can mean a risk eased or simply moved. Not investment advice.</p>
+    </div>
+    <div class="signals">
+      <div class="sig-col" id="sigMarket"><h3>Across the market</h3></div>
+      <div class="sig-col" id="sigCompany"><h3>Company alerts</h3></div>
+    </div>
+    <div class="matrix-wrap">
+      <div class="pane-head">
+        <h2>Theme matrix · companies writing more (blue, right) or less (red, left) than the year before</h2>
+        <span style="font-size:12px;color:var(--ink-3)">Hover a cell for the tickers</span>
+      </div>
+      <table class="matrix" id="matrix"></table>
+      <div class="empty" id="matrixEmpty">The matrix appears once the pattern analysis has run.</div>
+    </div>
   </section>
 
   <section class="work">
@@ -185,11 +265,11 @@ table.ledger { width: 100%; border-collapse: collapse; font-size: 14px; }
         <h2>Ledger · latest fiscal year</h2>
         <input type="search" id="q" placeholder="Filter ticker or name" aria-label="Filter companies">
       </div>
-      <div class="pane-head" style="border-bottom:1px solid var(--rule)">
+      <div class="pane-head">
         <div class="legend" aria-label="Bar legend">
           <span><i class="sw mod"></i>Rewritten</span><span><i class="sw ins"></i>New</span><span><i class="sw del"></i>Removed</span>
         </div>
-        <span style="font-size:12px;color:var(--ink-3)">Bar = share of the section's paragraphs</span>
+        <span style="font-size:12px;color:var(--ink-3)">Bar = share of the section's paragraphs · ▲ = attention signal</span>
       </div>
       <div class="ledger-scroll">
         <table class="ledger" id="ledger">
@@ -208,7 +288,8 @@ table.ledger { width: 100%; border-collapse: collapse; font-size: 14px; }
     <div class="pane viewer" id="viewer">
       <div class="vhead">
         <h3 id="vTitle">Select a company</h3>
-        <div class="sub" id="vSub">Pick a row in the ledger to read its redlined Risk Factors changes.</div>
+        <div class="sub" id="vSub">Pick a row in the ledger, or a company alert above, to read its redlined Risk Factors changes.</div>
+        <div class="vsigs" id="vSignals"></div>
         <div class="tabs" id="vTabs" role="group" aria-label="Fiscal year"></div>
         <div class="chips" id="vChips" role="group" aria-label="Change type"></div>
       </div>
@@ -221,12 +302,14 @@ table.ledger { width: 100%; border-collapse: collapse; font-size: 14px; }
       <h2>How it is built</h2>
       <ol>
         <li>The four most recent 10-K filings per company are downloaded from SEC EDGAR, at no more than five requests per second.</li>
-        <li>Item 1A is cut out of each filing. The table-of-contents entry, page numbers and hidden XBRL data are dropped.</li>
+        <li>Item 1A is cut out of each filing. The table-of-contents entry, page numbers and hidden XBRL data are dropped. Filers that print the section under a bare “Risk Factors” heading are located by that heading and flagged in the viewer.</li>
         <li>Each paragraph of the newer year is matched to its closest paragraph in the older year. Unmatched paragraphs are new or removed; matched ones that differ beyond numbers and dates are rewritten.</li>
-        <li>Only the changed paragraphs go to Claude, which assigns a category and a 1–5 materiality score and quotes the supporting text. Quotes are checked against the filing; a quote that is not in the text is flagged.</li>
+        <li>Twenty risk themes (tariffs, export controls, AI, cybersecurity, litigation, liquidity and so on) are counted by keyword in every section. A company signal fires when a theme appears, disappears or doubles; a market signal fires when at least a fifth of the comparable companies move the same way in the same fiscal year.</li>
+        <li>Claude checks signals against public news with web search and writes a short reading. Only URLs returned by the search are kept, and each reading states whether the link is confirmed or plausible.</li>
+        <li>Only changed paragraphs go to Claude for a category and a 1–5 materiality score; quotes are checked against the filing and flagged if absent.</li>
       </ol>
       <h2 style="margin-top:28px">Limits</h2>
-      <p>A paragraph that was split or merged shows up as one removal plus new text. Some filers place risk factors in an exhibit, and those years are marked as not extracted. Assessments are model judgements, not measurements, and nothing here is investment advice.</p>
+      <p>A paragraph that was split or merged shows up as one removal plus new text. Keyword counts miss paraphrase and catch unrelated uses of a word, so a signal is a prompt to read the paragraphs, not a finding. Two filers place risk factors in an exhibit and are marked as not extracted. Readings are model judgements, not measurements, and nothing here is investment advice.</p>
     </div>
     <div>
       <h2>Record layout</h2>
@@ -236,11 +319,15 @@ table.ledger { width: 100%; border-collapse: collapse; font-size: 14px; }
         <tr><td>section</td><td>Nearest risk heading above the paragraph</td></tr>
         <tr><td>old, new</td><td>Full paragraph text from each filing</td></tr>
         <tr><td>similarity</td><td>0–1 character similarity of a rewritten pair</td></tr>
+        <tr><td>themes</td><td>Theme ids whose keyword count rose or fell in this paragraph</td></tr>
         <tr><td>fy_new, fy_old</td><td>Fiscal period end years being compared</td></tr>
         <tr><td>url_new, url_old</td><td>Source documents on sec.gov</td></tr>
+        <tr><td>signal.scope</td><td>market (many filers) · company (one filer)</td></tr>
+        <tr><td>signal.kind</td><td>rising · fading · emerged · dropped · surged · rewrite</td></tr>
+        <tr><td>signal.severity</td><td>attention · positive · info</td></tr>
+        <tr><td>signal.news</td><td>Sources found by web search; url_verified is always true for kept items</td></tr>
         <tr><td>category</td><td>new_risk · expanded · softened · removed_risk · reworded · other</td></tr>
         <tr><td>materiality</td><td>1 (cosmetic) to 5 (could change an investor's view)</td></tr>
-        <tr><td>quote_verified</td><td>Whether the model's quote appears verbatim in the filing</td></tr>
       </table>
     </div>
   </section>
@@ -248,15 +335,16 @@ table.ledger { width: 100%; border-collapse: collapse; font-size: 14px; }
   <section class="access">
     <div>
       <h2>Sample and licensing</h2>
-      <p>The full dataset ships as JSON Lines and CSV. Licensing terms are being prepared; the summary below can be downloaded now.</p>
+      <p>The full dataset ships as JSON Lines and CSV. Licensing terms are being prepared; the summary, the signals and any selected company can be downloaded now.</p>
     </div>
     <div class="btns">
       <button class="btn" id="dlSummary" type="button">Download summary CSV</button>
+      <button class="btn ghost" id="dlSignals" type="button">Download signals JSON</button>
       <button class="btn ghost" id="dlCompany" type="button" disabled>Download selected company</button>
     </div>
   </section>
 
-  <p class="foot">Source: U.S. Securities and Exchange Commission, EDGAR full-text filings. Paragraph diff computed deterministically; assessments generated by Claude. Not investment advice.</p>
+  <p class="foot">Source: U.S. Securities and Exchange Commission, EDGAR full-text filings. Paragraph diff and theme counts computed deterministically; readings and assessments generated by Claude with cited sources. Not investment advice.</p>
 </div>
 <div id="tip" hidden></div>
 
@@ -265,29 +353,43 @@ table.ledger { width: 100%; border-collapse: collapse; font-size: 14px; }
   const $ = (id) => document.getElementById(id);
   const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
   const fmt = (n) => (n == null ? "–" : Number(n).toLocaleString("en-US"));
+  const SEV = { attention: ["▲", "Attention"], positive: ["✓", "Positive"], info: ["●", "Info"] };
+  const SEV_ORDER = { attention: 0, positive: 1, info: 2 };
+  const KIND_LABEL = { new: "New", removed: "Removed", modified: "Rewritten" };
 
-  const state = { companies: new Map(), meta: null, sort: "ticker", q: "", sel: null, detail: null, pairIdx: 0, kind: "all", scores: null, unsubScores: null, db: null, live: false };
+  const state = { companies: new Map(), meta: null, signals: new Map(), patterns: null, themeLabels: {},
+                  sort: "ticker", q: "", sel: null, detail: null, pairIdx: 0, kind: "all", focus: null,
+                  scores: null, unsubScores: null, db: null, live: false, showAllCo: false };
 
-  // ---- Data: the published file first, then the live database on top ----
-  fetch("data/companies.json").then((r) => r.ok ? r.json() : null).then((d) => {
-    if (!d) return;
-    d.companies.forEach((c) => { if (!state.companies.has(c.ticker)) state.companies.set(c.ticker, c); });
+  // ---- Data: published snapshot files first, then the live database on top ----
+  const snap = (path, fn) => fetch(path).then((r) => (r.ok ? r.json() : null)).then((d) => { if (d) fn(d); }).catch(() => {});
+  snap("data/companies.json", (d) => {
+    (d.companies || []).forEach((c) => { if (!state.companies.has(c.ticker)) state.companies.set(c.ticker, c); });
     if (!state.meta) state.meta = d.meta;
     render();
-  }).catch(() => {});
+  });
+  snap("data/signals.json", (d) => { (d.signals || []).forEach((s) => { if (!state.signals.has(s.id)) state.signals.set(s.id, s); }); render(); });
+  snap("data/patterns.json", (d) => { if (!state.patterns) setPatterns(d); render(); });
+
+  function setPatterns(p) { state.patterns = p; state.themeLabels = {}; (p.themes || []).forEach((t) => { state.themeLabels[t.id] = t.label; }); }
 
   (async () => {
     const db = await window.claude?.use?.("db");
     if (!db) return;
     state.db = db;
-    db.collection("companies").onSnapshot((snap) => {
-      snap.docs.forEach((d) => { const v = d.data(); if (v) state.companies.set(v.ticker, v); });
-      state.live = true; render();
-    }, () => {});
+    db.collection("companies").onSnapshot((s) => { s.docs.forEach((d) => { const v = d.data(); if (v) state.companies.set(v.ticker, v); }); state.live = true; render(); }, () => {});
     db.doc("meta/run").onSnapshot((d) => { if (d.exists) { state.meta = d.data(); render(); } }, () => {});
+    db.collection("signals").onSnapshot((s) => {
+      s.docChanges().forEach((ch) => {
+        if (ch.type === "removed") state.signals.delete(ch.doc.id);
+        else { const v = ch.doc.data(); if (v) state.signals.set(v.id || ch.doc.id, v); }
+      });
+      render();
+    }, () => {});
+    db.doc("patterns/matrix").onSnapshot((d) => { if (d.exists) { setPatterns(d.data()); render(); } }, () => {});
   })();
 
-  // ---- Ledger ----
+  // ---- Shared helpers ----
   function latest(c) { return (c.pairs || []).find((p) => p.status === "ok"); }
   // One denominator for all three segments: paragraphs in the new section plus those removed from the old one.
   function shares(p) {
@@ -295,7 +397,12 @@ table.ledger { width: 100%; border-collapse: collapse; font-size: 14px; }
     return { mod: (s.modified || 0) / total, ins: (s.new || 0) / total, del: (s.removed || 0) / total, counts: s, total };
   }
   function churn(c) { const p = latest(c); if (!p) return -1; const sh = shares(p); return sh.mod + sh.ins + sh.del; }
+  function companySignals(t) {
+    return [...state.signals.values()].filter((s) => s.scope === "company" && s.ticker === t)
+      .sort((a, b) => SEV_ORDER[a.severity] - SEV_ORDER[b.severity] || (b.score || 0) - (a.score || 0));
+  }
 
+  // ---- Render everything ----
   function render() {
     const m = state.meta || {};
     const n = state.companies.size;
@@ -303,21 +410,32 @@ table.ledger { width: 100%; border-collapse: collapse; font-size: 14px; }
     $("fPlanned").textContent = m.planned ? `of ${m.planned}` : "";
     $("fPairs").textContent = fmt(m.pairs);
     $("fChanges").textContent = fmt(m.changes);
-    $("fScored").textContent = m.scored ? fmt(m.scored) : "pending";
+    const sigs = state.signals.size;
+    const checked = [...state.signals.values()].filter((s) => s.news && s.news.length).length;
+    $("fSignals").textContent = sigs ? `${fmt(sigs)} · ${fmt(checked)}` : "–";
     $("liveDot").classList.toggle("on", state.live);
     const when = m.updated ? new Date(m.updated).toISOString().slice(11, 16) + " UTC" : "";
     $("liveText").textContent = (state.live ? "Live" : "Snapshot") + (when ? ` · updated ${when}` : "") + (m.planned && n < m.planned ? ` · building ${n}/${m.planned}` : "");
+    renderLedger();
+    renderSignals();
+    renderMatrix();
+    if (state.sel) renderViewer();
+  }
 
+  function renderLedger() {
     let list = [...state.companies.values()];
     const q = state.q.trim().toLowerCase();
     if (q) list = list.filter((c) => c.ticker.toLowerCase().includes(q) || (c.name || "").toLowerCase().includes(q));
     list.sort(state.sort === "churn" ? (a, b) => churn(b) - churn(a) : (a, b) => a.ticker.localeCompare(b.ticker));
+    const attn = new Set([...state.signals.values()].filter((s) => s.scope === "company" && s.severity === "attention").map((s) => s.ticker));
 
     const tb = $("rows"); tb.replaceChildren();
     $("ledgerEmpty").hidden = list.length > 0;
     for (const c of list) {
       const tr = el("tr"); tr.tabIndex = 0; tr.setAttribute("aria-selected", String(state.sel === c.ticker));
-      const td1 = el("td"); td1.append(el("span", "tk", c.ticker), el("span", "co", c.name || "")); tr.append(td1);
+      const td1 = el("td"); const tk = el("span", "tk", c.ticker);
+      if (attn.has(c.ticker)) { const mk = el("span", "mark", "▲"); mk.title = "Has an attention signal"; tk.append(mk); }
+      td1.append(tk, el("span", "co", c.name || "")); tr.append(td1);
       const td2 = el("td"); const p = latest(c);
       if (p) {
         const sh = shares(p); const bar = el("div", "bar"); bar.setAttribute("role", "img");
@@ -339,32 +457,157 @@ table.ledger { width: 100%; border-collapse: collapse; font-size: 14px; }
     }
   }
 
-  $("q").addEventListener("input", (e) => { state.q = e.target.value; render(); });
-  document.querySelectorAll("th button").forEach((b) => b.addEventListener("click", () => { state.sort = b.dataset.sort; render(); }));
+  $("q").addEventListener("input", (e) => { state.q = e.target.value; renderLedger(); });
+  document.querySelectorAll("th button").forEach((b) => b.addEventListener("click", () => { state.sort = b.dataset.sort; renderLedger(); }));
 
-  // ---- Tooltip on bar segments ----
+  // ---- Signals ----
+  function renderSignals() {
+    const all = [...state.signals.values()];
+    const market = all.filter((s) => s.scope === "market").sort((a, b) => String(b.fy || "").localeCompare(String(a.fy || "")) || (b.score || 0) - (a.score || 0));
+    const company = all.filter((s) => s.scope === "company").sort((a, b) => SEV_ORDER[a.severity] - SEV_ORDER[b.severity] || (b.score || 0) - (a.score || 0));
+
+    const m = $("sigMarket"); m.replaceChildren(el("h3", null, `Across the market · ${market.length}`));
+    if (!market.length) m.append(el("div", "empty", "Patterns appear once enough companies are processed."));
+    let lastFy = null;
+    for (const s of market) {
+      if (s.fy !== lastFy) { m.append(el("h3", null, `Fiscal ${s.fy} filings`)); lastFy = s.fy; }
+      m.append(signalCard(s));
+    }
+
+    const c = $("sigCompany"); c.replaceChildren(el("h3", null, `Company alerts · ${company.length}`));
+    if (!company.length) c.append(el("div", "empty", "Alerts appear as companies are processed."));
+    const shown = state.showAllCo ? company : company.slice(0, 8);
+    shown.forEach((s) => c.append(signalCard(s)));
+    if (company.length > 8) {
+      const b = el("button", "more", state.showAllCo ? "Show fewer" : `Show ${company.length - shown.length} more`); b.type = "button";
+      b.addEventListener("click", () => { state.showAllCo = !state.showAllCo; renderSignals(); });
+      c.append(b);
+    }
+  }
+
+  function tickList(label, arr) {
+    const s = el("span", "chip-s");
+    s.textContent = `${label} (${arr.length}): ${arr.slice(0, 6).join(", ")}${arr.length > 6 ? ` +${arr.length - 6}` : ""}`;
+    s.dataset.tip = `${label}: ${arr.join(", ")}`;
+    return s;
+  }
+
+  function signalCard(s) {
+    const box = el("article", "sig " + (s.severity || "info"));
+    const top = el("div", "sig-top");
+    const [icon, label] = SEV[s.severity] || SEV.info;
+    const sev = el("span", "sev"); sev.append(el("i", "sev-i " + (s.severity || "info"), icon), el("span", null, label)); top.append(sev);
+    top.append(el("span", "tag", s.scope === "market" ? `Market · FY${s.fy}` : `${s.ticker} · FY${s.fy}`));
+    if (s.theme_label) top.append(el("span", "tag", s.theme_label));
+    const hasNews = s.news && s.news.length;
+    top.append(el("span", "tag" + (hasNews ? " src-news" : ""), hasNews ? "News checked" : "Rule-based"));
+    box.append(top, el("h4", null, s.title || ""), el("p", "sig-detail", s.detail || ""));
+
+    const ev = s.evidence || {}; const row = el("div", "ev");
+    if (s.scope === "market") {
+      [["Started", ev.started], ["Expanded", ev.increased], ["Dropped", ev.stopped], ["Shortened", ev.decreased]].forEach(([k, arr]) => { if (arr && arr.length) row.append(tickList(k, arr)); });
+    } else {
+      if (ev.mentions_new != null) row.append(el("span", "chip-s mono", `${ev.mentions_old ?? 0} → ${ev.mentions_new} mentions`));
+      if (ev.changed != null) row.append(el("span", "chip-s mono", `${ev.changed} of ${ev.total} paragraphs changed`));
+      const b = el("button", "chip-s link", "Open paragraphs"); b.type = "button";
+      b.addEventListener("click", () => select(s.ticker, { pairId: s.pair_id, focus: ev.change_ids || [] }));
+      row.append(b);
+    }
+    box.append(row);
+
+    if (s.interpretation || s.pattern_note || s.caution) {
+      const r = el("div", "reading");
+      r.append(el("span", "lab", "Reading" + (s.confidence ? ` · ${s.confidence} confidence` : "") + (s.verified_at ? ` · ${String(s.verified_at).slice(0, 10)}` : "")));
+      if (s.interpretation) r.append(el("p", null, s.interpretation));
+      if (s.pattern_note) r.append(el("p", null, s.pattern_note));
+      if (s.caution) r.append(el("p", "caution", s.caution));
+      box.append(r);
+    }
+    if (hasNews) {
+      const ul = el("ul", "news");
+      s.news.forEach((nw) => {
+        const li = el("li"); const a = el("a", null, nw.title || nw.url); a.href = nw.url; a.target = "_blank"; a.rel = "noopener"; li.append(a);
+        const meta = [nw.publisher, nw.date].filter(Boolean).join(" · "); if (meta) li.append(el("span", "nmeta", meta));
+        if (nw.why) li.append(el("span", "nwhy", nw.why));
+        ul.append(li);
+      });
+      box.append(ul);
+    }
+    return box;
+  }
+
+  // ---- Theme matrix ----
+  function renderMatrix() {
+    const p = state.patterns; const tb = $("matrix"); tb.replaceChildren();
+    if (!p || !p.years || !p.years.length || !p.matrix) { $("matrixEmpty").hidden = false; return; }
+    $("matrixEmpty").hidden = true;
+    const years = p.years; const minN = (p.rules && p.rules.min_companies) || 12;
+    const thead = el("thead"); const hr = el("tr"); hr.append(el("th", null, "Theme"));
+    years.forEach((fy) => { const n = Math.max(0, ...Object.values(p.matrix).map((by) => ((by || {})[fy] || {}).n || 0)); hr.append(el("th", null, `FY${fy} · n=${n}`)); });
+    thead.append(hr); tb.append(thead);
+    const body = el("tbody");
+    const rows = (p.themes || []).map((t) => {
+      const by = p.matrix[t.id] || {};
+      const best = Math.max(0, ...years.map((fy) => { const c = by[fy]; return c && c.n ? ((c.started || []).length + (c.up || []).length) / c.n : 0; }));
+      return { t, by, best };
+    }).sort((a, b) => b.best - a.best);
+    for (const { t, by } of rows) {
+      const tr = el("tr"); tr.append(el("td", "th-row", t.label));
+      for (const fy of years) {
+        const c = by[fy]; const td = el("td", "mcell");
+        if (!c || !c.n) { td.append(el("span", "co", "—")); tr.append(td); continue; }
+        const st = c.started || [], up = c.up || [], sp = c.stopped || [], dn = c.down || [];
+        const inc = st.length + up.length, dec = sp.length + dn.length;
+        const bar = el("div", "cellbar");
+        const i1 = el("i", "inc"); i1.style.width = Math.round(50 * inc / c.n) + "%";
+        const i2 = el("i", "dec"); i2.style.width = Math.round(50 * dec / c.n) + "%";
+        bar.append(i1, i2);
+        bar.setAttribute("role", "img"); bar.setAttribute("aria-label", `${t.label} FY${fy}: ${inc} of ${c.n} companies wrote more, ${dec} wrote less`);
+        td.append(bar, el("span", "num mcount", `+${inc} −${dec} of ${c.n}`));
+        td.dataset.tip = `FY${fy} · ${t.label}\nStarted: ${st.join(", ") || "—"}\nExpanded: ${up.join(", ") || "—"}\nDropped: ${sp.join(", ") || "—"}\nShortened: ${dn.join(", ") || "—"}\nMentioning it: ${c.companies_mentioning} of ${c.n}`;
+        if (c.n < minN) td.classList.add("thin");
+        tr.append(td);
+      }
+      body.append(tr);
+    }
+    tb.append(body);
+  }
+
+  // ---- Tooltip ----
   const tip = $("tip");
   document.addEventListener("pointermove", (e) => {
     const t = e.target.closest?.("[data-tip]");
     if (!t) { tip.hidden = true; return; }
-    tip.textContent = t.dataset.tip; tip.style.whiteSpace = "pre-line"; tip.hidden = false;
+    tip.textContent = t.dataset.tip; tip.hidden = false;
     const x = Math.min(e.clientX + 14, window.innerWidth - tip.offsetWidth - 8);
-    tip.style.left = x + "px"; tip.style.top = (e.clientY + 16) + "px";
+    tip.style.left = Math.max(8, x) + "px"; tip.style.top = (e.clientY + 16) + "px";
   });
 
   // ---- Viewer ----
-  async function select(ticker) {
-    state.sel = ticker; state.pairIdx = 0; state.kind = "all"; state.detail = null; state.scores = null;
+  async function select(ticker, opts = {}) {
+    const same = state.sel === ticker && state.detail;
+    state.sel = ticker;
     $("dlCompany").disabled = false;
-    render(); renderViewer();
-    if (state.unsubScores) state.unsubScores();
-    if (state.db) state.unsubScores = state.db.doc("scores/" + ticker).onSnapshot((d) => { state.scores = d.exists ? d.data() : null; renderViewer(); }, () => {});
-    try {
-      const r = await fetch("data/changes/" + encodeURIComponent(ticker) + ".json");
-      state.detail = r.ok ? await r.json() : { pairs: [] };
-    } catch { state.detail = { pairs: [] }; }
-    if (state.sel === ticker) renderViewer();
-    if (window.innerWidth < 900) $("viewer").scrollIntoView({ behavior: "smooth", block: "start" });
+    if (!same) { state.detail = null; state.scores = null; state.pairIdx = 0; state.kind = "all"; state.focus = null; }
+    renderLedger(); renderViewer();
+    if (!same) {
+      if (state.unsubScores) state.unsubScores();
+      if (state.db) state.unsubScores = state.db.doc("scores/" + ticker).onSnapshot((d) => { state.scores = d.exists ? d.data() : null; renderViewer(); }, () => {});
+      let detail;
+      try { const r = await fetch("data/changes/" + encodeURIComponent(ticker) + ".json"); detail = r.ok ? await r.json() : { pairs: [] }; }
+      catch { detail = { pairs: [] }; }
+      if (state.sel !== ticker) return;
+      state.detail = detail;
+    }
+    applyOpts(opts);
+    renderViewer();
+    if (window.innerWidth < 900 || opts.focus) $("viewer").scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  function applyOpts(opts) {
+    const pairs = (state.detail && state.detail.pairs) || [];
+    if (opts.pairId) { const i = pairs.findIndex((p) => p.pair_id === opts.pairId); if (i >= 0) state.pairIdx = i; }
+    if (opts.focus) { state.focus = new Set(opts.focus); state.kind = state.focus.size ? "focus" : "all"; }
   }
 
   function renderViewer() {
@@ -375,6 +618,13 @@ table.ledger { width: 100%; border-collapse: collapse; font-size: 14px; }
     const list = $("vList"); list.replaceChildren();
     const tabs = $("vTabs"); tabs.replaceChildren();
     const chips = $("vChips"); chips.replaceChildren();
+    const strip = $("vSignals"); strip.replaceChildren();
+    companySignals(c.ticker).forEach((s) => {
+      const b = el("button", "vsig"); b.type = "button";
+      b.append(el("i", "sev-i " + (s.severity || "info"), (SEV[s.severity] || SEV.info)[0]), el("span", null, s.title));
+      b.addEventListener("click", () => select(c.ticker, { pairId: s.pair_id, focus: (s.evidence || {}).change_ids || [] }));
+      strip.append(b);
+    });
     if (!state.detail) { sub.append(el("span", null, "Loading changes…")); return; }
     const pairs = state.detail.pairs || [];
     if (!pairs.length) { sub.append(el("span", null, c.status === "error" ? "Item 1A could not be extracted for this company." : "Change text for this company is not published yet; it arrives with the next update.")); return; }
@@ -382,19 +632,24 @@ table.ledger { width: 100%; border-collapse: collapse; font-size: 14px; }
     pairs.forEach((p, i) => {
       const b = el("button", "tab", `FY${p.fy_new} vs FY${p.fy_old}`); b.type = "button";
       b.setAttribute("aria-pressed", String(i === state.pairIdx));
-      b.addEventListener("click", () => { state.pairIdx = i; state.kind = "all"; renderViewer(); });
+      b.addEventListener("click", () => { state.pairIdx = i; state.kind = "all"; state.focus = null; renderViewer(); });
       tabs.append(b);
     });
-    const p = pairs[state.pairIdx];
+    const p = pairs[Math.min(state.pairIdx, pairs.length - 1)];
     if (p.status !== "ok") { sub.append(el("span", null, "Item 1A could not be extracted from one of these two filings.")); return; }
     const aNew = el("a", null, `FY${p.fy_new} filing (${p.filed_new})`); aNew.href = p.url_new; aNew.target = "_blank"; aNew.rel = "noopener";
     const aOld = el("a", null, `FY${p.fy_old} filing (${p.filed_old})`); aOld.href = p.url_old; aOld.target = "_blank"; aOld.rel = "noopener";
     sub.append(aNew, aOld, el("span", "mono", `${fmt(p.words_old)} → ${fmt(p.words_new)} words`));
+    const ex = p.extraction || {};
+    if (ex.new === "risk_factors_heading" || ex.old === "risk_factors_heading") sub.append(el("span", "warn", "Section located by its “Risk Factors” heading (no Item 1A boundary found); check the span against the filing."));
 
     const items = p.items || [];
-    const counts = { all: items.length, new: 0, removed: 0, modified: 0 };
-    items.forEach((it) => counts[it.kind]++);
-    [["all", "All"], ["new", "New"], ["removed", "Removed"], ["modified", "Rewritten"]].forEach(([k, label]) => {
+    const counts = { all: items.length, new: 0, removed: 0, modified: 0, focus: 0 };
+    items.forEach((it) => { counts[it.kind]++; if (state.focus && state.focus.has(it.id)) counts.focus++; });
+    const chipDefs = [["all", "All"], ["new", "New"], ["removed", "Removed"], ["modified", "Rewritten"]];
+    if (counts.focus) chipDefs.unshift(["focus", "From signal"]);
+    if (state.kind === "focus" && !counts.focus) state.kind = "all";
+    chipDefs.forEach(([k, label]) => {
       const b = el("button", "chip", label); b.type = "button"; b.append(el("span", "n", String(counts[k])));
       b.setAttribute("aria-pressed", String(state.kind === k));
       b.addEventListener("click", () => { state.kind = k; renderViewer(); });
@@ -402,22 +657,25 @@ table.ledger { width: 100%; border-collapse: collapse; font-size: 14px; }
     });
 
     const sc = (state.scores && state.scores.items) || {};
-    let shown = items.filter((it) => state.kind === "all" || it.kind === state.kind);
-    shown.sort((a, b) => ((sc[b.id]?.materiality || 0) - (sc[a.id]?.materiality || 0)));
+    const shown = items.filter((it) => state.kind === "all" || (state.kind === "focus" ? state.focus.has(it.id) : it.kind === state.kind));
+    shown.sort((a, b) => ((sc[b.id]?.materiality || 0) - (sc[a.id]?.materiality || 0)) || ((state.focus?.has(b.id) ? 1 : 0) - (state.focus?.has(a.id) ? 1 : 0)));
     if (!shown.length) { list.append(el("div", "empty", "No changes of this type.")); return; }
     for (const it of shown) list.append(changeCard(it, sc[it.id]));
   }
 
   function changeCard(it, a) {
-    const box = el("article", "chg");
+    const box = el("article", "chg" + (state.focus && state.focus.has(it.id) ? " focused" : ""));
     const top = el("div", "chg-top");
-    top.append(el("span", "kind " + it.kind, { new: "New", removed: "Removed", modified: "Rewritten" }[it.kind]), el("span", "sect", it.section || ""));
+    top.append(el("span", "kind " + it.kind, KIND_LABEL[it.kind] || it.kind), el("span", "sect", it.section || ""));
     if (it.kind === "modified") top.append(el("span", "mono", `similarity ${Math.round((it.similarity || 0) * 100)}%`));
+    const th = it.themes || {};
+    (th.added || []).forEach((k) => top.append(el("span", "ttag up", (state.themeLabels[k] || k) + " ↑")));
+    (th.removed || []).forEach((k) => top.append(el("span", "ttag down", (state.themeLabels[k] || k) + " ↓")));
     box.append(top);
     if (a) {
       const as = el("div", "assess");
       as.append(el("span", "m", `Materiality ${a.materiality}/5 · ${String(a.category || "").replace("_", " ")}`), el("span", null, a.summary || ""));
-      if (a.quote) { const bq = el("blockquote", null, "“" + a.quote + "”"); as.append(bq); if (!a.quote_verified) as.append(el("span", "flag", "Quote not found verbatim in the filing; check it manually.")); }
+      if (a.quote) { as.append(el("blockquote", null, "“" + a.quote + "”")); if (!a.quote_verified) as.append(el("span", "flag", "Quote not found verbatim in the filing; check it manually.")); }
       box.append(as);
     }
     let para;
@@ -453,28 +711,31 @@ table.ledger { width: 100%; border-collapse: collapse; font-size: 14px; }
   // ---- Downloads ----
   const csvCell = (v) => { const s = String(v ?? ""); return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; };
   const toCsv = (rows) => rows.map((r) => r.map(csvCell).join(",")).join("\n");
-  async function save(filename, text) {
+  async function save(filename, text, type) {
     const dl = await window.claude?.use?.("downloads");
     if (!dl) { $("dlSummary").textContent = "Download not available here"; return; }
-    try { await dl.save({ filename, data: new Blob([text], { type: "text/csv" }) }); } catch {}
+    try { await dl.save({ filename, data: new Blob([text], { type }) }); } catch {}
   }
   $("dlSummary").addEventListener("click", () => {
-    const rows = [["ticker", "name", "fy_new", "fy_old", "paragraphs_old", "paragraphs_new", "words_old", "words_new", "unchanged", "minor", "modified", "new", "removed", "url_new", "url_old"]];
+    const rows = [["ticker", "name", "fy_new", "fy_old", "paragraphs_old", "paragraphs_new", "words_old", "words_new", "unchanged", "minor", "modified", "new", "removed", "extraction", "url_new", "url_old"]];
     for (const c of state.companies.values()) for (const p of c.pairs || []) if (p.status === "ok") {
-      const s = p.stats || {};
-      rows.push([c.ticker, c.name, p.fy_new, p.fy_old, p.paragraphs_old, p.paragraphs_new, p.words_old, p.words_new, s.unchanged, s.minor, s.modified, s.new, s.removed, p.url_new, p.url_old]);
+      const s = p.stats || {}; const ex = p.extraction || {};
+      rows.push([c.ticker, c.name, p.fy_new, p.fy_old, p.paragraphs_old, p.paragraphs_new, p.words_old, p.words_new, s.unchanged, s.minor, s.modified, s.new, s.removed, ex.new || "", p.url_new, p.url_old]);
     }
-    save("risk-delta-summary.csv", toCsv(rows));
+    save("risk-delta-summary.csv", toCsv(rows), "text/csv");
+  });
+  $("dlSignals").addEventListener("click", () => {
+    save("risk-delta-signals.json", JSON.stringify([...state.signals.values()], null, 1), "application/json");
   });
   $("dlCompany").addEventListener("click", () => {
     if (!state.detail) return;
     const sc = (state.scores && state.scores.items) || {};
-    const rows = [["change_id", "fy_new", "fy_old", "kind", "section", "old", "new", "similarity", "category", "materiality", "summary", "quote_verified"]];
+    const rows = [["change_id", "fy_new", "fy_old", "kind", "section", "themes_up", "themes_down", "old", "new", "similarity", "category", "materiality", "summary", "quote_verified"]];
     for (const p of state.detail.pairs || []) for (const it of p.items || []) {
-      const a = sc[it.id] || {};
-      rows.push([it.id, p.fy_new, p.fy_old, it.kind, it.section, it.old, it.new, it.similarity, a.category, a.materiality, a.summary, a.quote_verified]);
+      const a = sc[it.id] || {}; const th = it.themes || {};
+      rows.push([it.id, p.fy_new, p.fy_old, it.kind, it.section, (th.added || []).join("|"), (th.removed || []).join("|"), it.old, it.new, it.similarity, a.category, a.materiality, a.summary, a.quote_verified]);
     }
-    save(`risk-delta-${state.sel}.csv`, toCsv(rows));
+    save(`risk-delta-${state.sel}.csv`, toCsv(rows), "text/csv");
   });
 })();
 </script>

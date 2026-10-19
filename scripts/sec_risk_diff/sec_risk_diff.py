@@ -263,28 +263,59 @@ _START = re.compile(r"^item\s*1a\b\.?\s*[-–—:.]?\s*risk\s+factors", re.IGNOR
 _END = re.compile(r"^item\s*(1b|1c|2)\b", re.IGNORECASE)
 
 
-def extract_item_1a(paragraphs: list[str]) -> list[str]:
-    """Return the paragraphs of Item 1A, skipping the table-of-contents entry.
+_RF_HEADING = re.compile(r"^risk\s+factors\.?$", re.IGNORECASE)
+# Top-level 10-K section titles that can follow a free-standing Risk Factors section.
+_SECTION_TITLE = re.compile(
+    r"^(item\s*(1b|1c|2|3)\b|unresolved staff comments|cybersecurity|properties|legal proceedings"
+    r"|sustainability|human capital\b|managing global risk|management['’]s discussion and analysis"
+    r"|forward[- ]looking statements|cautionary statements?\b|supervision,? (and )?regulation"
+    r"|market for (the )?registrant|selected financial data|quantitative and qualitative disclosures"
+    r"|financial statements and supplementary data|(information about our )?executive officers)",
+    re.IGNORECASE,
+)
+
+
+def _longest_span(paragraphs: list[str], starts: list[int], is_end) -> tuple[tuple[int, int] | None, int]:
+    best, best_len = None, 0
+    for i in starts:
+        end = next((j for j in range(i + 1, len(paragraphs)) if is_end(paragraphs[j])), len(paragraphs))
+        size = sum(len(x) for x in paragraphs[i + 1:end])
+        if size > best_len:
+            best, best_len = (i, end), size
+    return best, best_len
+
+
+def extract_risk_factors(paragraphs: list[str]) -> tuple[list[str], str]:
+    """Return (the Risk Factors paragraphs, how they were found).
 
     Every 'Item 1A. Risk Factors' line is a candidate start; the section runs to
     the next Item 1B/1C/2 heading. The longest such span is the real section,
     because the table of contents entry is followed almost at once by Item 1B.
+
+    Some filers (Citi, McDonald's) print the section under a bare 'Risk Factors'
+    heading elsewhere and point Item 1A at it. If the Item 1A route finds too
+    little, the fallback starts at such a heading and stops at the next known
+    10-K section title; the result is labelled "risk_factors_heading".
     """
-    best: tuple[int, int] | None = None
-    for i, p in enumerate(paragraphs):
-        if not _START.match(p):
-            continue
-        end = next((j for j in range(i + 1, len(paragraphs)) if _END.match(paragraphs[j])),
-                   len(paragraphs))
-        span = sum(len(x) for x in paragraphs[i + 1:end])
-        if best is None or span > sum(len(x) for x in paragraphs[best[0] + 1:best[1]]):
-            best = (i, end)
-    if best is None:
+    starts = [i for i, p in enumerate(paragraphs) if _START.match(p)]
+    span, size = _longest_span(paragraphs, starts, lambda p: bool(_END.match(p)))
+    if span and size >= 2_000:
+        return paragraphs[span[0] + 1:span[1]], "item_1a"
+
+    rf_starts = [i for i, p in enumerate(paragraphs) if _RF_HEADING.match(p.strip())]
+    span2, size2 = _longest_span(
+        paragraphs, rf_starts, lambda p: len(p) < 120 and bool(_SECTION_TITLE.match(p.strip())))
+    if span2 and 5_000 <= size2 <= 600_000 and span2[1] - span2[0] > 15:
+        return paragraphs[span2[0] + 1:span2[1]], "risk_factors_heading"
+
+    if not starts and not rf_starts:
         raise ValueError("Could not find an 'Item 1A. Risk Factors' heading")
-    section = paragraphs[best[0] + 1:best[1]]
-    if sum(len(x) for x in section) < 2_000:
-        raise ValueError("Item 1A looks too short; extraction probably failed")
-    return section
+    raise ValueError("Item 1A looks too short; extraction probably failed")
+
+
+def extract_item_1a(paragraphs: list[str]) -> list[str]:
+    """Return the paragraphs of Item 1A (see extract_risk_factors)."""
+    return extract_risk_factors(paragraphs)[0]
 
 
 # ---------------------------------------------------------------------------
@@ -443,7 +474,8 @@ def _norm(s: str) -> str:
 def assess_changes(changes: list[Change], model: str, lang: str) -> dict:
     import anthropic  # imported here so --no-llm runs without the SDK installed
 
-    client = anthropic.Anthropic()
+    # RISK_DELTA_API_KEY lets the key live in a cloud environment without Claude Code itself picking it up.
+    client = anthropic.Anthropic(api_key=os.environ.get("RISK_DELTA_API_KEY") or None)
     usage = {"input_tokens": 0, "output_tokens": 0, "requests": 0, "problems": []}
     system = SYSTEM_PROMPT.format(lang=lang)
 

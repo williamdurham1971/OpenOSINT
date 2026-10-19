@@ -37,6 +37,12 @@ DEFAULT_TICKERS = [
 
 OUT = Path(__file__).with_name("dataset")
 
+# Tickers whose 10-K history sits under a predecessor filer. ExxonMobil moved
+# to a new holding company (ExxonMobil Holdings Corp, CIK 2115436, an 8-K12B
+# successor issuer), and SEC's ticker list now points XOM there; the annual
+# reports so far were filed by Exxon Mobil Corp.
+PREDECESSOR_CIK = {"XOM": 34088}
+
 
 def _append(name: str, row: dict) -> None:
     with (OUT / name).open("a", encoding="utf-8") as f:
@@ -56,20 +62,26 @@ def process(ticker: str, years: int) -> None:
                "filings": 0, "extracted": 0, "pairs": 0, "errors": []}
     try:
         filings = srd.latest_10ks(cik, years + 1)
-    except SystemExit as exc:  # fewer filings than asked for
-        company.update(status="error", errors=[str(exc)])
-        _append("companies.jsonl", company)
-        return
+    except SystemExit as exc:  # fewer than two 10-Ks under this CIK
+        if ticker not in PREDECESSOR_CIK:
+            company.update(status="error", errors=[str(exc)])
+            _append("companies.jsonl", company)
+            return
+        company["note"] = f"10-K history filed under predecessor CIK {PREDECESSOR_CIK[ticker]}"
+        company["cik"] = PREDECESSOR_CIK[ticker]
+        filings = srd.latest_10ks(PREDECESSOR_CIK[ticker], years + 1)
     company["filings"] = len(filings)
 
     sections: dict[str, list[str] | None] = {}
+    methods: dict[str, str] = {}
     for f in filings:
         try:
-            paras = srd.extract_item_1a(srd.html_to_paragraphs(srd.sec_get(f.url, cache=False)))
+            paras, method = srd.extract_risk_factors(srd.html_to_paragraphs(srd.sec_get(f.url, cache=False)))
             sections[f.accession] = paras
+            methods[f.accession] = method
             company["extracted"] += 1
             (OUT / "sections" / f"{ticker}_{f.filing_date}.json").write_text(
-                json.dumps({"ticker": ticker, "filing": f.__dict__, "paragraphs": paras},
+                json.dumps({"ticker": ticker, "filing": f.__dict__, "method": method, "paragraphs": paras},
                            ensure_ascii=False), encoding="utf-8")
         except ValueError as exc:
             sections[f.accession] = None
@@ -86,6 +98,7 @@ def process(ticker: str, years: int) -> None:
             continue
         changes, stats = srd.diff_paragraphs(old_p, new_p)
         pair.update(status="ok", stats=stats,
+                    extraction={"new": methods[new.accession], "old": methods[old.accession]},
                     old_paragraphs=len(old_p), new_paragraphs=len(new_p),
                     old_words=sum(len(p.split()) for p in old_p),
                     new_words=sum(len(p.split()) for p in new_p),
