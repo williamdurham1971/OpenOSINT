@@ -107,7 +107,7 @@ class Vol:
 
 async def feed_chainlink(session):
     sub = {"action": "subscribe", "subscriptions": [{
-        "topic": "crypto_prices_chainlink", "type": "update", "filters": json.dumps({"symbol": "btc/usd"})}]}
+        "topic": "crypto_prices_chainlink", "type": "update", "filters": '{"symbol":"btc/usd"}'}]}   # must be compact: a space silences live updates
     async with websockets.connect(RTDS_WS, ping_interval=None) as ws:
         await ws.send(json.dumps(sub))
         last_ping = time.time()
