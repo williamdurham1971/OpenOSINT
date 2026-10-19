@@ -13,7 +13,7 @@
  *   OPENOSINT_DEMO_KEY  (required) — Anthropic API key, read once, never logged
  *   OPENOSINT_DEMO_URL  (optional) — override base URL (default http://localhost:8080)
  *   OPENOSINT_PROVIDER  (optional) — LLM provider (default "anthropic")
- *   OPENOSINT_MODEL     (optional) — model id (default "claude-sonnet-4-6")
+ *   OPENOSINT_MODEL     (optional) — model id (default "claude-sonnet-5-5")
  *
  * Outputs:
  *   scripts/record-demo/out/raw.webm          — raw Playwright recording
@@ -33,7 +33,7 @@ const ASSETS    = resolve(ROOT, 'docs', 'assets');
 const VIEWPORT  = { width: 1440, height: 860 };
 const BASE_URL  = process.env.OPENOSINT_DEMO_URL ?? 'http://localhost:8080';
 const PROVIDER  = process.env.OPENOSINT_PROVIDER ?? 'anthropic';
-const MODEL     = process.env.OPENOSINT_MODEL    ?? 'claude-sonnet-4-6';
+const MODEL     = process.env.OPENOSINT_MODEL    ?? 'claude-sonnet-5-5';
 
 // Canonical investigation target — openosint.tech produces a rich, reproducible graph:
 // WHOIS (registrar, org), DNS (A records → IPs, MX, NS), subdomains, cert SANs, VirusTotal,

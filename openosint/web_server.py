@@ -883,7 +883,6 @@ async def _stream_claude(messages: list[dict]) -> AsyncIterator[dict]:
         if _tool_rounds > _MAX_TOOL_ROUNDS:
             yield {"type": "error", "message": "Tool call limit reached (5 rounds)."}
             return
-        full_content: list[dict] = []
         pending_tool_results: list[dict] = []
         current_block: dict | None = None
         current_tool_json = ""
@@ -891,8 +890,8 @@ async def _stream_claude(messages: list[dict]) -> AsyncIterator[dict]:
 
         try:
             async with client.messages.stream(
-                model="claude-sonnet-4-5",
-                max_tokens=4096,
+                model="claude-sonnet-5-5",
+                max_tokens=16000,
                 system=system_prompt,
                 tools=_CLAUDE_TOOLS,
                 messages=msgs,
@@ -904,7 +903,6 @@ async def _stream_claude(messages: list[dict]) -> AsyncIterator[dict]:
                         cb = event.content_block
                         if cb.type == "text":
                             current_block = {"type": "text", "text": ""}
-                            full_content.append(current_block)
                         elif cb.type == "tool_use":
                             current_block = {
                                 "type": "tool_use",
@@ -913,7 +911,6 @@ async def _stream_claude(messages: list[dict]) -> AsyncIterator[dict]:
                                 "input": {},
                             }
                             current_tool_json = ""
-                            full_content.append(current_block)
 
                     elif etype == "content_block_delta":
                         d = event.delta
@@ -983,7 +980,7 @@ async def _stream_claude(messages: list[dict]) -> AsyncIterator[dict]:
             break
 
         msgs = msgs + [
-            {"role": "assistant", "content": full_content},
+            {"role": "assistant", "content": final_msg.content},
             {"role": "user", "content": pending_tool_results},
         ]
 

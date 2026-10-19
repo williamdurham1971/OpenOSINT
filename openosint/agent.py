@@ -49,9 +49,10 @@ logger = logging.getLogger(__name__)
 
 _MAX_TOKENS = 4096
 
-DEFAULT_ANTHROPIC_MODEL = "claude-opus-5-5"
-# Opus 5.5 always thinks, and thinking tokens count toward max_tokens, so the
-# Anthropic agent needs more headroom than the 4096 the other providers use.
+DEFAULT_ANTHROPIC_MODEL = "claude-sonnet-5-5"
+# Sonnet 5.5 thinks adaptively by default, and thinking tokens count toward
+# max_tokens, so the Anthropic agent needs more headroom than the 4096 the
+# other providers use.
 _ANTHROPIC_MAX_TOKENS = 16000
 
 # ---------------------------------------------------------------------------

@@ -19,13 +19,13 @@
 class AnthropicAdapter {
   constructor({ apiKey, model }) {
     this.apiKey = apiKey;
-    this.model = model || 'claude-sonnet-4-6';
+    this.model = model || 'claude-sonnet-5-5';
   }
 
   async chat(messages, tools, signal) {
     const body = {
       model: this.model,
-      max_tokens: 4096,
+      max_tokens: 16000,
       system: _SYSTEM_PROMPT,
       tools,
       messages,

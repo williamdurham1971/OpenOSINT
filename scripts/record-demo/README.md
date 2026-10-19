@@ -80,7 +80,7 @@ gifski fallback order if GIF exceeds 10 MB:
 ```bash
 OPENOSINT_DEMO_URL=https://demo.openosint.tech \
 OPENOSINT_PROVIDER=anthropic \
-OPENOSINT_MODEL=claude-opus-4-8 \
+OPENOSINT_MODEL=claude-sonnet-5-5 \
 make demo
 ```
 

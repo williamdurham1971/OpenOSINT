@@ -63,7 +63,7 @@ sleep 0.8
 
 # Rich Panel.fit — fits the single content line (73 chars wide total)
 printf "${BRD}╭───────────────────────────────────────────────────────────────────────╮${R}\n"
-printf "${BRD}│${R}  ${B}${GRN}OpenOSINT${R} ${DIM}v2.8.0${R}  ${DIM}·${R}  ${DIM}Provider: Anthropic (claude-sonnet-4-20250514)${R}  ${BRD}│${R}\n"
+printf "${BRD}│${R}  ${B}${GRN}OpenOSINT${R} ${DIM}v2.8.0${R}  ${DIM}·${R}  ${DIM}Provider: Anthropic (claude-sonnet-5-5)${R}  ${BRD}│${R}\n"
 printf "${BRD}╰───────────────────────────────────────────────────────────────────────╯${R}\n"
 printf "\n"
 printf "  Type a target or question. ${DIM}'help'${R} for commands. ${DIM}'exit'${R} to quit.\n\n"

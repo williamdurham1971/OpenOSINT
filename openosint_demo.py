@@ -38,7 +38,7 @@ def _banner() -> None:
     console.print(
         Panel.fit(
             "[bold #00ff88]OpenOSINT[/] [dim]v2.18.1[/]  [dim]·[/]"
-            "  [dim]Provider: Anthropic (claude-sonnet-4-20250514)[/]",
+            "  [dim]Provider: Anthropic (claude-sonnet-5-5)[/]",
             border_style="#1e293b",
             padding=(0, 2),
         )

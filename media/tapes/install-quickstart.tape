@@ -67,7 +67,7 @@ Sleep 1200ms
 
 Type "  ╭────────────────────────────────────────────────────────────────────╮"
 Enter
-Type "  │  OpenOSINT v2.11.0  ·  Provider: Anthropic (claude-sonnet-4-6)   │"
+Type "  │  OpenOSINT v2.11.0  ·  Provider: Anthropic (claude-sonnet-5-5)   │"
 Enter
 Type "  ╰────────────────────────────────────────────────────────────────────╯"
 Enter
