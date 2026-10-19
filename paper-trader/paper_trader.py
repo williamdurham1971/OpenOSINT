@@ -600,7 +600,12 @@ def analyze_latency(rows, feeds, stale, clob_lag, trades_seen, rtt, bin_s, horiz
         corrs = lag_corr(ret[f], dmid, lags)
         L, c = peak_lag(corrs)
         out(f"   {f:9s}: " + " ".join(fmt_corr(corrs[x]) for x in lags if x % max(1, round(1 / bin_s)) == 0))
-        out(f"   -> peak at {L*bin_s:+.1f}s (corr {c:+.3f})  => Polymarket reacts to {f} ~{L*bin_s:.1f}s later" if L is not None else "   -> not enough data")
+        if L is None:
+            out("   -> not enough data")
+        else:
+            when = ("at the same time as" if abs(L * bin_s) < horizon / 2 else
+                    f"~{L*bin_s:.1f}s AFTER" if L > 0 else f"~{-L*bin_s:.1f}s BEFORE")
+            out(f"   -> peak at {L*bin_s:+.1f}s (corr {c:+.3f})  => Polymarket's Up price moves {when} {f}")
 
     if trades_seen:
         out("\n4) last_trade_price 'side' semantics (is it the taker's side?):")
