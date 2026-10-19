@@ -1,2 +1,6 @@
 yt/
 __pycache__/
+site/.print.html
+*.pdf
+.pass1.pdf
+.toc_pages.json

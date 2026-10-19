@@ -39,7 +39,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); text-wrap: balance; margin: 0
 h1 { font-size: clamp(1.9rem, 4.5vw, 2.8rem); font-weight: 700; letter-spacing: -0.02em; }
 h2 { font-size: 1.35rem; font-weight: 700; }
 h3 { font-size: 1.12rem; font-weight: 700; }
-h4 { font-size: .78rem; font-family: var(--font-data); font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+h4, .label { font-size: .78rem; font-family: var(--font-data); font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
 a { color: var(--jade); }
 .mono { font-family: var(--font-data); font-variant-numeric: tabular-nums; }
 .muted { color: var(--muted); }
@@ -51,7 +51,8 @@ header.top { display: grid; gap: 10px; margin-bottom: 22px; }
 .stat span { font-size: .82rem; color: var(--muted); }
 .overview { display: grid; grid-template-columns: 1.6fr 1fr; gap: 16px; margin: 18px 0 26px; }
 .panel { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; min-width: 0; }
-.panel h4 { margin-bottom: 10px; }
+.panel .label { margin-bottom: 10px; }
+.pdf-link { margin: 0; font-size: .9rem; }
 @media (max-width: 760px) { .overview { grid-template-columns: 1fr; } }
 .tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin-bottom: 14px; }
 .tab { font: 600 .95rem var(--font-body); background: none; border: 0; border-bottom: 2px solid transparent; padding: 8px 12px; color: var(--muted); cursor: pointer; }
@@ -138,6 +139,38 @@ table.ideas-t { width: 100%; border-collapse: collapse; font-size: .9rem; min-wi
 .empty { padding: 30px; text-align: center; color: var(--muted); }
 footer { margin-top: 30px; font-size: .82rem; color: var(--muted); max-width: 80ch; }
 @media (prefers-reduced-motion: no-preference) { details.video[open] .body { animation: fade .25s ease; } @keyframes fade { from { opacity: .4 } to { opacity: 1 } } }
+
+/* ---- Print view (open with #print; build_pdf.py renders it to the PDF) ---- */
+@page { size: A4; margin: 14mm 13mm 16mm; }
+.print { font-size: 14px; --bg: #ffffff; --surface: #ffffff; }
+.print * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.print .wrap { max-width: none; padding: 0; }
+.print .tabs, .print .controls, .print #view-ideas, .print .pdf-link { display: none; }
+.print .cover { break-after: page; display: grid; gap: 16px; }
+.print .cover footer { margin-top: 0; }
+.print .toc { break-after: page; }
+.print .toc ol { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 2px; font-size: .9rem; }
+.print .toc li { display: grid; grid-template-columns: 70px 1fr auto; gap: 10px; align-items: baseline; border-bottom: 1px dotted var(--line); padding: 3px 0; break-inside: avoid; }
+.print .toc a { color: var(--ink); text-decoration: none; }
+.print details.video { break-before: page; border: 0; border-radius: 0; }
+.print details.video > summary { display: block; padding: 0 0 10px; pointer-events: none; }
+.print details.video > summary > * { display: block; white-space: normal; text-align: left; }
+.print details.video > summary h2 { font-size: 1.6rem; margin: 4px 0 8px; }
+.print .v-meta { margin-top: 2px; }
+.print .body { border-top: 2px solid var(--jade); padding: 14px 0 0; gap: 16px; animation: none; }
+.print .two { grid-template-columns: 1fr; }
+.print .ideas { grid-template-columns: 1fr 1fr; }
+.print .figure { overflow: visible; }
+.print #timeline { overflow: visible !important; }
+.print #timeline svg { width: 100%; height: auto; }
+.print .figure, .print .idea, .print .skeptic, .print .num, .print .flow li, .print .bar-row, .print .panel { break-inside: avoid; }
+.print .ideas-index { break-before: page; }
+.print .ideas-index h3 { margin: 18px 0 6px; }
+.print .ideas-index table { width: 100%; border-collapse: collapse; font-size: .84rem; }
+.print .ideas-index th, .print .ideas-index td { text-align: left; padding: 5px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.print .ideas-index th { font: 600 .7rem var(--font-data); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.print .ideas-index tr { break-inside: avoid; }
+.print .ideas-index a { color: var(--ink); }
 </style>
 
 <div class="wrap">
@@ -146,11 +179,12 @@ footer { margin-top: 30px; font-size: .82rem; color: var(--muted); max-width: 80
     <h1>Statrys Fikir Defteri</h1>
     <p class="lede">Kanalın Kasım 2025'ten bu yana yayımladığı videoların transkriptlerinden çıkarılmış Türkçe özetler, videoda geçen rakamlarla çizilmiş grafikler, neden-sonuç şemaları ve her video için iş fikirleri. Rakamlar videodaki iddialardır ve bağımsız olarak doğrulanmamıştır; kırmızı kutular şüpheyle yaklaşılması gereken noktaları gösterir.</p>
     <div class="stats" id="stats"></div>
+    <p class="pdf-link"><button class="chip" id="pdf-save" hidden>PDF'i bilgisayara kaydet</button> <a id="pdf-open" href="#" target="_blank" rel="noopener">PDF'i yeni sekmede aç</a> <span id="pdf-status" class="muted"></span><br><span class="muted" style="font-size:.82rem">PDF her güncellemede yeniden üretilir; yer imleri ve sayfa numaralı içindekiler bölümü vardır.</span></p>
   </header>
 
   <div class="overview">
-    <div class="panel"><h4>İzlenme · video başına (log ölçek)</h4><div id="timeline" style="overflow-x:auto"></div></div>
-    <div class="panel"><h4>Konu dağılımı</h4><div id="cats"></div></div>
+    <div class="panel"><div class="label">İzlenme · video başına (log ölçek)</div><div id="timeline" style="overflow-x:auto"></div></div>
+    <div class="panel"><div class="label">Konu dağılımı</div><div id="cats"></div></div>
   </div>
 
   <div class="tabs" role="tablist">
@@ -171,6 +205,10 @@ footer { margin-top: 30px; font-size: .82rem; color: var(--muted); max-width: 80
 </div>
 
 <script>
+// #print turns the page into a paginated document: cover, table of contents, every video expanded, ideas index.
+const PRINT = location.hash === "#print";
+if (PRINT) document.documentElement.classList.add("print");
+const IDEAS_INDEX_TITLE = "Tüm iş fikirleri (sermaye ihtiyacına göre)";
 const CAT_COLORS = ["--c1","--c2","--c3","--c4","--c5","--c6","--c7","--c8"];
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -242,25 +280,26 @@ function ideaCard(b) {
 function videoHTML(v) {
   const promo = /Şirket kurma/.test(v.category || "");
   const ideas = (v.business_ideas || []);
-  return `<details class="video" id="v-${esc(v.id)}">
+  const T = PRINT ? "h2" : "span";  // real heading in print so the PDF outline lists every video
+  return `<details class="video" id="v-${esc(v.id)}"${PRINT ? " open" : ""}>
     <summary>
       <span class="v-date">${fmtDate(v.date)}</span>
-      <span class="v-title">${esc(v.title_tr || v.title)}</span>
+      <${T} class="v-title">${esc(v.title_tr || v.title)}</${T}>
       <span class="v-meta"><span class="tag ${promo ? "promo" : ""}">${esc(v.category)}</span><br><span class="mono">${fmtN(v.views)} izlenme · ${ideas.length} fikir</span></span>
       <span class="v-orig">${esc(v.title)}</span>
     </summary>
     <div class="body">
-      <section><h4>Özet</h4><p class="summary">${esc(v.summary_tr)}</p>
+      <section><div class="label">Özet</div><p class="summary">${esc(v.summary_tr)}</p>
         <ul class="points">${(v.key_points||[]).map(p => `<li>${esc(p)}</li>`).join("")}</ul>
         <div class="muted" style="font-size:.85rem"><a href="${esc(v.url)}" target="_blank" rel="noopener">Videoyu YouTube'da aç</a> · ${Math.round((v.duration||0)/60)} dk · ${esc((v.region||[]).join(", "))}</div>
       </section>
       <div class="two">
-        <section><h4>İnfografik</h4>${v.chart ? `<div class="figure"><div class="ftitle">${esc(v.chart.title)}</div>${chartSVG(v.chart)}<div class="fnote">Birim: ${esc(v.chart.unit)} · ${esc(v.chart.source_note || "Videoda belirtilen rakamlar")}</div></div>` : `<div class="figure muted" style="font-size:.9rem">Bu videoda karşılaştırılabilir yeterli rakam yok; grafik yerine aşağıdaki öne çıkan sayılara bakın.</div>`}</section>
-        <section><h4>Şema</h4><div class="figure"><div class="ftitle">${esc(v.diagram?.title)}</div>${diagramHTML(v.diagram)}</div></section>
+        <section><div class="label">İnfografik</div>${v.chart ? `<div class="figure"><div class="ftitle">${esc(v.chart.title)}</div>${chartSVG(v.chart)}<div class="fnote">Birim: ${esc(v.chart.unit)} · ${esc(v.chart.source_note || "Videoda belirtilen rakamlar")}</div></div>` : `<div class="figure muted" style="font-size:.9rem">Bu videoda karşılaştırılabilir yeterli rakam yok; grafik yerine aşağıdaki öne çıkan sayılara bakın.</div>`}</section>
+        <section><div class="label">Şema</div><div class="figure"><div class="ftitle">${esc(v.diagram?.title)}</div>${diagramHTML(v.diagram)}</div></section>
       </div>
-      ${(v.numbers||[]).length ? `<section><h4>Videoda geçen rakamlar</h4><div class="nums">${v.numbers.map(n => `<div class="num"><b>${fmtV(n.value)} ${esc(n.unit)}</b><span>${esc(n.label)}${n.context ? " · " + esc(n.context) : ""}</span></div>`).join("")}</div></section>` : ""}
-      <section><h4>İş fikirleri</h4><div class="ideas">${ideas.map(ideaCard).join("")}</div></section>
-      ${(v.skeptic_notes||[]).length ? `<section class="skeptic"><h4 style="color:var(--seal)">Şüpheyle bakılacak noktalar</h4><ul>${v.skeptic_notes.map(s => `<li>${esc(s)}</li>`).join("")}</ul></section>` : ""}
+      ${(v.numbers||[]).length ? `<section><div class="label">Videoda geçen rakamlar</div><div class="nums">${v.numbers.map(n => `<div class="num"><b>${fmtV(n.value)} ${esc(n.unit)}</b><span>${esc(n.label)}${n.context ? " · " + esc(n.context) : ""}</span></div>`).join("")}</div></section>` : ""}
+      <section><div class="label">İş fikirleri</div><div class="ideas">${ideas.map(ideaCard).join("")}</div></section>
+      ${(v.skeptic_notes||[]).length ? `<section class="skeptic"><div class="label" style="color:var(--seal)">Şüpheyle bakılacak noktalar</div><ul>${v.skeptic_notes.map(s => `<li>${esc(s)}</li>`).join("")}</ul></section>` : ""}
     </div>
   </details>`;
 }
@@ -326,8 +365,31 @@ function setTab(t) {
   $("#view-videos").hidden = t !== "videos"; $("#view-ideas").hidden = t !== "ideas";
 }
 
+function renderPrint() {
+  const wrap = $(".wrap"), vids = DATA.videos;
+  const cover = document.createElement("section"); cover.className = "cover";
+  cover.append($("header.top"), $(".overview"), $("footer"));
+  wrap.prepend(cover);
+  const toc = document.createElement("section"); toc.className = "toc";
+  toc.innerHTML = `<h2>İçindekiler</h2><ol>${vids.map(v => `<li><span class="mono muted">${fmtDate(v.date)}</span><a href="#v-${esc(v.id)}">${esc(v.title_tr || v.title)}</a><span class="mono toc-page" data-id="${esc(v.id)}"></span></li>`).join("")}
+    <li><span class="mono muted">—</span><a href="#fikirler">${esc(IDEAS_INDEX_TITLE)}</a><span class="mono toc-page" data-id="fikirler"></span></li></ol>`;
+  $("#view-videos").before(toc);
+  const idx = document.createElement("section"); idx.className = "ideas-index"; idx.id = "fikirler";
+  const groups = ["Düşük", "Orta", "Yüksek"].map(cap => [cap, vids.flatMap(v => (v.business_ideas || []).filter(b => b.capital === cap).map(b => ({...b, v})))]);
+  idx.innerHTML = `<h2>${esc(IDEAS_INDEX_TITLE)}</h2>` + groups.map(([cap, rows]) => `<h3>${esc(cap)} sermaye · ${rows.length} fikir</h3>
+    <table><thead><tr><th>Fikir</th><th>Çözüm</th><th>Zorluk</th><th>Kaynak video</th></tr></thead><tbody>
+    ${rows.map(r => `<tr><td><b>${esc(r.name)}</b><div class="muted" style="font-size:.8rem">${esc(r.target)}</div></td><td>${esc(r.solution)}</td><td class="mono">${esc(r.difficulty)}/5</td><td><a href="#v-${esc(r.v.id)}">${esc(r.v.title_tr || r.v.title)}</a><div class="mono muted" style="font-size:.75rem">${fmtDate(r.v.date)}</div></td></tr>`).join("")}
+    </tbody></table>`).join("");
+  $("#view-videos").after(idx);
+  document.fonts.ready.then(() => { window.__printReady = true; });
+}
+// build_pdf.py calls this after a first render pass to fill in the page numbers
+window.setTocPages = map => { document.querySelectorAll(".toc-page").forEach(el => { if (map[el.dataset.id]) el.textContent = map[el.dataset.id]; }); };
+
 fetch("data.json").then(r => r.json()).then(d => {
-  DATA = d; renderOverview(); render(); setTab(tab);
+  DATA = d; renderOverview(); render();
+  if (PRINT) { renderPrint(); return; }
+  setTab(tab);
   const first = document.querySelector("details.video"); if (first && tab === "videos") first.open = true;
   const h = location.hash.slice(1); if (h) { const el = document.getElementById(h); if (el) { el.open = true; el.scrollIntoView(); } }
 }).catch(() => { $("#view-videos").innerHTML = `<div class="empty">Veri dosyası yüklenemedi. Sayfayı yenileyin.</div>`; });
@@ -339,4 +401,25 @@ document.addEventListener("click", e => {
   const th = e.target.closest("th[data-k]"); if (th) { sortDir = sortKey === th.dataset.k ? -sortDir : 1; sortKey = th.dataset.k; render(); }
   const o = e.target.closest("[data-open]"); if (o) { e.preventDefault(); setTab("videos"); const el = document.getElementById("v-" + o.dataset.open); if (el) { el.open = true; el.scrollIntoView({behavior: "smooth"}); } }
 });
+
+// The latest PDF build lives in the artifact's asset store; update.py's workflow replaces this one line.
+const PDF_URL = "/_blob/fafcec3c69951afa691c30409a0a0dc2";
+$("#pdf-open").href = PDF_URL;
+(async () => {
+  const btn = $("#pdf-save"), status = $("#pdf-status");
+  if (!window.claude?.use) return;                      // outside the claude.ai viewer (e.g. the PDF build)
+  const downloads = await window.claude.use("downloads").catch(() => null);
+  if (!downloads) return;                               // viewer cannot save files here; the link stays
+  btn.hidden = false;
+  btn.onclick = async () => {
+    btn.disabled = true; status.textContent = "Hazırlanıyor…";
+    try {
+      const res = await fetch(PDF_URL); if (!res.ok) throw new Error("fetch " + res.status);
+      await downloads.save({ filename: "Statrys-Fikir-Defteri.pdf", data: await res.blob() });
+      status.textContent = "Kaydedildi.";
+    } catch (e) {
+      status.textContent = e && e.code === "declined" ? "" : "Kaydedilemedi; yandaki bağlantıyı deneyin.";
+    } finally { btn.disabled = false; }
+  };
+})();
 </script>

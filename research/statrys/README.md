@@ -2,9 +2,10 @@
 
 [@Statrys](https://www.youtube.com/@Statrys) YouTube kanalındaki videoların İngilizce altyazılarından Türkçe özet, transkripte dayalı grafik, şema ve iş fikri üreten küçük bir hat.
 
-- **Yayımlanan sayfa:** https://claude.ai/artifact/22mbhumKX9398w8ixKPHaL (özel; sahibi paylaşmadıkça yalnızca sahibi açabilir)
+- **Yayımlanan sayfa:** https://claude.ai/artifact/22mbhumKX9398w8ixKPHaL (özel; sahibi paylaşmadıkça yalnızca sahibi açabilir). PDF sürümü sayfanın üstündeki düğmeden indirilir.
 - **Kapsam:** 10.11.2025'ten itibaren yüklenen videolar. Yeni videolar eklenir, eskiler silinmez.
 - **Transkriptler depoya konmaz.** Telifli içerik oldukları için `yt/` klasörü `.gitignore` ile dışarıda bırakılmıştır. Depoda yalnızca meta veri (`meta/index.json`) ve özgün Türkçe analizler (`analysis/*.json`) bulunur.
+- **PDF depoya konmaz.** Her güncellemede yeniden üretilir ve sayfanın dosya deposuna (asset) yüklenir; eski sürüm silinir. Böylece depo şişmez.
 
 ## Dosyalar
 
@@ -16,13 +17,14 @@
 | `ground.py` | Analizlerdeki sayıların transkriptte geçip geçmediğini kaba biçimde denetler (yalnızca indirilmiş transkripti olan videolar için). |
 | `ctx.py` | `python3 ctx.py <videoId> "<regex>"` ile bir sayının transkriptteki bağlamını gösterir. |
 | `build_data.py` | `meta/index.json` + `analysis/` → `site/data.json`. |
-| `site/index.html` | Yayımlanan sayfa; `data.json`'ı yanından okur. |
+| `site/index.html` | Yayımlanan sayfa; `data.json`'ı yanından okur. `#print` ile açılınca PDF için sayfalandırılmış görünüme geçer. |
+| `build_pdf.py` + `pdf.mjs` | `site/` baskı görünümünü headless Chromium ile `Statrys-Fikir-Defteri.pdf`'e çevirir: kapak, sayfa numaralı içindekiler, her video için yer imi. İki geçiş yapar (ilk geçişin yer imlerinden sayfa numaralarını alır). `node`, global `playwright` paketi, Chromium ve `pypdf` gerekir. |
 
 ## Güncelleme adımları (zamanlanmış görev bunları izler)
 
 Tüm komutlar `research/statrys/` içinden çalıştırılır.
 
-1. `pip install -q yt-dlp` (gerekirse).
+1. `pip install -q yt-dlp pypdf` (gerekirse).
 2. `python3 update.py` → çıktıdaki `pending_analysis` listesine bak.
    - Liste boşsa ve `new` da boşsa: değişiklik yok, dur. Sayfayı yalnızca izlenme sayısı için yeniden yayımlama.
    - `no_captions` içindeki videolar altyazısız; analiz edilmez, kullanıcıya bildirilir.
@@ -30,5 +32,11 @@ Tüm komutlar `research/statrys/` içinden çalıştırılır.
 4. `python3 validate.py analysis` → "all valid" olmalı.
 5. `python3 ground.py <yeni ID'ler>` → bulunamayan her değeri `ctx.py` ile kontrol et; transkriptte karşılığı yoksa değeri sil ya da düzelt.
 6. `python3 build_data.py meta/index.json analysis site/data.json`
-7. Sayfayı aynı adrese yeniden yayımla: Artifact aracıyla önce `action: "read"` + yukarıdaki `url`, sonra `site/index.html` dosyasını aynı `url` ile ve `files: {"data.json": "research/statrys/site/data.json"}` ile yayımla. `icon` verme.
-8. `meta/`, `analysis/`, `site/` değişikliklerini commit'le ve çalışma dalına push'la.
+7. `python3 build_pdf.py` → `Statrys-Fikir-Defteri.pdf` (çıktıdaki `toc_without_page` boş olmalı).
+8. Sayfayı ve PDF'i aynı adrese yayımla (Artifact aracı, `url` hep yukarıdaki adres):
+   1. `action: "read"` ile sayfayı oku (bu oturumda ilk yazmadan önce şart).
+   2. PDF'i yükle: publish, `file_path: research/statrys/Statrys-Fikir-Defteri.pdf`, `asset: true`. Sonuç `/_blob/<yeni id>` verir.
+   3. `site/index.html` içindeki `const PDF_URL = "/_blob/…";` satırını yeni id ile değiştir (tek yer).
+   4. Sayfayı yayımla: `file_path: research/statrys/site/index.html`, `files: {"data.json": "research/statrys/site/data.json"}`. `icon` ve `capabilities` verme (saklı tanım korunur); yeni artifact oluşturma.
+   5. Eski PDF'i sil: `action: "list"`, `scope: "assets"` ile eski id'yi bul; `action: "delete"`, `path: <eski id>`. Yeni yüklediğini silme.
+9. `meta/`, `analysis/`, `site/` değişikliklerini commit'le ve çalışma dalına push'la. PDF ve `yt/` commit'lenmez.
