@@ -32,6 +32,11 @@ for p in sorted(pathlib.Path(sys.argv[1]).glob("*.json")):
         if miss: bad(f"idea {i.get('name')!r} missing {sorted(miss)}")
         if i.get("capital") not in ("Düşük", "Orta", "Yüksek"): bad(f"capital {i.get('capital')!r}")
         if not isinstance(i.get("difficulty"), int) or not 1 <= i["difficulty"] <= 5: bad(f"difficulty {i.get('difficulty')!r}")
+        for k in ("originality", "problem_solving"):
+            if not isinstance(i.get(k), int) or not 1 <= i[k] <= 5: bad(f"idea {i.get('name')!r}: {k} {i.get(k)!r}")
+        if not (i.get("score_note") or "").strip(): bad(f"idea {i.get('name')!r}: missing score_note")
+        for s in i.get("similar") or []:
+            if not isinstance(s, dict) or not s.get("id") or not s.get("name"): bad(f"idea {i.get('name')!r}: bad similar entry {s!r}")
     for n in d.get("numbers") or []:
         if not isinstance(n.get("value"), (int, float)): bad(f"number non-numeric: {n.get('label')!r}={n.get('value')!r}")
 print("\n".join(problems) or "all valid")

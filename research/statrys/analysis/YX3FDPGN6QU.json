@@ -1,113 +1,282 @@
 {
-  "id": "YX3FDPGN6QU",
-  "title_tr": "SWIFT bir finansal silah mı? Alternatif ödeme sistemleri ve işletmelere etkisi",
-  "category": "Küresel finans & bankacılık",
-  "region": ["Küresel", "ABD", "Çin", "Rusya", "İran", "Hindistan"],
-  "summary_tr": "Video, SWIFT'in parayı değil bankalar arası ödeme talimatlarını taşıdığını, ancak bu mesajlaşma ağından çıkarılan bir ülkenin uluslararası ödeme yapamaz hale geldiğini anlatıyor. İran (2012) ve Rusya (2022) örnekleri, ağdan kesilmenin para birimi ve dış ticaret üzerindeki etkisini göstermek için kullanılıyor; Avrupa'nın enerji ihtiyacı nedeniyle bazı Rus bankalarının bilerek bağlı bırakılması da bu aracın çıkarlara göre kullanıldığına örnek veriliyor. Çin'in CIPS'i, Rusya'nın SPFS'i, Hindistan'ın UPI'ı, BRICS girişimleri, Bitcoin ve stablecoin'ler ele alınıyor ve hiçbirinin dolar sisteminden tam bağımsızlık sağlayamadığı savunuluyor. Son bölümde işletmeler için muhabir banka zincirinin maliyet ve gecikmesi anlatılıp yerel ödeme ağlarını kullanan Statrys hizmeti tanıtılıyor.",
-  "key_points": [
-    "SWIFT para transfer etmez, bankalar arası talimat mesajlarını iletir; ama ağdan çıkarılmak uluslararası ödemeleri fiilen durdurur.",
-    "İran ve Rusya'ya uygulanan SWIFT kesintileri para birimlerinde sert değer kayıplarına yol açtı.",
-    "Rusya'da enerji ödemelerini yürüten büyük bankaların bağlı bırakılması, yaptırımın seçici kullanıldığını gösteriyor.",
-    "Çin'in CIPS'i büyük ölçüde hâlâ SWIFT mesajlaşmasına dayanıyor; Rusya'nın SPFS'i ise ağırlıkla yaptırım altındaki ülkeleri topluyor.",
-    "Stablecoin'ler de ABD yargı yetkisine tabi olduğu için yaptırımdan kaçış aracı olarak sınırlı; varlık dondurma örnekleri var.",
-    "İşletmeler için pratik sonuç: uluslararası havaleler muhabir bankalar nedeniyle pahalı ve yavaş; yerel ödeme ağları zinciri kısaltabilir."
-  ],
-  "numbers": [
-    {"label": "SWIFT'ten geçen uluslararası dolar transferi", "value": 90, "unit": "%", "context": "Uluslararası dolar transferlerinin bu ağdan geçen payı."},
-    {"label": "İran'da ağdan kesilen banka (2012)", "value": 30, "unit": "banka", "context": "Bir gecede bağlantısı kesilen İran bankaları."},
-    {"label": "İran petrol ihracatı düşüşü", "value": 40, "unit": "% (yaklaşık)", "context": "Kesintiden sonraki bir yılda."},
-    {"label": "İran riyalinin değer kaybı", "value": 80, "unit": "%", "context": "SWIFT kesintisinin ardından para biriminin kaybı."},
-    {"label": "İran'ın masaya dönüşü", "value": 3, "unit": "yıl", "context": "Kesintiden müzakereye dönüşe kadar geçen süre."},
-    {"label": "Rusya'nın hazırlık süresi", "value": 8, "unit": "yıl", "context": "2014 tehdidinden 2022 kesintisine kadar kendi sistemini kurma süresi."},
-    {"label": "Ağdan çıkarılan Rus bankası (2022)", "value": 7, "unit": "banka", "context": "Ukrayna işgalinin ardından günler içinde."},
-    {"label": "Rublenin 24 saatteki kaybı", "value": 50, "unit": "% (yaklaşık yarısı)", "context": "Videoda 'neredeyse yarısı' olarak ifade edildi."},
-    {"label": "Rusya Merkez Bankası faiz artışı", "value": 11.5, "unit": "yüzde puan", "context": "Tek seferde yapılan acil faiz artışı."},
-    {"label": "CIPS katılımcı kurum", "value": 1600, "unit": "kurum (üzeri)", "context": "Çin'in 2015'te kurduğu sisteme bağlı finans kurumları."},
-    {"label": "CIPS ülke sayısı", "value": 180, "unit": "ülke", "context": "Katılımcıların bulunduğu söylenen ülke sayısı."},
-    {"label": "CIPS işlemlerinde SWIFT bağımlılığı", "value": 80, "unit": "% (üzeri)", "context": "Hâlâ SWIFT mesajlaşmasıyla işlenen CIPS işlemleri."},
-    {"label": "Yuanın küresel ödeme payı (alt)", "value": 3, "unit": "%", "context": "Küresel ödemelerdeki yuan payı, alt sınır."},
-    {"label": "Yuanın küresel ödeme payı (üst)", "value": 4, "unit": "%", "context": "Aynı aralığın üst sınırı."},
-    {"label": "SPFS yabancı katılımcı", "value": 177, "unit": "kurum (yaklaşık)", "context": "Rusya sisteminin yabancı katılımcıları."},
-    {"label": "SPFS ülke sayısı", "value": 24, "unit": "ülke", "context": "Yabancı katılımcıların bulunduğu ülkeler."},
-    {"label": "Hindistan'a gelen yıllık işçi dövizi", "value": 129, "unit": "milyar $", "context": "UPI'ın uluslararası kullanımının önemini anlatmak için."},
-    {"label": "BRICS'in dünya nüfusundaki payı", "value": 40, "unit": "% (üzeri)", "context": "Genişleyen BRICS grubunun nüfus payı."},
-    {"label": "Garantex'te dondurulan tutar", "value": 28, "unit": "milyon $", "context": "Tether'in ABD Adalet Bakanlığı talebiyle dondurduğu tutar."},
-    {"label": "Bitcoin haftalık oynaklık örneği", "value": 20, "unit": "%", "context": "Ticari faturalama için uygun olmadığını göstermek için verilen örnek."},
-    {"label": "Uluslararası havale süresi (alt)", "value": 3, "unit": "gün", "context": "Muhabir banka zincirinde tipik süre, alt sınır."},
-    {"label": "Uluslararası havale süresi (üst)", "value": 5, "unit": "gün", "context": "Aynı aralığın üst sınırı."}
-  ],
-  "chart": {
-    "type": "hbar",
-    "title": "SWIFT kesintisinin ardından videoda anılan düşüşler",
-    "unit": "% düşüş",
-    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. Zaman aralıkları farklı (ruble 24 saat, İran için yaklaşık bir yıl); ruble değeri 'neredeyse yarısı' ifadesinin yaklaşık karşılığıdır.",
-    "data": [
-      {"label": "İran riyali değeri (2012 sonrası)", "value": 80},
-      {"label": "Ruble değeri (2022, 24 saat)", "value": 50},
-      {"label": "İran petrol ihracatı (bir yıl)", "value": 40}
-    ]
+ "id": "YX3FDPGN6QU",
+ "title_tr": "SWIFT bir finansal silah mı? Alternatif ödeme sistemleri ve işletmelere etkisi",
+ "category": "Küresel finans & bankacılık",
+ "region": [
+  "Küresel",
+  "ABD",
+  "Çin",
+  "Rusya",
+  "İran",
+  "Hindistan"
+ ],
+ "summary_tr": "Video, SWIFT'in parayı değil bankalar arası ödeme talimatlarını taşıdığını, ancak bu mesajlaşma ağından çıkarılan bir ülkenin uluslararası ödeme yapamaz hale geldiğini anlatıyor. İran (2012) ve Rusya (2022) örnekleri, ağdan kesilmenin para birimi ve dış ticaret üzerindeki etkisini göstermek için kullanılıyor; Avrupa'nın enerji ihtiyacı nedeniyle bazı Rus bankalarının bilerek bağlı bırakılması da bu aracın çıkarlara göre kullanıldığına örnek veriliyor. Çin'in CIPS'i, Rusya'nın SPFS'i, Hindistan'ın UPI'ı, BRICS girişimleri, Bitcoin ve stablecoin'ler ele alınıyor ve hiçbirinin dolar sisteminden tam bağımsızlık sağlayamadığı savunuluyor. Son bölümde işletmeler için muhabir banka zincirinin maliyet ve gecikmesi anlatılıp yerel ödeme ağlarını kullanan Statrys hizmeti tanıtılıyor.",
+ "key_points": [
+  "SWIFT para transfer etmez, bankalar arası talimat mesajlarını iletir; ama ağdan çıkarılmak uluslararası ödemeleri fiilen durdurur.",
+  "İran ve Rusya'ya uygulanan SWIFT kesintileri para birimlerinde sert değer kayıplarına yol açtı.",
+  "Rusya'da enerji ödemelerini yürüten büyük bankaların bağlı bırakılması, yaptırımın seçici kullanıldığını gösteriyor.",
+  "Çin'in CIPS'i büyük ölçüde hâlâ SWIFT mesajlaşmasına dayanıyor; Rusya'nın SPFS'i ise ağırlıkla yaptırım altındaki ülkeleri topluyor.",
+  "Stablecoin'ler de ABD yargı yetkisine tabi olduğu için yaptırımdan kaçış aracı olarak sınırlı; varlık dondurma örnekleri var.",
+  "İşletmeler için pratik sonuç: uluslararası havaleler muhabir bankalar nedeniyle pahalı ve yavaş; yerel ödeme ağları zinciri kısaltabilir."
+ ],
+ "numbers": [
+  {
+   "label": "SWIFT'ten geçen uluslararası dolar transferi",
+   "value": 90,
+   "unit": "%",
+   "context": "Uluslararası dolar transferlerinin bu ağdan geçen payı."
   },
-  "diagram": {
-    "type": "flow",
-    "title": "Klasik uluslararası ödemenin muhabir banka zinciri ve kısa yol",
-    "steps": [
-      {"label": "Gönderen banka", "detail": "İşletmenin bankası ödeme talimatını SWIFT mesajı olarak hazırlar."},
-      {"label": "Birinci muhabir banka", "detail": "Talimat ve fon aracı bir bankaya geçer; kesinti ve gecikme eklenir."},
-      {"label": "İkinci muhabir banka", "detail": "Zincirdeki her ek halka yeni bir ücret ve gün ekleyebilir."},
-      {"label": "Alıcı banka", "detail": "Tutar birkaç gün sonra, kesintilerden sonra alıcıya ulaşır."},
-      {"label": "Yaptırım/kesinti riski", "detail": "Zincirdeki herhangi bir ülkenin veya bankanın yaptırım kararı ödemeyi durdurabilir."},
-      {"label": "Yerel ödeme ağı alternatifi", "detail": "Fon hedef ülkede yerel transferle ödenince adım, süre ve ücret azalır."}
-    ]
+  {
+   "label": "İran'da ağdan kesilen banka (2012)",
+   "value": 30,
+   "unit": "banka",
+   "context": "Bir gecede bağlantısı kesilen İran bankaları."
   },
-  "business_ideas": [
-    {
-      "name": "Dış ticaret ödemeleri için yaptırım ön kontrol aracı",
-      "insight": "Videodaki, yaptırım kararlarının seçici ve hızla değişebildiği ve alternatif sistemlere katılan bankaların da hedef alınabildiği anlatımı.",
-      "problem": "Rusya, Orta Asya ve Orta Doğu ile çalışan Türk ihracatçılar, karşı tarafın bankası veya ortakları yaptırım listelerine girdiğinde ödemelerin bloke olmasıyla karşılaşıyor.",
-      "solution": "Alıcı firmanın, ortaklarının ve bankasının OFAC, AB, BM ve İngiltere yaptırım listelerinde olup olmadığını sipariş öncesi kontrol eden ve liste değişikliğinde uyaran, kontrol kaydını bankaya sunulabilir rapor olarak saklayan bir araç.",
-      "target": "Riskli koridorlarda ticaret yapan ihracatçı KOBİ'ler, dış ticaret sermaye şirketleri, lojistik firmaları",
-      "revenue_model": "Sorgu sayısına göre kademeli abonelik",
-      "first_step": "İstanbul ve Mersin'de bu pazarlarla çalışan 15 ihracatçıyla son bir yılda yaşanan ödeme blokajlarını konuşup açık kaynak yaptırım listeleriyle basit bir prototip göstermek.",
-      "capital": "Düşük",
-      "difficulty": 3,
-      "turkey_angle": "Türk bankaları ikincil yaptırım riskine karşı bu koridorlarda sıkı inceleme yapıyor; ihracatçının önceden kendi kontrolünü belgelemesi ödeme sürecini hızlandırabilir.",
-      "risks": "Araç yaptırımlardan kaçınma için değil uyum için konumlandırılmalı; yanlış negatif sonuçta hukuki sorumluluk; liste ve sahiplik verisinin güncelliği."
-    },
-    {
-      "name": "Gizli döviz ve havale maliyeti denetimi",
-      "insight": "Videonun, girişimcilerin bankanın verdiği kur ile gerçek kur arasındaki farka ve muhabir banka kesintilerine hiç bakmadığı tespiti.",
-      "problem": "KOBİ'ler uluslararası ödemelerde kur makası, muhabir banka kesintisi ve havale ücretleri yüzünden ne kadar kaybettiğini bilmiyor.",
-      "solution": "Son 12 ayın banka ekstrelerini okuyup her işlemde uygulanan kuru piyasa orta kuruyla karşılaştıran, toplam gizli maliyeti ve daha ucuz alternatif kanalları raporlayan bir analiz hizmeti.",
-      "target": "Yılda yüzlerce yurt dışı ödeme veya tahsilat yapan ithalatçı/ihracatçı KOBİ'ler",
-      "revenue_model": "Ücretsiz ön rapor + tasarruf üzerinden başarı ücreti veya yıllık izleme aboneliği",
-      "first_step": "5 KOBİ'den anonimleştirilmiş ekstre alıp elle analiz yapmak ve bulunan maliyet farkının işletme sahibini harekete geçirecek büyüklükte olup olmadığını ölçmek.",
-      "capital": "Düşük",
-      "difficulty": 2,
-      "turkey_angle": "Türkiye'de döviz işlemlerinde banka makası ve havale ücretleri yüksek olabiliyor; hizmet tamamen uzaktan yürütülebilir.",
-      "risks": "Bankaların ekstre formatlarının farklı olması; yönlendirilen ödeme kuruluşlarının lisans ve güvenilirliği; tasarrufun düşük çıkması halinde ödeme isteksizliği."
-    },
-    {
-      "name": "Stablecoin tahsilatı yapan işletmeler için cüzdan risk taraması",
-      "insight": "Videodaki, stablecoin ihraççılarının ABD talebiyle cüzdanları dondurabildiği ve blokzincirde işlemlerin izlenebilir olduğu anlatımı.",
-      "problem": "USDT ile ödeme alan Türk ihracatçılar ve freelancer'lar, gelen fonun yaptırımlı veya suç bağlantılı bir cüzdandan gelmesi halinde fonlarının dondurulması ve banka hesaplarının kapanması riskini bilmiyor.",
-      "solution": "Ödeme alınmadan önce gönderen cüzdan adresini zincir üstü analiz servisleriyle tarayan, risk puanı ve belge kaydı üreten basit bir web/Telegram aracı.",
-      "target": "Kripto ile tahsilat yapan ihracatçılar, freelancer'lar, OTC masaları",
-      "revenue_model": "Tarama başına ücret veya aylık paket",
-      "first_step": "Zincir üstü analiz API sağlayıcılarının fiyatlarını alıp 20 potansiyel kullanıcıyla görüşerek hangi tutar üzerinde tarama yapmaya istekli olduklarını öğrenmek.",
-      "capital": "Düşük",
-      "difficulty": 3,
-      "turkey_angle": "Türkiye'de kripto varlık hizmet sağlayıcılarına yönelik düzenlemeler ve MASAK yükümlülükleri sıkılaşıyor; kullanıcıların uyum kaydı tutma ihtiyacı artıyor.",
-      "risks": "Kripto ile ödeme kabulüne ilişkin Türk mevzuatına (ödemelerde kripto kullanım yasağı dahil) uyum şart; analiz API maliyetleri; yanlış risk puanı."
-    }
-  ],
-  "skeptic_notes": [
-    "Başlık ABD'nin Çin bankalarını hedef aldığını söylüyor, ancak video bu konuyu neredeyse hiç işlemiyor; içerik genel olarak SWIFT ve alternatifleri hakkında.",
-    "İran riyalinin 'bir gecede' %80 değer kaybettiği söyleniyor, sonra aynı rakam daha uzun bir döneme bağlanıyor; zaman çerçevesi tutarsız.",
-    "Rublenin 24 saatte 'neredeyse yarı' değer kaybettiği ifadesi abartılı olabilir; doğrulanmalı.",
-    "CIPS'in 180 ülkede katılımcısı olduğu rakamı yüksek görünüyor; resmi verilerle kontrol edilmeli.",
-    "SWIFT'in uluslararası dolar transferlerinin %90'ını taşıdığı iddiasının kaynağı verilmiyor.",
-    "Altyazıdaki 'it became the you had of something much bigger' gibi bozuk kısımlar anlamı belirsizleştiriyor.",
-    "Videonun son bölümü Statrys'in yerel ödeme hizmetinin reklamı; muhabir banka maliyetleri anlatımı bu hizmete zemin hazırlıyor.",
-    "Grafikteki üç değer farklı göstergeler ve farklı süreler için söylendi; yalnızca yaptırımın büyüklük sırasını göstermek için yan yana konuldu."
+  {
+   "label": "İran petrol ihracatı düşüşü",
+   "value": 40,
+   "unit": "% (yaklaşık)",
+   "context": "Kesintiden sonraki bir yılda."
+  },
+  {
+   "label": "İran riyalinin değer kaybı",
+   "value": 80,
+   "unit": "%",
+   "context": "SWIFT kesintisinin ardından para biriminin kaybı."
+  },
+  {
+   "label": "İran'ın masaya dönüşü",
+   "value": 3,
+   "unit": "yıl",
+   "context": "Kesintiden müzakereye dönüşe kadar geçen süre."
+  },
+  {
+   "label": "Rusya'nın hazırlık süresi",
+   "value": 8,
+   "unit": "yıl",
+   "context": "2014 tehdidinden 2022 kesintisine kadar kendi sistemini kurma süresi."
+  },
+  {
+   "label": "Ağdan çıkarılan Rus bankası (2022)",
+   "value": 7,
+   "unit": "banka",
+   "context": "Ukrayna işgalinin ardından günler içinde."
+  },
+  {
+   "label": "Rublenin 24 saatteki kaybı",
+   "value": 50,
+   "unit": "% (yaklaşık yarısı)",
+   "context": "Videoda 'neredeyse yarısı' olarak ifade edildi."
+  },
+  {
+   "label": "Rusya Merkez Bankası faiz artışı",
+   "value": 11.5,
+   "unit": "yüzde puan",
+   "context": "Tek seferde yapılan acil faiz artışı."
+  },
+  {
+   "label": "CIPS katılımcı kurum",
+   "value": 1600,
+   "unit": "kurum (üzeri)",
+   "context": "Çin'in 2015'te kurduğu sisteme bağlı finans kurumları."
+  },
+  {
+   "label": "CIPS ülke sayısı",
+   "value": 180,
+   "unit": "ülke",
+   "context": "Katılımcıların bulunduğu söylenen ülke sayısı."
+  },
+  {
+   "label": "CIPS işlemlerinde SWIFT bağımlılığı",
+   "value": 80,
+   "unit": "% (üzeri)",
+   "context": "Hâlâ SWIFT mesajlaşmasıyla işlenen CIPS işlemleri."
+  },
+  {
+   "label": "Yuanın küresel ödeme payı (alt)",
+   "value": 3,
+   "unit": "%",
+   "context": "Küresel ödemelerdeki yuan payı, alt sınır."
+  },
+  {
+   "label": "Yuanın küresel ödeme payı (üst)",
+   "value": 4,
+   "unit": "%",
+   "context": "Aynı aralığın üst sınırı."
+  },
+  {
+   "label": "SPFS yabancı katılımcı",
+   "value": 177,
+   "unit": "kurum (yaklaşık)",
+   "context": "Rusya sisteminin yabancı katılımcıları."
+  },
+  {
+   "label": "SPFS ülke sayısı",
+   "value": 24,
+   "unit": "ülke",
+   "context": "Yabancı katılımcıların bulunduğu ülkeler."
+  },
+  {
+   "label": "Hindistan'a gelen yıllık işçi dövizi",
+   "value": 129,
+   "unit": "milyar $",
+   "context": "UPI'ın uluslararası kullanımının önemini anlatmak için."
+  },
+  {
+   "label": "BRICS'in dünya nüfusundaki payı",
+   "value": 40,
+   "unit": "% (üzeri)",
+   "context": "Genişleyen BRICS grubunun nüfus payı."
+  },
+  {
+   "label": "Garantex'te dondurulan tutar",
+   "value": 28,
+   "unit": "milyon $",
+   "context": "Tether'in ABD Adalet Bakanlığı talebiyle dondurduğu tutar."
+  },
+  {
+   "label": "Bitcoin haftalık oynaklık örneği",
+   "value": 20,
+   "unit": "%",
+   "context": "Ticari faturalama için uygun olmadığını göstermek için verilen örnek."
+  },
+  {
+   "label": "Uluslararası havale süresi (alt)",
+   "value": 3,
+   "unit": "gün",
+   "context": "Muhabir banka zincirinde tipik süre, alt sınır."
+  },
+  {
+   "label": "Uluslararası havale süresi (üst)",
+   "value": 5,
+   "unit": "gün",
+   "context": "Aynı aralığın üst sınırı."
+  }
+ ],
+ "chart": {
+  "type": "hbar",
+  "title": "SWIFT kesintisinin ardından videoda anılan düşüşler",
+  "unit": "% düşüş",
+  "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. Zaman aralıkları farklı (ruble 24 saat, İran için yaklaşık bir yıl); ruble değeri 'neredeyse yarısı' ifadesinin yaklaşık karşılığıdır.",
+  "data": [
+   {
+    "label": "İran riyali değeri (2012 sonrası)",
+    "value": 80
+   },
+   {
+    "label": "Ruble değeri (2022, 24 saat)",
+    "value": 50
+   },
+   {
+    "label": "İran petrol ihracatı (bir yıl)",
+    "value": 40
+   }
   ]
+ },
+ "diagram": {
+  "type": "flow",
+  "title": "Klasik uluslararası ödemenin muhabir banka zinciri ve kısa yol",
+  "steps": [
+   {
+    "label": "Gönderen banka",
+    "detail": "İşletmenin bankası ödeme talimatını SWIFT mesajı olarak hazırlar."
+   },
+   {
+    "label": "Birinci muhabir banka",
+    "detail": "Talimat ve fon aracı bir bankaya geçer; kesinti ve gecikme eklenir."
+   },
+   {
+    "label": "İkinci muhabir banka",
+    "detail": "Zincirdeki her ek halka yeni bir ücret ve gün ekleyebilir."
+   },
+   {
+    "label": "Alıcı banka",
+    "detail": "Tutar birkaç gün sonra, kesintilerden sonra alıcıya ulaşır."
+   },
+   {
+    "label": "Yaptırım/kesinti riski",
+    "detail": "Zincirdeki herhangi bir ülkenin veya bankanın yaptırım kararı ödemeyi durdurabilir."
+   },
+   {
+    "label": "Yerel ödeme ağı alternatifi",
+    "detail": "Fon hedef ülkede yerel transferle ödenince adım, süre ve ücret azalır."
+   }
+  ]
+ },
+ "business_ideas": [
+  {
+   "name": "Dış ticaret ödemeleri için yaptırım ön kontrol aracı",
+   "insight": "Videodaki, yaptırım kararlarının seçici ve hızla değişebildiği ve alternatif sistemlere katılan bankaların da hedef alınabildiği anlatımı.",
+   "problem": "Rusya, Orta Asya ve Orta Doğu ile çalışan Türk ihracatçılar, karşı tarafın bankası veya ortakları yaptırım listelerine girdiğinde ödemelerin bloke olmasıyla karşılaşıyor.",
+   "solution": "Alıcı firmanın, ortaklarının ve bankasının OFAC, AB, BM ve İngiltere yaptırım listelerinde olup olmadığını sipariş öncesi kontrol eden ve liste değişikliğinde uyaran, kontrol kaydını bankaya sunulabilir rapor olarak saklayan bir araç.",
+   "target": "Riskli koridorlarda ticaret yapan ihracatçı KOBİ'ler, dış ticaret sermaye şirketleri, lojistik firmaları",
+   "revenue_model": "Sorgu sayısına göre kademeli abonelik",
+   "first_step": "İstanbul ve Mersin'de bu pazarlarla çalışan 15 ihracatçıyla son bir yılda yaşanan ödeme blokajlarını konuşup açık kaynak yaptırım listeleriyle basit bir prototip göstermek.",
+   "capital": "Düşük",
+   "difficulty": 3,
+   "turkey_angle": "Türk bankaları ikincil yaptırım riskine karşı bu koridorlarda sıkı inceleme yapıyor; ihracatçının önceden kendi kontrolünü belgelemesi ödeme sürecini hızlandırabilir.",
+   "risks": "Araç yaptırımlardan kaçınma için değil uyum için konumlandırılmalı; yanlış negatif sonuçta hukuki sorumluluk; liste ve sahiplik verisinin güncelliği.",
+   "originality": 2,
+   "problem_solving": 4,
+   "score_note": "Kategori dolu, ihtiyaç gerçek.",
+   "similar": [
+    {
+     "id": "wN5EeDoFhdM",
+     "name": "Yuan ve alternatif kanal ödemeleri için yaptırım uyum taraması"
+    },
+    {
+     "id": "K9Xu_jW17NM",
+     "name": "Çinli tedarikçiler için yaptırım ve ihracat kontrolü taraması"
+    },
+    {
+     "id": "vJ5Xc4SRvlk",
+     "name": "KOBİ'ler için 'hesabım donmasın' ön uyum kontrolü"
+    }
+   ]
+  },
+  {
+   "name": "Gizli döviz ve havale maliyeti denetimi",
+   "insight": "Videonun, girişimcilerin bankanın verdiği kur ile gerçek kur arasındaki farka ve muhabir banka kesintilerine hiç bakmadığı tespiti.",
+   "problem": "KOBİ'ler uluslararası ödemelerde kur makası, muhabir banka kesintisi ve havale ücretleri yüzünden ne kadar kaybettiğini bilmiyor.",
+   "solution": "Son 12 ayın banka ekstrelerini okuyup her işlemde uygulanan kuru piyasa orta kuruyla karşılaştıran, toplam gizli maliyeti ve daha ucuz alternatif kanalları raporlayan bir analiz hizmeti.",
+   "target": "Yılda yüzlerce yurt dışı ödeme veya tahsilat yapan ithalatçı/ihracatçı KOBİ'ler",
+   "revenue_model": "Ücretsiz ön rapor + tasarruf üzerinden başarı ücreti veya yıllık izleme aboneliği",
+   "first_step": "5 KOBİ'den anonimleştirilmiş ekstre alıp elle analiz yapmak ve bulunan maliyet farkının işletme sahibini harekete geçirecek büyüklükte olup olmadığını ölçmek.",
+   "capital": "Düşük",
+   "difficulty": 2,
+   "turkey_angle": "Türkiye'de döviz işlemlerinde banka makası ve havale ücretleri yüksek olabiliyor; hizmet tamamen uzaktan yürütülebilir.",
+   "risks": "Bankaların ekstre formatlarının farklı olması; yönlendirilen ödeme kuruluşlarının lisans ve güvenilirliği; tasarrufun düşük çıkması halinde ödeme isteksizliği.",
+   "originality": 3,
+   "problem_solving": 4,
+   "score_note": "Somut ve ölçülebilir; ücretsiz ön raporla satış kolay.",
+   "similar": []
+  },
+  {
+   "name": "Stablecoin tahsilatı yapan işletmeler için cüzdan risk taraması",
+   "insight": "Videodaki, stablecoin ihraççılarının ABD talebiyle cüzdanları dondurabildiği ve blokzincirde işlemlerin izlenebilir olduğu anlatımı.",
+   "problem": "USDT ile ödeme alan Türk ihracatçılar ve freelancer'lar, gelen fonun yaptırımlı veya suç bağlantılı bir cüzdandan gelmesi halinde fonlarının dondurulması ve banka hesaplarının kapanması riskini bilmiyor.",
+   "solution": "Ödeme alınmadan önce gönderen cüzdan adresini zincir üstü analiz servisleriyle tarayan, risk puanı ve belge kaydı üreten basit bir web/Telegram aracı.",
+   "target": "Kripto ile tahsilat yapan ihracatçılar, freelancer'lar, OTC masaları",
+   "revenue_model": "Tarama başına ücret veya aylık paket",
+   "first_step": "Zincir üstü analiz API sağlayıcılarının fiyatlarını alıp 20 potansiyel kullanıcıyla görüşerek hangi tutar üzerinde tarama yapmaya istekli olduklarını öğrenmek.",
+   "capital": "Düşük",
+   "difficulty": 3,
+   "turkey_angle": "Türkiye'de kripto varlık hizmet sağlayıcılarına yönelik düzenlemeler ve MASAK yükümlülükleri sıkılaşıyor; kullanıcıların uyum kaydı tutma ihtiyacı artıyor.",
+   "risks": "Kripto ile ödeme kabulüne ilişkin Türk mevzuatına (ödemelerde kripto kullanım yasağı dahil) uyum şart; analiz API maliyetleri; yanlış risk puanı.",
+   "originality": 3,
+   "problem_solving": 4,
+   "score_note": "Zincir analiz API'si üstüne basit arayüz; ihtiyaç gerçek.",
+   "similar": []
+  }
+ ],
+ "skeptic_notes": [
+  "Başlık ABD'nin Çin bankalarını hedef aldığını söylüyor, ancak video bu konuyu neredeyse hiç işlemiyor; içerik genel olarak SWIFT ve alternatifleri hakkında.",
+  "İran riyalinin 'bir gecede' %80 değer kaybettiği söyleniyor, sonra aynı rakam daha uzun bir döneme bağlanıyor; zaman çerçevesi tutarsız.",
+  "Rublenin 24 saatte 'neredeyse yarı' değer kaybettiği ifadesi abartılı olabilir; doğrulanmalı.",
+  "CIPS'in 180 ülkede katılımcısı olduğu rakamı yüksek görünüyor; resmi verilerle kontrol edilmeli.",
+  "SWIFT'in uluslararası dolar transferlerinin %90'ını taşıdığı iddiasının kaynağı verilmiyor.",
+  "Altyazıdaki 'it became the you had of something much bigger' gibi bozuk kısımlar anlamı belirsizleştiriyor.",
+  "Videonun son bölümü Statrys'in yerel ödeme hizmetinin reklamı; muhabir banka maliyetleri anlatımı bu hizmete zemin hazırlıyor.",
+  "Grafikteki üç değer farklı göstergeler ve farklı süreler için söylendi; yalnızca yaptırımın büyüklük sırasını göstermek için yan yana konuldu."
+ ]
 }

@@ -1,110 +1,262 @@
 {
-  "id": "CzyzZL2dAh8",
-  "title_tr": "Hong Kong'un düşük vergileri ile tabut evler arasındaki bağlantı",
-  "category": "Çin ekonomisi",
-  "region": ["Hong Kong", "Çin", "Singapur"],
-  "summary_tr": "Video, Hong Kong'daki 'tabut ev' olarak bilinen bölünmüş mini konutların coğrafi yer darlığından değil, kentin düşük vergi modelini finanse eden arazi sisteminden kaynaklandığını savunuyor. Tüm arazinin devlete ait olduğu ve sınırlı arsaların ihaleyle kiralandığı İngiliz döneminden kalma sistem, arz kısıtlı tutuldukça yüksek arazi gelirleri sağladı ve düşük vergileri mümkün kıldı. 2019 protestoları, uzun COVID kapanması ve Çin'deki emlak krizi sonrasında arazi gelirleri çöktü, mali rezervler eridi ve hükümet borçlanmaya başladı. Video, Hong Kong'un ya vergileri artırmak ya da daha fazla arazi açıp gelir kaybına katlanmak arasında sıkıştığını ve şirket kuracak girişimcilerin yüksek kira gibi gizli maliyetleri de hesaba katması gerektiğini söylüyor.",
-  "key_points": [
-    "Yüz binlerce kişi, standart dairelerin onlarca küçük birime bölünmesiyle oluşan penceresiz mini odalarda yaşıyor.",
-    "Kentin büyük kısmı yapılaşmamış, ancak arazinin çok küçük bir bölümü konut için imarlı; sorun coğrafya değil politika.",
-    "Devletin araziyi kıt tutup ihaleyle satması, düşük vergileri finanse eden ana gelir kaynağı oldu.",
-    "Yüksek konut fiyatları zenginlerin servetini koruduğu için reforma ikinci bir direnç katmanı oluşturuyor.",
-    "Arazi gelirlerinin çökmesiyle mali rezervler eridi ve hükümet tahvil ihracına yöneldi.",
-    "Yeni asgari standart yasası ve kamu konutu hedefleri var, ancak kalıcı çözüm gelir modelinin değişmesini gerektiriyor."
-  ],
-  "numbers": [
-    {"label": "Tabut ev kirası (alt sınır)", "value": 250, "unit": "$/ay", "context": "Penceresiz kontrplak bölmeler için 250-500 $"},
-    {"label": "En pahalı konut piyasası sıralaması", "value": 14, "unit": "yıl üst üste", "context": "Hong Kong ev satın almak için dünyanın en pahalı şehri"},
-    {"label": "Bölünmüş birimlerde yaşayan kişi", "value": 220000, "unit": "kişi", "context": "220.000'den fazla"},
-    {"label": "Bölünmüş birim medyan kirası", "value": 640, "unit": "$/ay", "context": "Asgari ücretin yaklaşık yarısı"},
-    {"label": "Asgari ücret (aylık karşılığı)", "value": 1200, "unit": "$/ay", "context": "Kira yükünü göstermek için"},
-    {"label": "Kamu konutu bekleme süresi (aile)", "value": 6, "unit": "yıl", "context": "Bekarlar için 10 yılın üzerinde"},
-    {"label": "Yeni yasal asgari birim büyüklüğü", "value": 86, "unit": "ft²", "context": "Mart 2026'da çıkan yasa; pencere ve tuvalet şartı"},
-    {"label": "Bölünmüş daire sayısı", "value": 110000, "unit": "daire", "context": "Yasadan 2 ay sonra çok az ev sahibi sertifika başvurusu yaptı"},
-    {"label": "Yapılaşmamış arazi oranı", "value": 75, "unit": "%", "context": "Hükümet verisi"},
-    {"label": "Kentsel konut için imarlı arazi", "value": 3.7, "unit": "%", "context": "Yer darlığı anlatısını sorgulamak için"},
-    {"label": "Arazi gelirinin zirvesi (2017-18)", "value": 164.8, "unit": "milyar HK$", "context": "Yaklaşık 20 milyar $"},
-    {"label": "2025-26 arazi satış geliri", "value": 8.36, "unit": "milyar HK$", "context": "8 sahadan yalnızca 5'i alıcı buldu"},
-    {"label": "2023-24 arazi gelirinin tahminden sapması", "value": 86, "unit": "%", "context": "Hükümet tahmininin %86 altında"},
-    {"label": "Mali rezervler (2019)", "value": 1200, "unit": "milyar HK$", "context": "1,2 trilyon"},
-    {"label": "Mali rezervler (2026)", "value": 657, "unit": "milyar HK$", "context": "Videoya göre %43 düşüş"},
-    {"label": "Yıllık tahvil ihracı (üst sınır)", "value": 200, "unit": "milyar HK$", "context": "Yılda 160-200 milyar"},
-    {"label": "Milyonerlerin varlıklarında gayrimenkul payı", "value": 51, "unit": "%", "context": "Fiyat düşüşüne direnç nedeni"},
-    {"label": "Expat tek yatak odalı daire kirası (alt sınır)", "value": 2500, "unit": "$/ay", "context": "2.500-3.800 $ aralığı"},
-    {"label": "En zengin %10 / en yoksul %10 gelir oranı (güncel)", "value": 82, "unit": "kat", "context": "2019'da 34 kattı"},
-    {"label": "Planlanan yeni kamu konutu (5 yıl)", "value": 196000, "unit": "konut", "context": "Önceki 5 yıla göre yaklaşık %80 fazla"}
-  ],
-  "chart": {
-    "type": "bar",
-    "title": "Hong Kong'da aylık konut maliyeti ve asgari ücret",
-    "unit": "$/ay",
-    "source_note": "Videoda belirtilen yaklaşık rakamlar; bağımsız doğrulanmadı. Expat kirası için 2.500-3.800 $ aralığının alt sınırı kullanıldı.",
-    "data": [
-      {"label": "Bölünmüş birim medyan kirası", "value": 640},
-      {"label": "Asgari ücret (aylık)", "value": 1200},
-      {"label": "Expat 1+1 daire kirası", "value": 2500}
-    ]
+ "id": "CzyzZL2dAh8",
+ "title_tr": "Hong Kong'un düşük vergileri ile tabut evler arasındaki bağlantı",
+ "category": "Çin ekonomisi",
+ "region": [
+  "Hong Kong",
+  "Çin",
+  "Singapur"
+ ],
+ "summary_tr": "Video, Hong Kong'daki 'tabut ev' olarak bilinen bölünmüş mini konutların coğrafi yer darlığından değil, kentin düşük vergi modelini finanse eden arazi sisteminden kaynaklandığını savunuyor. Tüm arazinin devlete ait olduğu ve sınırlı arsaların ihaleyle kiralandığı İngiliz döneminden kalma sistem, arz kısıtlı tutuldukça yüksek arazi gelirleri sağladı ve düşük vergileri mümkün kıldı. 2019 protestoları, uzun COVID kapanması ve Çin'deki emlak krizi sonrasında arazi gelirleri çöktü, mali rezervler eridi ve hükümet borçlanmaya başladı. Video, Hong Kong'un ya vergileri artırmak ya da daha fazla arazi açıp gelir kaybına katlanmak arasında sıkıştığını ve şirket kuracak girişimcilerin yüksek kira gibi gizli maliyetleri de hesaba katması gerektiğini söylüyor.",
+ "key_points": [
+  "Yüz binlerce kişi, standart dairelerin onlarca küçük birime bölünmesiyle oluşan penceresiz mini odalarda yaşıyor.",
+  "Kentin büyük kısmı yapılaşmamış, ancak arazinin çok küçük bir bölümü konut için imarlı; sorun coğrafya değil politika.",
+  "Devletin araziyi kıt tutup ihaleyle satması, düşük vergileri finanse eden ana gelir kaynağı oldu.",
+  "Yüksek konut fiyatları zenginlerin servetini koruduğu için reforma ikinci bir direnç katmanı oluşturuyor.",
+  "Arazi gelirlerinin çökmesiyle mali rezervler eridi ve hükümet tahvil ihracına yöneldi.",
+  "Yeni asgari standart yasası ve kamu konutu hedefleri var, ancak kalıcı çözüm gelir modelinin değişmesini gerektiriyor."
+ ],
+ "numbers": [
+  {
+   "label": "Tabut ev kirası (alt sınır)",
+   "value": 250,
+   "unit": "$/ay",
+   "context": "Penceresiz kontrplak bölmeler için 250-500 $"
   },
-  "diagram": {
-    "type": "cycle",
-    "title": "Düşük vergi ve konut krizini birbirine bağlayan döngü",
-    "steps": [
-      {"label": "Devlet arazinin sahibi", "detail": "Tüm arazi devlete ait ve ihaleyle süreli olarak kiralanıyor."},
-      {"label": "Arsa arzı kısıtlanıyor", "detail": "Az arsa piyasaya sürülerek ihale fiyatları yüksek tutuluyor."},
-      {"label": "Yüksek arazi geliri", "detail": "İhale gelirleri kamu harcamalarını finanse ediyor."},
-      {"label": "Düşük vergiler", "detail": "Gelir ve kurumlar vergisi düşük tutulabiliyor, şirketler kente çekiliyor."},
-      {"label": "Yüksek konut fiyatları", "detail": "Kıtlık fiyatları yükseltiyor, düşük gelirliler bölünmüş birimlere itiliyor."},
-      {"label": "Reforma direnç", "detail": "Hem hükümet geliri hem varlık sahiplerinin serveti fiyatların yüksek kalmasına bağlı."}
-    ]
+  {
+   "label": "En pahalı konut piyasası sıralaması",
+   "value": 14,
+   "unit": "yıl üst üste",
+   "context": "Hong Kong ev satın almak için dünyanın en pahalı şehri"
   },
-  "business_ideas": [
-    {
-      "name": "Girişimciler için 'toplam maliyet' bazlı şirket merkezi karşılaştırma aracı",
-      "insight": "Video, Hong Kong'un düşük vergisinin yüksek kira ve çalışan konut maliyetiyle dengelendiğini ve girişimcilerin bunu sonradan fark ettiğini gösteriyor.",
-      "problem": "Yurtdışında şirket kuran girişimciler yalnızca vergi oranına bakıyor; kira, maaş, yaşam maliyeti ve bankacılık sürtünmesini hesaba katmıyor.",
-      "solution": "Hong Kong, Singapur, Dubai, Estonya ve Türkiye için vergi, ofis/konut kirası, personel maliyeti ve kuruluş sürelerini birlikte hesaplayan interaktif hesaplayıcı ve kişiselleştirilmiş rapor.",
-      "target": "Uluslararası şirket kurmayı düşünen Türk girişimciler ve dijital hizmet ihracatçıları",
-      "revenue_model": "Ücretsiz temel hesaplayıcı, ücretli detaylı rapor ve şirket kurma/muhasebe sağlayıcılarından yönlendirme komisyonu",
-      "first_step": "Üç yargı bölgesi için elle hesaplanmış örnek rapor hazırlayıp girişimci topluluklarında 30 günde kaç ücretli rapor talebi geldiğini ölçmek",
-      "capital": "Düşük",
-      "difficulty": 2,
-      "turkey_angle": "Yurtdışı şirket kurmayı düşünen Türk girişimci sayısı yüksek; Türkçe ve tarafsız bir karşılaştırma eksik.",
-      "risks": "Vergi tavsiyesi sınırına girme riski; rapor yasal vergi planlaması ile sınırlı tutulmalı, Türkiye'de tam mükellefiyet, kontrol edilen yabancı kurum (CFC) ve transfer fiyatlandırması kuralları açıkça belirtilmeli; komisyon ilişkileri tarafsızlığı zedeleyebilir"
-    },
-    {
-      "name": "Asgari standartlara uygun, düşük gelirli çalışanlara yönelik kaliteli paylaşımlı konut işletmesi",
-      "insight": "Hong Kong'un yeni yasası, asgari büyüklük, pencere ve tuvalet standardı getirerek kaçak bölünmüş birimleri hedef alıyor.",
-      "problem": "Büyük şehirlerde düşük gelirli çalışanlar ve öğrenciler, kontrolsüz ve sağlıksız bölünmüş konutlara mahkum kalıyor.",
-      "solution": "Mevzuata uygun, asgari yaşam standartlarını karşılayan, işverenlerle anlaşmalı çalışan konutu ve co-living işletmesi; mal sahiplerinden uzun dönem kiralama ile.",
-      "target": "İstanbul ve büyük şehirlerde düşük-orta gelirli çalışanlar, onları istihdam eden lojistik, perakende ve hizmet şirketleri",
-      "revenue_model": "Odalık aylık kira, işverenlerle toplu kiralama sözleşmeleri",
-      "first_step": "İstanbul'da çalışan barınma sorunu yaşayan 10 işverenle görüşüp toplu kiralama isteğini ölçmek ve tek bir binada birim ekonomisini hesaplamak",
-      "capital": "Yüksek",
-      "difficulty": 4,
-      "turkey_angle": "Türkiye'deki kira krizi benzer bir ihtiyaç doğuruyor; Hong Kong örneği, standartsız bölmelemeden kaçınmanın önemini gösteriyor.",
-      "risks": "İmar ve yapı mevzuatı, kat mülkiyeti kısıtlamaları, kira artış sınırlamaları, yüksek başlangıç sermayesi"
-    },
-    {
-      "name": "Belediye arsa arzı ve imar verisi analitik platformu",
-      "insight": "Video, konut krizinin coğrafyadan değil, imarlı arazi arzının politika ile kısıtlanmasından kaynaklandığını gösteriyor.",
-      "problem": "Konut geliştiricileri, yatırımcılar ve gazeteciler hangi bölgelerde imarlı arsa arzının kısıtlı olduğunu ve ihalelerin nasıl sonuçlandığını sistematik biçimde takip edemiyor.",
-      "solution": "Kamu arsa ihaleleri, imar planı değişiklikleri ve yapı ruhsatı verilerini toplayıp bölge bazında arz-talep göstergeleri sunan veri platformu.",
-      "target": "Konut geliştiricileri, gayrimenkul fonları, bankaların kredi birimleri, yerel medya",
-      "revenue_model": "Kurumsal veri aboneliği ve özel bölge raporları",
-      "first_step": "Bir ilçenin son 3 yıllık ihale ve ruhsat verilerini toplayıp örnek rapor hazırlamak ve 10 geliştiriciye ödeme isteğini sormak",
-      "capital": "Orta",
-      "difficulty": 3,
-      "turkey_angle": "Türkiye'de kamu arsa ihaleleri (TOKİ, Milli Emlak, belediyeler) dağınık yayımlanıyor; birleşik veri sunan oyuncu az.",
-      "risks": "Verinin dağınık ve yapılandırılmamış olması, kamu verisine erişim kısıtlamaları"
-    }
-  ],
-  "skeptic_notes": [
-    "En zengin ve en yoksul %10 arasındaki oranın 34 kattan 82 kata çıkması 'neredeyse üç kat' olarak sunuluyor; gerçekte yaklaşık 2,4 kat artış.",
-    "Rezervlerin 1,2 trilyondan 657 milyara düşmesi videoda %43 düşüş olarak veriliyor; bu iki rakamla hesaplanan düşüş yaklaşık %45.",
-    "New York'un arazisinin %75'inin konut için kullanıldığı karşılaştırması kaynaksız ve şüpheli; tanım farklılıkları olabilir.",
-    "Nüfus altyazıda '7 and 12 million' gibi bozuk geçiyor; muhtemelen 7,5 milyon kastediliyor. 'Mong', 'Chamreo', 'Colon', 'coffin arms', 'coffee' gibi ifadeler Mong Kok, Sham Shui Po, Kowloon ve 'coffin homes' kelimelerinin altyazı hataları.",
-    "Tabut ev kirası (250-500 $) ile bölünmüş birim medyan kirası (640 $) farklı konut türlerine ait; karıştırılmamalı.",
-    "'Statrys' altyazıda 'Status' olarak geçiyor; video Statrys'in Hong Kong'da şirket kurma ve hesap açma hizmetlerinin açık tanıtımını içeriyor (reklam içeriği).",
-    "Hong Kong'un 14 yıl üst üste en pahalı konut piyasası olduğu ve kişi başına milyarder yoğunluğu iddiaları kaynak belirtilmeden verilmiş."
+  {
+   "label": "Bölünmüş birimlerde yaşayan kişi",
+   "value": 220000,
+   "unit": "kişi",
+   "context": "220.000'den fazla"
+  },
+  {
+   "label": "Bölünmüş birim medyan kirası",
+   "value": 640,
+   "unit": "$/ay",
+   "context": "Asgari ücretin yaklaşık yarısı"
+  },
+  {
+   "label": "Asgari ücret (aylık karşılığı)",
+   "value": 1200,
+   "unit": "$/ay",
+   "context": "Kira yükünü göstermek için"
+  },
+  {
+   "label": "Kamu konutu bekleme süresi (aile)",
+   "value": 6,
+   "unit": "yıl",
+   "context": "Bekarlar için 10 yılın üzerinde"
+  },
+  {
+   "label": "Yeni yasal asgari birim büyüklüğü",
+   "value": 86,
+   "unit": "ft²",
+   "context": "Mart 2026'da çıkan yasa; pencere ve tuvalet şartı"
+  },
+  {
+   "label": "Bölünmüş daire sayısı",
+   "value": 110000,
+   "unit": "daire",
+   "context": "Yasadan 2 ay sonra çok az ev sahibi sertifika başvurusu yaptı"
+  },
+  {
+   "label": "Yapılaşmamış arazi oranı",
+   "value": 75,
+   "unit": "%",
+   "context": "Hükümet verisi"
+  },
+  {
+   "label": "Kentsel konut için imarlı arazi",
+   "value": 3.7,
+   "unit": "%",
+   "context": "Yer darlığı anlatısını sorgulamak için"
+  },
+  {
+   "label": "Arazi gelirinin zirvesi (2017-18)",
+   "value": 164.8,
+   "unit": "milyar HK$",
+   "context": "Yaklaşık 20 milyar $"
+  },
+  {
+   "label": "2025-26 arazi satış geliri",
+   "value": 8.36,
+   "unit": "milyar HK$",
+   "context": "8 sahadan yalnızca 5'i alıcı buldu"
+  },
+  {
+   "label": "2023-24 arazi gelirinin tahminden sapması",
+   "value": 86,
+   "unit": "%",
+   "context": "Hükümet tahmininin %86 altında"
+  },
+  {
+   "label": "Mali rezervler (2019)",
+   "value": 1200,
+   "unit": "milyar HK$",
+   "context": "1,2 trilyon"
+  },
+  {
+   "label": "Mali rezervler (2026)",
+   "value": 657,
+   "unit": "milyar HK$",
+   "context": "Videoya göre %43 düşüş"
+  },
+  {
+   "label": "Yıllık tahvil ihracı (üst sınır)",
+   "value": 200,
+   "unit": "milyar HK$",
+   "context": "Yılda 160-200 milyar"
+  },
+  {
+   "label": "Milyonerlerin varlıklarında gayrimenkul payı",
+   "value": 51,
+   "unit": "%",
+   "context": "Fiyat düşüşüne direnç nedeni"
+  },
+  {
+   "label": "Expat tek yatak odalı daire kirası (alt sınır)",
+   "value": 2500,
+   "unit": "$/ay",
+   "context": "2.500-3.800 $ aralığı"
+  },
+  {
+   "label": "En zengin %10 / en yoksul %10 gelir oranı (güncel)",
+   "value": 82,
+   "unit": "kat",
+   "context": "2019'da 34 kattı"
+  },
+  {
+   "label": "Planlanan yeni kamu konutu (5 yıl)",
+   "value": 196000,
+   "unit": "konut",
+   "context": "Önceki 5 yıla göre yaklaşık %80 fazla"
+  }
+ ],
+ "chart": {
+  "type": "bar",
+  "title": "Hong Kong'da aylık konut maliyeti ve asgari ücret",
+  "unit": "$/ay",
+  "source_note": "Videoda belirtilen yaklaşık rakamlar; bağımsız doğrulanmadı. Expat kirası için 2.500-3.800 $ aralığının alt sınırı kullanıldı.",
+  "data": [
+   {
+    "label": "Bölünmüş birim medyan kirası",
+    "value": 640
+   },
+   {
+    "label": "Asgari ücret (aylık)",
+    "value": 1200
+   },
+   {
+    "label": "Expat 1+1 daire kirası",
+    "value": 2500
+   }
   ]
+ },
+ "diagram": {
+  "type": "cycle",
+  "title": "Düşük vergi ve konut krizini birbirine bağlayan döngü",
+  "steps": [
+   {
+    "label": "Devlet arazinin sahibi",
+    "detail": "Tüm arazi devlete ait ve ihaleyle süreli olarak kiralanıyor."
+   },
+   {
+    "label": "Arsa arzı kısıtlanıyor",
+    "detail": "Az arsa piyasaya sürülerek ihale fiyatları yüksek tutuluyor."
+   },
+   {
+    "label": "Yüksek arazi geliri",
+    "detail": "İhale gelirleri kamu harcamalarını finanse ediyor."
+   },
+   {
+    "label": "Düşük vergiler",
+    "detail": "Gelir ve kurumlar vergisi düşük tutulabiliyor, şirketler kente çekiliyor."
+   },
+   {
+    "label": "Yüksek konut fiyatları",
+    "detail": "Kıtlık fiyatları yükseltiyor, düşük gelirliler bölünmüş birimlere itiliyor."
+   },
+   {
+    "label": "Reforma direnç",
+    "detail": "Hem hükümet geliri hem varlık sahiplerinin serveti fiyatların yüksek kalmasına bağlı."
+   }
+  ]
+ },
+ "business_ideas": [
+  {
+   "name": "Girişimciler için 'toplam maliyet' bazlı şirket merkezi karşılaştırma aracı",
+   "insight": "Video, Hong Kong'un düşük vergisinin yüksek kira ve çalışan konut maliyetiyle dengelendiğini ve girişimcilerin bunu sonradan fark ettiğini gösteriyor.",
+   "problem": "Yurtdışında şirket kuran girişimciler yalnızca vergi oranına bakıyor; kira, maaş, yaşam maliyeti ve bankacılık sürtünmesini hesaba katmıyor.",
+   "solution": "Hong Kong, Singapur, Dubai, Estonya ve Türkiye için vergi, ofis/konut kirası, personel maliyeti ve kuruluş sürelerini birlikte hesaplayan interaktif hesaplayıcı ve kişiselleştirilmiş rapor.",
+   "target": "Uluslararası şirket kurmayı düşünen Türk girişimciler ve dijital hizmet ihracatçıları",
+   "revenue_model": "Ücretsiz temel hesaplayıcı, ücretli detaylı rapor ve şirket kurma/muhasebe sağlayıcılarından yönlendirme komisyonu",
+   "first_step": "Üç yargı bölgesi için elle hesaplanmış örnek rapor hazırlayıp girişimci topluluklarında 30 günde kaç ücretli rapor talebi geldiğini ölçmek",
+   "capital": "Düşük",
+   "difficulty": 2,
+   "turkey_angle": "Yurtdışı şirket kurmayı düşünen Türk girişimci sayısı yüksek; Türkçe ve tarafsız bir karşılaştırma eksik.",
+   "risks": "Vergi tavsiyesi sınırına girme riski; rapor yasal vergi planlaması ile sınırlı tutulmalı, Türkiye'de tam mükellefiyet, kontrol edilen yabancı kurum (CFC) ve transfer fiyatlandırması kuralları açıkça belirtilmeli; komisyon ilişkileri tarafsızlığı zedeleyebilir",
+   "originality": 3,
+   "problem_solving": 3,
+   "score_note": "Hesaplayıcı.",
+   "similar": [
+    {
+     "id": "KRQsHuS8uCU",
+     "name": "Muhasebe hizmeti fiyat modeli karşılaştırma aracı"
+    },
+    {
+     "id": "BGCzF-B-yzo",
+     "name": "Şirket kuruluş kampanyalarını şeffaflaştıran 'gerçek maliyet' hesaplayıcısı"
+    }
+   ]
+  },
+  {
+   "name": "Asgari standartlara uygun, düşük gelirli çalışanlara yönelik kaliteli paylaşımlı konut işletmesi",
+   "insight": "Hong Kong'un yeni yasası, asgari büyüklük, pencere ve tuvalet standardı getirerek kaçak bölünmüş birimleri hedef alıyor.",
+   "problem": "Büyük şehirlerde düşük gelirli çalışanlar ve öğrenciler, kontrolsüz ve sağlıksız bölünmüş konutlara mahkum kalıyor.",
+   "solution": "Mevzuata uygun, asgari yaşam standartlarını karşılayan, işverenlerle anlaşmalı çalışan konutu ve co-living işletmesi; mal sahiplerinden uzun dönem kiralama ile.",
+   "target": "İstanbul ve büyük şehirlerde düşük-orta gelirli çalışanlar, onları istihdam eden lojistik, perakende ve hizmet şirketleri",
+   "revenue_model": "Odalık aylık kira, işverenlerle toplu kiralama sözleşmeleri",
+   "first_step": "İstanbul'da çalışan barınma sorunu yaşayan 10 işverenle görüşüp toplu kiralama isteğini ölçmek ve tek bir binada birim ekonomisini hesaplamak",
+   "capital": "Yüksek",
+   "difficulty": 4,
+   "turkey_angle": "Türkiye'deki kira krizi benzer bir ihtiyaç doğuruyor; Hong Kong örneği, standartsız bölmelemeden kaçınmanın önemini gösteriyor.",
+   "risks": "İmar ve yapı mevzuatı, kat mülkiyeti kısıtlamaları, kira artış sınırlamaları, yüksek başlangıç sermayesi",
+   "originality": 2,
+   "problem_solving": 4,
+   "score_note": "Co-living; işveren anlaşmalı model fark, sermaye yüksek.",
+   "similar": []
+  },
+  {
+   "name": "Belediye arsa arzı ve imar verisi analitik platformu",
+   "insight": "Video, konut krizinin coğrafyadan değil, imarlı arazi arzının politika ile kısıtlanmasından kaynaklandığını gösteriyor.",
+   "problem": "Konut geliştiricileri, yatırımcılar ve gazeteciler hangi bölgelerde imarlı arsa arzının kısıtlı olduğunu ve ihalelerin nasıl sonuçlandığını sistematik biçimde takip edemiyor.",
+   "solution": "Kamu arsa ihaleleri, imar planı değişiklikleri ve yapı ruhsatı verilerini toplayıp bölge bazında arz-talep göstergeleri sunan veri platformu.",
+   "target": "Konut geliştiricileri, gayrimenkul fonları, bankaların kredi birimleri, yerel medya",
+   "revenue_model": "Kurumsal veri aboneliği ve özel bölge raporları",
+   "first_step": "Bir ilçenin son 3 yıllık ihale ve ruhsat verilerini toplayıp örnek rapor hazırlamak ve 10 geliştiriciye ödeme isteğini sormak",
+   "capital": "Orta",
+   "difficulty": 3,
+   "turkey_angle": "Türkiye'de kamu arsa ihaleleri (TOKİ, Milli Emlak, belediyeler) dağınık yayımlanıyor; birleşik veri sunan oyuncu az.",
+   "risks": "Verinin dağınık ve yapılandırılmamış olması, kamu verisine erişim kısıtlamaları",
+   "originality": 3,
+   "problem_solving": 3,
+   "score_note": "Emlak veri şirketleri kısmen yapıyor; imar verisi dağınık.",
+   "similar": []
+  }
+ ],
+ "skeptic_notes": [
+  "En zengin ve en yoksul %10 arasındaki oranın 34 kattan 82 kata çıkması 'neredeyse üç kat' olarak sunuluyor; gerçekte yaklaşık 2,4 kat artış.",
+  "Rezervlerin 1,2 trilyondan 657 milyara düşmesi videoda %43 düşüş olarak veriliyor; bu iki rakamla hesaplanan düşüş yaklaşık %45.",
+  "New York'un arazisinin %75'inin konut için kullanıldığı karşılaştırması kaynaksız ve şüpheli; tanım farklılıkları olabilir.",
+  "Nüfus altyazıda '7 and 12 million' gibi bozuk geçiyor; muhtemelen 7,5 milyon kastediliyor. 'Mong', 'Chamreo', 'Colon', 'coffin arms', 'coffee' gibi ifadeler Mong Kok, Sham Shui Po, Kowloon ve 'coffin homes' kelimelerinin altyazı hataları.",
+  "Tabut ev kirası (250-500 $) ile bölünmüş birim medyan kirası (640 $) farklı konut türlerine ait; karıştırılmamalı.",
+  "'Statrys' altyazıda 'Status' olarak geçiyor; video Statrys'in Hong Kong'da şirket kurma ve hesap açma hizmetlerinin açık tanıtımını içeriyor (reklam içeriği).",
+  "Hong Kong'un 14 yıl üst üste en pahalı konut piyasası olduğu ve kişi başına milyarder yoğunluğu iddiaları kaynak belirtilmeden verilmiş."
+ ]
 }

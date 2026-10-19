@@ -1,121 +1,308 @@
 {
-  "id": "pPOcHWWDd2w",
-  "title_tr": "Evergrande dolandırıcılığı ve Çin ekonomisine etkisi",
-  "category": "Çin ekonomisi",
-  "region": ["Çin", "Japonya", "Küresel"],
-  "summary_tr": "Video, Evergrande kurucusu Xu Jiayin'in muhasebe hilesi nedeniyle ömür boyu hapse mahkûm edilmesinden yola çıkarak Çin emlak sektörünün çöküşünü anlatıyor. Ana mekanizma ön satış (maketten satış) modeli: alıcıların parası yeni projelerle eski projeleri finanse etmek için kullanıldı ve satışlar yavaşlayınca sistem çöktü. Konut fiyatlarındaki düşüş, servetinin büyük kısmı gayrimenkulde olan hane halklarını harcamayı kısmaya itti; bu da deflasyon ve rekor dış ticaret fazlası olarak dünyaya ihraç ediliyor. Anlatıcı durumu Japonya'nın 1990 sonrası durgunluğuyla karşılaştırıyor ve Çin'den alım yapan işletmelerin bu ortamda pazarlık gücünün arttığını savunuyor.",
-  "key_points": [
-    "Evergrande, henüz inşa edilmemiş daireleri satış olarak kaydederek geliri yaklaşık 80 milyar dolar şişirdi.",
-    "Ön satış parası satın alınan projeye değil, devam eden başka projelere aktarıldı; satışlar durunca nakit tükendi.",
-    "Alacaklıların talep ettiği 45 milyar dolardan yalnızca 255 milyon dolar geri alınabildi.",
-    "Konut fiyatlarının düşmesi hane harcamalarını bastırdı; fabrika çıkış fiyatları 3 yılı aşkın süredir geriliyor.",
-    "Çin, iç talepteki boşluğu ihracatla dolduruyor ve dünya çapında anti-damping önlemleri artıyor.",
-    "Anlatıcıya göre Çin, Japonya'dan farklı olarak zenginleşmeden bu krize girdi ve ölçeği çok daha büyük."
-  ],
-  "numbers": [
-    {"label": "Evergrande borcu (yaklaşık)", "value": 300, "unit": "milyar $", "context": "Grubun geride bıraktığı borç; başka yerde 335 milyar $ olarak da geçiyor"},
-    {"label": "Yayımlanan hesaplardaki borç", "value": 335, "unit": "milyar $", "context": "Evergrande hesaplarını yayımladığında görünen toplam borç"},
-    {"label": "Yarım kalan satılmış konut", "value": 1.6, "unit": "milyon konut", "context": "200'den fazla şehirde terk edilmiş, önceden satılmış evler"},
-    {"label": "Mağdur aile", "value": 6, "unit": "milyon hane", "context": "Var olmayan bir daire için ödeme yapan aileler"},
-    {"label": "Şişirilmiş gelir (2019-2020)", "value": 80, "unit": "milyar $", "context": "Henüz inşa edilmemiş dairelerin satış kaydıyla"},
-    {"label": "Para cezası", "value": 15.82, "unit": "milyar yuan", "context": "Gruba verilen ceza (2 milyar doları aşkın)"},
-    {"label": "Alacaklı talepleri", "value": 45, "unit": "milyar $", "context": "Çöküşten bu yana talep edilen alacaklar"},
-    {"label": "Geri kazanılan tutar", "value": 255, "unit": "milyon $", "context": "Talep edilenin %1'inden azı"},
-    {"label": "Tedarikçilere borç", "value": 157, "unit": "milyar $", "context": "İnşaat firmaları ve malzeme üreticilerine borç (üzeri)"},
-    {"label": "Geri ödenmeyen yatırım ürünleri", "value": 5, "unit": "milyar $", "context": "Çalışanlara, alıcılara ve ortaklara satılan şirket içi yatırım ürünleri; 100.000'den fazla mağdur"},
-    {"label": "Emlak yatırımı düşüşü (2026 ilk 5 ay)", "value": -16.2, "unit": "%", "context": "Çin'de emlak yatırımlarındaki daralma"},
-    {"label": "Yeni konut satışı 2021", "value": 1.79, "unit": "milyar m²", "context": "Zirve yılı satış alanı"},
-    {"label": "Yeni konut satışı 2025", "value": 1, "unit": "milyar m² (altı)", "context": "2025'te 1 milyar m²'nin altına düştü"},
-    {"label": "Arsa geliri düşüşü (2026 ilk yarı)", "value": -31.5, "unit": "%", "context": "Yerel yönetimlerin arsa satış geliri; Renmin Üniversitesi gerçek düşüşü %50-65 tahmin ediyor"},
-    {"label": "Konut fiyatları (2021 zirvesinden)", "value": -20, "unit": "%", "context": "Ülke genelinde yaklaşık düşüş"},
-    {"label": "Nanjing fiyat düşüşü (2025)", "value": -11.45, "unit": "%", "context": "Tek yılda Nanjing'deki düşüş"},
-    {"label": "Hane servetinde gayrimenkul payı", "value": 70, "unit": "%", "context": "Çinli hanelerin servetinin konutta tutulan kısmı"},
-    {"label": "Hane tüketimi / GSYH", "value": 40, "unit": "%", "context": "Dünyanın en düşüklerinden biri"},
-    {"label": "Üretici fiyatları (2025)", "value": -2.6, "unit": "%", "context": "Fabrika çıkış fiyatlarının yıllık düşüşü"},
-    {"label": "Dış ticaret fazlası (2025)", "value": 1190, "unit": "milyar $", "context": "Bir ülkenin ulaştığı en yüksek seviye"},
-    {"label": "Aylık ihracat rekoru (Haziran)", "value": 412, "unit": "milyar $", "context": "Tarihin en iyi ihracat ayı"},
-    {"label": "Yuanın reel değer kaybı (2021 sonundan)", "value": 13, "unit": "%", "context": "Enflasyon ve ticaret ortaklarına göre düzeltilmiş"},
-    {"label": "IMF tahmini düşük değerleme", "value": 21, "unit": "%", "context": "IMF'nin yuanın düşük değerli olabileceği tahmini"},
-    {"label": "Yürürlükteki anti-damping önlemleri (önce)", "value": 321, "unit": "adet", "context": "Bir yıl önceki küresel sayı"},
-    {"label": "Yürürlükteki anti-damping önlemleri (sonra)", "value": 395, "unit": "adet", "context": "Bir yıl sonraki sayı; ana hedef Çin"},
-    {"label": "Ortalama maaş (resmi ölçü)", "value": 19000, "unit": "$/yıl", "context": "Devlet çalışanlarını da sayan resmi ölçü"},
-    {"label": "Kişi başı fiili gelir", "value": 6400, "unit": "$/yıl", "context": "Tüm nüfusa göre bir kişinin yaşadığı gelir"}
-  ],
-  "chart": {
-    "type": "hbar",
-    "title": "Evergrande enkazı: videoda geçen tutarlar",
-    "unit": "milyar $",
-    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. Kalemler birbirinin alt kümesi olabilir, toplanmamalı.",
-    "data": [
-      {"label": "Yayımlanan toplam borç", "value": 335},
-      {"label": "Tedarikçilere borç", "value": 157},
-      {"label": "Şişirilmiş gelir (2019-20)", "value": 80},
-      {"label": "Alacaklı talepleri", "value": 45},
-      {"label": "Geri ödenmeyen yatırım ürünleri", "value": 5},
-      {"label": "Geri kazanılan tutar", "value": 0.255}
-    ]
+ "id": "pPOcHWWDd2w",
+ "title_tr": "Evergrande dolandırıcılığı ve Çin ekonomisine etkisi",
+ "category": "Çin ekonomisi",
+ "region": [
+  "Çin",
+  "Japonya",
+  "Küresel"
+ ],
+ "summary_tr": "Video, Evergrande kurucusu Xu Jiayin'in muhasebe hilesi nedeniyle ömür boyu hapse mahkûm edilmesinden yola çıkarak Çin emlak sektörünün çöküşünü anlatıyor. Ana mekanizma ön satış (maketten satış) modeli: alıcıların parası yeni projelerle eski projeleri finanse etmek için kullanıldı ve satışlar yavaşlayınca sistem çöktü. Konut fiyatlarındaki düşüş, servetinin büyük kısmı gayrimenkulde olan hane halklarını harcamayı kısmaya itti; bu da deflasyon ve rekor dış ticaret fazlası olarak dünyaya ihraç ediliyor. Anlatıcı durumu Japonya'nın 1990 sonrası durgunluğuyla karşılaştırıyor ve Çin'den alım yapan işletmelerin bu ortamda pazarlık gücünün arttığını savunuyor.",
+ "key_points": [
+  "Evergrande, henüz inşa edilmemiş daireleri satış olarak kaydederek geliri yaklaşık 80 milyar dolar şişirdi.",
+  "Ön satış parası satın alınan projeye değil, devam eden başka projelere aktarıldı; satışlar durunca nakit tükendi.",
+  "Alacaklıların talep ettiği 45 milyar dolardan yalnızca 255 milyon dolar geri alınabildi.",
+  "Konut fiyatlarının düşmesi hane harcamalarını bastırdı; fabrika çıkış fiyatları 3 yılı aşkın süredir geriliyor.",
+  "Çin, iç talepteki boşluğu ihracatla dolduruyor ve dünya çapında anti-damping önlemleri artıyor.",
+  "Anlatıcıya göre Çin, Japonya'dan farklı olarak zenginleşmeden bu krize girdi ve ölçeği çok daha büyük."
+ ],
+ "numbers": [
+  {
+   "label": "Evergrande borcu (yaklaşık)",
+   "value": 300,
+   "unit": "milyar $",
+   "context": "Grubun geride bıraktığı borç; başka yerde 335 milyar $ olarak da geçiyor"
   },
-  "diagram": {
-    "type": "flow",
-    "title": "Ön satış modelinden küresel deflasyona zincir",
-    "steps": [
-      {"label": "Ön satış ile tahsilat", "detail": "Alıcı, inşaat başlamadan dairenin parasını ödüyor."},
-      {"label": "Para başka projeye akıyor", "detail": "Yeni satışlar eski projelerin maliyetini karşılıyor."},
-      {"label": "Satışlar yavaşlıyor", "detail": "COVID ile talep düşünce işçilere ve tedarikçilere ödeme yapılamıyor."},
-      {"label": "Konut fiyatları düşüyor", "detail": "Serveti konutta olan haneler harcamayı kısıyor."},
-      {"label": "İç talep ve fiyatlar geriliyor", "detail": "Fabrikalar iç pazarda maliyetin altında satış yapıyor."},
-      {"label": "Fazla üretim ihraç ediliyor", "detail": "Zayıf tutulan yuan ile ucuz mal dünyaya akıyor, anti-damping önlemleri artıyor."}
-    ]
+  {
+   "label": "Yayımlanan hesaplardaki borç",
+   "value": 335,
+   "unit": "milyar $",
+   "context": "Evergrande hesaplarını yayımladığında görünen toplam borç"
   },
-  "business_ideas": [
-    {
-      "name": "Maketten konut alıcıları için ilerleme ve ödeme takip platformu",
-      "insight": "Evergrande'de alıcıların ön ödemesi kendi dairelerine değil başka projelere harcandı.",
-      "problem": "Maketten ev alanlar, ödedikleri paranın kendi projelerinin inşaatına gidip gitmediğini göremiyor.",
-      "solution": "Alıcıların şantiye fotoğrafı, belediye ruhsat/iskân verisi ve taksit takvimini tek ekranda eşleştiren, inşaat ilerlemesi ile ödeme oranı ayrıştığında uyarı veren bir uygulama.",
-      "target": "Maketten konut alan bireyler ve site yönetimi kuran alıcı dernekleri",
-      "revenue_model": "Alıcıdan proje başına düşük yıllık ücret; bağımsız ekspertiz raporlarından komisyon",
-      "first_step": "Teslimi geciken 3 projenin alıcı WhatsApp gruplarıyla görüşüp en çok hangi bilgiye ihtiyaç duyduklarını belirlemek",
-      "capital": "Düşük",
-      "difficulty": 3,
-      "turkey_angle": "Türkiye'de ön ödemeli konut satışı yaygın ve mevzuatla düzenlenmiş; teslim gecikmeleri sık şikâyet konusu.",
-      "risks": "Müteahhit tarafından hukuki itiraz ve itibar davaları; verinin doğruluğu; alıcıların ödeme isteksizliği."
-    },
-    {
-      "name": "Çin menşeli ürünler için anti-damping vergi kontrol aracı",
-      "insight": "Dünyada yürürlükteki anti-damping önlemleri bir yılda 321'den 395'e çıktı ve ana hedef Çin.",
-      "problem": "İthalatçılar sipariş öncesinde ürünün GTİP koduna ek vergi veya anti-damping uygulanıp uygulanmadığını geç fark ediyor.",
-      "solution": "GTİP kodu ve menşe girildiğinde yürürlükteki anti-damping, ek gümrük vergisi ve gözetim önlemlerini, tahmini toplam maliyetle birlikte gösteren ve değişikliklerde uyarı gönderen servis.",
-      "target": "Çin'den ithalat yapan Türk KOBİ'ler ve gümrük müşavirleri",
-      "revenue_model": "Gümrük müşavirlerine kurumsal abonelik, KOBİ'lere sorgu paketi",
-      "first_step": "Resmî Gazete'deki son 2 yılın anti-damping kararlarından bir veri seti çıkarıp 5 gümrük müşavirine prototip göstermek",
-      "capital": "Düşük",
-      "difficulty": 2,
-      "turkey_angle": "Türkiye Çin menşeli birçok ürüne anti-damping uyguluyor; kararlar Resmî Gazete'de yayımlanıyor.",
-      "risks": "Yanlış sınıflandırmadan doğan sorumluluk; mevcut gümrük yazılımlarının bu özelliği eklemesi."
-    },
-    {
-      "name": "Çin tedarik fiyat endeksi ve yeniden pazarlık servisi",
-      "insight": "Videoya göre Çinli tedarikçiler daha hızlı yanıt veriyor, minimum sipariş miktarları ve teklifler düşüyor.",
-      "problem": "Türk alıcılar mevcut tedarikçilerinin fiyatlarının piyasanın gerisinde kalıp kalmadığını bilmiyor.",
-      "solution": "Belirli bir kategoride (ör. küçük ev aletleri parçaları) düzenli olarak çoklu tedarikçiden teklif toplayıp bir fiyat ve MOQ endeksi yayımlayan, abonelere mevcut fiyatlarına göre pazarlık marjı gösteren hizmet.",
-      "target": "Belirli bir kategoride düzenli Çin alımı yapan Türk üretici ve markalar",
-      "revenue_model": "Kategori bazlı aylık abonelik ve sağlanan tasarrufa bağlı başarı ücreti",
-      "first_step": "Tek bir kategoride 20 tedarikçiden teklif toplayıp 5 potansiyel aboneye mevcut fiyatlarıyla karşılaştırmalı rapor sunmak",
-      "capital": "Düşük",
-      "difficulty": 3,
-      "turkey_angle": "Türkiye'nin Çin'den ithalatı yüksek; ancak anti-damping ve ek vergiler fiyat avantajını azaltabilir, bu nedenle toplam maliyetle sunulmalı.",
-      "risks": "Fiyat avantajının tarifelerle kapanması; tedarikçi tekliflerinin bağlayıcı olmaması; kalite farklarının fiyat karşılaştırmasını bozması."
-    }
-  ],
-  "skeptic_notes": [
-    "Toplam borç bir yerde 300, başka yerde 335 milyar $ olarak veriliyor.",
-    "'Beijing didn't launch a guaranteed delivery program' ifadesi muhtemelen altyazı hatası; bağlam programın başlatıldığını ve 6 milyondan fazla konutu tamamladığını söylüyor.",
-    "'Hundreds of homes ... 200 cities' ifadesi büyük olasılıkla 'yüz binlerce' olmalı; 1,6 milyon konut rakamıyla çelişiyor.",
-    "Renmin Üniversitesi tahmini için 'half domestic' ifadesi anlamsız; büyük olasılıkla resmi rakamın gerçeğin yarısı olduğu kastediliyor.",
-    "Konut fiyatlarındaki ~%20 düşüş, hemen ardından 'servetin dörtte biri' olarak anılıyor; tutarlı bir hesap verilmiyor.",
-    "Çin dış ticaret fazlası (1.190 milyar $) ve aylık 412 milyar $ ihracat gibi rakamlar doğrulanmalı.",
-    "CEPR'nin 'tüketimi GSYH'nin 2-4 puanı kadar azaltabilir' tahmini bir senaryo, gerçekleşmiş bir değer değil.",
-    "Videonun sonunda Statrys'in Hong Kong/Singapur şirket kuruluş hizmeti tanıtılıyor (reklam içeriği)."
+  {
+   "label": "Yarım kalan satılmış konut",
+   "value": 1.6,
+   "unit": "milyon konut",
+   "context": "200'den fazla şehirde terk edilmiş, önceden satılmış evler"
+  },
+  {
+   "label": "Mağdur aile",
+   "value": 6,
+   "unit": "milyon hane",
+   "context": "Var olmayan bir daire için ödeme yapan aileler"
+  },
+  {
+   "label": "Şişirilmiş gelir (2019-2020)",
+   "value": 80,
+   "unit": "milyar $",
+   "context": "Henüz inşa edilmemiş dairelerin satış kaydıyla"
+  },
+  {
+   "label": "Para cezası",
+   "value": 15.82,
+   "unit": "milyar yuan",
+   "context": "Gruba verilen ceza (2 milyar doları aşkın)"
+  },
+  {
+   "label": "Alacaklı talepleri",
+   "value": 45,
+   "unit": "milyar $",
+   "context": "Çöküşten bu yana talep edilen alacaklar"
+  },
+  {
+   "label": "Geri kazanılan tutar",
+   "value": 255,
+   "unit": "milyon $",
+   "context": "Talep edilenin %1'inden azı"
+  },
+  {
+   "label": "Tedarikçilere borç",
+   "value": 157,
+   "unit": "milyar $",
+   "context": "İnşaat firmaları ve malzeme üreticilerine borç (üzeri)"
+  },
+  {
+   "label": "Geri ödenmeyen yatırım ürünleri",
+   "value": 5,
+   "unit": "milyar $",
+   "context": "Çalışanlara, alıcılara ve ortaklara satılan şirket içi yatırım ürünleri; 100.000'den fazla mağdur"
+  },
+  {
+   "label": "Emlak yatırımı düşüşü (2026 ilk 5 ay)",
+   "value": -16.2,
+   "unit": "%",
+   "context": "Çin'de emlak yatırımlarındaki daralma"
+  },
+  {
+   "label": "Yeni konut satışı 2021",
+   "value": 1.79,
+   "unit": "milyar m²",
+   "context": "Zirve yılı satış alanı"
+  },
+  {
+   "label": "Yeni konut satışı 2025",
+   "value": 1,
+   "unit": "milyar m² (altı)",
+   "context": "2025'te 1 milyar m²'nin altına düştü"
+  },
+  {
+   "label": "Arsa geliri düşüşü (2026 ilk yarı)",
+   "value": -31.5,
+   "unit": "%",
+   "context": "Yerel yönetimlerin arsa satış geliri; Renmin Üniversitesi gerçek düşüşü %50-65 tahmin ediyor"
+  },
+  {
+   "label": "Konut fiyatları (2021 zirvesinden)",
+   "value": -20,
+   "unit": "%",
+   "context": "Ülke genelinde yaklaşık düşüş"
+  },
+  {
+   "label": "Nanjing fiyat düşüşü (2025)",
+   "value": -11.45,
+   "unit": "%",
+   "context": "Tek yılda Nanjing'deki düşüş"
+  },
+  {
+   "label": "Hane servetinde gayrimenkul payı",
+   "value": 70,
+   "unit": "%",
+   "context": "Çinli hanelerin servetinin konutta tutulan kısmı"
+  },
+  {
+   "label": "Hane tüketimi / GSYH",
+   "value": 40,
+   "unit": "%",
+   "context": "Dünyanın en düşüklerinden biri"
+  },
+  {
+   "label": "Üretici fiyatları (2025)",
+   "value": -2.6,
+   "unit": "%",
+   "context": "Fabrika çıkış fiyatlarının yıllık düşüşü"
+  },
+  {
+   "label": "Dış ticaret fazlası (2025)",
+   "value": 1190,
+   "unit": "milyar $",
+   "context": "Bir ülkenin ulaştığı en yüksek seviye"
+  },
+  {
+   "label": "Aylık ihracat rekoru (Haziran)",
+   "value": 412,
+   "unit": "milyar $",
+   "context": "Tarihin en iyi ihracat ayı"
+  },
+  {
+   "label": "Yuanın reel değer kaybı (2021 sonundan)",
+   "value": 13,
+   "unit": "%",
+   "context": "Enflasyon ve ticaret ortaklarına göre düzeltilmiş"
+  },
+  {
+   "label": "IMF tahmini düşük değerleme",
+   "value": 21,
+   "unit": "%",
+   "context": "IMF'nin yuanın düşük değerli olabileceği tahmini"
+  },
+  {
+   "label": "Yürürlükteki anti-damping önlemleri (önce)",
+   "value": 321,
+   "unit": "adet",
+   "context": "Bir yıl önceki küresel sayı"
+  },
+  {
+   "label": "Yürürlükteki anti-damping önlemleri (sonra)",
+   "value": 395,
+   "unit": "adet",
+   "context": "Bir yıl sonraki sayı; ana hedef Çin"
+  },
+  {
+   "label": "Ortalama maaş (resmi ölçü)",
+   "value": 19000,
+   "unit": "$/yıl",
+   "context": "Devlet çalışanlarını da sayan resmi ölçü"
+  },
+  {
+   "label": "Kişi başı fiili gelir",
+   "value": 6400,
+   "unit": "$/yıl",
+   "context": "Tüm nüfusa göre bir kişinin yaşadığı gelir"
+  }
+ ],
+ "chart": {
+  "type": "hbar",
+  "title": "Evergrande enkazı: videoda geçen tutarlar",
+  "unit": "milyar $",
+  "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. Kalemler birbirinin alt kümesi olabilir, toplanmamalı.",
+  "data": [
+   {
+    "label": "Yayımlanan toplam borç",
+    "value": 335
+   },
+   {
+    "label": "Tedarikçilere borç",
+    "value": 157
+   },
+   {
+    "label": "Şişirilmiş gelir (2019-20)",
+    "value": 80
+   },
+   {
+    "label": "Alacaklı talepleri",
+    "value": 45
+   },
+   {
+    "label": "Geri ödenmeyen yatırım ürünleri",
+    "value": 5
+   },
+   {
+    "label": "Geri kazanılan tutar",
+    "value": 0.255
+   }
   ]
+ },
+ "diagram": {
+  "type": "flow",
+  "title": "Ön satış modelinden küresel deflasyona zincir",
+  "steps": [
+   {
+    "label": "Ön satış ile tahsilat",
+    "detail": "Alıcı, inşaat başlamadan dairenin parasını ödüyor."
+   },
+   {
+    "label": "Para başka projeye akıyor",
+    "detail": "Yeni satışlar eski projelerin maliyetini karşılıyor."
+   },
+   {
+    "label": "Satışlar yavaşlıyor",
+    "detail": "COVID ile talep düşünce işçilere ve tedarikçilere ödeme yapılamıyor."
+   },
+   {
+    "label": "Konut fiyatları düşüyor",
+    "detail": "Serveti konutta olan haneler harcamayı kısıyor."
+   },
+   {
+    "label": "İç talep ve fiyatlar geriliyor",
+    "detail": "Fabrikalar iç pazarda maliyetin altında satış yapıyor."
+   },
+   {
+    "label": "Fazla üretim ihraç ediliyor",
+    "detail": "Zayıf tutulan yuan ile ucuz mal dünyaya akıyor, anti-damping önlemleri artıyor."
+   }
+  ]
+ },
+ "business_ideas": [
+  {
+   "name": "Maketten konut alıcıları için ilerleme ve ödeme takip platformu",
+   "insight": "Evergrande'de alıcıların ön ödemesi kendi dairelerine değil başka projelere harcandı.",
+   "problem": "Maketten ev alanlar, ödedikleri paranın kendi projelerinin inşaatına gidip gitmediğini göremiyor.",
+   "solution": "Alıcıların şantiye fotoğrafı, belediye ruhsat/iskân verisi ve taksit takvimini tek ekranda eşleştiren, inşaat ilerlemesi ile ödeme oranı ayrıştığında uyarı veren bir uygulama.",
+   "target": "Maketten konut alan bireyler ve site yönetimi kuran alıcı dernekleri",
+   "revenue_model": "Alıcıdan proje başına düşük yıllık ücret; bağımsız ekspertiz raporlarından komisyon",
+   "first_step": "Teslimi geciken 3 projenin alıcı WhatsApp gruplarıyla görüşüp en çok hangi bilgiye ihtiyaç duyduklarını belirlemek",
+   "capital": "Düşük",
+   "difficulty": 3,
+   "turkey_angle": "Türkiye'de ön ödemeli konut satışı yaygın ve mevzuatla düzenlenmiş; teslim gecikmeleri sık şikâyet konusu.",
+   "risks": "Müteahhit tarafından hukuki itiraz ve itibar davaları; verinin doğruluğu; alıcıların ödeme isteksizliği.",
+   "originality": 4,
+   "problem_solving": 4,
+   "score_note": "Türkiye'de yaygın mağduriyet; veri toplama ve bireysel ödeme zayıf halka.",
+   "similar": []
+  },
+  {
+   "name": "Çin menşeli ürünler için anti-damping vergi kontrol aracı",
+   "insight": "Dünyada yürürlükteki anti-damping önlemleri bir yılda 321'den 395'e çıktı ve ana hedef Çin.",
+   "problem": "İthalatçılar sipariş öncesinde ürünün GTİP koduna ek vergi veya anti-damping uygulanıp uygulanmadığını geç fark ediyor.",
+   "solution": "GTİP kodu ve menşe girildiğinde yürürlükteki anti-damping, ek gümrük vergisi ve gözetim önlemlerini, tahmini toplam maliyetle birlikte gösteren ve değişikliklerde uyarı gönderen servis.",
+   "target": "Çin'den ithalat yapan Türk KOBİ'ler ve gümrük müşavirleri",
+   "revenue_model": "Gümrük müşavirlerine kurumsal abonelik, KOBİ'lere sorgu paketi",
+   "first_step": "Resmî Gazete'deki son 2 yılın anti-damping kararlarından bir veri seti çıkarıp 5 gümrük müşavirine prototip göstermek",
+   "capital": "Düşük",
+   "difficulty": 2,
+   "turkey_angle": "Türkiye Çin menşeli birçok ürüne anti-damping uyguluyor; kararlar Resmî Gazete'de yayımlanıyor.",
+   "risks": "Yanlış sınıflandırmadan doğan sorumluluk; mevcut gümrük yazılımlarının bu özelliği eklemesi.",
+   "originality": 3,
+   "problem_solving": 4,
+   "score_note": "Mevzuat verisi açık; otomatik uyarı somut bir kaybı önler.",
+   "similar": []
+  },
+  {
+   "name": "Çin tedarik fiyat endeksi ve yeniden pazarlık servisi",
+   "insight": "Videoya göre Çinli tedarikçiler daha hızlı yanıt veriyor, minimum sipariş miktarları ve teklifler düşüyor.",
+   "problem": "Türk alıcılar mevcut tedarikçilerinin fiyatlarının piyasanın gerisinde kalıp kalmadığını bilmiyor.",
+   "solution": "Belirli bir kategoride (ör. küçük ev aletleri parçaları) düzenli olarak çoklu tedarikçiden teklif toplayıp bir fiyat ve MOQ endeksi yayımlayan, abonelere mevcut fiyatlarına göre pazarlık marjı gösteren hizmet.",
+   "target": "Belirli bir kategoride düzenli Çin alımı yapan Türk üretici ve markalar",
+   "revenue_model": "Kategori bazlı aylık abonelik ve sağlanan tasarrufa bağlı başarı ücreti",
+   "first_step": "Tek bir kategoride 20 tedarikçiden teklif toplayıp 5 potansiyel aboneye mevcut fiyatlarıyla karşılaştırmalı rapor sunmak",
+   "capital": "Düşük",
+   "difficulty": 3,
+   "turkey_angle": "Türkiye'nin Çin'den ithalatı yüksek; ancak anti-damping ve ek vergiler fiyat avantajını azaltabilir, bu nedenle toplam maliyetle sunulmalı.",
+   "risks": "Fiyat avantajının tarifelerle kapanması; tedarikçi tekliflerinin bağlayıcı olmaması; kalite farklarının fiyat karşılaştırmasını bozması.",
+   "originality": 4,
+   "problem_solving": 4,
+   "score_note": "Kategori bazlı fiyat/MOQ endeksi ve başarı ücreti; veri toplama operasyonel ama mümkün.",
+   "similar": []
+  }
+ ],
+ "skeptic_notes": [
+  "Toplam borç bir yerde 300, başka yerde 335 milyar $ olarak veriliyor.",
+  "'Beijing didn't launch a guaranteed delivery program' ifadesi muhtemelen altyazı hatası; bağlam programın başlatıldığını ve 6 milyondan fazla konutu tamamladığını söylüyor.",
+  "'Hundreds of homes ... 200 cities' ifadesi büyük olasılıkla 'yüz binlerce' olmalı; 1,6 milyon konut rakamıyla çelişiyor.",
+  "Renmin Üniversitesi tahmini için 'half domestic' ifadesi anlamsız; büyük olasılıkla resmi rakamın gerçeğin yarısı olduğu kastediliyor.",
+  "Konut fiyatlarındaki ~%20 düşüş, hemen ardından 'servetin dörtte biri' olarak anılıyor; tutarlı bir hesap verilmiyor.",
+  "Çin dış ticaret fazlası (1.190 milyar $) ve aylık 412 milyar $ ihracat gibi rakamlar doğrulanmalı.",
+  "CEPR'nin 'tüketimi GSYH'nin 2-4 puanı kadar azaltabilir' tahmini bir senaryo, gerçekleşmiş bir değer değil.",
+  "Videonun sonunda Statrys'in Hong Kong/Singapur şirket kuruluş hizmeti tanıtılıyor (reklam içeriği)."
+ ]
 }

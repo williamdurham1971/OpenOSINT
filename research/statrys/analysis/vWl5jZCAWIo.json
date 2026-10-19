@@ -1,206 +1,218 @@
 {
-  "id": "vWl5jZCAWIo",
-  "title_tr": "UNIQLO: H&M ve Zara'yı zorlayan Japon iş modeli",
-  "category": "Şirket vakası",
-  "region": [
-    "Japonya",
-    "Çin",
-    "Güney Kore",
-    "ABD",
-    "Birleşik Krallık"
-  ],
-  "summary_tr": "Video, hızlı moda zincirleri küçülürken Uniqlo'nun rekor sonuçlar açıkladığını ve bunu sürekli iyileştirilen temel ürünlere borçlu olduğunu savunuyor. Uniqlo, Çin'deki az sayıda tedarikçiye Japon usta zanaatkârlar gönderip büyük ve uzun vadeli siparişler vererek kaliteyi yükseltip maliyeti düşürdü; Toray ile 20 yılı aşkın ortak geliştirmeyle HeatTech, AIRism ve Ultra Light Down gibi taklidi zor kumaşlar yarattı. Batı'da iki başarısız denemeden sonra Japon kimliğini prestij unsuru yapan büyük mağazalarla başarılı oldu. Ancak aynı Japon kimliği Kore boykotunda ve Çin'deki Xinjiang pamuğu tartışmasında zarara dönüştü; şirket bu riski milliyet vurgusu taşımayan GU markasıyla dengelemeye çalışıyor.",
-  "key_points": [
-    "Uniqlo, rakiplerle aynı Çin fabrikalarını kullanıyor ama oraya Japon ustalar gönderip süreçleri sürekli düzeltiyor.",
-    "Az sayıda tedarikçiye büyük ve bir yıla kadar önceden verilen siparişler, fabrikanın yatırım yapmasını ve birim maliyetin düşmesini sağlıyor.",
-    "Toray ile ortak lif geliştirme, rakiplerin katalogdan kumaş alarak kopyalayamayacağı ürünler doğurdu.",
-    "Batı'da ucuz alışveriş merkezi konumlanması başarısız oldu; prestijli lokasyon ve 'kaliteli Japon' kimliği işe yaradı.",
-    "Japon kimliği Kore boykotunda ve Çin'deki Xinjiang pamuğu krizinde ciddi gelir ve mağaza kaybına neden oldu.",
-    "Şirket, milliyet vurgusu yapmayan GU markasıyla siyasi riski çeşitlendirmeye çalışıyor."
-  ],
-  "numbers": [
-    {
-      "label": "Quiksilver/Billabong sahibinin kapattığı mağaza",
-      "value": 122,
-      "unit": "mağaza",
-      "context": "2025'te tüm mağazaları kapandı"
-    },
-    {
-      "label": "H&M'in kapattığı mağaza",
-      "value": 170,
-      "unit": "mağaza",
-      "context": "Bu yıl kapatılacak"
-    },
-    {
-      "label": "Uniqlo 9 aylık gelir artışı",
-      "value": 17,
-      "unit": "%",
-      "context": "Tarihindeki en iyi 9 ay"
-    },
-    {
-      "label": "Uniqlo 9 aylık kâr artışı",
-      "value": 33,
-      "unit": "%",
-      "context": "Tarihindeki en iyi 9 ay"
-    },
-    {
-      "label": "Temel tişört prototipi",
-      "value": 10000,
-      "unit": "prototip",
-      "context": "Temel ürünün geliştirilmesi için"
-    },
-    {
-      "label": "Tek tedarikçiye sipariş",
-      "value": 3000000,
-      "unit": "adet",
-      "context": "Tedarikçinin üreteceğini önceden bildiği özdeş ürün sayısı (örnek)"
-    },
-    {
-      "label": "Base layer fiyatı",
-      "value": 15,
-      "unit": "$",
-      "context": "10.000 prototip harcanan ürünün fiyatı"
-    },
-    {
-      "label": "İngiltere'de açılan mağaza (2001)",
-      "value": 20,
-      "unit": "mağaza",
-      "context": "Yaklaşık; iki yılda çoğu kapandı"
-    },
-    {
-      "label": "New Jersey'de açılan mağaza (2005)",
-      "value": 3,
-      "unit": "mağaza",
-      "context": "Bir yıldan kısa sürede kapandı"
-    },
-    {
-      "label": "Kore gelir kaybı (2020)",
-      "value": -54,
-      "unit": "%",
-      "context": "Japon ürünleri boykotu ve Covid sonrası"
-    },
-    {
-      "label": "Kore faaliyet zararı (2020)",
-      "value": 75,
-      "unit": "milyon $",
-      "context": "Yıl sonu faaliyet zararı"
-    },
-    {
-      "label": "Çin'in eski satış payı",
-      "value": 20,
-      "unit": "%",
-      "context": "Grup satışları içinde"
-    },
-    {
-      "label": "Büyük Çin'in güncel satış payı",
-      "value": 19.5,
-      "unit": "%",
-      "context": "Grubun küresel satışları içinde"
-    },
-    {
-      "label": "Büyük Çin mağaza sayısı (Kasım 2024)",
-      "value": 1031,
-      "unit": "mağaza",
-      "context": "Xinjiang açıklaması sırasında"
-    },
-    {
-      "label": "Büyük Çin mağaza sayısı (bugün)",
-      "value": 969,
-      "unit": "mağaza",
-      "context": "Boykot sonrası"
-    },
-    {
-      "label": "Hisse düşüşü",
-      "value": -4.5,
-      "unit": "%",
-      "context": "Xinjiang açıklaması sonrası, 9 haftanın en kötüsü"
-    },
-    {
-      "label": "İptal edilen Japonya seyahati",
-      "value": 500000,
-      "unit": "seyahat",
-      "context": "Kasım 2025 Tayvan açıklaması sonrası bir haftada (yaklaşık)"
-    }
-  ],
-  "chart": null,
-  "diagram": {
-    "type": "cycle",
-    "title": "Uniqlo'nun tedarik ve kalite döngüsü",
-    "steps": [
-      {
-        "label": "Az sayıda tedarikçi",
-        "detail": "Yüzlerce atölye yerine birkaç fabrikayla çalışılır."
-      },
-      {
-        "label": "Japon ustalar sahada",
-        "detail": "Takumi'ler fabrikada yaşayıp boyama ve dikiş hatalarını kalıcı olarak düzeltir."
-      },
-      {
-        "label": "Büyük, erken siparişler",
-        "detail": "Bir yıla kadar önceden milyonlarca özdeş ürün sipariş edilir."
-      },
-      {
-        "label": "Tedarikçi yatırım yapar",
-        "detail": "Garantili hacim makine yatırımını ve verimliliği mümkün kılar."
-      },
-      {
-        "label": "Düşük maliyet, az stok",
-        "detail": "Birim maliyet düşer, sezon sonu indirime kalan stok neredeyse yok olur."
-      },
-      {
-        "label": "Ürün yıllarca iyileşir",
-        "detail": "Aynı temel ürün her sezon geliştirilir ve hacim tekrar artar."
-      }
-    ]
+ "id": "vWl5jZCAWIo",
+ "title_tr": "UNIQLO: H&M ve Zara'yı zorlayan Japon iş modeli",
+ "category": "Şirket vakası",
+ "region": [
+  "Japonya",
+  "Çin",
+  "Güney Kore",
+  "ABD",
+  "Birleşik Krallık"
+ ],
+ "summary_tr": "Video, hızlı moda zincirleri küçülürken Uniqlo'nun rekor sonuçlar açıkladığını ve bunu sürekli iyileştirilen temel ürünlere borçlu olduğunu savunuyor. Uniqlo, Çin'deki az sayıda tedarikçiye Japon usta zanaatkârlar gönderip büyük ve uzun vadeli siparişler vererek kaliteyi yükseltip maliyeti düşürdü; Toray ile 20 yılı aşkın ortak geliştirmeyle HeatTech, AIRism ve Ultra Light Down gibi taklidi zor kumaşlar yarattı. Batı'da iki başarısız denemeden sonra Japon kimliğini prestij unsuru yapan büyük mağazalarla başarılı oldu. Ancak aynı Japon kimliği Kore boykotunda ve Çin'deki Xinjiang pamuğu tartışmasında zarara dönüştü; şirket bu riski milliyet vurgusu taşımayan GU markasıyla dengelemeye çalışıyor.",
+ "key_points": [
+  "Uniqlo, rakiplerle aynı Çin fabrikalarını kullanıyor ama oraya Japon ustalar gönderip süreçleri sürekli düzeltiyor.",
+  "Az sayıda tedarikçiye büyük ve bir yıla kadar önceden verilen siparişler, fabrikanın yatırım yapmasını ve birim maliyetin düşmesini sağlıyor.",
+  "Toray ile ortak lif geliştirme, rakiplerin katalogdan kumaş alarak kopyalayamayacağı ürünler doğurdu.",
+  "Batı'da ucuz alışveriş merkezi konumlanması başarısız oldu; prestijli lokasyon ve 'kaliteli Japon' kimliği işe yaradı.",
+  "Japon kimliği Kore boykotunda ve Çin'deki Xinjiang pamuğu krizinde ciddi gelir ve mağaza kaybına neden oldu.",
+  "Şirket, milliyet vurgusu yapmayan GU markasıyla siyasi riski çeşitlendirmeye çalışıyor."
+ ],
+ "numbers": [
+  {
+   "label": "Quiksilver/Billabong sahibinin kapattığı mağaza",
+   "value": 122,
+   "unit": "mağaza",
+   "context": "2025'te tüm mağazaları kapandı"
   },
-  "business_ideas": [
-    {
-      "name": "Türk tekstil fasoncuları için 'az tedarikçi, uzun sipariş' ortaklık programı",
-      "insight": "Uniqlo'nun avantajı, az sayıda tedarikçiye büyük ve uzun vadeli siparişler verip onlara uzman göndermesinden geliyor.",
-      "problem": "Türk fasoncular küçük ve öngörülemeyen siparişlerle çalıştığı için makine yatırımı yapamıyor; Avrupalı orta ölçekli markalar ise tutarlı kalite bulamıyor.",
-      "solution": "Avrupalı temel giyim markalarıyla seçilmiş Türk fasoncular arasında yıllık hacim taahhüdü, yerinde kalite mühendisi ve hata kök neden takibi içeren yönetilen tedarik programı.",
-      "target": "Avrupa'daki temel giyim ve iş kıyafeti markaları; Türkiye'deki orta ölçekli örme/dokuma fasoncuları",
-      "revenue_model": "Sipariş hacmi üzerinden hizmet komisyonu + kalite denetim ücreti",
-      "first_step": "Basic ürün satan 5 Avrupalı DTC markayla tedarik sorunlarını konuşmak ve 3 Türk fasoncudan yıllık taahhüt karşılığı fiyat teklifi almak.",
-      "capital": "Orta",
-      "difficulty": 3,
-      "turkey_angle": "Türkiye'nin Avrupa'ya yakınlığı ve hızlı teslim avantajı bu modeli güçlendirir; Çin'den tedarik çeşitlendirmek isteyen markalar için uygun.",
-      "risks": "Marka tarafının hacim taahhüdünden kaçınması, kur ve maliyet enflasyonu, fasoncunun kapasite sorunları."
-    },
-    {
-      "name": "Pamuk ve kumaş menşe izlenebilirlik belgelendirme hizmeti",
-      "insight": "Uniqlo, ABD gümrüğünde pamuğunun nereden geldiğini kanıtlayamadığı için sevkiyatını kaybetti; denetim dokuma aşamasında kalmıştı.",
-      "problem": "Hazır giyim ihracatçıları, ABD ve AB'nin zorla çalıştırma kurallarına karşı ham madde menşeini belgeleyemiyor.",
-      "solution": "Çırçırdan dikime kadar parti bazlı belge, laboratuvar izotop testi ve tedarikçi beyanlarını toplayan izlenebilirlik dosyası hazırlayan hizmet.",
-      "target": "ABD ve AB'ye ihracat yapan Türk hazır giyim ve ev tekstili üreticileri",
-      "revenue_model": "Sevkiyat/parti başı belgelendirme ücreti + yıllık uyum aboneliği",
-      "first_step": "ABD'ye ihracat yapan 10 Türk konfeksiyoncuyla görüşüp müşterilerinin istediği menşe belgelerini listelemek; bir test laboratuvarıyla fiyat anlaşması yapmak.",
-      "capital": "Orta",
-      "difficulty": 4,
-      "turkey_angle": "Türkiye büyük pamuk üreticisi ve ithalatçısı; AB'nin zorla çalıştırma ürün yasağı ve tedarik zinciri yükümlülükleri Türk ihracatçıları doğrudan etkiliyor.",
-      "risks": "Karmaşık ve parçalı tedarik zinciri, belge sahteciliği, uluslararası sertifika kuruluşlarıyla rekabet."
-    },
-    {
-      "name": "Siyasi risk ve boykot sinyali izleme panosu",
-      "insight": "Video, Uniqlo'nun ürünü değişmeden yalnızca siyasi bağlam yüzünden Kore ve Çin'de gelir kaybettiğini anlatıyor.",
-      "problem": "Yurt dışında satış yapan markalar, menşe ülkelerine yönelik boykot dalgalarını sosyal medyada geç fark ediyor.",
-      "solution": "Hedef pazarlardaki sosyal medya, haber ve diplomatik gelişmeleri tarayıp marka ve menşe ülke bazında boykot riski skoru veren uyarı servisi.",
-      "target": "Körfez, Orta Asya ve Avrupa'da satış yapan Türk perakende ve tüketici markaları",
-      "revenue_model": "Pazar sayısına göre aylık abonelik",
-      "first_step": "Geçmişteki 5 boykot vakasının sosyal medya izini geriye dönük analiz edip erken uyarı sinyali çıkarılabildiğini gösteren bir vaka raporu hazırlamak ve 5 ihracatçı markaya sunmak.",
-      "capital": "Düşük",
-      "difficulty": 3,
-      "turkey_angle": "Türk markaları da zaman zaman Körfez veya Avrupa'da siyasi boykotlarla karşılaştı; Türkçe, Arapça ve Rusça izleme bir farklılaşma olabilir.",
-      "risks": "Yanlış alarmlar, sosyal medya API maliyetleri, uyarı alınsa bile marka tarafının hızlı aksiyon alamaması."
-    }
-  ],
-  "skeptic_notes": [
-    "Aynı birimde en az 3 karşılaştırılabilir değer bulunamadığı için grafik yok (Büyük Çin mağaza sayısı için yalnızca iki zaman noktası var: 1.031 → 969).",
-    "Video, Uniqlo'nun New York SoHo ve Fifth Avenue mağazalarını 2011'e bağlıyor; SoHo mağazası daha önce açılmıştı, tarih doğrulanmalı.",
-    "Kore'deki %54 gelir kaybını video önce boykota, sonra Covid'e ('cover' olarak altyazıya geçmiş) bağlıyor; iki etkinin payı ayrıştırılmamış.",
-    "Başlıktaki 'H&M ve Zara'yı öldürdü' iddiası abartılı; videoda Zara veya H&M'in finansal çöküşüne dair veri yok, yalnızca H&M mağaza kapanışlarından söz ediliyor.",
-    "GU'nun siyasi risk kalkanı olarak tasarlandığı, videonun kendi kabulüyle şirketçe söylenmemiş bir yorum.",
-    "Altyazıda şirket ve kişi adları bozuk (Unilo, Toray için 'Terra/Té/Tori', Takaichi için 'Sana Takashi'); en makul okumalar kullanıldı.",
-    "Video sonunda Statrys hizmetlerine yönlendirme var (reklam içeriği)."
+  {
+   "label": "H&M'in kapattığı mağaza",
+   "value": 170,
+   "unit": "mağaza",
+   "context": "Bu yıl kapatılacak"
+  },
+  {
+   "label": "Uniqlo 9 aylık gelir artışı",
+   "value": 17,
+   "unit": "%",
+   "context": "Tarihindeki en iyi 9 ay"
+  },
+  {
+   "label": "Uniqlo 9 aylık kâr artışı",
+   "value": 33,
+   "unit": "%",
+   "context": "Tarihindeki en iyi 9 ay"
+  },
+  {
+   "label": "Temel tişört prototipi",
+   "value": 10000,
+   "unit": "prototip",
+   "context": "Temel ürünün geliştirilmesi için"
+  },
+  {
+   "label": "Tek tedarikçiye sipariş",
+   "value": 3000000,
+   "unit": "adet",
+   "context": "Tedarikçinin üreteceğini önceden bildiği özdeş ürün sayısı (örnek)"
+  },
+  {
+   "label": "Base layer fiyatı",
+   "value": 15,
+   "unit": "$",
+   "context": "10.000 prototip harcanan ürünün fiyatı"
+  },
+  {
+   "label": "İngiltere'de açılan mağaza (2001)",
+   "value": 20,
+   "unit": "mağaza",
+   "context": "Yaklaşık; iki yılda çoğu kapandı"
+  },
+  {
+   "label": "New Jersey'de açılan mağaza (2005)",
+   "value": 3,
+   "unit": "mağaza",
+   "context": "Bir yıldan kısa sürede kapandı"
+  },
+  {
+   "label": "Kore gelir kaybı (2020)",
+   "value": -54,
+   "unit": "%",
+   "context": "Japon ürünleri boykotu ve Covid sonrası"
+  },
+  {
+   "label": "Kore faaliyet zararı (2020)",
+   "value": 75,
+   "unit": "milyon $",
+   "context": "Yıl sonu faaliyet zararı"
+  },
+  {
+   "label": "Çin'in eski satış payı",
+   "value": 20,
+   "unit": "%",
+   "context": "Grup satışları içinde"
+  },
+  {
+   "label": "Büyük Çin'in güncel satış payı",
+   "value": 19.5,
+   "unit": "%",
+   "context": "Grubun küresel satışları içinde"
+  },
+  {
+   "label": "Büyük Çin mağaza sayısı (Kasım 2024)",
+   "value": 1031,
+   "unit": "mağaza",
+   "context": "Xinjiang açıklaması sırasında"
+  },
+  {
+   "label": "Büyük Çin mağaza sayısı (bugün)",
+   "value": 969,
+   "unit": "mağaza",
+   "context": "Boykot sonrası"
+  },
+  {
+   "label": "Hisse düşüşü",
+   "value": -4.5,
+   "unit": "%",
+   "context": "Xinjiang açıklaması sonrası, 9 haftanın en kötüsü"
+  },
+  {
+   "label": "İptal edilen Japonya seyahati",
+   "value": 500000,
+   "unit": "seyahat",
+   "context": "Kasım 2025 Tayvan açıklaması sonrası bir haftada (yaklaşık)"
+  }
+ ],
+ "chart": null,
+ "diagram": {
+  "type": "cycle",
+  "title": "Uniqlo'nun tedarik ve kalite döngüsü",
+  "steps": [
+   {
+    "label": "Az sayıda tedarikçi",
+    "detail": "Yüzlerce atölye yerine birkaç fabrikayla çalışılır."
+   },
+   {
+    "label": "Japon ustalar sahada",
+    "detail": "Takumi'ler fabrikada yaşayıp boyama ve dikiş hatalarını kalıcı olarak düzeltir."
+   },
+   {
+    "label": "Büyük, erken siparişler",
+    "detail": "Bir yıla kadar önceden milyonlarca özdeş ürün sipariş edilir."
+   },
+   {
+    "label": "Tedarikçi yatırım yapar",
+    "detail": "Garantili hacim makine yatırımını ve verimliliği mümkün kılar."
+   },
+   {
+    "label": "Düşük maliyet, az stok",
+    "detail": "Birim maliyet düşer, sezon sonu indirime kalan stok neredeyse yok olur."
+   },
+   {
+    "label": "Ürün yıllarca iyileşir",
+    "detail": "Aynı temel ürün her sezon geliştirilir ve hacim tekrar artar."
+   }
   ]
+ },
+ "business_ideas": [
+  {
+   "name": "Türk tekstil fasoncuları için 'az tedarikçi, uzun sipariş' ortaklık programı",
+   "insight": "Uniqlo'nun avantajı, az sayıda tedarikçiye büyük ve uzun vadeli siparişler verip onlara uzman göndermesinden geliyor.",
+   "problem": "Türk fasoncular küçük ve öngörülemeyen siparişlerle çalıştığı için makine yatırımı yapamıyor; Avrupalı orta ölçekli markalar ise tutarlı kalite bulamıyor.",
+   "solution": "Avrupalı temel giyim markalarıyla seçilmiş Türk fasoncular arasında yıllık hacim taahhüdü, yerinde kalite mühendisi ve hata kök neden takibi içeren yönetilen tedarik programı.",
+   "target": "Avrupa'daki temel giyim ve iş kıyafeti markaları; Türkiye'deki orta ölçekli örme/dokuma fasoncuları",
+   "revenue_model": "Sipariş hacmi üzerinden hizmet komisyonu + kalite denetim ücreti",
+   "first_step": "Basic ürün satan 5 Avrupalı DTC markayla tedarik sorunlarını konuşmak ve 3 Türk fasoncudan yıllık taahhüt karşılığı fiyat teklifi almak.",
+   "capital": "Orta",
+   "difficulty": 3,
+   "turkey_angle": "Türkiye'nin Avrupa'ya yakınlığı ve hızlı teslim avantajı bu modeli güçlendirir; Çin'den tedarik çeşitlendirmek isteyen markalar için uygun.",
+   "risks": "Marka tarafının hacim taahhüdünden kaçınması, kur ve maliyet enflasyonu, fasoncunun kapasite sorunları.",
+   "originality": 3,
+   "problem_solving": 4,
+   "score_note": "Model biliniyor ama Türkiye'de uygulayan az; iki tarafın da sorununu çözer.",
+   "similar": []
+  },
+  {
+   "name": "Pamuk ve kumaş menşe izlenebilirlik belgelendirme hizmeti",
+   "insight": "Uniqlo, ABD gümrüğünde pamuğunun nereden geldiğini kanıtlayamadığı için sevkiyatını kaybetti; denetim dokuma aşamasında kalmıştı.",
+   "problem": "Hazır giyim ihracatçıları, ABD ve AB'nin zorla çalıştırma kurallarına karşı ham madde menşeini belgeleyemiyor.",
+   "solution": "Çırçırdan dikime kadar parti bazlı belge, laboratuvar izotop testi ve tedarikçi beyanlarını toplayan izlenebilirlik dosyası hazırlayan hizmet.",
+   "target": "ABD ve AB'ye ihracat yapan Türk hazır giyim ve ev tekstili üreticileri",
+   "revenue_model": "Sevkiyat/parti başı belgelendirme ücreti + yıllık uyum aboneliği",
+   "first_step": "ABD'ye ihracat yapan 10 Türk konfeksiyoncuyla görüşüp müşterilerinin istediği menşe belgelerini listelemek; bir test laboratuvarıyla fiyat anlaşması yapmak.",
+   "capital": "Orta",
+   "difficulty": 4,
+   "turkey_angle": "Türkiye büyük pamuk üreticisi ve ithalatçısı; AB'nin zorla çalıştırma ürün yasağı ve tedarik zinciri yükümlülükleri Türk ihracatçıları doğrudan etkiliyor.",
+   "risks": "Karmaşık ve parçalı tedarik zinciri, belge sahteciliği, uluslararası sertifika kuruluşlarıyla rekabet.",
+   "originality": 3,
+   "problem_solving": 5,
+   "score_note": "Oritain benzeri hizmetlerin yerel uygulaması; ihracatçı için varoluşsal sorun.",
+   "similar": []
+  },
+  {
+   "name": "Siyasi risk ve boykot sinyali izleme panosu",
+   "insight": "Video, Uniqlo'nun ürünü değişmeden yalnızca siyasi bağlam yüzünden Kore ve Çin'de gelir kaybettiğini anlatıyor.",
+   "problem": "Yurt dışında satış yapan markalar, menşe ülkelerine yönelik boykot dalgalarını sosyal medyada geç fark ediyor.",
+   "solution": "Hedef pazarlardaki sosyal medya, haber ve diplomatik gelişmeleri tarayıp marka ve menşe ülke bazında boykot riski skoru veren uyarı servisi.",
+   "target": "Körfez, Orta Asya ve Avrupa'da satış yapan Türk perakende ve tüketici markaları",
+   "revenue_model": "Pazar sayısına göre aylık abonelik",
+   "first_step": "Geçmişteki 5 boykot vakasının sosyal medya izini geriye dönük analiz edip erken uyarı sinyali çıkarılabildiğini gösteren bir vaka raporu hazırlamak ve 5 ihracatçı markaya sunmak.",
+   "capital": "Düşük",
+   "difficulty": 3,
+   "turkey_angle": "Türk markaları da zaman zaman Körfez veya Avrupa'da siyasi boykotlarla karşılaştı; Türkçe, Arapça ve Rusça izleme bir farklılaşma olabilir.",
+   "risks": "Yanlış alarmlar, sosyal medya API maliyetleri, uyarı alınsa bile marka tarafının hızlı aksiyon alamaması.",
+   "originality": 3,
+   "problem_solving": 3,
+   "score_note": "Sosyal dinleme türevi; boykot nadir ama ağır.",
+   "similar": []
+  }
+ ],
+ "skeptic_notes": [
+  "Aynı birimde en az 3 karşılaştırılabilir değer bulunamadığı için grafik yok (Büyük Çin mağaza sayısı için yalnızca iki zaman noktası var: 1.031 → 969).",
+  "Video, Uniqlo'nun New York SoHo ve Fifth Avenue mağazalarını 2011'e bağlıyor; SoHo mağazası daha önce açılmıştı, tarih doğrulanmalı.",
+  "Kore'deki %54 gelir kaybını video önce boykota, sonra Covid'e ('cover' olarak altyazıya geçmiş) bağlıyor; iki etkinin payı ayrıştırılmamış.",
+  "Başlıktaki 'H&M ve Zara'yı öldürdü' iddiası abartılı; videoda Zara veya H&M'in finansal çöküşüne dair veri yok, yalnızca H&M mağaza kapanışlarından söz ediliyor.",
+  "GU'nun siyasi risk kalkanı olarak tasarlandığı, videonun kendi kabulüyle şirketçe söylenmemiş bir yorum.",
+  "Altyazıda şirket ve kişi adları bozuk (Unilo, Toray için 'Terra/Té/Tori', Takaichi için 'Sana Takashi'); en makul okumalar kullanıldı.",
+  "Video sonunda Statrys hizmetlerine yönlendirme var (reklam içeriği)."
+ ]
 }

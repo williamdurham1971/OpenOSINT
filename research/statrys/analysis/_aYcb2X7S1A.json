@@ -1,114 +1,282 @@
 {
-  "id": "_aYcb2X7S1A",
-  "title_tr": "Nintendo'nun iş modeli zorlanıyor: Switch 2 sonrası kriz",
-  "category": "Şirket vakası",
-  "region": ["Japonya", "ABD", "Avrupa"],
-  "summary_tr": "Video, rekor görünen yıllık sonuçlara rağmen Nintendo'nun brüt marjının çeyrekler içinde sert düştüğünü ve şirketin önümüzdeki yıl için kâr ve satış düşüşü öngördüğünü anlatıyor. Ana neden olarak zayıf yen, dolar bazlı Asya tedarik zinciri, yapay zekâ talebiyle fırlayan bellek çipi fiyatları, ABD gümrük vergileri ve nakliye maliyetlerinin aynı anda gelmesi gösteriliyor. Nintendo maliyeti fiyat artışıyla müşteriye yansıtınca Batı'da Steam Deck, Game Pass gibi alternatiflerle karşılaştı. Sunucu, şirketin borçsuz bilançosu ve güçlü fikri mülkiyetiyle ayakta kalacağını, ancak başarılı formülün her koşulda geçerli olmadığını vurguluyor.",
-  "key_points": [
-    "Yıllık net kâr artmasına rağmen brüt marj Aralık 2025 çeyreğinde yüzde 59'dan yüzde 37'ye geriledi.",
-    "Nintendo, gelecek yıl net kârın yüzde 27, satışların yüzde 11 düşmesini ve yeni fiyat artışlarını öngördü.",
-    "Switch 2, ilk Switch'e göre yüzde 50 daha pahalı fiyatlandı; maliyetlerin dolar bazlı olması zayıf yenle birleşince bu karar alındı.",
-    "YZ veri merkezlerinin bellek talebi, çip fiyatlarını bir çeyrekte neredeyse ikiye katladı.",
-    "Gümrük vergileri iptal edildiği halde fiyatların düşürülmemesi ABD'de toplu davaya yol açtı.",
-    "Borçsuz bilanço, güçlü karakterler ve 17 milyonu aşan Switch 2 satışı şirketin dayanıklılığını destekliyor."
-  ],
-  "numbers": [
-    {"label": "Switch üretim kesintisi", "value": 33, "unit": "%", "context": "Üretimin üçte bir azaltılması"},
-    {"label": "Hisse değer kaybı", "value": 50, "unit": "% (yaklaşık)", "context": "Beş ayda neredeyse yarıya inen hisse"},
-    {"label": "Net kâr tahmini değişimi", "value": -27, "unit": "%", "context": "Önümüzdeki mali yıl için şirket öngörüsü"},
-    {"label": "Geçen yıl net kâr artışı", "value": 52, "unit": "%", "context": "8 Mayıs'ta açıklanan yıllık sonuç"},
-    {"label": "Brüt marj (önce)", "value": 59, "unit": "%", "context": "Lansman dönemi brüt marjı"},
-    {"label": "Brüt marj (Aralık 2025 çeyreği)", "value": 37, "unit": "%", "context": "Üçüncü çeyrekte düşülen seviye"},
-    {"label": "Analist kâr tahmini kesintisi", "value": 1, "unit": "milyar $/yıl (üzeri)", "context": "Önümüzdeki dört yıl için her yıl"},
-    {"label": "Satış tahmini değişimi", "value": -11, "unit": "%", "context": "Gelecek yıl satış beklentisi"},
-    {"label": "Switch 2 zammı Japonya", "value": 20, "unit": "%", "context": "Yeni fiyat artışı"},
-    {"label": "Switch 2 zammı ABD", "value": 11, "unit": "%", "context": "Yeni fiyat artışı"},
-    {"label": "Switch 2 zammı Avrupa", "value": 6.4, "unit": "%", "context": "Yeni fiyat artışı"},
-    {"label": "ABD yazılım satışlarında Nintendo payı", "value": 82, "unit": "%", "context": "Switch 2'de satılan yazılımın Nintendo yapımı olanı"},
-    {"label": "İlk Switch fiyatı (2017)", "value": 300, "unit": "$", "context": "Lansman fiyatı"},
-    {"label": "Switch 2 ABD fiyatı", "value": 450, "unit": "$", "context": "İlk Switch'e göre yüzde 50 fazla"},
-    {"label": "Dolar/yen 2017", "value": 114, "unit": "yen", "context": "İlk Switch lansmanında 1 doların karşılığı"},
-    {"label": "Dolar/yen Switch 2 lansmanı", "value": 150, "unit": "yen", "context": "Switch 2 çıkışında 1 doların karşılığı"},
-    {"label": "Japonya'ya özel sürüm", "value": 330, "unit": "$ (karşılığı)", "context": "Yalnızca Japonca kilitli yerel sürüm"},
-    {"label": "Steam Deck fiyat farkı", "value": 50, "unit": "$", "context": "Switch 2'den daha ucuz olduğu tutar"},
-    {"label": "Game Pass aylık ücreti", "value": 15, "unit": "$/ay", "context": "Microsoft abonelik ücreti"},
-    {"label": "Mario Galaxy filmi gişesi", "value": 800, "unit": "milyon $", "context": "Gişede aşılan tutar"},
-    {"label": "Switch 2 satışı", "value": 17, "unit": "milyon adet", "context": "Bir yıldan kısa sürede (17 milyonun üzerinde)"},
-    {"label": "Wii U ömür boyu satış", "value": 13, "unit": "milyon adet", "context": "Önceki başarısız konsol"},
-    {"label": "Walmart'ın Almanya zararı", "value": 1, "unit": "milyar $ (üzeri)", "context": "Dokuz yıllık başarısız Almanya girişimi"},
-    {"label": "Nintendo nakit varlığı", "value": 14, "unit": "milyar $ (videoda '14 milyon')", "context": "Borçsuz bilançodaki nakit; altyazıda 'milyon' geçiyor, bağlamdan milyar olduğu anlaşılıyor"}
-  ],
-  "chart": {
-    "type": "hbar",
-    "title": "Switch 2 için açıklanan yeni fiyat artışları (bölgelere göre)",
-    "unit": "%",
-    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı",
-    "data": [
-      {"label": "Japonya", "value": 20},
-      {"label": "ABD", "value": 11},
-      {"label": "Avrupa", "value": 6.4}
-    ]
+ "id": "_aYcb2X7S1A",
+ "title_tr": "Nintendo'nun iş modeli zorlanıyor: Switch 2 sonrası kriz",
+ "category": "Şirket vakası",
+ "region": [
+  "Japonya",
+  "ABD",
+  "Avrupa"
+ ],
+ "summary_tr": "Video, rekor görünen yıllık sonuçlara rağmen Nintendo'nun brüt marjının çeyrekler içinde sert düştüğünü ve şirketin önümüzdeki yıl için kâr ve satış düşüşü öngördüğünü anlatıyor. Ana neden olarak zayıf yen, dolar bazlı Asya tedarik zinciri, yapay zekâ talebiyle fırlayan bellek çipi fiyatları, ABD gümrük vergileri ve nakliye maliyetlerinin aynı anda gelmesi gösteriliyor. Nintendo maliyeti fiyat artışıyla müşteriye yansıtınca Batı'da Steam Deck, Game Pass gibi alternatiflerle karşılaştı. Sunucu, şirketin borçsuz bilançosu ve güçlü fikri mülkiyetiyle ayakta kalacağını, ancak başarılı formülün her koşulda geçerli olmadığını vurguluyor.",
+ "key_points": [
+  "Yıllık net kâr artmasına rağmen brüt marj Aralık 2025 çeyreğinde yüzde 59'dan yüzde 37'ye geriledi.",
+  "Nintendo, gelecek yıl net kârın yüzde 27, satışların yüzde 11 düşmesini ve yeni fiyat artışlarını öngördü.",
+  "Switch 2, ilk Switch'e göre yüzde 50 daha pahalı fiyatlandı; maliyetlerin dolar bazlı olması zayıf yenle birleşince bu karar alındı.",
+  "YZ veri merkezlerinin bellek talebi, çip fiyatlarını bir çeyrekte neredeyse ikiye katladı.",
+  "Gümrük vergileri iptal edildiği halde fiyatların düşürülmemesi ABD'de toplu davaya yol açtı.",
+  "Borçsuz bilanço, güçlü karakterler ve 17 milyonu aşan Switch 2 satışı şirketin dayanıklılığını destekliyor."
+ ],
+ "numbers": [
+  {
+   "label": "Switch üretim kesintisi",
+   "value": 33,
+   "unit": "%",
+   "context": "Üretimin üçte bir azaltılması"
   },
-  "diagram": {
-    "type": "flow",
-    "title": "Nintendo'nun marj krizinin neden-sonuç zinciri",
-    "steps": [
-      {"label": "Zayıf yen, dolar maliyet", "detail": "Konsol Vietnam ve Çin'de, dolar bazlı bileşenlerle üretiliyor."},
-      {"label": "Yüksek lansman fiyatı", "detail": "Switch 2 ilk modelden yüzde 50 pahalı fiyatlandı."},
-      {"label": "Bellek fiyat şoku", "detail": "YZ veri merkezlerinin talebi bellek çiplerini bir çeyrekte neredeyse ikiye katladı."},
-      {"label": "Tarife ve nakliye", "detail": "ABD gümrük vergisi ve deniz yolu sorunları maliyeti artırdı."},
-      {"label": "Marj çöküşü ve zam", "detail": "Brüt marj düştü, şirket yeni fiyat artışlarına gitti."},
-      {"label": "Batı'da talep kaybı", "detail": "Alıcılar Steam Deck ve abonelik servisleri gibi alternatiflere yöneldi."}
-    ]
+  {
+   "label": "Hisse değer kaybı",
+   "value": 50,
+   "unit": "% (yaklaşık)",
+   "context": "Beş ayda neredeyse yarıya inen hisse"
   },
-  "business_ideas": [
-    {
-      "name": "İthal elektronik satan KOBİ'ler için kur ve bileşen maliyeti risk paneli",
-      "insight": "Nintendo'nun sorunu, maliyetlerin dolar ve bellek fiyatına, gelirin ise farklı para birimlerine bağlı olmasından doğdu.",
-      "problem": "Türkiye'deki elektronik ithalatçıları ve üreticileri, ürün maliyetlerinin hangi kalemlerinin hangi kur ve emtia fiyatına bağlı olduğunu anlık göremiyor.",
-      "solution": "Ürün reçetesini (BOM) kur, bellek ve navlun endeksleriyle eşleştirip fiyat güncelleme zamanı ve marj uyarısı veren SaaS.",
-      "target": "Elektronik, beyaz eşya yan sanayi ve bilgisayar donanımı ithalatçısı KOBİ'ler",
-      "revenue_model": "Aylık abonelik; büyük müşterilere özel entegrasyon ücreti",
-      "first_step": "5 ithalatçıyla görüşüp son 12 aylık fiyat güncelleme kararlarını ve kaçırılan marjı belgeleyen basit bir Excel prototipi test etmek",
-      "capital": "Düşük",
-      "difficulty": 3,
-      "turkey_angle": "TL'nin değer kaybı ortamında Türk işletmeleri bu sorunu Japon şirketlerinden çok daha yoğun yaşıyor.",
-      "risks": "Veri kaynaklarına (bellek spot fiyatları vb.) erişim maliyeti; KOBİ'lerin yazılıma ödeme isteksizliği."
-    },
-    {
-      "name": "El konsolları için Steam Deck uyumluluk ve port hizmeti",
-      "insight": "Video, Batılı alıcının Switch 2 yerine binlerce PC oyununu çalıştıran el cihazlarına yöneldiğini anlatıyor.",
-      "problem": "Bağımsız oyun stüdyoları oyunlarını el tipi PC'lerde sorunsuz çalıştırmak için optimizasyon ve kontrol uyarlaması bilgisine sahip değil.",
-      "solution": "Performans optimizasyonu, gamepad arayüzü ve doğrulama sürecini yöneten uzman port ekibi.",
-      "target": "Türkiye ve Avrupa'daki bağımsız ve mobil kökenli oyun stüdyoları",
-      "revenue_model": "Proje bazlı ücret + isteğe bağlı satış geliri payı",
-      "first_step": "Türkiye'den 3 bağımsız stüdyoya ücretsiz uyumluluk denetimi yapıp tespit edilen sorunları raporlamak ve bir ücretli projeye dönüştürmek",
-      "capital": "Düşük",
-      "difficulty": 3,
-      "turkey_angle": "Türkiye'nin güçlü oyun geliştirici ekosistemi ve görece düşük mühendislik maliyeti ihracata uygun.",
-      "risks": "Platform sahibinin kural değişiklikleri; küçük stüdyoların sınırlı bütçesi; teknik destek yükü."
-    },
-    {
-      "name": "Sertifikalı ikinci el konsol ve el cihazı takas platformu",
-      "insight": "Konsol fiyatlarının art arda yükselmesi alıcıları daha uygun seçeneklere itiyor.",
-      "problem": "Türkiye'de ikinci el konsol alımı güvensiz; arıza, kilitli hesap ve sahte ürün riski yüksek.",
-      "solution": "Cihazları test edip garantiyle satan, eski cihazı takasla alan çevrimiçi platform ve anlaşmalı teknik servis ağı.",
-      "target": "Fiyat hassas oyuncular ve ebeveynler",
-      "revenue_model": "Alım-satım marjı + uzatılmış garanti satışı",
-      "first_step": "50 ikinci el cihazı test edip garantiyle bir pazar yerinde satarak iade oranı ve marjı ölçmek",
-      "capital": "Orta",
-      "difficulty": 2,
-      "turkey_angle": "Yüksek ithalat maliyetleri ve kur nedeniyle Türkiye'de ikinci el elektronik talebi güçlü.",
-      "risks": "Stok ve fiyat riski; hırsızlık malı alımına karşı kimlik ve seri numarası kontrolü şart; yeni model çıkışlarında değer kaybı."
-    }
-  ],
-  "skeptic_notes": [
-    "Videoda Nintendo'nun 'yaklaşık 14 milyon dolar' nakdi olduğu söyleniyor; 'şirketi yıllarca döndürür' bağlamıyla bu açıkça hatalı, muhtemelen 14 milyar dolar kastediliyor.",
-    "'Switch to production by a third' ifadesi altyazı hatası; Switch 2 üretiminin üçte bir azaltıldığı anlaşılıyor, kaynak belirtilmemiş.",
-    "Büyük analist kurumlarının tahminleri 'her yıl 1 milyar dolardan fazla' düşürdüğü genellemesi tek kaynaklı ve kontrol edilmeli.",
-    "Gümrük vergilerinin Yüksek Mahkeme tarafından iptali ve Seattle'daki toplu dava iddiaları ayrıca doğrulanmalı.",
-    "Sızıntılar, geliştirici kitlerinin dağıtılmadığı ve şirket içi 'kriz modu' bilgileri anonim kaynaklara dayanıyor.",
-    "Switch 2'nin ilk Switch ve PS5'ten hızlı sattığı iddiası dönem tanımına bağlı.",
-    "Videonun sonunda Statrys hesap açma bağlantısı tanıtılıyor; kapanış bölümü reklam içeriği niteliğinde."
+  {
+   "label": "Net kâr tahmini değişimi",
+   "value": -27,
+   "unit": "%",
+   "context": "Önümüzdeki mali yıl için şirket öngörüsü"
+  },
+  {
+   "label": "Geçen yıl net kâr artışı",
+   "value": 52,
+   "unit": "%",
+   "context": "8 Mayıs'ta açıklanan yıllık sonuç"
+  },
+  {
+   "label": "Brüt marj (önce)",
+   "value": 59,
+   "unit": "%",
+   "context": "Lansman dönemi brüt marjı"
+  },
+  {
+   "label": "Brüt marj (Aralık 2025 çeyreği)",
+   "value": 37,
+   "unit": "%",
+   "context": "Üçüncü çeyrekte düşülen seviye"
+  },
+  {
+   "label": "Analist kâr tahmini kesintisi",
+   "value": 1,
+   "unit": "milyar $/yıl (üzeri)",
+   "context": "Önümüzdeki dört yıl için her yıl"
+  },
+  {
+   "label": "Satış tahmini değişimi",
+   "value": -11,
+   "unit": "%",
+   "context": "Gelecek yıl satış beklentisi"
+  },
+  {
+   "label": "Switch 2 zammı Japonya",
+   "value": 20,
+   "unit": "%",
+   "context": "Yeni fiyat artışı"
+  },
+  {
+   "label": "Switch 2 zammı ABD",
+   "value": 11,
+   "unit": "%",
+   "context": "Yeni fiyat artışı"
+  },
+  {
+   "label": "Switch 2 zammı Avrupa",
+   "value": 6.4,
+   "unit": "%",
+   "context": "Yeni fiyat artışı"
+  },
+  {
+   "label": "ABD yazılım satışlarında Nintendo payı",
+   "value": 82,
+   "unit": "%",
+   "context": "Switch 2'de satılan yazılımın Nintendo yapımı olanı"
+  },
+  {
+   "label": "İlk Switch fiyatı (2017)",
+   "value": 300,
+   "unit": "$",
+   "context": "Lansman fiyatı"
+  },
+  {
+   "label": "Switch 2 ABD fiyatı",
+   "value": 450,
+   "unit": "$",
+   "context": "İlk Switch'e göre yüzde 50 fazla"
+  },
+  {
+   "label": "Dolar/yen 2017",
+   "value": 114,
+   "unit": "yen",
+   "context": "İlk Switch lansmanında 1 doların karşılığı"
+  },
+  {
+   "label": "Dolar/yen Switch 2 lansmanı",
+   "value": 150,
+   "unit": "yen",
+   "context": "Switch 2 çıkışında 1 doların karşılığı"
+  },
+  {
+   "label": "Japonya'ya özel sürüm",
+   "value": 330,
+   "unit": "$ (karşılığı)",
+   "context": "Yalnızca Japonca kilitli yerel sürüm"
+  },
+  {
+   "label": "Steam Deck fiyat farkı",
+   "value": 50,
+   "unit": "$",
+   "context": "Switch 2'den daha ucuz olduğu tutar"
+  },
+  {
+   "label": "Game Pass aylık ücreti",
+   "value": 15,
+   "unit": "$/ay",
+   "context": "Microsoft abonelik ücreti"
+  },
+  {
+   "label": "Mario Galaxy filmi gişesi",
+   "value": 800,
+   "unit": "milyon $",
+   "context": "Gişede aşılan tutar"
+  },
+  {
+   "label": "Switch 2 satışı",
+   "value": 17,
+   "unit": "milyon adet",
+   "context": "Bir yıldan kısa sürede (17 milyonun üzerinde)"
+  },
+  {
+   "label": "Wii U ömür boyu satış",
+   "value": 13,
+   "unit": "milyon adet",
+   "context": "Önceki başarısız konsol"
+  },
+  {
+   "label": "Walmart'ın Almanya zararı",
+   "value": 1,
+   "unit": "milyar $ (üzeri)",
+   "context": "Dokuz yıllık başarısız Almanya girişimi"
+  },
+  {
+   "label": "Nintendo nakit varlığı",
+   "value": 14,
+   "unit": "milyar $ (videoda '14 milyon')",
+   "context": "Borçsuz bilançodaki nakit; altyazıda 'milyon' geçiyor, bağlamdan milyar olduğu anlaşılıyor"
+  }
+ ],
+ "chart": {
+  "type": "hbar",
+  "title": "Switch 2 için açıklanan yeni fiyat artışları (bölgelere göre)",
+  "unit": "%",
+  "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı",
+  "data": [
+   {
+    "label": "Japonya",
+    "value": 20
+   },
+   {
+    "label": "ABD",
+    "value": 11
+   },
+   {
+    "label": "Avrupa",
+    "value": 6.4
+   }
   ]
+ },
+ "diagram": {
+  "type": "flow",
+  "title": "Nintendo'nun marj krizinin neden-sonuç zinciri",
+  "steps": [
+   {
+    "label": "Zayıf yen, dolar maliyet",
+    "detail": "Konsol Vietnam ve Çin'de, dolar bazlı bileşenlerle üretiliyor."
+   },
+   {
+    "label": "Yüksek lansman fiyatı",
+    "detail": "Switch 2 ilk modelden yüzde 50 pahalı fiyatlandı."
+   },
+   {
+    "label": "Bellek fiyat şoku",
+    "detail": "YZ veri merkezlerinin talebi bellek çiplerini bir çeyrekte neredeyse ikiye katladı."
+   },
+   {
+    "label": "Tarife ve nakliye",
+    "detail": "ABD gümrük vergisi ve deniz yolu sorunları maliyeti artırdı."
+   },
+   {
+    "label": "Marj çöküşü ve zam",
+    "detail": "Brüt marj düştü, şirket yeni fiyat artışlarına gitti."
+   },
+   {
+    "label": "Batı'da talep kaybı",
+    "detail": "Alıcılar Steam Deck ve abonelik servisleri gibi alternatiflere yöneldi."
+   }
+  ]
+ },
+ "business_ideas": [
+  {
+   "name": "İthal elektronik satan KOBİ'ler için kur ve bileşen maliyeti risk paneli",
+   "insight": "Nintendo'nun sorunu, maliyetlerin dolar ve bellek fiyatına, gelirin ise farklı para birimlerine bağlı olmasından doğdu.",
+   "problem": "Türkiye'deki elektronik ithalatçıları ve üreticileri, ürün maliyetlerinin hangi kalemlerinin hangi kur ve emtia fiyatına bağlı olduğunu anlık göremiyor.",
+   "solution": "Ürün reçetesini (BOM) kur, bellek ve navlun endeksleriyle eşleştirip fiyat güncelleme zamanı ve marj uyarısı veren SaaS.",
+   "target": "Elektronik, beyaz eşya yan sanayi ve bilgisayar donanımı ithalatçısı KOBİ'ler",
+   "revenue_model": "Aylık abonelik; büyük müşterilere özel entegrasyon ücreti",
+   "first_step": "5 ithalatçıyla görüşüp son 12 aylık fiyat güncelleme kararlarını ve kaçırılan marjı belgeleyen basit bir Excel prototipi test etmek",
+   "capital": "Düşük",
+   "difficulty": 3,
+   "turkey_angle": "TL'nin değer kaybı ortamında Türk işletmeleri bu sorunu Japon şirketlerinden çok daha yoğun yaşıyor.",
+   "risks": "Veri kaynaklarına (bellek spot fiyatları vb.) erişim maliyeti; KOBİ'lerin yazılıma ödeme isteksizliği.",
+   "originality": 3,
+   "problem_solving": 3,
+   "score_note": "BOM-kur eşleştirmesi dar.",
+   "similar": [
+    {
+     "id": "IF6UdjjiHh0",
+     "name": "Fatura bazlı kur maruziyeti panosu"
+    }
+   ]
+  },
+  {
+   "name": "El konsolları için Steam Deck uyumluluk ve port hizmeti",
+   "insight": "Video, Batılı alıcının Switch 2 yerine binlerce PC oyununu çalıştıran el cihazlarına yöneldiğini anlatıyor.",
+   "problem": "Bağımsız oyun stüdyoları oyunlarını el tipi PC'lerde sorunsuz çalıştırmak için optimizasyon ve kontrol uyarlaması bilgisine sahip değil.",
+   "solution": "Performans optimizasyonu, gamepad arayüzü ve doğrulama sürecini yöneten uzman port ekibi.",
+   "target": "Türkiye ve Avrupa'daki bağımsız ve mobil kökenli oyun stüdyoları",
+   "revenue_model": "Proje bazlı ücret + isteğe bağlı satış geliri payı",
+   "first_step": "Türkiye'den 3 bağımsız stüdyoya ücretsiz uyumluluk denetimi yapıp tespit edilen sorunları raporlamak ve bir ücretli projeye dönüştürmek",
+   "capital": "Düşük",
+   "difficulty": 3,
+   "turkey_angle": "Türkiye'nin güçlü oyun geliştirici ekosistemi ve görece düşük mühendislik maliyeti ihracata uygun.",
+   "risks": "Platform sahibinin kural değişiklikleri; küçük stüdyoların sınırlı bütçesi; teknik destek yükü.",
+   "originality": 3,
+   "problem_solving": 3,
+   "score_note": "Port stüdyoları var; el PC nişi küçük.",
+   "similar": []
+  },
+  {
+   "name": "Sertifikalı ikinci el konsol ve el cihazı takas platformu",
+   "insight": "Konsol fiyatlarının art arda yükselmesi alıcıları daha uygun seçeneklere itiyor.",
+   "problem": "Türkiye'de ikinci el konsol alımı güvensiz; arıza, kilitli hesap ve sahte ürün riski yüksek.",
+   "solution": "Cihazları test edip garantiyle satan, eski cihazı takasla alan çevrimiçi platform ve anlaşmalı teknik servis ağı.",
+   "target": "Fiyat hassas oyuncular ve ebeveynler",
+   "revenue_model": "Alım-satım marjı + uzatılmış garanti satışı",
+   "first_step": "50 ikinci el cihazı test edip garantiyle bir pazar yerinde satarak iade oranı ve marjı ölçmek",
+   "capital": "Orta",
+   "difficulty": 2,
+   "turkey_angle": "Yüksek ithalat maliyetleri ve kur nedeniyle Türkiye'de ikinci el elektronik talebi güçlü.",
+   "risks": "Stok ve fiyat riski; hırsızlık malı alımına karşı kimlik ve seri numarası kontrolü şart; yeni model çıkışlarında değer kaybı.",
+   "originality": 1,
+   "problem_solving": 2,
+   "score_note": "Mevcut (yenilenmiş cihaz pazarları).",
+   "similar": []
+  }
+ ],
+ "skeptic_notes": [
+  "Videoda Nintendo'nun 'yaklaşık 14 milyon dolar' nakdi olduğu söyleniyor; 'şirketi yıllarca döndürür' bağlamıyla bu açıkça hatalı, muhtemelen 14 milyar dolar kastediliyor.",
+  "'Switch to production by a third' ifadesi altyazı hatası; Switch 2 üretiminin üçte bir azaltıldığı anlaşılıyor, kaynak belirtilmemiş.",
+  "Büyük analist kurumlarının tahminleri 'her yıl 1 milyar dolardan fazla' düşürdüğü genellemesi tek kaynaklı ve kontrol edilmeli.",
+  "Gümrük vergilerinin Yüksek Mahkeme tarafından iptali ve Seattle'daki toplu dava iddiaları ayrıca doğrulanmalı.",
+  "Sızıntılar, geliştirici kitlerinin dağıtılmadığı ve şirket içi 'kriz modu' bilgileri anonim kaynaklara dayanıyor.",
+  "Switch 2'nin ilk Switch ve PS5'ten hızlı sattığı iddiası dönem tanımına bağlı.",
+  "Videonun sonunda Statrys hesap açma bağlantısı tanıtılıyor; kapanış bölümü reklam içeriği niteliğinde."
+ ]
 }

@@ -1,246 +1,276 @@
 {
-  "id": "IymRlJiSm6E",
-  "title_tr": "Nadir toprak elementleri: Çin'in tekeli nasıl kuruldu, nasıl silaha dönüştü ve neden zayıflıyor",
-  "category": "Jeopolitik & ticaret",
-  "region": [
-    "Çin",
-    "ABD",
-    "Myanmar",
-    "Avustralya",
-    "Malezya",
-    "Hindistan",
-    "Brezilya"
-  ],
-  "summary_tr": "Video, Çin'in nadir toprak rafinajı ve kalıcı mıknatıs üretimindeki ezici payını, onlarca yıllık devlet desteği, ucuz enerji ve ayrıştırma teknolojisinin ihracatını yasaklamasıyla kurduğunu anlatıyor. Çin bu tekeli ihracat lisansları, iştiraklere yayılan kara liste kuralı, askeri kullanım yasağı ve ihbar ödülleriyle silaha çevirdi; lisans başvuruları da Pekin'e Batı sanayisinin tedarik haritasını verdi. Buna karşılık ABD ve müttefikler milyarlarca dolar yatırım, fiyat tabanı garantisi ve Lynas'ın Malezya'da ağır element ayrıştırmasıyla Çin dışı kapasite kuruyor. Ancak ağır elementlerin hammaddesi büyük ölçüde Myanmar'daki Kachin silahlı gruplarının kontrolündeki madenlerden geliyor ve bu bölge yeni bir güç mücadelesinin alanı; video, ateşkesin 10 Kasım'da sona ermesiyle şirketlerin önce gecikmeyle karşılaşacağı uyarısıyla bitiyor.",
-  "key_points": [
-    "Nadir toprakların değeri, motoru küçültüp güçlendiren neodimyum mıknatıslardan geliyor; asıl darboğaz cevherden elementleri ayrıştırmak.",
-    "ABD'deki Mountain Pass madeni çevre maliyetleri ve Çin'in düşük fiyatları nedeniyle kapandı; Çin ise sektörü yıllarca devlet desteğiyle büyütüp teknoloji ihracatını yasakladı.",
-    "Yüksek ısıda çalışan motorlar için gereken ağır elementlerin ayrıştırılması neredeyse tamamen Çin'de yapılıyor ve bilinen bir ikamesi yok.",
-    "Çin'in ihracat lisansları Ford gibi şirketlerin üretimini durdurdu; iştiraklere yayılan kara liste ve askeri son kullanım yasağı riski büyüttü.",
-    "ABD ve müttefikleri yatırım, fiyat garantisi ve Lynas'ın Malezya'daki ağır element ayrıştırmasıyla Çin dışı üretimi artırıyor.",
-    "Ağır element cevheri büyük ölçüde Myanmar'daki Kachin Bağımsızlık Ordusu bölgesinden geliyor; ABD, Hindistan ve Çin bu kaynak için yarışıyor."
-  ],
-  "numbers": [
-    {
-      "label": "Çin'in nadir toprak rafinaj payı",
-      "value": 91,
-      "unit": "%",
-      "context": "Dünyadaki rafinaj içinde"
-    },
-    {
-      "label": "Çin'in kalıcı mıknatıs üretim payı",
-      "value": 94,
-      "unit": "%",
-      "context": "Dünya üretimi içinde"
-    },
-    {
-      "label": "Çin'in ağır element ayrıştırma payı",
-      "value": 99.9,
-      "unit": "%",
-      "context": "Ağır nadir toprakların ayrıştırılması"
-    },
-    {
-      "label": "Nadir toprak element sayısı",
-      "value": 17,
-      "unit": "element",
-      "context": "Periyodik tablodaki toplam"
-    },
-    {
-      "label": "Çin dışı üretim payı",
-      "value": 33,
-      "unit": "%",
-      "context": "Dünya üretiminin yaklaşık üçte biri artık Çin dışında"
-    },
-    {
-      "label": "İlk ihracat kontrolüne alınan element",
-      "value": 7,
-      "unit": "element",
-      "context": "Geçen yıl; birkaç ay sonra 5 element daha eklendi"
-    },
-    {
-      "label": "Lisans gerektiren değer eşiği",
-      "value": 0.1,
-      "unit": "%",
-      "context": "Ürün değerinin bu kadarı Çin nadir toprağı ise Çin lisansı gerekir"
-    },
-    {
-      "label": "Neodimyum mıknatıs gücü",
-      "value": 15,
-      "unit": "kat",
-      "context": "Buzdolabı mıknatısından 10-15 kat güçlü (üst sınır)"
-    },
-    {
-      "label": "Ağır element katkı oranı",
-      "value": 3,
-      "unit": "%",
-      "context": "Yüksek sıcaklık için mıknatısa eklenmesi gereken %2-3 (üst sınır)"
-    },
-    {
-      "label": "Ford'un üretimi durdurma süresi",
-      "value": 6,
-      "unit": "hafta",
-      "context": "Lisans gecikmesi başladıktan sonra"
-    },
-    {
-      "label": "Kara liste iştirak eşiği",
-      "value": 50,
-      "unit": "%",
-      "context": "Bu orandan fazla sahip olunan iştirakler de kara listeye girer"
-    },
-    {
-      "label": "ABD hükümetinin taahhüdü (Nisan 2026)",
-      "value": 7.3,
-      "unit": "milyar $",
-      "context": "Beş ayrı kurum üzerinden nadir toprak projelerine"
-    },
-    {
-      "label": "Çin dışı projelere kamu parası (2026)",
-      "value": 10,
-      "unit": "milyar $",
-      "context": "Bloomberg beklentisi"
-    },
-    {
-      "label": "Pentagon'un Suudi rafineri hissesi",
-      "value": 49,
-      "unit": "%",
-      "context": "Suudi Arabistan'daki bir rafineride"
-    },
-    {
-      "label": "Avustralya'daki proje sayısı",
-      "value": 89,
-      "unit": "proje",
-      "context": "Devam eden nadir toprak projeleri"
-    },
-    {
-      "label": "USA Rare Earth'ün Brezilya satın alımı",
-      "value": 2.8,
-      "unit": "milyar $",
-      "context": "Brezilya'da bir şirket alımı"
-    },
-    {
-      "label": "ABD fiyat tabanı garantisi",
-      "value": 110,
-      "unit": "$/kg",
-      "context": "Çin dışı üretilen nadir toprak malzemesi için"
-    },
-    {
-      "label": "Myanmar'ın Çin ağır oksit ithalatındaki payı (2023)",
-      "value": 98,
-      "unit": "%",
-      "context": "Yaklaşık"
-    },
-    {
-      "label": "KIA'nın Myanmar üretimindeki kontrolü",
-      "value": 90,
-      "unit": "%",
-      "context": "%80-90 (üst sınır)"
-    },
-    {
-      "label": "Nehre bağımlı nüfus",
-      "value": 1000000,
-      "unit": "kişi",
-      "context": "Kuzey Tayland'da maden atığını taşıyan nehre bağımlı (yaklaşık)"
-    }
-  ],
-  "chart": {
-    "type": "hbar",
-    "title": "Nadir toprak zincirinde Çin'in dünya payı",
-    "unit": "%",
-    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı.",
-    "data": [
-      {
-        "label": "Ağır elementlerin ayrıştırılması",
-        "value": 99.9
-      },
-      {
-        "label": "Kalıcı mıknatıs üretimi",
-        "value": 94
-      },
-      {
-        "label": "Rafinaj",
-        "value": 91
-      }
-    ]
+ "id": "IymRlJiSm6E",
+ "title_tr": "Nadir toprak elementleri: Çin'in tekeli nasıl kuruldu, nasıl silaha dönüştü ve neden zayıflıyor",
+ "category": "Jeopolitik & ticaret",
+ "region": [
+  "Çin",
+  "ABD",
+  "Myanmar",
+  "Avustralya",
+  "Malezya",
+  "Hindistan",
+  "Brezilya"
+ ],
+ "summary_tr": "Video, Çin'in nadir toprak rafinajı ve kalıcı mıknatıs üretimindeki ezici payını, onlarca yıllık devlet desteği, ucuz enerji ve ayrıştırma teknolojisinin ihracatını yasaklamasıyla kurduğunu anlatıyor. Çin bu tekeli ihracat lisansları, iştiraklere yayılan kara liste kuralı, askeri kullanım yasağı ve ihbar ödülleriyle silaha çevirdi; lisans başvuruları da Pekin'e Batı sanayisinin tedarik haritasını verdi. Buna karşılık ABD ve müttefikler milyarlarca dolar yatırım, fiyat tabanı garantisi ve Lynas'ın Malezya'da ağır element ayrıştırmasıyla Çin dışı kapasite kuruyor. Ancak ağır elementlerin hammaddesi büyük ölçüde Myanmar'daki Kachin silahlı gruplarının kontrolündeki madenlerden geliyor ve bu bölge yeni bir güç mücadelesinin alanı; video, ateşkesin 10 Kasım'da sona ermesiyle şirketlerin önce gecikmeyle karşılaşacağı uyarısıyla bitiyor.",
+ "key_points": [
+  "Nadir toprakların değeri, motoru küçültüp güçlendiren neodimyum mıknatıslardan geliyor; asıl darboğaz cevherden elementleri ayrıştırmak.",
+  "ABD'deki Mountain Pass madeni çevre maliyetleri ve Çin'in düşük fiyatları nedeniyle kapandı; Çin ise sektörü yıllarca devlet desteğiyle büyütüp teknoloji ihracatını yasakladı.",
+  "Yüksek ısıda çalışan motorlar için gereken ağır elementlerin ayrıştırılması neredeyse tamamen Çin'de yapılıyor ve bilinen bir ikamesi yok.",
+  "Çin'in ihracat lisansları Ford gibi şirketlerin üretimini durdurdu; iştiraklere yayılan kara liste ve askeri son kullanım yasağı riski büyüttü.",
+  "ABD ve müttefikleri yatırım, fiyat garantisi ve Lynas'ın Malezya'daki ağır element ayrıştırmasıyla Çin dışı üretimi artırıyor.",
+  "Ağır element cevheri büyük ölçüde Myanmar'daki Kachin Bağımsızlık Ordusu bölgesinden geliyor; ABD, Hindistan ve Çin bu kaynak için yarışıyor."
+ ],
+ "numbers": [
+  {
+   "label": "Çin'in nadir toprak rafinaj payı",
+   "value": 91,
+   "unit": "%",
+   "context": "Dünyadaki rafinaj içinde"
   },
-  "diagram": {
-    "type": "flow",
-    "title": "Çin'in nadir toprak tekelinin kurulması ve silaha dönüşmesi",
-    "steps": [
-      {
-        "label": "Batı üretimi bırakır",
-        "detail": "Çevre maliyetleri ve ucuz Çin malı Mountain Pass'i kapatır."
-      },
-      {
-        "label": "Devlet destekli kapasite",
-        "detail": "Çin ucuz enerji ve kredilerle rafinajı yıllarca zararına büyütür."
-      },
-      {
-        "label": "Teknoloji ihracat yasağı",
-        "detail": "Ayrıştırma bilgisi ülke içinde tutulur, başkaları cevheri Çin'e satar."
-      },
-      {
-        "label": "İhracat lisansı silahı",
-        "detail": "Lisanslar, kara liste ve askeri kullanım yasağı Batı üretimini durdurabilir."
-      },
-      {
-        "label": "Batı'nın karşı yatırımı",
-        "detail": "Yatırımlar, fiyat tabanı ve Lynas gibi yeni ayrıştırma tesisleri kurulur."
-      },
-      {
-        "label": "Kaynak için yarış",
-        "detail": "Myanmar'daki ağır element madenleri için ABD, Hindistan ve Çin yarışır."
-      }
-    ]
+  {
+   "label": "Çin'in kalıcı mıknatıs üretim payı",
+   "value": 94,
+   "unit": "%",
+   "context": "Dünya üretimi içinde"
   },
-  "business_ideas": [
-    {
-      "name": "Ürünlerde nadir toprak içeriği ve Çin lisans eşiği hesaplama aracı",
-      "insight": "Video, ürün değerinin %0,1'i bile Çin nadir toprağı içeriyorsa Çin lisansı gerektiğini ve şirketlerin bunu tedarikçi sustuğunda fark ettiğini söylüyor.",
-      "problem": "Motor, hoparlör veya mıknatıs içeren ürün üreticileri, ürünlerinin Çin ihracat kontrollerine ve iştirak kara listesi kuralına ne kadar maruz olduğunu bilmiyor.",
-      "solution": "Ürün ağacındaki mıknatıs ve motor bileşenlerini tarayıp tahmini nadir toprak değer oranını, menşeini ve olası lisans/kara liste riskini raporlayan SaaS ve danışma paketi.",
-      "target": "Beyaz eşya, otomotiv yan sanayi, elektrikli motor ve savunma tedarikçileri",
-      "revenue_model": "Ürün ailesi başına analiz ücreti + yıllık izleme aboneliği",
-      "first_step": "Türk otomotiv yan sanayisinden 5 satın alma müdürüyle görüşüp son 18 aydaki mıknatıs gecikmelerini ve tedarikçi belgelerini toplamak; bir ürün için örnek rapor hazırlamak.",
-      "capital": "Düşük",
-      "difficulty": 4,
-      "turkey_angle": "Türkiye'nin beyaz eşya ve otomotiv yan sanayii AB'ye ihracat yapıyor ve Çin mıknatıslarına bağımlı; AB müşterileri de tedarik riski belgesi istiyor.",
-      "risks": "Çin mevzuatının hızlı değişmesi, bileşen içerik verisine erişim, hukuki danışmanlık sınırı (yorum hukuki görüş yerine geçmemeli)."
-    },
-    {
-      "name": "Elektronik atıktan nadir toprak mıknatısı geri kazanımı",
-      "insight": "Video, hafif elementlerin bu on yılda çözüleceğini ama ağır elementlerin uzun süre tek hata noktası kalacağını, Batı'nın Çin dışı kaynak aradığını anlatıyor.",
-      "problem": "Hurdaya çıkan sabit disk, motor ve hoparlörlerdeki neodimyum mıknatıslar (ağır element katkılarıyla birlikte) çoğunlukla kaybediliyor.",
-      "solution": "Elektronik atık toplayıcılarından mıknatıs içeren parçaları ayırıp mıknatısları söküp toplayan, ardından Avrupa'daki geri dönüşüm/yeniden işleme tesislerine satan bir ön işleme işletmesi.",
-      "target": "Avrupa'daki mıknatıs geri dönüşüm tesisleri, motor üreticileri; tedarik tarafında e-atık lisanslı toplayıcılar",
-      "revenue_model": "Ayrıştırılmış mıknatıs hammaddesinin ton başına satışı + e-atık kabul ücreti",
-      "first_step": "3 lisanslı e-atık tesisinden aylık sabit disk ve motor hacmini öğrenmek; 2 Avrupalı mıknatıs geri dönüşüm şirketinden alım fiyatı ve kalite şartlarını almak.",
-      "capital": "Orta",
-      "difficulty": 4,
-      "turkey_angle": "Türkiye'de e-atık hacmi büyük ve AB'ye yakınlık lojistik avantaj sağlıyor; Çevre Bakanlığı atık lisansı gerekir.",
-      "risks": "Toplama hacminin düşüklüğü, Çin'in fiyatları düşürerek piyasayı bozması, çevre ve iş güvenliği mevzuatı."
-    },
-    {
-      "name": "Çin ihracat kontrolü ve tedarik gecikmesi erken uyarı bülteni",
-      "insight": "Video, en büyük etkinin fiyat artışı değil gecikme olacağını ve ateşkesin sona ereceği tarihi kimsenin bilemediğini vurguluyor.",
-      "problem": "KOBİ ithalatçılar MOFCOM duyurularını ve lisans süreçlerini Çince takip edemiyor, gecikmeyi sipariş geldikten sonra öğreniyor.",
-      "solution": "MOFCOM ve gümrük duyurularını Türkçe/İngilizce özetleyen, sektör bazında etki analizi ve stok önerisi veren ücretli bülten ve uyarı servisi.",
-      "target": "Çin'den motor, elektronik ve mıknatıs ithal eden KOBİ'ler ve ihracatçılar",
-      "revenue_model": "Aylık abonelik + şirket özel etki analizi",
-      "first_step": "Ücretsiz deneme bülteni hazırlayıp İSO/İTO üyesi 50 ithalatçıya göndermek ve 30 gün sonunda en az 5 ücretli abonelik hedeflemek.",
-      "capital": "Düşük",
-      "difficulty": 2,
-      "turkey_angle": "Türkiye'den Çince kaynak takibi için Çince bilen bir analistle uzaktan yürütülebilir; Türk ihracatçılar AB'nin kendi kurallarına da uyum sağlamak zorunda.",
-      "risks": "İçeriğin kolay kopyalanması, büyük danışmanlık firmalarının ücretsiz raporları, yanlış yorum sorumluluğu."
-    }
-  ],
-  "skeptic_notes": [
-    "%91, %94 ve %99,9 gibi paylar yaygın ama farklı kaynak ve yıllara ait olabilir; video kaynak göstermiyor.",
-    "Videonun 'üçte bir Çin dışı üretim' iddiası ile '%99,9 Çin ayrıştırma' iddiası farklı aşamaları (madencilik vs. ayrıştırma) kapsıyor; karıştırılmamalı.",
-    "Gelecek tarihli olaylar (Nisan 2026 ABD taahhüdü, Mayıs 2026 ABD-Hindistan anlaşması, 10 Kasım ateşkes bitişi) video yayın tarihine göre güncel olsa da bağımsız teyit gerektiriyor.",
-    "Pentagon'un Suudi Arabistan'daki bir rafineride %49 hisse aldığı iddiası alışılmadık; doğrulanmalı.",
-    "Kachin bölgesindeki ABD'li iş insanının Beyaz Saray girişimi anlatımı tek kaynaklı ve anekdot niteliğinde.",
-    "Transkriptin sonunda tekrar eden anlamsız 'The River' satırları altyazı hatası; ayrıca 'Got River' muhtemelen Kok nehri, 'Pangwa' muhtemelen Pangwa/Pangwah kasabası.",
-    "'Ateşkes 30 Ekim'de imzalandı, 12 ay askıya alındı' ile '10 Kasım'da bitiyor' tarihleri arasında küçük tutarsızlık var.",
-    "Video sonunda Statrys'e değiniliyor; doğrudan hizmet tanıtımı sınırlı."
+  {
+   "label": "Çin'in ağır element ayrıştırma payı",
+   "value": 99.9,
+   "unit": "%",
+   "context": "Ağır nadir toprakların ayrıştırılması"
+  },
+  {
+   "label": "Nadir toprak element sayısı",
+   "value": 17,
+   "unit": "element",
+   "context": "Periyodik tablodaki toplam"
+  },
+  {
+   "label": "Çin dışı üretim payı",
+   "value": 33,
+   "unit": "%",
+   "context": "Dünya üretiminin yaklaşık üçte biri artık Çin dışında"
+  },
+  {
+   "label": "İlk ihracat kontrolüne alınan element",
+   "value": 7,
+   "unit": "element",
+   "context": "Geçen yıl; birkaç ay sonra 5 element daha eklendi"
+  },
+  {
+   "label": "Lisans gerektiren değer eşiği",
+   "value": 0.1,
+   "unit": "%",
+   "context": "Ürün değerinin bu kadarı Çin nadir toprağı ise Çin lisansı gerekir"
+  },
+  {
+   "label": "Neodimyum mıknatıs gücü",
+   "value": 15,
+   "unit": "kat",
+   "context": "Buzdolabı mıknatısından 10-15 kat güçlü (üst sınır)"
+  },
+  {
+   "label": "Ağır element katkı oranı",
+   "value": 3,
+   "unit": "%",
+   "context": "Yüksek sıcaklık için mıknatısa eklenmesi gereken %2-3 (üst sınır)"
+  },
+  {
+   "label": "Ford'un üretimi durdurma süresi",
+   "value": 6,
+   "unit": "hafta",
+   "context": "Lisans gecikmesi başladıktan sonra"
+  },
+  {
+   "label": "Kara liste iştirak eşiği",
+   "value": 50,
+   "unit": "%",
+   "context": "Bu orandan fazla sahip olunan iştirakler de kara listeye girer"
+  },
+  {
+   "label": "ABD hükümetinin taahhüdü (Nisan 2026)",
+   "value": 7.3,
+   "unit": "milyar $",
+   "context": "Beş ayrı kurum üzerinden nadir toprak projelerine"
+  },
+  {
+   "label": "Çin dışı projelere kamu parası (2026)",
+   "value": 10,
+   "unit": "milyar $",
+   "context": "Bloomberg beklentisi"
+  },
+  {
+   "label": "Pentagon'un Suudi rafineri hissesi",
+   "value": 49,
+   "unit": "%",
+   "context": "Suudi Arabistan'daki bir rafineride"
+  },
+  {
+   "label": "Avustralya'daki proje sayısı",
+   "value": 89,
+   "unit": "proje",
+   "context": "Devam eden nadir toprak projeleri"
+  },
+  {
+   "label": "USA Rare Earth'ün Brezilya satın alımı",
+   "value": 2.8,
+   "unit": "milyar $",
+   "context": "Brezilya'da bir şirket alımı"
+  },
+  {
+   "label": "ABD fiyat tabanı garantisi",
+   "value": 110,
+   "unit": "$/kg",
+   "context": "Çin dışı üretilen nadir toprak malzemesi için"
+  },
+  {
+   "label": "Myanmar'ın Çin ağır oksit ithalatındaki payı (2023)",
+   "value": 98,
+   "unit": "%",
+   "context": "Yaklaşık"
+  },
+  {
+   "label": "KIA'nın Myanmar üretimindeki kontrolü",
+   "value": 90,
+   "unit": "%",
+   "context": "%80-90 (üst sınır)"
+  },
+  {
+   "label": "Nehre bağımlı nüfus",
+   "value": 1000000,
+   "unit": "kişi",
+   "context": "Kuzey Tayland'da maden atığını taşıyan nehre bağımlı (yaklaşık)"
+  }
+ ],
+ "chart": {
+  "type": "hbar",
+  "title": "Nadir toprak zincirinde Çin'in dünya payı",
+  "unit": "%",
+  "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı.",
+  "data": [
+   {
+    "label": "Ağır elementlerin ayrıştırılması",
+    "value": 99.9
+   },
+   {
+    "label": "Kalıcı mıknatıs üretimi",
+    "value": 94
+   },
+   {
+    "label": "Rafinaj",
+    "value": 91
+   }
   ]
+ },
+ "diagram": {
+  "type": "flow",
+  "title": "Çin'in nadir toprak tekelinin kurulması ve silaha dönüşmesi",
+  "steps": [
+   {
+    "label": "Batı üretimi bırakır",
+    "detail": "Çevre maliyetleri ve ucuz Çin malı Mountain Pass'i kapatır."
+   },
+   {
+    "label": "Devlet destekli kapasite",
+    "detail": "Çin ucuz enerji ve kredilerle rafinajı yıllarca zararına büyütür."
+   },
+   {
+    "label": "Teknoloji ihracat yasağı",
+    "detail": "Ayrıştırma bilgisi ülke içinde tutulur, başkaları cevheri Çin'e satar."
+   },
+   {
+    "label": "İhracat lisansı silahı",
+    "detail": "Lisanslar, kara liste ve askeri kullanım yasağı Batı üretimini durdurabilir."
+   },
+   {
+    "label": "Batı'nın karşı yatırımı",
+    "detail": "Yatırımlar, fiyat tabanı ve Lynas gibi yeni ayrıştırma tesisleri kurulur."
+   },
+   {
+    "label": "Kaynak için yarış",
+    "detail": "Myanmar'daki ağır element madenleri için ABD, Hindistan ve Çin yarışır."
+   }
+  ]
+ },
+ "business_ideas": [
+  {
+   "name": "Ürünlerde nadir toprak içeriği ve Çin lisans eşiği hesaplama aracı",
+   "insight": "Video, ürün değerinin %0,1'i bile Çin nadir toprağı içeriyorsa Çin lisansı gerektiğini ve şirketlerin bunu tedarikçi sustuğunda fark ettiğini söylüyor.",
+   "problem": "Motor, hoparlör veya mıknatıs içeren ürün üreticileri, ürünlerinin Çin ihracat kontrollerine ve iştirak kara listesi kuralına ne kadar maruz olduğunu bilmiyor.",
+   "solution": "Ürün ağacındaki mıknatıs ve motor bileşenlerini tarayıp tahmini nadir toprak değer oranını, menşeini ve olası lisans/kara liste riskini raporlayan SaaS ve danışma paketi.",
+   "target": "Beyaz eşya, otomotiv yan sanayi, elektrikli motor ve savunma tedarikçileri",
+   "revenue_model": "Ürün ailesi başına analiz ücreti + yıllık izleme aboneliği",
+   "first_step": "Türk otomotiv yan sanayisinden 5 satın alma müdürüyle görüşüp son 18 aydaki mıknatıs gecikmelerini ve tedarikçi belgelerini toplamak; bir ürün için örnek rapor hazırlamak.",
+   "capital": "Düşük",
+   "difficulty": 4,
+   "turkey_angle": "Türkiye'nin beyaz eşya ve otomotiv yan sanayii AB'ye ihracat yapıyor ve Çin mıknatıslarına bağımlı; AB müşterileri de tedarik riski belgesi istiyor.",
+   "risks": "Çin mevzuatının hızlı değişmesi, bileşen içerik verisine erişim, hukuki danışmanlık sınırı (yorum hukuki görüş yerine geçmemeli).",
+   "originality": 4,
+   "problem_solving": 4,
+   "score_note": "Yeni kurala özgü; tedarik riski ailesinin en spesifik üyesi.",
+   "similar": [
+    {
+     "id": "hXl87jIjKMk",
+     "name": "Nadir toprak mıknatısı ve drone bileşeni tedarik riski izleme platformu"
+    },
+    {
+     "id": "c8uF2LD728Q",
+     "name": "Nadir toprak ve kritik mineral tedarik riski izleme servisi"
+    },
+    {
+     "id": "pnnztfVJnms",
+     "name": "Elektronik bileşen tedarik riski izleme paneli"
+    }
+   ]
+  },
+  {
+   "name": "Elektronik atıktan nadir toprak mıknatısı geri kazanımı",
+   "insight": "Video, hafif elementlerin bu on yılda çözüleceğini ama ağır elementlerin uzun süre tek hata noktası kalacağını, Batı'nın Çin dışı kaynak aradığını anlatıyor.",
+   "problem": "Hurdaya çıkan sabit disk, motor ve hoparlörlerdeki neodimyum mıknatıslar (ağır element katkılarıyla birlikte) çoğunlukla kaybediliyor.",
+   "solution": "Elektronik atık toplayıcılarından mıknatıs içeren parçaları ayırıp mıknatısları söküp toplayan, ardından Avrupa'daki geri dönüşüm/yeniden işleme tesislerine satan bir ön işleme işletmesi.",
+   "target": "Avrupa'daki mıknatıs geri dönüşüm tesisleri, motor üreticileri; tedarik tarafında e-atık lisanslı toplayıcılar",
+   "revenue_model": "Ayrıştırılmış mıknatıs hammaddesinin ton başına satışı + e-atık kabul ücreti",
+   "first_step": "3 lisanslı e-atık tesisinden aylık sabit disk ve motor hacmini öğrenmek; 2 Avrupalı mıknatıs geri dönüşüm şirketinden alım fiyatı ve kalite şartlarını almak.",
+   "capital": "Orta",
+   "difficulty": 4,
+   "turkey_angle": "Türkiye'de e-atık hacmi büyük ve AB'ye yakınlık lojistik avantaj sağlıyor; Çevre Bakanlığı atık lisansı gerekir.",
+   "risks": "Toplama hacminin düşüklüğü, Çin'in fiyatları düşürerek piyasayı bozması, çevre ve iş güvenliği mevzuatı.",
+   "originality": 4,
+   "problem_solving": 3,
+   "score_note": "Fiziksel, savunulabilir iş; birim ekonomisi kanıtlanmalı.",
+   "similar": []
+  },
+  {
+   "name": "Çin ihracat kontrolü ve tedarik gecikmesi erken uyarı bülteni",
+   "insight": "Video, en büyük etkinin fiyat artışı değil gecikme olacağını ve ateşkesin sona ereceği tarihi kimsenin bilemediğini vurguluyor.",
+   "problem": "KOBİ ithalatçılar MOFCOM duyurularını ve lisans süreçlerini Çince takip edemiyor, gecikmeyi sipariş geldikten sonra öğreniyor.",
+   "solution": "MOFCOM ve gümrük duyurularını Türkçe/İngilizce özetleyen, sektör bazında etki analizi ve stok önerisi veren ücretli bülten ve uyarı servisi.",
+   "target": "Çin'den motor, elektronik ve mıknatıs ithal eden KOBİ'ler ve ihracatçılar",
+   "revenue_model": "Aylık abonelik + şirket özel etki analizi",
+   "first_step": "Ücretsiz deneme bülteni hazırlayıp İSO/İTO üyesi 50 ithalatçıya göndermek ve 30 gün sonunda en az 5 ücretli abonelik hedeflemek.",
+   "capital": "Düşük",
+   "difficulty": 2,
+   "turkey_angle": "Türkiye'den Çince kaynak takibi için Çince bilen bir analistle uzaktan yürütülebilir; Türk ihracatçılar AB'nin kendi kurallarına da uyum sağlamak zorunda.",
+   "risks": "İçeriğin kolay kopyalanması, büyük danışmanlık firmalarının ücretsiz raporları, yanlış yorum sorumluluğu.",
+   "originality": 2,
+   "problem_solving": 3,
+   "score_note": "Bülten formatı.",
+   "similar": [
+    {
+     "id": "c8uF2LD728Q",
+     "name": "Nadir toprak ve kritik mineral tedarik riski izleme servisi"
+    }
+   ]
+  }
+ ],
+ "skeptic_notes": [
+  "%91, %94 ve %99,9 gibi paylar yaygın ama farklı kaynak ve yıllara ait olabilir; video kaynak göstermiyor.",
+  "Videonun 'üçte bir Çin dışı üretim' iddiası ile '%99,9 Çin ayrıştırma' iddiası farklı aşamaları (madencilik vs. ayrıştırma) kapsıyor; karıştırılmamalı.",
+  "Gelecek tarihli olaylar (Nisan 2026 ABD taahhüdü, Mayıs 2026 ABD-Hindistan anlaşması, 10 Kasım ateşkes bitişi) video yayın tarihine göre güncel olsa da bağımsız teyit gerektiriyor.",
+  "Pentagon'un Suudi Arabistan'daki bir rafineride %49 hisse aldığı iddiası alışılmadık; doğrulanmalı.",
+  "Kachin bölgesindeki ABD'li iş insanının Beyaz Saray girişimi anlatımı tek kaynaklı ve anekdot niteliğinde.",
+  "Transkriptin sonunda tekrar eden anlamsız 'The River' satırları altyazı hatası; ayrıca 'Got River' muhtemelen Kok nehri, 'Pangwa' muhtemelen Pangwa/Pangwah kasabası.",
+  "'Ateşkes 30 Ekim'de imzalandı, 12 ay askıya alındı' ile '10 Kasım'da bitiyor' tarihleri arasında küçük tutarsızlık var.",
+  "Video sonunda Statrys'e değiniliyor; doğrudan hizmet tanıtımı sınırlı."
+ ]
 }

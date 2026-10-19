@@ -1,113 +1,267 @@
 {
-  "id": "MC5nObVSYJY",
-  "title_tr": "Hindistan'ın Batı'daki sessiz yükselişi: satın almalar, yöneticiler ve demografi",
-  "category": "Jeopolitik & ticaret",
-  "region": ["Hindistan", "Avrupa", "İngiltere", "ABD"],
-  "summary_tr": "Video, Batı'daki klişe Hindistan imajının güncelliğini yitirdiğini ve Hint şirketlerinin son yirmi yılda Avrupa ve ABD'de önemli varlıklar satın aldığını savunuyor; Arcelor, Jaguar Land Rover, Tetley, Novelis ve Iveco teklifi gibi örnekler veriliyor. İkinci ayak olarak Alphabet, Microsoft, IBM, Adobe, Chanel ve Dünya Bankası gibi kurumları yöneten Hint kökenli yöneticiler anlatılıyor. Sunucuya göre genç nüfus, mühendis yetiştirme kapasitesi, biyometrik kimlik ve UPI gibi dijital kamu altyapısı ile yeni serbest ticaret anlaşmaları birleşerek Hindistan'ı hızlandırıyor; ABD'nin H-1B vizesine koyduğu yüksek ücret de yetenekleri Hindistan'da tutuyor. Son bölümde girişimcilere Hindistan'dan tedarik, uzaktan mühendis istihdamı ve Hint tüketici pazarı, çalışanlara ve yatırımcılara da Hindistan bilgisini ve portföy payını gözden geçirme önerileri sunuluyor.",
-  "key_points": [
-    "Hint şirketleri çelik, otomotiv, gıda, otelcilik ve alüminyum gibi alanlarda Batılı markaları satın aldı ve Avrupa'daki satın almalar hızlanıyor.",
-    "Büyük teknoloji ve finans kurumlarının tepesinde Hint kökenli yöneticilerin yoğunluğu dikkat çekiyor.",
-    "Hindistan'ın genç nüfusu ve yılda yetiştirdiği mühendis sayısı, yaşlanan Avrupa, Japonya ve Çin ile karşıtlık oluşturuyor.",
-    "Biyometrik kimlik, toplu banka hesabı açılışı ve UPI, yüz milyonlarca kişiyi kayıtlı ekonomiye kattı.",
-    "Yeni serbest ticaret anlaşmaları ve Çin'den çeşitlendirme arayışı Hindistan'ı üretim alternatifi haline getiriyor.",
-    "ABD'nin H-1B ücret artışı, Hint yeteneklerin yurt içinde kalıp yerel girişimleri güçlendirmesine yol açabilir."
-  ],
-  "numbers": [
-    {"label": "Tata'nın Iveco teklifi", "value": 3.8, "unit": "milyar €", "context": "İtalyan kamyon üreticisi için yapılan teklif."},
-    {"label": "Motel 6 satın alma bedeli", "value": 0.5, "unit": "milyar $", "context": "Hint bir girişimcinin Blackstone'dan satın alımı; 'yarım milyar' olarak ifade edildi."},
-    {"label": "Hint şirketlerinin Avrupa M&A hacmi", "value": 5.7, "unit": "milyar $", "context": "Geçen yıl; son 5 yılın en yüksek seviyesi."},
-    {"label": "Citigroup'un önce Hint yatırımcıları aradığı işlemler", "value": 70, "unit": "%", "context": "Avrupa'da yürüttüğü satış tarafı işlemlerin oranı."},
-    {"label": "ABD jenerik ilaçlarında Hint üretimi", "value": 50, "unit": "% (yaklaşık yarısı)", "context": "ABD'de tüketilen jenerik hapların Hint şirketlerince üretilen kısmı."},
-    {"label": "Narayen'in Adobe'deki süresi", "value": 18, "unit": "yıl", "context": "Adobe'yi yönetme süresi."},
-    {"label": "Banga'nın Mastercard'daki süresi", "value": 12, "unit": "yıl", "context": "Dünya Bankası'na geçmeden önce."},
-    {"label": "Hint kökenli CEO'ların şirketlerinin toplam değeri", "value": 8, "unit": "trilyon $ (üzeri)", "context": "Yönetilen şirketlerin toplam piyasa değeri."},
-    {"label": "Hindistan medyan yaşı", "value": 28, "unit": "yaş", "context": "Genç nüfus vurgusu."},
-    {"label": "Avrupa medyan yaşı", "value": 44, "unit": "yaş", "context": "Karşılaştırma."},
-    {"label": "Japonya medyan yaşı", "value": 49, "unit": "yaş", "context": "Karşılaştırma."},
-    {"label": "2030'da çalışma çağındaki nüfus payı", "value": 20, "unit": "% (beşte bir)", "context": "Dünyadaki çalışma çağındaki her beş kişiden birinin Hint olacağı iddiası."},
-    {"label": "Yıllık mühendis mezunu", "value": 1.5, "unit": "milyon kişi (üzeri)", "context": "Dünyada en yüksek sayı olarak verildi."},
-    {"label": "IIT kabul oranı", "value": 1, "unit": "% (altı)", "context": "Hindistan Teknoloji Enstitüleri'nin seçiciliği."},
-    {"label": "Açılan banka hesabı", "value": 0.5, "unit": "milyar hesap", "context": "Biyometrik kimliğe bağlı açılan hesaplar; 'yarım milyar' olarak ifade edildi."},
-    {"label": "H-1B yeni başvuru ücreti", "value": 100000, "unit": "$", "context": "Eylül 2025'te imzalandığı söylenen kararname."},
-    {"label": "H-1B sahiplerinde Hint payı", "value": 71, "unit": "%", "context": "Vize sahiplerinin Hint olan kısmı."},
-    {"label": "Unicorn girişim sayısı", "value": 100, "unit": "şirket (üzeri)", "context": "ABD ve Çin'den sonra üçüncü."},
-    {"label": "Özel uzay şirketi (2020)", "value": 54, "unit": "şirket", "context": "Özel uzay sektörünün büyüklüğü."},
-    {"label": "Özel uzay şirketi (bugün)", "value": 400, "unit": "şirket (üzeri)", "context": "Özel uzay sektörünün büyüklüğü."},
-    {"label": "Tüketici sınıfı (2030)", "value": 500, "unit": "milyon kişi", "context": "2030'a kadar ulaşılacağı öngörülen tüketici sınıfı."},
-    {"label": "Batı portföylerinde Hindistan payı", "value": 2, "unit": "% (altı, çoğu zaman)", "context": "Endeks fonu ve emeklilik fonlarındaki tipik ağırlık."}
-  ],
-  "chart": {
-    "type": "bar",
-    "title": "Medyan yaş karşılaştırması",
-    "unit": "yaş",
-    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı.",
-    "data": [
-      {"label": "Hindistan", "value": 28},
-      {"label": "Avrupa", "value": 44},
-      {"label": "Japonya", "value": 49}
-    ]
+ "id": "MC5nObVSYJY",
+ "title_tr": "Hindistan'ın Batı'daki sessiz yükselişi: satın almalar, yöneticiler ve demografi",
+ "category": "Jeopolitik & ticaret",
+ "region": [
+  "Hindistan",
+  "Avrupa",
+  "İngiltere",
+  "ABD"
+ ],
+ "summary_tr": "Video, Batı'daki klişe Hindistan imajının güncelliğini yitirdiğini ve Hint şirketlerinin son yirmi yılda Avrupa ve ABD'de önemli varlıklar satın aldığını savunuyor; Arcelor, Jaguar Land Rover, Tetley, Novelis ve Iveco teklifi gibi örnekler veriliyor. İkinci ayak olarak Alphabet, Microsoft, IBM, Adobe, Chanel ve Dünya Bankası gibi kurumları yöneten Hint kökenli yöneticiler anlatılıyor. Sunucuya göre genç nüfus, mühendis yetiştirme kapasitesi, biyometrik kimlik ve UPI gibi dijital kamu altyapısı ile yeni serbest ticaret anlaşmaları birleşerek Hindistan'ı hızlandırıyor; ABD'nin H-1B vizesine koyduğu yüksek ücret de yetenekleri Hindistan'da tutuyor. Son bölümde girişimcilere Hindistan'dan tedarik, uzaktan mühendis istihdamı ve Hint tüketici pazarı, çalışanlara ve yatırımcılara da Hindistan bilgisini ve portföy payını gözden geçirme önerileri sunuluyor.",
+ "key_points": [
+  "Hint şirketleri çelik, otomotiv, gıda, otelcilik ve alüminyum gibi alanlarda Batılı markaları satın aldı ve Avrupa'daki satın almalar hızlanıyor.",
+  "Büyük teknoloji ve finans kurumlarının tepesinde Hint kökenli yöneticilerin yoğunluğu dikkat çekiyor.",
+  "Hindistan'ın genç nüfusu ve yılda yetiştirdiği mühendis sayısı, yaşlanan Avrupa, Japonya ve Çin ile karşıtlık oluşturuyor.",
+  "Biyometrik kimlik, toplu banka hesabı açılışı ve UPI, yüz milyonlarca kişiyi kayıtlı ekonomiye kattı.",
+  "Yeni serbest ticaret anlaşmaları ve Çin'den çeşitlendirme arayışı Hindistan'ı üretim alternatifi haline getiriyor.",
+  "ABD'nin H-1B ücret artışı, Hint yeteneklerin yurt içinde kalıp yerel girişimleri güçlendirmesine yol açabilir."
+ ],
+ "numbers": [
+  {
+   "label": "Tata'nın Iveco teklifi",
+   "value": 3.8,
+   "unit": "milyar €",
+   "context": "İtalyan kamyon üreticisi için yapılan teklif."
   },
-  "diagram": {
-    "type": "flow",
-    "title": "Videoya göre Hindistan'ın yükselişini besleyen zincir",
-    "steps": [
-      {"label": "Genç ve büyük nüfus", "detail": "Düşük medyan yaş ve büyüyen çalışma çağındaki nüfus."},
-      {"label": "Mühendis yetiştirme hattı", "detail": "Çok seçici okullar ve yılda milyonlarca mühendis mezunu."},
-      {"label": "Dijital kamu altyapısı", "detail": "Biyometrik kimlik, banka hesapları ve UPI ile kayıtlı ekonomiye geçiş."},
-      {"label": "Ticaret anlaşmaları ve çeşitlendirme", "detail": "Yeni STA'lar ve Çin'den kaçan üretim talebi."},
-      {"label": "Yeteneğin yurt içinde kalması", "detail": "H-1B maliyeti artınca girişimler ve global şirketlerin Hindistan birimleri güçleniyor."},
-      {"label": "Yurt dışı satın almalar", "detail": "Biriken sermaye ve yönetim deneyimi Batılı varlıkların satın alınmasına dönüşüyor."}
-    ]
+  {
+   "label": "Motel 6 satın alma bedeli",
+   "value": 0.5,
+   "unit": "milyar $",
+   "context": "Hint bir girişimcinin Blackstone'dan satın alımı; 'yarım milyar' olarak ifade edildi."
   },
-  "business_ideas": [
-    {
-      "name": "Türk jenerik ilaç üreticileri için doğrulanmış Hint API tedarik masası",
-      "insight": "Videodaki, ABD jenerik ilaçlarının önemli kısmının Hint şirketlerince üretildiği ve Hindistan'ın ilaç hammaddesinde (API) Çin'e alternatif olduğu vurgusu.",
-      "problem": "Türk jenerik üreticileri etkin madde tedarikinde Çin'e yoğun bağımlı ve Hint üreticilerin GMP uygunluğunu, denetim geçmişini ve kalite tutarlılığını değerlendirmekte zorlanıyor.",
-      "solution": "Hint API üreticilerinin GMP sertifikaları, düzenleyici denetim geçmişi ve DMF dosyalarını tarayıp kısa listeleyen, numune ve teknik yazışmayı yöneten bir tedarik ve doğrulama hizmeti.",
-      "target": "Türkiye'deki jenerik ilaç ve takviye edici gıda üreticilerinin satın alma ve ruhsat departmanları",
-      "revenue_model": "Tedarikçi kısa liste raporu ücreti + sürekli sipariş için komisyon",
-      "first_step": "5 Türk jenerik üreticisinin satın alma ekibiyle görüşüp Çin'e bağımlı oldukları ilk 10 etkin maddeyi belirlemek ve her biri için 3 Hint üreticiyi ön değerlendirmek.",
-      "capital": "Orta",
-      "difficulty": 4,
-      "turkey_angle": "Türkiye'de güçlü bir jenerik ilaç sektörü var; ancak TİTCK ruhsat değişikliği süreçleri tedarikçi değişimini yavaşlatır.",
-      "risks": "Ruhsat değişikliği maliyeti ve süresi; kalite sorunu halinde ağır sorumluluk; Hint üreticilerin doğrudan satış yapmayı tercih etmesi."
-    },
-    {
-      "name": "Hint stratejik alıcılar için Türk orta ölçekli şirket eşleştirmesi",
-      "insight": "Hint şirketlerinin Avrupa'daki satış süreçlerinde ilk aranan alıcılar haline geldiği ve satın alma hacminin yükseldiği gözlemi.",
-      "problem": "Satılmak veya ortak bulmak isteyen Türk orta ölçekli sanayi şirketleri, AB pazarına erişim arayan Hint stratejik yatırımcılara ulaşmayı bilmiyor.",
-      "solution": "Otomotiv yan sanayi, tekstil, ilaç ve gıda gibi alanlarda Hint grupların satın alma geçmişini analiz edip uygun Türk hedef şirketleri anonim profil olarak sunan, ön görüşmeleri organize eden butik bir eşleştirme platformu.",
-      "target": "Halef sorunu yaşayan aile şirketleri; Avrupa'ya üretim üssü arayan Hint gruplar",
-      "revenue_model": "Sözleşmeli ön hizmet ücreti + işlem tamamlandığında başarı ücreti",
-      "first_step": "Son 5 yıldaki Hint kaynaklı Avrupa satın almalarını sektör ve büyüklüğe göre listeleyip benzer profildeki 10 Türk şirketiyle gizlilik sözleşmesi altında görüşmek.",
-      "capital": "Düşük",
-      "difficulty": 4,
-      "turkey_angle": "Türkiye'nin AB Gümrük Birliği üyeliği, AB pazarına erişmek isteyen Hint gruplar için Türkiye'yi cazip bir üretim üssü yapabilir.",
-      "risks": "Kurumsal finansman faaliyetleri için yetkili kuruluş ve SPK düzenlemelerine dikkat edilmeli; uzun işlem süreleri; değerleme beklenti farkları."
-    },
-    {
-      "name": "Hindistan pazarına girecek Türk markaları için pazar yeri giriş paketi",
-      "insight": "Videonun 2030'a kadar 500 milyonluk tüketici sınıfı ve UPI ile kayıtlı ekonomiye geçen yüz milyonlarca kişi tespiti.",
-      "problem": "Türk gıda, ev tekstili ve kozmetik markaları Hindistan'ın büyüyen tüketici pazarını görüyor ama ithalat kuralları, etiketleme, yüksek gümrük vergileri ve yerel pazar yerleri konusunda bilgisiz.",
-      "solution": "Belirli bir kategori için gümrük ve etiketleme uyumunu, yerel ithalatçı ortağı, Hint pazar yerlerinde mağaza açılışını ve UPI tabanlı ödeme akışını birlikte kuran, ilk satış verisiyle pazar testi yapan paket hizmet.",
-      "target": "İhracat deneyimi olan, Hindistan'ı test etmek isteyen Türk tüketici markaları",
-      "revenue_model": "Sabit fiyatlı pazar testi paketi + satış üzerinden pay",
-      "first_step": "Tek bir kategori (ör. lokum ve kuru yemiş veya havlu) için Hindistan'daki gümrük oranlarını ve pazar yerindeki rakip fiyatlarını çıkarıp 5 Türk markasına maliyet hesabını sunmak.",
-      "capital": "Orta",
-      "difficulty": 4,
-      "turkey_angle": "Türkiye ile Hindistan arasında serbest ticaret anlaşması yok; bu yüzden yüksek gümrük vergileri fiyat rekabetini zorlaştırır, yüksek marjlı niş ürünlerle başlanmalı.",
-      "risks": "Yüksek ithalat vergileri ve FSSAI gibi etiketleme/ruhsat gereklilikleri; ikili siyasi ilişkilerdeki dalgalanmalar; uzun tahsilat süreleri."
-    }
-  ],
-  "skeptic_notes": [
-    "'Hintliler Londra'da İngilizlerden bile büyük mülk sahibi grubu' iddiası büyük olasılıkla yalnızca yabancı alıcılar veya belirli bir veri setiyle ilgili; bu haliyle abartılı görünüyor.",
-    "'UPI her gün Visa'nın dünya çapındaki işlemlerinden fazlasını işliyor' iddiası tanıma göre (işlem sayısı/değer) değişir; doğrulanmalı.",
-    "ABD jenerik ilaçlarının yarısının 'bir Hint şirketi' tarafından üretildiği ifadesi muhtemelen 'Hint şirketleri' olmalı.",
-    "Altyazıda 'Novalis' geçiyor; doğrusu Novelis (Hindalco'ya ait alüminyum üreticisi).",
-    "H-1B için 100.000 dolarlık ücret ve Hindistan-AB serbest ticaret anlaşması gibi güncel politika iddiaları kaynaksız ve doğrulanmalı.",
-    "8 trilyon dolarlık şirket değerinin Japonya ve İngiltere GSYH toplamından büyük olduğu karşılaştırması piyasa değeri ile GSYH'yi karıştırıyor.",
-    "Videoda Statrys'in Hint mühendisleri ve Hindistan'dan Hong Kong/Singapur'da şirket kuran girişimciler anılıyor; dolaylı Statrys tanıtımı içeriyor.",
-    "Başlık ('Hindistan sizi çoktan satın aldı') sansasyonel; içerik bir eğilimi anlatıyor."
+  {
+   "label": "Hint şirketlerinin Avrupa M&A hacmi",
+   "value": 5.7,
+   "unit": "milyar $",
+   "context": "Geçen yıl; son 5 yılın en yüksek seviyesi."
+  },
+  {
+   "label": "Citigroup'un önce Hint yatırımcıları aradığı işlemler",
+   "value": 70,
+   "unit": "%",
+   "context": "Avrupa'da yürüttüğü satış tarafı işlemlerin oranı."
+  },
+  {
+   "label": "ABD jenerik ilaçlarında Hint üretimi",
+   "value": 50,
+   "unit": "% (yaklaşık yarısı)",
+   "context": "ABD'de tüketilen jenerik hapların Hint şirketlerince üretilen kısmı."
+  },
+  {
+   "label": "Narayen'in Adobe'deki süresi",
+   "value": 18,
+   "unit": "yıl",
+   "context": "Adobe'yi yönetme süresi."
+  },
+  {
+   "label": "Banga'nın Mastercard'daki süresi",
+   "value": 12,
+   "unit": "yıl",
+   "context": "Dünya Bankası'na geçmeden önce."
+  },
+  {
+   "label": "Hint kökenli CEO'ların şirketlerinin toplam değeri",
+   "value": 8,
+   "unit": "trilyon $ (üzeri)",
+   "context": "Yönetilen şirketlerin toplam piyasa değeri."
+  },
+  {
+   "label": "Hindistan medyan yaşı",
+   "value": 28,
+   "unit": "yaş",
+   "context": "Genç nüfus vurgusu."
+  },
+  {
+   "label": "Avrupa medyan yaşı",
+   "value": 44,
+   "unit": "yaş",
+   "context": "Karşılaştırma."
+  },
+  {
+   "label": "Japonya medyan yaşı",
+   "value": 49,
+   "unit": "yaş",
+   "context": "Karşılaştırma."
+  },
+  {
+   "label": "2030'da çalışma çağındaki nüfus payı",
+   "value": 20,
+   "unit": "% (beşte bir)",
+   "context": "Dünyadaki çalışma çağındaki her beş kişiden birinin Hint olacağı iddiası."
+  },
+  {
+   "label": "Yıllık mühendis mezunu",
+   "value": 1.5,
+   "unit": "milyon kişi (üzeri)",
+   "context": "Dünyada en yüksek sayı olarak verildi."
+  },
+  {
+   "label": "IIT kabul oranı",
+   "value": 1,
+   "unit": "% (altı)",
+   "context": "Hindistan Teknoloji Enstitüleri'nin seçiciliği."
+  },
+  {
+   "label": "Açılan banka hesabı",
+   "value": 0.5,
+   "unit": "milyar hesap",
+   "context": "Biyometrik kimliğe bağlı açılan hesaplar; 'yarım milyar' olarak ifade edildi."
+  },
+  {
+   "label": "H-1B yeni başvuru ücreti",
+   "value": 100000,
+   "unit": "$",
+   "context": "Eylül 2025'te imzalandığı söylenen kararname."
+  },
+  {
+   "label": "H-1B sahiplerinde Hint payı",
+   "value": 71,
+   "unit": "%",
+   "context": "Vize sahiplerinin Hint olan kısmı."
+  },
+  {
+   "label": "Unicorn girişim sayısı",
+   "value": 100,
+   "unit": "şirket (üzeri)",
+   "context": "ABD ve Çin'den sonra üçüncü."
+  },
+  {
+   "label": "Özel uzay şirketi (2020)",
+   "value": 54,
+   "unit": "şirket",
+   "context": "Özel uzay sektörünün büyüklüğü."
+  },
+  {
+   "label": "Özel uzay şirketi (bugün)",
+   "value": 400,
+   "unit": "şirket (üzeri)",
+   "context": "Özel uzay sektörünün büyüklüğü."
+  },
+  {
+   "label": "Tüketici sınıfı (2030)",
+   "value": 500,
+   "unit": "milyon kişi",
+   "context": "2030'a kadar ulaşılacağı öngörülen tüketici sınıfı."
+  },
+  {
+   "label": "Batı portföylerinde Hindistan payı",
+   "value": 2,
+   "unit": "% (altı, çoğu zaman)",
+   "context": "Endeks fonu ve emeklilik fonlarındaki tipik ağırlık."
+  }
+ ],
+ "chart": {
+  "type": "bar",
+  "title": "Medyan yaş karşılaştırması",
+  "unit": "yaş",
+  "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı.",
+  "data": [
+   {
+    "label": "Hindistan",
+    "value": 28
+   },
+   {
+    "label": "Avrupa",
+    "value": 44
+   },
+   {
+    "label": "Japonya",
+    "value": 49
+   }
   ]
+ },
+ "diagram": {
+  "type": "flow",
+  "title": "Videoya göre Hindistan'ın yükselişini besleyen zincir",
+  "steps": [
+   {
+    "label": "Genç ve büyük nüfus",
+    "detail": "Düşük medyan yaş ve büyüyen çalışma çağındaki nüfus."
+   },
+   {
+    "label": "Mühendis yetiştirme hattı",
+    "detail": "Çok seçici okullar ve yılda milyonlarca mühendis mezunu."
+   },
+   {
+    "label": "Dijital kamu altyapısı",
+    "detail": "Biyometrik kimlik, banka hesapları ve UPI ile kayıtlı ekonomiye geçiş."
+   },
+   {
+    "label": "Ticaret anlaşmaları ve çeşitlendirme",
+    "detail": "Yeni STA'lar ve Çin'den kaçan üretim talebi."
+   },
+   {
+    "label": "Yeteneğin yurt içinde kalması",
+    "detail": "H-1B maliyeti artınca girişimler ve global şirketlerin Hindistan birimleri güçleniyor."
+   },
+   {
+    "label": "Yurt dışı satın almalar",
+    "detail": "Biriken sermaye ve yönetim deneyimi Batılı varlıkların satın alınmasına dönüşüyor."
+   }
+  ]
+ },
+ "business_ideas": [
+  {
+   "name": "Türk jenerik ilaç üreticileri için doğrulanmış Hint API tedarik masası",
+   "insight": "Videodaki, ABD jenerik ilaçlarının önemli kısmının Hint şirketlerince üretildiği ve Hindistan'ın ilaç hammaddesinde (API) Çin'e alternatif olduğu vurgusu.",
+   "problem": "Türk jenerik üreticileri etkin madde tedarikinde Çin'e yoğun bağımlı ve Hint üreticilerin GMP uygunluğunu, denetim geçmişini ve kalite tutarlılığını değerlendirmekte zorlanıyor.",
+   "solution": "Hint API üreticilerinin GMP sertifikaları, düzenleyici denetim geçmişi ve DMF dosyalarını tarayıp kısa listeleyen, numune ve teknik yazışmayı yöneten bir tedarik ve doğrulama hizmeti.",
+   "target": "Türkiye'deki jenerik ilaç ve takviye edici gıda üreticilerinin satın alma ve ruhsat departmanları",
+   "revenue_model": "Tedarikçi kısa liste raporu ücreti + sürekli sipariş için komisyon",
+   "first_step": "5 Türk jenerik üreticisinin satın alma ekibiyle görüşüp Çin'e bağımlı oldukları ilk 10 etkin maddeyi belirlemek ve her biri için 3 Hint üreticiyi ön değerlendirmek.",
+   "capital": "Orta",
+   "difficulty": 4,
+   "turkey_angle": "Türkiye'de güçlü bir jenerik ilaç sektörü var; ancak TİTCK ruhsat değişikliği süreçleri tedarikçi değişimini yavaşlatır.",
+   "risks": "Ruhsat değişikliği maliyeti ve süresi; kalite sorunu halinde ağır sorumluluk; Hint üreticilerin doğrudan satış yapmayı tercih etmesi.",
+   "originality": 3,
+   "problem_solving": 4,
+   "score_note": "Spesifik B2B hizmet; teknik uzmanlık ister.",
+   "similar": []
+  },
+  {
+   "name": "Hint stratejik alıcılar için Türk orta ölçekli şirket eşleştirmesi",
+   "insight": "Hint şirketlerinin Avrupa'daki satış süreçlerinde ilk aranan alıcılar haline geldiği ve satın alma hacminin yükseldiği gözlemi.",
+   "problem": "Satılmak veya ortak bulmak isteyen Türk orta ölçekli sanayi şirketleri, AB pazarına erişim arayan Hint stratejik yatırımcılara ulaşmayı bilmiyor.",
+   "solution": "Otomotiv yan sanayi, tekstil, ilaç ve gıda gibi alanlarda Hint grupların satın alma geçmişini analiz edip uygun Türk hedef şirketleri anonim profil olarak sunan, ön görüşmeleri organize eden butik bir eşleştirme platformu.",
+   "target": "Halef sorunu yaşayan aile şirketleri; Avrupa'ya üretim üssü arayan Hint gruplar",
+   "revenue_model": "Sözleşmeli ön hizmet ücreti + işlem tamamlandığında başarı ücreti",
+   "first_step": "Son 5 yıldaki Hint kaynaklı Avrupa satın almalarını sektör ve büyüklüğe göre listeleyip benzer profildeki 10 Türk şirketiyle gizlilik sözleşmesi altında görüşmek.",
+   "capital": "Düşük",
+   "difficulty": 4,
+   "turkey_angle": "Türkiye'nin AB Gümrük Birliği üyeliği, AB pazarına erişmek isteyen Hint gruplar için Türkiye'yi cazip bir üretim üssü yapabilir.",
+   "risks": "Kurumsal finansman faaliyetleri için yetkili kuruluş ve SPK düzenlemelerine dikkat edilmeli; uzun işlem süreleri; değerleme beklenti farkları.",
+   "originality": 3,
+   "problem_solving": 3,
+   "score_note": "M&A butikleri var; Hint odağı fark.",
+   "similar": []
+  },
+  {
+   "name": "Hindistan pazarına girecek Türk markaları için pazar yeri giriş paketi",
+   "insight": "Videonun 2030'a kadar 500 milyonluk tüketici sınıfı ve UPI ile kayıtlı ekonomiye geçen yüz milyonlarca kişi tespiti.",
+   "problem": "Türk gıda, ev tekstili ve kozmetik markaları Hindistan'ın büyüyen tüketici pazarını görüyor ama ithalat kuralları, etiketleme, yüksek gümrük vergileri ve yerel pazar yerleri konusunda bilgisiz.",
+   "solution": "Belirli bir kategori için gümrük ve etiketleme uyumunu, yerel ithalatçı ortağı, Hint pazar yerlerinde mağaza açılışını ve UPI tabanlı ödeme akışını birlikte kuran, ilk satış verisiyle pazar testi yapan paket hizmet.",
+   "target": "İhracat deneyimi olan, Hindistan'ı test etmek isteyen Türk tüketici markaları",
+   "revenue_model": "Sabit fiyatlı pazar testi paketi + satış üzerinden pay",
+   "first_step": "Tek bir kategori (ör. lokum ve kuru yemiş veya havlu) için Hindistan'daki gümrük oranlarını ve pazar yerindeki rakip fiyatlarını çıkarıp 5 Türk markasına maliyet hesabını sunmak.",
+   "capital": "Orta",
+   "difficulty": 4,
+   "turkey_angle": "Türkiye ile Hindistan arasında serbest ticaret anlaşması yok; bu yüzden yüksek gümrük vergileri fiyat rekabetini zorlaştırır, yüksek marjlı niş ürünlerle başlanmalı.",
+   "risks": "Yüksek ithalat vergileri ve FSSAI gibi etiketleme/ruhsat gereklilikleri; ikili siyasi ilişkilerdeki dalgalanmalar; uzun tahsilat süreleri.",
+   "originality": 2,
+   "problem_solving": 3,
+   "score_note": "Pazar giriş ajansı.",
+   "similar": []
+  }
+ ],
+ "skeptic_notes": [
+  "'Hintliler Londra'da İngilizlerden bile büyük mülk sahibi grubu' iddiası büyük olasılıkla yalnızca yabancı alıcılar veya belirli bir veri setiyle ilgili; bu haliyle abartılı görünüyor.",
+  "'UPI her gün Visa'nın dünya çapındaki işlemlerinden fazlasını işliyor' iddiası tanıma göre (işlem sayısı/değer) değişir; doğrulanmalı.",
+  "ABD jenerik ilaçlarının yarısının 'bir Hint şirketi' tarafından üretildiği ifadesi muhtemelen 'Hint şirketleri' olmalı.",
+  "Altyazıda 'Novalis' geçiyor; doğrusu Novelis (Hindalco'ya ait alüminyum üreticisi).",
+  "H-1B için 100.000 dolarlık ücret ve Hindistan-AB serbest ticaret anlaşması gibi güncel politika iddiaları kaynaksız ve doğrulanmalı.",
+  "8 trilyon dolarlık şirket değerinin Japonya ve İngiltere GSYH toplamından büyük olduğu karşılaştırması piyasa değeri ile GSYH'yi karıştırıyor.",
+  "Videoda Statrys'in Hint mühendisleri ve Hindistan'dan Hong Kong/Singapur'da şirket kuran girişimciler anılıyor; dolaylı Statrys tanıtımı içeriyor.",
+  "Başlık ('Hindistan sizi çoktan satın aldı') sansasyonel; içerik bir eğilimi anlatıyor."
+ ]
 }

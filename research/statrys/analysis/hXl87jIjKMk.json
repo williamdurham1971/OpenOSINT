@@ -1,108 +1,253 @@
 {
-  "id": "hXl87jIjKMk",
-  "title_tr": "Çin'in drone stratejisi: Teslimat görünümlü bir sanayi ve güç hamlesi",
-  "category": "Teknoloji & YZ",
-  "region": ["Çin", "ABD", "Avrupa", "BAE"],
-  "summary_tr": "Video, Çin'in drone alanındaki üstünlüğünü daha iyi mühendislikten değil, yerden 1 km'ye kadarki hava sahasını 'alçak irtifa ekonomisi' adıyla beş yıllık planda öncelikli sektör ilan etmesine bağlıyor. Meituan'a verilen ülke çapındaki tek lisans, şirketi sabit takvimle yüzlerce drone ve binlerce sensör alan garantili bir müşteriye dönüştürüyor; bu talep de tedarik zincirini sanayileştirip fiyatları düşürüyor. Teslimat sayısında ABD'li Wing ve Zipline önde olsa da, motor mıknatısları, piller ve DJI üzerinden donanımı Çin kontrol ediyor. Asıl ihraç ürünü ise Dubai örneğinde olduğu gibi koridorlar, çatı dolapları, sevk yazılımı ve düzenleyici şablondan oluşan hazır paket.",
-  "key_points": [
-    "Çin, alçak irtifa hava sahasını beş yıllık planda bağımsız öncelikli sektör yaptı ve buna bütçe, arazi ve izin bağladı.",
-    "Meituan ülke çapında tek bir lojistik drone lisansıyla şehir şehir izin almadan rota açabiliyor; ABD'de ise operatörler tek tek muafiyetle uçuyor.",
-    "Teslimat sayısında ABD'li Wing ve Zipline Meituan'ın önünde, ancak drone'ların içindeki mıknatıs ve pillerin büyük kısmı Çin'den geliyor.",
-    "Çin, nadir toprak elementlerine ihracat lisansı getirerek bu bağımlılığı koz olarak kullanabildiğini gösterdi.",
-    "Garantili sipariş hacmi (ör. Hesai lidar sözleşmesi) bileşen maliyetini düşürüyor ve Çin drone'larını ABD muadillerinden belirgin ucuz kılıyor.",
-    "İhraç edilen asıl ürün altyapı ve düzenleme şablonu; Dubai ilk yurt dışı örnek."
-  ],
-  "numbers": [
-    {"label": "DJI'nin dünya drone pazarı payı", "value": 70, "unit": "%", "context": "Dünyada satılan drone'ların tek bir şirketten geldiği iddiası"},
-    {"label": "DJI'nin ABD tüketici drone pazarı payı", "value": 80, "unit": "%", "context": "ABD yasağı öncesi DJI'nin ABD tüketici pazarındaki payı"},
-    {"label": "Meituan'dan alışveriş yapan kişi", "value": 800, "unit": "milyon kişi", "context": "Meituan'ın kullanıcı tabanının büyüklüğü (yaklaşık)"},
-    {"label": "Meituan drone teslimatları (2024 sonu)", "value": 450000, "unit": "sipariş", "context": "2024 sonuna kadar drone ile taşınan sipariş"},
-    {"label": "Meituan drone teslimatları (bugün)", "value": 1000000, "unit": "sipariş", "context": "'Neredeyse 1 milyon'; 70 rota ve 6 şehirde"},
-    {"label": "Meituan drone rotası", "value": 70, "unit": "rota", "context": "Aktif drone koridoru sayısı"},
-    {"label": "Meituan'ın zararı (2025)", "value": 3.5, "unit": "milyar $", "context": "Alibaba ve JD ile fiyat savaşının maliyeti"},
-    {"label": "Alçak irtifa ekonomisi hedefi (plan dönemi)", "value": 1, "unit": "trilyon yuan", "context": "Havacılık düzenleyicisinin mevcut plan dönemi için beklediği faaliyet hacmi (üstü)"},
-    {"label": "Alçak irtifa ekonomisi hedefi (2035)", "value": 3.5, "unit": "trilyon yuan", "context": "2035 için beklenen faaliyet hacmi"},
-    {"label": "Wing drone teslimatları", "value": 1000000, "unit": "teslimat", "context": "Mayıs ayında geçilen eşik; 200.000'i Teksas'ta"},
-    {"label": "Zipline ticari teslimatları", "value": 2000000, "unit": "teslimat", "context": "Ocak ayında geçilen eşik; dünyanın en büyük drone teslimat operatörü"},
-    {"label": "Manna teslimatları", "value": 250000, "unit": "teslimat", "context": "İrlandalı şirket, ulusal çerçeve olmadığı için ABD ve İngiltere'ye taşındı"},
-    {"label": "Çin'in nadir toprak mıknatısı üretim payı", "value": 90, "unit": "%", "context": "Drone motorlarındaki kalıcı mıknatıslar"},
-    {"label": "Çin mıknatıs sevkiyatındaki düşüş", "value": 75, "unit": "%", "context": "Nisan 2025 ihracat lisansları sonrası tek ayda"},
-    {"label": "Pentagon drone siparişi (şimdi)", "value": 30000, "unit": "adet", "context": "ABD tarihindeki en büyük drone siparişi"},
-    {"label": "Pentagon drone hedefi (2028)", "value": 300000, "unit": "adet", "context": "2028'e kadar alım planı"},
-    {"label": "Çin drone'larının fiyat avantajı", "value": 75, "unit": "%", "context": "ABD muadillerinden %50-75 daha ucuz (üst sınır)"}
-  ],
-  "chart": {
-    "type": "hbar",
-    "title": "Drone teslimat operatörleri: toplam teslimat",
-    "unit": "teslimat",
-    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. Tarihler farklı; Meituan için 'neredeyse 1 milyon' ifadesi yuvarlandı.",
-    "data": [
-      {"label": "Zipline (ABD)", "value": 2000000},
-      {"label": "Wing (ABD)", "value": 1000000},
-      {"label": "Meituan (Çin, ~1 milyona yakın)", "value": 1000000},
-      {"label": "Manna (İrlanda)", "value": 250000}
-    ]
+ "id": "hXl87jIjKMk",
+ "title_tr": "Çin'in drone stratejisi: Teslimat görünümlü bir sanayi ve güç hamlesi",
+ "category": "Teknoloji & YZ",
+ "region": [
+  "Çin",
+  "ABD",
+  "Avrupa",
+  "BAE"
+ ],
+ "summary_tr": "Video, Çin'in drone alanındaki üstünlüğünü daha iyi mühendislikten değil, yerden 1 km'ye kadarki hava sahasını 'alçak irtifa ekonomisi' adıyla beş yıllık planda öncelikli sektör ilan etmesine bağlıyor. Meituan'a verilen ülke çapındaki tek lisans, şirketi sabit takvimle yüzlerce drone ve binlerce sensör alan garantili bir müşteriye dönüştürüyor; bu talep de tedarik zincirini sanayileştirip fiyatları düşürüyor. Teslimat sayısında ABD'li Wing ve Zipline önde olsa da, motor mıknatısları, piller ve DJI üzerinden donanımı Çin kontrol ediyor. Asıl ihraç ürünü ise Dubai örneğinde olduğu gibi koridorlar, çatı dolapları, sevk yazılımı ve düzenleyici şablondan oluşan hazır paket.",
+ "key_points": [
+  "Çin, alçak irtifa hava sahasını beş yıllık planda bağımsız öncelikli sektör yaptı ve buna bütçe, arazi ve izin bağladı.",
+  "Meituan ülke çapında tek bir lojistik drone lisansıyla şehir şehir izin almadan rota açabiliyor; ABD'de ise operatörler tek tek muafiyetle uçuyor.",
+  "Teslimat sayısında ABD'li Wing ve Zipline Meituan'ın önünde, ancak drone'ların içindeki mıknatıs ve pillerin büyük kısmı Çin'den geliyor.",
+  "Çin, nadir toprak elementlerine ihracat lisansı getirerek bu bağımlılığı koz olarak kullanabildiğini gösterdi.",
+  "Garantili sipariş hacmi (ör. Hesai lidar sözleşmesi) bileşen maliyetini düşürüyor ve Çin drone'larını ABD muadillerinden belirgin ucuz kılıyor.",
+  "İhraç edilen asıl ürün altyapı ve düzenleme şablonu; Dubai ilk yurt dışı örnek."
+ ],
+ "numbers": [
+  {
+   "label": "DJI'nin dünya drone pazarı payı",
+   "value": 70,
+   "unit": "%",
+   "context": "Dünyada satılan drone'ların tek bir şirketten geldiği iddiası"
   },
-  "diagram": {
-    "type": "flow",
-    "title": "Çin'in drone sektörünü ele geçirme zinciri",
-    "steps": [
-      {"label": "Beş yıllık plana alma", "detail": "Alçak irtifa ekonomisi öncelikli sektör ilan edilir."},
-      {"label": "Ulusal tek lisans", "detail": "Meituan'a tüm şehirleri kapsayan lojistik uçuş izni verilir."},
-      {"label": "Garantili sipariş hacmi", "detail": "Lisanslı şirket sabit takvimle drone, sensör ve dolap alır."},
-      {"label": "Tedarik zinciri sanayileşir", "detail": "Hacim lidar, motor ve pil maliyetlerini düşürür."},
-      {"label": "Fiyat üstünlüğü", "detail": "Çin drone'ları ABD muadillerinden çok daha ucuza satılır."},
-      {"label": "Paket ihracatı", "detail": "Koridor, dolap, yazılım ve düzenleme şablonu Dubai gibi ülkelere satılır."}
-    ]
+  {
+   "label": "DJI'nin ABD tüketici drone pazarı payı",
+   "value": 80,
+   "unit": "%",
+   "context": "ABD yasağı öncesi DJI'nin ABD tüketici pazarındaki payı"
   },
-  "business_ideas": [
-    {
-      "name": "Drone teslimat noktası (vertiport + dolap) kurulum ve bakım hizmeti",
-      "insight": "Video, pazar geç geldiğinde hızlı geldiğini ve dolap kurma, motor bakımı gibi yerel işleri birilerinin yapması gerekeceğini söylüyor.",
-      "problem": "Drone teslimatı başladığında operatörlerin çatı pedleri, teslim dolapları ve sahada bakım için yerel ortağı olmayacak.",
-      "solution": "AVM, site ve hastane çatılarına drone iniş pedi ve akıllı teslim dolabı kuran, periyodik motor/batarya bakımı yapan bir saha hizmet şirketi.",
-      "target": "Drone teslimat operatörleri, büyük siteler, AVM'ler, hastane zincirleri",
-      "revenue_model": "Kurulum ücreti + yıllık bakım sözleşmesi + dolap başına aylık kira",
-      "first_step": "SHGM'nin İHA mevzuatını inceleyip 3 site yönetimi ve 1 hastane ile çatı kullanım ilgisini ölçen görüşme yapmak; Çinli dolap üreticilerinden fiyat almak.",
-      "capital": "Orta",
-      "difficulty": 3,
-      "turkey_angle": "Türkiye'de İHA ekosistemi güçlü ve hastane/ilaç lojistiği pilotları için uygun; ancak sivil teslimat düzenlemesi henüz sınırlı olduğundan önce ilaç/numune taşıma pilotlarına odaklanmak mantıklı.",
-      "risks": "Düzenleyici çerçevenin gecikmesi, büyük operatörlerin kendi altyapısını kurması, çatı güvenliği ve sigorta sorunları."
-    },
-    {
-      "name": "Nadir toprak mıknatısı ve drone bileşeni tedarik riski izleme platformu",
-      "insight": "Çin'in nadir toprak ihracat lisansları mıknatıs sevkiyatını tek ayda sert düşürdü ve Çin'den bağımsız olmaya çalışan şirketleri bile vurdu.",
-      "problem": "Drone ve elektrik motoru üreticileri, Çin kaynaklı bileşenlerdeki ihracat kısıtlarını ve tedarik sürelerini geç fark ediyor.",
-      "solution": "Bileşen listesini (BOM) yükleyen üreticiye her parçanın menşe riskini, alternatif tedarikçileri ve teslim süresi uyarılarını gösteren SaaS.",
-      "target": "Türk ve Avrupalı İHA, savunma, e-mobilite ve motor üreticileri",
-      "revenue_model": "Aylık abonelik + kritik uyarılar için premium katman",
-      "first_step": "5 İHA/e-mobilite üreticisinin satın alma sorumlusuyla görüşüp en çok aksayan 10 bileşeni listelemek ve manuel bir risk raporu satmayı denemek.",
-      "capital": "Düşük",
-      "difficulty": 3,
-      "turkey_angle": "Türk savunma ve İHA sanayii hem Çin bileşenlerine hem de Batı uyum kurallarına maruz; yerli tedarik kayıt ihtiyacı yüksek.",
-      "risks": "Güncel ihracat kontrol verisine erişim zorluğu, savunma şirketlerinin veri paylaşmaya isteksizliği."
-    },
-    {
-      "name": "Drone operasyonları için sigorta ve uçuş kayıt aracılığı",
-      "insight": "Video, pazar açıldığında uçuşları sigortalamak ve yerel lisansı tutmak gibi işlerin erken hazırlanan oyunculara kalacağını belirtiyor.",
-      "problem": "Ticari drone operatörleri için standart sigorta ürünü ve risk verisi sınırlı; sigortacılar riski fiyatlayamıyor.",
-      "solution": "Uçuş kayıtlarını toplayıp risk skoru üreten ve sigortacılarla operatörleri buluşturan bir dijital aracılık (insurtech) katmanı.",
-      "target": "Tarım, harita, inşaat ve teslimat drone operatörleri",
-      "revenue_model": "Poliçe başına aracılık komisyonu + veri/analitik lisansı",
-      "first_step": "2 sigorta şirketinin İHA ürün sorumlusu ve 10 ticari drone operatörüyle görüşüp mevcut primler ve hasar nedenlerini toplamak.",
-      "capital": "Orta",
-      "difficulty": 4,
-      "turkey_angle": "Türkiye'de tarımsal ilaçlama ve harita drone'ları yaygınlaşıyor; sigorta aracılığı için SEDDK lisanslı bir ortakla çalışmak gerekir.",
-      "risks": "Sigortacılık lisans gereksinimleri, düşük hasar verisi, pazarın yavaş büyümesi."
-    }
-  ],
-  "skeptic_notes": [
-    "'Meituan 2024'te yaklaşık 5 dolar kazandı' ifadesi açık bir altyazı/konuşma hatası; muhtemelen 5 milyar dolar kastedildi, sayı listesine alınmadı.",
-    "Meituan'ın bugünkü teslimat sayısı yalnızca 'neredeyse bir milyon' olarak verildi; grafikte 1 milyona yuvarlandı. Video aynı zamanda Wing'in 1 milyonunun Meituan'dan fazla olduğunu söylüyor.",
-    "Operatör teslimat rakamları farklı tarihlere ait ve kümülatif; doğrudan karşılaştırma yanıltıcı olabilir.",
-    "DJI'nin %70 dünya payı ve Çin'in %90 mıknatıs üretim payı yaygın ama yuvarlanmış iddialar; tek bir kaynak verilmiyor.",
-    "Adı verilmeyen ABD'li askeri drone şirketinin hisselerinin %23 düşüşü doğrulanamıyor.",
-    "'10 yıl içinde Çin şehrinizin üzerinde uçacak' iddiası spekülatif bir öngörü.",
-    "Video sonunda Statrys'in şirket kurma ve iş hesabı hizmetleri tanıtılıyor (reklam içeriği)."
+  {
+   "label": "Meituan'dan alışveriş yapan kişi",
+   "value": 800,
+   "unit": "milyon kişi",
+   "context": "Meituan'ın kullanıcı tabanının büyüklüğü (yaklaşık)"
+  },
+  {
+   "label": "Meituan drone teslimatları (2024 sonu)",
+   "value": 450000,
+   "unit": "sipariş",
+   "context": "2024 sonuna kadar drone ile taşınan sipariş"
+  },
+  {
+   "label": "Meituan drone teslimatları (bugün)",
+   "value": 1000000,
+   "unit": "sipariş",
+   "context": "'Neredeyse 1 milyon'; 70 rota ve 6 şehirde"
+  },
+  {
+   "label": "Meituan drone rotası",
+   "value": 70,
+   "unit": "rota",
+   "context": "Aktif drone koridoru sayısı"
+  },
+  {
+   "label": "Meituan'ın zararı (2025)",
+   "value": 3.5,
+   "unit": "milyar $",
+   "context": "Alibaba ve JD ile fiyat savaşının maliyeti"
+  },
+  {
+   "label": "Alçak irtifa ekonomisi hedefi (plan dönemi)",
+   "value": 1,
+   "unit": "trilyon yuan",
+   "context": "Havacılık düzenleyicisinin mevcut plan dönemi için beklediği faaliyet hacmi (üstü)"
+  },
+  {
+   "label": "Alçak irtifa ekonomisi hedefi (2035)",
+   "value": 3.5,
+   "unit": "trilyon yuan",
+   "context": "2035 için beklenen faaliyet hacmi"
+  },
+  {
+   "label": "Wing drone teslimatları",
+   "value": 1000000,
+   "unit": "teslimat",
+   "context": "Mayıs ayında geçilen eşik; 200.000'i Teksas'ta"
+  },
+  {
+   "label": "Zipline ticari teslimatları",
+   "value": 2000000,
+   "unit": "teslimat",
+   "context": "Ocak ayında geçilen eşik; dünyanın en büyük drone teslimat operatörü"
+  },
+  {
+   "label": "Manna teslimatları",
+   "value": 250000,
+   "unit": "teslimat",
+   "context": "İrlandalı şirket, ulusal çerçeve olmadığı için ABD ve İngiltere'ye taşındı"
+  },
+  {
+   "label": "Çin'in nadir toprak mıknatısı üretim payı",
+   "value": 90,
+   "unit": "%",
+   "context": "Drone motorlarındaki kalıcı mıknatıslar"
+  },
+  {
+   "label": "Çin mıknatıs sevkiyatındaki düşüş",
+   "value": 75,
+   "unit": "%",
+   "context": "Nisan 2025 ihracat lisansları sonrası tek ayda"
+  },
+  {
+   "label": "Pentagon drone siparişi (şimdi)",
+   "value": 30000,
+   "unit": "adet",
+   "context": "ABD tarihindeki en büyük drone siparişi"
+  },
+  {
+   "label": "Pentagon drone hedefi (2028)",
+   "value": 300000,
+   "unit": "adet",
+   "context": "2028'e kadar alım planı"
+  },
+  {
+   "label": "Çin drone'larının fiyat avantajı",
+   "value": 75,
+   "unit": "%",
+   "context": "ABD muadillerinden %50-75 daha ucuz (üst sınır)"
+  }
+ ],
+ "chart": {
+  "type": "hbar",
+  "title": "Drone teslimat operatörleri: toplam teslimat",
+  "unit": "teslimat",
+  "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. Tarihler farklı; Meituan için 'neredeyse 1 milyon' ifadesi yuvarlandı.",
+  "data": [
+   {
+    "label": "Zipline (ABD)",
+    "value": 2000000
+   },
+   {
+    "label": "Wing (ABD)",
+    "value": 1000000
+   },
+   {
+    "label": "Meituan (Çin, ~1 milyona yakın)",
+    "value": 1000000
+   },
+   {
+    "label": "Manna (İrlanda)",
+    "value": 250000
+   }
   ]
+ },
+ "diagram": {
+  "type": "flow",
+  "title": "Çin'in drone sektörünü ele geçirme zinciri",
+  "steps": [
+   {
+    "label": "Beş yıllık plana alma",
+    "detail": "Alçak irtifa ekonomisi öncelikli sektör ilan edilir."
+   },
+   {
+    "label": "Ulusal tek lisans",
+    "detail": "Meituan'a tüm şehirleri kapsayan lojistik uçuş izni verilir."
+   },
+   {
+    "label": "Garantili sipariş hacmi",
+    "detail": "Lisanslı şirket sabit takvimle drone, sensör ve dolap alır."
+   },
+   {
+    "label": "Tedarik zinciri sanayileşir",
+    "detail": "Hacim lidar, motor ve pil maliyetlerini düşürür."
+   },
+   {
+    "label": "Fiyat üstünlüğü",
+    "detail": "Çin drone'ları ABD muadillerinden çok daha ucuza satılır."
+   },
+   {
+    "label": "Paket ihracatı",
+    "detail": "Koridor, dolap, yazılım ve düzenleme şablonu Dubai gibi ülkelere satılır."
+   }
+  ]
+ },
+ "business_ideas": [
+  {
+   "name": "Drone teslimat noktası (vertiport + dolap) kurulum ve bakım hizmeti",
+   "insight": "Video, pazar geç geldiğinde hızlı geldiğini ve dolap kurma, motor bakımı gibi yerel işleri birilerinin yapması gerekeceğini söylüyor.",
+   "problem": "Drone teslimatı başladığında operatörlerin çatı pedleri, teslim dolapları ve sahada bakım için yerel ortağı olmayacak.",
+   "solution": "AVM, site ve hastane çatılarına drone iniş pedi ve akıllı teslim dolabı kuran, periyodik motor/batarya bakımı yapan bir saha hizmet şirketi.",
+   "target": "Drone teslimat operatörleri, büyük siteler, AVM'ler, hastane zincirleri",
+   "revenue_model": "Kurulum ücreti + yıllık bakım sözleşmesi + dolap başına aylık kira",
+   "first_step": "SHGM'nin İHA mevzuatını inceleyip 3 site yönetimi ve 1 hastane ile çatı kullanım ilgisini ölçen görüşme yapmak; Çinli dolap üreticilerinden fiyat almak.",
+   "capital": "Orta",
+   "difficulty": 3,
+   "turkey_angle": "Türkiye'de İHA ekosistemi güçlü ve hastane/ilaç lojistiği pilotları için uygun; ancak sivil teslimat düzenlemesi henüz sınırlı olduğundan önce ilaç/numune taşıma pilotlarına odaklanmak mantıklı.",
+   "risks": "Düzenleyici çerçevenin gecikmesi, büyük operatörlerin kendi altyapısını kurması, çatı güvenliği ve sigorta sorunları.",
+   "originality": 3,
+   "problem_solving": 2,
+   "score_note": "Pazar Türkiye'de henüz yok; erken.",
+   "similar": []
+  },
+  {
+   "name": "Nadir toprak mıknatısı ve drone bileşeni tedarik riski izleme platformu",
+   "insight": "Çin'in nadir toprak ihracat lisansları mıknatıs sevkiyatını tek ayda sert düşürdü ve Çin'den bağımsız olmaya çalışan şirketleri bile vurdu.",
+   "problem": "Drone ve elektrik motoru üreticileri, Çin kaynaklı bileşenlerdeki ihracat kısıtlarını ve tedarik sürelerini geç fark ediyor.",
+   "solution": "Bileşen listesini (BOM) yükleyen üreticiye her parçanın menşe riskini, alternatif tedarikçileri ve teslim süresi uyarılarını gösteren SaaS.",
+   "target": "Türk ve Avrupalı İHA, savunma, e-mobilite ve motor üreticileri",
+   "revenue_model": "Aylık abonelik + kritik uyarılar için premium katman",
+   "first_step": "5 İHA/e-mobilite üreticisinin satın alma sorumlusuyla görüşüp en çok aksayan 10 bileşeni listelemek ve manuel bir risk raporu satmayı denemek.",
+   "capital": "Düşük",
+   "difficulty": 3,
+   "turkey_angle": "Türk savunma ve İHA sanayii hem Çin bileşenlerine hem de Batı uyum kurallarına maruz; yerli tedarik kayıt ihtiyacı yüksek.",
+   "risks": "Güncel ihracat kontrol verisine erişim zorluğu, savunma şirketlerinin veri paylaşmaya isteksizliği.",
+   "originality": 3,
+   "problem_solving": 4,
+   "score_note": "BOM tabanlı risk panoları gelişiyor.",
+   "similar": [
+    {
+     "id": "IymRlJiSm6E",
+     "name": "Ürünlerde nadir toprak içeriği ve Çin lisans eşiği hesaplama aracı"
+    },
+    {
+     "id": "c8uF2LD728Q",
+     "name": "Nadir toprak ve kritik mineral tedarik riski izleme servisi"
+    },
+    {
+     "id": "pnnztfVJnms",
+     "name": "Elektronik bileşen tedarik riski izleme paneli"
+    }
+   ]
+  },
+  {
+   "name": "Drone operasyonları için sigorta ve uçuş kayıt aracılığı",
+   "insight": "Video, pazar açıldığında uçuşları sigortalamak ve yerel lisansı tutmak gibi işlerin erken hazırlanan oyunculara kalacağını belirtiyor.",
+   "problem": "Ticari drone operatörleri için standart sigorta ürünü ve risk verisi sınırlı; sigortacılar riski fiyatlayamıyor.",
+   "solution": "Uçuş kayıtlarını toplayıp risk skoru üreten ve sigortacılarla operatörleri buluşturan bir dijital aracılık (insurtech) katmanı.",
+   "target": "Tarım, harita, inşaat ve teslimat drone operatörleri",
+   "revenue_model": "Poliçe başına aracılık komisyonu + veri/analitik lisansı",
+   "first_step": "2 sigorta şirketinin İHA ürün sorumlusu ve 10 ticari drone operatörüyle görüşüp mevcut primler ve hasar nedenlerini toplamak.",
+   "capital": "Orta",
+   "difficulty": 4,
+   "turkey_angle": "Türkiye'de tarımsal ilaçlama ve harita drone'ları yaygınlaşıyor; sigorta aracılığı için SEDDK lisanslı bir ortakla çalışmak gerekir.",
+   "risks": "Sigortacılık lisans gereksinimleri, düşük hasar verisi, pazarın yavaş büyümesi.",
+   "originality": 3,
+   "problem_solving": 2,
+   "score_note": "Niş; operatör sayısı az.",
+   "similar": []
+  }
+ ],
+ "skeptic_notes": [
+  "'Meituan 2024'te yaklaşık 5 dolar kazandı' ifadesi açık bir altyazı/konuşma hatası; muhtemelen 5 milyar dolar kastedildi, sayı listesine alınmadı.",
+  "Meituan'ın bugünkü teslimat sayısı yalnızca 'neredeyse bir milyon' olarak verildi; grafikte 1 milyona yuvarlandı. Video aynı zamanda Wing'in 1 milyonunun Meituan'dan fazla olduğunu söylüyor.",
+  "Operatör teslimat rakamları farklı tarihlere ait ve kümülatif; doğrudan karşılaştırma yanıltıcı olabilir.",
+  "DJI'nin %70 dünya payı ve Çin'in %90 mıknatıs üretim payı yaygın ama yuvarlanmış iddialar; tek bir kaynak verilmiyor.",
+  "Adı verilmeyen ABD'li askeri drone şirketinin hisselerinin %23 düşüşü doğrulanamıyor.",
+  "'10 yıl içinde Çin şehrinizin üzerinde uçacak' iddiası spekülatif bir öngörü.",
+  "Video sonunda Statrys'in şirket kurma ve iş hesabı hizmetleri tanıtılıyor (reklam içeriği)."
+ ]
 }

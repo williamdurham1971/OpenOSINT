@@ -39,7 +39,11 @@ Her video için **`research/statrys/analysis/<videoId>.json`** dosyası yaz (UTF
     "capital": "Düşük | Orta | Yüksek",
     "difficulty": 1,
     "turkey_angle": "Türkiye'den yürütülebilirlik / Türkiye'ye uyarlama notu",
-    "risks": "Ana risk(ler)"
+    "risks": "Ana risk(ler)",
+    "originality": 3,
+    "problem_solving": 4,
+    "score_note": "Tek cümle: puanın gerekçesi; piyasada benzeri var mı, sorun ne kadar gerçek",
+    "similar": [{"id": "benzer fikrin bulunduğu videoId", "name": "benzer fikrin adı (analysis/ içindeki yazımıyla)"}]
   }],
   "skeptic_notes": ["Videodaki şüpheli, abartılı, tek kaynaklı veya doğrulanması gereken iddialar; altyazı kaynaklı olası sayı hataları"]
 }
@@ -51,5 +55,27 @@ Kurallar:
 3. **İş fikirleri**: video başına 2-3 fikir; spesifik, uygulanabilir, videonun içgörüsüne bağlı olsun. Jenerik ("danışmanlık yap", "e-ticaret sitesi aç") olmasın. Videoda anlatılan dolandırıcılık, yasa dışı veya etik dışı yöntemleri taklit eden fikir önerme; bu tür videolarda karşı tarafı çözen (tespit, uyum, koruma) fikirler öner. Vergi videolarında yasal sınırları ve uyum gerekliliklerini `risks` içinde belirt.
 4. **Telif:** Transkriptten uzun alıntı yapma; tümüyle kendi cümlelerinle özetle. Gerekirse en fazla birkaç kelimelik alıntı.
 5. Statrys'in kendi hizmetlerini tanıtan videolarda bunu `skeptic_notes`'ta belirt (reklam içeriği).
+
+## Puanlama cetveli (her fikir için zorunlu)
+
+Puanı fikri yazdıktan sonra, eleştirel bir yatırımcı gözüyle ver. Cömert olma: 5'ler istisnadır, çoğu fikir 2-3 alır.
+
+**`originality` — özgünlük (1-5)**
+- 5: Piyasada bilinen bir karşılığı yok; videodaki içgörüden çıkan, belirli bir mekanizma + müşteri birleşimi.
+- 4: Bilinen bir kategorinin alışılmadık bir nişe veya mekanizmaya uyarlanması; Türkiye'de örneği yok.
+- 3: Var olan bir ürün kategorisinin yeni bir pazara/dile taşınması; farklılaşma yalnızca açı düzeyinde.
+- 2: Yaygın bir hizmet türü (danışmanlık, eşleştirme, bülten, ithalat aracılığı, karşılaştırma sitesi) küçük bir dokunuşla.
+- 1: Jenerik; zaten çok sayıda sağlayıcı var ("X için danışmanlık", "Y bülteni", "Z'nin Türkçesi").
+
+**`problem_solving` — sorun çözme derecesi (1-5)**
+- 5: Ölçülebilir ve sık yaşanan bir kaybı/riski doğrudan ortadan kaldırıyor; alıcı belli ve bütçesi var.
+- 4: Gerçek ve sık bir sorun; çözüm somut fayda sağlıyor ama kısmi (karar desteği, maliyet azaltma) ya da alıcı dar.
+- 3: Sorun gerçek ama çözüm bilgi/farkındalık düzeyinde veya dolaylı; etkisi ölçülemez.
+- 2: Sorun varsayımsal ya da "iyi olurdu" düzeyinde; ödeyen belirsiz.
+- 1: Sorun yok denecek kadar zayıf ya da çözüm sorunla bağlantısız.
+
+**Çapa örnekler (mevcut dosyalardan):** "Banka profili kayma alarmı" 5/4 · "Kamu altyapı projeleri için uydu görüntüsüyle ilerleme doğrulama" 5/4 · "KOBİ'ler için ödeme talimatı doğrulama (IBAN-unvan eşleştirme) aracı" 3/5 · "Türkçe KOBİ müşteri destek ajanı kurulum paketi" 1/4 · "Yen bazlı Japonya seyahat ve alışveriş paketleri" 1/1.
+
+**Benzerlik kuralı:** Yeni fikri yazmadan önce `analysis/*.json` içindeki mevcut fikir adlarına bak (`grep -h '"name"' analysis/*.json`). Aynı sorunu aynı mekanizmayla çözen fikir varsa `similar` alanına yaz ve özgünlüğü en fazla 3 ver; mümkünse aynı fikri tekrar üretmek yerine videonun farklı bir içgörüsünden yeni bir fikir çıkar.
 
 Bittiğinde kısa bir rapor dön: işlenen video ID'leri, `chart: null` olanlar ve dikkat çeken sorunlar. JSON içeriğini rapora tekrar yazma.

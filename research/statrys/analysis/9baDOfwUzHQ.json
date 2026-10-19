@@ -1,124 +1,339 @@
 {
-  "id": "9baDOfwUzHQ",
-  "title_tr": "ABD'li girişimlerin önemli bir kısmı açık kaynaklı Çin yapay zekâ modellerine geçiyor",
-  "category": "Teknoloji & YZ",
-  "region": ["Çin", "ABD", "Hong Kong", "Avrupa"],
-  "summary_tr": "Video, Qwen, DeepSeek, Kimi gibi açık kaynaklı Çin modellerinin Batılı rakiplere yakın performansı çok daha düşük maliyetle sunduğunu ve bu yüzden ABD'li girişimlerin bunları sessizce benimsediğini savunuyor. Çip yasaklarının Çinli laboratuvarları yazılım verimliliğine (uzman-karışımı mimari, bellek sıkıştırma) yönelttiği anlatılıyor. Sermaye tarafında Hong Kong'daki Zhipu ve MiniMax halka arzlarına yoğun ilgi ve uzun bir halka arz hattı örnek veriliyor. Sonuçta işletmelere maliyetleri gözden geçirmeleri, modelleri kendi sunucularında barındırmayı düşünmeleri ve sansür, düzenleme gibi riskleri yönetmeleri öneriliyor.",
-  "key_points": [
-    "Andreessen Horowitz verisine göre açık kaynak YZ ile ürün geliştiren ABD girişimlerinin yüzde 80'i Çin modelleri kullanıyor.",
-    "Airbnb, Pinterest ve Cursor gibi şirketlerin Çin modellerine dayandığı örnek olarak veriliyor.",
-    "Stanford'a göre en iyi ABD ve Çin modelleri arasındaki performans farkı yüzde 2,7'ye indi; fiyat farkı ise çok daha büyük.",
-    "DeepSeek, çip kısıtları nedeniyle verimli mimariyle düşük maliyetli eğitim yaptı.",
-    "Hong Kong borsası Çin YZ halka arzlarıyla canlandı; Zhipu ve MiniMax ilk haftalarda çok yükseldi.",
-    "Çin modellerinde siyasi sansür ve düzenleyici belirsizlik gibi gerçek riskler var; şirketler karma kullanım öneriliyor."
-  ],
-  "numbers": [
-    {"label": "Qwen indirme sayısı", "value": 700, "unit": "milyon", "context": "Qwen'in toplam indirme sayısı (700 milyonun üzerinde)"},
-    {"label": "Maliyet farkı", "value": 40, "unit": "kat", "context": "Çin modellerinin büyük modellere göre ne kadar ucuz olduğu iddiası"},
-    {"label": "Çin modeli kullanan ABD girişimleri", "value": 80, "unit": "%", "context": "Açık kaynak YZ ile çalışan ABD girişimleri arasında (a16z verisi)"},
-    {"label": "Pinterest doğruluk artışı", "value": 30, "unit": "%", "context": "Çin açık modelleriyle öneri motorunun daha doğru olduğu oran"},
-    {"label": "Pinterest maliyet düşüşü", "value": 90, "unit": "%", "context": "ABD alternatiflerine göre maliyet avantajı"},
-    {"label": "Mira Murati tohum yatırımı", "value": 2, "unit": "milyar $", "context": "Tarihin en büyük tohum turu olarak anılıyor"},
-    {"label": "ABD-Çin model performans farkı", "value": 2.7, "unit": "%", "context": "Stanford ölçümüne göre en iyi modeller arası fark"},
-    {"label": "Batı API fiyatı alt uç", "value": 2.5, "unit": "$/milyon token", "context": "Claude veya ChatGPT API ücretlerinin alt sınırı"},
-    {"label": "Batı API fiyatı üst uç", "value": 25, "unit": "$/milyon token", "context": "Claude veya ChatGPT API ücretlerinin üst sınırı"},
-    {"label": "DeepSeek ekonomik model", "value": 0.28, "unit": "$/milyon token", "context": "DeepSeek'in bütçe modeli fiyatı"},
-    {"label": "Qwen 3.5 Plus", "value": 1.2, "unit": "$/milyon token", "context": "Yaklaşık fiyat"},
-    {"label": "Kimi K2 girdi", "value": 0.15, "unit": "$/milyon token", "context": "Girdi token fiyatı"},
-    {"label": "100 milyon token/ay DeepSeek maliyeti", "value": 35, "unit": "$/ay", "context": "Örnek iş yükünün aylık maliyeti"},
-    {"label": "DeepSeek uzman küme sayısı", "value": 256, "unit": "küme", "context": "Modelin uzman kümeleri; her sorguda 8'i çalışıyor"},
-    {"label": "Bellek sıkıştırma", "value": 90, "unit": "%", "context": "Modelin çalışma belleğinin sıkıştırılma oranı (yüzde 90'ın üzerinde)"},
-    {"label": "DeepSeek eğitim maliyeti", "value": 6, "unit": "milyon $", "context": "Bildirildiği iddia edilen eğitim maliyeti"},
-    {"label": "Zhipu talep fazlası", "value": 1160, "unit": "kat", "context": "Halka arzda aşırı talep oranı"},
-    {"label": "Zhipu hisse artışı", "value": 524, "unit": "%", "context": "43 gün içindeki yükseliş"},
-    {"label": "MiniMax kredili alım", "value": 148, "unit": "milyar HK$", "context": "Bireysel dilime erişim için kullanılan marj kredisi"},
-    {"label": "Zhipu ve MiniMax piyasa değeri", "value": 40, "unit": "milyar HK$ (her biri, üzeri)", "context": "Altı hafta içinde ulaşılan değer"},
-    {"label": "Hong Kong 2026 Q1 hisse ihracı", "value": 14, "unit": "milyar $", "context": "Son beş yılın en iyi ilk çeyreği"},
-    {"label": "Moonshot AI halka arz değerlemesi", "value": 18, "unit": "milyar $", "context": "Hazırlanan Hong Kong halka arzı"},
-    {"label": "Unitree halka arzı", "value": 610, "unit": "milyon $", "context": "Şanghay'da başvurulan halka arz"},
-    {"label": "Unitree kârı", "value": 87, "unit": "milyon $", "context": "Geçen yılki kâr"},
-    {"label": "Hong Kong halka arz hattı", "value": 400, "unit": "şirket", "context": "Listelenmeyi bekleyen şirket sayısı (400'ün üzerinde)"},
-    {"label": "ByteDance YZ altyapı harcaması", "value": 23, "unit": "milyar $", "context": "Bu yıl için plan"},
-    {"label": "Alibaba YZ taahhüdü", "value": 53, "unit": "milyar $", "context": "3 yıllık taahhüt"},
-    {"label": "Günlük yeni kısa dizi", "value": 417, "unit": "dizi/gün", "context": "Çin kısa dizi sektörünün üretim hızı"},
-    {"label": "Kısa dizi üretim maliyeti (önce)", "value": 150000, "unit": "$", "context": "YZ öncesi yaklaşık maliyet"},
-    {"label": "Kısa dizi üretim maliyeti (sonra)", "value": 15000, "unit": "$", "context": "YZ araçlarıyla yaklaşık maliyet"},
-    {"label": "Manus AI satın alma bedeli", "value": 2, "unit": "milyar $", "context": "Meta'nın Manus'u satın aldığı iddia edilen tutar"}
-  ],
-  "chart": {
-    "type": "hbar",
-    "title": "Milyon token başına API fiyatı",
-    "unit": "$/milyon token",
-    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. Girdi/çıktı fiyatları ve model sürümleri karışık verilmiştir.",
-    "data": [
-      {"label": "Batı modelleri (üst uç)", "value": 25},
-      {"label": "Batı modelleri (alt uç)", "value": 2.5},
-      {"label": "Qwen 3.5 Plus", "value": 1.2},
-      {"label": "DeepSeek ekonomik model", "value": 0.28},
-      {"label": "Kimi K2 (girdi)", "value": 0.15}
-    ]
+ "id": "9baDOfwUzHQ",
+ "title_tr": "ABD'li girişimlerin önemli bir kısmı açık kaynaklı Çin yapay zekâ modellerine geçiyor",
+ "category": "Teknoloji & YZ",
+ "region": [
+  "Çin",
+  "ABD",
+  "Hong Kong",
+  "Avrupa"
+ ],
+ "summary_tr": "Video, Qwen, DeepSeek, Kimi gibi açık kaynaklı Çin modellerinin Batılı rakiplere yakın performansı çok daha düşük maliyetle sunduğunu ve bu yüzden ABD'li girişimlerin bunları sessizce benimsediğini savunuyor. Çip yasaklarının Çinli laboratuvarları yazılım verimliliğine (uzman-karışımı mimari, bellek sıkıştırma) yönelttiği anlatılıyor. Sermaye tarafında Hong Kong'daki Zhipu ve MiniMax halka arzlarına yoğun ilgi ve uzun bir halka arz hattı örnek veriliyor. Sonuçta işletmelere maliyetleri gözden geçirmeleri, modelleri kendi sunucularında barındırmayı düşünmeleri ve sansür, düzenleme gibi riskleri yönetmeleri öneriliyor.",
+ "key_points": [
+  "Andreessen Horowitz verisine göre açık kaynak YZ ile ürün geliştiren ABD girişimlerinin yüzde 80'i Çin modelleri kullanıyor.",
+  "Airbnb, Pinterest ve Cursor gibi şirketlerin Çin modellerine dayandığı örnek olarak veriliyor.",
+  "Stanford'a göre en iyi ABD ve Çin modelleri arasındaki performans farkı yüzde 2,7'ye indi; fiyat farkı ise çok daha büyük.",
+  "DeepSeek, çip kısıtları nedeniyle verimli mimariyle düşük maliyetli eğitim yaptı.",
+  "Hong Kong borsası Çin YZ halka arzlarıyla canlandı; Zhipu ve MiniMax ilk haftalarda çok yükseldi.",
+  "Çin modellerinde siyasi sansür ve düzenleyici belirsizlik gibi gerçek riskler var; şirketler karma kullanım öneriliyor."
+ ],
+ "numbers": [
+  {
+   "label": "Qwen indirme sayısı",
+   "value": 700,
+   "unit": "milyon",
+   "context": "Qwen'in toplam indirme sayısı (700 milyonun üzerinde)"
   },
-  "diagram": {
-    "type": "flow",
-    "title": "Çin açık kaynak YZ'sinin yükseliş zinciri",
-    "steps": [
-      {"label": "ABD çip yasağı", "detail": "Çinli laboratuvarlar en iyi Nvidia çiplerine erişemedi."},
-      {"label": "Yazılımda verimlilik", "detail": "Uzman-karışımı mimari ve bellek sıkıştırma ile az donanımla eğitim yapıldı."},
-      {"label": "Ucuz ve açık modeller", "detail": "Benzer performanslı modeller çok düşük fiyatla veya ücretsiz sunuldu."},
-      {"label": "Girişimlerin sessiz geçişi", "detail": "Maliyet baskısındaki şirketler altyapılarını bu modellere taşıdı."},
-      {"label": "Sermaye akışı", "detail": "Hong Kong'da YZ halka arzlarına yoğun talep oluştu."},
-      {"label": "Uygulama katmanı fırsatı", "detail": "Ucuz modellerin üzerine sektörel ürün kuranlar değer yakalıyor."}
-    ]
+  {
+   "label": "Maliyet farkı",
+   "value": 40,
+   "unit": "kat",
+   "context": "Çin modellerinin büyük modellere göre ne kadar ucuz olduğu iddiası"
   },
-  "business_ideas": [
-    {
-      "name": "KVKK uyumlu, şirket içinde barındırılan açık model müşteri hizmetleri asistanı",
-      "insight": "Videoda açık modellerin kendi sunucunuzda çalıştırılabildiği ve verinin şirket dışına çıkmadığı vurgulanıyor.",
-      "problem": "Türk bankaları, sigortacılar ve hastaneler KVKK ve sektör düzenlemeleri nedeniyle müşteri verisini yurt dışı API'lere göndermekte çekiniyor.",
-      "solution": "Açık ağırlıklı bir modeli Türkçe müşteri hizmetleri verisiyle ince ayarlayıp kurum içi sunucuda kurulu paket olarak sunmak.",
-      "target": "Orta ölçekli sigorta, e-ticaret, özel hastane ve enerji dağıtım şirketleri",
-      "revenue_model": "Kurulum ücreti + yıllık lisans/bakım sözleşmesi",
-      "first_step": "Bir şirketin anonimleştirilmiş 1.000 destek kaydıyla açık model ile ticari API'yi doğruluk ve maliyet açısından karşılaştıran bir pilot rapor hazırlamak",
-      "capital": "Orta",
-      "difficulty": 3,
-      "turkey_angle": "Veri yerelleştirme hassasiyeti Türkiye'de güçlü bir satış argümanı; Türkçe ince ayar yetkinliği rekabet avantajı sağlar.",
-      "risks": "Çin menşeli model kullanımına yönelik kurumsal veya düzenleyici itirazlar; model lisans koşulları; GPU donanım maliyeti."
-    },
-    {
-      "name": "Şirketler için YZ API maliyet denetimi ve model yönlendirme aracı",
-      "insight": "Video, aynı iş yükünün farklı modellerde onlarca kat farklı maliyete çıkabildiğini ve akıllı şirketlerin karma kullandığını söylüyor.",
-      "problem": "YZ kullanan şirketler hangi işi hangi modele gönderdiklerini ve ne kadar ödediklerini çoğu zaman bilmiyor.",
-      "solution": "API trafiğini izleyip görev türüne göre ucuz açık modele veya üst düzey kapalı modele yönlendiren, tasarrufu raporlayan bir ara katman.",
-      "target": "Aylık YZ API faturası yüksek olan Türk SaaS ve e-ticaret şirketleri",
-      "revenue_model": "Sağlanan tasarruftan yüzde pay veya kullanım bazlı abonelik",
-      "first_step": "5 şirketin bir aylık API kayıtlarını analiz edip yönlendirme ile potansiyel tasarruf raporunu ücretsiz sunmak",
-      "capital": "Düşük",
-      "difficulty": 3,
-      "turkey_angle": "Döviz bazlı API faturaları Türk şirketleri için ağır bir kalem; tasarruf argümanı güçlü.",
-      "risks": "Büyük sağlayıcıların fiyat indirimiyle farkın kapanması; kalite ölçümünün tartışmalı olması; açık kaynak rakip araçlar."
-    },
-    {
-      "name": "YZ destekli dikey kısa dizi stüdyosu (Türk dizi formatı)",
-      "insight": "Videoda YZ araçlarının kısa dizi üretim maliyetini yaklaşık on kat, süresini aydan günlere düşürdüğü anlatılıyor.",
-      "problem": "Türk dizi yapımları uzun ve pahalı; mobil izleyiciye yönelik kısa formatlı içerik üretimi sınırlı.",
-      "solution": "Türk dizi dramaturjisini 1-2 dakikalık dikey bölümlere uyarlayan, senaryo, dublaj ve kurguda YZ kullanan düşük maliyetli stüdyo.",
-      "target": "Orta Doğu, Latin Amerika ve Türkiye'deki mobil izleyiciler; kısa dizi uygulamaları",
-      "revenue_model": "Bölüm başına ödeme/abonelik uygulamalarına lisans ve reklam geliri",
-      "first_step": "10 bölümlük bir pilot kısa diziyi düşük bütçeyle çekip iki platformda yayınlayarak izlenme ve tamamlama oranlarını ölçmek",
-      "capital": "Orta",
-      "difficulty": 3,
-      "turkey_angle": "Türk dizilerinin yurt dışındaki bilinirliği ve oyuncu/teknik ekip havuzu önemli bir avantaj.",
-      "risks": "Platform algoritmalarına bağımlılık; YZ ile üretilen içerikte telif ve oyuncu hakları sorunları; RTÜK düzenlemeleri."
-    }
-  ],
-  "skeptic_notes": [
-    "'ABD girişimlerinin yüzde 80'i' rakamı tüm girişimleri değil, yalnızca açık kaynak YZ ile ürün geliştirenleri kapsıyor; başlık bunu abartıyor.",
-    "Claude Opus ile maliyet karşılaştırması altyazıda bozuk; videoda söylenen rakam okunamıyor, bu yüzden kullanılmadı.",
-    "100 milyon token için 35 dolar hesabı, 0,28 $/milyon token fiyatla tam örtüşmüyor (yaklaşık 28 $); girdi/çıktı fiyat farkı olabilir.",
-    "'40 kat ucuz' ve 'aynı kalite' iddiaları kıyaslanan model ve ölçüte göre çok değişir; genelleme yapılmamalı.",
-    "Cursor'un Kimi'ye dayandığı, Airbnb ve Pinterest alıntıları ve Manus'un Meta tarafından 2 milyar dolara alındığı iddiaları bağımsız olarak doğrulanmalı.",
-    "Batılı sağlayıcıların gizlilik politikalarına dair iddialar (ör. 5 yıllık veri saklama) bağlamından koparılmış olabilir; güncel politika metinleri kontrol edilmeli.",
-    "Zhipu'nun 1.160 kat talep fazlası ve MiniMax'in Baidu'yu geçmesi gibi rakamlar altyazı ve tek kaynak kaynaklı hata içerebilir.",
-    "Statrys, Hong Kong ve Singapur'da şirket kurma hizmetini video içinde tanıtıyor; Hong Kong'a yönelik bölüm kısmen reklam içeriği niteliğinde."
+  {
+   "label": "Çin modeli kullanan ABD girişimleri",
+   "value": 80,
+   "unit": "%",
+   "context": "Açık kaynak YZ ile çalışan ABD girişimleri arasında (a16z verisi)"
+  },
+  {
+   "label": "Pinterest doğruluk artışı",
+   "value": 30,
+   "unit": "%",
+   "context": "Çin açık modelleriyle öneri motorunun daha doğru olduğu oran"
+  },
+  {
+   "label": "Pinterest maliyet düşüşü",
+   "value": 90,
+   "unit": "%",
+   "context": "ABD alternatiflerine göre maliyet avantajı"
+  },
+  {
+   "label": "Mira Murati tohum yatırımı",
+   "value": 2,
+   "unit": "milyar $",
+   "context": "Tarihin en büyük tohum turu olarak anılıyor"
+  },
+  {
+   "label": "ABD-Çin model performans farkı",
+   "value": 2.7,
+   "unit": "%",
+   "context": "Stanford ölçümüne göre en iyi modeller arası fark"
+  },
+  {
+   "label": "Batı API fiyatı alt uç",
+   "value": 2.5,
+   "unit": "$/milyon token",
+   "context": "Claude veya ChatGPT API ücretlerinin alt sınırı"
+  },
+  {
+   "label": "Batı API fiyatı üst uç",
+   "value": 25,
+   "unit": "$/milyon token",
+   "context": "Claude veya ChatGPT API ücretlerinin üst sınırı"
+  },
+  {
+   "label": "DeepSeek ekonomik model",
+   "value": 0.28,
+   "unit": "$/milyon token",
+   "context": "DeepSeek'in bütçe modeli fiyatı"
+  },
+  {
+   "label": "Qwen 3.5 Plus",
+   "value": 1.2,
+   "unit": "$/milyon token",
+   "context": "Yaklaşık fiyat"
+  },
+  {
+   "label": "Kimi K2 girdi",
+   "value": 0.15,
+   "unit": "$/milyon token",
+   "context": "Girdi token fiyatı"
+  },
+  {
+   "label": "100 milyon token/ay DeepSeek maliyeti",
+   "value": 35,
+   "unit": "$/ay",
+   "context": "Örnek iş yükünün aylık maliyeti"
+  },
+  {
+   "label": "DeepSeek uzman küme sayısı",
+   "value": 256,
+   "unit": "küme",
+   "context": "Modelin uzman kümeleri; her sorguda 8'i çalışıyor"
+  },
+  {
+   "label": "Bellek sıkıştırma",
+   "value": 90,
+   "unit": "%",
+   "context": "Modelin çalışma belleğinin sıkıştırılma oranı (yüzde 90'ın üzerinde)"
+  },
+  {
+   "label": "DeepSeek eğitim maliyeti",
+   "value": 6,
+   "unit": "milyon $",
+   "context": "Bildirildiği iddia edilen eğitim maliyeti"
+  },
+  {
+   "label": "Zhipu talep fazlası",
+   "value": 1160,
+   "unit": "kat",
+   "context": "Halka arzda aşırı talep oranı"
+  },
+  {
+   "label": "Zhipu hisse artışı",
+   "value": 524,
+   "unit": "%",
+   "context": "43 gün içindeki yükseliş"
+  },
+  {
+   "label": "MiniMax kredili alım",
+   "value": 148,
+   "unit": "milyar HK$",
+   "context": "Bireysel dilime erişim için kullanılan marj kredisi"
+  },
+  {
+   "label": "Zhipu ve MiniMax piyasa değeri",
+   "value": 40,
+   "unit": "milyar HK$ (her biri, üzeri)",
+   "context": "Altı hafta içinde ulaşılan değer"
+  },
+  {
+   "label": "Hong Kong 2026 Q1 hisse ihracı",
+   "value": 14,
+   "unit": "milyar $",
+   "context": "Son beş yılın en iyi ilk çeyreği"
+  },
+  {
+   "label": "Moonshot AI halka arz değerlemesi",
+   "value": 18,
+   "unit": "milyar $",
+   "context": "Hazırlanan Hong Kong halka arzı"
+  },
+  {
+   "label": "Unitree halka arzı",
+   "value": 610,
+   "unit": "milyon $",
+   "context": "Şanghay'da başvurulan halka arz"
+  },
+  {
+   "label": "Unitree kârı",
+   "value": 87,
+   "unit": "milyon $",
+   "context": "Geçen yılki kâr"
+  },
+  {
+   "label": "Hong Kong halka arz hattı",
+   "value": 400,
+   "unit": "şirket",
+   "context": "Listelenmeyi bekleyen şirket sayısı (400'ün üzerinde)"
+  },
+  {
+   "label": "ByteDance YZ altyapı harcaması",
+   "value": 23,
+   "unit": "milyar $",
+   "context": "Bu yıl için plan"
+  },
+  {
+   "label": "Alibaba YZ taahhüdü",
+   "value": 53,
+   "unit": "milyar $",
+   "context": "3 yıllık taahhüt"
+  },
+  {
+   "label": "Günlük yeni kısa dizi",
+   "value": 417,
+   "unit": "dizi/gün",
+   "context": "Çin kısa dizi sektörünün üretim hızı"
+  },
+  {
+   "label": "Kısa dizi üretim maliyeti (önce)",
+   "value": 150000,
+   "unit": "$",
+   "context": "YZ öncesi yaklaşık maliyet"
+  },
+  {
+   "label": "Kısa dizi üretim maliyeti (sonra)",
+   "value": 15000,
+   "unit": "$",
+   "context": "YZ araçlarıyla yaklaşık maliyet"
+  },
+  {
+   "label": "Manus AI satın alma bedeli",
+   "value": 2,
+   "unit": "milyar $",
+   "context": "Meta'nın Manus'u satın aldığı iddia edilen tutar"
+  }
+ ],
+ "chart": {
+  "type": "hbar",
+  "title": "Milyon token başına API fiyatı",
+  "unit": "$/milyon token",
+  "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. Girdi/çıktı fiyatları ve model sürümleri karışık verilmiştir.",
+  "data": [
+   {
+    "label": "Batı modelleri (üst uç)",
+    "value": 25
+   },
+   {
+    "label": "Batı modelleri (alt uç)",
+    "value": 2.5
+   },
+   {
+    "label": "Qwen 3.5 Plus",
+    "value": 1.2
+   },
+   {
+    "label": "DeepSeek ekonomik model",
+    "value": 0.28
+   },
+   {
+    "label": "Kimi K2 (girdi)",
+    "value": 0.15
+   }
   ]
+ },
+ "diagram": {
+  "type": "flow",
+  "title": "Çin açık kaynak YZ'sinin yükseliş zinciri",
+  "steps": [
+   {
+    "label": "ABD çip yasağı",
+    "detail": "Çinli laboratuvarlar en iyi Nvidia çiplerine erişemedi."
+   },
+   {
+    "label": "Yazılımda verimlilik",
+    "detail": "Uzman-karışımı mimari ve bellek sıkıştırma ile az donanımla eğitim yapıldı."
+   },
+   {
+    "label": "Ucuz ve açık modeller",
+    "detail": "Benzer performanslı modeller çok düşük fiyatla veya ücretsiz sunuldu."
+   },
+   {
+    "label": "Girişimlerin sessiz geçişi",
+    "detail": "Maliyet baskısındaki şirketler altyapılarını bu modellere taşıdı."
+   },
+   {
+    "label": "Sermaye akışı",
+    "detail": "Hong Kong'da YZ halka arzlarına yoğun talep oluştu."
+   },
+   {
+    "label": "Uygulama katmanı fırsatı",
+    "detail": "Ucuz modellerin üzerine sektörel ürün kuranlar değer yakalıyor."
+   }
+  ]
+ },
+ "business_ideas": [
+  {
+   "name": "KVKK uyumlu, şirket içinde barındırılan açık model müşteri hizmetleri asistanı",
+   "insight": "Videoda açık modellerin kendi sunucunuzda çalıştırılabildiği ve verinin şirket dışına çıkmadığı vurgulanıyor.",
+   "problem": "Türk bankaları, sigortacılar ve hastaneler KVKK ve sektör düzenlemeleri nedeniyle müşteri verisini yurt dışı API'lere göndermekte çekiniyor.",
+   "solution": "Açık ağırlıklı bir modeli Türkçe müşteri hizmetleri verisiyle ince ayarlayıp kurum içi sunucuda kurulu paket olarak sunmak.",
+   "target": "Orta ölçekli sigorta, e-ticaret, özel hastane ve enerji dağıtım şirketleri",
+   "revenue_model": "Kurulum ücreti + yıllık lisans/bakım sözleşmesi",
+   "first_step": "Bir şirketin anonimleştirilmiş 1.000 destek kaydıyla açık model ile ticari API'yi doğruluk ve maliyet açısından karşılaştıran bir pilot rapor hazırlamak",
+   "capital": "Orta",
+   "difficulty": 3,
+   "turkey_angle": "Veri yerelleştirme hassasiyeti Türkiye'de güçlü bir satış argümanı; Türkçe ince ayar yetkinliği rekabet avantajı sağlar.",
+   "risks": "Çin menşeli model kullanımına yönelik kurumsal veya düzenleyici itirazlar; model lisans koşulları; GPU donanım maliyeti.",
+   "originality": 1,
+   "problem_solving": 3,
+   "score_note": "Kalabalık.",
+   "similar": [
+    {
+     "id": "keH-LdEt53Y",
+     "name": "KOBİ'ler için açık kaynak LLM tabanlı müşteri hizmetleri kurulumu"
+    }
+   ]
+  },
+  {
+   "name": "Şirketler için YZ API maliyet denetimi ve model yönlendirme aracı",
+   "insight": "Video, aynı iş yükünün farklı modellerde onlarca kat farklı maliyete çıkabildiğini ve akıllı şirketlerin karma kullandığını söylüyor.",
+   "problem": "YZ kullanan şirketler hangi işi hangi modele gönderdiklerini ve ne kadar ödediklerini çoğu zaman bilmiyor.",
+   "solution": "API trafiğini izleyip görev türüne göre ucuz açık modele veya üst düzey kapalı modele yönlendiren, tasarrufu raporlayan bir ara katman.",
+   "target": "Aylık YZ API faturası yüksek olan Türk SaaS ve e-ticaret şirketleri",
+   "revenue_model": "Sağlanan tasarruftan yüzde pay veya kullanım bazlı abonelik",
+   "first_step": "5 şirketin bir aylık API kayıtlarını analiz edip yönlendirme ile potansiyel tasarruf raporunu ücretsiz sunmak",
+   "capital": "Düşük",
+   "difficulty": 3,
+   "turkey_angle": "Döviz bazlı API faturaları Türk şirketleri için ağır bir kalem; tasarruf argümanı güçlü.",
+   "risks": "Büyük sağlayıcıların fiyat indirimiyle farkın kapanması; kalite ölçümünün tartışmalı olması; açık kaynak rakip araçlar.",
+   "originality": 2,
+   "problem_solving": 3,
+   "score_note": "Küresel araçlar (OpenRouter vb.) var.",
+   "similar": []
+  },
+  {
+   "name": "YZ destekli dikey kısa dizi stüdyosu (Türk dizi formatı)",
+   "insight": "Videoda YZ araçlarının kısa dizi üretim maliyetini yaklaşık on kat, süresini aydan günlere düşürdüğü anlatılıyor.",
+   "problem": "Türk dizi yapımları uzun ve pahalı; mobil izleyiciye yönelik kısa formatlı içerik üretimi sınırlı.",
+   "solution": "Türk dizi dramaturjisini 1-2 dakikalık dikey bölümlere uyarlayan, senaryo, dublaj ve kurguda YZ kullanan düşük maliyetli stüdyo.",
+   "target": "Orta Doğu, Latin Amerika ve Türkiye'deki mobil izleyiciler; kısa dizi uygulamaları",
+   "revenue_model": "Bölüm başına ödeme/abonelik uygulamalarına lisans ve reklam geliri",
+   "first_step": "10 bölümlük bir pilot kısa diziyi düşük bütçeyle çekip iki platformda yayınlayarak izlenme ve tamamlama oranlarını ölçmek",
+   "capital": "Orta",
+   "difficulty": 3,
+   "turkey_angle": "Türk dizilerinin yurt dışındaki bilinirliği ve oyuncu/teknik ekip havuzu önemli bir avantaj.",
+   "risks": "Platform algoritmalarına bağımlılık; YZ ile üretilen içerikte telif ve oyuncu hakları sorunları; RTÜK düzenlemeleri.",
+   "originality": 2,
+   "problem_solving": 3,
+   "score_note": "YZ maliyet avantajı herkese açık.",
+   "similar": [
+    {
+     "id": "keH-LdEt53Y",
+     "name": "Türkçe ve Arapça dikey mikro dizi yapım stüdyosu"
+    }
+   ]
+  }
+ ],
+ "skeptic_notes": [
+  "'ABD girişimlerinin yüzde 80'i' rakamı tüm girişimleri değil, yalnızca açık kaynak YZ ile ürün geliştirenleri kapsıyor; başlık bunu abartıyor.",
+  "Claude Opus ile maliyet karşılaştırması altyazıda bozuk; videoda söylenen rakam okunamıyor, bu yüzden kullanılmadı.",
+  "100 milyon token için 35 dolar hesabı, 0,28 $/milyon token fiyatla tam örtüşmüyor (yaklaşık 28 $); girdi/çıktı fiyat farkı olabilir.",
+  "'40 kat ucuz' ve 'aynı kalite' iddiaları kıyaslanan model ve ölçüte göre çok değişir; genelleme yapılmamalı.",
+  "Cursor'un Kimi'ye dayandığı, Airbnb ve Pinterest alıntıları ve Manus'un Meta tarafından 2 milyar dolara alındığı iddiaları bağımsız olarak doğrulanmalı.",
+  "Batılı sağlayıcıların gizlilik politikalarına dair iddialar (ör. 5 yıllık veri saklama) bağlamından koparılmış olabilir; güncel politika metinleri kontrol edilmeli.",
+  "Zhipu'nun 1.160 kat talep fazlası ve MiniMax'in Baidu'yu geçmesi gibi rakamlar altyazı ve tek kaynak kaynaklı hata içerebilir.",
+  "Statrys, Hong Kong ve Singapur'da şirket kurma hizmetini video içinde tanıtıyor; Hong Kong'a yönelik bölüm kısmen reklam içeriği niteliğinde."
+ ]
 }

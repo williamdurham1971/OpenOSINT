@@ -1,123 +1,329 @@
 {
-  "id": "2UJrkmug_gs",
-  "title_tr": "Tencent'in sessiz azınlık hissesi imparatorluğu",
-  "category": "Şirket vakası",
-  "region": ["Çin", "ABD", "Küresel"],
-  "summary_tr": "Video, Tencent'in oyun ve medya dünyasında yüzlerce şirkette çoğunlukla isim vermeden azınlık hissesi topladığını anlatıyor. Bu yatırımların parası WeChat ve WeChat Pay'in Çin'deki ödeme ve hizmet altyapısından gelen yüksek kârdan sağlanıyor. Anlatıcıya göre Tencent'in rekabet avantajı paradan çok güven: Riot ve Supercell gibi satın aldığı stüdyolara karışmaması, Microsoft'un stüdyo kapatmalarıyla tezat oluşturuyor. Pentagon'un Tencent'i ÇHO bağlantılı şirketler listesine alması yaptırım içermiyor; asıl endişe WeChat üzerinden veri ve sansür riski. Video, Asya'da iş yapanlara karşı tarafın gerçek hissedarlarını sözleşmeden önce araştırmalarını öneriyor.",
-  "key_points": [
-    "Tencent 930 civarında şirkete yatırım yapmış, bunların 160'ı milyar dolar değerlemeyi aşmış durumda.",
-    "Çoğu yatırım Six Joy (Sixjoy) gibi aracı holdinglerle ve azınlık hissesi olarak yapılıyor, Tencent adı görünmüyor.",
-    "Yatırım gücünün kaynağı WeChat: günde 1 milyardan fazla ticari işlem ve devasa mini uygulama satışları.",
-    "Satın alınan stüdyoların yönetimine karışmama politikası, kurucular için parasal tekliften daha cazip bir 'ürün'.",
-    "Pentagon listesi yaptırım getirmiyor ama Tencent'i ABD savunma bütçesinin dışında bırakıyor.",
-    "Anlatıcıya göre Çin artık yalnızca fabrika değil hissedar; bir hisseye gümrük vergisi konamaz."
-  ],
-  "numbers": [
-    {"label": "Küresel oyun harcaması (geçen yıl)", "value": 188, "unit": "milyar $", "context": "Dünyanın video oyunlarına harcadığı toplam"},
-    {"label": "Tencent'in payı", "value": 35, "unit": "milyar $", "context": "Bu harcamadan Tencent'e giden yaklaşık tutar"},
-    {"label": "Tencent piyasa değeri", "value": 511, "unit": "milyar $", "context": "Şirketin bugünkü değeri"},
-    {"label": "Yatırım yapılan şirket (bugün)", "value": 930, "unit": "şirket", "context": "Tahmini güncel yatırım sayısı (2020'de 800'ün üzerinde)"},
-    {"label": "Unicorn sayısı", "value": 160, "unit": "şirket", "context": "1 milyar doları aşan portföy şirketleri"},
-    {"label": "Anlaşma sıklığı (2021'e kadar)", "value": 2.5, "unit": "gün", "context": "Her 2,5 günde bir oyun anlaşması"},
-    {"label": "Başka stüdyolara harcanan", "value": 22, "unit": "milyar $", "context": "O dönemde oyun stüdyolarına yapılan toplam yatırım"},
-    {"label": "Ubisoft yan şirketi yatırımı", "value": 1.16, "unit": "milyar €", "context": "Kasım 2025'te %26 hisse karşılığı"},
-    {"label": "Ubisoft yan şirketindeki hisse", "value": 26, "unit": "%", "context": "1,16 milyar euro karşılığı alınan pay"},
-    {"label": "Tokyo stüdyosundaki hisse", "value": 16, "unit": "%", "context": "2022'de Six Joy üzerinden Dark Souls ve Sekiro'nun stüdyosunda alınan pay"},
-    {"label": "Kadokawa hissesi", "value": 8, "unit": "%", "context": "Japon medya grubunda alınan pay"},
-    {"label": "Paradox hissesi", "value": 10, "unit": "%", "context": "Stockholm'deki stüdyoda pay"},
-    {"label": "Miniclip'in satın alması (2025 başı)", "value": 1.2, "unit": "milyar $", "context": "Sudoku.com'un sahibi stüdyonun satın alınması"},
-    {"label": "GMM Music hissesi bedeli", "value": 70, "unit": "milyon $", "context": "%10 hisse karşılığı"},
-    {"label": "Snap hisseleri", "value": 145.8, "unit": "milyon adet", "context": "Oy hakkı olmayan hisse sınıfından alındı"},
-    {"label": "Halka açık şirket hisselerinin değeri", "value": 120, "unit": "milyar $", "context": "Bağlı ortaklıklar hariç; şirket değerinin yaklaşık dörtte biri"},
-    {"label": "Spotify hissesi", "value": 9, "unit": "%", "context": "Oyun dışı yatırımlara örnek"},
-    {"label": "Universal Music hissesi", "value": 10, "unit": "%", "context": "Oyun dışı yatırımlara örnek"},
-    {"label": "WeChat Pay günlük ticari işlem", "value": 1, "unit": "milyar işlem (üzeri)", "context": "Ortalama bir günde"},
-    {"label": "Mini uygulama satışları (2024)", "value": 1.1, "unit": "trilyon $", "context": "WeChat içindeki küçük uygulamalardan yapılan satışlar"},
-    {"label": "2026 2. çeyrek gelir", "value": 29, "unit": "milyar $", "context": "Tek çeyrekte toplam gelir"},
-    {"label": "2026 2. çeyrek net kâr", "value": 10, "unit": "milyar $", "context": "Tek çeyrekte net kâr"},
-    {"label": "2026 2. çeyrek oyun geliri", "value": 9, "unit": "milyar $", "context": "Gelirin yaklaşık üçte biri"},
-    {"label": "Riot Games teklifi (2011)", "value": 400, "unit": "milyon $", "context": "%93 hisse için"},
-    {"label": "Supercell satın alması (2016)", "value": 8.6, "unit": "milyar $", "context": "Tencent liderliğindeki alım"},
-    {"label": "Microsoft-Bethesda (2021)", "value": 7.5, "unit": "milyar $", "context": "Karşılaştırma: sonrasında stüdyolar kapatıldı"},
-    {"label": "Microsoft işten çıkarma (Temmuz 2025)", "value": 9000, "unit": "kişi", "context": "Microsoft'un iş kesintisi"},
-    {"label": "Microsoft-Activision", "value": 69, "unit": "milyar $", "context": "Tamamını satın alma stratejisine karşılaştırma"},
-    {"label": "Pentagon listesindeki şirket", "value": 134, "unit": "şirket", "context": "Ocak 2025 listesi"},
-    {"label": "Liste sonrası hisse düşüşü", "value": -7.3, "unit": "%", "context": "Hong Kong'da o günkü düşüş"},
-    {"label": "Hindistan'ın ilk yasakladığı uygulama", "value": 59, "unit": "uygulama", "context": "WeChat dahil; üç ay sonra 118 uygulama daha"}
-  ],
-  "chart": {
-    "type": "hbar",
-    "title": "Videoda geçen oyun şirketi alım tutarları",
-    "unit": "milyar $",
-    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. Ubisoft yatırımı euro cinsinden olduğu için dahil edilmedi.",
-    "data": [
-      {"label": "Microsoft - Activision (tamamı)", "value": 69},
-      {"label": "Tencent - Supercell", "value": 8.6},
-      {"label": "Microsoft - Bethesda (tamamı)", "value": 7.5},
-      {"label": "Miniclip - Sudoku.com stüdyosu", "value": 1.2},
-      {"label": "Tencent - Riot Games (%93)", "value": 0.4}
-    ]
+ "id": "2UJrkmug_gs",
+ "title_tr": "Tencent'in sessiz azınlık hissesi imparatorluğu",
+ "category": "Şirket vakası",
+ "region": [
+  "Çin",
+  "ABD",
+  "Küresel"
+ ],
+ "summary_tr": "Video, Tencent'in oyun ve medya dünyasında yüzlerce şirkette çoğunlukla isim vermeden azınlık hissesi topladığını anlatıyor. Bu yatırımların parası WeChat ve WeChat Pay'in Çin'deki ödeme ve hizmet altyapısından gelen yüksek kârdan sağlanıyor. Anlatıcıya göre Tencent'in rekabet avantajı paradan çok güven: Riot ve Supercell gibi satın aldığı stüdyolara karışmaması, Microsoft'un stüdyo kapatmalarıyla tezat oluşturuyor. Pentagon'un Tencent'i ÇHO bağlantılı şirketler listesine alması yaptırım içermiyor; asıl endişe WeChat üzerinden veri ve sansür riski. Video, Asya'da iş yapanlara karşı tarafın gerçek hissedarlarını sözleşmeden önce araştırmalarını öneriyor.",
+ "key_points": [
+  "Tencent 930 civarında şirkete yatırım yapmış, bunların 160'ı milyar dolar değerlemeyi aşmış durumda.",
+  "Çoğu yatırım Six Joy (Sixjoy) gibi aracı holdinglerle ve azınlık hissesi olarak yapılıyor, Tencent adı görünmüyor.",
+  "Yatırım gücünün kaynağı WeChat: günde 1 milyardan fazla ticari işlem ve devasa mini uygulama satışları.",
+  "Satın alınan stüdyoların yönetimine karışmama politikası, kurucular için parasal tekliften daha cazip bir 'ürün'.",
+  "Pentagon listesi yaptırım getirmiyor ama Tencent'i ABD savunma bütçesinin dışında bırakıyor.",
+  "Anlatıcıya göre Çin artık yalnızca fabrika değil hissedar; bir hisseye gümrük vergisi konamaz."
+ ],
+ "numbers": [
+  {
+   "label": "Küresel oyun harcaması (geçen yıl)",
+   "value": 188,
+   "unit": "milyar $",
+   "context": "Dünyanın video oyunlarına harcadığı toplam"
   },
-  "diagram": {
-    "type": "cycle",
-    "title": "Tencent'in sermaye döngüsü",
-    "steps": [
-      {"label": "WeChat altyapısı", "detail": "Çin'de ödeme, mesajlaşma ve hizmetlerin geçtiği zorunlu kapı."},
-      {"label": "Yüksek nakit akışı", "detail": "Ödeme, mini uygulama ve oyun gelirlerinden çeyreklik milyarlarca dolar kâr."},
-      {"label": "Sessiz azınlık hisseleri", "detail": "Aracı holdinglerle stüdyolara isim vermeden pay alınıyor."},
-      {"label": "Yönetime karışmama", "detail": "Kurucular yerinde kalıyor; bu güven yeni anlaşmaları çekiyor."},
-      {"label": "Kâr payı ve yayın hakkı", "detail": "Tencent hem kâr payını hem oyunların Çin'deki dağıtımını alıyor."}
-    ]
+  {
+   "label": "Tencent'in payı",
+   "value": 35,
+   "unit": "milyar $",
+   "context": "Bu harcamadan Tencent'e giden yaklaşık tutar"
   },
-  "business_ideas": [
-    {
-      "name": "Asyalı karşı taraflar için hissedar zinciri raporu",
-      "insight": "Video, sözleşmedeki şirketin her zaman gücü elinde tutan şirket olmadığını ve sicil kaydının imzadan önce çekilmesi gerektiğini vurguluyor.",
-      "problem": "Türk firmaları Hong Kong, Singapur veya Çin'deki tedarikçi ve ortaklarının nihai hissedarlarını görmeden sözleşme imzalıyor.",
-      "solution": "Hong Kong, Singapur ve Çin ticaret sicillerinden hissedar zincirini çıkarıp yaptırım listeleriyle eşleştiren, 48 saatte Türkçe özet veren sabit fiyatlı rapor.",
-      "target": "Asya'dan ithalat yapan, lisans veya distribütörlük anlaşması imzalayan Türk şirketleri ve hukuk büroları",
-      "revenue_model": "Rapor başına ücret; hukuk bürolarına toplu paket",
-      "first_step": "5 gerçek tedarikçi için elle rapor hazırlayıp 3 hukuk bürosuna fiyat teklifiyle sunmak",
-      "capital": "Düşük",
-      "difficulty": 2,
-      "turkey_angle": "Türkiye'den uzaktan yürütülebilir; sicil erişimleri çevrimiçi ve ücretli.",
-      "risks": "Çin sicil verisine erişim kısıtları; kişisel veri mevzuatı; yanlış eşleştirmeden doğan sorumluluk."
-    },
-    {
-      "name": "Türk oyun stüdyoları için azınlık yatırımcı eşleştirme",
-      "insight": "Tencent'in stüdyolara az hisse alıp yönetime karışmaması, kurucular için cazip bir model.",
-      "problem": "Küçük ve orta ölçekli Türk mobil oyun stüdyoları kontrolü kaybetmeden büyüme sermayesi bulmakta zorlanıyor.",
-      "solution": "Asyalı stratejik yatırımcıların geçmiş azınlık yatırımlarını, yönetim haklarını ve stüdyo kapatma geçmişini derleyen bir veritabanı ve buna dayalı eşleştirme hizmeti.",
-      "target": "Ölçeklenmek isteyen Türk mobil oyun stüdyoları",
-      "revenue_model": "Başarı ücreti (yatırım tutarının yüzdesi) ve veritabanı aboneliği",
-      "first_step": "Asyalı yatırımcıların son 3 yılda yaptığı 50 azınlık oyun yatırımını tabloya dökmek ve 10 Türk stüdyosuna ilgisini sormak",
-      "capital": "Düşük",
-      "difficulty": 4,
-      "turkey_angle": "Türkiye mobil oyunda güçlü bir ekosisteme sahip; Asyalı yatırımcılar Türk stüdyolarını zaten izliyor.",
-      "risks": "Aracılık faaliyeti için SPK/yatırım danışmanlığı izinleri; jeopolitik risk ve ABD/Hindistan pazarında yasak ihtimali; uzun satış döngüsü."
-    },
-    {
-      "name": "Uygulamalar için jeopolitik bağımlılık taraması",
-      "insight": "ABD ve Hindistan, WeChat ve PUBG Mobile gibi uygulamaları devlet kararıyla yasakladı.",
-      "problem": "Uygulama geliştiriciler kullandıkları SDK'ların, sunucuların ve yatırımcıların tek bir hükümet kararıyla iş riskine dönüşebileceğini ölçmüyor.",
-      "solution": "Uygulama paketini ve altyapı yapılandırmasını tarayıp SDK sahipliği, veri akış ülkeleri ve hissedar yapısına göre pazar bazlı yasak riski raporu üreten araç.",
-      "target": "ABD, Hindistan ve AB pazarına uygulama sunan Türk oyun ve uygulama şirketleri",
-      "revenue_model": "Tarama başına ücret ve sürekli izleme aboneliği",
-      "first_step": "En çok kullanılan 30 mobil SDK'nın sahiplik ve veri merkezi bilgisini toplayıp 5 stüdyoya ücretsiz tarama sunmak",
-      "capital": "Orta",
-      "difficulty": 4,
-      "turkey_angle": "Türk stüdyoları yoğun olarak Asya kökenli reklam ve analitik SDK'ları kullanıyor; ihracat ağırlıklı iş modeli riski artırıyor.",
-      "risks": "Yasak kararlarının öngörülemezliği; teknik doğruluk; büyük güvenlik firmalarının benzer ürünleri."
-    }
-  ],
-  "skeptic_notes": [
-    "'Six Joy' büyük olasılıkla Tencent'in Hong Kong'daki yatırım aracı Sixjoy'un altyazı yazımı; Tokyo stüdyosu adı (FromSoftware) videoda açıkça söylenmiyor.",
-    "Mini uygulama satışlarının 1,1 trilyon dolar olduğu iddiası çok yüksek; para biriminin yuan olabileceği kontrol edilmeli.",
-    "'930 yatırım, 160 unicorn' rakamları bağımsız kaynakla doğrulanmalı; Tencent sitesindeki 800 rakamı 2020'ye ait.",
-    "Fortnite, PUBG, Elden Ring, Assassin's Creed gibi oyunlara 'sahiplik' iddiası abartılı; çoğunda azınlık hissesi söz konusu.",
-    "'Bio Works end' ifadesi anlaşılmıyor; muhtemelen 'bir sonraki satın alma teklifi geldiğinde' gibi bir cümlenin altyazı hatası.",
-    "Başlıktaki 'saklamak istediği' vurgusu clickbait; anlatılan yatırımların çoğu kamuya açık.",
-    "Toronto Üniversitesi araştırması 2020 tarihli; bugünkü durumu yansıtmayabilir.",
-    "Videonun sonunda Statrys'in Hong Kong/Singapur şirket kurma hizmeti tanıtılıyor (reklam içeriği)."
+  {
+   "label": "Tencent piyasa değeri",
+   "value": 511,
+   "unit": "milyar $",
+   "context": "Şirketin bugünkü değeri"
+  },
+  {
+   "label": "Yatırım yapılan şirket (bugün)",
+   "value": 930,
+   "unit": "şirket",
+   "context": "Tahmini güncel yatırım sayısı (2020'de 800'ün üzerinde)"
+  },
+  {
+   "label": "Unicorn sayısı",
+   "value": 160,
+   "unit": "şirket",
+   "context": "1 milyar doları aşan portföy şirketleri"
+  },
+  {
+   "label": "Anlaşma sıklığı (2021'e kadar)",
+   "value": 2.5,
+   "unit": "gün",
+   "context": "Her 2,5 günde bir oyun anlaşması"
+  },
+  {
+   "label": "Başka stüdyolara harcanan",
+   "value": 22,
+   "unit": "milyar $",
+   "context": "O dönemde oyun stüdyolarına yapılan toplam yatırım"
+  },
+  {
+   "label": "Ubisoft yan şirketi yatırımı",
+   "value": 1.16,
+   "unit": "milyar €",
+   "context": "Kasım 2025'te %26 hisse karşılığı"
+  },
+  {
+   "label": "Ubisoft yan şirketindeki hisse",
+   "value": 26,
+   "unit": "%",
+   "context": "1,16 milyar euro karşılığı alınan pay"
+  },
+  {
+   "label": "Tokyo stüdyosundaki hisse",
+   "value": 16,
+   "unit": "%",
+   "context": "2022'de Six Joy üzerinden Dark Souls ve Sekiro'nun stüdyosunda alınan pay"
+  },
+  {
+   "label": "Kadokawa hissesi",
+   "value": 8,
+   "unit": "%",
+   "context": "Japon medya grubunda alınan pay"
+  },
+  {
+   "label": "Paradox hissesi",
+   "value": 10,
+   "unit": "%",
+   "context": "Stockholm'deki stüdyoda pay"
+  },
+  {
+   "label": "Miniclip'in satın alması (2025 başı)",
+   "value": 1.2,
+   "unit": "milyar $",
+   "context": "Sudoku.com'un sahibi stüdyonun satın alınması"
+  },
+  {
+   "label": "GMM Music hissesi bedeli",
+   "value": 70,
+   "unit": "milyon $",
+   "context": "%10 hisse karşılığı"
+  },
+  {
+   "label": "Snap hisseleri",
+   "value": 145.8,
+   "unit": "milyon adet",
+   "context": "Oy hakkı olmayan hisse sınıfından alındı"
+  },
+  {
+   "label": "Halka açık şirket hisselerinin değeri",
+   "value": 120,
+   "unit": "milyar $",
+   "context": "Bağlı ortaklıklar hariç; şirket değerinin yaklaşık dörtte biri"
+  },
+  {
+   "label": "Spotify hissesi",
+   "value": 9,
+   "unit": "%",
+   "context": "Oyun dışı yatırımlara örnek"
+  },
+  {
+   "label": "Universal Music hissesi",
+   "value": 10,
+   "unit": "%",
+   "context": "Oyun dışı yatırımlara örnek"
+  },
+  {
+   "label": "WeChat Pay günlük ticari işlem",
+   "value": 1,
+   "unit": "milyar işlem (üzeri)",
+   "context": "Ortalama bir günde"
+  },
+  {
+   "label": "Mini uygulama satışları (2024)",
+   "value": 1.1,
+   "unit": "trilyon $",
+   "context": "WeChat içindeki küçük uygulamalardan yapılan satışlar"
+  },
+  {
+   "label": "2026 2. çeyrek gelir",
+   "value": 29,
+   "unit": "milyar $",
+   "context": "Tek çeyrekte toplam gelir"
+  },
+  {
+   "label": "2026 2. çeyrek net kâr",
+   "value": 10,
+   "unit": "milyar $",
+   "context": "Tek çeyrekte net kâr"
+  },
+  {
+   "label": "2026 2. çeyrek oyun geliri",
+   "value": 9,
+   "unit": "milyar $",
+   "context": "Gelirin yaklaşık üçte biri"
+  },
+  {
+   "label": "Riot Games teklifi (2011)",
+   "value": 400,
+   "unit": "milyon $",
+   "context": "%93 hisse için"
+  },
+  {
+   "label": "Supercell satın alması (2016)",
+   "value": 8.6,
+   "unit": "milyar $",
+   "context": "Tencent liderliğindeki alım"
+  },
+  {
+   "label": "Microsoft-Bethesda (2021)",
+   "value": 7.5,
+   "unit": "milyar $",
+   "context": "Karşılaştırma: sonrasında stüdyolar kapatıldı"
+  },
+  {
+   "label": "Microsoft işten çıkarma (Temmuz 2025)",
+   "value": 9000,
+   "unit": "kişi",
+   "context": "Microsoft'un iş kesintisi"
+  },
+  {
+   "label": "Microsoft-Activision",
+   "value": 69,
+   "unit": "milyar $",
+   "context": "Tamamını satın alma stratejisine karşılaştırma"
+  },
+  {
+   "label": "Pentagon listesindeki şirket",
+   "value": 134,
+   "unit": "şirket",
+   "context": "Ocak 2025 listesi"
+  },
+  {
+   "label": "Liste sonrası hisse düşüşü",
+   "value": -7.3,
+   "unit": "%",
+   "context": "Hong Kong'da o günkü düşüş"
+  },
+  {
+   "label": "Hindistan'ın ilk yasakladığı uygulama",
+   "value": 59,
+   "unit": "uygulama",
+   "context": "WeChat dahil; üç ay sonra 118 uygulama daha"
+  }
+ ],
+ "chart": {
+  "type": "hbar",
+  "title": "Videoda geçen oyun şirketi alım tutarları",
+  "unit": "milyar $",
+  "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. Ubisoft yatırımı euro cinsinden olduğu için dahil edilmedi.",
+  "data": [
+   {
+    "label": "Microsoft - Activision (tamamı)",
+    "value": 69
+   },
+   {
+    "label": "Tencent - Supercell",
+    "value": 8.6
+   },
+   {
+    "label": "Microsoft - Bethesda (tamamı)",
+    "value": 7.5
+   },
+   {
+    "label": "Miniclip - Sudoku.com stüdyosu",
+    "value": 1.2
+   },
+   {
+    "label": "Tencent - Riot Games (%93)",
+    "value": 0.4
+   }
   ]
+ },
+ "diagram": {
+  "type": "cycle",
+  "title": "Tencent'in sermaye döngüsü",
+  "steps": [
+   {
+    "label": "WeChat altyapısı",
+    "detail": "Çin'de ödeme, mesajlaşma ve hizmetlerin geçtiği zorunlu kapı."
+   },
+   {
+    "label": "Yüksek nakit akışı",
+    "detail": "Ödeme, mini uygulama ve oyun gelirlerinden çeyreklik milyarlarca dolar kâr."
+   },
+   {
+    "label": "Sessiz azınlık hisseleri",
+    "detail": "Aracı holdinglerle stüdyolara isim vermeden pay alınıyor."
+   },
+   {
+    "label": "Yönetime karışmama",
+    "detail": "Kurucular yerinde kalıyor; bu güven yeni anlaşmaları çekiyor."
+   },
+   {
+    "label": "Kâr payı ve yayın hakkı",
+    "detail": "Tencent hem kâr payını hem oyunların Çin'deki dağıtımını alıyor."
+   }
+  ]
+ },
+ "business_ideas": [
+  {
+   "name": "Asyalı karşı taraflar için hissedar zinciri raporu",
+   "insight": "Video, sözleşmedeki şirketin her zaman gücü elinde tutan şirket olmadığını ve sicil kaydının imzadan önce çekilmesi gerektiğini vurguluyor.",
+   "problem": "Türk firmaları Hong Kong, Singapur veya Çin'deki tedarikçi ve ortaklarının nihai hissedarlarını görmeden sözleşme imzalıyor.",
+   "solution": "Hong Kong, Singapur ve Çin ticaret sicillerinden hissedar zincirini çıkarıp yaptırım listeleriyle eşleştiren, 48 saatte Türkçe özet veren sabit fiyatlı rapor.",
+   "target": "Asya'dan ithalat yapan, lisans veya distribütörlük anlaşması imzalayan Türk şirketleri ve hukuk büroları",
+   "revenue_model": "Rapor başına ücret; hukuk bürolarına toplu paket",
+   "first_step": "5 gerçek tedarikçi için elle rapor hazırlayıp 3 hukuk bürosuna fiyat teklifiyle sunmak",
+   "capital": "Düşük",
+   "difficulty": 2,
+   "turkey_angle": "Türkiye'den uzaktan yürütülebilir; sicil erişimleri çevrimiçi ve ücretli.",
+   "risks": "Çin sicil verisine erişim kısıtları; kişisel veri mevzuatı; yanlış eşleştirmeden doğan sorumluluk.",
+   "originality": 3,
+   "problem_solving": 4,
+   "score_note": "KYB hizmeti kategorisi var; hızlı, sabit fiyatlı Asya odağı iyi bir paketleme.",
+   "similar": [
+    {
+     "id": "beaMlddk5P8",
+     "name": "Tedarikçi sahiplik ve yabancı kontrol risk haritası"
+    }
+   ]
+  },
+  {
+   "name": "Türk oyun stüdyoları için azınlık yatırımcı eşleştirme",
+   "insight": "Tencent'in stüdyolara az hisse alıp yönetime karışmaması, kurucular için cazip bir model.",
+   "problem": "Küçük ve orta ölçekli Türk mobil oyun stüdyoları kontrolü kaybetmeden büyüme sermayesi bulmakta zorlanıyor.",
+   "solution": "Asyalı stratejik yatırımcıların geçmiş azınlık yatırımlarını, yönetim haklarını ve stüdyo kapatma geçmişini derleyen bir veritabanı ve buna dayalı eşleştirme hizmeti.",
+   "target": "Ölçeklenmek isteyen Türk mobil oyun stüdyoları",
+   "revenue_model": "Başarı ücreti (yatırım tutarının yüzdesi) ve veritabanı aboneliği",
+   "first_step": "Asyalı yatırımcıların son 3 yılda yaptığı 50 azınlık oyun yatırımını tabloya dökmek ve 10 Türk stüdyosuna ilgisini sormak",
+   "capital": "Düşük",
+   "difficulty": 4,
+   "turkey_angle": "Türkiye mobil oyunda güçlü bir ekosisteme sahip; Asyalı yatırımcılar Türk stüdyolarını zaten izliyor.",
+   "risks": "Aracılık faaliyeti için SPK/yatırım danışmanlığı izinleri; jeopolitik risk ve ABD/Hindistan pazarında yasak ihtimali; uzun satış döngüsü.",
+   "originality": 3,
+   "problem_solving": 3,
+   "score_note": "Veritabanı ilginç ama eşleştirme işi ilişkiye dayalı; ölçeklenmez.",
+   "similar": []
+  },
+  {
+   "name": "Uygulamalar için jeopolitik bağımlılık taraması",
+   "insight": "ABD ve Hindistan, WeChat ve PUBG Mobile gibi uygulamaları devlet kararıyla yasakladı.",
+   "problem": "Uygulama geliştiriciler kullandıkları SDK'ların, sunucuların ve yatırımcıların tek bir hükümet kararıyla iş riskine dönüşebileceğini ölçmüyor.",
+   "solution": "Uygulama paketini ve altyapı yapılandırmasını tarayıp SDK sahipliği, veri akış ülkeleri ve hissedar yapısına göre pazar bazlı yasak riski raporu üreten araç.",
+   "target": "ABD, Hindistan ve AB pazarına uygulama sunan Türk oyun ve uygulama şirketleri",
+   "revenue_model": "Tarama başına ücret ve sürekli izleme aboneliği",
+   "first_step": "En çok kullanılan 30 mobil SDK'nın sahiplik ve veri merkezi bilgisini toplayıp 5 stüdyoya ücretsiz tarama sunmak",
+   "capital": "Orta",
+   "difficulty": 4,
+   "turkey_angle": "Türk stüdyoları yoğun olarak Asya kökenli reklam ve analitik SDK'ları kullanıyor; ihracat ağırlıklı iş modeli riski artırıyor.",
+   "risks": "Yasak kararlarının öngörülemezliği; teknik doğruluk; büyük güvenlik firmalarının benzer ürünleri.",
+   "originality": 4,
+   "problem_solving": 3,
+   "score_note": "SBOM ve jeopolitik birleşimi yeni; risk nadir gerçekleştiği için ödeme isteği belirsiz.",
+   "similar": []
+  }
+ ],
+ "skeptic_notes": [
+  "'Six Joy' büyük olasılıkla Tencent'in Hong Kong'daki yatırım aracı Sixjoy'un altyazı yazımı; Tokyo stüdyosu adı (FromSoftware) videoda açıkça söylenmiyor.",
+  "Mini uygulama satışlarının 1,1 trilyon dolar olduğu iddiası çok yüksek; para biriminin yuan olabileceği kontrol edilmeli.",
+  "'930 yatırım, 160 unicorn' rakamları bağımsız kaynakla doğrulanmalı; Tencent sitesindeki 800 rakamı 2020'ye ait.",
+  "Fortnite, PUBG, Elden Ring, Assassin's Creed gibi oyunlara 'sahiplik' iddiası abartılı; çoğunda azınlık hissesi söz konusu.",
+  "'Bio Works end' ifadesi anlaşılmıyor; muhtemelen 'bir sonraki satın alma teklifi geldiğinde' gibi bir cümlenin altyazı hatası.",
+  "Başlıktaki 'saklamak istediği' vurgusu clickbait; anlatılan yatırımların çoğu kamuya açık.",
+  "Toronto Üniversitesi araştırması 2020 tarihli; bugünkü durumu yansıtmayabilir.",
+  "Videonun sonunda Statrys'in Hong Kong/Singapur şirket kurma hizmeti tanıtılıyor (reklam içeriği)."
+ ]
 }

@@ -1,166 +1,183 @@
 {
-  "id": "48MUYUzG-Ck",
-  "title_tr": "Hong Kong'da 7 adımda şirket kurulumu (2026 rehberi)",
-  "category": "Şirket kurma & vergi (Statrys hizmet videoları)",
-  "region": [
-    "Hong Kong"
-  ],
-  "summary_tr": "Video, Hong Kong'da şirket kurma sürecini yedi adımda anlatıyor: şirket türü seçimi, isim seçimi, şirket sekreteri atanması, kayıtlı adres, belgelerin hazırlanması, başvurunun yapılması ve sertifikaların alınması. Hong Kong'da fiziki olarak bulunmadan çevrim içi kayıt yapılabildiği ve elektronik sertifikaların genellikle kısa sürede verildiği belirtiliyor. Asgari zorunlu devlet maliyeti verilirken, yerel sekreter ve kayıtlı adres gibi ek gereksinimler nedeniyle yabancı kurucuların toplamda daha fazla ödediği vurgulanıyor. Video, Statrys'in kuruluş, hesap ve muhasebeyi tek platformda sunduğunu tanıtarak bitiyor.",
-  "key_points": [
-    "En yaygın yapı özel limited şirket; şube ve temsilcilik ofisi gibi alternatifler de mevcut.",
-    "Şirket adı İngilizce veya geleneksel Çince olmalı, iki dil karıştırılamaz ve isim önceden rezerve edilemez.",
-    "Kuruluşta Hong Kong'da ikamet eden bir kişi veya lisanslı hizmet sağlayıcı şirket sekreteri olarak atanmalı; tek direktör kendi sekreteri olamaz.",
-    "Kayıtlı adres fiziki olmalı, posta kutusu kabul edilmiyor; bazı düzenlenmiş sektörler sanal ofis kullanamıyor.",
-    "Çevrim içi başvuru günün her saati yapılabiliyor ve Hong Kong'a gitmek gerekmiyor.",
-    "Kuruluş belgesi ve iş tescil belgesi alınıyor; iş tescili yıllık veya üç yıllık yenileniyor."
-  ],
-  "numbers": [
-    {
-      "label": "Asgari zorunlu devlet maliyeti",
-      "value": 3745,
-      "unit": "HKD",
-      "context": "Hong Kong'da şirket kurmanın asgari zorunlu devlet maliyeti."
-    },
-    {
-      "label": "Yabancı kurucu toplam maliyeti (alt sınır)",
-      "value": 7000,
-      "unit": "HKD",
-      "context": "Sekreter ve adres gibi ek kalemlerle yabancı kurucuların ödediği toplam maliyetin alt ucu."
-    },
-    {
-      "label": "Yabancı kurucu toplam maliyeti (üst sınır)",
-      "value": 12000,
-      "unit": "HKD",
-      "context": "Aynı toplam maliyetin üst ucu."
-    },
-    {
-      "label": "Şirket içi sekreter maliyeti (alt sınır)",
-      "value": 20000,
-      "unit": "HKD/ay",
-      "context": "Kadrolu bir şirket sekreterinin aylık tipik maliyetinin alt ucu."
-    },
-    {
-      "label": "Şirket içi sekreter maliyeti (üst sınır)",
-      "value": 30000,
-      "unit": "HKD/ay",
-      "context": "Kadrolu bir şirket sekreterinin aylık tipik maliyetinin üst ucu."
-    },
-    {
-      "label": "Çevrim içi sertifika süresi",
-      "value": 1,
-      "unit": "saat",
-      "context": "Çevrim içi başvuruda elektronik sertifikaların genellikle verildiği süre."
-    },
-    {
-      "label": "Kağıt sertifika teslim süresi",
-      "value": 4,
-      "unit": "iş günü",
-      "context": "Posta veya şahsen başvuruda basılı sertifikaların tipik teslim süresi."
-    },
-    {
-      "label": "İş tescili yenileme seçenekleri",
-      "value": 3,
-      "unit": "yıl",
-      "context": "İş tescil belgesi seçilen süreye göre her yıl veya her üç yılda bir yenileniyor."
-    }
-  ],
-  "chart": {
-    "type": "bar",
-    "title": "Hong Kong şirket kuruluş maliyeti: asgari devlet ücreti ve yabancı kurucu aralığı",
-    "unit": "HKD",
-    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı",
-    "data": [
-      {
-        "label": "Asgari devlet maliyeti",
-        "value": 3745
-      },
-      {
-        "label": "Yabancı kurucu - alt sınır",
-        "value": 7000
-      },
-      {
-        "label": "Yabancı kurucu - üst sınır",
-        "value": 12000
-      }
-    ]
+ "id": "48MUYUzG-Ck",
+ "title_tr": "Hong Kong'da 7 adımda şirket kurulumu (2026 rehberi)",
+ "category": "Şirket kurma & vergi (Statrys hizmet videoları)",
+ "region": [
+  "Hong Kong"
+ ],
+ "summary_tr": "Video, Hong Kong'da şirket kurma sürecini yedi adımda anlatıyor: şirket türü seçimi, isim seçimi, şirket sekreteri atanması, kayıtlı adres, belgelerin hazırlanması, başvurunun yapılması ve sertifikaların alınması. Hong Kong'da fiziki olarak bulunmadan çevrim içi kayıt yapılabildiği ve elektronik sertifikaların genellikle kısa sürede verildiği belirtiliyor. Asgari zorunlu devlet maliyeti verilirken, yerel sekreter ve kayıtlı adres gibi ek gereksinimler nedeniyle yabancı kurucuların toplamda daha fazla ödediği vurgulanıyor. Video, Statrys'in kuruluş, hesap ve muhasebeyi tek platformda sunduğunu tanıtarak bitiyor.",
+ "key_points": [
+  "En yaygın yapı özel limited şirket; şube ve temsilcilik ofisi gibi alternatifler de mevcut.",
+  "Şirket adı İngilizce veya geleneksel Çince olmalı, iki dil karıştırılamaz ve isim önceden rezerve edilemez.",
+  "Kuruluşta Hong Kong'da ikamet eden bir kişi veya lisanslı hizmet sağlayıcı şirket sekreteri olarak atanmalı; tek direktör kendi sekreteri olamaz.",
+  "Kayıtlı adres fiziki olmalı, posta kutusu kabul edilmiyor; bazı düzenlenmiş sektörler sanal ofis kullanamıyor.",
+  "Çevrim içi başvuru günün her saati yapılabiliyor ve Hong Kong'a gitmek gerekmiyor.",
+  "Kuruluş belgesi ve iş tescil belgesi alınıyor; iş tescili yıllık veya üç yıllık yenileniyor."
+ ],
+ "numbers": [
+  {
+   "label": "Asgari zorunlu devlet maliyeti",
+   "value": 3745,
+   "unit": "HKD",
+   "context": "Hong Kong'da şirket kurmanın asgari zorunlu devlet maliyeti."
   },
-  "diagram": {
-    "type": "flow",
-    "title": "Hong Kong şirket kuruluşunun 7 adımı",
-    "steps": [
-      {
-        "label": "Şirket türü seçimi",
-        "detail": "Sorumluluk ve uyum yükünü belirleyen yapı seçiliyor, çoğunlukla özel limited şirket."
-      },
-      {
-        "label": "İsim kontrolü",
-        "detail": "Kurallara uygun isim ücretsiz sorgu aracıyla kontrol ediliyor ve yedek isimler hazırlanıyor."
-      },
-      {
-        "label": "Sekreter ve adres",
-        "detail": "Yerel şirket sekreteri atanıyor ve Hong Kong'da fiziki kayıtlı adres belirleniyor."
-      },
-      {
-        "label": "Belge hazırlığı",
-        "detail": "Kimlik, adres kanıtı ve ana sözleşme hazırlanıyor; çevrim dışı başvuruda formlar dolduruluyor."
-      },
-      {
-        "label": "Başvuru",
-        "detail": "Çevrim içi portal üzerinden veya posta/şahsen başvuru yapılıp ücret ödeniyor."
-      },
-      {
-        "label": "Sertifikalar",
-        "detail": "Kuruluş belgesi ve iş tescil belgesi alınarak banka hesabı ve sözleşmeler için kullanılıyor."
-      }
-    ]
+  {
+   "label": "Yabancı kurucu toplam maliyeti (alt sınır)",
+   "value": 7000,
+   "unit": "HKD",
+   "context": "Sekreter ve adres gibi ek kalemlerle yabancı kurucuların ödediği toplam maliyetin alt ucu."
   },
-  "business_ideas": [
-    {
-      "name": "Hong Kong şirketleri için yıllık uyum takvimi ve hatırlatma servisi",
-      "insight": "Video, iş tescil belgesinin yıllık veya üç yıllık yenilendiğini ve sekreterin resmi bildirimlerden sorumlu olduğunu belirtiyor.",
-      "problem": "Yabancı sahipler iş tescil yenilemesi, yıllık beyan ve vergi tarihlerini takip etmekte zorlanıyor; gecikme cezaları ve itibar sorunları yaşanıyor.",
-      "solution": "Şirketin kuruluş tarihi, mali yılı ve tescil süresine göre kişiye özel uyum takvimi oluşturan, Türkçe/İngilizce hatırlatma ve yetkili sağlayıcıya yönlendirme sunan servis.",
-      "target": "Hong Kong şirketi olan Türk ve diğer yabancı KOBİ sahipleri",
-      "revenue_model": "Düşük aylık abonelik; sekreterlik firmalarına yönlendirme payı",
-      "first_step": "Hong Kong şirketi olan 15 Türk girişimciye son iki yılda kaçırdıkları veya son dakikaya kalan uyum tarihlerini sormak.",
-      "capital": "Düşük",
-      "difficulty": 2,
-      "turkey_angle": "Türk girişimcilerin Hong Kong şirketleri için Türkçe destek boşluğu var; uzaktan işletilebilir.",
-      "risks": "Takvim hataları sorumluluk doğurabilir; servis yasal yükümlülüğü sahibinden ve sekreterden devralmaz, bu net belirtilmeli."
-    },
-    {
-      "name": "Hong Kong kuruluş maliyet şeffaflığı anketi ve endeksi",
-      "insight": "Video, asgari devlet maliyeti ile yabancı kurucuların ödediği toplam maliyet arasında büyük fark olduğunu gösteriyor.",
-      "problem": "Kurucular hangi kalemin zorunlu, hangisinin sağlayıcı kâr marjı olduğunu bilemiyor ve teklifleri kıyaslayamıyor.",
-      "solution": "Hong Kong kuruluş sağlayıcılarının fiyatlarını kalem kalem (devlet ücreti, sekreter, adres, ek paketler) toplayan, düzenli yayımlanan bağımsız bir maliyet endeksi ve karşılaştırma raporu.",
-      "target": "Asya'da şirket kurmayı planlayan girişimciler, muhasebe büroları, medya",
-      "revenue_model": "Ücretsiz özet rapor, ücretli detaylı veri seti, sponsorluk dışı danışmanlık yönlendirmesi",
-      "first_step": "20 Hong Kong sağlayıcısından aynı senaryo için teklif isteyip ilk endeks raporunu yayınlamak ve indirme sayısını ölçmek.",
-      "capital": "Düşük",
-      "difficulty": 2,
-      "turkey_angle": "Türkiye'den masa başı araştırmayla yürütülebilir; Türkçe sürüm Türk girişimcilere doğrudan hitap eder.",
-      "risks": "Sağlayıcılar fiyat vermekten kaçınabilir; veri hızla eskir; tarafsızlık korunmazsa güvenilirlik kaybolur."
-    },
-    {
-      "name": "Hong Kong şirket ismi hazırlama ve çift dilli isim danışmanlığı aracı",
-      "insight": "Video, isim reddedilirse başvurunun baştan başlatılması gerektiğini, isimlerin rezerve edilemediğini ve İngilizce-Çince kurallarının katı olduğunu söylüyor.",
-      "problem": "Yabancı kurucular kurallara uygun İngilizce ve geleneksel Çince isim oluşturmakta zorlanıyor, ret riskini göze almak zorunda kalıyor.",
-      "solution": "Kuralları kontrol eden, mevcut şirket adlarıyla benzerliği ön tarayan ve ana dili Çince olan çevirmenlerle uygun geleneksel Çince isim öneren hibrit araç.",
-      "target": "Hong Kong'da şirket kuran yabancı girişimciler ve kurumsal hizmet sağlayıcıları",
-      "revenue_model": "İsim paketi başına sabit ücret; sağlayıcılara toplu lisans",
-      "first_step": "Hong Kong'daki 5 kurumsal hizmet sağlayıcıya isim reddi oranlarını ve müşterilerin Çince isim talep sıklığını sormak.",
-      "capital": "Düşük",
-      "difficulty": 2,
-      "turkey_angle": "Türk markalarının Çince karşılığını bulmak ek bir hizmet olarak Türk ihracatçılarına da satılabilir.",
-      "risks": "Resmi kayıt otoritesinin kararı bağlayıcıdır; Çince isimde kültürel/olumsuz çağrışım hatası marka riski yaratır; marka tescili ayrı süreçtir."
-    }
-  ],
-  "skeptic_notes": [
-    "Bu video Statrys'in kendi hizmetlerini tanıtan bir reklam/tanıtım içeriğidir; anlatım tarafsız değildir.",
-    "Otomatik altyazı şirket adını çoğu yerde 'Status' veya 'statris' olarak yazmış; doğrusu Statrys.",
-    "Yabancı kurucu maliyeti altyazıda '7 and 12,000 HKD' şeklinde geçiyor; en makul okuma 7.000-12.000 HKD aralığı olarak alındı.",
-    "Form adları altyazıda 'NNC1 or an NC1G' ve 'IRB1' olarak geçiyor; büyük olasılıkla NNC1, NNC1G ve IRBR1 kastediliyor, doğrulanmalı.",
-    "Şirket içi sekreter maliyeti aylık olarak verildiği için kuruluş maliyeti grafiğine dahil edilmedi; bu karşılaştırma sağlayıcı paketlerini cazip gösterme amacı taşıyabilir.",
-    "Maliyetlerin kaynağı olarak Statrys'in kendi anket çalışmasına atıf yapılıyor; bağımsız doğrulanmadı."
+  {
+   "label": "Yabancı kurucu toplam maliyeti (üst sınır)",
+   "value": 12000,
+   "unit": "HKD",
+   "context": "Aynı toplam maliyetin üst ucu."
+  },
+  {
+   "label": "Şirket içi sekreter maliyeti (alt sınır)",
+   "value": 20000,
+   "unit": "HKD/ay",
+   "context": "Kadrolu bir şirket sekreterinin aylık tipik maliyetinin alt ucu."
+  },
+  {
+   "label": "Şirket içi sekreter maliyeti (üst sınır)",
+   "value": 30000,
+   "unit": "HKD/ay",
+   "context": "Kadrolu bir şirket sekreterinin aylık tipik maliyetinin üst ucu."
+  },
+  {
+   "label": "Çevrim içi sertifika süresi",
+   "value": 1,
+   "unit": "saat",
+   "context": "Çevrim içi başvuruda elektronik sertifikaların genellikle verildiği süre."
+  },
+  {
+   "label": "Kağıt sertifika teslim süresi",
+   "value": 4,
+   "unit": "iş günü",
+   "context": "Posta veya şahsen başvuruda basılı sertifikaların tipik teslim süresi."
+  },
+  {
+   "label": "İş tescili yenileme seçenekleri",
+   "value": 3,
+   "unit": "yıl",
+   "context": "İş tescil belgesi seçilen süreye göre her yıl veya her üç yılda bir yenileniyor."
+  }
+ ],
+ "chart": {
+  "type": "bar",
+  "title": "Hong Kong şirket kuruluş maliyeti: asgari devlet ücreti ve yabancı kurucu aralığı",
+  "unit": "HKD",
+  "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı",
+  "data": [
+   {
+    "label": "Asgari devlet maliyeti",
+    "value": 3745
+   },
+   {
+    "label": "Yabancı kurucu - alt sınır",
+    "value": 7000
+   },
+   {
+    "label": "Yabancı kurucu - üst sınır",
+    "value": 12000
+   }
   ]
+ },
+ "diagram": {
+  "type": "flow",
+  "title": "Hong Kong şirket kuruluşunun 7 adımı",
+  "steps": [
+   {
+    "label": "Şirket türü seçimi",
+    "detail": "Sorumluluk ve uyum yükünü belirleyen yapı seçiliyor, çoğunlukla özel limited şirket."
+   },
+   {
+    "label": "İsim kontrolü",
+    "detail": "Kurallara uygun isim ücretsiz sorgu aracıyla kontrol ediliyor ve yedek isimler hazırlanıyor."
+   },
+   {
+    "label": "Sekreter ve adres",
+    "detail": "Yerel şirket sekreteri atanıyor ve Hong Kong'da fiziki kayıtlı adres belirleniyor."
+   },
+   {
+    "label": "Belge hazırlığı",
+    "detail": "Kimlik, adres kanıtı ve ana sözleşme hazırlanıyor; çevrim dışı başvuruda formlar dolduruluyor."
+   },
+   {
+    "label": "Başvuru",
+    "detail": "Çevrim içi portal üzerinden veya posta/şahsen başvuru yapılıp ücret ödeniyor."
+   },
+   {
+    "label": "Sertifikalar",
+    "detail": "Kuruluş belgesi ve iş tescil belgesi alınarak banka hesabı ve sözleşmeler için kullanılıyor."
+   }
+  ]
+ },
+ "business_ideas": [
+  {
+   "name": "Hong Kong şirketleri için yıllık uyum takvimi ve hatırlatma servisi",
+   "insight": "Video, iş tescil belgesinin yıllık veya üç yıllık yenilendiğini ve sekreterin resmi bildirimlerden sorumlu olduğunu belirtiyor.",
+   "problem": "Yabancı sahipler iş tescil yenilemesi, yıllık beyan ve vergi tarihlerini takip etmekte zorlanıyor; gecikme cezaları ve itibar sorunları yaşanıyor.",
+   "solution": "Şirketin kuruluş tarihi, mali yılı ve tescil süresine göre kişiye özel uyum takvimi oluşturan, Türkçe/İngilizce hatırlatma ve yetkili sağlayıcıya yönlendirme sunan servis.",
+   "target": "Hong Kong şirketi olan Türk ve diğer yabancı KOBİ sahipleri",
+   "revenue_model": "Düşük aylık abonelik; sekreterlik firmalarına yönlendirme payı",
+   "first_step": "Hong Kong şirketi olan 15 Türk girişimciye son iki yılda kaçırdıkları veya son dakikaya kalan uyum tarihlerini sormak.",
+   "capital": "Düşük",
+   "difficulty": 2,
+   "turkey_angle": "Türk girişimcilerin Hong Kong şirketleri için Türkçe destek boşluğu var; uzaktan işletilebilir.",
+   "risks": "Takvim hataları sorumluluk doğurabilir; servis yasal yükümlülüğü sahibinden ve sekreterden devralmaz, bu net belirtilmeli.",
+   "originality": 1,
+   "problem_solving": 2,
+   "score_note": "Sekreterlik firmaları zaten yapıyor.",
+   "similar": []
+  },
+  {
+   "name": "Hong Kong kuruluş maliyet şeffaflığı anketi ve endeksi",
+   "insight": "Video, asgari devlet maliyeti ile yabancı kurucuların ödediği toplam maliyet arasında büyük fark olduğunu gösteriyor.",
+   "problem": "Kurucular hangi kalemin zorunlu, hangisinin sağlayıcı kâr marjı olduğunu bilemiyor ve teklifleri kıyaslayamıyor.",
+   "solution": "Hong Kong kuruluş sağlayıcılarının fiyatlarını kalem kalem (devlet ücreti, sekreter, adres, ek paketler) toplayan, düzenli yayımlanan bağımsız bir maliyet endeksi ve karşılaştırma raporu.",
+   "target": "Asya'da şirket kurmayı planlayan girişimciler, muhasebe büroları, medya",
+   "revenue_model": "Ücretsiz özet rapor, ücretli detaylı veri seti, sponsorluk dışı danışmanlık yönlendirmesi",
+   "first_step": "20 Hong Kong sağlayıcısından aynı senaryo için teklif isteyip ilk endeks raporunu yayınlamak ve indirme sayısını ölçmek.",
+   "capital": "Düşük",
+   "difficulty": 2,
+   "turkey_angle": "Türkiye'den masa başı araştırmayla yürütülebilir; Türkçe sürüm Türk girişimcilere doğrudan hitap eder.",
+   "risks": "Sağlayıcılar fiyat vermekten kaçınabilir; veri hızla eskir; tarafsızlık korunmazsa güvenilirlik kaybolur.",
+   "originality": 3,
+   "problem_solving": 2,
+   "score_note": "Medya/içerik; gelir zayıf.",
+   "similar": []
+  },
+  {
+   "name": "Hong Kong şirket ismi hazırlama ve çift dilli isim danışmanlığı aracı",
+   "insight": "Video, isim reddedilirse başvurunun baştan başlatılması gerektiğini, isimlerin rezerve edilemediğini ve İngilizce-Çince kurallarının katı olduğunu söylüyor.",
+   "problem": "Yabancı kurucular kurallara uygun İngilizce ve geleneksel Çince isim oluşturmakta zorlanıyor, ret riskini göze almak zorunda kalıyor.",
+   "solution": "Kuralları kontrol eden, mevcut şirket adlarıyla benzerliği ön tarayan ve ana dili Çince olan çevirmenlerle uygun geleneksel Çince isim öneren hibrit araç.",
+   "target": "Hong Kong'da şirket kuran yabancı girişimciler ve kurumsal hizmet sağlayıcıları",
+   "revenue_model": "İsim paketi başına sabit ücret; sağlayıcılara toplu lisans",
+   "first_step": "Hong Kong'daki 5 kurumsal hizmet sağlayıcıya isim reddi oranlarını ve müşterilerin Çince isim talep sıklığını sormak.",
+   "capital": "Düşük",
+   "difficulty": 2,
+   "turkey_angle": "Türk markalarının Çince karşılığını bulmak ek bir hizmet olarak Türk ihracatçılarına da satılabilir.",
+   "risks": "Resmi kayıt otoritesinin kararı bağlayıcıdır; Çince isimde kültürel/olumsuz çağrışım hatası marka riski yaratır; marka tescili ayrı süreçtir.",
+   "originality": 2,
+   "problem_solving": 2,
+   "score_note": "Sağlayıcılar ücretsiz yapıyor.",
+   "similar": [
+    {
+     "id": "Y8616NH0KX0",
+     "name": "Singapur şirket adı ön kontrol ve marka çakışma aracı"
+    }
+   ]
+  }
+ ],
+ "skeptic_notes": [
+  "Bu video Statrys'in kendi hizmetlerini tanıtan bir reklam/tanıtım içeriğidir; anlatım tarafsız değildir.",
+  "Otomatik altyazı şirket adını çoğu yerde 'Status' veya 'statris' olarak yazmış; doğrusu Statrys.",
+  "Yabancı kurucu maliyeti altyazıda '7 and 12,000 HKD' şeklinde geçiyor; en makul okuma 7.000-12.000 HKD aralığı olarak alındı.",
+  "Form adları altyazıda 'NNC1 or an NC1G' ve 'IRB1' olarak geçiyor; büyük olasılıkla NNC1, NNC1G ve IRBR1 kastediliyor, doğrulanmalı.",
+  "Şirket içi sekreter maliyeti aylık olarak verildiği için kuruluş maliyeti grafiğine dahil edilmedi; bu karşılaştırma sağlayıcı paketlerini cazip gösterme amacı taşıyabilir.",
+  "Maliyetlerin kaynağı olarak Statrys'in kendi anket çalışmasına atıf yapılıyor; bağımsız doğrulanmadı."
+ ]
 }

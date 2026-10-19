@@ -1,126 +1,344 @@
 {
-  "id": "P9zFaTIrLv8",
-  "title_tr": "Buldak erişteleri ve Samyang Foods'un yüksek kâr marjının ardındakiler",
-  "category": "Şirket vakası",
-  "region": ["Güney Kore", "ABD", "Avrupa"],
-  "summary_tr": "Video, acı Buldak erişteleriyle yeniden yükselen Güney Koreli Samyang Foods'u anlatıyor. Ürün 2012'de piyasaya çıktıktan sonra yıllarca ilgi görmedi; 2014'te bir YouTuber'ın acı deneme videosuyla viral oldu ve dünya çapında kullanıcı videolarıyla ücretsiz pazarlama kazandı. Anlatıcıya göre şirketin sektör ortalamasının çok üzerindeki marjı viral ilgiden değil üç sıkıcı karardan geliyor: yurt dışında yaklaşık iki kat fiyat, maliyetlerin zayıf wonla ve gelirlerin dolarla oluşması, ve Busan limanına yakın, yüksek otomasyonlu ihracat fabrikası. ABD gümrük vergileri ve yöneticinin sahte şirketler üzerinden yolsuzluk mahkûmiyeti riskler olarak öne çıkıyor.",
-  "key_points": [
-    "Samyang 1989'daki asılsız bir iç yağı skandalıyla Kore pazarını kaybetti ve uzun süre rakibi Nongshim'in gerisinde kaldı.",
-    "Buldak 2012'de çıktı, iki yıl sessiz kaldı; 2014'te Korean Englishman kanalındaki video sonrası küresel tepki videosu akımı başladı.",
-    "İhracatın gelir içindeki payı 2016'da %26 iken 2024'te %77'ye çıktı.",
-    "Faaliyet kâr marjı %19,9; Kore gıda şirketleri genelde %3-7 aralığında.",
-    "Marjın kaynakları: yurt dışında daha yüksek fiyat, kur farkı kazancı ve limana yakın otomatik fabrika.",
-    "Tüm ihracatın Kore'de üretilmesi ABD tarifelerine karşı Samyang'ı rakiplerinden daha savunmasız bırakıyor."
-  ],
-  "numbers": [
-    {"label": "Saniyede satılan paket", "value": 63, "unit": "paket/sn", "context": "Videonun girişindeki satış hızı iddiası"},
-    {"label": "Yıllık satış", "value": 2, "unit": "milyar (paket olduğu varsayılıyor)", "context": "100'den fazla ülkede yıllık satış; birim videoda belirsiz"},
-    {"label": "Satış yapılan ülke", "value": 100, "unit": "ülke (üzeri)", "context": "Küresel dağıtım"},
-    {"label": "Acılık derecesi", "value": 4404, "unit": "Scoville", "context": "Orijinal Buldak'ın acılık ölçüsü"},
-    {"label": "İhracat payı (2016)", "value": 26, "unit": "%", "context": "Samyang gelirinde ihracatın payı"},
-    {"label": "İhracat payı (2024)", "value": 77, "unit": "%", "context": "Samyang gelirinde ihracatın payı"},
-    {"label": "İhracat payı (bu yılın ilk yarısı)", "value": 88, "unit": "%", "context": "Erişte ve atıştırmalık satışlarında ihracatın payı"},
-    {"label": "Tek günlük hisse artışı (Mayıs 2024)", "value": 30, "unit": "%", "context": "Kore borsasının günlük üst limiti"},
-    {"label": "Faaliyet kârı (2024 1. çeyrek)", "value": 80, "unit": "milyar won", "context": "Üç katına çıktı"},
-    {"label": "Samyang faaliyet kâr marjı", "value": 19.9, "unit": "%", "context": "Gıda şirketi için olağan dışı"},
-    {"label": "Kore gıda grupları marjı (üst sınır)", "value": 7, "unit": "%", "context": "Büyük Kore gıda gruplarının %3-7 aralığı"},
-    {"label": "Nongshim satışları", "value": 2.5, "unit": "milyar $", "context": "Karşılaştırma yılı videoda net değil"},
-    {"label": "Nongshim kârı", "value": 118, "unit": "milyon $", "context": "Aynı yıl"},
-    {"label": "Samyang kârı", "value": 250, "unit": "milyon $", "context": "Nongshim'in yarısı kadar satışla"},
-    {"label": "Kore'de paket fiyatı", "value": 0.75, "unit": "$", "context": "Yaklaşık 1.000-1.100 won"},
-    {"label": "ABD Walmart paket fiyatı", "value": 1.5, "unit": "$", "context": "Aynı ürün"},
-    {"label": "Fransa paket fiyatı", "value": 1.7, "unit": "€", "context": "Aynı ürün"},
-    {"label": "İhracat kârlılığı katsayısı", "value": 2.8, "unit": "kat", "context": "İhracat satışlarının iç pazara göre kârlılığı"},
-    {"label": "İhracat gelirinin dolar payı", "value": 80, "unit": "%", "context": "Yaklaşık"},
-    {"label": "Won/dolar kuru (2024 sonu)", "value": 1490, "unit": "won/$", "context": "Wonun zayıfladığı seviye"},
-    {"label": "Kur kazancı", "value": 250, "unit": "milyon $", "context": "Yaklaşık; marja yaklaşık 7 puan katkı"},
-    {"label": "İç nakliye maliyeti düşüşü", "value": -63, "unit": "%", "context": "Miryang fabrikası sayesinde"},
-    {"label": "Otomasyon oranı", "value": 90, "unit": "% (üzeri)", "context": "Miryang fabrikasında"},
-    {"label": "Kapasite kullanımı", "value": 95, "unit": "% (üzeri)", "context": "İhracat hatları"},
-    {"label": "Birim üretim maliyeti düşüşü", "value": -18, "unit": "%", "context": "Yüksek kapasite kullanımı sayesinde"},
-    {"label": "ABD gümrük vergisi (Ağustos 2025)", "value": 15, "unit": "%", "context": "Nisan 2025'te %10 olarak başladı"},
-    {"label": "Fiyat artışı", "value": 9, "unit": "%", "context": "3 yıldaki ilk zam"},
-    {"label": "Walmart beşli paket (önce)", "value": 6.88, "unit": "$", "context": "Zam öncesi"},
-    {"label": "Walmart beşli paket (sonra)", "value": 7.84, "unit": "$", "context": "Zam sonrası"},
-    {"label": "Hisse zirvesi (Eylül 2025)", "value": 1665000, "unit": "won", "context": "Bir yıl sonra yaklaşık dörtte bir aşağıda"},
-    {"label": "Sahte faturalar", "value": 39, "unit": "milyon $", "context": "Yöneticinin iki paravan şirketi üzerinden"},
-    {"label": "Para cezası", "value": 14, "unit": "milyon $", "context": "10 Eylül 2026 kesin kararı; 3 yıl ertelenmiş hapis"},
-    {"label": "2. çeyrek geliri", "value": 545, "unit": "milyon $", "context": "%39 artış; faaliyet kârı %47 arttı"},
-    {"label": "Avrupa büyümesi", "value": 61, "unit": "%", "context": "Almanya ve Fransa öncülüğünde"},
-    {"label": "ABD satış büyümesi", "value": 54, "unit": "%", "context": "2. çeyrek"}
-  ],
-  "chart": {
-    "type": "line",
-    "title": "Samyang'da ihracatın payı",
-    "unit": "%",
-    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. 2016 ve 2024 toplam gelirde, 2026 ilk yarı yalnızca erişte ve atıştırmalık satışlarındaki pay.",
-    "data": [
-      {"label": "2016", "value": 26},
-      {"label": "2024", "value": 77},
-      {"label": "2026 ilk yarı", "value": 88}
-    ]
+ "id": "P9zFaTIrLv8",
+ "title_tr": "Buldak erişteleri ve Samyang Foods'un yüksek kâr marjının ardındakiler",
+ "category": "Şirket vakası",
+ "region": [
+  "Güney Kore",
+  "ABD",
+  "Avrupa"
+ ],
+ "summary_tr": "Video, acı Buldak erişteleriyle yeniden yükselen Güney Koreli Samyang Foods'u anlatıyor. Ürün 2012'de piyasaya çıktıktan sonra yıllarca ilgi görmedi; 2014'te bir YouTuber'ın acı deneme videosuyla viral oldu ve dünya çapında kullanıcı videolarıyla ücretsiz pazarlama kazandı. Anlatıcıya göre şirketin sektör ortalamasının çok üzerindeki marjı viral ilgiden değil üç sıkıcı karardan geliyor: yurt dışında yaklaşık iki kat fiyat, maliyetlerin zayıf wonla ve gelirlerin dolarla oluşması, ve Busan limanına yakın, yüksek otomasyonlu ihracat fabrikası. ABD gümrük vergileri ve yöneticinin sahte şirketler üzerinden yolsuzluk mahkûmiyeti riskler olarak öne çıkıyor.",
+ "key_points": [
+  "Samyang 1989'daki asılsız bir iç yağı skandalıyla Kore pazarını kaybetti ve uzun süre rakibi Nongshim'in gerisinde kaldı.",
+  "Buldak 2012'de çıktı, iki yıl sessiz kaldı; 2014'te Korean Englishman kanalındaki video sonrası küresel tepki videosu akımı başladı.",
+  "İhracatın gelir içindeki payı 2016'da %26 iken 2024'te %77'ye çıktı.",
+  "Faaliyet kâr marjı %19,9; Kore gıda şirketleri genelde %3-7 aralığında.",
+  "Marjın kaynakları: yurt dışında daha yüksek fiyat, kur farkı kazancı ve limana yakın otomatik fabrika.",
+  "Tüm ihracatın Kore'de üretilmesi ABD tarifelerine karşı Samyang'ı rakiplerinden daha savunmasız bırakıyor."
+ ],
+ "numbers": [
+  {
+   "label": "Saniyede satılan paket",
+   "value": 63,
+   "unit": "paket/sn",
+   "context": "Videonun girişindeki satış hızı iddiası"
   },
-  "diagram": {
-    "type": "flow",
-    "title": "Viral üründen yüksek marja: Samyang'ın iş modeli",
-    "steps": [
-      {"label": "Aşırı acı ürün", "detail": "Rakiplerin risk almayacağı kadar acı bir erişte tasarlandı."},
-      {"label": "Kullanıcı tepki videoları", "detail": "Tüketiciler ürünü yerken kendilerini çekerek ücretsiz pazarlama yaptı."},
-      {"label": "İhracat patlaması", "detail": "Satışların büyük kısmı yurt dışına kaydı."},
-      {"label": "Yurt dışında yüksek fiyat", "detail": "Aynı paket yurt dışında yaklaşık iki katına satılıyor."},
-      {"label": "Won maliyet, dolar gelir", "detail": "Zayıf won ile üretip dolarla tahsil etmek kur kazancı sağlıyor."},
-      {"label": "Limana yakın otomatik fabrika", "detail": "Nakliye ve birim maliyet düşerek marjı büyütüyor."}
-    ]
+  {
+   "label": "Yıllık satış",
+   "value": 2,
+   "unit": "milyar (paket olduğu varsayılıyor)",
+   "context": "100'den fazla ülkede yıllık satış; birim videoda belirsiz"
   },
-  "business_ideas": [
-    {
-      "name": "İçerik üreticileri için tasarlanmış aşırı acı Türk atıştırmalığı",
-      "insight": "Buldak'ın yayılması, tüketicide sahte olamayacak görünür bir tepki yaratmasından ve bu tepkinin içerik haline gelmesinden kaynaklandı.",
-      "problem": "Türk atıştırmalık markaları yurt dışında reklam bütçesi olmadan görünürlük kazanamıyor.",
-      "solution": "İsot ve Maraş biberi gibi yerel acı biberlerle kademeli acılık seviyelerine sahip, ambalajı kameraya uygun bir cips veya kuruyemiş serisi; yabancı yemek YouTuber'larına ürün gönderimiyle tohumlama.",
-      "target": "Yurt dışındaki genç tüketiciler ve yemek içerik üreticileri; Türk market zincirleri",
-      "revenue_model": "Toptan ve çevrimiçi ihracat satışı",
-      "first_step": "Bir fason üreticiyle 3 acılık seviyesinde prototip yapıp 20 yabancı yemek içerik üreticisine gönderip tepki videosu çekme oranını ölçmek",
-      "capital": "Orta",
-      "difficulty": 3,
-      "turkey_angle": "Türkiye'nin özgün acı biber çeşitleri ve gıda fason üretim kapasitesi var.",
-      "risks": "Gıda güvenliği ve kapsaisin limitleri (videoda Danimarka'nın 2024 yasağı örneği); çocukların tüketimiyle ilgili etiket gereklilikleri; viral olmanın şansa bağlılığı."
-    },
-    {
-      "name": "Türk gıda ihracatçıları için yurt dışı raf fiyatı istihbaratı",
-      "insight": "Samyang'da Kore bir test mutfağı, asıl kâr ürünün yurt dışında iki kat fiyatla satılmasından geliyor.",
-      "problem": "Türk gıda ihracatçıları ürünlerinin hedef ülkelerde perakende rafında kaça satıldığını ve distribütörlerin ne kadar marj aldığını bilmiyor.",
-      "solution": "Almanya, Hollanda, ABD ve Körfez'deki büyük market zincirlerinin çevrimiçi fiyatlarını izleyip ihracat fiyatıyla raf fiyatı arasındaki farkı ürün bazında gösteren rapor ve fiyatlandırma önerisi.",
-      "target": "Makarna, bisküvi, çikolata ve atıştırmalık ihraç eden Türk gıda üreticileri",
-      "revenue_model": "Ülke ve ürün sayısına göre aylık abonelik",
-      "first_step": "5 Türk markasının 3 ülkedeki raf fiyatlarını elle derleyip ihracat fiyatlarıyla karşılaştıran örnek rapor sunmak",
-      "capital": "Düşük",
-      "difficulty": 2,
-      "turkey_angle": "Türkiye büyük bir makarna ve atıştırmalık ihracatçısı; çoğu üretici fiyatı distribütörün belirlemesine bırakıyor.",
-      "risks": "Market sitelerinin veri kazımaya kısıtlaması; distribütör sözleşmelerinin fiyat değişikliğine izin vermemesi."
-    },
-    {
-      "name": "ABD'ye ihracat için gümrük vergisi senaryo ve varış maliyeti hesaplayıcı",
-      "insight": "Tüm ihracatını Kore'de üreten Samyang, ABD'de üretim yapan rakiplerinin aksine tarifenin tamamını üstlendi ve zam yapmak zorunda kaldı.",
-      "problem": "Türk ihracatçılar ABD tarifelerindeki değişikliklerin raf fiyatına ve marjlarına etkisini önceden hesaplayamıyor.",
-      "solution": "HTS kodu, menşe, navlun ve distribütör marjını alarak farklı tarife senaryolarında ABD raf fiyatını ve marjı gösteren, yerel üretim/fason seçeneklerinin başabaş noktasını hesaplayan araç.",
-      "target": "ABD'ye gıda ve tüketim ürünü ihraç eden Türk KOBİ'ler",
-      "revenue_model": "Abonelik ve gümrük müşavirleriyle ortak paket",
-      "first_step": "ABD'ye ihracat yapan 10 firmayla görüşüp son tarife artışlarında marjlarının nasıl etkilendiğini toplamak",
-      "capital": "Düşük",
-      "difficulty": 3,
-      "turkey_angle": "Türk ihracatçılar ABD tarifelerine doğrudan maruz; araç Türkiye'den yürütülebilir.",
-      "risks": "Tarife kararlarının hızla değişmesi; yanlış sınıflandırmada sorumluluk; büyük gümrük yazılımlarıyla rekabet."
-    }
-  ],
-  "skeptic_notes": [
-    "Kur kazancı yaklaşık 250 milyon $ olarak veriliyor; bu, videoda verilen yıllık 250 milyon $ kârla aynı ve marja yalnızca ~7 puan katkı iddiasıyla çelişiyor; altyazı veya anlatım hatası olabilir.",
-    "Fiyat artışı %9 deniyor, ama 6,88 $'dan 7,84 $'a çıkış yaklaşık %14'e denk geliyor.",
-    "'Yılda 2 milyar' ifadesinin birimi belirtilmiyor (paket mi, dolar mı); saniyede 63 paket hesabı paketle uyumlu.",
-    "Önceki mahkûmiyette 'taking $3.6' ifadesinde birim eksik (muhtemelen milyon $).",
-    "Nongshim ve Samyang karşılaştırmasının hangi yıla ait olduğu net değil.",
-    "Danimarka'nın ürünü 'zehir' diyerek yasakladığı ifadesi abartılı bir anlatım olabilir; kapsamı (hangi çeşitler, geri çağırma mı yasak mı) doğrulanmalı.",
-    "Videonun sunucusu farklı (Bea) ve 'Asya'da 20 yıl' diyor; ana kanal anlatıcısından ayrı.",
-    "Videonun sonunda Statrys'in çok para birimli iş hesabı tanıtılıyor (reklam içeriği)."
+  {
+   "label": "Satış yapılan ülke",
+   "value": 100,
+   "unit": "ülke (üzeri)",
+   "context": "Küresel dağıtım"
+  },
+  {
+   "label": "Acılık derecesi",
+   "value": 4404,
+   "unit": "Scoville",
+   "context": "Orijinal Buldak'ın acılık ölçüsü"
+  },
+  {
+   "label": "İhracat payı (2016)",
+   "value": 26,
+   "unit": "%",
+   "context": "Samyang gelirinde ihracatın payı"
+  },
+  {
+   "label": "İhracat payı (2024)",
+   "value": 77,
+   "unit": "%",
+   "context": "Samyang gelirinde ihracatın payı"
+  },
+  {
+   "label": "İhracat payı (bu yılın ilk yarısı)",
+   "value": 88,
+   "unit": "%",
+   "context": "Erişte ve atıştırmalık satışlarında ihracatın payı"
+  },
+  {
+   "label": "Tek günlük hisse artışı (Mayıs 2024)",
+   "value": 30,
+   "unit": "%",
+   "context": "Kore borsasının günlük üst limiti"
+  },
+  {
+   "label": "Faaliyet kârı (2024 1. çeyrek)",
+   "value": 80,
+   "unit": "milyar won",
+   "context": "Üç katına çıktı"
+  },
+  {
+   "label": "Samyang faaliyet kâr marjı",
+   "value": 19.9,
+   "unit": "%",
+   "context": "Gıda şirketi için olağan dışı"
+  },
+  {
+   "label": "Kore gıda grupları marjı (üst sınır)",
+   "value": 7,
+   "unit": "%",
+   "context": "Büyük Kore gıda gruplarının %3-7 aralığı"
+  },
+  {
+   "label": "Nongshim satışları",
+   "value": 2.5,
+   "unit": "milyar $",
+   "context": "Karşılaştırma yılı videoda net değil"
+  },
+  {
+   "label": "Nongshim kârı",
+   "value": 118,
+   "unit": "milyon $",
+   "context": "Aynı yıl"
+  },
+  {
+   "label": "Samyang kârı",
+   "value": 250,
+   "unit": "milyon $",
+   "context": "Nongshim'in yarısı kadar satışla"
+  },
+  {
+   "label": "Kore'de paket fiyatı",
+   "value": 0.75,
+   "unit": "$",
+   "context": "Yaklaşık 1.000-1.100 won"
+  },
+  {
+   "label": "ABD Walmart paket fiyatı",
+   "value": 1.5,
+   "unit": "$",
+   "context": "Aynı ürün"
+  },
+  {
+   "label": "Fransa paket fiyatı",
+   "value": 1.7,
+   "unit": "€",
+   "context": "Aynı ürün"
+  },
+  {
+   "label": "İhracat kârlılığı katsayısı",
+   "value": 2.8,
+   "unit": "kat",
+   "context": "İhracat satışlarının iç pazara göre kârlılığı"
+  },
+  {
+   "label": "İhracat gelirinin dolar payı",
+   "value": 80,
+   "unit": "%",
+   "context": "Yaklaşık"
+  },
+  {
+   "label": "Won/dolar kuru (2024 sonu)",
+   "value": 1490,
+   "unit": "won/$",
+   "context": "Wonun zayıfladığı seviye"
+  },
+  {
+   "label": "Kur kazancı",
+   "value": 250,
+   "unit": "milyon $",
+   "context": "Yaklaşık; marja yaklaşık 7 puan katkı"
+  },
+  {
+   "label": "İç nakliye maliyeti düşüşü",
+   "value": -63,
+   "unit": "%",
+   "context": "Miryang fabrikası sayesinde"
+  },
+  {
+   "label": "Otomasyon oranı",
+   "value": 90,
+   "unit": "% (üzeri)",
+   "context": "Miryang fabrikasında"
+  },
+  {
+   "label": "Kapasite kullanımı",
+   "value": 95,
+   "unit": "% (üzeri)",
+   "context": "İhracat hatları"
+  },
+  {
+   "label": "Birim üretim maliyeti düşüşü",
+   "value": -18,
+   "unit": "%",
+   "context": "Yüksek kapasite kullanımı sayesinde"
+  },
+  {
+   "label": "ABD gümrük vergisi (Ağustos 2025)",
+   "value": 15,
+   "unit": "%",
+   "context": "Nisan 2025'te %10 olarak başladı"
+  },
+  {
+   "label": "Fiyat artışı",
+   "value": 9,
+   "unit": "%",
+   "context": "3 yıldaki ilk zam"
+  },
+  {
+   "label": "Walmart beşli paket (önce)",
+   "value": 6.88,
+   "unit": "$",
+   "context": "Zam öncesi"
+  },
+  {
+   "label": "Walmart beşli paket (sonra)",
+   "value": 7.84,
+   "unit": "$",
+   "context": "Zam sonrası"
+  },
+  {
+   "label": "Hisse zirvesi (Eylül 2025)",
+   "value": 1665000,
+   "unit": "won",
+   "context": "Bir yıl sonra yaklaşık dörtte bir aşağıda"
+  },
+  {
+   "label": "Sahte faturalar",
+   "value": 39,
+   "unit": "milyon $",
+   "context": "Yöneticinin iki paravan şirketi üzerinden"
+  },
+  {
+   "label": "Para cezası",
+   "value": 14,
+   "unit": "milyon $",
+   "context": "10 Eylül 2026 kesin kararı; 3 yıl ertelenmiş hapis"
+  },
+  {
+   "label": "2. çeyrek geliri",
+   "value": 545,
+   "unit": "milyon $",
+   "context": "%39 artış; faaliyet kârı %47 arttı"
+  },
+  {
+   "label": "Avrupa büyümesi",
+   "value": 61,
+   "unit": "%",
+   "context": "Almanya ve Fransa öncülüğünde"
+  },
+  {
+   "label": "ABD satış büyümesi",
+   "value": 54,
+   "unit": "%",
+   "context": "2. çeyrek"
+  }
+ ],
+ "chart": {
+  "type": "line",
+  "title": "Samyang'da ihracatın payı",
+  "unit": "%",
+  "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. 2016 ve 2024 toplam gelirde, 2026 ilk yarı yalnızca erişte ve atıştırmalık satışlarındaki pay.",
+  "data": [
+   {
+    "label": "2016",
+    "value": 26
+   },
+   {
+    "label": "2024",
+    "value": 77
+   },
+   {
+    "label": "2026 ilk yarı",
+    "value": 88
+   }
   ]
+ },
+ "diagram": {
+  "type": "flow",
+  "title": "Viral üründen yüksek marja: Samyang'ın iş modeli",
+  "steps": [
+   {
+    "label": "Aşırı acı ürün",
+    "detail": "Rakiplerin risk almayacağı kadar acı bir erişte tasarlandı."
+   },
+   {
+    "label": "Kullanıcı tepki videoları",
+    "detail": "Tüketiciler ürünü yerken kendilerini çekerek ücretsiz pazarlama yaptı."
+   },
+   {
+    "label": "İhracat patlaması",
+    "detail": "Satışların büyük kısmı yurt dışına kaydı."
+   },
+   {
+    "label": "Yurt dışında yüksek fiyat",
+    "detail": "Aynı paket yurt dışında yaklaşık iki katına satılıyor."
+   },
+   {
+    "label": "Won maliyet, dolar gelir",
+    "detail": "Zayıf won ile üretip dolarla tahsil etmek kur kazancı sağlıyor."
+   },
+   {
+    "label": "Limana yakın otomatik fabrika",
+    "detail": "Nakliye ve birim maliyet düşerek marjı büyütüyor."
+   }
+  ]
+ },
+ "business_ideas": [
+  {
+   "name": "İçerik üreticileri için tasarlanmış aşırı acı Türk atıştırmalığı",
+   "insight": "Buldak'ın yayılması, tüketicide sahte olamayacak görünür bir tepki yaratmasından ve bu tepkinin içerik haline gelmesinden kaynaklandı.",
+   "problem": "Türk atıştırmalık markaları yurt dışında reklam bütçesi olmadan görünürlük kazanamıyor.",
+   "solution": "İsot ve Maraş biberi gibi yerel acı biberlerle kademeli acılık seviyelerine sahip, ambalajı kameraya uygun bir cips veya kuruyemiş serisi; yabancı yemek YouTuber'larına ürün gönderimiyle tohumlama.",
+   "target": "Yurt dışındaki genç tüketiciler ve yemek içerik üreticileri; Türk market zincirleri",
+   "revenue_model": "Toptan ve çevrimiçi ihracat satışı",
+   "first_step": "Bir fason üreticiyle 3 acılık seviyesinde prototip yapıp 20 yabancı yemek içerik üreticisine gönderip tepki videosu çekme oranını ölçmek",
+   "capital": "Orta",
+   "difficulty": 3,
+   "turkey_angle": "Türkiye'nin özgün acı biber çeşitleri ve gıda fason üretim kapasitesi var.",
+   "risks": "Gıda güvenliği ve kapsaisin limitleri (videoda Danimarka'nın 2024 yasağı örneği); çocukların tüketimiyle ilgili etiket gereklilikleri; viral olmanın şansa bağlılığı.",
+   "originality": 3,
+   "problem_solving": 2,
+   "score_note": "Buldak'ın yerelleştirilmiş kopyası; gerçek bir tüketici sorunu çözmüyor.",
+   "similar": []
+  },
+  {
+   "name": "Türk gıda ihracatçıları için yurt dışı raf fiyatı istihbaratı",
+   "insight": "Samyang'da Kore bir test mutfağı, asıl kâr ürünün yurt dışında iki kat fiyatla satılmasından geliyor.",
+   "problem": "Türk gıda ihracatçıları ürünlerinin hedef ülkelerde perakende rafında kaça satıldığını ve distribütörlerin ne kadar marj aldığını bilmiyor.",
+   "solution": "Almanya, Hollanda, ABD ve Körfez'deki büyük market zincirlerinin çevrimiçi fiyatlarını izleyip ihracat fiyatıyla raf fiyatı arasındaki farkı ürün bazında gösteren rapor ve fiyatlandırma önerisi.",
+   "target": "Makarna, bisküvi, çikolata ve atıştırmalık ihraç eden Türk gıda üreticileri",
+   "revenue_model": "Ülke ve ürün sayısına göre aylık abonelik",
+   "first_step": "5 Türk markasının 3 ülkedeki raf fiyatlarını elle derleyip ihracat fiyatlarıyla karşılaştıran örnek rapor sunmak",
+   "capital": "Düşük",
+   "difficulty": 2,
+   "turkey_angle": "Türkiye büyük bir makarna ve atıştırmalık ihracatçısı; çoğu üretici fiyatı distribütörün belirlemesine bırakıyor.",
+   "risks": "Market sitelerinin veri kazımaya kısıtlaması; distribütör sözleşmelerinin fiyat değişikliğine izin vermemesi.",
+   "originality": 3,
+   "problem_solving": 4,
+   "score_note": "Fiyat izleme kategorisi var; ihracatçıya özgü 'raf fiyatı-marj' açısı değerli.",
+   "similar": []
+  },
+  {
+   "name": "ABD'ye ihracat için gümrük vergisi senaryo ve varış maliyeti hesaplayıcı",
+   "insight": "Tüm ihracatını Kore'de üreten Samyang, ABD'de üretim yapan rakiplerinin aksine tarifenin tamamını üstlendi ve zam yapmak zorunda kaldı.",
+   "problem": "Türk ihracatçılar ABD tarifelerindeki değişikliklerin raf fiyatına ve marjlarına etkisini önceden hesaplayamıyor.",
+   "solution": "HTS kodu, menşe, navlun ve distribütör marjını alarak farklı tarife senaryolarında ABD raf fiyatını ve marjı gösteren, yerel üretim/fason seçeneklerinin başabaş noktasını hesaplayan araç.",
+   "target": "ABD'ye gıda ve tüketim ürünü ihraç eden Türk KOBİ'ler",
+   "revenue_model": "Abonelik ve gümrük müşavirleriyle ortak paket",
+   "first_step": "ABD'ye ihracat yapan 10 firmayla görüşüp son tarife artışlarında marjlarının nasıl etkilendiğini toplamak",
+   "capital": "Düşük",
+   "difficulty": 3,
+   "turkey_angle": "Türk ihracatçılar ABD tarifelerine doğrudan maruz; araç Türkiye'den yürütülebilir.",
+   "risks": "Tarife kararlarının hızla değişmesi; yanlış sınıflandırmada sorumluluk; büyük gümrük yazılımlarıyla rekabet.",
+   "originality": 3,
+   "problem_solving": 4,
+   "score_note": "Varış maliyeti araçları var; tarife senaryosu ve başabaş hesabı güncel bir ihtiyaç.",
+   "similar": []
+  }
+ ],
+ "skeptic_notes": [
+  "Kur kazancı yaklaşık 250 milyon $ olarak veriliyor; bu, videoda verilen yıllık 250 milyon $ kârla aynı ve marja yalnızca ~7 puan katkı iddiasıyla çelişiyor; altyazı veya anlatım hatası olabilir.",
+  "Fiyat artışı %9 deniyor, ama 6,88 $'dan 7,84 $'a çıkış yaklaşık %14'e denk geliyor.",
+  "'Yılda 2 milyar' ifadesinin birimi belirtilmiyor (paket mi, dolar mı); saniyede 63 paket hesabı paketle uyumlu.",
+  "Önceki mahkûmiyette 'taking $3.6' ifadesinde birim eksik (muhtemelen milyon $).",
+  "Nongshim ve Samyang karşılaştırmasının hangi yıla ait olduğu net değil.",
+  "Danimarka'nın ürünü 'zehir' diyerek yasakladığı ifadesi abartılı bir anlatım olabilir; kapsamı (hangi çeşitler, geri çağırma mı yasak mı) doğrulanmalı.",
+  "Videonun sunucusu farklı (Bea) ve 'Asya'da 20 yıl' diyor; ana kanal anlatıcısından ayrı.",
+  "Videonun sonunda Statrys'in çok para birimli iş hesabı tanıtılıyor (reklam içeriği)."
+ ]
 }

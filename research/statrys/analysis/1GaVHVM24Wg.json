@@ -1,115 +1,123 @@
 {
-  "id": "1GaVHVM24Wg",
-  "title_tr": "Singapur'da şirket kurmanın 9 temel şartı - 3. bölüm",
-  "category": "Şirket kurma & vergi (Statrys hizmet videoları)",
-  "region": [
-    "Singapur"
-  ],
-  "summary_tr": "Serinin son bölümü kayıtlı adres, mali yıl sonu ve kuruluş belgelerini anlatıyor. Şirketin Singapur'da posta kutusu olmayan, iş günlerinde belirli saatlerde erişilebilen fiziki bir adresi olması gerekiyor; hizmet sağlayıcılar bunu genellikle paket içinde veriyor. Mali yıl sonu seçiminin yıllık beyan, genel kurul ve vergi takvimini belirlediği, sonradan değiştirmenin ACRA onayı gerektirdiği belirtiliyor. Belgeler BizFile üzerinden sunulup kayıt ücreti ödendikten sonra şirket UEN numarasını alıyor; atanan yöneticilerin belirli bir süre içinde atamayı onaylaması gerekiyor. Video, süreci tek başına yapmaya çalışmanın en büyük hata olduğunu söyleyerek Statrys'in paket hizmetlerini tanıtıyor.",
-  "key_points": [
-    "Kayıtlı adres Singapur'da fiziki olmalı, posta kutusu kabul edilmiyor ve iş günlerinde halka açık olmalı.",
-    "Hizmet sağlayıcılar resmi postayı alıp çevrim içi platforma yüklüyor; takip sekreterin sorumluluğunda.",
-    "Mali yıl sonu yıllık beyan, genel kurul ve kurumlar vergisi takvimini belirliyor; sonradan değişiklik ACRA onayı gerektirebiliyor.",
-    "Kuruluş için şirket ana sözleşmesi, görev kabul formları ve tüm hissedar, direktör ve nihai faydalanıcıların kimlik bilgileri gerekiyor.",
-    "Başvuru BizFile üzerinden yapılıyor; onay sonrası şirkete UEN numarası veriliyor.",
-    "Atanan tüm yöneticiler belirli bir süre içinde atamalarını onaylamazsa başvuru düşüyor."
-  ],
-  "numbers": [
-    {
-      "label": "Adresin asgari erişilebilirlik süresi",
-      "value": 3,
-      "unit": "saat/iş günü",
-      "context": "Kayıtlı adresin iş günlerinde halka açık olması gereken asgari süre."
-    },
-    {
-      "label": "Onay gerektiren mali yıl uzunluğu",
-      "value": 18,
-      "unit": "ay",
-      "context": "Yeni mali yıl bu süreyi aşarsa mali yıl sonu değişikliği ACRA onayı gerektiriyor."
-    },
-    {
-      "label": "Kayıt ücreti",
-      "value": 300,
-      "unit": "SGD",
-      "context": "BizFile üzerinden ödenen şirket kayıt ücreti."
-    },
-    {
-      "label": "İsim başvuru ücreti",
-      "value": 15,
-      "unit": "SGD",
-      "context": "Kayıt ücretine ek olarak ödenen isim başvuru ücreti."
-    },
-    {
-      "label": "Yöneticilerin atamayı onaylama süresi",
-      "value": 60,
-      "unit": "gün",
-      "context": "Bu süre içinde onay verilmezse başvuru düşüyor."
-    }
-  ],
-  "chart": null,
-  "diagram": {
-    "type": "flow",
-    "title": "Singapur kuruluşunun son aşamaları",
-    "steps": [
-      {
-        "label": "Kayıtlı adres",
-        "detail": "Fiziki ve erişilebilir bir Singapur adresi, çoğunlukla hizmet sağlayıcıdan sağlanıyor."
-      },
-      {
-        "label": "Mali yıl sonu seçimi",
-        "detail": "Raporlama ve vergi takvimini belirleyen tarih nakit akışı ve iş döngüsüne göre seçiliyor."
-      },
-      {
-        "label": "Belgelerin toplanması",
-        "detail": "Ana sözleşme, görev kabul formları ve tüm ilgili kişilerin kimlik bilgileri hazırlanıyor."
-      },
-      {
-        "label": "BizFile başvurusu",
-        "detail": "Başvuru sunuluyor ve kayıt ücreti ödeniyor."
-      },
-      {
-        "label": "Yönetici onayları",
-        "detail": "Atanan yöneticiler süresi içinde sisteme girip atamayı onaylıyor."
-      },
-      {
-        "label": "UEN ve iş profili",
-        "detail": "Onayla birlikte şirket benzersiz kimlik numarasını ve resmi iş profilini alıyor."
-      }
-    ]
+ "id": "1GaVHVM24Wg",
+ "title_tr": "Singapur'da şirket kurmanın 9 temel şartı - 3. bölüm",
+ "category": "Şirket kurma & vergi (Statrys hizmet videoları)",
+ "region": [
+  "Singapur"
+ ],
+ "summary_tr": "Serinin son bölümü kayıtlı adres, mali yıl sonu ve kuruluş belgelerini anlatıyor. Şirketin Singapur'da posta kutusu olmayan, iş günlerinde belirli saatlerde erişilebilen fiziki bir adresi olması gerekiyor; hizmet sağlayıcılar bunu genellikle paket içinde veriyor. Mali yıl sonu seçiminin yıllık beyan, genel kurul ve vergi takvimini belirlediği, sonradan değiştirmenin ACRA onayı gerektirdiği belirtiliyor. Belgeler BizFile üzerinden sunulup kayıt ücreti ödendikten sonra şirket UEN numarasını alıyor; atanan yöneticilerin belirli bir süre içinde atamayı onaylaması gerekiyor. Video, süreci tek başına yapmaya çalışmanın en büyük hata olduğunu söyleyerek Statrys'in paket hizmetlerini tanıtıyor.",
+ "key_points": [
+  "Kayıtlı adres Singapur'da fiziki olmalı, posta kutusu kabul edilmiyor ve iş günlerinde halka açık olmalı.",
+  "Hizmet sağlayıcılar resmi postayı alıp çevrim içi platforma yüklüyor; takip sekreterin sorumluluğunda.",
+  "Mali yıl sonu yıllık beyan, genel kurul ve kurumlar vergisi takvimini belirliyor; sonradan değişiklik ACRA onayı gerektirebiliyor.",
+  "Kuruluş için şirket ana sözleşmesi, görev kabul formları ve tüm hissedar, direktör ve nihai faydalanıcıların kimlik bilgileri gerekiyor.",
+  "Başvuru BizFile üzerinden yapılıyor; onay sonrası şirkete UEN numarası veriliyor.",
+  "Atanan tüm yöneticiler belirli bir süre içinde atamalarını onaylamazsa başvuru düşüyor."
+ ],
+ "numbers": [
+  {
+   "label": "Adresin asgari erişilebilirlik süresi",
+   "value": 3,
+   "unit": "saat/iş günü",
+   "context": "Kayıtlı adresin iş günlerinde halka açık olması gereken asgari süre."
   },
-  "business_ideas": [
-    {
-      "name": "Uzaktan şirketler için resmi yazışma triyaj servisi",
-      "insight": "Video, kayıtlı adrese gelen resmi postanın taranıp platforma yüklendiğini ancak önemli yazışmaları takip etmenin şirket sekreterine kaldığını söylüyor.",
-      "problem": "Yurt dışından yönetilen şirketlerin sahipleri taranmış resmi yazıları geç fark ediyor, İngilizce hukuki dili anlamıyor ve son tarihleri kaçırıyor.",
-      "solution": "Taranmış resmi yazıları sınıflandıran, son tarihi çıkaran, Türkçe özetleyen ve ilgili kişiye hatırlatma gönderen bir posta triyaj katmanı; sekreterlik firmalarına entegre.",
-      "target": "Hong Kong/Singapur şirketi olan Türk ve diğer yabancı sahipler, sekreterlik firmaları",
-      "revenue_model": "Şirket başına aylık abonelik veya sekreterlik firmalarına lisans",
-      "first_step": "Yurt dışı şirketi olan 10 Türk girişimciden geçen yıl kaçırdıkları/geç fark ettikleri resmi yazıları sorup 3 örnek belge üzerinde manuel özet hizmetini denemek.",
-      "capital": "Düşük",
-      "difficulty": 3,
-      "turkey_angle": "Türkçe özet ve Türkiye saat diliminde destek doğrudan değer; uzaktan yürütülebilir.",
-      "risks": "Hukuki yorum yapılmamalı, yalnızca özet ve hatırlatma; gizli belgelerin işlenmesinde veri güvenliği ve KVKK/PDPA uyumu gerekli."
-    },
-    {
-      "name": "Kuruluş belge toplama ve yönetici onay takip portalı",
-      "insight": "Video, çok sayıda kişiden belge toplanması gerektiğini ve tüm yöneticilerin süresi içinde onay vermemesi halinde başvurunun düştüğünü vurguluyor.",
-      "problem": "Çok ortaklı veya kurumsal hissedarlı yapılarda belge ve imza toplamak e-posta trafiğiyle haftalar sürüyor, başvurular gecikiyor veya düşüyor.",
-      "solution": "Her hissedar, direktör ve nihai faydalanıcı için kişiye özel belge listesi, durum paneli, otomatik hatırlatma ve son tarih uyarısı sunan, hizmet sağlayıcılara beyaz etiketlenen portal.",
-      "target": "Singapur/Hong Kong kurumsal hizmet sağlayıcıları ve çok ortaklı yabancı girişimler",
-      "revenue_model": "Kuruluş dosyası başına ücret veya sağlayıcıya aylık SaaS",
-      "first_step": "3 kurumsal hizmet sağlayıcıyla kuruluş başına ortalama yazışma sayısını ve gecikme nedenlerini konuşup basit bir no-code prototip sunmak.",
-      "capital": "Orta",
-      "difficulty": 3,
-      "turkey_angle": "Yazılım geliştirme Türkiye'den yapılabilir; aynı altyapı Türkiye'deki yabancı sermayeli şirket kuruluşlarına da uyarlanabilir.",
-      "risks": "Kimlik belgeleri hassas veri; güvenlik ihlali ciddi itibar ve hukuki risk taşır; sağlayıcılar kendi sistemlerini tercih edebilir."
-    }
-  ],
-  "skeptic_notes": [
-    "Bu video Statrys'in kendi hizmetlerini tanıtan bir reklam/tanıtım içeriğidir; anlatım tarafsız değildir. 'En büyük hata tek başına yapmaya çalışmak' mesajı satış amaçlı bir çerçeveleme.",
-    "Otomatik altyazı şirket adını çoğu yerde 'Status' veya 'statris' olarak yazmış; doğrusu Statrys.",
-    "Altyazıda isim ücreti için '$15' yazıyor; bağlamdan 15 Singapur doları olduğu anlaşılıyor.",
-    "Ücret ve süre kuralları videonun tarihine ait; ACRA'nın güncel tarifesi doğrulanmalı.",
-    "Grafik için aynı birimde en az üç karşılaştırılabilir değer olmadığından chart null bırakıldı."
+  {
+   "label": "Onay gerektiren mali yıl uzunluğu",
+   "value": 18,
+   "unit": "ay",
+   "context": "Yeni mali yıl bu süreyi aşarsa mali yıl sonu değişikliği ACRA onayı gerektiriyor."
+  },
+  {
+   "label": "Kayıt ücreti",
+   "value": 300,
+   "unit": "SGD",
+   "context": "BizFile üzerinden ödenen şirket kayıt ücreti."
+  },
+  {
+   "label": "İsim başvuru ücreti",
+   "value": 15,
+   "unit": "SGD",
+   "context": "Kayıt ücretine ek olarak ödenen isim başvuru ücreti."
+  },
+  {
+   "label": "Yöneticilerin atamayı onaylama süresi",
+   "value": 60,
+   "unit": "gün",
+   "context": "Bu süre içinde onay verilmezse başvuru düşüyor."
+  }
+ ],
+ "chart": null,
+ "diagram": {
+  "type": "flow",
+  "title": "Singapur kuruluşunun son aşamaları",
+  "steps": [
+   {
+    "label": "Kayıtlı adres",
+    "detail": "Fiziki ve erişilebilir bir Singapur adresi, çoğunlukla hizmet sağlayıcıdan sağlanıyor."
+   },
+   {
+    "label": "Mali yıl sonu seçimi",
+    "detail": "Raporlama ve vergi takvimini belirleyen tarih nakit akışı ve iş döngüsüne göre seçiliyor."
+   },
+   {
+    "label": "Belgelerin toplanması",
+    "detail": "Ana sözleşme, görev kabul formları ve tüm ilgili kişilerin kimlik bilgileri hazırlanıyor."
+   },
+   {
+    "label": "BizFile başvurusu",
+    "detail": "Başvuru sunuluyor ve kayıt ücreti ödeniyor."
+   },
+   {
+    "label": "Yönetici onayları",
+    "detail": "Atanan yöneticiler süresi içinde sisteme girip atamayı onaylıyor."
+   },
+   {
+    "label": "UEN ve iş profili",
+    "detail": "Onayla birlikte şirket benzersiz kimlik numarasını ve resmi iş profilini alıyor."
+   }
   ]
+ },
+ "business_ideas": [
+  {
+   "name": "Uzaktan şirketler için resmi yazışma triyaj servisi",
+   "insight": "Video, kayıtlı adrese gelen resmi postanın taranıp platforma yüklendiğini ancak önemli yazışmaları takip etmenin şirket sekreterine kaldığını söylüyor.",
+   "problem": "Yurt dışından yönetilen şirketlerin sahipleri taranmış resmi yazıları geç fark ediyor, İngilizce hukuki dili anlamıyor ve son tarihleri kaçırıyor.",
+   "solution": "Taranmış resmi yazıları sınıflandıran, son tarihi çıkaran, Türkçe özetleyen ve ilgili kişiye hatırlatma gönderen bir posta triyaj katmanı; sekreterlik firmalarına entegre.",
+   "target": "Hong Kong/Singapur şirketi olan Türk ve diğer yabancı sahipler, sekreterlik firmaları",
+   "revenue_model": "Şirket başına aylık abonelik veya sekreterlik firmalarına lisans",
+   "first_step": "Yurt dışı şirketi olan 10 Türk girişimciden geçen yıl kaçırdıkları/geç fark ettikleri resmi yazıları sorup 3 örnek belge üzerinde manuel özet hizmetini denemek.",
+   "capital": "Düşük",
+   "difficulty": 3,
+   "turkey_angle": "Türkçe özet ve Türkiye saat diliminde destek doğrudan değer; uzaktan yürütülebilir.",
+   "risks": "Hukuki yorum yapılmamalı, yalnızca özet ve hatırlatma; gizli belgelerin işlenmesinde veri güvenliği ve KVKK/PDPA uyumu gerekli.",
+   "originality": 3,
+   "problem_solving": 3,
+   "score_note": "Sekreterlik firmalarına eklenti; dar.",
+   "similar": []
+  },
+  {
+   "name": "Kuruluş belge toplama ve yönetici onay takip portalı",
+   "insight": "Video, çok sayıda kişiden belge toplanması gerektiğini ve tüm yöneticilerin süresi içinde onay vermemesi halinde başvurunun düştüğünü vurguluyor.",
+   "problem": "Çok ortaklı veya kurumsal hissedarlı yapılarda belge ve imza toplamak e-posta trafiğiyle haftalar sürüyor, başvurular gecikiyor veya düşüyor.",
+   "solution": "Her hissedar, direktör ve nihai faydalanıcı için kişiye özel belge listesi, durum paneli, otomatik hatırlatma ve son tarih uyarısı sunan, hizmet sağlayıcılara beyaz etiketlenen portal.",
+   "target": "Singapur/Hong Kong kurumsal hizmet sağlayıcıları ve çok ortaklı yabancı girişimler",
+   "revenue_model": "Kuruluş dosyası başına ücret veya sağlayıcıya aylık SaaS",
+   "first_step": "3 kurumsal hizmet sağlayıcıyla kuruluş başına ortalama yazışma sayısını ve gecikme nedenlerini konuşup basit bir no-code prototip sunmak.",
+   "capital": "Orta",
+   "difficulty": 3,
+   "turkey_angle": "Yazılım geliştirme Türkiye'den yapılabilir; aynı altyapı Türkiye'deki yabancı sermayeli şirket kuruluşlarına da uyarlanabilir.",
+   "risks": "Kimlik belgeleri hassas veri; güvenlik ihlali ciddi itibar ve hukuki risk taşır; sağlayıcılar kendi sistemlerini tercih edebilir.",
+   "originality": 2,
+   "problem_solving": 3,
+   "score_note": "Müşteri kabul yazılımları var.",
+   "similar": []
+  }
+ ],
+ "skeptic_notes": [
+  "Bu video Statrys'in kendi hizmetlerini tanıtan bir reklam/tanıtım içeriğidir; anlatım tarafsız değildir. 'En büyük hata tek başına yapmaya çalışmak' mesajı satış amaçlı bir çerçeveleme.",
+  "Otomatik altyazı şirket adını çoğu yerde 'Status' veya 'statris' olarak yazmış; doğrusu Statrys.",
+  "Altyazıda isim ücreti için '$15' yazıyor; bağlamdan 15 Singapur doları olduğu anlaşılıyor.",
+  "Ücret ve süre kuralları videonun tarihine ait; ACRA'nın güncel tarifesi doğrulanmalı.",
+  "Grafik için aynı birimde en az üç karşılaştırılabilir değer olmadığından chart null bırakıldı."
+ ]
 }

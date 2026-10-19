@@ -1,124 +1,150 @@
 {
-  "id": "KRQsHuS8uCU",
-  "title_tr": "Osome ile Statrys muhasebe fiyatlandırma modellerinin karşılaştırması",
-  "category": "Şirket kurma & vergi (Statrys hizmet videoları)",
-  "region": [
-    "Hong Kong"
-  ],
-  "summary_tr": "Statrys'ten Bertrand, Hong Kong'daki KOBİ'lere muhasebe hizmeti veren Statrys ile rakibi Osome'u fiyatlandırma mantığı üzerinden karşılaştırıyor. Statrys aylık işlem sayısına, Osome ise yıllık cirosuna göre ücret alıyor; konuşmacı işlem bazlı modelin yapılan işi daha iyi yansıttığını savunuyor. Örnekte 1 milyon HKD ciro için Osome'un aylık 316 $ (yaklaşık 2.450 HKD) aldığı, Statrys'te aynı ücretle ayda 40 işleme kadar hizmet alınabildiği söyleniyor. Statrys offshore vergi talebi için 2.000 HKD sabit ücret açıklarken Osome sitesinde bu bilginin olmadığı iddia ediliyor. Konuşmacı, çok sayıda küçük tutarlı ödeme alan işletmeler için Osome'un daha ucuz olabileceğini kabul ediyor.",
-  "key_points": [
-    "İki şirketin hizmeti benzer (yıllık hesaplar ve vergi beyanı); temel fark fiyatlandırma mantığı.",
-    "Statrys banka ve kart ekstrelerindeki her satırı işlem sayarak aylık ücretini işlem hacmine göre ayarlıyor.",
-    "Osome cirosu yüksek ama işlem sayısı az olan veya kâr marjı düşük işletmelere, iş yükü artmadan daha fazla fatura çıkarıyor (konuşmacının iddiası).",
-    "Karşılaştırma yöntemi: beklenen ciroyla Osome ücretini bul, aynı tutarla Statrys'te kaç işlem yapılabileceğine bak, gerçekçi işlem sayınla kıyasla.",
-    "Hong Kong dışı faaliyetler için offshore vergi talebi vergi yükünü azaltabiliyor; Statrys bunu sabit ücretle sunuyor.",
-    "Binlerce küçük ödeme alan online işletmelerde ciro bazlı model daha ucuz olabilir."
-  ],
-  "numbers": [
-    {
-      "label": "Örnek yıllık ciro",
-      "value": 1000000,
-      "unit": "HKD",
-      "context": "Karşılaştırma örneğindeki işletmenin beklenen yıllık cirosu."
-    },
-    {
-      "label": "Osome aylık ücret (1 milyon HKD ciro)",
-      "value": 316,
-      "unit": "USD/ay",
-      "context": "Konuşmacının Osome sitesinden aktardığı aylık ücret."
-    },
-    {
-      "label": "Osome aylık ücret HKD karşılığı",
-      "value": 2450,
-      "unit": "HKD/ay",
-      "context": "316 $'ın yaklaşık HKD karşılığı olarak verildi."
-    },
-    {
-      "label": "Aynı ücrete Statrys işlem limiti",
-      "value": 40,
-      "unit": "işlem/ay",
-      "context": "Yaklaşık 2.450 HKD'lik aylık ücretle Statrys'te kapsanan işlem sayısı."
-    },
-    {
-      "label": "Statrys offshore vergi talebi ücreti",
-      "value": 2000,
-      "unit": "HKD",
-      "context": "Hong Kong şirketlerinin offshore vergi talebi için Statrys'in sabit ücreti."
-    }
-  ],
-  "chart": null,
-  "diagram": {
-    "type": "flow",
-    "title": "Videonun önerdiği fiyat karşılaştırma yöntemi",
-    "steps": [
-      {
-        "label": "Yıllık ciroyu tahmin et",
-        "detail": "Örnekte işletme yılda 1 milyon HKD ciro bekliyor."
-      },
-      {
-        "label": "Ciro bazlı ücreti bul",
-        "detail": "Osome'un sitesinde bu ciro için aylık ücret 316 $ (yaklaşık 2.450 HKD)."
-      },
-      {
-        "label": "İşlem karşılığını hesapla",
-        "detail": "Aynı aylık tutarla Statrys'te 40 işleme kadar hizmet alınıyor."
-      },
-      {
-        "label": "Gerçek işlem sayını say",
-        "detail": "Müşteri tahsilatı, tedarikçi, maaş ve abonelik ödemelerinin aylık adedini çıkar."
-      },
-      {
-        "label": "Modeli seç",
-        "detail": "İşlem sayın düşükse işlem bazlı, çok sayıda küçük tahsilat varsa ciro bazlı model avantajlı."
-      }
-    ]
+ "id": "KRQsHuS8uCU",
+ "title_tr": "Osome ile Statrys muhasebe fiyatlandırma modellerinin karşılaştırması",
+ "category": "Şirket kurma & vergi (Statrys hizmet videoları)",
+ "region": [
+  "Hong Kong"
+ ],
+ "summary_tr": "Statrys'ten Bertrand, Hong Kong'daki KOBİ'lere muhasebe hizmeti veren Statrys ile rakibi Osome'u fiyatlandırma mantığı üzerinden karşılaştırıyor. Statrys aylık işlem sayısına, Osome ise yıllık cirosuna göre ücret alıyor; konuşmacı işlem bazlı modelin yapılan işi daha iyi yansıttığını savunuyor. Örnekte 1 milyon HKD ciro için Osome'un aylık 316 $ (yaklaşık 2.450 HKD) aldığı, Statrys'te aynı ücretle ayda 40 işleme kadar hizmet alınabildiği söyleniyor. Statrys offshore vergi talebi için 2.000 HKD sabit ücret açıklarken Osome sitesinde bu bilginin olmadığı iddia ediliyor. Konuşmacı, çok sayıda küçük tutarlı ödeme alan işletmeler için Osome'un daha ucuz olabileceğini kabul ediyor.",
+ "key_points": [
+  "İki şirketin hizmeti benzer (yıllık hesaplar ve vergi beyanı); temel fark fiyatlandırma mantığı.",
+  "Statrys banka ve kart ekstrelerindeki her satırı işlem sayarak aylık ücretini işlem hacmine göre ayarlıyor.",
+  "Osome cirosu yüksek ama işlem sayısı az olan veya kâr marjı düşük işletmelere, iş yükü artmadan daha fazla fatura çıkarıyor (konuşmacının iddiası).",
+  "Karşılaştırma yöntemi: beklenen ciroyla Osome ücretini bul, aynı tutarla Statrys'te kaç işlem yapılabileceğine bak, gerçekçi işlem sayınla kıyasla.",
+  "Hong Kong dışı faaliyetler için offshore vergi talebi vergi yükünü azaltabiliyor; Statrys bunu sabit ücretle sunuyor.",
+  "Binlerce küçük ödeme alan online işletmelerde ciro bazlı model daha ucuz olabilir."
+ ],
+ "numbers": [
+  {
+   "label": "Örnek yıllık ciro",
+   "value": 1000000,
+   "unit": "HKD",
+   "context": "Karşılaştırma örneğindeki işletmenin beklenen yıllık cirosu."
   },
-  "business_ideas": [
-    {
-      "name": "Muhasebe hizmeti fiyat modeli karşılaştırma aracı",
-      "insight": "Video, aynı hizmetin ciro bazlı ve işlem bazlı fiyatlandığı ve müşterilerin bu yüzden karşılaştırma yapamadığı gözleminden yola çıkıyor.",
-      "problem": "Yurt dışında (Hong Kong, Singapur, BAE, Estonya vb.) şirket kuran girişimciler farklı fiyat mantıklarını kıyaslayamıyor ve gereğinden pahalı paket seçiyor.",
-      "solution": "Kullanıcının ciro, aylık işlem sayısı ve ülke bilgisini alıp sağlayıcıların yayınlanmış tarifelerine göre yıllık toplam maliyeti hesaplayan tarafsız karşılaştırma sitesi.",
-      "target": "Yurt dışında şirket kurmuş veya kuracak Türk girişimciler ve freelancer'lar",
-      "revenue_model": "Sağlayıcılardan yönlendirme komisyonu + premium detaylı rapor",
-      "first_step": "Hong Kong ve Singapur'daki 8 sağlayıcının tarifelerini toplayıp basit bir hesaplayıcı yayınlamak ve 50 kullanıcı girişi toplamak.",
-      "capital": "Düşük",
-      "difficulty": 2,
-      "turkey_angle": "Tamamen uzaktan yürütülebilir; Türkçe içerik Türk girişimciler arasında rekabetsiz bir niş.",
-      "risks": "Tarifelerin sık değişmesi ve güncelliğin korunması; komisyon alırken tarafsızlık algısının zedelenmesi."
-    },
-    {
-      "name": "Türk mali müşavirler için işlem hacmine dayalı teklif modülü",
-      "insight": "Konuşmacı, ücreti fiilen yapılan işe (işlem sayısına) bağlamanın daha adil olduğunu savunuyor.",
-      "problem": "Mali müşavirlik bürolarında ücret çoğunlukla sabit veya pazarlıkla belirleniyor; yoğun işlemli müşteriler kârsız, az işlemliler pahalı kalıyor.",
-      "solution": "Banka ekstresi ve e-fatura sayısını okuyup müşteri başına aylık iş yükünü ölçen, yasal asgari ücret tarifesinin altına düşmeden teklif öneren büro yazılımı modülü.",
-      "target": "Orta ölçekli mali müşavirlik büroları",
-      "revenue_model": "Büro başına aylık lisans",
-      "first_step": "10 büroyla müşteri başına iş yükü ile alınan ücreti karşılaştıran bir tablo çalışması yapıp kârsız müşteri oranını ölçmek.",
-      "capital": "Orta",
-      "difficulty": 3,
-      "turkey_angle": "Türkiye'de meslek mensupları için asgari ücret tarifesi uygulandığından model bu sınırlarla uyumlu kurgulanmalı.",
-      "risks": "Meslek kuralları ve tarifeyle çelişme riski; büroların fiyat değişikliğine direnci; müşteri verisinin gizliliği."
-    },
-    {
-      "name": "Hong Kong offshore kâr talebi için belge hazırlık hizmeti",
-      "insight": "Video, Hong Kong dışında iş yapan şirketlerin offshore vergi talebiyle vergi yükünü ciddi biçimde azaltabileceğini söylüyor.",
-      "problem": "Hong Kong şirketi olan Türk tüccarlar, faaliyetin Hong Kong dışında yürüdüğünü kanıtlayacak sözleşme, yazışma ve sevkiyat belgelerini düzenli tutmuyor.",
-      "solution": "Yıl boyunca sözleşmelerin nerede müzakere edildiği, sevkiyat ve fatura belgelerini toplayan, talep dosyasını yerel muhasebeci için hazır hale getiren dokümantasyon hizmeti.",
-      "target": "Hong Kong şirketi üzerinden ticaret yapan Türk ithalat/ihracat firmaları",
-      "revenue_model": "Yıllık dosya hazırlama ücreti",
-      "first_step": "Hong Kong şirketi olan 10 Türk firmayla görüşüp geçmiş taleplerde istenen ek belgeleri listelemek.",
-      "capital": "Düşük",
-      "difficulty": 3,
-      "turkey_angle": "Türkiye'den yürütülebilir, ama nihai başvuru Hong Kong'da yetkili muhasebeci/denetçi üzerinden yapılmalı. Türk vergi mukimleri için Türkiye'deki yükümlülükler ayrıca değerlendirilmeli.",
-      "risks": "Talebin vergi idaresince reddedilmesi veya incelemeye alınması; hizmet sahte belge üretimine asla dönüşmemeli, sadece gerçek faaliyeti belgelemeli; yasal sınırlar ve denetim gereklilikleri net anlatılmalı."
-    }
-  ],
-  "skeptic_notes": [
-    "Reklam ve rakip karşılaştırması: video Statrys çalışanı tarafından sunuluyor ve Statrys lehine taraflı; Osome'un fiyatları ve offshore talep bilgisinin yokluğu bağımsız olarak doğrulanmalı.",
-    "316 $/ay ve 40 işlem/ay rakamları yayın tarihindeki web sitelerine dayanıyor; tarifeler değişmiş olabilir. 316 $ ile 2.450 HKD arasında küçük bir kur yuvarlaması var.",
-    "'Çoğu durumda 1 milyon HKD ciro için ayda 40 işleme ihtiyacınız olmaz' iddiası işletme türüne çok bağlı ve veriyle desteklenmiyor.",
-    "Offshore vergi talebinin 'vergi yükünü ciddi azaltabileceği' söyleniyor, ancak taleplerin incelemeye tabi olduğu ve belge yükü anlatılmıyor.",
-    "Altyazıda Osome bazen 'Awesome', Statrys 'Status' olarak geçiyor."
+  {
+   "label": "Osome aylık ücret (1 milyon HKD ciro)",
+   "value": 316,
+   "unit": "USD/ay",
+   "context": "Konuşmacının Osome sitesinden aktardığı aylık ücret."
+  },
+  {
+   "label": "Osome aylık ücret HKD karşılığı",
+   "value": 2450,
+   "unit": "HKD/ay",
+   "context": "316 $'ın yaklaşık HKD karşılığı olarak verildi."
+  },
+  {
+   "label": "Aynı ücrete Statrys işlem limiti",
+   "value": 40,
+   "unit": "işlem/ay",
+   "context": "Yaklaşık 2.450 HKD'lik aylık ücretle Statrys'te kapsanan işlem sayısı."
+  },
+  {
+   "label": "Statrys offshore vergi talebi ücreti",
+   "value": 2000,
+   "unit": "HKD",
+   "context": "Hong Kong şirketlerinin offshore vergi talebi için Statrys'in sabit ücreti."
+  }
+ ],
+ "chart": null,
+ "diagram": {
+  "type": "flow",
+  "title": "Videonun önerdiği fiyat karşılaştırma yöntemi",
+  "steps": [
+   {
+    "label": "Yıllık ciroyu tahmin et",
+    "detail": "Örnekte işletme yılda 1 milyon HKD ciro bekliyor."
+   },
+   {
+    "label": "Ciro bazlı ücreti bul",
+    "detail": "Osome'un sitesinde bu ciro için aylık ücret 316 $ (yaklaşık 2.450 HKD)."
+   },
+   {
+    "label": "İşlem karşılığını hesapla",
+    "detail": "Aynı aylık tutarla Statrys'te 40 işleme kadar hizmet alınıyor."
+   },
+   {
+    "label": "Gerçek işlem sayını say",
+    "detail": "Müşteri tahsilatı, tedarikçi, maaş ve abonelik ödemelerinin aylık adedini çıkar."
+   },
+   {
+    "label": "Modeli seç",
+    "detail": "İşlem sayın düşükse işlem bazlı, çok sayıda küçük tahsilat varsa ciro bazlı model avantajlı."
+   }
   ]
+ },
+ "business_ideas": [
+  {
+   "name": "Muhasebe hizmeti fiyat modeli karşılaştırma aracı",
+   "insight": "Video, aynı hizmetin ciro bazlı ve işlem bazlı fiyatlandığı ve müşterilerin bu yüzden karşılaştırma yapamadığı gözleminden yola çıkıyor.",
+   "problem": "Yurt dışında (Hong Kong, Singapur, BAE, Estonya vb.) şirket kuran girişimciler farklı fiyat mantıklarını kıyaslayamıyor ve gereğinden pahalı paket seçiyor.",
+   "solution": "Kullanıcının ciro, aylık işlem sayısı ve ülke bilgisini alıp sağlayıcıların yayınlanmış tarifelerine göre yıllık toplam maliyeti hesaplayan tarafsız karşılaştırma sitesi.",
+   "target": "Yurt dışında şirket kurmuş veya kuracak Türk girişimciler ve freelancer'lar",
+   "revenue_model": "Sağlayıcılardan yönlendirme komisyonu + premium detaylı rapor",
+   "first_step": "Hong Kong ve Singapur'daki 8 sağlayıcının tarifelerini toplayıp basit bir hesaplayıcı yayınlamak ve 50 kullanıcı girişi toplamak.",
+   "capital": "Düşük",
+   "difficulty": 2,
+   "turkey_angle": "Tamamen uzaktan yürütülebilir; Türkçe içerik Türk girişimciler arasında rekabetsiz bir niş.",
+   "risks": "Tarifelerin sık değişmesi ve güncelliğin korunması; komisyon alırken tarafsızlık algısının zedelenmesi.",
+   "originality": 2,
+   "problem_solving": 2,
+   "score_note": "Karşılaştırma sitesi; dar.",
+   "similar": [
+    {
+     "id": "CzyzZL2dAh8",
+     "name": "Girişimciler için 'toplam maliyet' bazlı şirket merkezi karşılaştırma aracı"
+    },
+    {
+     "id": "BGCzF-B-yzo",
+     "name": "Şirket kuruluş kampanyalarını şeffaflaştıran 'gerçek maliyet' hesaplayıcısı"
+    }
+   ]
+  },
+  {
+   "name": "Türk mali müşavirler için işlem hacmine dayalı teklif modülü",
+   "insight": "Konuşmacı, ücreti fiilen yapılan işe (işlem sayısına) bağlamanın daha adil olduğunu savunuyor.",
+   "problem": "Mali müşavirlik bürolarında ücret çoğunlukla sabit veya pazarlıkla belirleniyor; yoğun işlemli müşteriler kârsız, az işlemliler pahalı kalıyor.",
+   "solution": "Banka ekstresi ve e-fatura sayısını okuyup müşteri başına aylık iş yükünü ölçen, yasal asgari ücret tarifesinin altına düşmeden teklif öneren büro yazılımı modülü.",
+   "target": "Orta ölçekli mali müşavirlik büroları",
+   "revenue_model": "Büro başına aylık lisans",
+   "first_step": "10 büroyla müşteri başına iş yükü ile alınan ücreti karşılaştıran bir tablo çalışması yapıp kârsız müşteri oranını ölçmek.",
+   "capital": "Orta",
+   "difficulty": 3,
+   "turkey_angle": "Türkiye'de meslek mensupları için asgari ücret tarifesi uygulandığından model bu sınırlarla uyumlu kurgulanmalı.",
+   "risks": "Meslek kuralları ve tarifeyle çelişme riski; büroların fiyat değişikliğine direnci; müşteri verisinin gizliliği.",
+   "originality": 4,
+   "problem_solving": 3,
+   "score_note": "Türkiye'ye özgü boşluk; bürolara satış yavaş.",
+   "similar": []
+  },
+  {
+   "name": "Hong Kong offshore kâr talebi için belge hazırlık hizmeti",
+   "insight": "Video, Hong Kong dışında iş yapan şirketlerin offshore vergi talebiyle vergi yükünü ciddi biçimde azaltabileceğini söylüyor.",
+   "problem": "Hong Kong şirketi olan Türk tüccarlar, faaliyetin Hong Kong dışında yürüdüğünü kanıtlayacak sözleşme, yazışma ve sevkiyat belgelerini düzenli tutmuyor.",
+   "solution": "Yıl boyunca sözleşmelerin nerede müzakere edildiği, sevkiyat ve fatura belgelerini toplayan, talep dosyasını yerel muhasebeci için hazır hale getiren dokümantasyon hizmeti.",
+   "target": "Hong Kong şirketi üzerinden ticaret yapan Türk ithalat/ihracat firmaları",
+   "revenue_model": "Yıllık dosya hazırlama ücreti",
+   "first_step": "Hong Kong şirketi olan 10 Türk firmayla görüşüp geçmiş taleplerde istenen ek belgeleri listelemek.",
+   "capital": "Düşük",
+   "difficulty": 3,
+   "turkey_angle": "Türkiye'den yürütülebilir, ama nihai başvuru Hong Kong'da yetkili muhasebeci/denetçi üzerinden yapılmalı. Türk vergi mukimleri için Türkiye'deki yükümlülükler ayrıca değerlendirilmeli.",
+   "risks": "Talebin vergi idaresince reddedilmesi veya incelemeye alınması; hizmet sahte belge üretimine asla dönüşmemeli, sadece gerçek faaliyeti belgelemeli; yasal sınırlar ve denetim gereklilikleri net anlatılmalı.",
+   "originality": 3,
+   "problem_solving": 3,
+   "score_note": "Dar.",
+   "similar": [
+    {
+     "id": "_Bs6RMa8FKI",
+     "name": "Offshore muafiyet kanıt dosyası (substance) hazırlama aracı"
+    }
+   ]
+  }
+ ],
+ "skeptic_notes": [
+  "Reklam ve rakip karşılaştırması: video Statrys çalışanı tarafından sunuluyor ve Statrys lehine taraflı; Osome'un fiyatları ve offshore talep bilgisinin yokluğu bağımsız olarak doğrulanmalı.",
+  "316 $/ay ve 40 işlem/ay rakamları yayın tarihindeki web sitelerine dayanıyor; tarifeler değişmiş olabilir. 316 $ ile 2.450 HKD arasında küçük bir kur yuvarlaması var.",
+  "'Çoğu durumda 1 milyon HKD ciro için ayda 40 işleme ihtiyacınız olmaz' iddiası işletme türüne çok bağlı ve veriyle desteklenmiyor.",
+  "Offshore vergi talebinin 'vergi yükünü ciddi azaltabileceği' söyleniyor, ancak taleplerin incelemeye tabi olduğu ve belge yükü anlatılmıyor.",
+  "Altyazıda Osome bazen 'Awesome', Statrys 'Status' olarak geçiyor."
+ ]
 }

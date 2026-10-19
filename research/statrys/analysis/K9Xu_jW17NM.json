@@ -1,245 +1,272 @@
 {
-  "id": "K9Xu_jW17NM",
-  "title_tr": "Çin'in az tanınan milyarderleri ve devlet önceliklerine dayalı servet modeli",
-  "category": "Çin ekonomisi",
-  "region": [
-    "Çin",
-    "ABD"
-  ],
-  "summary_tr": "Video, Mart 2026'da Çin'in milyarder sayısında ilk kez ABD'yi geçtiğini (1.110'a karşı 1.000) ve bu milyarderlerin Batılı emsallerinin aksine kamuoyundan uzak durduğunu anlatıyor. Nongfu Spring kurucusu Zhong Shanshan, ByteDance kurucusu Zhang Yiming ve Tencent'in Pony Ma'sı ile ABD ihracat kontrolleri sonrası yerli GPU şirketleri kuran eski Nvidia ve AMD yöneticileri örnek veriliyor. Ortak örüntü olarak, servetin devletin öncelikli ilan ettiği sektörlerde; kamu sermayesi, kamu alım zorunlulukları ve altyapı yatırımıyla oluştuğu savunuluyor. Video, 2026-2030 dönemini kapsayan 15. Beş Yıllık Plan'daki altı yükselen sektörü yeni zenginlik dalgasının yol haritası olarak sunuyor ve Statrys'in Asya'da kuruluş hizmetine yönlendiriyor.",
-  "key_points": [
-    "Videoya göre Çin Mart 2026'da 1.110 milyarderle ilk kez ABD'yi (1.000) geçti.",
-    "Çin'de görünürlük bir risk olarak görüldüğünden en zengin iş insanları medyadan ve kamuoyundan uzak duruyor.",
-    "Zhong Shanshan, orta sınıfın paketli içeceğe geçişini öngörüp doğal maden suyuna yönelerek Çin'in en zengin kişisi oldu.",
-    "ABD ihracat kontrolleri, eski Nvidia ve AMD yöneticilerinin kurduğu Moore Threads ve MetaX gibi yerli çip şirketlerine garantili bir iç pazar yarattı.",
-    "ByteDance, devletin mobil altyapı yatırımlarıyla hızlanan akıllı telefon yaygınlaşmasını YZ tabanlı içerik önerisiyle değerlendirdi.",
-    "15. Beş Yıllık Plan; entegre devreler, akıllı robotlar, alçak irtifa ekonomisi, biyoteknoloji, yeni malzemeler ve havacılık-uzayı öncelikli ilan ediyor."
-  ],
-  "numbers": [
-    {
-      "label": "Çin milyarder sayısı (Mart 2026)",
-      "value": 1110,
-      "unit": "kişi",
-      "context": "Çin'in ABD'yi geçtiği söylenen milyarder sayısı."
-    },
-    {
-      "label": "ABD milyarder sayısı (Mart 2026)",
-      "value": 1000,
-      "unit": "kişi",
-      "context": "Karşılaştırmada ABD için verilen sayı."
-    },
-    {
-      "label": "Zhong Shanshan serveti",
-      "value": 70,
-      "unit": "milyar $ (üzeri)",
-      "context": "Nongfu Spring kurucusu, Çin'in en zengin kişisi."
-    },
-    {
-      "label": "Zhong'un şirketteki payı",
-      "value": 84,
-      "unit": "%",
-      "context": "Kendi şirketinde hâlâ kontrol ettiği pay."
-    },
-    {
-      "label": "Zhong'un Nongfu Spring'i kurduğu yaş",
-      "value": 42,
-      "unit": "yaş",
-      "context": "Geç girişimciliğin örneği."
-    },
-    {
-      "label": "Kuruluştan halka arza süre",
-      "value": 24,
-      "unit": "yıl",
-      "context": "Nongfu Spring'in halka arzına kadar geçen süre."
-    },
-    {
-      "label": "Bir şişe su fiyatı",
-      "value": 0.5,
-      "unit": "USD",
-      "context": "Şişesi '50 sent' olan suyu satan kişinin servet örneği."
-    },
-    {
-      "label": "Moore Threads değerlemesi",
-      "value": 45,
-      "unit": "milyar $",
-      "context": "2020'de kurulan şirketin beş yıl sonraki değeri."
-    },
-    {
-      "label": "Kurucunun Nvidia'daki süresi",
-      "value": 15,
-      "unit": "yıl",
-      "context": "Moore Threads kurucusunun Nvidia Çin'de geçirdiği süre."
-    },
-    {
-      "label": "MetaX ilk gün yükselişi",
-      "value": 692,
-      "unit": "%",
-      "context": "2025 sonunda halka arz edilen MetaX hissesinin ilk işlem günü artışı."
-    },
-    {
-      "label": "Chen Weiliang serveti",
-      "value": 4,
-      "unit": "milyar $ (üzeri)",
-      "context": "MetaX kurucusu; AMD'de 14 yıl çalışmış."
-    },
-    {
-      "label": "Zhang Yiming serveti",
-      "value": 65,
-      "unit": "milyar $",
-      "context": "ByteDance kurucusu ('yaklaşık')."
-    },
-    {
-      "label": "Toutiao günlük kullanıcı (2 yılda)",
-      "value": 13,
-      "unit": "milyon",
-      "context": "Kuruluştan iki yıl sonra ulaşılan günlük kullanıcı."
-    },
-    {
-      "label": "ByteDance geliri (2024)",
-      "value": 155,
-      "unit": "milyar $",
-      "context": "2024 geliri."
-    },
-    {
-      "label": "Pony Ma serveti",
-      "value": 53,
-      "unit": "milyar $ (üzeri)",
-      "context": "Tencent kurucu ortağı."
-    },
-    {
-      "label": "En zengin üç kişinin toplam serveti",
-      "value": 190,
-      "unit": "milyar $ (üzeri)",
-      "context": "Çin'in en zengin beş kişisinden üçünün toplam serveti."
-    },
-    {
-      "label": "Altı öncelikli sektörün büyüklüğü (geçen yıl)",
-      "value": 6,
-      "unit": "trilyon yuan",
-      "context": "15. Beş Yıllık Plan'daki altı yükselen sektörün yaklaşık büyüklüğü."
-    },
-    {
-      "label": "Altı sektör 2030 hedefi",
-      "value": 10,
-      "unit": "trilyon yuan",
-      "context": "Beijing'in 2030 için beklediği büyüklük."
-    },
-    {
-      "label": "YZ ile ilgili sektörler 2030 öngörüsü",
-      "value": 10,
-      "unit": "trilyon yuan",
-      "context": "On yılın sonunda YZ ile ilgili sektörler için öngörülen büyüklük."
-    },
-    {
-      "label": "Bu yıl bilim ve teknolojiye ayrılan bütçe",
-      "value": 1.3,
-      "unit": "trilyon yuan",
-      "context": "Hükümetin bu yıl bilim ve teknoloji gelişimine ayırdığı tutar."
-    }
-  ],
-  "chart": {
-    "type": "hbar",
-    "title": "Videoda adı geçen Çinli milyarderlerin serveti",
-    "unit": "milyar $",
-    "source_note": "Videoda belirtilen rakamlar (çoğu '...üzeri' veya 'yaklaşık'); bağımsız doğrulanmadı.",
-    "data": [
-      {
-        "label": "Zhong Shanshan (Nongfu Spring)",
-        "value": 70
-      },
-      {
-        "label": "Zhang Yiming (ByteDance)",
-        "value": 65
-      },
-      {
-        "label": "Pony Ma (Tencent)",
-        "value": 53
-      },
-      {
-        "label": "Chen Weiliang (MetaX)",
-        "value": 4
-      }
-    ]
+ "id": "K9Xu_jW17NM",
+ "title_tr": "Çin'in az tanınan milyarderleri ve devlet önceliklerine dayalı servet modeli",
+ "category": "Çin ekonomisi",
+ "region": [
+  "Çin",
+  "ABD"
+ ],
+ "summary_tr": "Video, Mart 2026'da Çin'in milyarder sayısında ilk kez ABD'yi geçtiğini (1.110'a karşı 1.000) ve bu milyarderlerin Batılı emsallerinin aksine kamuoyundan uzak durduğunu anlatıyor. Nongfu Spring kurucusu Zhong Shanshan, ByteDance kurucusu Zhang Yiming ve Tencent'in Pony Ma'sı ile ABD ihracat kontrolleri sonrası yerli GPU şirketleri kuran eski Nvidia ve AMD yöneticileri örnek veriliyor. Ortak örüntü olarak, servetin devletin öncelikli ilan ettiği sektörlerde; kamu sermayesi, kamu alım zorunlulukları ve altyapı yatırımıyla oluştuğu savunuluyor. Video, 2026-2030 dönemini kapsayan 15. Beş Yıllık Plan'daki altı yükselen sektörü yeni zenginlik dalgasının yol haritası olarak sunuyor ve Statrys'in Asya'da kuruluş hizmetine yönlendiriyor.",
+ "key_points": [
+  "Videoya göre Çin Mart 2026'da 1.110 milyarderle ilk kez ABD'yi (1.000) geçti.",
+  "Çin'de görünürlük bir risk olarak görüldüğünden en zengin iş insanları medyadan ve kamuoyundan uzak duruyor.",
+  "Zhong Shanshan, orta sınıfın paketli içeceğe geçişini öngörüp doğal maden suyuna yönelerek Çin'in en zengin kişisi oldu.",
+  "ABD ihracat kontrolleri, eski Nvidia ve AMD yöneticilerinin kurduğu Moore Threads ve MetaX gibi yerli çip şirketlerine garantili bir iç pazar yarattı.",
+  "ByteDance, devletin mobil altyapı yatırımlarıyla hızlanan akıllı telefon yaygınlaşmasını YZ tabanlı içerik önerisiyle değerlendirdi.",
+  "15. Beş Yıllık Plan; entegre devreler, akıllı robotlar, alçak irtifa ekonomisi, biyoteknoloji, yeni malzemeler ve havacılık-uzayı öncelikli ilan ediyor."
+ ],
+ "numbers": [
+  {
+   "label": "Çin milyarder sayısı (Mart 2026)",
+   "value": 1110,
+   "unit": "kişi",
+   "context": "Çin'in ABD'yi geçtiği söylenen milyarder sayısı."
   },
-  "diagram": {
-    "type": "cycle",
-    "title": "Videoya göre Çin'de devlet öncelikli sektörlerde servetin oluşma döngüsü",
-    "steps": [
-      {
-        "label": "Devlet önceliği ilan eder",
-        "detail": "Beş yıllık planlar ve ulusal güvenlik hedefleri öncelikli sektörleri belirler."
-      },
-      {
-        "label": "Sermaye ve alım zorunluluğu",
-        "detail": "Kamu sermayesi sektöre akar, kamu alımları yerli ürünü zorunlu kılar."
-      },
-      {
-        "label": "Erken konumlanan girişimci",
-        "detail": "Sektör bilgisi olan kişiler, örneğin eski Nvidia/AMD yöneticileri, şirket kurar."
-      },
-      {
-        "label": "Garantili talep ve büyüme",
-        "detail": "Yaptırımlar bile iç pazarı koruyarak müşteri tabanını güvenceye alır."
-      },
-      {
-        "label": "Halka arz ve servet",
-        "detail": "Değerlemeler halka arzla gün yüzüne çıkar, kurucular milyarder olur."
-      },
-      {
-        "label": "Yeni plan, yeni sektörler",
-        "detail": "15. Beş Yıllık Plan bir sonraki dalganın sektörlerini işaret eder."
-      }
-    ]
+  {
+   "label": "ABD milyarder sayısı (Mart 2026)",
+   "value": 1000,
+   "unit": "kişi",
+   "context": "Karşılaştırmada ABD için verilen sayı."
   },
-  "business_ideas": [
-    {
-      "name": "Çinli tedarikçiler için yaptırım ve ihracat kontrolü taraması",
-      "insight": "Video, Moore Threads'in ABD kara listesine (entity list) alındığını ve müşterilerinin büyük kısmının askeri ve kamu kurumları olduğunu anlatıyor.",
-      "problem": "Çip, robotik ve yapay zekâ ürünü ithal eden Türk şirketleri, tedarikçinin veya ana ortağının yaptırım listesinde olup olmadığını kontrol etmiyor ve ikincil yaptırım riskine giriyor.",
-      "solution": "Tedarikçi adını ve ortaklık yapısını ABD, AB ve BM listeleriyle karşılaştıran, ürün bazında ihracat kontrolü uyarısı veren ve Türkçe raporlayan tarama hizmeti.",
-      "target": "Çin'den teknoloji ürünü ithal eden veya Çinli bileşen kullanan Türk üreticiler ve ihracatçılar",
-      "revenue_model": "Tarama başına ücret + sürekli izleme aboneliği",
-      "first_step": "Çin'den elektronik ithal eden 10 Türk şirketin tedarikçi listesini ücretsiz taramak ve kaç riskli eşleşme çıktığını göstermek.",
-      "capital": "Düşük",
-      "difficulty": 3,
-      "turkey_angle": "Türkiye'nin hem AB'ye hem Rusya ve Orta Doğu'ya ihracat yapması, ikincil yaptırım riskini Türk firmaları için özellikle önemli kılıyor.",
-      "risks": "Listelerin sık güncellenmesi ve yanlış negatif sonuçların hukuki sonuçları; nihai karar için hukuk danışmanlığı gerektiği açıkça belirtilmeli."
-    },
-    {
-      "name": "15. Beş Yıllık Plan sektörleri için Türkçe tedarikçi ve pazar istihbaratı",
-      "insight": "Video, planın altı sektörü öncelikli ilan ettiğini ve bunların 6 trilyon yuandan 10 trilyon yuana büyümesinin beklendiğini söylüyor.",
-      "problem": "Türk ithalatçı, distribütör ve yatırımcılar Çin'in politika önceliklerini ve bu sektörlerdeki yeni üreticileri takip edemiyor.",
-      "solution": "Altı sektördeki (robotik, alçak irtifa, biyoteknoloji vb.) yeni Çinli üreticileri, sübvansiyon ve fiyat düşüşü sinyallerini aylık Türkçe raporlayan ücretli bülten ve veri tabanı.",
-      "target": "İthalatçılar, sanayi şirketlerinin satın alma birimleri, yatırım fonları",
-      "revenue_model": "Kademeli abonelik (bülten / veri tabanı / özel araştırma)",
-      "first_step": "Tek sektörde (ör. alçak irtifa ekonomisi: drone) ücretsiz bir örnek rapor yayınlayıp 100 abone toplamak ve 10'unu ücretli sürüme geçirmeyi denemek.",
-      "capital": "Düşük",
-      "difficulty": 2,
-      "turkey_angle": "Çince bilen Türk araştırmacılarla Türkiye'den yürütülebilir; Türkçe kaynak eksikliği rekabeti azaltıyor.",
-      "risks": "Çin resmi verilerine ve şirket bilgilerine erişimin zorluğu; içeriğin hızla eskimesi."
-    },
-    {
-      "name": "Tarım ve denetim dronları için Çin kaynaklı ekipmanla hizmet işletmesi",
-      "insight": "Video, 'alçak irtifa ekonomisini' Çin'in altı yükselen öncelikli sektöründen biri olarak sayıyor.",
-      "problem": "Türk çiftçileri ve belediyeler ilaçlama, haritalama ve denetim için drone hizmetine erişemiyor veya ekipmanı satın almak pahalı geliyor.",
-      "solution": "Uygun maliyetli dron ekipmanıyla bölgesel ilaçlama/haritalama hizmeti veren, pilot eğitimi ve yasal izinleri yöneten hizmet işletmesi.",
-      "target": "Büyük ölçekli çiftçiler, tarım kooperatifleri, belediyeler",
-      "revenue_model": "Dekar başına hizmet ücreti veya sezonluk sözleşme",
-      "first_step": "Bir tarım bölgesinde 10 üreticiyle görüşüp dekar başı ödeme isteğini ve gerekli izin sürecini netleştirmek.",
-      "capital": "Orta",
-      "difficulty": 3,
-      "turkey_angle": "Türkiye'de sivil drone kullanımı kayıt ve izin gerektiriyor; ayrıca yerli drone üreticileri de değerlendirilmeli.",
-      "risks": "Mevzuat ve izin süreçleri; ithal ekipmana yönelik olası kısıtlamalar; hava koşullarına bağlı sezonluk gelir."
-    }
-  ],
-  "skeptic_notes": [
-    "Başlıktaki '1.110 gizli milyarder' ve 1.110'a 1.000 karşılaştırması için kaynak (hangi zenginlik listesi) belirtilmiyor; ABD için tam '1.000' olması yuvarlama veya basitleştirme olabilir.",
-    "Moore Threads kurucusunun adı altyazıda 'John Chenzhong', sonra 'Zhong' ve 'Chong' olarak geçiyor; aynı kanalın 26 Mart videosunda 'Xiong Jingzhong, 14 yıl' deniyor. Bu videoda süre 15 yıl; isim ve süre doğrulanmalı.",
-    "Moore Threads'in 45 milyar $ değerlemesi ve MetaX'in ilk gün %692 yükselişi tek kaynaklı; ayrıca doğrulanmalı.",
-    "'Kamu kurumlarının çiplerinin %100'ünü yasal olarak yerli kaynaktan almak zorunda olduğu' iddiası genelleme olabilir.",
-    "En zengin üçün servetleri (70+65+53) yaklaşık 188 milyar $ ediyor; videodaki '190 milyar $'ın üzerinde' ifadesi 'üzeri' nitelemeleriyle tutarlı ama yuvarlak.",
-    "'Shenzhen'de Londra'dan fazla milyarder var' iddiası rakamsız verilmiş.",
-    "Altyazı hataları: 'foundational molds' = foundational models, 'More Threads' = Moore Threads, 'line and islands' muhtemelen bir yer adı; 'underground here' = on the ground.",
-    "Sonda Statrys'in Hong Kong/Singapur kuruluş hizmetine yönlendirme var (reklam)."
+  {
+   "label": "Zhong Shanshan serveti",
+   "value": 70,
+   "unit": "milyar $ (üzeri)",
+   "context": "Nongfu Spring kurucusu, Çin'in en zengin kişisi."
+  },
+  {
+   "label": "Zhong'un şirketteki payı",
+   "value": 84,
+   "unit": "%",
+   "context": "Kendi şirketinde hâlâ kontrol ettiği pay."
+  },
+  {
+   "label": "Zhong'un Nongfu Spring'i kurduğu yaş",
+   "value": 42,
+   "unit": "yaş",
+   "context": "Geç girişimciliğin örneği."
+  },
+  {
+   "label": "Kuruluştan halka arza süre",
+   "value": 24,
+   "unit": "yıl",
+   "context": "Nongfu Spring'in halka arzına kadar geçen süre."
+  },
+  {
+   "label": "Bir şişe su fiyatı",
+   "value": 0.5,
+   "unit": "USD",
+   "context": "Şişesi '50 sent' olan suyu satan kişinin servet örneği."
+  },
+  {
+   "label": "Moore Threads değerlemesi",
+   "value": 45,
+   "unit": "milyar $",
+   "context": "2020'de kurulan şirketin beş yıl sonraki değeri."
+  },
+  {
+   "label": "Kurucunun Nvidia'daki süresi",
+   "value": 15,
+   "unit": "yıl",
+   "context": "Moore Threads kurucusunun Nvidia Çin'de geçirdiği süre."
+  },
+  {
+   "label": "MetaX ilk gün yükselişi",
+   "value": 692,
+   "unit": "%",
+   "context": "2025 sonunda halka arz edilen MetaX hissesinin ilk işlem günü artışı."
+  },
+  {
+   "label": "Chen Weiliang serveti",
+   "value": 4,
+   "unit": "milyar $ (üzeri)",
+   "context": "MetaX kurucusu; AMD'de 14 yıl çalışmış."
+  },
+  {
+   "label": "Zhang Yiming serveti",
+   "value": 65,
+   "unit": "milyar $",
+   "context": "ByteDance kurucusu ('yaklaşık')."
+  },
+  {
+   "label": "Toutiao günlük kullanıcı (2 yılda)",
+   "value": 13,
+   "unit": "milyon",
+   "context": "Kuruluştan iki yıl sonra ulaşılan günlük kullanıcı."
+  },
+  {
+   "label": "ByteDance geliri (2024)",
+   "value": 155,
+   "unit": "milyar $",
+   "context": "2024 geliri."
+  },
+  {
+   "label": "Pony Ma serveti",
+   "value": 53,
+   "unit": "milyar $ (üzeri)",
+   "context": "Tencent kurucu ortağı."
+  },
+  {
+   "label": "En zengin üç kişinin toplam serveti",
+   "value": 190,
+   "unit": "milyar $ (üzeri)",
+   "context": "Çin'in en zengin beş kişisinden üçünün toplam serveti."
+  },
+  {
+   "label": "Altı öncelikli sektörün büyüklüğü (geçen yıl)",
+   "value": 6,
+   "unit": "trilyon yuan",
+   "context": "15. Beş Yıllık Plan'daki altı yükselen sektörün yaklaşık büyüklüğü."
+  },
+  {
+   "label": "Altı sektör 2030 hedefi",
+   "value": 10,
+   "unit": "trilyon yuan",
+   "context": "Beijing'in 2030 için beklediği büyüklük."
+  },
+  {
+   "label": "YZ ile ilgili sektörler 2030 öngörüsü",
+   "value": 10,
+   "unit": "trilyon yuan",
+   "context": "On yılın sonunda YZ ile ilgili sektörler için öngörülen büyüklük."
+  },
+  {
+   "label": "Bu yıl bilim ve teknolojiye ayrılan bütçe",
+   "value": 1.3,
+   "unit": "trilyon yuan",
+   "context": "Hükümetin bu yıl bilim ve teknoloji gelişimine ayırdığı tutar."
+  }
+ ],
+ "chart": {
+  "type": "hbar",
+  "title": "Videoda adı geçen Çinli milyarderlerin serveti",
+  "unit": "milyar $",
+  "source_note": "Videoda belirtilen rakamlar (çoğu '...üzeri' veya 'yaklaşık'); bağımsız doğrulanmadı.",
+  "data": [
+   {
+    "label": "Zhong Shanshan (Nongfu Spring)",
+    "value": 70
+   },
+   {
+    "label": "Zhang Yiming (ByteDance)",
+    "value": 65
+   },
+   {
+    "label": "Pony Ma (Tencent)",
+    "value": 53
+   },
+   {
+    "label": "Chen Weiliang (MetaX)",
+    "value": 4
+   }
   ]
+ },
+ "diagram": {
+  "type": "cycle",
+  "title": "Videoya göre Çin'de devlet öncelikli sektörlerde servetin oluşma döngüsü",
+  "steps": [
+   {
+    "label": "Devlet önceliği ilan eder",
+    "detail": "Beş yıllık planlar ve ulusal güvenlik hedefleri öncelikli sektörleri belirler."
+   },
+   {
+    "label": "Sermaye ve alım zorunluluğu",
+    "detail": "Kamu sermayesi sektöre akar, kamu alımları yerli ürünü zorunlu kılar."
+   },
+   {
+    "label": "Erken konumlanan girişimci",
+    "detail": "Sektör bilgisi olan kişiler, örneğin eski Nvidia/AMD yöneticileri, şirket kurar."
+   },
+   {
+    "label": "Garantili talep ve büyüme",
+    "detail": "Yaptırımlar bile iç pazarı koruyarak müşteri tabanını güvenceye alır."
+   },
+   {
+    "label": "Halka arz ve servet",
+    "detail": "Değerlemeler halka arzla gün yüzüne çıkar, kurucular milyarder olur."
+   },
+   {
+    "label": "Yeni plan, yeni sektörler",
+    "detail": "15. Beş Yıllık Plan bir sonraki dalganın sektörlerini işaret eder."
+   }
+  ]
+ },
+ "business_ideas": [
+  {
+   "name": "Çinli tedarikçiler için yaptırım ve ihracat kontrolü taraması",
+   "insight": "Video, Moore Threads'in ABD kara listesine (entity list) alındığını ve müşterilerinin büyük kısmının askeri ve kamu kurumları olduğunu anlatıyor.",
+   "problem": "Çip, robotik ve yapay zekâ ürünü ithal eden Türk şirketleri, tedarikçinin veya ana ortağının yaptırım listesinde olup olmadığını kontrol etmiyor ve ikincil yaptırım riskine giriyor.",
+   "solution": "Tedarikçi adını ve ortaklık yapısını ABD, AB ve BM listeleriyle karşılaştıran, ürün bazında ihracat kontrolü uyarısı veren ve Türkçe raporlayan tarama hizmeti.",
+   "target": "Çin'den teknoloji ürünü ithal eden veya Çinli bileşen kullanan Türk üreticiler ve ihracatçılar",
+   "revenue_model": "Tarama başına ücret + sürekli izleme aboneliği",
+   "first_step": "Çin'den elektronik ithal eden 10 Türk şirketin tedarikçi listesini ücretsiz taramak ve kaç riskli eşleşme çıktığını göstermek.",
+   "capital": "Düşük",
+   "difficulty": 3,
+   "turkey_angle": "Türkiye'nin hem AB'ye hem Rusya ve Orta Doğu'ya ihracat yapması, ikincil yaptırım riskini Türk firmaları için özellikle önemli kılıyor.",
+   "risks": "Listelerin sık güncellenmesi ve yanlış negatif sonuçların hukuki sonuçları; nihai karar için hukuk danışmanlığı gerektiği açıkça belirtilmeli.",
+   "originality": 2,
+   "problem_solving": 4,
+   "score_note": "Tarama kategorisi dolu.",
+   "similar": [
+    {
+     "id": "YX3FDPGN6QU",
+     "name": "Dış ticaret ödemeleri için yaptırım ön kontrol aracı"
+    }
+   ]
+  },
+  {
+   "name": "15. Beş Yıllık Plan sektörleri için Türkçe tedarikçi ve pazar istihbaratı",
+   "insight": "Video, planın altı sektörü öncelikli ilan ettiğini ve bunların 6 trilyon yuandan 10 trilyon yuana büyümesinin beklendiğini söylüyor.",
+   "problem": "Türk ithalatçı, distribütör ve yatırımcılar Çin'in politika önceliklerini ve bu sektörlerdeki yeni üreticileri takip edemiyor.",
+   "solution": "Altı sektördeki (robotik, alçak irtifa, biyoteknoloji vb.) yeni Çinli üreticileri, sübvansiyon ve fiyat düşüşü sinyallerini aylık Türkçe raporlayan ücretli bülten ve veri tabanı.",
+   "target": "İthalatçılar, sanayi şirketlerinin satın alma birimleri, yatırım fonları",
+   "revenue_model": "Kademeli abonelik (bülten / veri tabanı / özel araştırma)",
+   "first_step": "Tek sektörde (ör. alçak irtifa ekonomisi: drone) ücretsiz bir örnek rapor yayınlayıp 100 abone toplamak ve 10'unu ücretli sürüme geçirmeyi denemek.",
+   "capital": "Düşük",
+   "difficulty": 2,
+   "turkey_angle": "Çince bilen Türk araştırmacılarla Türkiye'den yürütülebilir; Türkçe kaynak eksikliği rekabeti azaltıyor.",
+   "risks": "Çin resmi verilerine ve şirket bilgilerine erişimin zorluğu; içeriğin hızla eskimesi.",
+   "originality": 2,
+   "problem_solving": 2,
+   "score_note": "Bülten.",
+   "similar": [
+    {
+     "id": "sGBpL3-P--A",
+     "name": "Çin plan radarı: sektör maruziyet raporu"
+    }
+   ]
+  },
+  {
+   "name": "Tarım ve denetim dronları için Çin kaynaklı ekipmanla hizmet işletmesi",
+   "insight": "Video, 'alçak irtifa ekonomisini' Çin'in altı yükselen öncelikli sektöründen biri olarak sayıyor.",
+   "problem": "Türk çiftçileri ve belediyeler ilaçlama, haritalama ve denetim için drone hizmetine erişemiyor veya ekipmanı satın almak pahalı geliyor.",
+   "solution": "Uygun maliyetli dron ekipmanıyla bölgesel ilaçlama/haritalama hizmeti veren, pilot eğitimi ve yasal izinleri yöneten hizmet işletmesi.",
+   "target": "Büyük ölçekli çiftçiler, tarım kooperatifleri, belediyeler",
+   "revenue_model": "Dekar başına hizmet ücreti veya sezonluk sözleşme",
+   "first_step": "Bir tarım bölgesinde 10 üreticiyle görüşüp dekar başı ödeme isteğini ve gerekli izin sürecini netleştirmek.",
+   "capital": "Orta",
+   "difficulty": 3,
+   "turkey_angle": "Türkiye'de sivil drone kullanımı kayıt ve izin gerektiriyor; ayrıca yerli drone üreticileri de değerlendirilmeli.",
+   "risks": "Mevzuat ve izin süreçleri; ithal ekipmana yönelik olası kısıtlamalar; hava koşullarına bağlı sezonluk gelir.",
+   "originality": 2,
+   "problem_solving": 3,
+   "score_note": "Mevcut hizmet verenler var.",
+   "similar": [
+    {
+     "id": "sGBpL3-P--A",
+     "name": "Tarım dronu hizmet ağı"
+    }
+   ]
+  }
+ ],
+ "skeptic_notes": [
+  "Başlıktaki '1.110 gizli milyarder' ve 1.110'a 1.000 karşılaştırması için kaynak (hangi zenginlik listesi) belirtilmiyor; ABD için tam '1.000' olması yuvarlama veya basitleştirme olabilir.",
+  "Moore Threads kurucusunun adı altyazıda 'John Chenzhong', sonra 'Zhong' ve 'Chong' olarak geçiyor; aynı kanalın 26 Mart videosunda 'Xiong Jingzhong, 14 yıl' deniyor. Bu videoda süre 15 yıl; isim ve süre doğrulanmalı.",
+  "Moore Threads'in 45 milyar $ değerlemesi ve MetaX'in ilk gün %692 yükselişi tek kaynaklı; ayrıca doğrulanmalı.",
+  "'Kamu kurumlarının çiplerinin %100'ünü yasal olarak yerli kaynaktan almak zorunda olduğu' iddiası genelleme olabilir.",
+  "En zengin üçün servetleri (70+65+53) yaklaşık 188 milyar $ ediyor; videodaki '190 milyar $'ın üzerinde' ifadesi 'üzeri' nitelemeleriyle tutarlı ama yuvarlak.",
+  "'Shenzhen'de Londra'dan fazla milyarder var' iddiası rakamsız verilmiş.",
+  "Altyazı hataları: 'foundational molds' = foundational models, 'More Threads' = Moore Threads, 'line and islands' muhtemelen bir yer adı; 'underground here' = on the ground.",
+  "Sonda Statrys'in Hong Kong/Singapur kuruluş hizmetine yönlendirme var (reklam)."
+ ]
 }

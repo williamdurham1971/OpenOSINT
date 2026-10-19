@@ -1,124 +1,343 @@
 {
-  "id": "beaMlddk5P8",
-  "title_tr": "Alman sanayisindeki daralma ve Çinli yatırımcıların Avrupa'daki artan payı",
-  "category": "Jeopolitik & ticaret",
-  "region": ["Almanya", "Avrupa", "Çin"],
-  "summary_tr": "Video, Bosch, ZF, Continental gibi tedarikçilerden çelik ve kimya devlerine kadar Alman sanayisinde büyük çaplı iş kayıplarını sıralıyor. Ana nedenler ucuz Rus gazının kaybı ve nükleerin kapatılmasıyla yükselen enerji maliyeti, yüksek işçilik ücretleri, uzun izin süreçleri ve elektrikli araç dönüşümünün geciktirilmesi olarak gösteriliyor. Eskiden en büyük müşteri olan Çin, aynı dönemde en güçlü rakibe dönüştü. Son bölümde Volvo'dan Mercedes'e, Pirelli'den Kuka'ya Çinli şirketlerin zor dönemlerde Avrupa varlıklarına ortak olduğu ve artık doğrudan fabrika satın aldığı anlatılıyor.",
-  "key_points": [
-    "Alman otomotiv tedarik sektöründe 2023'ten bu yana on binlerce iş kaybı yaşandığı ve 2030'a kadar daha fazlasının beklendiği söyleniyor.",
-    "AB'de sanayi elektriği ABD'nin iki katından pahalı; Çin'de ise çok daha ucuz.",
-    "Alman otomotivinde saatlik işçilik maliyeti Avrupa'nın diğer ülkelerinden ve Çin'den çok yüksek.",
-    "Volkswagen gibi üreticiler elektrikli araç dönüşümünü dizel kârlılığı nedeniyle geciktirdi.",
-    "Çinli şirketler Volvo, Kuka, Pirelli, Daimler ve Stellantis gibi şirketlerde pay veya kontrol edindi; şimdi fabrikalar da devrediliyor.",
-    "AB ülkelerinin çoğu yabancı yatırım denetim mekanizması kurdu, ancak bu satın almalardan sonra geldi."
-  ],
-  "numbers": [
-    {"label": "Bosch iş kesintisi", "value": 22000, "unit": "kişi", "context": "Yalnızca Almanya'da, şirket tarihinin en büyüğü"},
-    {"label": "ZF iş kesintisi", "value": 14000, "unit": "kişi", "context": "Almanya'nın ikinci büyük otomotiv tedarikçisi"},
-    {"label": "Continental iş kesintisi", "value": 7150, "unit": "kişi", "context": "Açıklanan kesinti"},
-    {"label": "Schaeffler iş kesintisi", "value": 4700, "unit": "kişi", "context": "Açıklanan kesinti"},
-    {"label": "Ford fabrika kapanışı", "value": 7000, "unit": "kişi", "context": "55 yıllık fabrikanın kapanmasıyla işini kaybedenler"},
-    {"label": "2023'ten beri kaybedilen iş", "value": 55000, "unit": "kişi", "context": "Otomotiv tedarik sektöründe"},
-    {"label": "2030'a kadar beklenen kayıp", "value": 250000, "unit": "kişi", "context": "'Çeyrek milyon' olarak ifade edilen tahmin"},
-    {"label": "BASF iş kesintisi", "value": 2600, "unit": "kişi", "context": "Üretimi Çin'de yeniden kurarken"},
-    {"label": "Thyssenkrupp iş kesintisi", "value": 11000, "unit": "kişi", "context": "Çelik bölümü satışa çıkarılırken"},
-    {"label": "Çin sanayi elektriği", "value": 8, "unit": "sent/kWh", "context": "Yaklaşık fiyat"},
-    {"label": "Almanya sanayi elektriği", "value": 20, "unit": "sent/kWh (üzeri)", "context": "Alman üreticilerin ödediği fiyat"},
-    {"label": "Saatlik işçilik Almanya", "value": 62, "unit": "€/saat", "context": "Otomotiv sektörü"},
-    {"label": "Saatlik işçilik Fransa", "value": 47, "unit": "€/saat", "context": "Otomotiv sektörü"},
-    {"label": "Saatlik işçilik İtalya", "value": 33, "unit": "€/saat", "context": "Otomotiv sektörü"},
-    {"label": "Saatlik işçilik İspanya", "value": 29, "unit": "€/saat", "context": "Otomotiv sektörü"},
-    {"label": "Saatlik işçilik Çin (üst uç)", "value": 12, "unit": "€/saat", "context": "Eyalete göre 8-12 aralığı"},
-    {"label": "Tesla Berlin hukuki süreç", "value": 6, "unit": "yıl", "context": "Fabrikayı tamamlamadan önceki süreç"},
-    {"label": "BYD benzer fabrika süresi", "value": 18, "unit": "ay (altında)", "context": "Çin'de inşa süresi"},
-    {"label": "İtalya araç üretimi 2024", "value": 500000, "unit": "araç (altında)", "context": "Eskiden yaklaşık 2 milyon"},
-    {"label": "Almanya resesyon olasılığı", "value": 33, "unit": "%", "context": "İkinci çeyrek için, iki ayda üç katına çıktı"},
-    {"label": "AB acil elektrik desteği", "value": 3.8, "unit": "milyar €", "context": "2028'e kadar Alman sanayi elektriğine sübvansiyon"},
-    {"label": "Volvo satış bedeli (2010)", "value": 1.8, "unit": "milyar $", "context": "Ford'un Geely'ye satışı"},
-    {"label": "ChemChina'nın Pirelli payı", "value": 26, "unit": "%", "context": "2015'te, şirket değeri yaklaşık 8 milyar $"},
-    {"label": "Kuka satın alma", "value": 4.5, "unit": "milyar €", "context": "2016'da Midea tarafından"},
-    {"label": "Geely'nin Daimler payı", "value": 9.7, "unit": "%", "context": "2018'de 9 milyar $ karşılığında"},
-    {"label": "BAIC'in Mercedes payı", "value": 9.98, "unit": "%", "context": "Yönetim kurulunda koltukla"},
-    {"label": "Dongfeng'in Stellantis payı", "value": 12, "unit": "%", "context": "Yaklaşık pay"},
-    {"label": "Geely'nin Aston Martin payı", "value": 17, "unit": "%", "context": "2023"},
-    {"label": "Chery Barselona hedefi", "value": 200000, "unit": "araç/yıl", "context": "2029'a kadar eski Nissan fabrikasında"},
-    {"label": "Yatırım denetimi kuran AB ülkesi", "value": 24, "unit": "ülke (27'den)", "context": "Yabancı yatırım tarama mekanizması"}
-  ],
-  "chart": {
-    "type": "hbar",
-    "title": "Videoda sayılan Alman sanayi şirketlerinin iş kesintileri",
-    "unit": "kişi",
-    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. Ford rakamı bir fabrikanın kapanışına aittir.",
-    "data": [
-      {"label": "Bosch", "value": 22000},
-      {"label": "ZF Friedrichshafen", "value": 14000},
-      {"label": "Thyssenkrupp", "value": 11000},
-      {"label": "Continental", "value": 7150},
-      {"label": "Ford (fabrika kapanışı)", "value": 7000},
-      {"label": "Schaeffler", "value": 4700},
-      {"label": "BASF", "value": 2600}
-    ]
+ "id": "beaMlddk5P8",
+ "title_tr": "Alman sanayisindeki daralma ve Çinli yatırımcıların Avrupa'daki artan payı",
+ "category": "Jeopolitik & ticaret",
+ "region": [
+  "Almanya",
+  "Avrupa",
+  "Çin"
+ ],
+ "summary_tr": "Video, Bosch, ZF, Continental gibi tedarikçilerden çelik ve kimya devlerine kadar Alman sanayisinde büyük çaplı iş kayıplarını sıralıyor. Ana nedenler ucuz Rus gazının kaybı ve nükleerin kapatılmasıyla yükselen enerji maliyeti, yüksek işçilik ücretleri, uzun izin süreçleri ve elektrikli araç dönüşümünün geciktirilmesi olarak gösteriliyor. Eskiden en büyük müşteri olan Çin, aynı dönemde en güçlü rakibe dönüştü. Son bölümde Volvo'dan Mercedes'e, Pirelli'den Kuka'ya Çinli şirketlerin zor dönemlerde Avrupa varlıklarına ortak olduğu ve artık doğrudan fabrika satın aldığı anlatılıyor.",
+ "key_points": [
+  "Alman otomotiv tedarik sektöründe 2023'ten bu yana on binlerce iş kaybı yaşandığı ve 2030'a kadar daha fazlasının beklendiği söyleniyor.",
+  "AB'de sanayi elektriği ABD'nin iki katından pahalı; Çin'de ise çok daha ucuz.",
+  "Alman otomotivinde saatlik işçilik maliyeti Avrupa'nın diğer ülkelerinden ve Çin'den çok yüksek.",
+  "Volkswagen gibi üreticiler elektrikli araç dönüşümünü dizel kârlılığı nedeniyle geciktirdi.",
+  "Çinli şirketler Volvo, Kuka, Pirelli, Daimler ve Stellantis gibi şirketlerde pay veya kontrol edindi; şimdi fabrikalar da devrediliyor.",
+  "AB ülkelerinin çoğu yabancı yatırım denetim mekanizması kurdu, ancak bu satın almalardan sonra geldi."
+ ],
+ "numbers": [
+  {
+   "label": "Bosch iş kesintisi",
+   "value": 22000,
+   "unit": "kişi",
+   "context": "Yalnızca Almanya'da, şirket tarihinin en büyüğü"
   },
-  "diagram": {
-    "type": "flow",
-    "title": "Alman sanayi krizinin ve Çin sermayesinin girişinin neden-sonuç zinciri",
-    "steps": [
-      {"label": "Ucuz Rus gazı kaybı", "detail": "Ukrayna işgali sonrası ana enerji tedarikçisi kayboldu ve nükleer de kapatıldı."},
-      {"label": "Yüksek maliyet yapısı", "detail": "Elektrik, işçilik ve izin süreçleri rekabet gücünü aşındırdı."},
-      {"label": "Geciken EV dönüşümü", "detail": "Dizel kârlılığı nedeniyle elektrikli araç yatırımları ertelendi."},
-      {"label": "Çin rakip oldu", "detail": "Kâr kaynağı olan Çin pazarı kendi markalarıyla rakibe dönüştü."},
-      {"label": "İşten çıkarma ve nakit sıkışıklığı", "detail": "Tedarikçiler ve üreticiler küçülmeye ve varlık satmaya başladı."},
-      {"label": "Çinli alıcılar devreye girdi", "detail": "Sabırlı sermayeyle hisse, marka ve fabrikalar satın alındı."}
-    ]
+  {
+   "label": "ZF iş kesintisi",
+   "value": 14000,
+   "unit": "kişi",
+   "context": "Almanya'nın ikinci büyük otomotiv tedarikçisi"
   },
-  "business_ideas": [
-    {
-      "name": "Kapanan Avrupa fabrikalarından Türk üreticilere ikinci el makine aktarım platformu",
-      "insight": "Videoda Almanya ve Avrupa'da fabrikaların kapandığı, üretim hatlarının satıldığı anlatılıyor.",
-      "problem": "Kapanan tesislerdeki CNC, pres ve test ekipmanları değerinin altında hurdaya gidiyor; Türk üreticiler ise kaliteli ikinci el makineye ucuza erişmek istiyor.",
-      "solution": "Kapanış ilanlarını takip eden, ekspertiz, söküm, nakliye ve Türkiye'de kurulum hizmetini tek pakette sunan aracı platform.",
-      "target": "Türkiye'deki otomotiv yan sanayi ve metal işleme KOBİ'leri",
-      "revenue_model": "İşlem başına komisyon + ekspertiz ve lojistik hizmet ücreti",
-      "first_step": "Almanya'da kapanışı açıklanan 10 tesisin tasfiye yöneticileriyle iletişime geçip satılık ekipman listesi almak ve 5 Türk üreticiye sunmak",
-      "capital": "Orta",
-      "difficulty": 3,
-      "turkey_angle": "Türkiye Avrupa'ya yakın, güçlü bir otomotiv yan sanayi tabanına sahip; Almanca bilen mühendis ağıyla yürütülebilir.",
-      "risks": "Makine ithalatındaki gümrük ve yaş sınırı kuralları; söküm/kurulum maliyetinin öngörülememesi; ekspertiz hataları."
-    },
-    {
-      "name": "Tedarikçi sahiplik ve yabancı kontrol risk haritası",
-      "insight": "Video, işletmelerin 'tedarikçimin sahibi kim?' sorusunu sormaya başladığını ve sahiplik yapısının hızla değiştiğini vurguluyor.",
-      "problem": "Avrupalı alıcılar ve Türk tedarikçiler, tedarik zincirindeki şirketlerin nihai ortaklarını ve olası yaptırım/ticaret anlaşmazlığı riskini takip edemiyor.",
-      "solution": "Ticaret sicilleri ve kamuya açık hissedarlık verilerinden nihai ortaklık yapısını çıkarıp değişiklik olduğunda uyarı veren izleme hizmeti.",
-      "target": "Avrupa'ya ihracat yapan Türk otomotiv tedarikçileri ve AB'li satın alma departmanları",
-      "revenue_model": "İzlenen tedarikçi sayısına göre yıllık abonelik",
-      "first_step": "Bir Türk tedarikçinin ilk 20 alt tedarikçisinin sahiplik yapısını manuel çıkarıp risk raporu hazırlamak ve ödeme isteğini test etmek",
-      "capital": "Düşük",
-      "difficulty": 3,
-      "turkey_angle": "AB tedarik zinciri denetim yükümlülükleri Türk ihracatçıları da etkiliyor; Türkiye'den Avrupa müşterilerine hizmet verilebilir.",
-      "risks": "Ülkeler arasında sicil verisine erişim farklılıkları; veri lisans maliyeti; yerleşik büyük veri sağlayıcılarıyla rekabet."
-    },
-    {
-      "name": "Avrupa'da işten çıkarılan otomotiv mühendislerini Türk tedarikçilerle eşleştirme",
-      "insight": "Bosch, ZF, Continental gibi şirketlerin on binlerce kişiyi işten çıkardığı anlatılıyor.",
-      "problem": "Türk yan sanayi elektrikli araç, yazılım ve fonksiyonel güvenlik alanında deneyimli mühendis bulmakta zorlanıyor.",
-      "solution": "Deneyimli mühendisleri proje bazlı uzaktan danışmanlık veya kısa süreli yerinde görevlerle Türk şirketlere bağlayan uzman ağı.",
-      "target": "EV dönüşümüne geçen Türk otomotiv tedarikçileri ve OEM'ler",
-      "revenue_model": "Proje bedelinden yüzde komisyon",
-      "first_step": "LinkedIn'de işten çıkarılan 30 mühendisle görüşüp havuz oluşturmak ve 3 Türk tedarikçiye pilot proje teklifi götürmek",
-      "capital": "Düşük",
-      "difficulty": 2,
-      "turkey_angle": "Bursa, Kocaeli ve İzmir'deki yan sanayi kümeleri doğrudan hedef; Almanya'daki Türk kökenli mühendisler köprü olabilir.",
-      "risks": "Rekabet yasağı ve gizlilik sözleşmeleri; ücret beklentisi farkı; uzaktan çalışmanın üretim süreçlerinde sınırlı kalması."
-    }
-  ],
-  "skeptic_notes": [
-    "Altyazıda şirket ve yer adları ciddi biçimde bozuk: 'ZFredish Aen' (ZF Friedrichshafen), 'Chefer' (Schaeffler), 'Tiss' (Thyssenkrupp), 'Janjang' (Zhanjiang), 'Cam China' (ChemChina), 'Media B Kuka' (Midea, Kuka'yı aldı), 'Gile/Jill/Chile' (Geely), 'BIC' (BAIC), 'Dongfang' (Dongfeng), 'Pstar' (Polestar), 'Timeler' (Daimler).",
-    "Ford fabrikası altyazıda 'St. Louis' olarak geçiyor; bağlam Almanya olduğundan büyük olasılıkla Saarlouis kastediliyor.",
-    "'Mercedes'te en büyük oy bloğu Pekin'e bağlı' ifadesi abartılı: Geely özel bir şirket, BAIC ise devlet şirketi; ikisinin birlikte hareket ettiği varsayımı kanıtlanmamış.",
-    "Çin işçilik maliyeti için yalnızca 8-12 €/saat aralığı verilmiş; kaynağı belirtilmemiş.",
-    "Stellantis'in fabrikalarını Dongfeng'e satmayı düşündüğü ve Ford'un Valencia hattını satacağı bilgileri 'raporlara göre' deniyor; teyitli değil.",
-    "55.000 iş kaybı ve 2030'a kadar 250.000 tahmini tek kaynaktan; hangi kurumun tahmini olduğu belirtilmemiş.",
-    "Almanya'nın 'Avro bölgesi GSYH'sinin yaklaşık dörtte biri' olduğu ve resesyon olasılığı gibi makro rakamlar bağımsız kontrol gerektirir."
+  {
+   "label": "Continental iş kesintisi",
+   "value": 7150,
+   "unit": "kişi",
+   "context": "Açıklanan kesinti"
+  },
+  {
+   "label": "Schaeffler iş kesintisi",
+   "value": 4700,
+   "unit": "kişi",
+   "context": "Açıklanan kesinti"
+  },
+  {
+   "label": "Ford fabrika kapanışı",
+   "value": 7000,
+   "unit": "kişi",
+   "context": "55 yıllık fabrikanın kapanmasıyla işini kaybedenler"
+  },
+  {
+   "label": "2023'ten beri kaybedilen iş",
+   "value": 55000,
+   "unit": "kişi",
+   "context": "Otomotiv tedarik sektöründe"
+  },
+  {
+   "label": "2030'a kadar beklenen kayıp",
+   "value": 250000,
+   "unit": "kişi",
+   "context": "'Çeyrek milyon' olarak ifade edilen tahmin"
+  },
+  {
+   "label": "BASF iş kesintisi",
+   "value": 2600,
+   "unit": "kişi",
+   "context": "Üretimi Çin'de yeniden kurarken"
+  },
+  {
+   "label": "Thyssenkrupp iş kesintisi",
+   "value": 11000,
+   "unit": "kişi",
+   "context": "Çelik bölümü satışa çıkarılırken"
+  },
+  {
+   "label": "Çin sanayi elektriği",
+   "value": 8,
+   "unit": "sent/kWh",
+   "context": "Yaklaşık fiyat"
+  },
+  {
+   "label": "Almanya sanayi elektriği",
+   "value": 20,
+   "unit": "sent/kWh (üzeri)",
+   "context": "Alman üreticilerin ödediği fiyat"
+  },
+  {
+   "label": "Saatlik işçilik Almanya",
+   "value": 62,
+   "unit": "€/saat",
+   "context": "Otomotiv sektörü"
+  },
+  {
+   "label": "Saatlik işçilik Fransa",
+   "value": 47,
+   "unit": "€/saat",
+   "context": "Otomotiv sektörü"
+  },
+  {
+   "label": "Saatlik işçilik İtalya",
+   "value": 33,
+   "unit": "€/saat",
+   "context": "Otomotiv sektörü"
+  },
+  {
+   "label": "Saatlik işçilik İspanya",
+   "value": 29,
+   "unit": "€/saat",
+   "context": "Otomotiv sektörü"
+  },
+  {
+   "label": "Saatlik işçilik Çin (üst uç)",
+   "value": 12,
+   "unit": "€/saat",
+   "context": "Eyalete göre 8-12 aralığı"
+  },
+  {
+   "label": "Tesla Berlin hukuki süreç",
+   "value": 6,
+   "unit": "yıl",
+   "context": "Fabrikayı tamamlamadan önceki süreç"
+  },
+  {
+   "label": "BYD benzer fabrika süresi",
+   "value": 18,
+   "unit": "ay (altında)",
+   "context": "Çin'de inşa süresi"
+  },
+  {
+   "label": "İtalya araç üretimi 2024",
+   "value": 500000,
+   "unit": "araç (altında)",
+   "context": "Eskiden yaklaşık 2 milyon"
+  },
+  {
+   "label": "Almanya resesyon olasılığı",
+   "value": 33,
+   "unit": "%",
+   "context": "İkinci çeyrek için, iki ayda üç katına çıktı"
+  },
+  {
+   "label": "AB acil elektrik desteği",
+   "value": 3.8,
+   "unit": "milyar €",
+   "context": "2028'e kadar Alman sanayi elektriğine sübvansiyon"
+  },
+  {
+   "label": "Volvo satış bedeli (2010)",
+   "value": 1.8,
+   "unit": "milyar $",
+   "context": "Ford'un Geely'ye satışı"
+  },
+  {
+   "label": "ChemChina'nın Pirelli payı",
+   "value": 26,
+   "unit": "%",
+   "context": "2015'te, şirket değeri yaklaşık 8 milyar $"
+  },
+  {
+   "label": "Kuka satın alma",
+   "value": 4.5,
+   "unit": "milyar €",
+   "context": "2016'da Midea tarafından"
+  },
+  {
+   "label": "Geely'nin Daimler payı",
+   "value": 9.7,
+   "unit": "%",
+   "context": "2018'de 9 milyar $ karşılığında"
+  },
+  {
+   "label": "BAIC'in Mercedes payı",
+   "value": 9.98,
+   "unit": "%",
+   "context": "Yönetim kurulunda koltukla"
+  },
+  {
+   "label": "Dongfeng'in Stellantis payı",
+   "value": 12,
+   "unit": "%",
+   "context": "Yaklaşık pay"
+  },
+  {
+   "label": "Geely'nin Aston Martin payı",
+   "value": 17,
+   "unit": "%",
+   "context": "2023"
+  },
+  {
+   "label": "Chery Barselona hedefi",
+   "value": 200000,
+   "unit": "araç/yıl",
+   "context": "2029'a kadar eski Nissan fabrikasında"
+  },
+  {
+   "label": "Yatırım denetimi kuran AB ülkesi",
+   "value": 24,
+   "unit": "ülke (27'den)",
+   "context": "Yabancı yatırım tarama mekanizması"
+  }
+ ],
+ "chart": {
+  "type": "hbar",
+  "title": "Videoda sayılan Alman sanayi şirketlerinin iş kesintileri",
+  "unit": "kişi",
+  "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. Ford rakamı bir fabrikanın kapanışına aittir.",
+  "data": [
+   {
+    "label": "Bosch",
+    "value": 22000
+   },
+   {
+    "label": "ZF Friedrichshafen",
+    "value": 14000
+   },
+   {
+    "label": "Thyssenkrupp",
+    "value": 11000
+   },
+   {
+    "label": "Continental",
+    "value": 7150
+   },
+   {
+    "label": "Ford (fabrika kapanışı)",
+    "value": 7000
+   },
+   {
+    "label": "Schaeffler",
+    "value": 4700
+   },
+   {
+    "label": "BASF",
+    "value": 2600
+   }
   ]
+ },
+ "diagram": {
+  "type": "flow",
+  "title": "Alman sanayi krizinin ve Çin sermayesinin girişinin neden-sonuç zinciri",
+  "steps": [
+   {
+    "label": "Ucuz Rus gazı kaybı",
+    "detail": "Ukrayna işgali sonrası ana enerji tedarikçisi kayboldu ve nükleer de kapatıldı."
+   },
+   {
+    "label": "Yüksek maliyet yapısı",
+    "detail": "Elektrik, işçilik ve izin süreçleri rekabet gücünü aşındırdı."
+   },
+   {
+    "label": "Geciken EV dönüşümü",
+    "detail": "Dizel kârlılığı nedeniyle elektrikli araç yatırımları ertelendi."
+   },
+   {
+    "label": "Çin rakip oldu",
+    "detail": "Kâr kaynağı olan Çin pazarı kendi markalarıyla rakibe dönüştü."
+   },
+   {
+    "label": "İşten çıkarma ve nakit sıkışıklığı",
+    "detail": "Tedarikçiler ve üreticiler küçülmeye ve varlık satmaya başladı."
+   },
+   {
+    "label": "Çinli alıcılar devreye girdi",
+    "detail": "Sabırlı sermayeyle hisse, marka ve fabrikalar satın alındı."
+   }
+  ]
+ },
+ "business_ideas": [
+  {
+   "name": "Kapanan Avrupa fabrikalarından Türk üreticilere ikinci el makine aktarım platformu",
+   "insight": "Videoda Almanya ve Avrupa'da fabrikaların kapandığı, üretim hatlarının satıldığı anlatılıyor.",
+   "problem": "Kapanan tesislerdeki CNC, pres ve test ekipmanları değerinin altında hurdaya gidiyor; Türk üreticiler ise kaliteli ikinci el makineye ucuza erişmek istiyor.",
+   "solution": "Kapanış ilanlarını takip eden, ekspertiz, söküm, nakliye ve Türkiye'de kurulum hizmetini tek pakette sunan aracı platform.",
+   "target": "Türkiye'deki otomotiv yan sanayi ve metal işleme KOBİ'leri",
+   "revenue_model": "İşlem başına komisyon + ekspertiz ve lojistik hizmet ücreti",
+   "first_step": "Almanya'da kapanışı açıklanan 10 tesisin tasfiye yöneticileriyle iletişime geçip satılık ekipman listesi almak ve 5 Türk üreticiye sunmak",
+   "capital": "Orta",
+   "difficulty": 3,
+   "turkey_angle": "Türkiye Avrupa'ya yakın, güçlü bir otomotiv yan sanayi tabanına sahip; Almanca bilen mühendis ağıyla yürütülebilir.",
+   "risks": "Makine ithalatındaki gümrük ve yaş sınırı kuralları; söküm/kurulum maliyetinin öngörülememesi; ekspertiz hataları.",
+   "originality": 3,
+   "problem_solving": 3,
+   "score_note": "'Kapanış takibi' fark.",
+   "similar": [
+    {
+     "id": "FnraS2GwJU8",
+     "name": "Japonya'dan ikinci el iş makinesi ve tezgah tedariki"
+    }
+   ]
+  },
+  {
+   "name": "Tedarikçi sahiplik ve yabancı kontrol risk haritası",
+   "insight": "Video, işletmelerin 'tedarikçimin sahibi kim?' sorusunu sormaya başladığını ve sahiplik yapısının hızla değiştiğini vurguluyor.",
+   "problem": "Avrupalı alıcılar ve Türk tedarikçiler, tedarik zincirindeki şirketlerin nihai ortaklarını ve olası yaptırım/ticaret anlaşmazlığı riskini takip edemiyor.",
+   "solution": "Ticaret sicilleri ve kamuya açık hissedarlık verilerinden nihai ortaklık yapısını çıkarıp değişiklik olduğunda uyarı veren izleme hizmeti.",
+   "target": "Avrupa'ya ihracat yapan Türk otomotiv tedarikçileri ve AB'li satın alma departmanları",
+   "revenue_model": "İzlenen tedarikçi sayısına göre yıllık abonelik",
+   "first_step": "Bir Türk tedarikçinin ilk 20 alt tedarikçisinin sahiplik yapısını manuel çıkarıp risk raporu hazırlamak ve ödeme isteğini test etmek",
+   "capital": "Düşük",
+   "difficulty": 3,
+   "turkey_angle": "AB tedarik zinciri denetim yükümlülükleri Türk ihracatçıları da etkiliyor; Türkiye'den Avrupa müşterilerine hizmet verilebilir.",
+   "risks": "Ülkeler arasında sicil verisine erişim farklılıkları; veri lisans maliyeti; yerleşik büyük veri sağlayıcılarıyla rekabet.",
+   "originality": 2,
+   "problem_solving": 3,
+   "score_note": "Hissedar zinciri raporlarıyla örtüşür.",
+   "similar": [
+    {
+     "id": "2UJrkmug_gs",
+     "name": "Asyalı karşı taraflar için hissedar zinciri raporu"
+    },
+    {
+     "id": "K9Xu_jW17NM",
+     "name": "Çinli tedarikçiler için yaptırım ve ihracat kontrolü taraması"
+    }
+   ]
+  },
+  {
+   "name": "Avrupa'da işten çıkarılan otomotiv mühendislerini Türk tedarikçilerle eşleştirme",
+   "insight": "Bosch, ZF, Continental gibi şirketlerin on binlerce kişiyi işten çıkardığı anlatılıyor.",
+   "problem": "Türk yan sanayi elektrikli araç, yazılım ve fonksiyonel güvenlik alanında deneyimli mühendis bulmakta zorlanıyor.",
+   "solution": "Deneyimli mühendisleri proje bazlı uzaktan danışmanlık veya kısa süreli yerinde görevlerle Türk şirketlere bağlayan uzman ağı.",
+   "target": "EV dönüşümüne geçen Türk otomotiv tedarikçileri ve OEM'ler",
+   "revenue_model": "Proje bedelinden yüzde komisyon",
+   "first_step": "LinkedIn'de işten çıkarılan 30 mühendisle görüşüp havuz oluşturmak ve 3 Türk tedarikçiye pilot proje teklifi götürmek",
+   "capital": "Düşük",
+   "difficulty": 2,
+   "turkey_angle": "Bursa, Kocaeli ve İzmir'deki yan sanayi kümeleri doğrudan hedef; Almanya'daki Türk kökenli mühendisler köprü olabilir.",
+   "risks": "Rekabet yasağı ve gizlilik sözleşmeleri; ücret beklentisi farkı; uzaktan çalışmanın üretim süreçlerinde sınırlı kalması.",
+   "originality": 3,
+   "problem_solving": 4,
+   "score_note": "Zamanlı ve somut; uzman ağı modeli bilinen.",
+   "similar": []
+  }
+ ],
+ "skeptic_notes": [
+  "Altyazıda şirket ve yer adları ciddi biçimde bozuk: 'ZFredish Aen' (ZF Friedrichshafen), 'Chefer' (Schaeffler), 'Tiss' (Thyssenkrupp), 'Janjang' (Zhanjiang), 'Cam China' (ChemChina), 'Media B Kuka' (Midea, Kuka'yı aldı), 'Gile/Jill/Chile' (Geely), 'BIC' (BAIC), 'Dongfang' (Dongfeng), 'Pstar' (Polestar), 'Timeler' (Daimler).",
+  "Ford fabrikası altyazıda 'St. Louis' olarak geçiyor; bağlam Almanya olduğundan büyük olasılıkla Saarlouis kastediliyor.",
+  "'Mercedes'te en büyük oy bloğu Pekin'e bağlı' ifadesi abartılı: Geely özel bir şirket, BAIC ise devlet şirketi; ikisinin birlikte hareket ettiği varsayımı kanıtlanmamış.",
+  "Çin işçilik maliyeti için yalnızca 8-12 €/saat aralığı verilmiş; kaynağı belirtilmemiş.",
+  "Stellantis'in fabrikalarını Dongfeng'e satmayı düşündüğü ve Ford'un Valencia hattını satacağı bilgileri 'raporlara göre' deniyor; teyitli değil.",
+  "55.000 iş kaybı ve 2030'a kadar 250.000 tahmini tek kaynaktan; hangi kurumun tahmini olduğu belirtilmemiş.",
+  "Almanya'nın 'Avro bölgesi GSYH'sinin yaklaşık dörtte biri' olduğu ve resesyon olasılığı gibi makro rakamlar bağımsız kontrol gerektirir."
+ ]
 }

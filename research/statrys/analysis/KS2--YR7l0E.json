@@ -1,81 +1,94 @@
 {
-  "id": "KS2--YR7l0E",
-  "title_tr": "Statrys'te artık Singapur işletme hesapları açılabiliyor",
-  "category": "Şirket kurma & vergi (Statrys hizmet videoları)",
-  "region": [
-    "Singapur",
-    "Hong Kong",
-    "Güneydoğu Asya"
-  ],
-  "summary_tr": "Kısa bir tanıtım filmi: Statrys, Hong Kong'un ardından Singapur'da ofis açtığını ve oradaki işletmelere de hesap sunduğunu duyuruyor. Videonun tezi, geleneksel bankaların küçük işletmeler için yavaş, pahalı ve zaman zaman hesap açmayı reddeden kurumlar olduğu. Statrys buna karşı tamamen çevrim içi, dakikalar içinde açılan, ücretleri açık ve insan desteği olan bir hesap vaat ediyor. Somut rakam, ücret tablosu veya karşılaştırma verisi sunulmuyor.",
-  "key_points": [
-    "Statrys Singapur'da yeni bir ofis açtığını ve bölgeye genişlediğini duyuruyor.",
-    "KOBİ'lerin ortak sorunu olarak bankaların yavaşlığı, yüksek maliyeti ve hesap reddi gösteriliyor.",
-    "Hesap açılışının tamamen çevrim içi ve dakikalar içinde olduğu iddia ediliyor.",
-    "Gizli ücret olmadığı ve her zaman ulaşılabilen bir destek ekibi bulunduğu vurgulanıyor.",
-    "Singapur, Asya genelindeki vizyonun köprüsü olarak konumlandırılıyor."
-  ],
-  "numbers": [],
-  "chart": null,
-  "diagram": {
-    "type": "flow",
-    "title": "Videonun kurguladığı müşteri yolculuğu",
-    "steps": [
-      {
-        "label": "Uluslararası girişimci",
-        "detail": "Hong Kong veya Singapur gibi merkezlerde şirket kuran yabancı işletme sahibi."
-      },
-      {
-        "label": "Banka engeli",
-        "detail": "Geleneksel bankalar yavaş, pahalı ve bazen hesap açmayı reddediyor."
-      },
-      {
-        "label": "Çevrim içi başvuru",
-        "detail": "Statrys'e tamamen dijital başvuru yapılıyor."
-      },
-      {
-        "label": "Hesap açılışı",
-        "detail": "Videoya göre hesap kısa sürede ve şeffaf ücretlerle açılıyor."
-      },
-      {
-        "label": "Bölgesel genişleme",
-        "detail": "Aynı sağlayıcıyla Hong Kong'dan Singapur'a ve ötesine açılma vaadi."
-      }
-    ]
-  },
-  "business_ideas": [
-    {
-      "name": "Asya işletme hesabı başvuru hazırlık paketi",
-      "insight": "Video, bankaların küçük ve yabancı işletmelerin hesap başvurularını sık sık reddettiğini ana sorun olarak koyuyor.",
-      "problem": "Türk şirketlerinin Hong Kong/Singapur hesap başvuruları eksik belge, belirsiz iş modeli anlatımı ve uyum (KYC) sorularına zayıf yanıtlar yüzünden reddediliyor veya uzuyor.",
-      "solution": "Başvuru öncesi iş modeli açıklaması, tedarikçi/müşteri kanıtları, fon kaynağı belgeleri ve beklenen işlem profili içeren standart bir 'KYC dosyası' hazırlayan hizmet; birden fazla fintech/bankaya uygun formatta.",
-      "target": "Asya'da şirket kuran veya kurmayı düşünen Türk ihracatçı ve e-ticaret KOBİ'leri",
-      "revenue_model": "Dosya başına sabit ücret; reddedilen başvurular için yeniden hazırlık paketi",
-      "first_step": "Asya'da hesap açmayı denemiş 15 Türk girişimciyle görüşüp ret/gecikme nedenlerini ve ödemeye razı oldukları tutarı kayıt altına almak.",
-      "capital": "Düşük",
-      "difficulty": 2,
-      "turkey_angle": "Tamamen uzaktan, İstanbul'dan yürütülebilir; Türkçe-İngilizce belge hazırlığı ve yeminli tercüme ağıyla fark yaratılabilir.",
-      "risks": "Hesap açma kararı tamamen bankaya/fintech'e ait olduğundan sonuç garantisi verilemez; yanıltıcı beyan hazırlamak hukuki sorumluluk doğurur, yalnızca gerçek bilgilerle çalışılmalı."
-    },
-    {
-      "name": "Asya fintech hesapları karşılaştırma ve ücret izleme platformu",
-      "insight": "Video 'gizli ücret yok' iddiasını öne çıkarıyor ama hiçbir ücret rakamı vermiyor; karar verirken bağımsız karşılaştırma ihtiyacı doğuyor.",
-      "problem": "Statrys, Aspire, Airwallex gibi sağlayıcıların hesap, transfer ve kur dönüşüm ücretlerini kıyaslamak dağınık ve zaman alıcı.",
-      "solution": "Hong Kong ve Singapur'daki işletme hesabı sağlayıcılarının ücret, desteklenen para birimleri, kabul edilen ülke/sektör bilgilerini Türkçe ve İngilizce düzenli güncelleyen bağımsız bir karşılaştırma sitesi.",
-      "target": "Asya'da hesap arayan Türk ve bölge girişimcileri",
-      "revenue_model": "Ortaklık (affiliate) gelirleri, sponsorlu olmayan premium detaylı rapor, danışmanlık yönlendirmesi",
-      "first_step": "5 sağlayıcının kamuya açık ücret sayfalarını tablolaştırıp yayınlamak ve 30 günde gelen trafik/e-posta kaydını ölçmek.",
-      "capital": "Düşük",
-      "difficulty": 2,
-      "turkey_angle": "Türkçe içerik boşluğu büyük; Türk ihracatçı toplulukları ve LinkedIn üzerinden dağıtılabilir.",
-      "risks": "Affiliate gelirleri tarafsızlığı zedeleyebilir; ücretler sık değişir, güncel tutulmazsa güven kaybı; finansal tavsiye sınırına dikkat edilmeli."
-    }
-  ],
-  "skeptic_notes": [
-    "Bu video Statrys'in kendi hizmetlerini tanıtan bir reklam/tanıtım içeriğidir; anlatım tarafsız değildir.",
-    "Otomatik altyazı şirket adını çoğu yerde 'Status' veya 'statris' olarak yazmış; doğrusu Statrys.",
-    "Hesabın 'dakikalar içinde' açıldığı iddiası, KYC incelemesi süresini kapsayıp kapsamadığı belirtilmeden söyleniyor.",
-    "'Gizli ücret yok' ve 'her zaman destek' vaatleri herhangi bir veriyle desteklenmiyor.",
-    "Videoda hiçbir sayısal veri olmadığı için grafik üretilmedi."
+ "id": "KS2--YR7l0E",
+ "title_tr": "Statrys'te artık Singapur işletme hesapları açılabiliyor",
+ "category": "Şirket kurma & vergi (Statrys hizmet videoları)",
+ "region": [
+  "Singapur",
+  "Hong Kong",
+  "Güneydoğu Asya"
+ ],
+ "summary_tr": "Kısa bir tanıtım filmi: Statrys, Hong Kong'un ardından Singapur'da ofis açtığını ve oradaki işletmelere de hesap sunduğunu duyuruyor. Videonun tezi, geleneksel bankaların küçük işletmeler için yavaş, pahalı ve zaman zaman hesap açmayı reddeden kurumlar olduğu. Statrys buna karşı tamamen çevrim içi, dakikalar içinde açılan, ücretleri açık ve insan desteği olan bir hesap vaat ediyor. Somut rakam, ücret tablosu veya karşılaştırma verisi sunulmuyor.",
+ "key_points": [
+  "Statrys Singapur'da yeni bir ofis açtığını ve bölgeye genişlediğini duyuruyor.",
+  "KOBİ'lerin ortak sorunu olarak bankaların yavaşlığı, yüksek maliyeti ve hesap reddi gösteriliyor.",
+  "Hesap açılışının tamamen çevrim içi ve dakikalar içinde olduğu iddia ediliyor.",
+  "Gizli ücret olmadığı ve her zaman ulaşılabilen bir destek ekibi bulunduğu vurgulanıyor.",
+  "Singapur, Asya genelindeki vizyonun köprüsü olarak konumlandırılıyor."
+ ],
+ "numbers": [],
+ "chart": null,
+ "diagram": {
+  "type": "flow",
+  "title": "Videonun kurguladığı müşteri yolculuğu",
+  "steps": [
+   {
+    "label": "Uluslararası girişimci",
+    "detail": "Hong Kong veya Singapur gibi merkezlerde şirket kuran yabancı işletme sahibi."
+   },
+   {
+    "label": "Banka engeli",
+    "detail": "Geleneksel bankalar yavaş, pahalı ve bazen hesap açmayı reddediyor."
+   },
+   {
+    "label": "Çevrim içi başvuru",
+    "detail": "Statrys'e tamamen dijital başvuru yapılıyor."
+   },
+   {
+    "label": "Hesap açılışı",
+    "detail": "Videoya göre hesap kısa sürede ve şeffaf ücretlerle açılıyor."
+   },
+   {
+    "label": "Bölgesel genişleme",
+    "detail": "Aynı sağlayıcıyla Hong Kong'dan Singapur'a ve ötesine açılma vaadi."
+   }
   ]
+ },
+ "business_ideas": [
+  {
+   "name": "Asya işletme hesabı başvuru hazırlık paketi",
+   "insight": "Video, bankaların küçük ve yabancı işletmelerin hesap başvurularını sık sık reddettiğini ana sorun olarak koyuyor.",
+   "problem": "Türk şirketlerinin Hong Kong/Singapur hesap başvuruları eksik belge, belirsiz iş modeli anlatımı ve uyum (KYC) sorularına zayıf yanıtlar yüzünden reddediliyor veya uzuyor.",
+   "solution": "Başvuru öncesi iş modeli açıklaması, tedarikçi/müşteri kanıtları, fon kaynağı belgeleri ve beklenen işlem profili içeren standart bir 'KYC dosyası' hazırlayan hizmet; birden fazla fintech/bankaya uygun formatta.",
+   "target": "Asya'da şirket kuran veya kurmayı düşünen Türk ihracatçı ve e-ticaret KOBİ'leri",
+   "revenue_model": "Dosya başına sabit ücret; reddedilen başvurular için yeniden hazırlık paketi",
+   "first_step": "Asya'da hesap açmayı denemiş 15 Türk girişimciyle görüşüp ret/gecikme nedenlerini ve ödemeye razı oldukları tutarı kayıt altına almak.",
+   "capital": "Düşük",
+   "difficulty": 2,
+   "turkey_angle": "Tamamen uzaktan, İstanbul'dan yürütülebilir; Türkçe-İngilizce belge hazırlığı ve yeminli tercüme ağıyla fark yaratılabilir.",
+   "risks": "Hesap açma kararı tamamen bankaya/fintech'e ait olduğundan sonuç garantisi verilemez; yanıltıcı beyan hazırlamak hukuki sorumluluk doğurur, yalnızca gerçek bilgilerle çalışılmalı.",
+   "originality": 2,
+   "problem_solving": 4,
+   "score_note": "Danışmanlar yapıyor.",
+   "similar": [
+    {
+     "id": "pira0yipY9c",
+     "name": "Yurt dışı hesap başvurusu için KYC dosya hazırlık hizmeti"
+    }
+   ]
+  },
+  {
+   "name": "Asya fintech hesapları karşılaştırma ve ücret izleme platformu",
+   "insight": "Video 'gizli ücret yok' iddiasını öne çıkarıyor ama hiçbir ücret rakamı vermiyor; karar verirken bağımsız karşılaştırma ihtiyacı doğuyor.",
+   "problem": "Statrys, Aspire, Airwallex gibi sağlayıcıların hesap, transfer ve kur dönüşüm ücretlerini kıyaslamak dağınık ve zaman alıcı.",
+   "solution": "Hong Kong ve Singapur'daki işletme hesabı sağlayıcılarının ücret, desteklenen para birimleri, kabul edilen ülke/sektör bilgilerini Türkçe ve İngilizce düzenli güncelleyen bağımsız bir karşılaştırma sitesi.",
+   "target": "Asya'da hesap arayan Türk ve bölge girişimcileri",
+   "revenue_model": "Ortaklık (affiliate) gelirleri, sponsorlu olmayan premium detaylı rapor, danışmanlık yönlendirmesi",
+   "first_step": "5 sağlayıcının kamuya açık ücret sayfalarını tablolaştırıp yayınlamak ve 30 günde gelen trafik/e-posta kaydını ölçmek.",
+   "capital": "Düşük",
+   "difficulty": 2,
+   "turkey_angle": "Türkçe içerik boşluğu büyük; Türk ihracatçı toplulukları ve LinkedIn üzerinden dağıtılabilir.",
+   "risks": "Affiliate gelirleri tarafsızlığı zedeleyebilir; ücretler sık değişir, güncel tutulmazsa güven kaybı; finansal tavsiye sınırına dikkat edilmeli.",
+   "originality": 2,
+   "problem_solving": 3,
+   "score_note": "Karşılaştırma sitesi; ortaklık geliri.",
+   "similar": []
+  }
+ ],
+ "skeptic_notes": [
+  "Bu video Statrys'in kendi hizmetlerini tanıtan bir reklam/tanıtım içeriğidir; anlatım tarafsız değildir.",
+  "Otomatik altyazı şirket adını çoğu yerde 'Status' veya 'statris' olarak yazmış; doğrusu Statrys.",
+  "Hesabın 'dakikalar içinde' açıldığı iddiası, KYC incelemesi süresini kapsayıp kapsamadığı belirtilmeden söyleniyor.",
+  "'Gizli ücret yok' ve 'her zaman destek' vaatleri herhangi bir veriyle desteklenmiyor.",
+  "Videoda hiçbir sayısal veri olmadığı için grafik üretilmedi."
+ ]
 }

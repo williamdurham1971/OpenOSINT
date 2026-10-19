@@ -1,109 +1,248 @@
 {
-  "id": "FnraS2GwJU8",
-  "title_tr": "Japonya'nın yen ve borç ikilemi: küresel faizlere ve kurlara yayılan etkiler",
-  "category": "Doğu Asya (Japonya/Kore)",
-  "region": ["Japonya", "ABD", "Güney Kore", "Tayvan", "Hong Kong", "Avrupa"],
-  "summary_tr": "Video, Japonya'nın aynı anda iki sorunla karşı karşıya olduğunu anlatıyor: tarihi düşük seviyelerdeki yen ve ekonominin iki katını aşan kamu borcu; birini çözmek diğerini kötüleştiriyor. Tokyo'nun yen almak için piyasaya girmesi ve ABD'nin buna eşlik etmesi kısa süreli etki yarattı; iki ülke de ABD tahvillerini satmaktan özellikle kaçındı çünkü bu ABD faizlerini yükseltirdi. Onlarca yıllık sıfır faiz döneminde Japon tasarrufları yurt dışına aktı ve dünyaya ucuz yen borcuyla 'carry trade' imkânı sundu; Japon faizlerinin yükselmesiyle bu para eve dönüyor ve küresel borçlanma maliyetlerini artırıyor. Etkiler önce Japon hanehalkının harcamalarında, sonra bölge kurlarında ve farklı para birimleriyle ticaret yapan şirketlerin marjlarında görülüyor. Video, kur riskine karşı vadeli kur sözleşmesi (FX forward) önererek Statrys hizmetini tanıtıyor.",
-  "key_points": [
-    "Yeni korumak borç yükünü, borcu korumak ise yeni zayıflatıyor; Japonya iki hedefi aynı anda tutturamıyor.",
-    "Japonya ve ABD'nin ortak kur müdahalesi yeni kısa süreliğine yükseltti ama kalıcı etki yaratmadı.",
-    "Sıfır faiz yıllarında Japon kurumları yurt dışı tahvillere yöneldi ve ucuz yen borçlanması (carry trade) yaygınlaştı.",
-    "2024 yazındaki küçük bir faiz artışı carry trade çözülmesini ve Tokyo borsasında sert düşüşü tetikledi.",
-    "Japon getirileri yükseldikçe Japon yatırımcılar yabancı tahvil satıyor, bu da ABD ve Avrupa'da uzun vadeli faizleri yukarı itiyor.",
-    "Farklı para birimleriyle alım-satım yapan şirketler için vadeli kur sözleşmesi bir koruma aracı olarak öneriliyor."
-  ],
-  "numbers": [
-    {"label": "Kamu borcu/ekonomi", "value": 2, "unit": "kat", "context": "Japonya'nın borcunun ekonomisinin yıllık üretiminin iki katını aşması."},
-    {"label": "Müdahale süresi", "value": 48, "unit": "saat", "context": "Milyarlarca doların 48 saatte harcandığı kur müdahalesi."},
-    {"label": "Müdahale sonrası yen yükselişi", "value": 5, "unit": "%", "context": "Yenin müdahale sonrası kısa süreli yükselişi."},
-    {"label": "Japonya'nın ABD tahvili varlığı", "value": 1, "unit": "trilyon $", "context": "'1 trilyon doların üzerinde', dünyadaki en büyük yabancı ABD tahvili stoku."},
-    {"label": "ABD kamu borcu", "value": 40, "unit": "trilyon $", "context": "ABD'nin taşıdığı yaklaşık borç."},
-    {"label": "Carry trade tahmini (BIS)", "value": 250, "unit": "milyar $", "context": "BIS'in 2024 başı tahmini; gerçek rakamın daha yüksek olabileceği belirtildi."},
-    {"label": "ABD tahvil getirisi (örnek)", "value": 4, "unit": "%", "context": "Carry trade örneğinde ucuz yenle alınan ABD tahvillerinin getirisi."},
-    {"label": "2024 BoJ faiz artışı", "value": 0.25, "unit": "puan", "context": "2024 yazında piyasayı sarsan faiz artışı."},
-    {"label": "Tokyo borsası tek gün düşüş", "value": 12.4, "unit": "%", "context": "1987 Kara Pazartesi'den beri en kötü gün."},
-    {"label": "BoJ politika faizi", "value": 1, "unit": "%", "context": "1995'ten beri en yüksek seviye."},
-    {"label": "Japonya 30 yıllık tahvil getirisi", "value": 4, "unit": "%", "context": "Uzun yıllar sıfıra yakın kaldıktan sonra ulaşılan yaklaşık seviye."},
-    {"label": "Japon yatırımcıların ABD tahvili satışı", "value": 29.6, "unit": "milyar $", "context": "Bu yılın ilk 3 ayında satılan ABD borcu."},
-    {"label": "Hanehalkı harcama değişimi (Haziran)", "value": -3.3, "unit": "%", "context": "Artış beklenirken harcamaların düşüşü."},
-    {"label": "Ücret artışı süresi", "value": 6, "unit": "ay", "context": "Ücretlerin üst üste arttığı ay sayısı."},
-    {"label": "Hükümeti fiyatlarda başarısız bulanlar", "value": 71, "unit": "%", "context": "Japon kamuoyunun hükümetin fiyat politikasını başarısız bulma oranı."},
-    {"label": "Temmuz sonu yen dalgalanması", "value": 5, "unit": "%", "context": "Üç işlem gününde yenin hareketi."},
-    {"label": "Örnek tedarikçi borcu", "value": 5, "unit": "milyon yen", "context": "FX forward örneğinde 3 ay sonra ödenecek tutar."}
-  ],
-  "chart": {
-    "type": "bar",
-    "title": "Videoda geçen faiz ve getiri seviyeleri",
-    "unit": "%",
-    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı",
-    "data": [
-      {"label": "BoJ politika faizi", "value": 1},
-      {"label": "Japonya 30 yıllık tahvil (yaklaşık)", "value": 4},
-      {"label": "ABD tahvili (carry trade örneği)", "value": 4}
-    ]
+ "id": "FnraS2GwJU8",
+ "title_tr": "Japonya'nın yen ve borç ikilemi: küresel faizlere ve kurlara yayılan etkiler",
+ "category": "Doğu Asya (Japonya/Kore)",
+ "region": [
+  "Japonya",
+  "ABD",
+  "Güney Kore",
+  "Tayvan",
+  "Hong Kong",
+  "Avrupa"
+ ],
+ "summary_tr": "Video, Japonya'nın aynı anda iki sorunla karşı karşıya olduğunu anlatıyor: tarihi düşük seviyelerdeki yen ve ekonominin iki katını aşan kamu borcu; birini çözmek diğerini kötüleştiriyor. Tokyo'nun yen almak için piyasaya girmesi ve ABD'nin buna eşlik etmesi kısa süreli etki yarattı; iki ülke de ABD tahvillerini satmaktan özellikle kaçındı çünkü bu ABD faizlerini yükseltirdi. Onlarca yıllık sıfır faiz döneminde Japon tasarrufları yurt dışına aktı ve dünyaya ucuz yen borcuyla 'carry trade' imkânı sundu; Japon faizlerinin yükselmesiyle bu para eve dönüyor ve küresel borçlanma maliyetlerini artırıyor. Etkiler önce Japon hanehalkının harcamalarında, sonra bölge kurlarında ve farklı para birimleriyle ticaret yapan şirketlerin marjlarında görülüyor. Video, kur riskine karşı vadeli kur sözleşmesi (FX forward) önererek Statrys hizmetini tanıtıyor.",
+ "key_points": [
+  "Yeni korumak borç yükünü, borcu korumak ise yeni zayıflatıyor; Japonya iki hedefi aynı anda tutturamıyor.",
+  "Japonya ve ABD'nin ortak kur müdahalesi yeni kısa süreliğine yükseltti ama kalıcı etki yaratmadı.",
+  "Sıfır faiz yıllarında Japon kurumları yurt dışı tahvillere yöneldi ve ucuz yen borçlanması (carry trade) yaygınlaştı.",
+  "2024 yazındaki küçük bir faiz artışı carry trade çözülmesini ve Tokyo borsasında sert düşüşü tetikledi.",
+  "Japon getirileri yükseldikçe Japon yatırımcılar yabancı tahvil satıyor, bu da ABD ve Avrupa'da uzun vadeli faizleri yukarı itiyor.",
+  "Farklı para birimleriyle alım-satım yapan şirketler için vadeli kur sözleşmesi bir koruma aracı olarak öneriliyor."
+ ],
+ "numbers": [
+  {
+   "label": "Kamu borcu/ekonomi",
+   "value": 2,
+   "unit": "kat",
+   "context": "Japonya'nın borcunun ekonomisinin yıllık üretiminin iki katını aşması."
   },
-  "diagram": {
-    "type": "flow",
-    "title": "Yen carry trade'in çözülme zinciri",
-    "steps": [
-      {"label": "Sıfır faiz dönemi", "detail": "Japonya faizi uzun süre sıfırda tutunca yen borçlanması neredeyse bedava oldu."},
-      {"label": "Carry trade büyüdü", "detail": "Yatırımcılar yen borçlanıp yüksek getirili yabancı varlıklara yöneldi."},
-      {"label": "Japon faizleri yükseldi", "detail": "BoJ faiz artırınca yen güçlenme eğilimine girdi ve borçların maliyeti arttı."},
-      {"label": "Zorunlu satışlar", "detail": "Teminat talepleriyle yatırımcılar en hızlı satılan varlıkları elden çıkardı."},
-      {"label": "Para eve dönüyor", "detail": "Japon kurumları yabancı tahvilleri satıp yurt içine yöneldi."},
-      {"label": "Küresel faizler yükseliyor", "detail": "ABD ve Avrupa düzenli alıcısını kaybedip daha yüksek faizle borçlanıyor."},
-      {"label": "Şirket marjları etkileniyor", "detail": "Kur ve faiz oynaklığı farklı para birimiyle ticaret yapan işletmeleri vuruyor."}
-    ]
+  {
+   "label": "Müdahale süresi",
+   "value": 48,
+   "unit": "saat",
+   "context": "Milyarlarca doların 48 saatte harcandığı kur müdahalesi."
   },
-  "business_ideas": [
-    {
-      "name": "Japonya'dan ikinci el iş makinesi ve tezgah tedariki",
-      "insight": "Videoya göre yen tarihi düşük seviyede; bu Japonya'dan dolar veya euro ile alım yapanlar için Japon mallarını görece ucuzlatıyor.",
-      "problem": "Türk üreticiler ve müteahhitler kaliteli ikinci el CNC tezgah ve iş makinesini Avrupa'dan yüksek fiyata alıyor; Japon pazarına erişimleri yok.",
-      "solution": "Japon açık artırma ve bayi ağlarından ekspertizli ikinci el tezgah/iş makinesi bulup kur sabitlemeli alım, nakliye ve gümrükle birlikte anahtar teslim sunan aracı hizmet.",
-      "target": "Türk metal işleme atölyeleri, KOBİ üreticiler, orta ölçekli müteahhitler",
-      "revenue_model": "Makine başı komisyon + lojistik/ekspertiz hizmet bedeli",
-      "first_step": "Japonya'daki 2 açık artırma platformundan 20 makinenin teslim maliyetini hesaplayıp Avrupa ikinci el fiyatlarıyla karşılaştırmak ve 10 Türk alıcıya sunmak.",
-      "capital": "Orta",
-      "difficulty": 3,
-      "turkey_angle": "Türkiye'nin güçlü metal işleme sanayi var; ikinci el makine ithalatı mevzuatı ve yaş sınırlarının kontrol edilmesi gerekir.",
-      "risks": "Türkiye'nin kullanılmış makine ithalat izin şartları, yenin hızla değer kazanabilmesi, nakliye süresi, ekspertiz hatası."
-    },
-    {
-      "name": "Carry trade ve faiz şoku erken uyarı paneli",
-      "insight": "Video, Japonya'daki küçük bir faiz artışının dünyada sert bir piyasa düşüşünü tetiklediğini ve yatırımcıların bunu Japonya'yla ilişkilendiremediğini anlatıyor.",
-      "problem": "Türk şirket hazine birimleri ve küçük portföy yöneticileri yen, BoJ toplantıları ve küresel getiri değişimlerini sistematik izlemiyor.",
-      "solution": "Yen kuru, Japon ve ABD tahvil getirileri, BoJ takvimi ve gelişen ülke kurlarındaki ani hareketleri tek ekranda toplayan, eşik bazlı uyarı veren bir panel ve haftalık Türkçe not.",
-      "target": "Şirket hazine müdürleri, portföy yönetim şirketleri, ihracatçı CFO'lar",
-      "revenue_model": "Aylık abonelik",
-      "first_step": "Açık veri kaynaklarıyla basit bir panel kurup 20 hazine müdürüne 4 haftalık ücretsiz deneme sunmak ve kullanım sıklığını ölçmek.",
-      "capital": "Düşük",
-      "difficulty": 2,
-      "turkey_angle": "Türk lirası küresel riskten kaçış dönemlerinde sert etkilendiği için Türk şirketleri için değeri yüksek.",
-      "risks": "Yatırım tavsiyesi sınırı (SPK); Bloomberg/Refinitiv gibi araçlarla rekabet; veri lisans maliyetleri."
-    },
-    {
-      "name": "Yen bazlı Japonya seyahat ve alışveriş paketleri",
-      "insight": "Videoya göre zayıf yen Japonya'da ithal ürünleri pahalılaştırıyor; diğer yandan yabancı para kazanan ziyaretçiler için Japonya görece ucuzluyor.",
-      "problem": "Türk gezginler Japonya'yı uzak ve pahalı bir destinasyon olarak görüyor; Türkçe, butik ve maliyet şeffaf seçenekler az.",
-      "solution": "Fiyatı yen bazında önceden sabitlenmiş, küçük gruplu, el sanatları ve yerel üretici ziyaretlerini içeren Türkçe rehberli tur paketleri.",
-      "target": "Orta-üst gelirli Türk gezginler, tasarım ve gastronomi meraklıları",
-      "revenue_model": "Paket satış marjı",
-      "first_step": "Bir lisanslı acenteyle ortak 12 kişilik tek bir pilot tur ilan edip 30 günde dolup dolmadığını görmek.",
-      "capital": "Düşük",
-      "difficulty": 2,
-      "turkey_angle": "Türkiye'den Japonya'ya direkt uçuşlar mevcut; TÜRSAB lisanslı bir acenteyle çalışmak zorunludur.",
-      "risks": "Kur avantajının hızla tersine dönmesi, Türk lirasındaki değer kaybı, talebin mevsimselliği."
-    }
-  ],
-  "skeptic_notes": [
-    "Başlıktaki 'Japonya'da kötü bir şey oluyor ve yayılıyor' ifadesi dramatize edilmiş.",
-    "ABD Hazinesi'nin yen alırken dolar yerine euro rezervi sattığı ve Japonya'nın Fed'den tahvil teminatıyla dolar borçlandığı iddiaları sıra dışı; resmi açıklamalarla doğrulanmalı.",
-    "'Son ortak alım Clinton dönemindeydi' ifadesi tarih kontrolü gerektiriyor.",
-    "Tokyo'daki yüzde 12,4'lük düşüşün hangi endekse (Nikkei/Topix) ait olduğu belirtilmiyor.",
-    "Carry trade büyüklüğü için yalnızca BIS tahmini verilip 'trilyonlar' iddiası kaynaksız bırakılmış.",
-    "Japon sigortacıların kur riski korumalı olarak yurt içi getiriyi daha cazip bulduğu iddiası basitleştirilmiş.",
-    "Altyazıda sunucu adı 'Betrand' ve 'looked a wool' gibi bozuk ifadeler var.",
-    "Video, FX forward ürünü üzerinden Statrys hizmetinin doğrudan reklamını yapıyor (reklam içeriği)."
+  {
+   "label": "Müdahale sonrası yen yükselişi",
+   "value": 5,
+   "unit": "%",
+   "context": "Yenin müdahale sonrası kısa süreli yükselişi."
+  },
+  {
+   "label": "Japonya'nın ABD tahvili varlığı",
+   "value": 1,
+   "unit": "trilyon $",
+   "context": "'1 trilyon doların üzerinde', dünyadaki en büyük yabancı ABD tahvili stoku."
+  },
+  {
+   "label": "ABD kamu borcu",
+   "value": 40,
+   "unit": "trilyon $",
+   "context": "ABD'nin taşıdığı yaklaşık borç."
+  },
+  {
+   "label": "Carry trade tahmini (BIS)",
+   "value": 250,
+   "unit": "milyar $",
+   "context": "BIS'in 2024 başı tahmini; gerçek rakamın daha yüksek olabileceği belirtildi."
+  },
+  {
+   "label": "ABD tahvil getirisi (örnek)",
+   "value": 4,
+   "unit": "%",
+   "context": "Carry trade örneğinde ucuz yenle alınan ABD tahvillerinin getirisi."
+  },
+  {
+   "label": "2024 BoJ faiz artışı",
+   "value": 0.25,
+   "unit": "puan",
+   "context": "2024 yazında piyasayı sarsan faiz artışı."
+  },
+  {
+   "label": "Tokyo borsası tek gün düşüş",
+   "value": 12.4,
+   "unit": "%",
+   "context": "1987 Kara Pazartesi'den beri en kötü gün."
+  },
+  {
+   "label": "BoJ politika faizi",
+   "value": 1,
+   "unit": "%",
+   "context": "1995'ten beri en yüksek seviye."
+  },
+  {
+   "label": "Japonya 30 yıllık tahvil getirisi",
+   "value": 4,
+   "unit": "%",
+   "context": "Uzun yıllar sıfıra yakın kaldıktan sonra ulaşılan yaklaşık seviye."
+  },
+  {
+   "label": "Japon yatırımcıların ABD tahvili satışı",
+   "value": 29.6,
+   "unit": "milyar $",
+   "context": "Bu yılın ilk 3 ayında satılan ABD borcu."
+  },
+  {
+   "label": "Hanehalkı harcama değişimi (Haziran)",
+   "value": -3.3,
+   "unit": "%",
+   "context": "Artış beklenirken harcamaların düşüşü."
+  },
+  {
+   "label": "Ücret artışı süresi",
+   "value": 6,
+   "unit": "ay",
+   "context": "Ücretlerin üst üste arttığı ay sayısı."
+  },
+  {
+   "label": "Hükümeti fiyatlarda başarısız bulanlar",
+   "value": 71,
+   "unit": "%",
+   "context": "Japon kamuoyunun hükümetin fiyat politikasını başarısız bulma oranı."
+  },
+  {
+   "label": "Temmuz sonu yen dalgalanması",
+   "value": 5,
+   "unit": "%",
+   "context": "Üç işlem gününde yenin hareketi."
+  },
+  {
+   "label": "Örnek tedarikçi borcu",
+   "value": 5,
+   "unit": "milyon yen",
+   "context": "FX forward örneğinde 3 ay sonra ödenecek tutar."
+  }
+ ],
+ "chart": {
+  "type": "bar",
+  "title": "Videoda geçen faiz ve getiri seviyeleri",
+  "unit": "%",
+  "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı",
+  "data": [
+   {
+    "label": "BoJ politika faizi",
+    "value": 1
+   },
+   {
+    "label": "Japonya 30 yıllık tahvil (yaklaşık)",
+    "value": 4
+   },
+   {
+    "label": "ABD tahvili (carry trade örneği)",
+    "value": 4
+   }
   ]
+ },
+ "diagram": {
+  "type": "flow",
+  "title": "Yen carry trade'in çözülme zinciri",
+  "steps": [
+   {
+    "label": "Sıfır faiz dönemi",
+    "detail": "Japonya faizi uzun süre sıfırda tutunca yen borçlanması neredeyse bedava oldu."
+   },
+   {
+    "label": "Carry trade büyüdü",
+    "detail": "Yatırımcılar yen borçlanıp yüksek getirili yabancı varlıklara yöneldi."
+   },
+   {
+    "label": "Japon faizleri yükseldi",
+    "detail": "BoJ faiz artırınca yen güçlenme eğilimine girdi ve borçların maliyeti arttı."
+   },
+   {
+    "label": "Zorunlu satışlar",
+    "detail": "Teminat talepleriyle yatırımcılar en hızlı satılan varlıkları elden çıkardı."
+   },
+   {
+    "label": "Para eve dönüyor",
+    "detail": "Japon kurumları yabancı tahvilleri satıp yurt içine yöneldi."
+   },
+   {
+    "label": "Küresel faizler yükseliyor",
+    "detail": "ABD ve Avrupa düzenli alıcısını kaybedip daha yüksek faizle borçlanıyor."
+   },
+   {
+    "label": "Şirket marjları etkileniyor",
+    "detail": "Kur ve faiz oynaklığı farklı para birimiyle ticaret yapan işletmeleri vuruyor."
+   }
+  ]
+ },
+ "business_ideas": [
+  {
+   "name": "Japonya'dan ikinci el iş makinesi ve tezgah tedariki",
+   "insight": "Videoya göre yen tarihi düşük seviyede; bu Japonya'dan dolar veya euro ile alım yapanlar için Japon mallarını görece ucuzlatıyor.",
+   "problem": "Türk üreticiler ve müteahhitler kaliteli ikinci el CNC tezgah ve iş makinesini Avrupa'dan yüksek fiyata alıyor; Japon pazarına erişimleri yok.",
+   "solution": "Japon açık artırma ve bayi ağlarından ekspertizli ikinci el tezgah/iş makinesi bulup kur sabitlemeli alım, nakliye ve gümrükle birlikte anahtar teslim sunan aracı hizmet.",
+   "target": "Türk metal işleme atölyeleri, KOBİ üreticiler, orta ölçekli müteahhitler",
+   "revenue_model": "Makine başı komisyon + lojistik/ekspertiz hizmet bedeli",
+   "first_step": "Japonya'daki 2 açık artırma platformundan 20 makinenin teslim maliyetini hesaplayıp Avrupa ikinci el fiyatlarıyla karşılaştırmak ve 10 Türk alıcıya sunmak.",
+   "capital": "Orta",
+   "difficulty": 3,
+   "turkey_angle": "Türkiye'nin güçlü metal işleme sanayi var; ikinci el makine ithalatı mevzuatı ve yaş sınırlarının kontrol edilmesi gerekir.",
+   "risks": "Türkiye'nin kullanılmış makine ithalat izin şartları, yenin hızla değer kazanabilmesi, nakliye süresi, ekspertiz hatası.",
+   "originality": 3,
+   "problem_solving": 3,
+   "score_note": "Kur avantajı geçici.",
+   "similar": [
+    {
+     "id": "beaMlddk5P8",
+     "name": "Kapanan Avrupa fabrikalarından Türk üreticilere ikinci el makine aktarım platformu"
+    }
+   ]
+  },
+  {
+   "name": "Carry trade ve faiz şoku erken uyarı paneli",
+   "insight": "Video, Japonya'daki küçük bir faiz artışının dünyada sert bir piyasa düşüşünü tetiklediğini ve yatırımcıların bunu Japonya'yla ilişkilendiremediğini anlatıyor.",
+   "problem": "Türk şirket hazine birimleri ve küçük portföy yöneticileri yen, BoJ toplantıları ve küresel getiri değişimlerini sistematik izlemiyor.",
+   "solution": "Yen kuru, Japon ve ABD tahvil getirileri, BoJ takvimi ve gelişen ülke kurlarındaki ani hareketleri tek ekranda toplayan, eşik bazlı uyarı veren bir panel ve haftalık Türkçe not.",
+   "target": "Şirket hazine müdürleri, portföy yönetim şirketleri, ihracatçı CFO'lar",
+   "revenue_model": "Aylık abonelik",
+   "first_step": "Açık veri kaynaklarıyla basit bir panel kurup 20 hazine müdürüne 4 haftalık ücretsiz deneme sunmak ve kullanım sıklığını ölçmek.",
+   "capital": "Düşük",
+   "difficulty": 2,
+   "turkey_angle": "Türk lirası küresel riskten kaçış dönemlerinde sert etkilendiği için Türk şirketleri için değeri yüksek.",
+   "risks": "Yatırım tavsiyesi sınırı (SPK); Bloomberg/Refinitiv gibi araçlarla rekabet; veri lisans maliyetleri.",
+   "originality": 2,
+   "problem_solving": 2,
+   "score_note": "Bloomberg ve ücretsiz kaynaklar yeterli.",
+   "similar": []
+  },
+  {
+   "name": "Yen bazlı Japonya seyahat ve alışveriş paketleri",
+   "insight": "Videoya göre zayıf yen Japonya'da ithal ürünleri pahalılaştırıyor; diğer yandan yabancı para kazanan ziyaretçiler için Japonya görece ucuzluyor.",
+   "problem": "Türk gezginler Japonya'yı uzak ve pahalı bir destinasyon olarak görüyor; Türkçe, butik ve maliyet şeffaf seçenekler az.",
+   "solution": "Fiyatı yen bazında önceden sabitlenmiş, küçük gruplu, el sanatları ve yerel üretici ziyaretlerini içeren Türkçe rehberli tur paketleri.",
+   "target": "Orta-üst gelirli Türk gezginler, tasarım ve gastronomi meraklıları",
+   "revenue_model": "Paket satış marjı",
+   "first_step": "Bir lisanslı acenteyle ortak 12 kişilik tek bir pilot tur ilan edip 30 günde dolup dolmadığını görmek.",
+   "capital": "Düşük",
+   "difficulty": 2,
+   "turkey_angle": "Türkiye'den Japonya'ya direkt uçuşlar mevcut; TÜRSAB lisanslı bir acenteyle çalışmak zorunludur.",
+   "risks": "Kur avantajının hızla tersine dönmesi, Türk lirasındaki değer kaybı, talebin mevsimselliği.",
+   "originality": 1,
+   "problem_solving": 1,
+   "score_note": "Sıradan tur paketi.",
+   "similar": []
+  }
+ ],
+ "skeptic_notes": [
+  "Başlıktaki 'Japonya'da kötü bir şey oluyor ve yayılıyor' ifadesi dramatize edilmiş.",
+  "ABD Hazinesi'nin yen alırken dolar yerine euro rezervi sattığı ve Japonya'nın Fed'den tahvil teminatıyla dolar borçlandığı iddiaları sıra dışı; resmi açıklamalarla doğrulanmalı.",
+  "'Son ortak alım Clinton dönemindeydi' ifadesi tarih kontrolü gerektiriyor.",
+  "Tokyo'daki yüzde 12,4'lük düşüşün hangi endekse (Nikkei/Topix) ait olduğu belirtilmiyor.",
+  "Carry trade büyüklüğü için yalnızca BIS tahmini verilip 'trilyonlar' iddiası kaynaksız bırakılmış.",
+  "Japon sigortacıların kur riski korumalı olarak yurt içi getiriyi daha cazip bulduğu iddiası basitleştirilmiş.",
+  "Altyazıda sunucu adı 'Betrand' ve 'looked a wool' gibi bozuk ifadeler var.",
+  "Video, FX forward ürünü üzerinden Statrys hizmetinin doğrudan reklamını yapıyor (reklam içeriği)."
+ ]
 }

@@ -5,6 +5,7 @@
 - **Yayımlanan sayfa:** https://claude.ai/artifact/22mbhumKX9398w8ixKPHaL (özel; sahibi paylaşmadıkça yalnızca sahibi açabilir). PDF sürümü sayfanın üstündeki düğmeden indirilir.
 - **Kapsam:** 10.11.2025'ten itibaren yüklenen videolar. Yeni videolar eklenir, eskiler silinmez.
 - **Transkriptler depoya konmaz.** Telifli içerik oldukları için `yt/` klasörü `.gitignore` ile dışarıda bırakılmıştır. Depoda yalnızca meta veri (`meta/index.json`) ve özgün Türkçe analizler (`analysis/*.json`) bulunur.
+- **İş fikirleri puanlıdır.** Her fikir özgünlük ve sorun çözme derecesine göre 1-5 puanlanır (cetvel `BRIEF.md` içinde); sayfa ve PDF fikirleri toplam puana göre sıralar.
 - **PDF depoya konmaz.** Her güncellemede yeniden üretilir ve sayfanın dosya deposuna (asset) yüklenir; eski sürüm silinir. Böylece depo şişmez.
 
 ## Dosyalar

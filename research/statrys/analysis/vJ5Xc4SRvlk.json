@@ -1,123 +1,144 @@
 {
-  "id": "vJ5Xc4SRvlk",
-  "title_tr": "Airwallex ve dondurulan fonlar: Fintech'lerin Airwallex'in kötü gündeminden çıkarabileceği 3 ders",
-  "category": "Şirket kurma & vergi (Statrys hizmet videoları)",
-  "region": [
-    "Küresel"
-  ],
-  "summary_tr": "Video, bir müşterinin LinkedIn'de Airwallex'i fonlarını dondurduğu için sert biçimde eleştirmesini ve şirketin bu gönderiye yanıt vermesinin tartışmayı büyütmesini ele alıyor. İlk ders olarak, LinkedIn gönderilerinin kısa ömürlü olduğu ve yanıt vermenin algoritma sayesinde görünürlüğü artırdığı söyleniyor. İkinci ders, müşterilerin hikâyenin yalnızca bir kısmını gördüğü; kara para aklamayla mücadele kapsamındaki 'tipping off' (bilgi sızdırma) yasağı nedeniyle finans kuruluşlarının şüpheli işlem incelemesi hakkında açıklama yapamadığı. Üçüncü ders, düzenlemeye tabi bir kurumun kendi tarafını anlatamadığı bir tartışmayı kamuya açık platformda kazanamayacağı. Video, Statrys'in de aynı durumla karşılaşabileceğini kabul ederken memnun olmayan müşterilere kendini önererek bitiyor.",
-  "key_points": [
-    "Bir müşterinin fon dondurma şikâyetine Airwallex'in verdiği yanıt gönderinin daha fazla yayılmasına yol açtı.",
-    "Videoya göre ortalama bir LinkedIn gönderisi kısa sürede akıştan kayboluyor; yanıt vermek görünürlüğü artırıyor.",
-    "Stripe ve Revolut gibi fintech'ler de benzer kamusal eleştirilerle karşılaştı.",
-    "'Tipping off' kuralı, finans kuruluşlarının şüpheli işlem incelemesini müşteriye açıklamasını yasaklıyor.",
-    "Fon dondurmanın tipik nedenleri arasında alıcı adının yaptırım veya suç listelerindeki isimlerle benzerliği sayılıyor.",
-    "Düzenlemeye tabi kurumlar kamuya açık tartışmada kendi taraflarını anlatamadıkları için tartışmaya girmemeli."
-  ],
-  "numbers": [
-    {
-      "label": "LinkedIn gönderisinin ortalama ömrü (alt sınır)",
-      "value": 24,
-      "unit": "saat",
-      "context": "Ortalama bir LinkedIn gönderisinin görünür kaldığı söylenen sürenin alt ucu."
-    },
-    {
-      "label": "LinkedIn gönderisinin ortalama ömrü (üst sınır)",
-      "value": 72,
-      "unit": "saat",
-      "context": "Aynı sürenin üst ucu."
-    },
-    {
-      "label": "Şikâyetteki madde sayısı",
-      "value": 5,
-      "unit": "madde",
-      "context": "Müşterinin Airwallex'i eleştirdiği gönderideki uzun madde sayısı."
-    },
-    {
-      "label": "Stripe vakasının üzerinden geçen süre",
-      "value": 6,
-      "unit": "ay",
-      "context": "Stripe'ın viral bir şikâyet gönderisinde yer aldığı vakanın 'altı aydan kısa' süre önce yaşandığı belirtiliyor."
-    }
-  ],
-  "chart": null,
-  "diagram": {
-    "type": "flow",
-    "title": "Fon dondurma krizinin neden-sonuç zinciri",
-    "steps": [
-      {
-        "label": "İşlem kırmızı bayrak",
-        "detail": "Alıcı adı benzerliği gibi bir nedenle işlem şüpheli olarak işaretleniyor."
-      },
-      {
-        "label": "Fonlar donduruluyor",
-        "detail": "Kurum inceleme bitene kadar fonları bekletiyor."
-      },
-      {
-        "label": "Açıklama yasağı",
-        "detail": "Tipping off kuralı nedeniyle kurum müşteriye ayrıntı veremiyor."
-      },
-      {
-        "label": "Kamusal şikâyet",
-        "detail": "Bilgi alamayan müşteri LinkedIn'de sert bir gönderi paylaşıyor."
-      },
-      {
-        "label": "Kurumun yanıtı",
-        "detail": "Kurumun yorumu algoritmayla gönderinin erişimini artırıyor."
-      },
-      {
-        "label": "İtibar hasarı",
-        "detail": "Tartışma büyüyor ve kurum kendi tarafını anlatamadan zarar görüyor."
-      }
-    ]
+ "id": "vJ5Xc4SRvlk",
+ "title_tr": "Airwallex ve dondurulan fonlar: Fintech'lerin Airwallex'in kötü gündeminden çıkarabileceği 3 ders",
+ "category": "Şirket kurma & vergi (Statrys hizmet videoları)",
+ "region": [
+  "Küresel"
+ ],
+ "summary_tr": "Video, bir müşterinin LinkedIn'de Airwallex'i fonlarını dondurduğu için sert biçimde eleştirmesini ve şirketin bu gönderiye yanıt vermesinin tartışmayı büyütmesini ele alıyor. İlk ders olarak, LinkedIn gönderilerinin kısa ömürlü olduğu ve yanıt vermenin algoritma sayesinde görünürlüğü artırdığı söyleniyor. İkinci ders, müşterilerin hikâyenin yalnızca bir kısmını gördüğü; kara para aklamayla mücadele kapsamındaki 'tipping off' (bilgi sızdırma) yasağı nedeniyle finans kuruluşlarının şüpheli işlem incelemesi hakkında açıklama yapamadığı. Üçüncü ders, düzenlemeye tabi bir kurumun kendi tarafını anlatamadığı bir tartışmayı kamuya açık platformda kazanamayacağı. Video, Statrys'in de aynı durumla karşılaşabileceğini kabul ederken memnun olmayan müşterilere kendini önererek bitiyor.",
+ "key_points": [
+  "Bir müşterinin fon dondurma şikâyetine Airwallex'in verdiği yanıt gönderinin daha fazla yayılmasına yol açtı.",
+  "Videoya göre ortalama bir LinkedIn gönderisi kısa sürede akıştan kayboluyor; yanıt vermek görünürlüğü artırıyor.",
+  "Stripe ve Revolut gibi fintech'ler de benzer kamusal eleştirilerle karşılaştı.",
+  "'Tipping off' kuralı, finans kuruluşlarının şüpheli işlem incelemesini müşteriye açıklamasını yasaklıyor.",
+  "Fon dondurmanın tipik nedenleri arasında alıcı adının yaptırım veya suç listelerindeki isimlerle benzerliği sayılıyor.",
+  "Düzenlemeye tabi kurumlar kamuya açık tartışmada kendi taraflarını anlatamadıkları için tartışmaya girmemeli."
+ ],
+ "numbers": [
+  {
+   "label": "LinkedIn gönderisinin ortalama ömrü (alt sınır)",
+   "value": 24,
+   "unit": "saat",
+   "context": "Ortalama bir LinkedIn gönderisinin görünür kaldığı söylenen sürenin alt ucu."
   },
-  "business_ideas": [
-    {
-      "name": "Fon dondurma durumları için müşteri iletişim ve bekleme süreci yazılımı",
-      "insight": "Video, tipping off kuralı nedeniyle kurumların ayrıntı veremediğini ve bilgi alamayan müşterinin öfkesinin kamusal krize dönüştüğünü gösteriyor.",
-      "problem": "Fintech'ler inceleme altındaki müşterilere ne söyleyebileceklerini bilmiyor; ya sessiz kalıyor ya da tutarsız yanıtlar veriyor.",
-      "solution": "Hukuken izin verilen genel bilgilendirme şablonları, tahmini süreç aşamaları ve belge talebi akışı sunan, uyum ekibinin onayladığı mesaj kütüphanesine dayanan bir müşteri iletişim modülü.",
-      "target": "Asya ve Avrupa'daki ödeme kuruluşları, e-para kuruluşları, neobankalar",
-      "revenue_model": "Kurum başına SaaS aboneliği ve uygulama ücreti",
-      "first_step": "5 fintech uyum yöneticisiyle görüşüp inceleme altındaki müşterilere şu an hangi mesajları gönderdiklerini ve şikâyet hacmini öğrenmek.",
-      "capital": "Orta",
-      "difficulty": 4,
-      "turkey_angle": "Türkiye'deki ödeme ve elektronik para kuruluşları da benzer şikâyetlerle karşılaşıyor; ilk pilot yerel pazarda yapılabilir.",
-      "risks": "Mesaj şablonları yanlış kurgulanırsa tipping off ihlaline yol açabilir; her ülke mevzuatına göre hukuki inceleme şart; satış döngüsü uzun."
-    },
-    {
-      "name": "KOBİ'ler için 'hesabım donmasın' ön uyum kontrolü",
-      "insight": "Video, fon dondurmaların rastgele olmadığını ve alıcı adı benzerliği, yaptırımlı ülkeler gibi kırmızı bayraklardan kaynaklandığını söylüyor.",
-      "problem": "KOBİ'ler hangi ödemelerin bayrak kaldıracağını bilmeden işlem yapıyor ve dondurma sonrası belge toplamakla haftalar kaybediyor.",
-      "solution": "Planlanan ödeme öncesi alıcı adını yaptırım listelerine karşı tarayan, ülke/sektör riskini gösteren ve bankanın isteyebileceği belgeleri (fatura, sözleşme, sevkiyat) önceden hazırlatan kontrol aracı.",
-      "target": "Sınır ötesi ödeme yapan ithalatçı/ihracatçı KOBİ'ler",
-      "revenue_model": "Aylık abonelik; işlem başına tarama ücreti",
-      "first_step": "Hesabı veya ödemesi bir kez dondurulmuş 15 KOBİ'yle görüşüp nedenini ve önceden ne bilinseydi kaçınılabileceğini derlemek.",
-      "capital": "Orta",
-      "difficulty": 3,
-      "turkey_angle": "Türkiye'nin yaptırım riski yüksek bölgelere yakın ticari ilişkileri nedeniyle Türk ihracatçılarda güçlü ihtiyaç var.",
-      "risks": "Araç yaptırımlardan kaçınma yöntemi olarak kullanılmamalı; yalnızca meşru işlemlerin belgelenmesine odaklanmalı; yaptırım verilerinin doğruluğu ve güncelliği kritik."
-    },
-    {
-      "name": "Düzenlemeye tabi finans kuruluşları için sosyal medya kriz izleme ve yanıt rehberi",
-      "insight": "Video, kamusal şikâyete yanıt vermenin algoritma nedeniyle görünürlüğü artırdığını ve düzenlemeye tabi kurumların tartışmayı kazanamayacağını anlatıyor.",
-      "problem": "Fintech'lerin pazarlama ekipleri olumsuz gönderilere refleksle yanıt veriyor ve hem itibar hem de mevzuat riski yaratıyor.",
-      "solution": "Fintech'lerin adının geçtiği gönderileri izleyen, hassasiyet ve yayılma hızına göre önceliklendiren ve uyum ekibiyle birlikte 'yanıtla, özel mesaja taşı veya bekle' kararını destekleyen izleme ve karar paneli.",
-      "target": "Fintech'ler, dijital bankalar, ödeme kuruluşları",
-      "revenue_model": "Aylık abonelik; kriz dönemleri için danışmanlık paketi",
-      "first_step": "10 fintech'in son 6 aydaki kamusal şikâyetlerini ve yanıtlarını manuel analiz edip örnek bir vaka raporu hazırlamak ve 5 iletişim yöneticisine sunmak.",
-      "capital": "Orta",
-      "difficulty": 3,
-      "turkey_angle": "Türkiye'de de Şikayetvar gibi platformlarda yoğun fintech şikâyeti var; yerel pazarda test edilebilir.",
-      "risks": "Sosyal medya verisi erişim kısıtları ve API maliyetleri; kurumların bu işi mevcut ajanslara vermesi."
-    }
-  ],
-  "skeptic_notes": [
-    "Video bir rakibin krizini kendi markasını tanıtmak için kullanıyor ve sonunda memnun olmayan Airwallex müşterilerini Statrys'e çağırıyor; reklam içeriği.",
-    "LinkedIn gönderilerinin 24-72 saatte kaybolduğu ve yanıt vermemenin en iyi strateji olduğu iddiası herhangi bir kaynakla desteklenmiyor.",
-    "Fon dondurmanın her zaman meşru nedenlere dayandığı iddiası finans kuruluşu bakış açısını yansıtıyor; müşterinin haklı olabileceği durumlar (aşırı uzun bekleme, yetersiz destek) geri planda kalıyor.",
-    "Stripe ve Revolut vakaları ile Financial Times haberine atıf yapılıyor ancak ayrıntı verilmiyor; bağımsız doğrulanmalı.",
-    "Açılıştaki 'as Tommy ate LinkedIn' ifadesi bozuk altyazı; anlamı belirsiz.",
-    "Grafik için anlamlı ve karşılaştırılabilir en az üç değer bulunmadığından chart null bırakıldı."
+  {
+   "label": "LinkedIn gönderisinin ortalama ömrü (üst sınır)",
+   "value": 72,
+   "unit": "saat",
+   "context": "Aynı sürenin üst ucu."
+  },
+  {
+   "label": "Şikâyetteki madde sayısı",
+   "value": 5,
+   "unit": "madde",
+   "context": "Müşterinin Airwallex'i eleştirdiği gönderideki uzun madde sayısı."
+  },
+  {
+   "label": "Stripe vakasının üzerinden geçen süre",
+   "value": 6,
+   "unit": "ay",
+   "context": "Stripe'ın viral bir şikâyet gönderisinde yer aldığı vakanın 'altı aydan kısa' süre önce yaşandığı belirtiliyor."
+  }
+ ],
+ "chart": null,
+ "diagram": {
+  "type": "flow",
+  "title": "Fon dondurma krizinin neden-sonuç zinciri",
+  "steps": [
+   {
+    "label": "İşlem kırmızı bayrak",
+    "detail": "Alıcı adı benzerliği gibi bir nedenle işlem şüpheli olarak işaretleniyor."
+   },
+   {
+    "label": "Fonlar donduruluyor",
+    "detail": "Kurum inceleme bitene kadar fonları bekletiyor."
+   },
+   {
+    "label": "Açıklama yasağı",
+    "detail": "Tipping off kuralı nedeniyle kurum müşteriye ayrıntı veremiyor."
+   },
+   {
+    "label": "Kamusal şikâyet",
+    "detail": "Bilgi alamayan müşteri LinkedIn'de sert bir gönderi paylaşıyor."
+   },
+   {
+    "label": "Kurumun yanıtı",
+    "detail": "Kurumun yorumu algoritmayla gönderinin erişimini artırıyor."
+   },
+   {
+    "label": "İtibar hasarı",
+    "detail": "Tartışma büyüyor ve kurum kendi tarafını anlatamadan zarar görüyor."
+   }
   ]
+ },
+ "business_ideas": [
+  {
+   "name": "Fon dondurma durumları için müşteri iletişim ve bekleme süreci yazılımı",
+   "insight": "Video, tipping off kuralı nedeniyle kurumların ayrıntı veremediğini ve bilgi alamayan müşterinin öfkesinin kamusal krize dönüştüğünü gösteriyor.",
+   "problem": "Fintech'ler inceleme altındaki müşterilere ne söyleyebileceklerini bilmiyor; ya sessiz kalıyor ya da tutarsız yanıtlar veriyor.",
+   "solution": "Hukuken izin verilen genel bilgilendirme şablonları, tahmini süreç aşamaları ve belge talebi akışı sunan, uyum ekibinin onayladığı mesaj kütüphanesine dayanan bir müşteri iletişim modülü.",
+   "target": "Asya ve Avrupa'daki ödeme kuruluşları, e-para kuruluşları, neobankalar",
+   "revenue_model": "Kurum başına SaaS aboneliği ve uygulama ücreti",
+   "first_step": "5 fintech uyum yöneticisiyle görüşüp inceleme altındaki müşterilere şu an hangi mesajları gönderdiklerini ve şikâyet hacmini öğrenmek.",
+   "capital": "Orta",
+   "difficulty": 4,
+   "turkey_angle": "Türkiye'deki ödeme ve elektronik para kuruluşları da benzer şikâyetlerle karşılaşıyor; ilk pilot yerel pazarda yapılabilir.",
+   "risks": "Mesaj şablonları yanlış kurgulanırsa tipping off ihlaline yol açabilir; her ülke mevzuatına göre hukuki inceleme şart; satış döngüsü uzun.",
+   "originality": 4,
+   "problem_solving": 4,
+   "score_note": "Özgün regtech nişi; alıcı az ama bütçeli.",
+   "similar": []
+  },
+  {
+   "name": "KOBİ'ler için 'hesabım donmasın' ön uyum kontrolü",
+   "insight": "Video, fon dondurmaların rastgele olmadığını ve alıcı adı benzerliği, yaptırımlı ülkeler gibi kırmızı bayraklardan kaynaklandığını söylüyor.",
+   "problem": "KOBİ'ler hangi ödemelerin bayrak kaldıracağını bilmeden işlem yapıyor ve dondurma sonrası belge toplamakla haftalar kaybediyor.",
+   "solution": "Planlanan ödeme öncesi alıcı adını yaptırım listelerine karşı tarayan, ülke/sektör riskini gösteren ve bankanın isteyebileceği belgeleri (fatura, sözleşme, sevkiyat) önceden hazırlatan kontrol aracı.",
+   "target": "Sınır ötesi ödeme yapan ithalatçı/ihracatçı KOBİ'ler",
+   "revenue_model": "Aylık abonelik; işlem başına tarama ücreti",
+   "first_step": "Hesabı veya ödemesi bir kez dondurulmuş 15 KOBİ'yle görüşüp nedenini ve önceden ne bilinseydi kaçınılabileceğini derlemek.",
+   "capital": "Orta",
+   "difficulty": 3,
+   "turkey_angle": "Türkiye'nin yaptırım riski yüksek bölgelere yakın ticari ilişkileri nedeniyle Türk ihracatçılarda güçlü ihtiyaç var.",
+   "risks": "Araç yaptırımlardan kaçınma yöntemi olarak kullanılmamalı; yalnızca meşru işlemlerin belgelenmesine odaklanmalı; yaptırım verilerinin doğruluğu ve güncelliği kritik.",
+   "originality": 3,
+   "problem_solving": 4,
+   "score_note": "İki fikrin kesişimi.",
+   "similar": [
+    {
+     "id": "YX3FDPGN6QU",
+     "name": "Dış ticaret ödemeleri için yaptırım ön kontrol aracı"
+    },
+    {
+     "id": "w5xQsTlwLp0",
+     "name": "Uyum hazır belge kasası (KYC dosyası)"
+    }
+   ]
+  },
+  {
+   "name": "Düzenlemeye tabi finans kuruluşları için sosyal medya kriz izleme ve yanıt rehberi",
+   "insight": "Video, kamusal şikâyete yanıt vermenin algoritma nedeniyle görünürlüğü artırdığını ve düzenlemeye tabi kurumların tartışmayı kazanamayacağını anlatıyor.",
+   "problem": "Fintech'lerin pazarlama ekipleri olumsuz gönderilere refleksle yanıt veriyor ve hem itibar hem de mevzuat riski yaratıyor.",
+   "solution": "Fintech'lerin adının geçtiği gönderileri izleyen, hassasiyet ve yayılma hızına göre önceliklendiren ve uyum ekibiyle birlikte 'yanıtla, özel mesaja taşı veya bekle' kararını destekleyen izleme ve karar paneli.",
+   "target": "Fintech'ler, dijital bankalar, ödeme kuruluşları",
+   "revenue_model": "Aylık abonelik; kriz dönemleri için danışmanlık paketi",
+   "first_step": "10 fintech'in son 6 aydaki kamusal şikâyetlerini ve yanıtlarını manuel analiz edip örnek bir vaka raporu hazırlamak ve 5 iletişim yöneticisine sunmak.",
+   "capital": "Orta",
+   "difficulty": 3,
+   "turkey_angle": "Türkiye'de de Şikayetvar gibi platformlarda yoğun fintech şikâyeti var; yerel pazarda test edilebilir.",
+   "risks": "Sosyal medya verisi erişim kısıtları ve API maliyetleri; kurumların bu işi mevcut ajanslara vermesi.",
+   "originality": 2,
+   "problem_solving": 3,
+   "score_note": "Sosyal dinleme ve danışmanlık.",
+   "similar": []
+  }
+ ],
+ "skeptic_notes": [
+  "Video bir rakibin krizini kendi markasını tanıtmak için kullanıyor ve sonunda memnun olmayan Airwallex müşterilerini Statrys'e çağırıyor; reklam içeriği.",
+  "LinkedIn gönderilerinin 24-72 saatte kaybolduğu ve yanıt vermemenin en iyi strateji olduğu iddiası herhangi bir kaynakla desteklenmiyor.",
+  "Fon dondurmanın her zaman meşru nedenlere dayandığı iddiası finans kuruluşu bakış açısını yansıtıyor; müşterinin haklı olabileceği durumlar (aşırı uzun bekleme, yetersiz destek) geri planda kalıyor.",
+  "Stripe ve Revolut vakaları ile Financial Times haberine atıf yapılıyor ancak ayrıntı verilmiyor; bağımsız doğrulanmalı.",
+  "Açılıştaki 'as Tommy ate LinkedIn' ifadesi bozuk altyazı; anlamı belirsiz.",
+  "Grafik için anlamlı ve karşılaştırılabilir en az üç değer bulunmadığından chart null bırakıldı."
+ ]
 }

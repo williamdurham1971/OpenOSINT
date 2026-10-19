@@ -1,105 +1,288 @@
 {
-  "id": "wN5EeDoFhdM",
-  "title_tr": "Çin'in dolara alternatif ödeme altyapısı ve yaptırım silahının zayıflaması",
-  "category": "Küresel finans & bankacılık",
-  "region": ["Çin", "ABD", "Orta Doğu", "Rusya", "Küresel"],
-  "summary_tr": "Video, ABD'nin dolar sistemi üzerinden uyguladığı yaptırımların ülkeleri alternatif arayışına ittiğini ve Çin'in kendi sınır ötesi ödeme ağı CIPS ile bir kaçış yolu kurduğunu anlatıyor. Anlatıcıya göre yuan doları rezerv para olarak değiştirmeyecek: küresel ödemelerdeki payı %2, rezervlerdeki payı %2'nin altında ve sermaye kontrolleri bunu engelliyor. Ancak ticaret ödemelerinde yuan kullanımı artıyor; çünkü yaptırım riskinden koruyor ve Çinli tedarikçilerin kur riski primini ortadan kaldırıyor. Suudi Arabistan ve BAE gibi yaptırım altında olmayan ülkeler de yuan ile işlem yapıyor. Sonuç olarak dolar silahı ortadan kalkmıyor ama her yeni katılımcıyla etkisi azalıyor.",
-  "key_points": [
-    "Dolar uluslararası para hareketlerinin yaklaşık %59'unu, yuan %2'sini oluşturuyor.",
-    "Çin'in ticaretinde yuan ile ödeme payı 2017'deki yaklaşık %10'dan bugün %30'a yaklaştı.",
-    "CIPS 2015'te 19 bankayla başladı; yaptırım dalgalarının ardından 180 ülkede 1.600'ü aşkın bankaya ulaştı.",
-    "Çin'in büyük ticaret fazlası, yuanın küresel rezerv parası olmasını yapısal olarak sınırlıyor.",
-    "Çin ABD tahvillerini azaltıp 21 ay üst üste altın alıyor.",
-    "Çinli tedarikçiler dolar tekliflerine genellikle %2-5 kur riski primi ekliyor; yuan ile ödeme bu primi kaldırabilir."
-  ],
-  "numbers": [
-    {"label": "Doların uluslararası para hareketlerindeki payı", "value": 59, "unit": "%", "context": "Ülkeler arası tüm para hareketleri içinde"},
-    {"label": "Yuanın uluslararası para hareketlerindeki payı", "value": 2, "unit": "%", "context": "Ülkeler arası tüm para hareketleri içinde"},
-    {"label": "Çin ticaretinde yuan payı (2017)", "value": 10, "unit": "%", "context": "Yaklaşık değer"},
-    {"label": "Çin ticaretinde yuan payı (bugün)", "value": 30, "unit": "%", "context": "Yaklaşık değer; üç kat artış"},
-    {"label": "Yuan faturalamada alıcı tasarrufu", "value": 3, "unit": "%", "context": "Kur riski kalkınca alıcının geri kazanabileceği en fazla oran"},
-    {"label": "CIPS kuruluşta banka sayısı (2015)", "value": 19, "unit": "banka", "context": "Lansmanda katılan bankalar"},
-    {"label": "SWIFT'e bağlı kurum", "value": 11000, "unit": "kurum (üzeri)", "context": "Karşılaştırma için"},
-    {"label": "SWIFT'ten çıkarılan Rus bankası", "value": 7, "unit": "banka", "context": "Ukrayna işgalinden sonraki bir hafta içinde"},
-    {"label": "CIPS günlük işlem artışı (2022)", "value": 50, "unit": "%", "context": "Rusya yaptırımları yılında"},
-    {"label": "CIPS yıllık işlem hacmi (2024)", "value": 24.45, "unit": "trilyon $", "context": "12 ayda %43 artış"},
-    {"label": "CIPS'e bağlı banka (2025 ortası)", "value": 1600, "unit": "banka (üzeri)", "context": "180 ülkede"},
-    {"label": "Rusya bütçe açığı", "value": 70, "unit": "milyar $", "context": "Savaşın bir yılda açtığı rekor açık (yaklaşık)"},
-    {"label": "Rusya yuan tahvili", "value": 2.8, "unit": "milyar $", "context": "Aralık 2025'te yuan cinsinden borçlanma; faiz %7'ye kadar"},
-    {"label": "BRICS'in dünya ekonomisindeki payı (SAGP)", "value": 40, "unit": "%", "context": "Satın alma gücü paritesine göre"},
-    {"label": "G7'nin dünya ekonomisindeki payı (SAGP)", "value": 30, "unit": "% (altı)", "context": "Satın alma gücü paritesine göre"},
-    {"label": "Kuşak ve Yol yatırımları", "value": 1.4, "unit": "trilyon $", "context": "2013'ten beri 150 ülkede liman, demiryolu, boru hattı"},
-    {"label": "Doların rezervlerdeki payı", "value": 57, "unit": "%", "context": "Merkez bankası rezervleri"},
-    {"label": "Yuanın rezervlerdeki payı", "value": 2, "unit": "% (altı)", "context": "Merkez bankası rezervleri"},
-    {"label": "Çin ticaret fazlası (geçen yıl)", "value": 1.2, "unit": "trilyon $", "context": "Yuanın rezerv para olmasını sınırlayan fazla"},
-    {"label": "Çin'in ABD tahvili varlığı (2026 başı)", "value": 652, "unit": "milyar $", "context": "2008'den beri en düşük"},
-    {"label": "Çin merkez bankası altın alım serisi", "value": 21, "unit": "ay", "context": "Temmuz 2026 itibarıyla kesintisiz alım"},
-    {"label": "Tedarikçi kur primi (alt)", "value": 2, "unit": "%", "context": "Dolar tekliflerine eklenen pay, %2-5 aralığı"},
-    {"label": "Tedarikçi kur primi (üst)", "value": 5, "unit": "%", "context": "Dolar tekliflerine eklenen pay, %2-5 aralığı"},
-    {"label": "mBridge işlem hacmi", "value": 55, "unit": "milyar $", "context": "Beş merkez bankasının yürüttüğü sistemden geçen toplam"}
-  ],
-  "chart": {
-    "type": "hbar",
-    "title": "Dolar ve yuan: videoda geçen pay oranları",
-    "unit": "%",
-    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. Yuanın rezerv payı videoda '%2'nin altında' olarak geçiyor, üst sınır olarak 2 gösterildi.",
-    "data": [
-      {"label": "Dolar - uluslararası para hareketleri", "value": 59},
-      {"label": "Dolar - merkez bankası rezervleri", "value": 57},
-      {"label": "Yuan - Çin ticaretinin ödemesi (bugün)", "value": 30},
-      {"label": "Yuan - Çin ticaretinin ödemesi (2017)", "value": 10},
-      {"label": "Yuan - uluslararası para hareketleri", "value": 2},
-      {"label": "Yuan - merkez bankası rezervleri", "value": 2}
-    ]
+ "id": "wN5EeDoFhdM",
+ "title_tr": "Çin'in dolara alternatif ödeme altyapısı ve yaptırım silahının zayıflaması",
+ "category": "Küresel finans & bankacılık",
+ "region": [
+  "Çin",
+  "ABD",
+  "Orta Doğu",
+  "Rusya",
+  "Küresel"
+ ],
+ "summary_tr": "Video, ABD'nin dolar sistemi üzerinden uyguladığı yaptırımların ülkeleri alternatif arayışına ittiğini ve Çin'in kendi sınır ötesi ödeme ağı CIPS ile bir kaçış yolu kurduğunu anlatıyor. Anlatıcıya göre yuan doları rezerv para olarak değiştirmeyecek: küresel ödemelerdeki payı %2, rezervlerdeki payı %2'nin altında ve sermaye kontrolleri bunu engelliyor. Ancak ticaret ödemelerinde yuan kullanımı artıyor; çünkü yaptırım riskinden koruyor ve Çinli tedarikçilerin kur riski primini ortadan kaldırıyor. Suudi Arabistan ve BAE gibi yaptırım altında olmayan ülkeler de yuan ile işlem yapıyor. Sonuç olarak dolar silahı ortadan kalkmıyor ama her yeni katılımcıyla etkisi azalıyor.",
+ "key_points": [
+  "Dolar uluslararası para hareketlerinin yaklaşık %59'unu, yuan %2'sini oluşturuyor.",
+  "Çin'in ticaretinde yuan ile ödeme payı 2017'deki yaklaşık %10'dan bugün %30'a yaklaştı.",
+  "CIPS 2015'te 19 bankayla başladı; yaptırım dalgalarının ardından 180 ülkede 1.600'ü aşkın bankaya ulaştı.",
+  "Çin'in büyük ticaret fazlası, yuanın küresel rezerv parası olmasını yapısal olarak sınırlıyor.",
+  "Çin ABD tahvillerini azaltıp 21 ay üst üste altın alıyor.",
+  "Çinli tedarikçiler dolar tekliflerine genellikle %2-5 kur riski primi ekliyor; yuan ile ödeme bu primi kaldırabilir."
+ ],
+ "numbers": [
+  {
+   "label": "Doların uluslararası para hareketlerindeki payı",
+   "value": 59,
+   "unit": "%",
+   "context": "Ülkeler arası tüm para hareketleri içinde"
   },
-  "diagram": {
-    "type": "flow",
-    "title": "Yaptırımdan alternatif ödeme ağına geçiş zinciri",
-    "steps": [
-      {"label": "Doların merkezi rolü", "detail": "Petrol, emtia ve rezervler dolar üzerinden işliyor."},
-      {"label": "Yaptırım silahı", "detail": "ABD, SWIFT ve muhabir bankalar üzerinden İran ve Rusya'yı sistem dışına itti."},
-      {"label": "Ülkeler risk alıyor", "detail": "Yaptırım altında olmayan ülkeler de bağımlılığı azaltmak istiyor."},
-      {"label": "CIPS ve yuan ödemesi", "detail": "Çin'in ağı SWIFT'e dokunmadan banka transferi sağlıyor."},
-      {"label": "Ticarette yuan payı artıyor", "detail": "Yaptırım koruması ve kur primi tasarrufu yuanı cazip kılıyor."},
-      {"label": "Rezervde dolar sürüyor", "detail": "Sermaye kontrolleri ve ticaret fazlası yuanın rezerv para olmasını engelliyor."}
-    ]
+  {
+   "label": "Yuanın uluslararası para hareketlerindeki payı",
+   "value": 2,
+   "unit": "%",
+   "context": "Ülkeler arası tüm para hareketleri içinde"
   },
-  "business_ideas": [
+  {
+   "label": "Çin ticaretinde yuan payı (2017)",
+   "value": 10,
+   "unit": "%",
+   "context": "Yaklaşık değer"
+  },
+  {
+   "label": "Çin ticaretinde yuan payı (bugün)",
+   "value": 30,
+   "unit": "%",
+   "context": "Yaklaşık değer; üç kat artış"
+  },
+  {
+   "label": "Yuan faturalamada alıcı tasarrufu",
+   "value": 3,
+   "unit": "%",
+   "context": "Kur riski kalkınca alıcının geri kazanabileceği en fazla oran"
+  },
+  {
+   "label": "CIPS kuruluşta banka sayısı (2015)",
+   "value": 19,
+   "unit": "banka",
+   "context": "Lansmanda katılan bankalar"
+  },
+  {
+   "label": "SWIFT'e bağlı kurum",
+   "value": 11000,
+   "unit": "kurum (üzeri)",
+   "context": "Karşılaştırma için"
+  },
+  {
+   "label": "SWIFT'ten çıkarılan Rus bankası",
+   "value": 7,
+   "unit": "banka",
+   "context": "Ukrayna işgalinden sonraki bir hafta içinde"
+  },
+  {
+   "label": "CIPS günlük işlem artışı (2022)",
+   "value": 50,
+   "unit": "%",
+   "context": "Rusya yaptırımları yılında"
+  },
+  {
+   "label": "CIPS yıllık işlem hacmi (2024)",
+   "value": 24.45,
+   "unit": "trilyon $",
+   "context": "12 ayda %43 artış"
+  },
+  {
+   "label": "CIPS'e bağlı banka (2025 ortası)",
+   "value": 1600,
+   "unit": "banka (üzeri)",
+   "context": "180 ülkede"
+  },
+  {
+   "label": "Rusya bütçe açığı",
+   "value": 70,
+   "unit": "milyar $",
+   "context": "Savaşın bir yılda açtığı rekor açık (yaklaşık)"
+  },
+  {
+   "label": "Rusya yuan tahvili",
+   "value": 2.8,
+   "unit": "milyar $",
+   "context": "Aralık 2025'te yuan cinsinden borçlanma; faiz %7'ye kadar"
+  },
+  {
+   "label": "BRICS'in dünya ekonomisindeki payı (SAGP)",
+   "value": 40,
+   "unit": "%",
+   "context": "Satın alma gücü paritesine göre"
+  },
+  {
+   "label": "G7'nin dünya ekonomisindeki payı (SAGP)",
+   "value": 30,
+   "unit": "% (altı)",
+   "context": "Satın alma gücü paritesine göre"
+  },
+  {
+   "label": "Kuşak ve Yol yatırımları",
+   "value": 1.4,
+   "unit": "trilyon $",
+   "context": "2013'ten beri 150 ülkede liman, demiryolu, boru hattı"
+  },
+  {
+   "label": "Doların rezervlerdeki payı",
+   "value": 57,
+   "unit": "%",
+   "context": "Merkez bankası rezervleri"
+  },
+  {
+   "label": "Yuanın rezervlerdeki payı",
+   "value": 2,
+   "unit": "% (altı)",
+   "context": "Merkez bankası rezervleri"
+  },
+  {
+   "label": "Çin ticaret fazlası (geçen yıl)",
+   "value": 1.2,
+   "unit": "trilyon $",
+   "context": "Yuanın rezerv para olmasını sınırlayan fazla"
+  },
+  {
+   "label": "Çin'in ABD tahvili varlığı (2026 başı)",
+   "value": 652,
+   "unit": "milyar $",
+   "context": "2008'den beri en düşük"
+  },
+  {
+   "label": "Çin merkez bankası altın alım serisi",
+   "value": 21,
+   "unit": "ay",
+   "context": "Temmuz 2026 itibarıyla kesintisiz alım"
+  },
+  {
+   "label": "Tedarikçi kur primi (alt)",
+   "value": 2,
+   "unit": "%",
+   "context": "Dolar tekliflerine eklenen pay, %2-5 aralığı"
+  },
+  {
+   "label": "Tedarikçi kur primi (üst)",
+   "value": 5,
+   "unit": "%",
+   "context": "Dolar tekliflerine eklenen pay, %2-5 aralığı"
+  },
+  {
+   "label": "mBridge işlem hacmi",
+   "value": 55,
+   "unit": "milyar $",
+   "context": "Beş merkez bankasının yürüttüğü sistemden geçen toplam"
+  }
+ ],
+ "chart": {
+  "type": "hbar",
+  "title": "Dolar ve yuan: videoda geçen pay oranları",
+  "unit": "%",
+  "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. Yuanın rezerv payı videoda '%2'nin altında' olarak geçiyor, üst sınır olarak 2 gösterildi.",
+  "data": [
+   {
+    "label": "Dolar - uluslararası para hareketleri",
+    "value": 59
+   },
+   {
+    "label": "Dolar - merkez bankası rezervleri",
+    "value": 57
+   },
+   {
+    "label": "Yuan - Çin ticaretinin ödemesi (bugün)",
+    "value": 30
+   },
+   {
+    "label": "Yuan - Çin ticaretinin ödemesi (2017)",
+    "value": 10
+   },
+   {
+    "label": "Yuan - uluslararası para hareketleri",
+    "value": 2
+   },
+   {
+    "label": "Yuan - merkez bankası rezervleri",
+    "value": 2
+   }
+  ]
+ },
+ "diagram": {
+  "type": "flow",
+  "title": "Yaptırımdan alternatif ödeme ağına geçiş zinciri",
+  "steps": [
+   {
+    "label": "Doların merkezi rolü",
+    "detail": "Petrol, emtia ve rezervler dolar üzerinden işliyor."
+   },
+   {
+    "label": "Yaptırım silahı",
+    "detail": "ABD, SWIFT ve muhabir bankalar üzerinden İran ve Rusya'yı sistem dışına itti."
+   },
+   {
+    "label": "Ülkeler risk alıyor",
+    "detail": "Yaptırım altında olmayan ülkeler de bağımlılığı azaltmak istiyor."
+   },
+   {
+    "label": "CIPS ve yuan ödemesi",
+    "detail": "Çin'in ağı SWIFT'e dokunmadan banka transferi sağlıyor."
+   },
+   {
+    "label": "Ticarette yuan payı artıyor",
+    "detail": "Yaptırım koruması ve kur primi tasarrufu yuanı cazip kılıyor."
+   },
+   {
+    "label": "Rezervde dolar sürüyor",
+    "detail": "Sermaye kontrolleri ve ticaret fazlası yuanın rezerv para olmasını engelliyor."
+   }
+  ]
+ },
+ "business_ideas": [
+  {
+   "name": "Çin tedarikçi teklifleri için USD/CNY toplam maliyet karşılaştırıcı",
+   "insight": "Videoya göre Çinli tedarikçiler dolar tekliflerine %2-5 kur primi ekliyor ve yuan ile ödemede indirim sunmaya başladı.",
+   "problem": "Türk ithalatçılar yuan ile ödemenin, dönüşüm ve banka masrafları dahil gerçekten daha ucuz olup olmadığını hesaplayamıyor.",
+   "solution": "Tedarikçinin USD ve CNY tekliflerini, bankaların döviz alış-satış farkları, transfer ücretleri ve vade boyunca kur senaryolarıyla karşılaştırıp net maliyet ve risk gösteren bir araç.",
+   "target": "Çin'den düzenli ithalat yapan Türk KOBİ'ler",
+   "revenue_model": "Ücretsiz temel hesaplama, kayıtlı tedarikçi ve fatura takibi için abonelik; banka yönlendirme komisyonu",
+   "first_step": "10 ithalatçıdan aynı ürün için hem USD hem CNY teklif istemelerini sağlayıp gerçek farkı ölçmek",
+   "capital": "Düşük",
+   "difficulty": 2,
+   "turkey_angle": "Bazı Türk bankaları CNY hesabı ve transferi sunuyor; TL-CNY çapraz kur maliyeti hesaba katılmalı.",
+   "risks": "Banka fiyatlamasının değişkenliği; CNY transferlerinde yaptırım uyum kontrolleriyle gecikme; yatırım danışmanlığı sınırına dikkat.",
+   "originality": 3,
+   "problem_solving": 4,
+   "score_note": "Yuanla ödeme indirimini net maliyete çeviriyor; basit ama yeni bir karar noktası.",
+   "similar": []
+  },
+  {
+   "name": "Yuan ve alternatif kanal ödemeleri için yaptırım uyum taraması",
+   "insight": "Yaptırım altındaki ülkeler ticaretlerini yuan ve CIPS üzerinden yürütüyor; Rusya ve İran bu kanalın en yoğun kullanıcıları arasında.",
+   "problem": "Rusya, İran veya Orta Asya bağlantılı ticaret yapan şirketler, alternatif kanal kullanımının ikincil yaptırım riskini ve banka hesaplarının kapatılma ihtimalini ölçemiyor.",
+   "solution": "Karşı taraf, banka, gemi ve mal kodunu OFAC, AB ve BM listeleriyle tarayan, yüksek riskli ürün kodlarını işaretleyen ve bankaya sunulabilir bir uyum dosyası oluşturan hizmet.",
+   "target": "Rusya, Orta Asya ve Orta Doğu ile ticaret yapan Türk ihracatçılar ve dış ticaret şirketleri",
+   "revenue_model": "İşlem başına tarama ücreti ve yıllık uyum aboneliği",
+   "first_step": "Bir dış ticaret danışmanlık firmasıyla anlaşıp son 6 ayda bankaların reddettiği 10 ödemenin nedenlerini analiz etmek",
+   "capital": "Orta",
+   "difficulty": 4,
+   "turkey_angle": "Türk bankaları ikincil yaptırım riski nedeniyle bu ödemelerde sıkı denetim yapıyor; ihracatçıların ihtiyacı yüksek.",
+   "risks": "Yanlış negatif sonuçlarda ağır hukuki sorumluluk; hizmetin yaptırım delme aracı olarak algılanmaması için yalnızca uyuma odaklanmalı; liste güncelliği.",
+   "originality": 2,
+   "problem_solving": 4,
+   "score_note": "Yaptırım tarama araçları çok; 'bankaya sunulabilir dosya' küçük bir fark.",
+   "similar": [
     {
-      "name": "Çin tedarikçi teklifleri için USD/CNY toplam maliyet karşılaştırıcı",
-      "insight": "Videoya göre Çinli tedarikçiler dolar tekliflerine %2-5 kur primi ekliyor ve yuan ile ödemede indirim sunmaya başladı.",
-      "problem": "Türk ithalatçılar yuan ile ödemenin, dönüşüm ve banka masrafları dahil gerçekten daha ucuz olup olmadığını hesaplayamıyor.",
-      "solution": "Tedarikçinin USD ve CNY tekliflerini, bankaların döviz alış-satış farkları, transfer ücretleri ve vade boyunca kur senaryolarıyla karşılaştırıp net maliyet ve risk gösteren bir araç.",
-      "target": "Çin'den düzenli ithalat yapan Türk KOBİ'ler",
-      "revenue_model": "Ücretsiz temel hesaplama, kayıtlı tedarikçi ve fatura takibi için abonelik; banka yönlendirme komisyonu",
-      "first_step": "10 ithalatçıdan aynı ürün için hem USD hem CNY teklif istemelerini sağlayıp gerçek farkı ölçmek",
-      "capital": "Düşük",
-      "difficulty": 2,
-      "turkey_angle": "Bazı Türk bankaları CNY hesabı ve transferi sunuyor; TL-CNY çapraz kur maliyeti hesaba katılmalı.",
-      "risks": "Banka fiyatlamasının değişkenliği; CNY transferlerinde yaptırım uyum kontrolleriyle gecikme; yatırım danışmanlığı sınırına dikkat."
+     "id": "YX3FDPGN6QU",
+     "name": "Dış ticaret ödemeleri için yaptırım ön kontrol aracı"
     },
     {
-      "name": "Yuan ve alternatif kanal ödemeleri için yaptırım uyum taraması",
-      "insight": "Yaptırım altındaki ülkeler ticaretlerini yuan ve CIPS üzerinden yürütüyor; Rusya ve İran bu kanalın en yoğun kullanıcıları arasında.",
-      "problem": "Rusya, İran veya Orta Asya bağlantılı ticaret yapan şirketler, alternatif kanal kullanımının ikincil yaptırım riskini ve banka hesaplarının kapatılma ihtimalini ölçemiyor.",
-      "solution": "Karşı taraf, banka, gemi ve mal kodunu OFAC, AB ve BM listeleriyle tarayan, yüksek riskli ürün kodlarını işaretleyen ve bankaya sunulabilir bir uyum dosyası oluşturan hizmet.",
-      "target": "Rusya, Orta Asya ve Orta Doğu ile ticaret yapan Türk ihracatçılar ve dış ticaret şirketleri",
-      "revenue_model": "İşlem başına tarama ücreti ve yıllık uyum aboneliği",
-      "first_step": "Bir dış ticaret danışmanlık firmasıyla anlaşıp son 6 ayda bankaların reddettiği 10 ödemenin nedenlerini analiz etmek",
-      "capital": "Orta",
-      "difficulty": 4,
-      "turkey_angle": "Türk bankaları ikincil yaptırım riski nedeniyle bu ödemelerde sıkı denetim yapıyor; ihracatçıların ihtiyacı yüksek.",
-      "risks": "Yanlış negatif sonuçlarda ağır hukuki sorumluluk; hizmetin yaptırım delme aracı olarak algılanmaması için yalnızca uyuma odaklanmalı; liste güncelliği."
+     "id": "K9Xu_jW17NM",
+     "name": "Çinli tedarikçiler için yaptırım ve ihracat kontrolü taraması"
+    },
+    {
+     "id": "vJ5Xc4SRvlk",
+     "name": "KOBİ'ler için 'hesabım donmasın' ön uyum kontrolü"
     }
-  ],
-  "skeptic_notes": [
-    "Doların %59, yuanın %2 payı hangi ölçüme (SWIFT mesajları, döviz işlemleri vb.) ait olduğu belirtilmiyor.",
-    "'Suudi Arabistan ve BAE petrolü yuan ile satıyor' ifadesi genelleme; bu satışların toplam içindeki payı verilmiyor.",
-    "'Suudi Arabistan mBridge'den ayrıldı' iddiası tek cümleyle geçiliyor; doğrulanmalı.",
-    "BRICS'in dünya petrol üretiminin %40'ından fazlasını kontrol ettiği iddiası kontrol edilmeli.",
-    "Altın fiyatının 'on yılın en kötü düşüşünü yaşadığı' ifadesi doğrulanmalı.",
-    "'Reposition your portfolio around the UN' büyük olasılıkla 'yuan' kelimesinin altyazı hatası.",
-    "Başlıktaki 'Çin Washington'un en iyi silahını yok etti' ifadesi abartılı; video silahın yalnızca zayıfladığını söylüyor.",
-    "Videoda Statrys'in kur kilitleme hizmeti tanıtılıyor (reklam içeriği)."
-  ]
+   ]
+  }
+ ],
+ "skeptic_notes": [
+  "Doların %59, yuanın %2 payı hangi ölçüme (SWIFT mesajları, döviz işlemleri vb.) ait olduğu belirtilmiyor.",
+  "'Suudi Arabistan ve BAE petrolü yuan ile satıyor' ifadesi genelleme; bu satışların toplam içindeki payı verilmiyor.",
+  "'Suudi Arabistan mBridge'den ayrıldı' iddiası tek cümleyle geçiliyor; doğrulanmalı.",
+  "BRICS'in dünya petrol üretiminin %40'ından fazlasını kontrol ettiği iddiası kontrol edilmeli.",
+  "Altın fiyatının 'on yılın en kötü düşüşünü yaşadığı' ifadesi doğrulanmalı.",
+  "'Reposition your portfolio around the UN' büyük olasılıkla 'yuan' kelimesinin altyazı hatası.",
+  "Başlıktaki 'Çin Washington'un en iyi silahını yok etti' ifadesi abartılı; video silahın yalnızca zayıfladığını söylüyor.",
+  "Videoda Statrys'in kur kilitleme hizmeti tanıtılıyor (reklam içeriği)."
+ ]
 }

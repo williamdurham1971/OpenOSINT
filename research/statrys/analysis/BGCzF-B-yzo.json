@@ -1,161 +1,182 @@
 {
-  "id": "BGCzF-B-yzo",
-  "title_tr": "Aspire deneyimimiz: Hong Kong'da şirket kaydı gerçekten ücretsiz mi?",
-  "category": "Şirket kurma & vergi (Statrys hizmet videoları)",
-  "region": [
-    "Hong Kong"
-  ],
-  "summary_tr": "Statrys çalışanı, rakip Aspire'ın 'ücretsiz Hong Kong şirket kaydı' kampanyasını bizzat denediğini anlatıyor. Kampanyanın aslında şirket kaydının değil, belirli bir nakit iade (cashback) tutarının vaadi olduğu ve iade tutarının sayfadan sayfaya farklı göründüğü aktarılıyor. Şirket kuruluşunu üçüncü taraf bir hizmet sağlayıcının yürüttüğü, ilk e-postada çok sayıda ek hizmetin satılmaya çalışıldığı ve teklifin netleşmesinin günler sürdüğü söyleniyor. Sonunda landing sayfasındaki tutarın kabul edildiği, ancak 24 saatlik ödeme linki baskısı nedeniyle denemenin bırakıldığı belirtiliyor. Video, tek sağlayıcıdan hem kuruluş hem hesap sunan Statrys'i öne çıkararak bitiyor.",
-  "key_points": [
-    "Kampanya 'ücretsiz kayıt' olarak sunuluyor ama gerçekte bir nakit iade teklifi.",
-    "Kayıt sayfasındaki ve e-postadaki iade tutarları birbirini tutmuyor; açıklama iki ayrı kampanyanın aynı anda yürümesi.",
-    "Kuruluşu üçüncü taraf bir şirket yürütüyor ve ilk temasta muhasebe, denetim, offshore vergi muafiyeti gibi ek hizmetler sunuyor.",
-    "Teklifin netleşmesi için günlerce e-posta ve WhatsApp yazışması gerekiyor.",
-    "24 saat geçerli ödeme linki ve hızlı takip aramaları baskı olarak algılanıyor.",
-    "Video, rakip deneyimini Statrys'in tek elden hizmetini tanıtmak için kullanıyor."
-  ],
-  "numbers": [
-    {
-      "label": "Kampanyada ilan edilen kayıt değeri",
-      "value": 10345,
-      "unit": "HKD",
-      "context": "Aspire kampanyasında 'ücretsiz' denen şirket kaydının değeri olarak gösterilen tutar."
-    },
-    {
-      "label": "Kayıt sayfasındaki nakit iade",
-      "value": 8800,
-      "unit": "HKD",
-      "context": "Kayıt olunan kampanya sayfasında görünen ve sonunda kabul edildiği söylenen iade tutarı (ek hizmetlerle paketlenen kampanya)."
-    },
-    {
-      "label": "E-postada belirtilen nakit iade",
-      "value": 4958,
-      "unit": "HKD",
-      "context": "Kuruluş sağlayıcısının e-postasında yazan, yalnızca kuruluşu kapsayan kampanyanın iade tutarı; videoda ayrıca 4.950 olarak da geçiyor."
-    },
-    {
-      "label": "İlk e-postanın gelme süresi",
-      "value": 24,
-      "unit": "saat",
-      "context": "Formu doldurduktan sonra kuruluş sağlayıcısından e-postanın gelme süresi."
-    },
-    {
-      "label": "Ödeme linkinin geçerlilik süresi",
-      "value": 24,
-      "unit": "saat",
-      "context": "Gönderilen ödeme linkinin geçerli olduğu süre."
-    },
-    {
-      "label": "Teklifi netleştirme süresi",
-      "value": 6,
-      "unit": "gün",
-      "context": "İade tutarını teyit ettirmek için harcanan e-posta/WhatsApp yazışma süresi."
-    },
-    {
-      "label": "Toplam deneme süresi",
-      "value": 8,
-      "unit": "gün",
-      "context": "Birkaç dakika sürmesi beklenen denemenin toplamda aldığı süre."
-    }
-  ],
-  "chart": {
-    "type": "hbar",
-    "title": "Aspire kampanyasında karşılaşılan farklı tutarlar",
-    "unit": "HKD",
-    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı",
-    "data": [
-      {
-        "label": "İlan edilen kayıt değeri",
-        "value": 10345
-      },
-      {
-        "label": "Kayıt sayfasındaki iade",
-        "value": 8800
-      },
-      {
-        "label": "E-postadaki iade",
-        "value": 4958
-      }
-    ]
+ "id": "BGCzF-B-yzo",
+ "title_tr": "Aspire deneyimimiz: Hong Kong'da şirket kaydı gerçekten ücretsiz mi?",
+ "category": "Şirket kurma & vergi (Statrys hizmet videoları)",
+ "region": [
+  "Hong Kong"
+ ],
+ "summary_tr": "Statrys çalışanı, rakip Aspire'ın 'ücretsiz Hong Kong şirket kaydı' kampanyasını bizzat denediğini anlatıyor. Kampanyanın aslında şirket kaydının değil, belirli bir nakit iade (cashback) tutarının vaadi olduğu ve iade tutarının sayfadan sayfaya farklı göründüğü aktarılıyor. Şirket kuruluşunu üçüncü taraf bir hizmet sağlayıcının yürüttüğü, ilk e-postada çok sayıda ek hizmetin satılmaya çalışıldığı ve teklifin netleşmesinin günler sürdüğü söyleniyor. Sonunda landing sayfasındaki tutarın kabul edildiği, ancak 24 saatlik ödeme linki baskısı nedeniyle denemenin bırakıldığı belirtiliyor. Video, tek sağlayıcıdan hem kuruluş hem hesap sunan Statrys'i öne çıkararak bitiyor.",
+ "key_points": [
+  "Kampanya 'ücretsiz kayıt' olarak sunuluyor ama gerçekte bir nakit iade teklifi.",
+  "Kayıt sayfasındaki ve e-postadaki iade tutarları birbirini tutmuyor; açıklama iki ayrı kampanyanın aynı anda yürümesi.",
+  "Kuruluşu üçüncü taraf bir şirket yürütüyor ve ilk temasta muhasebe, denetim, offshore vergi muafiyeti gibi ek hizmetler sunuyor.",
+  "Teklifin netleşmesi için günlerce e-posta ve WhatsApp yazışması gerekiyor.",
+  "24 saat geçerli ödeme linki ve hızlı takip aramaları baskı olarak algılanıyor.",
+  "Video, rakip deneyimini Statrys'in tek elden hizmetini tanıtmak için kullanıyor."
+ ],
+ "numbers": [
+  {
+   "label": "Kampanyada ilan edilen kayıt değeri",
+   "value": 10345,
+   "unit": "HKD",
+   "context": "Aspire kampanyasında 'ücretsiz' denen şirket kaydının değeri olarak gösterilen tutar."
   },
-  "diagram": {
-    "type": "flow",
-    "title": "Kampanya denemesinin adım adım akışı",
-    "steps": [
-      {
-        "label": "Kampanyayı görme",
-        "detail": "'Ücretsiz şirket kaydı' vaadi, aslında nakit iade teklifi."
-      },
-      {
-        "label": "Form doldurma",
-        "detail": "Aspire web formu sorunsuz dolduruluyor ve üçüncü taraf kuruluş şirketine yönlendiriliyor."
-      },
-      {
-        "label": "Yoğun satış e-postası",
-        "detail": "Kuruluş, muhasebe, denetim ve vergi paketleri ile alternatif hesap sağlayıcısı öneriliyor."
-      },
-      {
-        "label": "Tutar uyuşmazlığı",
-        "detail": "E-postadaki iade, kayıt sayfasındakinden düşük çıkıyor."
-      },
-      {
-        "label": "Günlerce yazışma",
-        "detail": "Sonunda sayfadaki yüksek tutarın uygulanacağı teyit ediliyor."
-      },
-      {
-        "label": "Baskılı ödeme linki",
-        "detail": "24 saatlik link ve takip araması nedeniyle deneme bırakılıyor."
-      }
-    ]
+  {
+   "label": "Kayıt sayfasındaki nakit iade",
+   "value": 8800,
+   "unit": "HKD",
+   "context": "Kayıt olunan kampanya sayfasında görünen ve sonunda kabul edildiği söylenen iade tutarı (ek hizmetlerle paketlenen kampanya)."
   },
-  "business_ideas": [
-    {
-      "name": "Şirket kuruluş kampanyalarını şeffaflaştıran 'gerçek maliyet' hesaplayıcısı",
-      "insight": "Videoda 'ücretsiz' kampanyanın aslında koşullu nakit iade olduğu ve tutarların kanallar arasında farklı göründüğü anlatılıyor.",
-      "problem": "Girişimciler Hong Kong/Singapur kuruluş kampanyalarında koşulları, paket zorunluluklarını ve ilk yıl sonrası toplam maliyeti anlayamıyor.",
-      "solution": "Kampanya koşullarını, zorunlu ek hizmetleri ve 1-3 yıllık toplam sahip olma maliyetini girdiyle hesaplayan, sağlayıcıları aynı ölçekte karşılaştıran web aracı.",
-      "target": "Asya'da şirket kurmayı düşünen yabancı ve Türk girişimciler",
-      "revenue_model": "Freemium; detaylı karşılaştırma raporu ve sağlayıcılara 'doğrulanmış şeffaf fiyat' rozeti ücreti",
-      "first_step": "Hong Kong'daki 8-10 kuruluş sağlayıcısının kamuya açık fiyatlarını toplayıp basit bir hesaplayıcı prototipiyle 20 kullanıcı testi yapmak.",
-      "capital": "Düşük",
-      "difficulty": 2,
-      "turkey_angle": "Türkçe arayüzle Türk girişimci topluluklarına sunulabilir; uzaktan geliştirilebilir.",
-      "risks": "Sağlayıcı fiyatları sık değişir; yanlış bilgi sağlayıcılarla hukuki anlaşmazlık doğurabilir, kaynak ve tarih gösterimi şart."
-    },
-    {
-      "name": "Kurumsal hizmet sağlayıcıları için 'gizli müşteri' denetim hizmeti",
-      "insight": "Video aslında bir rakibin müşteri yolculuğunu gizli müşteri olarak test etmenin örneği ve süreçteki sürtünmeleri ortaya koyuyor.",
-      "problem": "Fintech ve kuruluş sağlayıcıları kendi kampanya ve satış süreçlerinin müşteri tarafında nasıl göründüğünü (tutarsız teklif, agresif satış) bilmiyor.",
-      "solution": "Hong Kong/Singapur kuruluş ve hesap sağlayıcılarına, kendi ve rakip onboarding akışlarını farklı müşteri profilleriyle test edip yanıt süresi, tutarlılık ve baskı unsurlarını raporlayan hizmet.",
-      "target": "Asya'daki fintech'ler, kurumsal hizmet şirketleri, pazarlama ekipleri",
-      "revenue_model": "Test başına proje ücreti veya çeyreklik abonelik",
-      "first_step": "3 sağlayıcının akışını kendi adına test edip örnek bir rapor hazırlamak ve bunu 10 fintech pazarlama sorumlusuna göndererek geri dönüş oranını ölçmek.",
-      "capital": "Düşük",
-      "difficulty": 3,
-      "turkey_angle": "İngilizce yeterli ekip Türkiye'den çalışabilir; düşük maliyetli işgücü avantajı.",
-      "risks": "Testlerde gerçek kimlikle yanıltıcı bilgi verilmemeli; KYC süreçlerini sahte belgeyle zorlamak yasa dışıdır, yalnızca ön satış aşaması test edilmeli."
-    },
-    {
-      "name": "Kuruluş tekliflerini netleştiren tek sayfalık sözleşme özeti şablonu",
-      "insight": "Videodaki asıl sürtünme, teklifin ne içerdiğini teyit etmek için günlerce yazışılması.",
-      "problem": "KOBİ'ler kuruluş paketlerinde neyin dahil olduğunu, iade koşullarını ve yenileme ücretlerini yazılı ve net görmeden ödeme yapıyor.",
-      "solution": "Kuruluş/hesap paketleri için dahil olan-olmayan kalemler, koşullar, yenileme ücretleri ve iptal şartlarını tek sayfada standardize eden şablon ve bunu sağlayıcıdan isteyen e-posta asistanı.",
-      "target": "Yurt dışında şirket kuran KOBİ'ler ve onlara hizmet veren muhasebeciler",
-      "revenue_model": "Şablon satışı ve muhasebe bürolarına beyaz etiketli lisans",
-      "first_step": "Türkiye'deki 10 SMMM bürosuna şablonun taslağını gösterip müşterileri için kullanma isteklerini ölçmek.",
-      "capital": "Düşük",
-      "difficulty": 1,
-      "turkey_angle": "Yurt dışı şirket kuran müşterisi olan Türk muhasebe bürolarına kolayca pazarlanabilir.",
-      "risks": "Hukuki tavsiye niteliğine girmemesi için şablonun bilgilendirme amaçlı olduğu belirtilmeli."
-    }
-  ],
-  "skeptic_notes": [
-    "Bu video Statrys'in kendi hizmetlerini tanıtan bir reklam/tanıtım içeriğidir; anlatım tarafsız değildir. Ayrıca bir rakibin tek bir deneyim üzerinden eleştirilmesidir; genellenmemeli.",
-    "Otomatik altyazı şirket adını çoğu yerde 'Status' veya 'statris' olarak yazmış; doğrusu Statrys.",
-    "E-postadaki iade tutarı videoda hem 4.958 hem 4.950 HKD olarak geçiyor; altyazı veya konuşma tutarsızlığı. Grafikte ilk söylenen 4.958 kullanıldı.",
-    "Videonun sonunda kabul edilen tutar altyazıda 'har,00' gibi bozuk yazılmış; bağlamdan 8.800 HKD olduğu anlaşılıyor.",
-    "Yazışma süresi bir yerde 'birkaç gün', bir yerde 6 gün, toplam deneyim 8 gün olarak geçiyor.",
-    "Kuruluş ortağının adı altyazıda 'Awesome/Awome', alternatif hesap sağlayıcısı 'Airwex/our Wex' olarak geçiyor; ikincisi büyük olasılıkla Airwallex, ilkinin gerçek adı doğrulanmalı.",
-    "10.345 HKD'lik 'kayıt değeri'nin neleri kapsadığı açıklanmıyor."
+  {
+   "label": "E-postada belirtilen nakit iade",
+   "value": 4958,
+   "unit": "HKD",
+   "context": "Kuruluş sağlayıcısının e-postasında yazan, yalnızca kuruluşu kapsayan kampanyanın iade tutarı; videoda ayrıca 4.950 olarak da geçiyor."
+  },
+  {
+   "label": "İlk e-postanın gelme süresi",
+   "value": 24,
+   "unit": "saat",
+   "context": "Formu doldurduktan sonra kuruluş sağlayıcısından e-postanın gelme süresi."
+  },
+  {
+   "label": "Ödeme linkinin geçerlilik süresi",
+   "value": 24,
+   "unit": "saat",
+   "context": "Gönderilen ödeme linkinin geçerli olduğu süre."
+  },
+  {
+   "label": "Teklifi netleştirme süresi",
+   "value": 6,
+   "unit": "gün",
+   "context": "İade tutarını teyit ettirmek için harcanan e-posta/WhatsApp yazışma süresi."
+  },
+  {
+   "label": "Toplam deneme süresi",
+   "value": 8,
+   "unit": "gün",
+   "context": "Birkaç dakika sürmesi beklenen denemenin toplamda aldığı süre."
+  }
+ ],
+ "chart": {
+  "type": "hbar",
+  "title": "Aspire kampanyasında karşılaşılan farklı tutarlar",
+  "unit": "HKD",
+  "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı",
+  "data": [
+   {
+    "label": "İlan edilen kayıt değeri",
+    "value": 10345
+   },
+   {
+    "label": "Kayıt sayfasındaki iade",
+    "value": 8800
+   },
+   {
+    "label": "E-postadaki iade",
+    "value": 4958
+   }
   ]
+ },
+ "diagram": {
+  "type": "flow",
+  "title": "Kampanya denemesinin adım adım akışı",
+  "steps": [
+   {
+    "label": "Kampanyayı görme",
+    "detail": "'Ücretsiz şirket kaydı' vaadi, aslında nakit iade teklifi."
+   },
+   {
+    "label": "Form doldurma",
+    "detail": "Aspire web formu sorunsuz dolduruluyor ve üçüncü taraf kuruluş şirketine yönlendiriliyor."
+   },
+   {
+    "label": "Yoğun satış e-postası",
+    "detail": "Kuruluş, muhasebe, denetim ve vergi paketleri ile alternatif hesap sağlayıcısı öneriliyor."
+   },
+   {
+    "label": "Tutar uyuşmazlığı",
+    "detail": "E-postadaki iade, kayıt sayfasındakinden düşük çıkıyor."
+   },
+   {
+    "label": "Günlerce yazışma",
+    "detail": "Sonunda sayfadaki yüksek tutarın uygulanacağı teyit ediliyor."
+   },
+   {
+    "label": "Baskılı ödeme linki",
+    "detail": "24 saatlik link ve takip araması nedeniyle deneme bırakılıyor."
+   }
+  ]
+ },
+ "business_ideas": [
+  {
+   "name": "Şirket kuruluş kampanyalarını şeffaflaştıran 'gerçek maliyet' hesaplayıcısı",
+   "insight": "Videoda 'ücretsiz' kampanyanın aslında koşullu nakit iade olduğu ve tutarların kanallar arasında farklı göründüğü anlatılıyor.",
+   "problem": "Girişimciler Hong Kong/Singapur kuruluş kampanyalarında koşulları, paket zorunluluklarını ve ilk yıl sonrası toplam maliyeti anlayamıyor.",
+   "solution": "Kampanya koşullarını, zorunlu ek hizmetleri ve 1-3 yıllık toplam sahip olma maliyetini girdiyle hesaplayan, sağlayıcıları aynı ölçekte karşılaştıran web aracı.",
+   "target": "Asya'da şirket kurmayı düşünen yabancı ve Türk girişimciler",
+   "revenue_model": "Freemium; detaylı karşılaştırma raporu ve sağlayıcılara 'doğrulanmış şeffaf fiyat' rozeti ücreti",
+   "first_step": "Hong Kong'daki 8-10 kuruluş sağlayıcısının kamuya açık fiyatlarını toplayıp basit bir hesaplayıcı prototipiyle 20 kullanıcı testi yapmak.",
+   "capital": "Düşük",
+   "difficulty": 2,
+   "turkey_angle": "Türkçe arayüzle Türk girişimci topluluklarına sunulabilir; uzaktan geliştirilebilir.",
+   "risks": "Sağlayıcı fiyatları sık değişir; yanlış bilgi sağlayıcılarla hukuki anlaşmazlık doğurabilir, kaynak ve tarih gösterimi şart.",
+   "originality": 2,
+   "problem_solving": 2,
+   "score_note": "Hesaplayıcı.",
+   "similar": [
+    {
+     "id": "KRQsHuS8uCU",
+     "name": "Muhasebe hizmeti fiyat modeli karşılaştırma aracı"
+    },
+    {
+     "id": "CzyzZL2dAh8",
+     "name": "Girişimciler için 'toplam maliyet' bazlı şirket merkezi karşılaştırma aracı"
+    }
+   ]
+  },
+  {
+   "name": "Kurumsal hizmet sağlayıcıları için 'gizli müşteri' denetim hizmeti",
+   "insight": "Video aslında bir rakibin müşteri yolculuğunu gizli müşteri olarak test etmenin örneği ve süreçteki sürtünmeleri ortaya koyuyor.",
+   "problem": "Fintech ve kuruluş sağlayıcıları kendi kampanya ve satış süreçlerinin müşteri tarafında nasıl göründüğünü (tutarsız teklif, agresif satış) bilmiyor.",
+   "solution": "Hong Kong/Singapur kuruluş ve hesap sağlayıcılarına, kendi ve rakip onboarding akışlarını farklı müşteri profilleriyle test edip yanıt süresi, tutarlılık ve baskı unsurlarını raporlayan hizmet.",
+   "target": "Asya'daki fintech'ler, kurumsal hizmet şirketleri, pazarlama ekipleri",
+   "revenue_model": "Test başına proje ücreti veya çeyreklik abonelik",
+   "first_step": "3 sağlayıcının akışını kendi adına test edip örnek bir rapor hazırlamak ve bunu 10 fintech pazarlama sorumlusuna göndererek geri dönüş oranını ölçmek.",
+   "capital": "Düşük",
+   "difficulty": 3,
+   "turkey_angle": "İngilizce yeterli ekip Türkiye'den çalışabilir; düşük maliyetli işgücü avantajı.",
+   "risks": "Testlerde gerçek kimlikle yanıltıcı bilgi verilmemeli; KYC süreçlerini sahte belgeyle zorlamak yasa dışıdır, yalnızca ön satış aşaması test edilmeli.",
+   "originality": 3,
+   "problem_solving": 2,
+   "score_note": "Gizli müşteri; alıcı az.",
+   "similar": []
+  },
+  {
+   "name": "Kuruluş tekliflerini netleştiren tek sayfalık sözleşme özeti şablonu",
+   "insight": "Videodaki asıl sürtünme, teklifin ne içerdiğini teyit etmek için günlerce yazışılması.",
+   "problem": "KOBİ'ler kuruluş paketlerinde neyin dahil olduğunu, iade koşullarını ve yenileme ücretlerini yazılı ve net görmeden ödeme yapıyor.",
+   "solution": "Kuruluş/hesap paketleri için dahil olan-olmayan kalemler, koşullar, yenileme ücretleri ve iptal şartlarını tek sayfada standardize eden şablon ve bunu sağlayıcıdan isteyen e-posta asistanı.",
+   "target": "Yurt dışında şirket kuran KOBİ'ler ve onlara hizmet veren muhasebeciler",
+   "revenue_model": "Şablon satışı ve muhasebe bürolarına beyaz etiketli lisans",
+   "first_step": "Türkiye'deki 10 SMMM bürosuna şablonun taslağını gösterip müşterileri için kullanma isteklerini ölçmek.",
+   "capital": "Düşük",
+   "difficulty": 1,
+   "turkey_angle": "Yurt dışı şirket kuran müşterisi olan Türk muhasebe bürolarına kolayca pazarlanabilir.",
+   "risks": "Hukuki tavsiye niteliğine girmemesi için şablonun bilgilendirme amaçlı olduğu belirtilmeli.",
+   "originality": 2,
+   "problem_solving": 2,
+   "score_note": "Şablon; iş değil.",
+   "similar": []
+  }
+ ],
+ "skeptic_notes": [
+  "Bu video Statrys'in kendi hizmetlerini tanıtan bir reklam/tanıtım içeriğidir; anlatım tarafsız değildir. Ayrıca bir rakibin tek bir deneyim üzerinden eleştirilmesidir; genellenmemeli.",
+  "Otomatik altyazı şirket adını çoğu yerde 'Status' veya 'statris' olarak yazmış; doğrusu Statrys.",
+  "E-postadaki iade tutarı videoda hem 4.958 hem 4.950 HKD olarak geçiyor; altyazı veya konuşma tutarsızlığı. Grafikte ilk söylenen 4.958 kullanıldı.",
+  "Videonun sonunda kabul edilen tutar altyazıda 'har,00' gibi bozuk yazılmış; bağlamdan 8.800 HKD olduğu anlaşılıyor.",
+  "Yazışma süresi bir yerde 'birkaç gün', bir yerde 6 gün, toplam deneyim 8 gün olarak geçiyor.",
+  "Kuruluş ortağının adı altyazıda 'Awesome/Awome', alternatif hesap sağlayıcısı 'Airwex/our Wex' olarak geçiyor; ikincisi büyük olasılıkla Airwallex, ilkinin gerçek adı doğrulanmalı.",
+  "10.345 HKD'lik 'kayıt değeri'nin neleri kapsadığı açıklanmıyor."
+ ]
 }

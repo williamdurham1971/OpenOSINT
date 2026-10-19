@@ -1,110 +1,123 @@
 {
-  "id": "Y8616NH0KX0",
-  "title_tr": "Singapur'da şirket kurmanın 9 temel şartı - 1. bölüm",
-  "category": "Şirket kurma & vergi (Statrys hizmet videoları)",
-  "region": [
-    "Singapur"
-  ],
-  "summary_tr": "Üç bölümlük serinin ilki, yabancı girişimcilerin Singapur'da şirket kurarken karşılaştığı ilk üç şartı anlatıyor. Kayıt için ACRA'nın sistemine SingPass ile girmek gerekiyor; SingPass'i olmayan yabancıların kayıtlı bir dosyalama acentesi (kurumsal hizmet sağlayıcı) kullanması zorunlu. Şirket adının ACRA tarafından onaylanması, belirli kelimelerden kaçınılması ve özel limited şirketlerde 'Pte. Ltd.' ile bitmesi gerekiyor. Son olarak şahıs işletmesi ile özel limited şirket karşılaştırılıyor ve ölçeklenmek isteyenlere limited şirket öneriliyor.",
-  "key_points": [
-    "ACRA'ya doğrudan başvuru SingPass gerektiriyor; SingPass yalnızca vatandaş, daimi oturum ve bazı çalışma izni sahiplerine veriliyor.",
-    "SingPass'i olmayan yabancılar için kayıtlı dosyalama acentesi kullanmak zorunlu.",
-    "Şirket adı benzersiz olmalı, 'bank', 'insurance' gibi kısıtlı kelimeler özel onay gerektiriyor.",
-    "Finans, eğitim, gayrimenkul gibi düzenlenmiş sektörlerde isim başvurusu başka kuruma yönlendirilip haftalarca sürebiliyor.",
-    "İsim tescili marka koruması sağlamıyor; bunlar ayrı süreçler.",
-    "Şahıs işletmesi ucuz ama sınırsız kişisel sorumluluk taşıyor; özel limited şirket sınırlı sorumluluk ve itibar sağlıyor."
-  ],
-  "numbers": [
-    {
-      "label": "İsim başvuru ücreti",
-      "value": 15,
-      "unit": "SGD",
-      "context": "ACRA'ya şirket adı onayı için ödenen başvuru ücreti."
-    },
-    {
-      "label": "İsmin rezerve kalma süresi",
-      "value": 120,
-      "unit": "gün",
-      "context": "Onaylanan ismin kuruluş tamamlanana kadar saklandığı süre."
-    },
-    {
-      "label": "Düzenlenmiş sektörde isim onayı (alt sınır)",
-      "value": 2,
-      "unit": "hafta",
-      "context": "Başvuru başka bir kuruma yönlendirilirse onayın en az sürebileceği süre."
-    },
-    {
-      "label": "Düzenlenmiş sektörde isim onayı (üst sınır)",
-      "value": 2,
-      "unit": "ay",
-      "context": "Aynı durumda onayın en fazla sürebileceği süre."
-    },
-    {
-      "label": "Serideki toplam şart",
-      "value": 9,
-      "unit": "şart",
-      "context": "Serinin ele aldığı kuruluş şartı sayısı."
-    }
-  ],
-  "chart": null,
-  "diagram": {
-    "type": "flow",
-    "title": "Yabancı girişimci için kuruluşun ilk adımları",
-    "steps": [
-      {
-        "label": "SingPass kontrolü",
-        "detail": "Girişimcinin SingPass'e hak kazanıp kazanmadığı belirleniyor."
-      },
-      {
-        "label": "Dosyalama acentesi",
-        "detail": "SingPass yoksa ACRA'ya başvuruyu yetkili hizmet sağlayıcı yapıyor."
-      },
-      {
-        "label": "İsim başvurusu",
-        "detail": "Benzersiz ve kurallara uygun isim ACRA'ya ücretli olarak sunuluyor."
-      },
-      {
-        "label": "İsim onayı ve rezervasyon",
-        "detail": "Onaylanan isim sınırlı bir süre saklanıyor; düzenlenmiş sektörlerde süre uzayabiliyor."
-      },
-      {
-        "label": "Şirket türü seçimi",
-        "detail": "Şahıs işletmesi ile sınırlı sorumlu özel limited şirket arasında karar veriliyor."
-      }
-    ]
+ "id": "Y8616NH0KX0",
+ "title_tr": "Singapur'da şirket kurmanın 9 temel şartı - 1. bölüm",
+ "category": "Şirket kurma & vergi (Statrys hizmet videoları)",
+ "region": [
+  "Singapur"
+ ],
+ "summary_tr": "Üç bölümlük serinin ilki, yabancı girişimcilerin Singapur'da şirket kurarken karşılaştığı ilk üç şartı anlatıyor. Kayıt için ACRA'nın sistemine SingPass ile girmek gerekiyor; SingPass'i olmayan yabancıların kayıtlı bir dosyalama acentesi (kurumsal hizmet sağlayıcı) kullanması zorunlu. Şirket adının ACRA tarafından onaylanması, belirli kelimelerden kaçınılması ve özel limited şirketlerde 'Pte. Ltd.' ile bitmesi gerekiyor. Son olarak şahıs işletmesi ile özel limited şirket karşılaştırılıyor ve ölçeklenmek isteyenlere limited şirket öneriliyor.",
+ "key_points": [
+  "ACRA'ya doğrudan başvuru SingPass gerektiriyor; SingPass yalnızca vatandaş, daimi oturum ve bazı çalışma izni sahiplerine veriliyor.",
+  "SingPass'i olmayan yabancılar için kayıtlı dosyalama acentesi kullanmak zorunlu.",
+  "Şirket adı benzersiz olmalı, 'bank', 'insurance' gibi kısıtlı kelimeler özel onay gerektiriyor.",
+  "Finans, eğitim, gayrimenkul gibi düzenlenmiş sektörlerde isim başvurusu başka kuruma yönlendirilip haftalarca sürebiliyor.",
+  "İsim tescili marka koruması sağlamıyor; bunlar ayrı süreçler.",
+  "Şahıs işletmesi ucuz ama sınırsız kişisel sorumluluk taşıyor; özel limited şirket sınırlı sorumluluk ve itibar sağlıyor."
+ ],
+ "numbers": [
+  {
+   "label": "İsim başvuru ücreti",
+   "value": 15,
+   "unit": "SGD",
+   "context": "ACRA'ya şirket adı onayı için ödenen başvuru ücreti."
   },
-  "business_ideas": [
-    {
-      "name": "Singapur şirket adı ön kontrol ve marka çakışma aracı",
-      "insight": "Video, isim onayının benzersizlik, kısıtlı kelime ve marka benzerliği kurallarına bağlı olduğunu ve isim tescilinin marka koruması vermediğini vurguluyor.",
-      "problem": "Girişimciler isim reddi veya sonradan marka uyuşmazlığı riskini başvurudan önce göremiyor.",
-      "solution": "Önerilen ismi kısıtlı kelime listesi, mevcut şirket adlarıyla benzerlik ve kamuya açık marka veritabanlarına karşı tarayan, sonuçta risk puanı ve alternatif isim öneren araç.",
-      "target": "Singapur'da şirket kuracak yabancı girişimciler ve kurumsal hizmet sağlayıcıları",
-      "revenue_model": "Sorgu başına küçük ücret ve hizmet sağlayıcılara API aboneliği",
-      "first_step": "ACRA ve marka ofisi verilerine kamuya açık erişim koşullarını incelemek ve 5 kurumsal hizmet sağlayıcıya prototip demosu yapmak.",
-      "capital": "Orta",
-      "difficulty": 3,
-      "turkey_angle": "Yazılım Türkiye'den geliştirilebilir; aynı araç Türkiye ticaret unvanı ve TÜRKPATENT kontrolüne de uyarlanabilir.",
-      "risks": "Resmi veri erişimi ve kullanım lisansı kısıtlı olabilir; araç hukuki görüş yerine geçmez, son karar ACRA'nındır."
-    },
-    {
-      "name": "Türk girişimciler için Singapur kuruluş yol haritası ve acente eşleştirme",
-      "insight": "Video, SingPass'i olmayan yabancıların kayıtlı dosyalama acentesi kullanmaktan başka yolu olmadığını söylüyor.",
-      "problem": "Türk girişimciler hangi acenteyle çalışacaklarını, fiyatları ve kapsamı kıyaslamakta zorlanıyor.",
-      "solution": "Kuruluş ihtiyaçlarını soran kısa bir anketle girişimciyi uygun lisanslı Singapur hizmet sağlayıcılarına eşleştiren, Türkçe rehber ve kontrol listesi sunan platform.",
-      "target": "Güneydoğu Asya'ya açılmak isteyen Türk teknoloji ve ticaret şirketleri",
-      "revenue_model": "Hizmet sağlayıcılardan yönlendirme komisyonu; Türkçe rehber satışı",
-      "first_step": "Singapur'daki 5 lisanslı sağlayıcıyla yönlendirme anlaşması görüşmesi yapmak ve Türk girişimci gruplarında 30 ön kayıt toplamak.",
-      "capital": "Düşük",
-      "difficulty": 2,
-      "turkey_angle": "Dil ve kültür köprüsü avantajı; tamamen uzaktan yürütülebilir.",
-      "risks": "Komisyon modeli tarafsızlık algısını zayıflatabilir; Singapur'da kurumsal hizmet faaliyetinin kendisi lisans gerektirdiğinden platform yalnızca yönlendirme yapmalı."
-    }
-  ],
-  "skeptic_notes": [
-    "Bu video Statrys'in kendi hizmetlerini tanıtan bir reklam/tanıtım içeriğidir; anlatım tarafsız değildir. Kurumsal hizmet sağlayıcı kullanmanın 'her şeyi kolaylaştırdığı' anlatımı Statrys'in satış mesajıyla örtüşüyor.",
-    "Ücret, süre ve SingPass uygunluk kuralları videonun çekildiği tarihe aittir; ACRA'nın güncel tarifesi ve kuralları doğrulanmalı.",
-    "İsim onayının 'birkaç saat ile bir gün' sürdüğü bilgisi ortalama bir beyandır, garanti değildir.",
-    "Grafik için aynı birimde ve karşılaştırılabilir en az üç değer bulunmadığından chart null bırakıldı."
+  {
+   "label": "İsmin rezerve kalma süresi",
+   "value": 120,
+   "unit": "gün",
+   "context": "Onaylanan ismin kuruluş tamamlanana kadar saklandığı süre."
+  },
+  {
+   "label": "Düzenlenmiş sektörde isim onayı (alt sınır)",
+   "value": 2,
+   "unit": "hafta",
+   "context": "Başvuru başka bir kuruma yönlendirilirse onayın en az sürebileceği süre."
+  },
+  {
+   "label": "Düzenlenmiş sektörde isim onayı (üst sınır)",
+   "value": 2,
+   "unit": "ay",
+   "context": "Aynı durumda onayın en fazla sürebileceği süre."
+  },
+  {
+   "label": "Serideki toplam şart",
+   "value": 9,
+   "unit": "şart",
+   "context": "Serinin ele aldığı kuruluş şartı sayısı."
+  }
+ ],
+ "chart": null,
+ "diagram": {
+  "type": "flow",
+  "title": "Yabancı girişimci için kuruluşun ilk adımları",
+  "steps": [
+   {
+    "label": "SingPass kontrolü",
+    "detail": "Girişimcinin SingPass'e hak kazanıp kazanmadığı belirleniyor."
+   },
+   {
+    "label": "Dosyalama acentesi",
+    "detail": "SingPass yoksa ACRA'ya başvuruyu yetkili hizmet sağlayıcı yapıyor."
+   },
+   {
+    "label": "İsim başvurusu",
+    "detail": "Benzersiz ve kurallara uygun isim ACRA'ya ücretli olarak sunuluyor."
+   },
+   {
+    "label": "İsim onayı ve rezervasyon",
+    "detail": "Onaylanan isim sınırlı bir süre saklanıyor; düzenlenmiş sektörlerde süre uzayabiliyor."
+   },
+   {
+    "label": "Şirket türü seçimi",
+    "detail": "Şahıs işletmesi ile sınırlı sorumlu özel limited şirket arasında karar veriliyor."
+   }
   ]
+ },
+ "business_ideas": [
+  {
+   "name": "Singapur şirket adı ön kontrol ve marka çakışma aracı",
+   "insight": "Video, isim onayının benzersizlik, kısıtlı kelime ve marka benzerliği kurallarına bağlı olduğunu ve isim tescilinin marka koruması vermediğini vurguluyor.",
+   "problem": "Girişimciler isim reddi veya sonradan marka uyuşmazlığı riskini başvurudan önce göremiyor.",
+   "solution": "Önerilen ismi kısıtlı kelime listesi, mevcut şirket adlarıyla benzerlik ve kamuya açık marka veritabanlarına karşı tarayan, sonuçta risk puanı ve alternatif isim öneren araç.",
+   "target": "Singapur'da şirket kuracak yabancı girişimciler ve kurumsal hizmet sağlayıcıları",
+   "revenue_model": "Sorgu başına küçük ücret ve hizmet sağlayıcılara API aboneliği",
+   "first_step": "ACRA ve marka ofisi verilerine kamuya açık erişim koşullarını incelemek ve 5 kurumsal hizmet sağlayıcıya prototip demosu yapmak.",
+   "capital": "Orta",
+   "difficulty": 3,
+   "turkey_angle": "Yazılım Türkiye'den geliştirilebilir; aynı araç Türkiye ticaret unvanı ve TÜRKPATENT kontrolüne de uyarlanabilir.",
+   "risks": "Resmi veri erişimi ve kullanım lisansı kısıtlı olabilir; araç hukuki görüş yerine geçmez, son karar ACRA'nındır.",
+   "originality": 2,
+   "problem_solving": 2,
+   "score_note": "İsim aracı.",
+   "similar": [
+    {
+     "id": "48MUYUzG-Ck",
+     "name": "Hong Kong şirket ismi hazırlama ve çift dilli isim danışmanlığı aracı"
+    }
+   ]
+  },
+  {
+   "name": "Türk girişimciler için Singapur kuruluş yol haritası ve acente eşleştirme",
+   "insight": "Video, SingPass'i olmayan yabancıların kayıtlı dosyalama acentesi kullanmaktan başka yolu olmadığını söylüyor.",
+   "problem": "Türk girişimciler hangi acenteyle çalışacaklarını, fiyatları ve kapsamı kıyaslamakta zorlanıyor.",
+   "solution": "Kuruluş ihtiyaçlarını soran kısa bir anketle girişimciyi uygun lisanslı Singapur hizmet sağlayıcılarına eşleştiren, Türkçe rehber ve kontrol listesi sunan platform.",
+   "target": "Güneydoğu Asya'ya açılmak isteyen Türk teknoloji ve ticaret şirketleri",
+   "revenue_model": "Hizmet sağlayıcılardan yönlendirme komisyonu; Türkçe rehber satışı",
+   "first_step": "Singapur'daki 5 lisanslı sağlayıcıyla yönlendirme anlaşması görüşmesi yapmak ve Türk girişimci gruplarında 30 ön kayıt toplamak.",
+   "capital": "Düşük",
+   "difficulty": 2,
+   "turkey_angle": "Dil ve kültür köprüsü avantajı; tamamen uzaktan yürütülebilir.",
+   "risks": "Komisyon modeli tarafsızlık algısını zayıflatabilir; Singapur'da kurumsal hizmet faaliyetinin kendisi lisans gerektirdiğinden platform yalnızca yönlendirme yapmalı.",
+   "originality": 1,
+   "problem_solving": 2,
+   "score_note": "Yönlendirme sitesi.",
+   "similar": []
+  }
+ ],
+ "skeptic_notes": [
+  "Bu video Statrys'in kendi hizmetlerini tanıtan bir reklam/tanıtım içeriğidir; anlatım tarafsız değildir. Kurumsal hizmet sağlayıcı kullanmanın 'her şeyi kolaylaştırdığı' anlatımı Statrys'in satış mesajıyla örtüşüyor.",
+  "Ücret, süre ve SingPass uygunluk kuralları videonun çekildiği tarihe aittir; ACRA'nın güncel tarifesi ve kuralları doğrulanmalı.",
+  "İsim onayının 'birkaç saat ile bir gün' sürdüğü bilgisi ortalama bir beyandır, garanti değildir.",
+  "Grafik için aynı birimde ve karşılaştırılabilir en az üç değer bulunmadığından chart null bırakıldı."
+ ]
 }

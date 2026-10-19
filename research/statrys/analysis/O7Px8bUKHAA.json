@@ -1,118 +1,295 @@
 {
-  "id": "O7Px8bUKHAA",
-  "title_tr": "Batılı lüks markaların Çin'de gerilemesinin asıl nedeni",
-  "category": "Çin ekonomisi",
-  "region": ["Çin", "Avrupa"],
-  "summary_tr": "Video, Çinli tüketicilerin lüks harcamayı bırakmadığını, harcamayı Avrupa markalarından yerli Çin markalarına kaydırdığını savunuyor. 2017-2021 arasındaki büyüme döneminde Avrupalı gruplar fiyatları kaliteyi artırmadan yükseltti; ardından konut piyasasındaki çöküş, genç işsizliği ve tasarım yorgunluğu aynı anda geldi. Bu boşluğu 'Guochao' (ulusal akım) adı verilen kültürel mirasa dayalı tüketim eğilimiyle Laopu Gold, Songmont, Maogeping gibi markalar doldurdu. Sunucu, bu markaların henüz Asya dışında kalıcı olmadığını ama BYD'nin izlediği 'önce iç pazar, sonra dünya' yolunu izleyebileceklerini söylüyor.",
-  "key_points": [
-    "LVMH, Kering/Gucci ve Burberry'de satış, kâr ve hisse değerinde sert düşüşler yaşandığı aktarılıyor.",
-    "Markalar 2019-2024 arasında fiyatları büyük oranda artırdı ancak kalite ve yenilik buna eşlik etmedi.",
-    "Çinli tüketicinin lüks harcamasında yerli markaların payı bir yılda yüzde 39'dan 44'e çıktı.",
-    "Laopu Gold'un müşterilerinin büyük kısmı aynı zamanda Louis Vuitton, Hermès ve Cartier müşterisi; yani rakip aynı kitleyi çekiyor.",
-    "Songmont, hızlı moda ile Avrupa lüksü arasındaki fiyat boşluğunu hedefleyerek büyüdü; Bernard Arnault mağazayı ziyaret edip çanta aldı.",
-    "Avrupalı gruplar Çinli markalara azınlık yatırımı ve Çin kültürüne daha derin kampanyalarla karşılık vermeye çalışıyor."
-  ],
-  "numbers": [
-    {"label": "Batı lüksünden uzaklaşan tüketici", "value": 50, "unit": "milyon kişi", "context": "2 yıldan kısa sürede Batılı lüks markalardan vazgeçen Çinli tüketici sayısı"},
-    {"label": "Kering piyasa değeri kaybı", "value": 60, "unit": "%", "context": "Son 5 yılda Kering hissesinin kaybettiği değer"},
-    {"label": "Çin'in küresel lüks büyümesindeki payı", "value": 40, "unit": "%", "context": "2017-2021 arasında küresel lüks büyümesinin Çin'den gelen kısmı"},
-    {"label": "Çanta fiyatı 2019", "value": 1300, "unit": "$", "context": "Bazı çantaların 2019 fiyatı"},
-    {"label": "Çanta fiyatı 2024", "value": 2000, "unit": "$ (üzeri)", "context": "Aynı çantaların 2024'teki fiyatı 2.000 doların üzerinde"},
-    {"label": "Genç işsizliği (2023 ortası)", "value": 21, "unit": "%", "context": "Altyazıda 'yüzde 21 arttı' deniyor; muhtemelen işsizlik oranının yüzde 21'e ulaşması kastediliyor"},
-    {"label": "Deri ürünlerin LVMH kârındaki payı", "value": 80, "unit": "%", "context": "Yedi çeyrektir düşen deri ürünler bölümünün kâra katkısı"},
-    {"label": "LVMH hissesi 2026 Q1", "value": -28, "unit": "%", "context": "2026'nın ilk çeyreğindeki hisse düşüşü"},
-    {"label": "Arnault servet kaybı", "value": 56, "unit": "milyar $", "context": "Hisse düşüşünün Arnault'nun kişisel servetinden sildiği tutar"},
-    {"label": "Gucci gelir düşüşü 2025 H1", "value": -26, "unit": "%", "context": "2025 ilk yarı gelir değişimi"},
-    {"label": "Gucci gelir düşüşü 2026 Q1", "value": -14, "unit": "%", "context": "2026 ilk çeyrekte ek düşüş"},
-    {"label": "Kering net kâr düşüşü", "value": -46, "unit": "%", "context": "Kering net kârındaki çöküş"},
-    {"label": "Kering borcu", "value": 9.5, "unit": "milyar €", "context": "Grubun taşıdığı borç"},
-    {"label": "Parfüm biriminin satışı", "value": 4, "unit": "milyar €", "context": "Kering'in parfüm bölümünü L'Oréal'e satış bedeli"},
-    {"label": "Burberry işten çıkarma", "value": 1700, "unit": "kişi", "context": "Burberry'nin kestiği iş sayısı"},
-    {"label": "Yerli markaların lüks payı (önce)", "value": 39, "unit": "%", "context": "Çin lüks harcamasında yerli markaların bir yıl önceki payı"},
-    {"label": "Yerli markaların lüks payı (sonra)", "value": 44, "unit": "%", "context": "Bir yıl sonraki pay"},
-    {"label": "Mücevherde Çin markasını düşünenler", "value": 78, "unit": "%", "context": "Bir önceki yıl yüzde 72 idi"},
-    {"label": "Laopu Gold geliri 2022", "value": 1.4, "unit": "milyar yuan", "context": "Şirket geliri"},
-    {"label": "Laopu Gold geliri 2024", "value": 8.5, "unit": "milyar yuan", "context": "Videoda 'yedi kat' artış olarak sunuluyor"},
-    {"label": "Laopu müşterilerinin Batı lüksü alışverişi", "value": 77, "unit": "%", "context": "LV, Hermès ve Cartier'den de alışveriş yapan Laopu müşterileri"},
-    {"label": "Maogeping geliri", "value": 500, "unit": "milyon €", "context": "3 yılda iki katına çıkarak ulaştığı gelir"},
-    {"label": "Songmont online satış artışı", "value": 90, "unit": "%", "context": "2025'in ilk üç çeyreği"},
-    {"label": "Songmont fiyat aralığı alt", "value": 140, "unit": "$", "context": "Ürün fiyat aralığının alt ucu"},
-    {"label": "Songmont fiyat aralığı üst", "value": 420, "unit": "$", "context": "Ürün fiyat aralığının üst ucu"},
-    {"label": "Kering mağaza kapatma planı", "value": 100, "unit": "mağaza", "context": "Bu yıl kapatılması planlanan mağaza sayısı"}
-  ],
-  "chart": {
-    "type": "hbar",
-    "title": "2025'in ilk üç çeyreğinde online satış değişimi",
-    "unit": "%",
-    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı",
-    "data": [
-      {"label": "Songmont", "value": 90},
-      {"label": "Michael Kors", "value": -40},
-      {"label": "Gucci", "value": -50}
-    ]
+ "id": "O7Px8bUKHAA",
+ "title_tr": "Batılı lüks markaların Çin'de gerilemesinin asıl nedeni",
+ "category": "Çin ekonomisi",
+ "region": [
+  "Çin",
+  "Avrupa"
+ ],
+ "summary_tr": "Video, Çinli tüketicilerin lüks harcamayı bırakmadığını, harcamayı Avrupa markalarından yerli Çin markalarına kaydırdığını savunuyor. 2017-2021 arasındaki büyüme döneminde Avrupalı gruplar fiyatları kaliteyi artırmadan yükseltti; ardından konut piyasasındaki çöküş, genç işsizliği ve tasarım yorgunluğu aynı anda geldi. Bu boşluğu 'Guochao' (ulusal akım) adı verilen kültürel mirasa dayalı tüketim eğilimiyle Laopu Gold, Songmont, Maogeping gibi markalar doldurdu. Sunucu, bu markaların henüz Asya dışında kalıcı olmadığını ama BYD'nin izlediği 'önce iç pazar, sonra dünya' yolunu izleyebileceklerini söylüyor.",
+ "key_points": [
+  "LVMH, Kering/Gucci ve Burberry'de satış, kâr ve hisse değerinde sert düşüşler yaşandığı aktarılıyor.",
+  "Markalar 2019-2024 arasında fiyatları büyük oranda artırdı ancak kalite ve yenilik buna eşlik etmedi.",
+  "Çinli tüketicinin lüks harcamasında yerli markaların payı bir yılda yüzde 39'dan 44'e çıktı.",
+  "Laopu Gold'un müşterilerinin büyük kısmı aynı zamanda Louis Vuitton, Hermès ve Cartier müşterisi; yani rakip aynı kitleyi çekiyor.",
+  "Songmont, hızlı moda ile Avrupa lüksü arasındaki fiyat boşluğunu hedefleyerek büyüdü; Bernard Arnault mağazayı ziyaret edip çanta aldı.",
+  "Avrupalı gruplar Çinli markalara azınlık yatırımı ve Çin kültürüne daha derin kampanyalarla karşılık vermeye çalışıyor."
+ ],
+ "numbers": [
+  {
+   "label": "Batı lüksünden uzaklaşan tüketici",
+   "value": 50,
+   "unit": "milyon kişi",
+   "context": "2 yıldan kısa sürede Batılı lüks markalardan vazgeçen Çinli tüketici sayısı"
   },
-  "diagram": {
-    "type": "flow",
-    "title": "Batı lüksünün Çin'de pay kaybetmesinin neden-sonuç zinciri",
-    "steps": [
-      {"label": "Hızlı büyüme dönemi", "detail": "2017-2021'de Çin pazarı üç katına çıktı ve markalar stratejilerini buna göre kurdu."},
-      {"label": "Kalitesiz fiyat artışı", "detail": "Talep güçlü olduğu için fiyatlar yükseltildi ama tasarım ve işçilik yerinde saydı."},
-      {"label": "Makro şok", "detail": "Konut krizi ve genç işsizliği orta sınıfın ve genç alıcıların güvenini kırdı."},
-      {"label": "Guochao akımı", "detail": "Genç tüketiciler kendi kültürel mirasına dayalı ürünlere yöneldi."},
-      {"label": "Yerli markalara kayış", "detail": "Aynı müşteri kitlesi Laopu, Songmont gibi Çin markalarına geçti."},
-      {"label": "Avrupa'nın savunması", "detail": "Avrupalı gruplar azınlık yatırımları ve yerelleştirilmiş kampanyalarla tutunmaya çalışıyor."}
-    ]
+  {
+   "label": "Kering piyasa değeri kaybı",
+   "value": 60,
+   "unit": "%",
+   "context": "Son 5 yılda Kering hissesinin kaybettiği değer"
   },
-  "business_ideas": [
-    {
-      "name": "Anadolu zanaatına dayalı orta-üst segment deri çanta markası",
-      "insight": "Songmont, hızlı moda ile Avrupa lüksü arasındaki fiyat boşluğunu yerel kimlikle doldurarak büyüdü.",
-      "problem": "Türkiye'de genç profesyoneller için ucuz ürün ile pahalı ithal lüks arasında, yerli kimlik taşıyan ve kaliteli bir seçenek az.",
-      "solution": "Tam tahıllı deri ve Anadolu/Selçuklu motif dilini sade bir tasarımla birleştiren, sınırlı koleksiyonlu ve online ağırlıklı bir çanta markası.",
-      "target": "25-40 yaş şehirli profesyoneller ve Türkiye'yi ziyaret eden turistler",
-      "revenue_model": "Doğrudan online satış ve az sayıda showroom; kişiselleştirme ve onarım hizmetinden ek gelir",
-      "first_step": "Bir atölyeyle 3 prototip üretip Instagram'da ön sipariş sayfası açmak ve 30 günde en az 50 ön sipariş hedeflemek",
-      "capital": "Orta",
-      "difficulty": 3,
-      "turkey_angle": "Türkiye'nin güçlü deri üretim altyapısı (ör. Tuzla, Gaziantep, Manisa çevresi) ve turist trafiği bu modeli doğrudan destekler.",
-      "risks": "Marka bilinirliği kurmak uzun sürer; kur dalgalanması ve deri maliyeti marjı sıkıştırabilir; 'yerli motif' kolayca turistik/kitsch algılanabilir."
-    },
-    {
-      "name": "Has altın ve geleneksel kuyumculuk teknikleriyle tasarım mücevher",
-      "insight": "Laopu Gold, saray dönemi tekniklerine dayalı yüksek saflıkta altınla Batı lüksünün müşterisini kendine çekti.",
-      "problem": "Türk kuyumculuğu büyük ölçüde gram/işçilik fiyatına dayalı emtia mantığıyla satılıyor; hikâye ve marka primi zayıf.",
-      "solution": "Kapalıçarşı ustalarının telkari, kalem işi gibi tekniklerini kullanan, sertifikalı ve numaralı koleksiyonlarla marka değeri yaratan bir mücevher markası.",
-      "target": "Körfez, Orta Asya ve Çinli üst gelir turistleri ile yurt içindeki üst segment",
-      "revenue_model": "Altın değeri üzerine yüksek tasarım/marka primi; koleksiyon lansmanları ve özel sipariş",
-      "first_step": "İki ustayla 5 parçalık pilot koleksiyon yapıp İstanbul'daki iki butik otelde pop-up satış denemesi yapmak",
-      "capital": "Yüksek",
-      "difficulty": 4,
-      "turkey_angle": "Türkiye'nin köklü altın işleme geleneği ve turist yoğunluğu doğal bir avantaj.",
-      "risks": "Altın stoku yüksek sermaye bağlar; altın fiyatı oynaklığı; taklit ve tasarım koruma sorunları."
-    },
-    {
-      "name": "Türk markaları için Xiaohongshu içerik ve Çinli turist satış paketi",
-      "insight": "Videoda Songmont'un Şanghay mağaza müşterilerinin yarıdan fazlasının yabancı turist olduğu ve markaların Xiaohongshu üzerinden büyüdüğü anlatılıyor.",
-      "problem": "Türkiye'ye gelen Çinli turistler alışveriş kararını Xiaohongshu'da veriyor; Türk markalarının orada görünürlüğü yok.",
-      "solution": "Türk butik markaları için Çince Xiaohongshu içeriği, mağaza içi Çince hizmet ve Alipay/WeChat Pay entegrasyonundan oluşan paket hizmet.",
-      "target": "İstanbul ve Kapadokya'daki mücevher, deri, tekstil ve kozmetik butikleri",
-      "revenue_model": "Aylık abonelik + turist satışlarından komisyon",
-      "first_step": "3 butikle ücretsiz pilot yapıp 30 gün boyunca Xiaohongshu kaynaklı ziyaret ve satışları ölçmek",
-      "capital": "Düşük",
-      "difficulty": 2,
-      "turkey_angle": "Türkiye'den doğrudan yürütülebilir; Çince bilen içerik üreticisi ve ödeme entegrasyon ortağı gerekir.",
-      "risks": "Çinli turist sayısının siyasi/ekonomik nedenlerle dalgalanması; platform kuralları ve hesap doğrulama zorlukları."
-    }
-  ],
-  "skeptic_notes": [
-    "Altyazıda 'Loewe doubled its revenue by seven' deniyor; bağlam Laopu Gold'u işaret ediyor (gelirin yaklaşık yedi katına çıkması). Marka adı muhtemelen altyazı hatası.",
-    "Laopu Gold için 1,4 milyar yuandan 8,5 milyar yuana çıkış 'yedi kat' diye sunuluyor; bu rakamlarla artış yaklaşık 6 kattır.",
-    "'Genç işsizliği yüzde 21 arttı' ifadesi büyük olasılıkla 'yüzde 21'e ulaştı' anlamında; altyazı veya anlatım hatası olabilir.",
-    "Kering'in yeni CEO'sunun Çin için 'çöp kutusu' dediği iddiası tek kaynaklı ve bağlamı verilmemiş; doğrulanmalı.",
-    "LVMH'nin 'Celine adlı Çinli mücevher markası'na sahip olduğu söyleniyor; bu bir isim karışıklığı (Celine bir Fransız moda markası), muhtemelen başka bir marka kastediliyor.",
-    "Singapur Marina Bay Sands'e açılan marka 'Lao Feng Xiang' olarak geçiyor; bağlamda Laopu Gold kastediliyor olabilir. 'Shang Xia Tie', 'Icicle' gibi isimler altyazıda bozuk olabilir.",
-    "LVMH için hem 'tarihin en kötü çeyreklik hisse performansı' hem '2008'den kötü' deniyor; kıyaslama dönemi belirsiz.",
-    "Laopu'nun piyasa değerinin LVMH'nin Tiffany için ödediği bedeli aştığı iddiası doğrulanmamış.",
-    "Videoda ücretsiz 'en hızlı büyüyen 10 Çin lüks markası' indirmesi teklif ediliyor; bu bir müşteri adayı toplama (lead) aracı."
+  {
+   "label": "Çin'in küresel lüks büyümesindeki payı",
+   "value": 40,
+   "unit": "%",
+   "context": "2017-2021 arasında küresel lüks büyümesinin Çin'den gelen kısmı"
+  },
+  {
+   "label": "Çanta fiyatı 2019",
+   "value": 1300,
+   "unit": "$",
+   "context": "Bazı çantaların 2019 fiyatı"
+  },
+  {
+   "label": "Çanta fiyatı 2024",
+   "value": 2000,
+   "unit": "$ (üzeri)",
+   "context": "Aynı çantaların 2024'teki fiyatı 2.000 doların üzerinde"
+  },
+  {
+   "label": "Genç işsizliği (2023 ortası)",
+   "value": 21,
+   "unit": "%",
+   "context": "Altyazıda 'yüzde 21 arttı' deniyor; muhtemelen işsizlik oranının yüzde 21'e ulaşması kastediliyor"
+  },
+  {
+   "label": "Deri ürünlerin LVMH kârındaki payı",
+   "value": 80,
+   "unit": "%",
+   "context": "Yedi çeyrektir düşen deri ürünler bölümünün kâra katkısı"
+  },
+  {
+   "label": "LVMH hissesi 2026 Q1",
+   "value": -28,
+   "unit": "%",
+   "context": "2026'nın ilk çeyreğindeki hisse düşüşü"
+  },
+  {
+   "label": "Arnault servet kaybı",
+   "value": 56,
+   "unit": "milyar $",
+   "context": "Hisse düşüşünün Arnault'nun kişisel servetinden sildiği tutar"
+  },
+  {
+   "label": "Gucci gelir düşüşü 2025 H1",
+   "value": -26,
+   "unit": "%",
+   "context": "2025 ilk yarı gelir değişimi"
+  },
+  {
+   "label": "Gucci gelir düşüşü 2026 Q1",
+   "value": -14,
+   "unit": "%",
+   "context": "2026 ilk çeyrekte ek düşüş"
+  },
+  {
+   "label": "Kering net kâr düşüşü",
+   "value": -46,
+   "unit": "%",
+   "context": "Kering net kârındaki çöküş"
+  },
+  {
+   "label": "Kering borcu",
+   "value": 9.5,
+   "unit": "milyar €",
+   "context": "Grubun taşıdığı borç"
+  },
+  {
+   "label": "Parfüm biriminin satışı",
+   "value": 4,
+   "unit": "milyar €",
+   "context": "Kering'in parfüm bölümünü L'Oréal'e satış bedeli"
+  },
+  {
+   "label": "Burberry işten çıkarma",
+   "value": 1700,
+   "unit": "kişi",
+   "context": "Burberry'nin kestiği iş sayısı"
+  },
+  {
+   "label": "Yerli markaların lüks payı (önce)",
+   "value": 39,
+   "unit": "%",
+   "context": "Çin lüks harcamasında yerli markaların bir yıl önceki payı"
+  },
+  {
+   "label": "Yerli markaların lüks payı (sonra)",
+   "value": 44,
+   "unit": "%",
+   "context": "Bir yıl sonraki pay"
+  },
+  {
+   "label": "Mücevherde Çin markasını düşünenler",
+   "value": 78,
+   "unit": "%",
+   "context": "Bir önceki yıl yüzde 72 idi"
+  },
+  {
+   "label": "Laopu Gold geliri 2022",
+   "value": 1.4,
+   "unit": "milyar yuan",
+   "context": "Şirket geliri"
+  },
+  {
+   "label": "Laopu Gold geliri 2024",
+   "value": 8.5,
+   "unit": "milyar yuan",
+   "context": "Videoda 'yedi kat' artış olarak sunuluyor"
+  },
+  {
+   "label": "Laopu müşterilerinin Batı lüksü alışverişi",
+   "value": 77,
+   "unit": "%",
+   "context": "LV, Hermès ve Cartier'den de alışveriş yapan Laopu müşterileri"
+  },
+  {
+   "label": "Maogeping geliri",
+   "value": 500,
+   "unit": "milyon €",
+   "context": "3 yılda iki katına çıkarak ulaştığı gelir"
+  },
+  {
+   "label": "Songmont online satış artışı",
+   "value": 90,
+   "unit": "%",
+   "context": "2025'in ilk üç çeyreği"
+  },
+  {
+   "label": "Songmont fiyat aralığı alt",
+   "value": 140,
+   "unit": "$",
+   "context": "Ürün fiyat aralığının alt ucu"
+  },
+  {
+   "label": "Songmont fiyat aralığı üst",
+   "value": 420,
+   "unit": "$",
+   "context": "Ürün fiyat aralığının üst ucu"
+  },
+  {
+   "label": "Kering mağaza kapatma planı",
+   "value": 100,
+   "unit": "mağaza",
+   "context": "Bu yıl kapatılması planlanan mağaza sayısı"
+  }
+ ],
+ "chart": {
+  "type": "hbar",
+  "title": "2025'in ilk üç çeyreğinde online satış değişimi",
+  "unit": "%",
+  "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı",
+  "data": [
+   {
+    "label": "Songmont",
+    "value": 90
+   },
+   {
+    "label": "Michael Kors",
+    "value": -40
+   },
+   {
+    "label": "Gucci",
+    "value": -50
+   }
   ]
+ },
+ "diagram": {
+  "type": "flow",
+  "title": "Batı lüksünün Çin'de pay kaybetmesinin neden-sonuç zinciri",
+  "steps": [
+   {
+    "label": "Hızlı büyüme dönemi",
+    "detail": "2017-2021'de Çin pazarı üç katına çıktı ve markalar stratejilerini buna göre kurdu."
+   },
+   {
+    "label": "Kalitesiz fiyat artışı",
+    "detail": "Talep güçlü olduğu için fiyatlar yükseltildi ama tasarım ve işçilik yerinde saydı."
+   },
+   {
+    "label": "Makro şok",
+    "detail": "Konut krizi ve genç işsizliği orta sınıfın ve genç alıcıların güvenini kırdı."
+   },
+   {
+    "label": "Guochao akımı",
+    "detail": "Genç tüketiciler kendi kültürel mirasına dayalı ürünlere yöneldi."
+   },
+   {
+    "label": "Yerli markalara kayış",
+    "detail": "Aynı müşteri kitlesi Laopu, Songmont gibi Çin markalarına geçti."
+   },
+   {
+    "label": "Avrupa'nın savunması",
+    "detail": "Avrupalı gruplar azınlık yatırımları ve yerelleştirilmiş kampanyalarla tutunmaya çalışıyor."
+   }
+  ]
+ },
+ "business_ideas": [
+  {
+   "name": "Anadolu zanaatına dayalı orta-üst segment deri çanta markası",
+   "insight": "Songmont, hızlı moda ile Avrupa lüksü arasındaki fiyat boşluğunu yerel kimlikle doldurarak büyüdü.",
+   "problem": "Türkiye'de genç profesyoneller için ucuz ürün ile pahalı ithal lüks arasında, yerli kimlik taşıyan ve kaliteli bir seçenek az.",
+   "solution": "Tam tahıllı deri ve Anadolu/Selçuklu motif dilini sade bir tasarımla birleştiren, sınırlı koleksiyonlu ve online ağırlıklı bir çanta markası.",
+   "target": "25-40 yaş şehirli profesyoneller ve Türkiye'yi ziyaret eden turistler",
+   "revenue_model": "Doğrudan online satış ve az sayıda showroom; kişiselleştirme ve onarım hizmetinden ek gelir",
+   "first_step": "Bir atölyeyle 3 prototip üretip Instagram'da ön sipariş sayfası açmak ve 30 günde en az 50 ön sipariş hedeflemek",
+   "capital": "Orta",
+   "difficulty": 3,
+   "turkey_angle": "Türkiye'nin güçlü deri üretim altyapısı (ör. Tuzla, Gaziantep, Manisa çevresi) ve turist trafiği bu modeli doğrudan destekler.",
+   "risks": "Marka bilinirliği kurmak uzun sürer; kur dalgalanması ve deri maliyeti marjı sıkıştırabilir; 'yerli motif' kolayca turistik/kitsch algılanabilir.",
+   "originality": 2,
+   "problem_solving": 2,
+   "score_note": "Ürün markası; benzerleri var.",
+   "similar": []
+  },
+  {
+   "name": "Has altın ve geleneksel kuyumculuk teknikleriyle tasarım mücevher",
+   "insight": "Laopu Gold, saray dönemi tekniklerine dayalı yüksek saflıkta altınla Batı lüksünün müşterisini kendine çekti.",
+   "problem": "Türk kuyumculuğu büyük ölçüde gram/işçilik fiyatına dayalı emtia mantığıyla satılıyor; hikâye ve marka primi zayıf.",
+   "solution": "Kapalıçarşı ustalarının telkari, kalem işi gibi tekniklerini kullanan, sertifikalı ve numaralı koleksiyonlarla marka değeri yaratan bir mücevher markası.",
+   "target": "Körfez, Orta Asya ve Çinli üst gelir turistleri ile yurt içindeki üst segment",
+   "revenue_model": "Altın değeri üzerine yüksek tasarım/marka primi; koleksiyon lansmanları ve özel sipariş",
+   "first_step": "İki ustayla 5 parçalık pilot koleksiyon yapıp İstanbul'daki iki butik otelde pop-up satış denemesi yapmak",
+   "capital": "Yüksek",
+   "difficulty": 4,
+   "turkey_angle": "Türkiye'nin köklü altın işleme geleneği ve turist yoğunluğu doğal bir avantaj.",
+   "risks": "Altın stoku yüksek sermaye bağlar; altın fiyatı oynaklığı; taklit ve tasarım koruma sorunları.",
+   "originality": 3,
+   "problem_solving": 2,
+   "score_note": "Marka fikri; 'prim zayıf' bir işletme sorunu.",
+   "similar": []
+  },
+  {
+   "name": "Türk markaları için Xiaohongshu içerik ve Çinli turist satış paketi",
+   "insight": "Videoda Songmont'un Şanghay mağaza müşterilerinin yarıdan fazlasının yabancı turist olduğu ve markaların Xiaohongshu üzerinden büyüdüğü anlatılıyor.",
+   "problem": "Türkiye'ye gelen Çinli turistler alışveriş kararını Xiaohongshu'da veriyor; Türk markalarının orada görünürlüğü yok.",
+   "solution": "Türk butik markaları için Çince Xiaohongshu içeriği, mağaza içi Çince hizmet ve Alipay/WeChat Pay entegrasyonundan oluşan paket hizmet.",
+   "target": "İstanbul ve Kapadokya'daki mücevher, deri, tekstil ve kozmetik butikleri",
+   "revenue_model": "Aylık abonelik + turist satışlarından komisyon",
+   "first_step": "3 butikle ücretsiz pilot yapıp 30 gün boyunca Xiaohongshu kaynaklı ziyaret ve satışları ölçmek",
+   "capital": "Düşük",
+   "difficulty": 2,
+   "turkey_angle": "Türkiye'den doğrudan yürütülebilir; Çince bilen içerik üreticisi ve ödeme entegrasyon ortağı gerekir.",
+   "risks": "Çinli turist sayısının siyasi/ekonomik nedenlerle dalgalanması; platform kuralları ve hesap doğrulama zorlukları.",
+   "originality": 3,
+   "problem_solving": 4,
+   "score_note": "Çinli turist harcamasına doğrudan etki.",
+   "similar": [
+    {
+     "id": "cWZVtZ6RIWE",
+     "name": "Türk turizm ve perakende işletmeleri için Xiaohongshu görünürlük hizmeti"
+    }
+   ]
+  }
+ ],
+ "skeptic_notes": [
+  "Altyazıda 'Loewe doubled its revenue by seven' deniyor; bağlam Laopu Gold'u işaret ediyor (gelirin yaklaşık yedi katına çıkması). Marka adı muhtemelen altyazı hatası.",
+  "Laopu Gold için 1,4 milyar yuandan 8,5 milyar yuana çıkış 'yedi kat' diye sunuluyor; bu rakamlarla artış yaklaşık 6 kattır.",
+  "'Genç işsizliği yüzde 21 arttı' ifadesi büyük olasılıkla 'yüzde 21'e ulaştı' anlamında; altyazı veya anlatım hatası olabilir.",
+  "Kering'in yeni CEO'sunun Çin için 'çöp kutusu' dediği iddiası tek kaynaklı ve bağlamı verilmemiş; doğrulanmalı.",
+  "LVMH'nin 'Celine adlı Çinli mücevher markası'na sahip olduğu söyleniyor; bu bir isim karışıklığı (Celine bir Fransız moda markası), muhtemelen başka bir marka kastediliyor.",
+  "Singapur Marina Bay Sands'e açılan marka 'Lao Feng Xiang' olarak geçiyor; bağlamda Laopu Gold kastediliyor olabilir. 'Shang Xia Tie', 'Icicle' gibi isimler altyazıda bozuk olabilir.",
+  "LVMH için hem 'tarihin en kötü çeyreklik hisse performansı' hem '2008'den kötü' deniyor; kıyaslama dönemi belirsiz.",
+  "Laopu'nun piyasa değerinin LVMH'nin Tiffany için ödediği bedeli aştığı iddiası doğrulanmamış.",
+  "Videoda ücretsiz 'en hızlı büyüyen 10 Çin lüks markası' indirmesi teklif ediliyor; bu bir müşteri adayı toplama (lead) aracı."
+ ]
 }

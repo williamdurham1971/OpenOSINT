@@ -1,226 +1,256 @@
 {
-  "id": "mV-AgB5iTY8",
-  "title_tr": "Petrol fiyatlarının ötesinde: Hürmüz ve Süveyş kapanmasının tedarik zincirine etkisi",
-  "category": "Jeopolitik & ticaret",
-  "region": [
-    "Orta Doğu",
-    "Asya",
-    "Avrupa",
-    "ABD",
-    "Küresel"
-  ],
-  "summary_tr": "Video, kamuoyunun petrol ve akaryakıt fiyatlarına odaklandığını, ancak asıl hasarın Asya'ya bağlı tedarik zincirlerinde olacağını savunuyor. Hürmüz Boğazı'nın kapanması ve Süveyş'in Husi saldırılarıyla aksaması nedeniyle sevkiyatların Afrika'nın etrafından dolaştığı, teslimatların uzadığı, navlun ve sigortanın arttığı anlatılıyor. Nafta (plastik), alüminyum ve gübre (üre) fiyatlarındaki artışların ambalajdan gıdaya kadar maliyetleri yükselteceği, yüksek faizle sıkışmış müşteriler nedeniyle bu maliyetlerin fiyata yansıtılamayacağı ve stagflasyon riski doğduğu belirtiliyor. Çözüm olarak COVID dönemi tecrübesine dayanarak üretim fiyatlarını erken sabitlemek, navlun kapasitesini önceden ayırmak ve kur riskini korumak öneriliyor; son öneri Statrys'in kur sabitleme hizmetine bağlanıyor.",
-  "key_points": [
-    "Videoya göre Brent 115 $'ı geçti; ama asıl risk akaryakıt değil, Asya'dan gelen ürün ve hammaddelerin maliyeti.",
-    "Hürmüz ve Süveyş aynı anda aksadığı için kalan tek rota Afrika'nın etrafı; bu her teslimata yaklaşık iki hafta ekliyor.",
-    "Plastiğin hammaddesi nafta, alüminyum ve gübrede Körfez'e bağımlılık; ambalaj, elektronik ve gıda maliyetlerine yansıyor.",
-    "2021-22'den farklı olarak yüksek faizle sıkışmış müşteriler zamları kabul etmeyebilir; bu da marjları eritip stagflasyon riski yaratıyor.",
-    "COVID döneminde konteyner fiyatları kısa sürede katlanarak arttı; erken davrananlar daha az zarar gördü.",
-    "Önerilen üç adım: tedarikçiyle sabit fiyatlı uzun sözleşme, navlun kapasitesini önceden ayırma ve kur riskini sabitleme."
-  ],
-  "numbers": [
-    {
-      "label": "Brent petrol fiyatı",
-      "value": 115,
-      "unit": "USD/varil",
-      "context": "Brent'in geçtiği söylenen seviye."
-    },
-    {
-      "label": "ABD benzin fiyatı",
-      "value": 4,
-      "unit": "USD/galon",
-      "context": "Amerikalıların pompada ödediği 'yaklaşık 4 $'."
-    },
-    {
-      "label": "Ek teslimat süresi",
-      "value": 2,
-      "unit": "hafta",
-      "context": "Afrika etrafından dolaşan rotanın her teslimata eklediği süre."
-    },
-    {
-      "label": "Körfez'in Çin dışı alüminyum arzındaki payı",
-      "value": 25,
-      "unit": "%",
-      "context": "'Yaklaşık dörtte bir' olarak verilen pay."
-    },
-    {
-      "label": "LME alüminyum fiyatı",
-      "value": 3400,
-      "unit": "USD/ton",
-      "context": "Londra Metal Borsası'nda aşılan fiyat seviyesi."
-    },
-    {
-      "label": "Hürmüz'den geçen deniz yoluyla gübre ticareti",
-      "value": 33,
-      "unit": "%",
-      "context": "Küresel deniz yolu gübre ticaretinin 'üçte biri'."
-    },
-    {
-      "label": "Üre fiyatı (savaş öncesi)",
-      "value": 450,
-      "unit": "USD/ton",
-      "context": "Savaştan önce yaklaşık üre fiyatı."
-    },
-    {
-      "label": "Üre fiyatı (şimdi)",
-      "value": 700,
-      "unit": "USD/ton",
-      "context": "Savaş sonrası 'yaklaşık' üre fiyatı."
-    },
-    {
-      "label": "Navlun tekliflerindeki artış",
-      "value": 30,
-      "unit": "%",
-      "context": "Girişimcilerin bir gecede gördüğü navlun teklifi artışı."
-    },
-    {
-      "label": "Abone olmayan izleyici oranı",
-      "value": 84,
-      "unit": "%",
-      "context": "Konuşmacının abone çağrısında kullandığı oran."
-    },
-    {
-      "label": "2021-22'de yapılabilen zam",
-      "value": 10,
-      "unit": "% (10-15)",
-      "context": "COVID döneminde müşterilerin kabul ettiği fiyat artışı aralığı."
-    },
-    {
-      "label": "Konteyner Şanghay-Rotterdam (2020 başı)",
-      "value": 2000,
-      "unit": "USD",
-      "context": "COVID öncesi konteyner navlunu."
-    },
-    {
-      "label": "Konteyner (2020 sonu)",
-      "value": 8000,
-      "unit": "USD",
-      "context": "Yıl sonuna gelindiğinde aynı hat."
-    },
-    {
-      "label": "Konteyner (6 ay sonra)",
-      "value": 15000,
-      "unit": "USD",
-      "context": "2020 sonundan altı ay sonra."
-    },
-    {
-      "label": "Bazı hatlarda konteyner zirvesi",
-      "value": 20000,
-      "unit": "USD",
-      "context": "Altyazıda 'some routes, it 20' olarak geçen zirve; 20.000 $ olarak okundu."
-    },
-    {
-      "label": "Tedarikçi zam denemeleri",
-      "value": 10,
-      "unit": "% (10-15)",
-      "context": "Asya'daki bazı tedarikçilerin test ettiği fiyat artışı."
-    },
-    {
-      "label": "Trump'ın öngördüğü operasyon süresi",
-      "value": 4,
-      "unit": "hafta (4-5)",
-      "context": "Trump'ın operasyonun 4-5 hafta süreceğini söylediği aktarılıyor."
-    }
-  ],
-  "chart": {
-    "type": "line",
-    "title": "COVID döneminde Şanghay-Rotterdam konteyner navlunu",
-    "unit": "USD/konteyner",
-    "source_note": "Videoda belirtilen yaklaşık rakamlar; bağımsız doğrulanmadı. Bazı hatlarda söylenen 20.000 $ zirve, zamanı belirsiz olduğu için grafiğe alınmadı.",
-    "data": [
-      {
-        "label": "2020 başı",
-        "value": 2000
-      },
-      {
-        "label": "2020 sonu",
-        "value": 8000
-      },
-      {
-        "label": "6 ay sonra (2021 ortası)",
-        "value": 15000
-      }
-    ]
+ "id": "mV-AgB5iTY8",
+ "title_tr": "Petrol fiyatlarının ötesinde: Hürmüz ve Süveyş kapanmasının tedarik zincirine etkisi",
+ "category": "Jeopolitik & ticaret",
+ "region": [
+  "Orta Doğu",
+  "Asya",
+  "Avrupa",
+  "ABD",
+  "Küresel"
+ ],
+ "summary_tr": "Video, kamuoyunun petrol ve akaryakıt fiyatlarına odaklandığını, ancak asıl hasarın Asya'ya bağlı tedarik zincirlerinde olacağını savunuyor. Hürmüz Boğazı'nın kapanması ve Süveyş'in Husi saldırılarıyla aksaması nedeniyle sevkiyatların Afrika'nın etrafından dolaştığı, teslimatların uzadığı, navlun ve sigortanın arttığı anlatılıyor. Nafta (plastik), alüminyum ve gübre (üre) fiyatlarındaki artışların ambalajdan gıdaya kadar maliyetleri yükselteceği, yüksek faizle sıkışmış müşteriler nedeniyle bu maliyetlerin fiyata yansıtılamayacağı ve stagflasyon riski doğduğu belirtiliyor. Çözüm olarak COVID dönemi tecrübesine dayanarak üretim fiyatlarını erken sabitlemek, navlun kapasitesini önceden ayırmak ve kur riskini korumak öneriliyor; son öneri Statrys'in kur sabitleme hizmetine bağlanıyor.",
+ "key_points": [
+  "Videoya göre Brent 115 $'ı geçti; ama asıl risk akaryakıt değil, Asya'dan gelen ürün ve hammaddelerin maliyeti.",
+  "Hürmüz ve Süveyş aynı anda aksadığı için kalan tek rota Afrika'nın etrafı; bu her teslimata yaklaşık iki hafta ekliyor.",
+  "Plastiğin hammaddesi nafta, alüminyum ve gübrede Körfez'e bağımlılık; ambalaj, elektronik ve gıda maliyetlerine yansıyor.",
+  "2021-22'den farklı olarak yüksek faizle sıkışmış müşteriler zamları kabul etmeyebilir; bu da marjları eritip stagflasyon riski yaratıyor.",
+  "COVID döneminde konteyner fiyatları kısa sürede katlanarak arttı; erken davrananlar daha az zarar gördü.",
+  "Önerilen üç adım: tedarikçiyle sabit fiyatlı uzun sözleşme, navlun kapasitesini önceden ayırma ve kur riskini sabitleme."
+ ],
+ "numbers": [
+  {
+   "label": "Brent petrol fiyatı",
+   "value": 115,
+   "unit": "USD/varil",
+   "context": "Brent'in geçtiği söylenen seviye."
   },
-  "diagram": {
-    "type": "flow",
-    "title": "Deniz yolu kapanmasından marj erimesine neden-sonuç zinciri",
-    "steps": [
-      {
-        "label": "Hürmüz ve Süveyş aksıyor",
-        "detail": "Savaş ve Husi saldırıları iki ana rotayı aynı anda devre dışı bırakıyor."
-      },
-      {
-        "label": "Rota Afrika'ya uzuyor",
-        "detail": "Ümit Burnu rotası teslimatlara yaklaşık iki hafta ekliyor, navlun ve sigorta artıyor."
-      },
-      {
-        "label": "Hammadde fiyatları yükseliyor",
-        "detail": "Nafta, alüminyum ve üre gibi Körfez'e bağlı girdiler pahalanıyor."
-      },
-      {
-        "label": "Tedarikçiler yeniden fiyatlıyor",
-        "detail": "Savaş riski ek ücretleri ve kısa süreli zam teklifleri geliyor."
-      },
-      {
-        "label": "Zam yansıtılamıyor",
-        "detail": "Yüksek faizle sıkışmış müşteriler fiyat artışını kabul etmekte zorlanıyor."
-      },
-      {
-        "label": "Marj erimesi ve stagflasyon",
-        "detail": "İşletmeler ya marjdan feragat ediyor ya satış kaybediyor; ekonomi yavaşlarken fiyatlar artıyor."
-      }
-    ]
+  {
+   "label": "ABD benzin fiyatı",
+   "value": 4,
+   "unit": "USD/galon",
+   "context": "Amerikalıların pompada ödediği 'yaklaşık 4 $'."
   },
-  "business_ideas": [
-    {
-      "name": "Asya'dan ithalat yapanlar için gerçek zamanlı 'varış maliyeti' izleme aracı",
-      "insight": "Video, navlun teklifi artışları, savaş riski ek ücretleri, tedarikçi zamları ve kur hareketlerinin aynı anda marjı erittiğini anlatıyor.",
-      "problem": "İthalatçılar ürün başına gerçek varış maliyetini (navlun, sigorta, ek ücret, kur, gümrük) güncel tutamıyor ve fiyatlamayı geç yapıyor.",
-      "solution": "Siparişleri, navlun tekliflerini ve kur verisini birleştirip ürün bazında varış maliyetini ve marjı günlük güncelleyen, eşik aşılınca uyarı veren yazılım.",
-      "target": "Çin, Vietnam, Hindistan ve Tayland'dan ithalat yapan Türk e-ticaret satıcıları ve toptancılar",
-      "revenue_model": "Aylık SaaS aboneliği (SKU sayısına göre kademeli)",
-      "first_step": "10 ithalatçının bir aylık siparişini Excel tabanlı bir prototiple modelleyip eski fiyatlarındaki marj sapmasını göstermek.",
-      "capital": "Düşük",
-      "difficulty": 3,
-      "turkey_angle": "Türk ithalatçılar için TL'nin ek kur oynaklığı aracı daha da değerli kılıyor; Türkiye'ye özgü gümrük vergisi ve ek mali yükümlülük kalemleri eklenmeli.",
-      "risks": "Navlun verisine güvenilir erişim; kullanıcıların veri girişini sürdürmemesi."
-    },
-    {
-      "name": "Avrupalı alıcılar için Asya yerine Türkiye'den tedarik eşleştirme platformu",
-      "insight": "Video, Asya-Avrupa hattının Afrika etrafına uzamasıyla teslimatların iki hafta geciktiğini ve navlun riskinin arttığını vurguluyor.",
-      "problem": "Avrupalı KOBİ alıcılar Asya'daki tedarik riskini azaltmak istiyor ama Türkiye'deki uygun üreticileri bulmakta ve doğrulamakta zorlanıyor.",
-      "solution": "Belirli kategorilerde (mobilya, tekstil, ambalaj, metal parçalar) AB alıcı taleplerini doğrulanmış Türk üreticilerle eşleştiren, numune ve ilk sipariş sürecini yöneten B2B platform.",
-      "target": "Asya'dan tedarik eden Avrupalı e-ticaret markaları ve toptancılar",
-      "revenue_model": "Gerçekleşen siparişten komisyon + üretici tarafına üyelik",
-      "first_step": "Videoda örneklenen kategorilerden birinde (ör. mobilya) 20 Avrupalı alıcıyla görüşüp Türkiye'ye geçiş için kabul edilebilir fiyat farkını öğrenmek.",
-      "capital": "Orta",
-      "difficulty": 3,
-      "turkey_angle": "Türkiye'nin AB ile gümrük birliği ve kara yolu erişimi güçlü bir avantaj; kalite ve teslim tutarlılığı kanıtlanmalı.",
-      "risks": "Türkiye'deki maliyet artışları ve kur oynaklığı fiyat avantajını azaltabilir; kriz bitince alıcıların Asya'ya geri dönmesi."
-    },
-    {
-      "name": "KOBİ ithalatçılar için kur riski yönetimi eğitimi ve uygulama hizmeti",
-      "insight": "Video, krizde doların güçlendiğini ve COVID'de bazı işletmelerin kur kaybıyla navlun ve üretim tasarrufunu kaybettiğini söylüyor.",
-      "problem": "Küçük ithalatçılar vadeli kur sözleşmesi gibi korunma araçlarını bilmiyor veya bankayla nasıl konuşacaklarını bilmiyor.",
-      "solution": "İthalatçının ödeme takvimini çıkarıp bankalardaki korunma ürünlerini karşılaştırmasına yardım eden, uygulamayı lisanslı kurumlara yönlendiren eğitim ve planlama hizmeti.",
-      "target": "Yıllık döviz cinsinden ödemesi yüksek KOBİ ithalatçılar",
-      "revenue_model": "Şirket başına eğitim ve planlama paketi ücreti",
-      "first_step": "Bir sanayi odası veya ihracatçı birliğinde ücretsiz bir atölye düzenleyip katılımcılardan kaçının korunma aracı kullandığını ölçmek.",
-      "capital": "Düşük",
-      "difficulty": 2,
-      "turkey_angle": "Türkiye'de TL kur oynaklığı nedeniyle konu yakıcı; bankalar vadeli işlem ürünleri sunuyor, ancak işlem yetkisi lisanslı kurumlarda.",
-      "risks": "Yatırım danışmanlığı sayılma ve lisans gerektirme riski; hizmet bilgi/eğitim düzeyinde kalmalı, işlem önerisi vermemeli."
-    }
-  ],
-  "skeptic_notes": [
-    "Başlık ve anlatım alarmist ('ekonomiyi yok edecek'); öngörüler kaynak göstermeden kesin dille veriliyor.",
-    "Mantık sorunu: Hürmüz Boğazı Asya-Avrupa ana ticaret hattı değil, Körfez'in çıkışıdır; 'Asya'yı Batı'ya bağlayan üç ana hattan ikisi kapandı' ifadesi tartışmalı.",
-    "Altyazıda 'At Stenn we see entrepreneurs...' geçiyor; bağlam Statrys'in kur sabitleme hizmeti olduğundan büyük olasılıkla 'At Statrys' yanlış yazılmış. Sondaki çağrı Statrys reklamıdır.",
-    "'The warning run shut down the Strait of Hormuz' altyazısı muhtemelen 'İran'daki savaş' anlamında.",
-    "Konteyner zirvesi 'some routes, it 20' olarak geçiyor; 20.000 $ olarak okundu.",
-    "Brent 115 $, alüminyum 3.400 $/ton, üre 450'den 700 $/ton'a ve navlunda bir gecede %30 artış tek kaynaklı, anlık rakamlar; yayın tarihine göre doğrulanmalı.",
-    "'Naftanın ikamesi yok' ve 'Orta Doğu en büyük nafta kaynağı' iddiaları genelleme içeriyor.",
-    "Jerome Powell ve Trump'a atfedilen sözler bağlamsız aktarılıyor; '%84 abone değil' rakamı bir abone çağrısı taktiği."
+  {
+   "label": "Ek teslimat süresi",
+   "value": 2,
+   "unit": "hafta",
+   "context": "Afrika etrafından dolaşan rotanın her teslimata eklediği süre."
+  },
+  {
+   "label": "Körfez'in Çin dışı alüminyum arzındaki payı",
+   "value": 25,
+   "unit": "%",
+   "context": "'Yaklaşık dörtte bir' olarak verilen pay."
+  },
+  {
+   "label": "LME alüminyum fiyatı",
+   "value": 3400,
+   "unit": "USD/ton",
+   "context": "Londra Metal Borsası'nda aşılan fiyat seviyesi."
+  },
+  {
+   "label": "Hürmüz'den geçen deniz yoluyla gübre ticareti",
+   "value": 33,
+   "unit": "%",
+   "context": "Küresel deniz yolu gübre ticaretinin 'üçte biri'."
+  },
+  {
+   "label": "Üre fiyatı (savaş öncesi)",
+   "value": 450,
+   "unit": "USD/ton",
+   "context": "Savaştan önce yaklaşık üre fiyatı."
+  },
+  {
+   "label": "Üre fiyatı (şimdi)",
+   "value": 700,
+   "unit": "USD/ton",
+   "context": "Savaş sonrası 'yaklaşık' üre fiyatı."
+  },
+  {
+   "label": "Navlun tekliflerindeki artış",
+   "value": 30,
+   "unit": "%",
+   "context": "Girişimcilerin bir gecede gördüğü navlun teklifi artışı."
+  },
+  {
+   "label": "Abone olmayan izleyici oranı",
+   "value": 84,
+   "unit": "%",
+   "context": "Konuşmacının abone çağrısında kullandığı oran."
+  },
+  {
+   "label": "2021-22'de yapılabilen zam",
+   "value": 10,
+   "unit": "% (10-15)",
+   "context": "COVID döneminde müşterilerin kabul ettiği fiyat artışı aralığı."
+  },
+  {
+   "label": "Konteyner Şanghay-Rotterdam (2020 başı)",
+   "value": 2000,
+   "unit": "USD",
+   "context": "COVID öncesi konteyner navlunu."
+  },
+  {
+   "label": "Konteyner (2020 sonu)",
+   "value": 8000,
+   "unit": "USD",
+   "context": "Yıl sonuna gelindiğinde aynı hat."
+  },
+  {
+   "label": "Konteyner (6 ay sonra)",
+   "value": 15000,
+   "unit": "USD",
+   "context": "2020 sonundan altı ay sonra."
+  },
+  {
+   "label": "Bazı hatlarda konteyner zirvesi",
+   "value": 20000,
+   "unit": "USD",
+   "context": "Altyazıda 'some routes, it 20' olarak geçen zirve; 20.000 $ olarak okundu."
+  },
+  {
+   "label": "Tedarikçi zam denemeleri",
+   "value": 10,
+   "unit": "% (10-15)",
+   "context": "Asya'daki bazı tedarikçilerin test ettiği fiyat artışı."
+  },
+  {
+   "label": "Trump'ın öngördüğü operasyon süresi",
+   "value": 4,
+   "unit": "hafta (4-5)",
+   "context": "Trump'ın operasyonun 4-5 hafta süreceğini söylediği aktarılıyor."
+  }
+ ],
+ "chart": {
+  "type": "line",
+  "title": "COVID döneminde Şanghay-Rotterdam konteyner navlunu",
+  "unit": "USD/konteyner",
+  "source_note": "Videoda belirtilen yaklaşık rakamlar; bağımsız doğrulanmadı. Bazı hatlarda söylenen 20.000 $ zirve, zamanı belirsiz olduğu için grafiğe alınmadı.",
+  "data": [
+   {
+    "label": "2020 başı",
+    "value": 2000
+   },
+   {
+    "label": "2020 sonu",
+    "value": 8000
+   },
+   {
+    "label": "6 ay sonra (2021 ortası)",
+    "value": 15000
+   }
   ]
+ },
+ "diagram": {
+  "type": "flow",
+  "title": "Deniz yolu kapanmasından marj erimesine neden-sonuç zinciri",
+  "steps": [
+   {
+    "label": "Hürmüz ve Süveyş aksıyor",
+    "detail": "Savaş ve Husi saldırıları iki ana rotayı aynı anda devre dışı bırakıyor."
+   },
+   {
+    "label": "Rota Afrika'ya uzuyor",
+    "detail": "Ümit Burnu rotası teslimatlara yaklaşık iki hafta ekliyor, navlun ve sigorta artıyor."
+   },
+   {
+    "label": "Hammadde fiyatları yükseliyor",
+    "detail": "Nafta, alüminyum ve üre gibi Körfez'e bağlı girdiler pahalanıyor."
+   },
+   {
+    "label": "Tedarikçiler yeniden fiyatlıyor",
+    "detail": "Savaş riski ek ücretleri ve kısa süreli zam teklifleri geliyor."
+   },
+   {
+    "label": "Zam yansıtılamıyor",
+    "detail": "Yüksek faizle sıkışmış müşteriler fiyat artışını kabul etmekte zorlanıyor."
+   },
+   {
+    "label": "Marj erimesi ve stagflasyon",
+    "detail": "İşletmeler ya marjdan feragat ediyor ya satış kaybediyor; ekonomi yavaşlarken fiyatlar artıyor."
+   }
+  ]
+ },
+ "business_ideas": [
+  {
+   "name": "Asya'dan ithalat yapanlar için gerçek zamanlı 'varış maliyeti' izleme aracı",
+   "insight": "Video, navlun teklifi artışları, savaş riski ek ücretleri, tedarikçi zamları ve kur hareketlerinin aynı anda marjı erittiğini anlatıyor.",
+   "problem": "İthalatçılar ürün başına gerçek varış maliyetini (navlun, sigorta, ek ücret, kur, gümrük) güncel tutamıyor ve fiyatlamayı geç yapıyor.",
+   "solution": "Siparişleri, navlun tekliflerini ve kur verisini birleştirip ürün bazında varış maliyetini ve marjı günlük güncelleyen, eşik aşılınca uyarı veren yazılım.",
+   "target": "Çin, Vietnam, Hindistan ve Tayland'dan ithalat yapan Türk e-ticaret satıcıları ve toptancılar",
+   "revenue_model": "Aylık SaaS aboneliği (SKU sayısına göre kademeli)",
+   "first_step": "10 ithalatçının bir aylık siparişini Excel tabanlı bir prototiple modelleyip eski fiyatlarındaki marj sapmasını göstermek.",
+   "capital": "Düşük",
+   "difficulty": 3,
+   "turkey_angle": "Türk ithalatçılar için TL'nin ek kur oynaklığı aracı daha da değerli kılıyor; Türkiye'ye özgü gümrük vergisi ve ek mali yükümlülük kalemleri eklenmeli.",
+   "risks": "Navlun verisine güvenilir erişim; kullanıcıların veri girişini sürdürmemesi.",
+   "originality": 3,
+   "problem_solving": 4,
+   "score_note": "Kur ailesinin ithalatçı sürümü.",
+   "similar": [
+    {
+     "id": "twAjdRV3u-0",
+     "name": "Fabrikadan limana gerçek maliyet karşılaştırma aracı"
+    },
+    {
+     "id": "IF6UdjjiHh0",
+     "name": "Fatura bazlı kur maruziyeti panosu"
+    }
+   ]
+  },
+  {
+   "name": "Avrupalı alıcılar için Asya yerine Türkiye'den tedarik eşleştirme platformu",
+   "insight": "Video, Asya-Avrupa hattının Afrika etrafına uzamasıyla teslimatların iki hafta geciktiğini ve navlun riskinin arttığını vurguluyor.",
+   "problem": "Avrupalı KOBİ alıcılar Asya'daki tedarik riskini azaltmak istiyor ama Türkiye'deki uygun üreticileri bulmakta ve doğrulamakta zorlanıyor.",
+   "solution": "Belirli kategorilerde (mobilya, tekstil, ambalaj, metal parçalar) AB alıcı taleplerini doğrulanmış Türk üreticilerle eşleştiren, numune ve ilk sipariş sürecini yöneten B2B platform.",
+   "target": "Asya'dan tedarik eden Avrupalı e-ticaret markaları ve toptancılar",
+   "revenue_model": "Gerçekleşen siparişten komisyon + üretici tarafına üyelik",
+   "first_step": "Videoda örneklenen kategorilerden birinde (ör. mobilya) 20 Avrupalı alıcıyla görüşüp Türkiye'ye geçiş için kabul edilebilir fiyat farkını öğrenmek.",
+   "capital": "Orta",
+   "difficulty": 3,
+   "turkey_angle": "Türkiye'nin AB ile gümrük birliği ve kara yolu erişimi güçlü bir avantaj; kalite ve teslim tutarlılığı kanıtlanmalı.",
+   "risks": "Türkiye'deki maliyet artışları ve kur oynaklığı fiyat avantajını azaltabilir; kriz bitince alıcıların Asya'ya geri dönmesi.",
+   "originality": 2,
+   "problem_solving": 4,
+   "score_note": "Eşleştirme platformu.",
+   "similar": [
+    {
+     "id": "UCfygNKPKEQ",
+     "name": "Çin'den üretim kaydıran firmalar için Türkiye tedarikçi eşleştirme"
+    },
+    {
+     "id": "talyf00Cl24",
+     "name": "Türkiye sanayi kümeleri ihracat haritası"
+    }
+   ]
+  },
+  {
+   "name": "KOBİ ithalatçılar için kur riski yönetimi eğitimi ve uygulama hizmeti",
+   "insight": "Video, krizde doların güçlendiğini ve COVID'de bazı işletmelerin kur kaybıyla navlun ve üretim tasarrufunu kaybettiğini söylüyor.",
+   "problem": "Küçük ithalatçılar vadeli kur sözleşmesi gibi korunma araçlarını bilmiyor veya bankayla nasıl konuşacaklarını bilmiyor.",
+   "solution": "İthalatçının ödeme takvimini çıkarıp bankalardaki korunma ürünlerini karşılaştırmasına yardım eden, uygulamayı lisanslı kurumlara yönlendiren eğitim ve planlama hizmeti.",
+   "target": "Yıllık döviz cinsinden ödemesi yüksek KOBİ ithalatçılar",
+   "revenue_model": "Şirket başına eğitim ve planlama paketi ücreti",
+   "first_step": "Bir sanayi odası veya ihracatçı birliğinde ücretsiz bir atölye düzenleyip katılımcılardan kaçının korunma aracı kullandığını ölçmek.",
+   "capital": "Düşük",
+   "difficulty": 2,
+   "turkey_angle": "Türkiye'de TL kur oynaklığı nedeniyle konu yakıcı; bankalar vadeli işlem ürünleri sunuyor, ancak işlem yetkisi lisanslı kurumlarda.",
+   "risks": "Yatırım danışmanlığı sayılma ve lisans gerektirme riski; hizmet bilgi/eğitim düzeyinde kalmalı, işlem önerisi vermemeli.",
+   "originality": 1,
+   "problem_solving": 3,
+   "score_note": "Eğitim; bankalar ücretsiz yapıyor.",
+   "similar": []
+  }
+ ],
+ "skeptic_notes": [
+  "Başlık ve anlatım alarmist ('ekonomiyi yok edecek'); öngörüler kaynak göstermeden kesin dille veriliyor.",
+  "Mantık sorunu: Hürmüz Boğazı Asya-Avrupa ana ticaret hattı değil, Körfez'in çıkışıdır; 'Asya'yı Batı'ya bağlayan üç ana hattan ikisi kapandı' ifadesi tartışmalı.",
+  "Altyazıda 'At Stenn we see entrepreneurs...' geçiyor; bağlam Statrys'in kur sabitleme hizmeti olduğundan büyük olasılıkla 'At Statrys' yanlış yazılmış. Sondaki çağrı Statrys reklamıdır.",
+  "'The warning run shut down the Strait of Hormuz' altyazısı muhtemelen 'İran'daki savaş' anlamında.",
+  "Konteyner zirvesi 'some routes, it 20' olarak geçiyor; 20.000 $ olarak okundu.",
+  "Brent 115 $, alüminyum 3.400 $/ton, üre 450'den 700 $/ton'a ve navlunda bir gecede %30 artış tek kaynaklı, anlık rakamlar; yayın tarihine göre doğrulanmalı.",
+  "'Naftanın ikamesi yok' ve 'Orta Doğu en büyük nafta kaynağı' iddiaları genelleme içeriyor.",
+  "Jerome Powell ve Trump'a atfedilen sözler bağlamsız aktarılıyor; '%84 abone değil' rakamı bir abone çağrısı taktiği."
+ ]
 }

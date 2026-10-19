@@ -1,120 +1,322 @@
 {
-  "id": "cWZVtZ6RIWE",
-  "title_tr": "Baidu neden geriliyor: Çin'de arama Xiaohongshu'ya ve yapay zekâya kayıyor",
-  "category": "Teknoloji & YZ",
-  "region": ["Çin", "ABD"],
-  "summary_tr": "Video, Çin'in arama devi Baidu'nun reklam gelirinin %19 düşmesini Çin ekonomisine değil, reklamverenlerin müşterilerin karar verdiği yerlere kaymasına bağlıyor. 2016'da paralı sıralamadaki bir tıbbi reklam yüzünden ölen bir öğrencinin vakası, Baidu'nun en üst sonuçlarına duyulan güveni kalıcı biçimde zedeledi ve kullanıcılar gerçek alıcı yorumları sunan Xiaohongshu (RedNote) gibi platformlara yöneldi. Baidu 2025'te bağlantıları kaldırıp yapay zekâ yanıtlarına geçerek kendi reklam modelini bozdu; bulut ve GPU işi büyürken uygulama milyonlarca kullanıcı kaybetti. Google aynı dönüşümü yaparken büyümeyi sürdürdü; video farkı güvene bağlıyor ve Çinli müşteriye satış yapan işletmelerin Xiaohongshu'da görünür olması gerektiğini söylüyor.",
-  "key_points": [
-    "Google 2010'da Çin'den çekilince Baidu aramanın büyük kısmını aldı ve en üst sıraları açık artırmayla sattı.",
-    "2016'daki ölümcül tıbbi reklam vakası düzenlemelere ve kalıcı bir güven kaybına yol açtı.",
-    "Xiaohongshu, gerçek alıcıların fotoğraf ve fiyatlı yorumlarıyla satın alma öncesi aramaların merkezine dönüştü.",
-    "Baidu, arama sayfalarını hızla yapay zekâ yanıtlarına çevirip bağlantıları kaldırınca reklam gelirini kendisi düşürdü.",
-    "Bulut ve GPU gelirleri hızla büyüyor ve Baidu'nun ana iş gelirinin yarısı artık yapay zekâdan geliyor.",
-    "Google aynı geçişte büyümeye devam etti; video farkı kullanıcı güvenine bağlıyor ve web sitelerinin trafik kaybına dikkat çekiyor."
-  ],
-  "numbers": [
-    {"label": "Baidu reklam geliri değişimi", "value": -19, "unit": "%", "context": "Son açıklanan sonuçlarda"},
-    {"label": "Baidu uygulamasının kaybettiği aylık kullanıcı", "value": 91, "unit": "milyon kişi", "context": "Bir yılda"},
-    {"label": "Çin internet reklam pazarı büyümesi", "value": 6.4, "unit": "%", "context": "Geçen çeyrek"},
-    {"label": "Tencent reklam geliri artışı", "value": 21, "unit": "%", "context": "Aynı dönemde"},
-    {"label": "Baidu'nun Çin arama payı", "value": 80, "unit": "%", "context": "Google çekildikten sonraki yıllarda (yaklaşık)"},
-    {"label": "Baidu gelir artışı (2010, bir çeyrek)", "value": 60, "unit": "%", "context": "Google'ın çıkışı sonrası"},
-    {"label": "Baidu kâr artışı (2010)", "value": 165, "unit": "%", "context": "Google'ın çıkışı sonrası"},
-    {"label": "Aramanın Baidu gelirindeki payı", "value": 84, "unit": "%", "context": "O dönemde"},
-    {"label": "Tıbbi reklamın arama gelirindeki payı", "value": 30, "unit": "%", "context": "%20-30 (üst sınır)"},
-    {"label": "Öğrencinin ailesinin ödediği tedavi", "value": 31000, "unit": "$", "context": "Deneysel immünoterapi için borçla"},
-    {"label": "Kaldırılan reklam", "value": 126, "unit": "milyon reklam", "context": "Vaka sonrası bir ay içinde"},
-    {"label": "Sayfa başı reklam sınırı", "value": 30, "unit": "%", "context": "Düzenleme sonrası sayfanın en fazla bu kadarı reklam"},
-    {"label": "İlk sayfadaki reklam (önce → sonra)", "value": 4, "unit": "reklam", "context": "18'den 4'e indi"},
-    {"label": "Xiaohongshu günlük arama (2023 ortası)", "value": 300, "unit": "milyon arama/gün", "context": "18 ay sonra 600 milyona çıktı"},
-    {"label": "Xiaohongshu günlük arama (18 ay sonra)", "value": 600, "unit": "milyon arama/gün", "context": "İki katına çıktı"},
-    {"label": "Arama yapan Xiaohongshu kullanıcı oranı", "value": 70, "unit": "%", "context": "Aylık kullanıcıların arama yapan kısmı"},
-    {"label": "Satın alma kararına etki", "value": 90, "unit": "%", "context": "Okuduklarının satın alma kararını belirlediğini söyleyen kullanıcılar (yaklaşık)"},
-    {"label": "Xiaohongshu aylık kullanıcı", "value": 400, "unit": "milyon kişi", "context": "400 milyonun üzerinde"},
-    {"label": "Xiaohongshu net kâr (2025)", "value": 2, "unit": "milyar $", "context": "2 milyar doların üzerinde; bu yıl 3 milyar+ bekleniyor"},
-    {"label": "Xiaohongshu değerlemesi (2024)", "value": 17, "unit": "milyar $", "context": "Yatırımcı değerlemesi"},
-    {"label": "Xiaohongshu değerlemesi (geçen yıl sonu)", "value": 50, "unit": "milyar $", "context": "Özel işlemlerde yaklaşık"},
-    {"label": "Xiaohongshu halka arz hedef değerlemesi", "value": 70, "unit": "milyar $", "context": "Hong Kong halka arzı için hedef (üzeri)"},
-    {"label": "YZ içerikli mobil arama sayfası (2024 sonu)", "value": 22, "unit": "%", "context": "Baidu'nun YZ dönüşümü"},
-    {"label": "YZ içerikli mobil arama sayfası (Nisan 2025)", "value": 35, "unit": "%", "context": "Baidu'nun YZ dönüşümü"},
-    {"label": "YZ içerikli mobil arama sayfası (Temmuz 2025)", "value": 64, "unit": "%", "context": "Baidu'nun YZ dönüşümü"},
-    {"label": "Baidu bulut geliri artışı", "value": 50, "unit": "%", "context": "Bir yılda"},
-    {"label": "Baidu GPU tarafı büyümesi", "value": 283, "unit": "%", "context": "Bir yılda"},
-    {"label": "Baidu nakit varlığı", "value": 42, "unit": "milyar $", "context": "Bilançodaki nakit (yaklaşık)"},
-    {"label": "Google arama geliri (çeyrek)", "value": 63.3, "unit": "milyar $", "context": "Temmuzda açıklanan, %17 artış"},
-    {"label": "Google YZ modu aylık kullanıcı", "value": 1, "unit": "milyar kişi", "context": "Bu yaz itibarıyla"}
-  ],
-  "chart": {
-    "type": "line",
-    "title": "Baidu mobil arama sayfalarında yapay zekâ içeriği oranı",
-    "unit": "%",
-    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı.",
-    "data": [
-      {"label": "2024 sonu", "value": 22},
-      {"label": "Nisan 2025", "value": 35},
-      {"label": "Temmuz 2025", "value": 64}
-    ]
+ "id": "cWZVtZ6RIWE",
+ "title_tr": "Baidu neden geriliyor: Çin'de arama Xiaohongshu'ya ve yapay zekâya kayıyor",
+ "category": "Teknoloji & YZ",
+ "region": [
+  "Çin",
+  "ABD"
+ ],
+ "summary_tr": "Video, Çin'in arama devi Baidu'nun reklam gelirinin %19 düşmesini Çin ekonomisine değil, reklamverenlerin müşterilerin karar verdiği yerlere kaymasına bağlıyor. 2016'da paralı sıralamadaki bir tıbbi reklam yüzünden ölen bir öğrencinin vakası, Baidu'nun en üst sonuçlarına duyulan güveni kalıcı biçimde zedeledi ve kullanıcılar gerçek alıcı yorumları sunan Xiaohongshu (RedNote) gibi platformlara yöneldi. Baidu 2025'te bağlantıları kaldırıp yapay zekâ yanıtlarına geçerek kendi reklam modelini bozdu; bulut ve GPU işi büyürken uygulama milyonlarca kullanıcı kaybetti. Google aynı dönüşümü yaparken büyümeyi sürdürdü; video farkı güvene bağlıyor ve Çinli müşteriye satış yapan işletmelerin Xiaohongshu'da görünür olması gerektiğini söylüyor.",
+ "key_points": [
+  "Google 2010'da Çin'den çekilince Baidu aramanın büyük kısmını aldı ve en üst sıraları açık artırmayla sattı.",
+  "2016'daki ölümcül tıbbi reklam vakası düzenlemelere ve kalıcı bir güven kaybına yol açtı.",
+  "Xiaohongshu, gerçek alıcıların fotoğraf ve fiyatlı yorumlarıyla satın alma öncesi aramaların merkezine dönüştü.",
+  "Baidu, arama sayfalarını hızla yapay zekâ yanıtlarına çevirip bağlantıları kaldırınca reklam gelirini kendisi düşürdü.",
+  "Bulut ve GPU gelirleri hızla büyüyor ve Baidu'nun ana iş gelirinin yarısı artık yapay zekâdan geliyor.",
+  "Google aynı geçişte büyümeye devam etti; video farkı kullanıcı güvenine bağlıyor ve web sitelerinin trafik kaybına dikkat çekiyor."
+ ],
+ "numbers": [
+  {
+   "label": "Baidu reklam geliri değişimi",
+   "value": -19,
+   "unit": "%",
+   "context": "Son açıklanan sonuçlarda"
   },
-  "diagram": {
-    "type": "flow",
-    "title": "Baidu'nun düşüşünün neden-sonuç zinciri",
-    "steps": [
-      {"label": "Rakipsiz arama tekeli", "detail": "Google'ın çıkışıyla Baidu Çin aramasının büyük kısmını alır."},
-      {"label": "Satılık en üst sıralar", "detail": "Tıbbi aramalar dahil en üst sonuçlar en yüksek teklife verilir."},
-      {"label": "2016 güven krizi", "detail": "Paralı sıralamadaki bir hastane vakası kamuoyunu sarsar ve düzenleme gelir."},
-      {"label": "Kullanıcılar başka yere kayar", "detail": "Satın alma aramaları gerçek yorumların olduğu Xiaohongshu'ya gider."},
-      {"label": "Bağlantıları kaldıran YZ", "detail": "Baidu arama sayfalarını YZ yanıtlarına çevirip tıklama modelini bozar."},
-      {"label": "Reklam geliri düşer", "detail": "Reklamverenler bütçelerini müşterilerin karar verdiği platformlara taşır."}
-    ]
+  {
+   "label": "Baidu uygulamasının kaybettiği aylık kullanıcı",
+   "value": 91,
+   "unit": "milyon kişi",
+   "context": "Bir yılda"
   },
-  "business_ideas": [
-    {
-      "name": "Türk turizm ve perakende işletmeleri için Xiaohongshu görünürlük hizmeti",
-      "insight": "Video, Çinli müşterilerin işletmeleri web sitesi veya Google yorumlarında değil Xiaohongshu'da araştırdığını ve orada yoksanız var olmadığınızı söylüyor.",
-      "problem": "Türkiye'deki oteller, mağazalar ve restoranlar Çinli turistlerin karar verdiği platformda görünmüyor ve bunu trafik raporlarında fark etmiyor.",
-      "solution": "İşletmeler için resmi Xiaohongshu hesabı açma, Çince içerik üretimi, Çinli ziyaretçileri gerçek deneyim paylaşmaya teşvik eden mağaza içi akış ve görünürlük takibi sunan hizmet paketi (sahte yorum üretmeden).",
-      "target": "İstanbul ve Kapadokya'daki oteller, Kapalıçarşı ve outlet mağazaları, Çinli tur gruplarına hizmet veren restoranlar",
-      "revenue_model": "Aylık retainer + kurulum ücreti",
-      "first_step": "Xiaohongshu'da İstanbul ve Kapadokya aramalarında öne çıkan 30 işletmeyi listelemek, görünmeyen 10 işletmeyle görüşüp 2'sine ücretli pilot önermek.",
-      "capital": "Düşük",
-      "difficulty": 3,
-      "turkey_angle": "Türkiye Çinli turistler için büyüyen bir destinasyon; Türkiye'de yaşayan Çince bilen içerik üreticileriyle yürütülebilir.",
-      "risks": "Platformun yabancı işletme hesap kuralları, sahte yorum algısı ve platform cezaları, Çin turist sayısındaki dalgalanma."
-    },
-    {
-      "name": "YZ arama motorlarında görünürlük (GEO) ölçüm aracı",
-      "insight": "Video, Baidu ve Google'ın bağlantıları YZ yanıtlarıyla değiştirdiğini ve web sitelerinin tıklamalarının kaybolduğunu anlatıyor.",
-      "problem": "İşletmeler YZ yanıtlarında markalarının geçip geçmediğini ve trafik kaybının nedenini ölçemiyor.",
-      "solution": "Belirli sektör sorgularını Google YZ modu ve diğer YZ asistanlarında düzenli sorup markanın anılma oranını, kaynak gösterilme durumunu ve rakipleri raporlayan SaaS.",
-      "target": "Türkiye'deki e-ticaret siteleri, SaaS şirketleri, dijital ajanslar",
-      "revenue_model": "İzlenen sorgu sayısına göre aylık abonelik + ajanslara beyaz etiket lisans",
-      "first_step": "Türkçe 50 ticari sorguyu 3 YZ aracında elle test edip bir sektör raporu yayınlamak ve 5 ajansa demo yapmak.",
-      "capital": "Düşük",
-      "difficulty": 3,
-      "turkey_angle": "Türkçe sorgular için özel araç az; yerel ajanslar üzerinden hızlı dağıtım mümkün.",
-      "risks": "YZ çıktılarının değişkenliği, platformların otomatik sorgulamayı kısıtlaması, büyük SEO araçlarının aynı özelliği eklemesi."
-    },
-    {
-      "name": "Sağlık turizmi için doğrulanmış klinik ve hekim referans platformu",
-      "insight": "Baidu'nun tıbbi aramalarda paralı sıralamayı açıkça ayırmaması bir ölüme ve kalıcı güven kaybına yol açtı; kullanıcılar gerçek deneyimlere yöneldi.",
-      "problem": "Sağlık turizmi için Türkiye'ye gelen yabancı hastalar reklamla organik bilgiyi ayırt edemiyor; klinik güvenilirliği belirsiz.",
-      "solution": "Kliniklerin lisans, hekim sertifikası ve doğrulanmış hasta deneyimlerini gösteren, ücretli öne çıkarmayı açıkça etiketleyen ve sıralamayı ödemeye bağlamayan karşılaştırma platformu.",
-      "target": "Avrupa, Orta Doğu ve Asya'dan Türkiye'ye gelen sağlık turistleri; lisanslı klinikler",
-      "revenue_model": "Kliniklerden doğrulama ve listeleme aboneliği (sıralamadan bağımsız) + net etiketli reklam",
-      "first_step": "Sağlık Bakanlığı uluslararası sağlık turizmi yetki belgeli 20 kliniğe ulaşıp doğrulama paketine ilgiyi ölçmek; 50 hasta yorumunu doğrulama sürecini test etmek.",
-      "capital": "Orta",
-      "difficulty": 4,
-      "turkey_angle": "Türkiye sağlık turizminde büyük bir pazar; ancak sağlık hizmetleri reklam yasakları ve hasta verisi (KVKK) kuralları sıkı.",
-      "risks": "Sağlık reklamı mevzuatı, sahte yorum ve hukuki sorumluluk, kliniklerin ödeme karşılığı sıralama baskısı."
-    }
-  ],
-  "skeptic_notes": [
-    "Altyazıda Baidu 'BU', Xiaohongshu 'Xiao Hongu/Shiao Hongu', DeepSeek 'Dipick', Doubao 'Doughba', Zhihu 'Juu' olarak bozuk geçiyor; en makul okumalar kullanıldı.",
-    "Öğrenci vakasındaki ad (Wei Zexi) altyazıda 'Wedusi', hastalık 'synovial saroma' olarak geçiyor; olay geniş biçimde bilinen bir vaka, ancak tutarlar (31.000 $) doğrulanmalı.",
-    "Baidu'nun arama payının %80 olduğu ve dönemsel artış oranları yuvarlak rakamlar; kaynak gösterilmiyor.",
-    "Xiaohongshu'nun kâr ve değerleme rakamları özel işlemlere ve analist beklentilerine dayanıyor; halka arz hedefi henüz gerçekleşmiş değil.",
-    "Video, Baidu'nun hâlâ Xiaohongshu'dan daha fazla arama ve kullanıcıya sahip olduğunu kabul ediyor; başlıktaki 'çöktü' ifadesi abartılı.",
-    "Google ile Baidu arasındaki farkı yalnızca 'güvene' bağlayan açıklama, rekabet ve pazar yapısı farklarını göz ardı eden bir yorum.",
-    "Video sonunda Statrys'in şirket kurma ve para transferi hizmetleri tanıtılıyor (reklam içeriği)."
+  {
+   "label": "Çin internet reklam pazarı büyümesi",
+   "value": 6.4,
+   "unit": "%",
+   "context": "Geçen çeyrek"
+  },
+  {
+   "label": "Tencent reklam geliri artışı",
+   "value": 21,
+   "unit": "%",
+   "context": "Aynı dönemde"
+  },
+  {
+   "label": "Baidu'nun Çin arama payı",
+   "value": 80,
+   "unit": "%",
+   "context": "Google çekildikten sonraki yıllarda (yaklaşık)"
+  },
+  {
+   "label": "Baidu gelir artışı (2010, bir çeyrek)",
+   "value": 60,
+   "unit": "%",
+   "context": "Google'ın çıkışı sonrası"
+  },
+  {
+   "label": "Baidu kâr artışı (2010)",
+   "value": 165,
+   "unit": "%",
+   "context": "Google'ın çıkışı sonrası"
+  },
+  {
+   "label": "Aramanın Baidu gelirindeki payı",
+   "value": 84,
+   "unit": "%",
+   "context": "O dönemde"
+  },
+  {
+   "label": "Tıbbi reklamın arama gelirindeki payı",
+   "value": 30,
+   "unit": "%",
+   "context": "%20-30 (üst sınır)"
+  },
+  {
+   "label": "Öğrencinin ailesinin ödediği tedavi",
+   "value": 31000,
+   "unit": "$",
+   "context": "Deneysel immünoterapi için borçla"
+  },
+  {
+   "label": "Kaldırılan reklam",
+   "value": 126,
+   "unit": "milyon reklam",
+   "context": "Vaka sonrası bir ay içinde"
+  },
+  {
+   "label": "Sayfa başı reklam sınırı",
+   "value": 30,
+   "unit": "%",
+   "context": "Düzenleme sonrası sayfanın en fazla bu kadarı reklam"
+  },
+  {
+   "label": "İlk sayfadaki reklam (önce → sonra)",
+   "value": 4,
+   "unit": "reklam",
+   "context": "18'den 4'e indi"
+  },
+  {
+   "label": "Xiaohongshu günlük arama (2023 ortası)",
+   "value": 300,
+   "unit": "milyon arama/gün",
+   "context": "18 ay sonra 600 milyona çıktı"
+  },
+  {
+   "label": "Xiaohongshu günlük arama (18 ay sonra)",
+   "value": 600,
+   "unit": "milyon arama/gün",
+   "context": "İki katına çıktı"
+  },
+  {
+   "label": "Arama yapan Xiaohongshu kullanıcı oranı",
+   "value": 70,
+   "unit": "%",
+   "context": "Aylık kullanıcıların arama yapan kısmı"
+  },
+  {
+   "label": "Satın alma kararına etki",
+   "value": 90,
+   "unit": "%",
+   "context": "Okuduklarının satın alma kararını belirlediğini söyleyen kullanıcılar (yaklaşık)"
+  },
+  {
+   "label": "Xiaohongshu aylık kullanıcı",
+   "value": 400,
+   "unit": "milyon kişi",
+   "context": "400 milyonun üzerinde"
+  },
+  {
+   "label": "Xiaohongshu net kâr (2025)",
+   "value": 2,
+   "unit": "milyar $",
+   "context": "2 milyar doların üzerinde; bu yıl 3 milyar+ bekleniyor"
+  },
+  {
+   "label": "Xiaohongshu değerlemesi (2024)",
+   "value": 17,
+   "unit": "milyar $",
+   "context": "Yatırımcı değerlemesi"
+  },
+  {
+   "label": "Xiaohongshu değerlemesi (geçen yıl sonu)",
+   "value": 50,
+   "unit": "milyar $",
+   "context": "Özel işlemlerde yaklaşık"
+  },
+  {
+   "label": "Xiaohongshu halka arz hedef değerlemesi",
+   "value": 70,
+   "unit": "milyar $",
+   "context": "Hong Kong halka arzı için hedef (üzeri)"
+  },
+  {
+   "label": "YZ içerikli mobil arama sayfası (2024 sonu)",
+   "value": 22,
+   "unit": "%",
+   "context": "Baidu'nun YZ dönüşümü"
+  },
+  {
+   "label": "YZ içerikli mobil arama sayfası (Nisan 2025)",
+   "value": 35,
+   "unit": "%",
+   "context": "Baidu'nun YZ dönüşümü"
+  },
+  {
+   "label": "YZ içerikli mobil arama sayfası (Temmuz 2025)",
+   "value": 64,
+   "unit": "%",
+   "context": "Baidu'nun YZ dönüşümü"
+  },
+  {
+   "label": "Baidu bulut geliri artışı",
+   "value": 50,
+   "unit": "%",
+   "context": "Bir yılda"
+  },
+  {
+   "label": "Baidu GPU tarafı büyümesi",
+   "value": 283,
+   "unit": "%",
+   "context": "Bir yılda"
+  },
+  {
+   "label": "Baidu nakit varlığı",
+   "value": 42,
+   "unit": "milyar $",
+   "context": "Bilançodaki nakit (yaklaşık)"
+  },
+  {
+   "label": "Google arama geliri (çeyrek)",
+   "value": 63.3,
+   "unit": "milyar $",
+   "context": "Temmuzda açıklanan, %17 artış"
+  },
+  {
+   "label": "Google YZ modu aylık kullanıcı",
+   "value": 1,
+   "unit": "milyar kişi",
+   "context": "Bu yaz itibarıyla"
+  }
+ ],
+ "chart": {
+  "type": "line",
+  "title": "Baidu mobil arama sayfalarında yapay zekâ içeriği oranı",
+  "unit": "%",
+  "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı.",
+  "data": [
+   {
+    "label": "2024 sonu",
+    "value": 22
+   },
+   {
+    "label": "Nisan 2025",
+    "value": 35
+   },
+   {
+    "label": "Temmuz 2025",
+    "value": 64
+   }
   ]
+ },
+ "diagram": {
+  "type": "flow",
+  "title": "Baidu'nun düşüşünün neden-sonuç zinciri",
+  "steps": [
+   {
+    "label": "Rakipsiz arama tekeli",
+    "detail": "Google'ın çıkışıyla Baidu Çin aramasının büyük kısmını alır."
+   },
+   {
+    "label": "Satılık en üst sıralar",
+    "detail": "Tıbbi aramalar dahil en üst sonuçlar en yüksek teklife verilir."
+   },
+   {
+    "label": "2016 güven krizi",
+    "detail": "Paralı sıralamadaki bir hastane vakası kamuoyunu sarsar ve düzenleme gelir."
+   },
+   {
+    "label": "Kullanıcılar başka yere kayar",
+    "detail": "Satın alma aramaları gerçek yorumların olduğu Xiaohongshu'ya gider."
+   },
+   {
+    "label": "Bağlantıları kaldıran YZ",
+    "detail": "Baidu arama sayfalarını YZ yanıtlarına çevirip tıklama modelini bozar."
+   },
+   {
+    "label": "Reklam geliri düşer",
+    "detail": "Reklamverenler bütçelerini müşterilerin karar verdiği platformlara taşır."
+   }
+  ]
+ },
+ "business_ideas": [
+  {
+   "name": "Türk turizm ve perakende işletmeleri için Xiaohongshu görünürlük hizmeti",
+   "insight": "Video, Çinli müşterilerin işletmeleri web sitesi veya Google yorumlarında değil Xiaohongshu'da araştırdığını ve orada yoksanız var olmadığınızı söylüyor.",
+   "problem": "Türkiye'deki oteller, mağazalar ve restoranlar Çinli turistlerin karar verdiği platformda görünmüyor ve bunu trafik raporlarında fark etmiyor.",
+   "solution": "İşletmeler için resmi Xiaohongshu hesabı açma, Çince içerik üretimi, Çinli ziyaretçileri gerçek deneyim paylaşmaya teşvik eden mağaza içi akış ve görünürlük takibi sunan hizmet paketi (sahte yorum üretmeden).",
+   "target": "İstanbul ve Kapadokya'daki oteller, Kapalıçarşı ve outlet mağazaları, Çinli tur gruplarına hizmet veren restoranlar",
+   "revenue_model": "Aylık retainer + kurulum ücreti",
+   "first_step": "Xiaohongshu'da İstanbul ve Kapadokya aramalarında öne çıkan 30 işletmeyi listelemek, görünmeyen 10 işletmeyle görüşüp 2'sine ücretli pilot önermek.",
+   "capital": "Düşük",
+   "difficulty": 3,
+   "turkey_angle": "Türkiye Çinli turistler için büyüyen bir destinasyon; Türkiye'de yaşayan Çince bilen içerik üreticileriyle yürütülebilir.",
+   "risks": "Platformun yabancı işletme hesap kuralları, sahte yorum algısı ve platform cezaları, Çin turist sayısındaki dalgalanma.",
+   "originality": 3,
+   "problem_solving": 4,
+   "score_note": "Çinli turist harcamasına doğrudan etki.",
+   "similar": [
+    {
+     "id": "O7Px8bUKHAA",
+     "name": "Türk markaları için Xiaohongshu içerik ve Çinli turist satış paketi"
+    }
+   ]
+  },
+  {
+   "name": "YZ arama motorlarında görünürlük (GEO) ölçüm aracı",
+   "insight": "Video, Baidu ve Google'ın bağlantıları YZ yanıtlarıyla değiştirdiğini ve web sitelerinin tıklamalarının kaybolduğunu anlatıyor.",
+   "problem": "İşletmeler YZ yanıtlarında markalarının geçip geçmediğini ve trafik kaybının nedenini ölçemiyor.",
+   "solution": "Belirli sektör sorgularını Google YZ modu ve diğer YZ asistanlarında düzenli sorup markanın anılma oranını, kaynak gösterilme durumunu ve rakipleri raporlayan SaaS.",
+   "target": "Türkiye'deki e-ticaret siteleri, SaaS şirketleri, dijital ajanslar",
+   "revenue_model": "İzlenen sorgu sayısına göre aylık abonelik + ajanslara beyaz etiket lisans",
+   "first_step": "Türkçe 50 ticari sorguyu 3 YZ aracında elle test edip bir sektör raporu yayınlamak ve 5 ajansa demo yapmak.",
+   "capital": "Düşük",
+   "difficulty": 3,
+   "turkey_angle": "Türkçe sorgular için özel araç az; yerel ajanslar üzerinden hızlı dağıtım mümkün.",
+   "risks": "YZ çıktılarının değişkenliği, platformların otomatik sorgulamayı kısıtlaması, büyük SEO araçlarının aynı özelliği eklemesi.",
+   "originality": 2,
+   "problem_solving": 3,
+   "score_note": "Kalabalık yeni kategori (GEO araçları).",
+   "similar": []
+  },
+  {
+   "name": "Sağlık turizmi için doğrulanmış klinik ve hekim referans platformu",
+   "insight": "Baidu'nun tıbbi aramalarda paralı sıralamayı açıkça ayırmaması bir ölüme ve kalıcı güven kaybına yol açtı; kullanıcılar gerçek deneyimlere yöneldi.",
+   "problem": "Sağlık turizmi için Türkiye'ye gelen yabancı hastalar reklamla organik bilgiyi ayırt edemiyor; klinik güvenilirliği belirsiz.",
+   "solution": "Kliniklerin lisans, hekim sertifikası ve doğrulanmış hasta deneyimlerini gösteren, ücretli öne çıkarmayı açıkça etiketleyen ve sıralamayı ödemeye bağlamayan karşılaştırma platformu.",
+   "target": "Avrupa, Orta Doğu ve Asya'dan Türkiye'ye gelen sağlık turistleri; lisanslı klinikler",
+   "revenue_model": "Kliniklerden doğrulama ve listeleme aboneliği (sıralamadan bağımsız) + net etiketli reklam",
+   "first_step": "Sağlık Bakanlığı uluslararası sağlık turizmi yetki belgeli 20 kliniğe ulaşıp doğrulama paketine ilgiyi ölçmek; 50 hasta yorumunu doğrulama sürecini test etmek.",
+   "capital": "Orta",
+   "difficulty": 4,
+   "turkey_angle": "Türkiye sağlık turizminde büyük bir pazar; ancak sağlık hizmetleri reklam yasakları ve hasta verisi (KVKK) kuralları sıkı.",
+   "risks": "Sağlık reklamı mevzuatı, sahte yorum ve hukuki sorumluluk, kliniklerin ödeme karşılığı sıralama baskısı.",
+   "originality": 3,
+   "problem_solving": 4,
+   "score_note": "Sıralamayı ödemeye bağlamayan model güven için kritik.",
+   "similar": [
+    {
+     "id": "ndC1ZG9r8Gk",
+     "name": "Medikal turizm klinik doğrulama ve şeffaflık platformu"
+    }
+   ]
+  }
+ ],
+ "skeptic_notes": [
+  "Altyazıda Baidu 'BU', Xiaohongshu 'Xiao Hongu/Shiao Hongu', DeepSeek 'Dipick', Doubao 'Doughba', Zhihu 'Juu' olarak bozuk geçiyor; en makul okumalar kullanıldı.",
+  "Öğrenci vakasındaki ad (Wei Zexi) altyazıda 'Wedusi', hastalık 'synovial saroma' olarak geçiyor; olay geniş biçimde bilinen bir vaka, ancak tutarlar (31.000 $) doğrulanmalı.",
+  "Baidu'nun arama payının %80 olduğu ve dönemsel artış oranları yuvarlak rakamlar; kaynak gösterilmiyor.",
+  "Xiaohongshu'nun kâr ve değerleme rakamları özel işlemlere ve analist beklentilerine dayanıyor; halka arz hedefi henüz gerçekleşmiş değil.",
+  "Video, Baidu'nun hâlâ Xiaohongshu'dan daha fazla arama ve kullanıcıya sahip olduğunu kabul ediyor; başlıktaki 'çöktü' ifadesi abartılı.",
+  "Google ile Baidu arasındaki farkı yalnızca 'güvene' bağlayan açıklama, rekabet ve pazar yapısı farklarını göz ardı eden bir yorum.",
+  "Video sonunda Statrys'in şirket kurma ve para transferi hizmetleri tanıtılıyor (reklam içeriği)."
+ ]
 }

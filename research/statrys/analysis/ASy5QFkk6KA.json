@@ -1,113 +1,282 @@
 {
-  "id": "ASy5QFkk6KA",
-  "title_tr": "Vietnam ekonomik patlamasının kırılgan yanları",
-  "category": "Güneydoğu Asya",
-  "region": ["Vietnam", "Çin", "ABD"],
-  "summary_tr": "Video, Vietnam'ın yüksek büyüme, artan ticaret ve yükselen orta sınıfıyla parlak görünse de büyümenin büyük ölçüde yabancı şirketlere, Çin'den gelen parçalara ve hızla artan borca dayandığını savunuyor. İhracatın büyük kısmını yabancı firmalar yapıyor, Vietnam ise değer zincirinin en düşük kârlı halkası olan montajda kalıyor; ABD'nin aktarma (transshipment) ürünlere yüksek tarife uygulaması bu modeli tehdit ediyor. Elektrik tüketiminin büyümenin gerisinde kalması, büyümenin inşaata kaydığına; GSYH'nin üzerindeki kredi hacmi ve borsanın tek bir holdinge bağımlılığı da finansal kırılganlığa işaret ediyor. Buna karşın gelirlerin arttığı, aşırı yoksulluğun düştüğü ve büyümenin görece eşit dağıldığı kabul ediliyor; Vietnam'a yatırım yapacaklara tarife, enerji ve sermaye çıkışı risklerini hesaba katmaları öneriliyor.",
-  "key_points": [
-    "İhracatın yaklaşık %80'i yabancı şirketlerden geliyor; yabancı firmalar ticaret fazlası, yerli firmalar ise açık veriyor.",
-    "İthalatın büyük kısmı ara mal ve parça; 'Made in Vietnam' çoğunlukla Çin parçalarıyla yapılan montaj anlamına geliyor.",
-    "ABD, aktarma şüphesi taşıyan ürünlere normalden yüksek tarife uyguluyor ve menşe kuralı belirsiz.",
-    "Elektrik tüketiminin büyümeden yavaş artması, büyümenin üretimden çok inşaata dayandığını düşündürüyor.",
-    "Kredi hacmi ekonominin büyüklüğünü aşıyor ve borsa endeksinin önemli bir kısmı Vingroup şirketlerine bağlı.",
-    "Gelir artışı ve yoksulluktaki düşüş gerçek; ancak nüfus zenginleşmeden yaşlanıyor ve en ucuz üretim komşu ülkelere kayıyor."
-  ],
-  "numbers": [
-    {"label": "GSYH büyümesi (geçen yıl)", "value": 8, "unit": "%", "context": "Zengin ülkelerin yaklaşık %2 büyümesiyle karşılaştırıldı"},
-    {"label": "Toplam dış ticaret", "value": 930, "unit": "milyar $", "context": "930 milyar $'ı aştı"},
-    {"label": "Kişi başı yıllık ortalama gelir", "value": 4000, "unit": "$", "context": "50 yıl önce birkaç yüz dolar olduğu belirtildi"},
-    {"label": "İmalatın ekonomideki payı (1990)", "value": 10, "unit": "%", "context": "%10'un altındaydı; bugün dörtte birin üzerinde"},
-    {"label": "Hızlı tren projesi", "value": 67, "unit": "milyar $", "context": "İki büyük şehri bağlayacak proje"},
-    {"label": "Havalimanı yatırımları", "value": 25, "unit": "milyar $", "context": "On yılın sonuna kadar"},
-    {"label": "Hükümetin 2030 büyüme hedefi", "value": 10, "unit": "%", "context": "Yıllık"},
-    {"label": "Yabancı şirketlerin ihracattaki payı", "value": 80, "unit": "%", "context": "Yaklaşık"},
-    {"label": "Samsung'un ihracattaki payı", "value": 20, "unit": "%", "context": "Yaklaşık beşte bir"},
-    {"label": "Yabancı şirketlerin ticaret fazlası", "value": 50, "unit": "milyar $", "context": "Yaklaşık"},
-    {"label": "Yerli şirketlerin ticaret açığı", "value": -30, "unit": "milyar $", "context": "Yaklaşık"},
-    {"label": "Parça ve ara malın ithalattaki payı", "value": 94, "unit": "%", "context": "Nihai tüketim malı yerine"},
-    {"label": "ABD'ye satılan her 15 $'lık malın Çin kaynaklı kısmı", "value": 5, "unit": "$", "context": "Washington tahmini; aktarma ürünler"},
-    {"label": "Aktarma şüpheli ürün tarifesi", "value": 40, "unit": "%", "context": "Normal %20 yerine"},
-    {"label": "Elektrik tüketimi artışı", "value": 5, "unit": "%", "context": "%5'in altında; büyüme %8 iken"},
-    {"label": "Toplam kredi / GSYH", "value": 136, "unit": "%", "context": "Gelir seviyesine göre çok yüksek"},
-    {"label": "Kredi büyümesi (geçen yıl)", "value": 18, "unit": "%", "context": "Yıllık artış"},
-    {"label": "Vingroup'un VN endeksindeki payı", "value": 18, "unit": "%", "context": "%18'in üzerinde; grup şirketleriyle %30'a yakın"},
-    {"label": "VN endeksi yıllık getiri", "value": 40, "unit": "%", "context": "Vingroup hisseleri hariç yaklaşık %12"},
-    {"label": "Ortalama gelir artışı (geçen yıl)", "value": 9, "unit": "%", "context": "%9'un üzerinde"},
-    {"label": "Aşırı yoksulluk (on yıl önce)", "value": 14, "unit": "%", "context": "Bugün %4'ün altında"},
-    {"label": "Gerekli sürdürülebilir büyüme", "value": 6, "unit": "%", "context": "Zengin ülkeleri yakalamak için 20 yıl boyunca"}
-  ],
-  "chart": {
-    "type": "bar",
-    "title": "Vietnam'da geçen yılın büyüme oranları",
-    "unit": "%",
-    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. Elektrik için '%5'in altında' ifadesinin üst sınırı, gelir için '%9'un üzerinde' ifadesinin alt sınırı kullanıldı.",
-    "data": [
-      {"label": "GSYH", "value": 8},
-      {"label": "Elektrik tüketimi", "value": 5},
-      {"label": "Ortalama gelir", "value": 9},
-      {"label": "Toplam kredi", "value": 18}
-    ]
+ "id": "ASy5QFkk6KA",
+ "title_tr": "Vietnam ekonomik patlamasının kırılgan yanları",
+ "category": "Güneydoğu Asya",
+ "region": [
+  "Vietnam",
+  "Çin",
+  "ABD"
+ ],
+ "summary_tr": "Video, Vietnam'ın yüksek büyüme, artan ticaret ve yükselen orta sınıfıyla parlak görünse de büyümenin büyük ölçüde yabancı şirketlere, Çin'den gelen parçalara ve hızla artan borca dayandığını savunuyor. İhracatın büyük kısmını yabancı firmalar yapıyor, Vietnam ise değer zincirinin en düşük kârlı halkası olan montajda kalıyor; ABD'nin aktarma (transshipment) ürünlere yüksek tarife uygulaması bu modeli tehdit ediyor. Elektrik tüketiminin büyümenin gerisinde kalması, büyümenin inşaata kaydığına; GSYH'nin üzerindeki kredi hacmi ve borsanın tek bir holdinge bağımlılığı da finansal kırılganlığa işaret ediyor. Buna karşın gelirlerin arttığı, aşırı yoksulluğun düştüğü ve büyümenin görece eşit dağıldığı kabul ediliyor; Vietnam'a yatırım yapacaklara tarife, enerji ve sermaye çıkışı risklerini hesaba katmaları öneriliyor.",
+ "key_points": [
+  "İhracatın yaklaşık %80'i yabancı şirketlerden geliyor; yabancı firmalar ticaret fazlası, yerli firmalar ise açık veriyor.",
+  "İthalatın büyük kısmı ara mal ve parça; 'Made in Vietnam' çoğunlukla Çin parçalarıyla yapılan montaj anlamına geliyor.",
+  "ABD, aktarma şüphesi taşıyan ürünlere normalden yüksek tarife uyguluyor ve menşe kuralı belirsiz.",
+  "Elektrik tüketiminin büyümeden yavaş artması, büyümenin üretimden çok inşaata dayandığını düşündürüyor.",
+  "Kredi hacmi ekonominin büyüklüğünü aşıyor ve borsa endeksinin önemli bir kısmı Vingroup şirketlerine bağlı.",
+  "Gelir artışı ve yoksulluktaki düşüş gerçek; ancak nüfus zenginleşmeden yaşlanıyor ve en ucuz üretim komşu ülkelere kayıyor."
+ ],
+ "numbers": [
+  {
+   "label": "GSYH büyümesi (geçen yıl)",
+   "value": 8,
+   "unit": "%",
+   "context": "Zengin ülkelerin yaklaşık %2 büyümesiyle karşılaştırıldı"
   },
-  "diagram": {
-    "type": "flow",
-    "title": "Vietnam büyüme modelinin işleyişi ve kırılma noktaları",
-    "steps": [
-      {"label": "Çin'den parça girişi", "detail": "Ekran ve çip gibi pahalı parçalar Çin'den hazır geliyor."},
-      {"label": "Yabancı fabrikada montaj", "detail": "Yabancı şirketler ucuz işgücüyle ürünü Vietnam'da birleştiriyor."},
-      {"label": "ABD ve Avrupa'ya ihracat", "detail": "Kâr, marka ve teknoloji yabancı merkezlerde kalıyor."},
-      {"label": "Tarife baskısı", "detail": "ABD aktarma şüpheli ürünlere yüksek tarife uyguluyor."},
-      {"label": "Kredi ile inşaat büyümesi", "detail": "Büyümenin bir kısmı borçla finanse edilen gayrimenkul ve altyapıya kayıyor."},
-      {"label": "Finansal kırılganlık", "detail": "Yüksek kredi ve tek holdinge bağımlı borsa şoklara açık hale geliyor."}
-    ]
+  {
+   "label": "Toplam dış ticaret",
+   "value": 930,
+   "unit": "milyar $",
+   "context": "930 milyar $'ı aştı"
   },
-  "business_ideas": [
-    {
-      "name": "Menşe kuralı ve aktarma riski uyum aracı",
-      "insight": "ABD'nin Çin parçası içeren Vietnam ürünlerine daha yüksek tarife uyguladığı ve kuralın net olmadığı vurgulanıyor.",
-      "problem": "Üretimini Çin'den kaydıran ithalatçılar ürünlerinin yerli katma değer oranını ve tarife riskini hesaplayamıyor.",
-      "solution": "Malzeme listesi (BOM) ve tedarikçi belgelerini toplayıp ürün bazında menşe oranını hesaplayan, eksik belgeleri işaretleyen ve denetime hazır dosya üreten SaaS.",
-      "target": "ABD ve AB'ye Asya'dan ithalat yapan orta ölçekli markalar ve gümrük müşavirleri",
-      "revenue_model": "Ürün/SKU başına aylık abonelik ve denetim dosyası hazırlama ücreti",
-      "first_step": "10 gümrük müşaviri ve ithalatçıyla görüşüp menşe belgeleme sürecindeki zaman kaybını ölçmek; bir müşterinin 5 ürünü için manuel analiz yapmak",
-      "capital": "Orta",
-      "difficulty": 4,
-      "turkey_angle": "Türkiye'den AB'ye ihracatta da menşe ve A.TR/EUR.1 kuralları kritik; araç önce Türk ihracatçılar için kurulup Asya'ya genişletilebilir.",
-      "risks": "Tarife kurallarının sık değişmesi, hatalı hesaplamadan doğan sorumluluk, ürünün yanlış beyanı kolaylaştırmak için kötüye kullanılmaması gerekliliği"
-    },
-    {
-      "name": "Tarife riskinden kaçan alıcılar için 'Türkiye'de yüksek yerli katkılı üretim' tedarik hizmeti",
-      "insight": "Vietnam'ın çoğunlukla Çin parçalarıyla montaj yapması, menşe sorgulamalarında risk yaratıyor.",
-      "problem": "ABD ve AB alıcıları gerçek yerel katma değeri yüksek, belgelenebilir alternatif tedarikçi arıyor.",
-      "solution": "Tekstil, mobilya, metal aksam gibi alanlarda yerli girdi oranı yüksek Türk üreticileri belgelendirip alıcılara izlenebilir tedarik zinciri raporuyla sunan aracılık hizmeti.",
-      "target": "ABD'li ve Avrupalı orta ölçekli markalar",
-      "revenue_model": "Sipariş başına komisyon ve tedarik zinciri denetim ücreti",
-      "first_step": "Vietnam'dan alım yapan 20 ABD'li markaya ulaşıp tarife riskine karşı alternatif arayışını ve fiyat eşiğini sorgulamak",
-      "capital": "Düşük",
-      "difficulty": 3,
-      "turkey_angle": "Türkiye'nin tekstil ve mobilyada derin yerli tedarik zinciri, menşe açısından avantaj sağlar.",
-      "risks": "Türk üretim maliyetlerinin Vietnam'a göre yüksekliği, ABD'nin Türkiye'ye yönelik tarife politikasındaki değişiklikler"
-    },
-    {
-      "name": "Vietnam'da iş yapan yabancı KOBİ'ler için kâr transferi ve döviz planlama rehberliği",
-      "insight": "Videoya göre Vietnam'a para sokmak kolay, kârı geri çıkarmak ise yavaş ve zahmetli.",
-      "problem": "Yabancı girişimciler sermaye ve kâr repatriasyonu kurallarını ancak para çıkarmaya çalışırken öğreniyor.",
-      "solution": "Şirket kuruluşundan önce sermaye hesabı yapısı, vergi ve transfer belgelerini planlayan; yerel muhasebe ve banka ortaklarıyla çalışan sabit ücretli kontrol listesi ve uygulama hizmeti.",
-      "target": "Vietnam'da üretim veya satış ofisi açmayı planlayan Türk ve Avrupalı KOBİ'ler",
-      "revenue_model": "Kurulum öncesi planlama paketi ve yıllık uyum takibi ücreti",
-      "first_step": "Vietnam'da faaliyet gösteren 10 yabancı KOBİ ile görüşerek para transferinde yaşanan somut sorunları ve gecikme sürelerini belgelemek",
-      "capital": "Düşük",
-      "difficulty": 3,
-      "turkey_angle": "Türkiye-Vietnam ticareti büyüyor; Türkçe hizmet veren uzman sayısı az.",
-      "risks": "Yerel mevzuat değişiklikleri, lisanslı yerel ortak gerekliliği, hukuki tavsiye sınırlarının aşılmaması"
-    }
-  ],
-  "skeptic_notes": [
-    "Kuzeydeki elektrik kesintilerinin maliyeti altyazıda '$1.4' olarak birimsiz geçiyor; büyük olasılıkla milyar $ kastediliyor ama doğrulanmalı.",
-    "'2050'de nüfusun one and a quarter'ının 60 yaş üstü olacağı' ifadesi anlamsız; büyük olasılıkla 'dörtte biri' kastedilmiş, altyazı veya konuşma hatası.",
-    "Borsanın yıl içinde 'üçte birden fazla' ve '%40'ın üzerinde' arttığı ifadeleri farklı dönemleri veya ölçümleri yansıtıyor olabilir.",
-    "Elektrik/büyüme ayrışmasından 'büyüme inşaata dayalı' sonucunun çıkarılması anlatıcının yorumu; resmi açıklama (hava, çatı güneşi) da makul.",
-    "Aktarma ürünlerin oranı (her 15 $'ın 5 $'ı) 'Washington tahmini' olarak sunuluyor ama kaynak belirtilmemiş.",
-    "Video Statrys'in yurtdışı ödeme ve para transferi hizmetlerine atıfla bitiyor (reklam içeriği).",
-    "Başlık ('Boom is a lie') içerikten daha sert; video aslında gelir artışı ve yoksulluktaki düşüşün gerçek olduğunu kabul ediyor."
+  {
+   "label": "Kişi başı yıllık ortalama gelir",
+   "value": 4000,
+   "unit": "$",
+   "context": "50 yıl önce birkaç yüz dolar olduğu belirtildi"
+  },
+  {
+   "label": "İmalatın ekonomideki payı (1990)",
+   "value": 10,
+   "unit": "%",
+   "context": "%10'un altındaydı; bugün dörtte birin üzerinde"
+  },
+  {
+   "label": "Hızlı tren projesi",
+   "value": 67,
+   "unit": "milyar $",
+   "context": "İki büyük şehri bağlayacak proje"
+  },
+  {
+   "label": "Havalimanı yatırımları",
+   "value": 25,
+   "unit": "milyar $",
+   "context": "On yılın sonuna kadar"
+  },
+  {
+   "label": "Hükümetin 2030 büyüme hedefi",
+   "value": 10,
+   "unit": "%",
+   "context": "Yıllık"
+  },
+  {
+   "label": "Yabancı şirketlerin ihracattaki payı",
+   "value": 80,
+   "unit": "%",
+   "context": "Yaklaşık"
+  },
+  {
+   "label": "Samsung'un ihracattaki payı",
+   "value": 20,
+   "unit": "%",
+   "context": "Yaklaşık beşte bir"
+  },
+  {
+   "label": "Yabancı şirketlerin ticaret fazlası",
+   "value": 50,
+   "unit": "milyar $",
+   "context": "Yaklaşık"
+  },
+  {
+   "label": "Yerli şirketlerin ticaret açığı",
+   "value": -30,
+   "unit": "milyar $",
+   "context": "Yaklaşık"
+  },
+  {
+   "label": "Parça ve ara malın ithalattaki payı",
+   "value": 94,
+   "unit": "%",
+   "context": "Nihai tüketim malı yerine"
+  },
+  {
+   "label": "ABD'ye satılan her 15 $'lık malın Çin kaynaklı kısmı",
+   "value": 5,
+   "unit": "$",
+   "context": "Washington tahmini; aktarma ürünler"
+  },
+  {
+   "label": "Aktarma şüpheli ürün tarifesi",
+   "value": 40,
+   "unit": "%",
+   "context": "Normal %20 yerine"
+  },
+  {
+   "label": "Elektrik tüketimi artışı",
+   "value": 5,
+   "unit": "%",
+   "context": "%5'in altında; büyüme %8 iken"
+  },
+  {
+   "label": "Toplam kredi / GSYH",
+   "value": 136,
+   "unit": "%",
+   "context": "Gelir seviyesine göre çok yüksek"
+  },
+  {
+   "label": "Kredi büyümesi (geçen yıl)",
+   "value": 18,
+   "unit": "%",
+   "context": "Yıllık artış"
+  },
+  {
+   "label": "Vingroup'un VN endeksindeki payı",
+   "value": 18,
+   "unit": "%",
+   "context": "%18'in üzerinde; grup şirketleriyle %30'a yakın"
+  },
+  {
+   "label": "VN endeksi yıllık getiri",
+   "value": 40,
+   "unit": "%",
+   "context": "Vingroup hisseleri hariç yaklaşık %12"
+  },
+  {
+   "label": "Ortalama gelir artışı (geçen yıl)",
+   "value": 9,
+   "unit": "%",
+   "context": "%9'un üzerinde"
+  },
+  {
+   "label": "Aşırı yoksulluk (on yıl önce)",
+   "value": 14,
+   "unit": "%",
+   "context": "Bugün %4'ün altında"
+  },
+  {
+   "label": "Gerekli sürdürülebilir büyüme",
+   "value": 6,
+   "unit": "%",
+   "context": "Zengin ülkeleri yakalamak için 20 yıl boyunca"
+  }
+ ],
+ "chart": {
+  "type": "bar",
+  "title": "Vietnam'da geçen yılın büyüme oranları",
+  "unit": "%",
+  "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. Elektrik için '%5'in altında' ifadesinin üst sınırı, gelir için '%9'un üzerinde' ifadesinin alt sınırı kullanıldı.",
+  "data": [
+   {
+    "label": "GSYH",
+    "value": 8
+   },
+   {
+    "label": "Elektrik tüketimi",
+    "value": 5
+   },
+   {
+    "label": "Ortalama gelir",
+    "value": 9
+   },
+   {
+    "label": "Toplam kredi",
+    "value": 18
+   }
   ]
+ },
+ "diagram": {
+  "type": "flow",
+  "title": "Vietnam büyüme modelinin işleyişi ve kırılma noktaları",
+  "steps": [
+   {
+    "label": "Çin'den parça girişi",
+    "detail": "Ekran ve çip gibi pahalı parçalar Çin'den hazır geliyor."
+   },
+   {
+    "label": "Yabancı fabrikada montaj",
+    "detail": "Yabancı şirketler ucuz işgücüyle ürünü Vietnam'da birleştiriyor."
+   },
+   {
+    "label": "ABD ve Avrupa'ya ihracat",
+    "detail": "Kâr, marka ve teknoloji yabancı merkezlerde kalıyor."
+   },
+   {
+    "label": "Tarife baskısı",
+    "detail": "ABD aktarma şüpheli ürünlere yüksek tarife uyguluyor."
+   },
+   {
+    "label": "Kredi ile inşaat büyümesi",
+    "detail": "Büyümenin bir kısmı borçla finanse edilen gayrimenkul ve altyapıya kayıyor."
+   },
+   {
+    "label": "Finansal kırılganlık",
+    "detail": "Yüksek kredi ve tek holdinge bağımlı borsa şoklara açık hale geliyor."
+   }
+  ]
+ },
+ "business_ideas": [
+  {
+   "name": "Menşe kuralı ve aktarma riski uyum aracı",
+   "insight": "ABD'nin Çin parçası içeren Vietnam ürünlerine daha yüksek tarife uyguladığı ve kuralın net olmadığı vurgulanıyor.",
+   "problem": "Üretimini Çin'den kaydıran ithalatçılar ürünlerinin yerli katma değer oranını ve tarife riskini hesaplayamıyor.",
+   "solution": "Malzeme listesi (BOM) ve tedarikçi belgelerini toplayıp ürün bazında menşe oranını hesaplayan, eksik belgeleri işaretleyen ve denetime hazır dosya üreten SaaS.",
+   "target": "ABD ve AB'ye Asya'dan ithalat yapan orta ölçekli markalar ve gümrük müşavirleri",
+   "revenue_model": "Ürün/SKU başına aylık abonelik ve denetim dosyası hazırlama ücreti",
+   "first_step": "10 gümrük müşaviri ve ithalatçıyla görüşüp menşe belgeleme sürecindeki zaman kaybını ölçmek; bir müşterinin 5 ürünü için manuel analiz yapmak",
+   "capital": "Orta",
+   "difficulty": 4,
+   "turkey_angle": "Türkiye'den AB'ye ihracatta da menşe ve A.TR/EUR.1 kuralları kritik; araç önce Türk ihracatçılar için kurulup Asya'ya genişletilebilir.",
+   "risks": "Tarife kurallarının sık değişmesi, hatalı hesaplamadan doğan sorumluluk, ürünün yanlış beyanı kolaylaştırmak için kötüye kullanılmaması gerekliliği",
+   "originality": 3,
+   "problem_solving": 4,
+   "score_note": "Menşe hesaplama araçları var; Türkiye'den Asya alıcısına satmak zor.",
+   "similar": []
+  },
+  {
+   "name": "Tarife riskinden kaçan alıcılar için 'Türkiye'de yüksek yerli katkılı üretim' tedarik hizmeti",
+   "insight": "Vietnam'ın çoğunlukla Çin parçalarıyla montaj yapması, menşe sorgulamalarında risk yaratıyor.",
+   "problem": "ABD ve AB alıcıları gerçek yerel katma değeri yüksek, belgelenebilir alternatif tedarikçi arıyor.",
+   "solution": "Tekstil, mobilya, metal aksam gibi alanlarda yerli girdi oranı yüksek Türk üreticileri belgelendirip alıcılara izlenebilir tedarik zinciri raporuyla sunan aracılık hizmeti.",
+   "target": "ABD'li ve Avrupalı orta ölçekli markalar",
+   "revenue_model": "Sipariş başına komisyon ve tedarik zinciri denetim ücreti",
+   "first_step": "Vietnam'dan alım yapan 20 ABD'li markaya ulaşıp tarife riskine karşı alternatif arayışını ve fiyat eşiğini sorgulamak",
+   "capital": "Düşük",
+   "difficulty": 3,
+   "turkey_angle": "Türkiye'nin tekstil ve mobilyada derin yerli tedarik zinciri, menşe açısından avantaj sağlar.",
+   "risks": "Türk üretim maliyetlerinin Vietnam'a göre yüksekliği, ABD'nin Türkiye'ye yönelik tarife politikasındaki değişiklikler",
+   "originality": 3,
+   "problem_solving": 3,
+   "score_note": "Belgeleme açısı fark.",
+   "similar": [
+    {
+     "id": "UCfygNKPKEQ",
+     "name": "Çin'den üretim kaydıran firmalar için Türkiye tedarikçi eşleştirme"
+    },
+    {
+     "id": "talyf00Cl24",
+     "name": "Türkiye sanayi kümeleri ihracat haritası"
+    },
+    {
+     "id": "mV-AgB5iTY8",
+     "name": "Avrupalı alıcılar için Asya yerine Türkiye'den tedarik eşleştirme platformu"
+    }
+   ]
+  },
+  {
+   "name": "Vietnam'da iş yapan yabancı KOBİ'ler için kâr transferi ve döviz planlama rehberliği",
+   "insight": "Videoya göre Vietnam'a para sokmak kolay, kârı geri çıkarmak ise yavaş ve zahmetli.",
+   "problem": "Yabancı girişimciler sermaye ve kâr repatriasyonu kurallarını ancak para çıkarmaya çalışırken öğreniyor.",
+   "solution": "Şirket kuruluşundan önce sermaye hesabı yapısı, vergi ve transfer belgelerini planlayan; yerel muhasebe ve banka ortaklarıyla çalışan sabit ücretli kontrol listesi ve uygulama hizmeti.",
+   "target": "Vietnam'da üretim veya satış ofisi açmayı planlayan Türk ve Avrupalı KOBİ'ler",
+   "revenue_model": "Kurulum öncesi planlama paketi ve yıllık uyum takibi ücreti",
+   "first_step": "Vietnam'da faaliyet gösteren 10 yabancı KOBİ ile görüşerek para transferinde yaşanan somut sorunları ve gecikme sürelerini belgelemek",
+   "capital": "Düşük",
+   "difficulty": 3,
+   "turkey_angle": "Türkiye-Vietnam ticareti büyüyor; Türkçe hizmet veren uzman sayısı az.",
+   "risks": "Yerel mevzuat değişiklikleri, lisanslı yerel ortak gerekliliği, hukuki tavsiye sınırlarının aşılmaması",
+   "originality": 3,
+   "problem_solving": 3,
+   "score_note": "Niş danışmanlık; Türk KOBİ sayısı az.",
+   "similar": []
+  }
+ ],
+ "skeptic_notes": [
+  "Kuzeydeki elektrik kesintilerinin maliyeti altyazıda '$1.4' olarak birimsiz geçiyor; büyük olasılıkla milyar $ kastediliyor ama doğrulanmalı.",
+  "'2050'de nüfusun one and a quarter'ının 60 yaş üstü olacağı' ifadesi anlamsız; büyük olasılıkla 'dörtte biri' kastedilmiş, altyazı veya konuşma hatası.",
+  "Borsanın yıl içinde 'üçte birden fazla' ve '%40'ın üzerinde' arttığı ifadeleri farklı dönemleri veya ölçümleri yansıtıyor olabilir.",
+  "Elektrik/büyüme ayrışmasından 'büyüme inşaata dayalı' sonucunun çıkarılması anlatıcının yorumu; resmi açıklama (hava, çatı güneşi) da makul.",
+  "Aktarma ürünlerin oranı (her 15 $'ın 5 $'ı) 'Washington tahmini' olarak sunuluyor ama kaynak belirtilmemiş.",
+  "Video Statrys'in yurtdışı ödeme ve para transferi hizmetlerine atıfla bitiyor (reklam içeriği).",
+  "Başlık ('Boom is a lie') içerikten daha sert; video aslında gelir artışı ve yoksulluktaki düşüşün gerçek olduğunu kabul ediyor."
+ ]
 }

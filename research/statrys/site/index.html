@@ -129,9 +129,13 @@ svg .lab { fill: var(--muted); }
 .badge.cap-Orta { color: var(--amber); border-color: var(--amber); }
 .badge.cap-Yüksek { color: var(--seal); border-color: var(--seal); }
 .tr { font-size: .86rem; background: var(--jade-soft); border-radius: 6px; padding: 6px 8px; }
+.badge.sc { color: var(--ink); }
+.badge.tot { background: var(--jade-soft); border-color: transparent; color: var(--jade); font-weight: 700; }
+.note { font-size: .86rem; }
+.note a { color: var(--jade); }
 .skeptic { border-left: 3px solid var(--seal); background: var(--seal-soft); border-radius: 0 8px 8px 0; padding: 10px 14px; }
 .skeptic ul { margin: 4px 0 0; padding-left: 1.1em; font-size: .9rem; display: grid; gap: 3px; }
-table.ideas-t { width: 100%; border-collapse: collapse; font-size: .9rem; min-width: 720px; }
+table.ideas-t { width: 100%; border-collapse: collapse; font-size: .9rem; min-width: 980px; }
 .ideas-t th, .ideas-t td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
 .ideas-t th { font: 600 .74rem var(--font-data); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); cursor: pointer; white-space: nowrap; }
 .ideas-t td.n { font-family: var(--font-data); text-align: center; }
@@ -177,7 +181,7 @@ footer { margin-top: 30px; font-size: .82rem; color: var(--muted); max-width: 80
   <header class="top">
     <div class="eyebrow">YouTube · @Statrys · her yeni videoda güncellenir</div>
     <h1>Statrys Fikir Defteri</h1>
-    <p class="lede">Kanalın Kasım 2025'ten bu yana yayımladığı videoların transkriptlerinden çıkarılmış Türkçe özetler, videoda geçen rakamlarla çizilmiş grafikler, neden-sonuç şemaları ve her video için iş fikirleri. Rakamlar videodaki iddialardır ve bağımsız olarak doğrulanmamıştır; kırmızı kutular şüpheyle yaklaşılması gereken noktaları gösterir.</p>
+    <p class="lede">Kanalın Kasım 2025'ten bu yana yayımladığı videoların transkriptlerinden çıkarılmış Türkçe özetler, videoda geçen rakamlarla çizilmiş grafikler, neden-sonuç şemaları ve her video için özgünlük ile sorun çözme derecesine göre 1-5 puanlanmış iş fikirleri. Rakamlar videodaki iddialardır ve bağımsız olarak doğrulanmamıştır; kırmızı kutular şüpheyle yaklaşılması gereken noktaları gösterir.</p>
     <div class="stats" id="stats"></div>
     <p class="pdf-link"><button class="chip" id="pdf-save" hidden>PDF'i bilgisayara kaydet</button> <a id="pdf-open" href="#" target="_blank" rel="noopener">PDF'i yeni sekmede aç</a> <span id="pdf-status" class="muted"></span><br><span class="muted" style="font-size:.82rem">PDF her güncellemede yeniden üretilir; yer imleri ve sayfa numaralı içindekiler bölümü vardır.</span></p>
   </header>
@@ -208,7 +212,21 @@ footer { margin-top: 30px; font-size: .82rem; color: var(--muted); max-width: 80
 // #print turns the page into a paginated document: cover, table of contents, every video expanded, ideas index.
 const PRINT = location.hash === "#print";
 if (PRINT) document.documentElement.classList.add("print");
-const IDEAS_INDEX_TITLE = "Tüm iş fikirleri (sermaye ihtiyacına göre)";
+const IDEAS_INDEX_TITLE = "Tüm iş fikirleri: özgünlük ve sorun çözme sıralaması";
+const total = b => (+b.originality || 0) + (+b.problem_solving || 0);
+// Every idea gets one global rank: total desc, then problem-solving desc, then name.
+let RANK = new Map();
+const rankKey = (v, b) => v.id + "|" + b.name;
+function rankedIdeas() {
+  return DATA.videos.flatMap(v => (v.business_ideas || []).map(b => ({...b, v})))
+    .sort((a, b) => (total(b) - total(a)) || ((+b.problem_solving || 0) - (+a.problem_solving || 0)) || a.name.localeCompare(b.name, "tr"));
+}
+function buildRank() { RANK = new Map(); rankedIdeas().forEach((r, i) => RANK.set(rankKey(r.v, r), i + 1)); }
+function scoreBadges(b, v) {
+  if (!b.originality) return "";
+  const rank = v && RANK.get(rankKey(v, b));
+  return `${rank ? `<span class="badge tot">Sıra ${rank}/${RANK.size}</span>` : ""}<span class="badge sc">Özgünlük ${esc(b.originality)}/5</span><span class="badge sc">Sorun çözme ${esc(b.problem_solving)}/5</span><span class="badge tot">${total(b)}/10</span>`;
+}
 const CAT_COLORS = ["--c1","--c2","--c3","--c4","--c5","--c6","--c7","--c8"];
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -267,11 +285,13 @@ function diagramHTML(dg) {
   return `<ol class="flow ${dg.type === "cycle" ? "cycle" : ""}">${items}</ol>${dg.type === "cycle" ? `<div class="cycle-note">↺ son adım ilk adımı yeniden besler</div>` : ""}`;
 }
 
-function ideaCard(b) {
+function ideaCard(b, v) {
   return `<article class="idea">
     <h3>${esc(b.name)}</h3>
-    <div class="badges"><span class="badge cap-${esc(b.capital)}">Sermaye: ${esc(b.capital)}</span><span class="badge">Zorluk ${esc(b.difficulty)}/5</span></div>
+    <div class="badges">${scoreBadges(b, v)}<span class="badge cap-${esc(b.capital)}">Sermaye: ${esc(b.capital)}</span><span class="badge">Zorluk ${esc(b.difficulty)}/5</span></div>
     ${b.insight ? `<div class="insight">${esc(b.insight)}</div>` : ""}
+    ${b.score_note ? `<div class="note"><b>Değerlendirme:</b> ${esc(b.score_note)}</div>` : ""}
+    ${(b.similar || []).length ? `<div class="note muted">Benzer fikir: ${b.similar.map(s => `<a href="#v-${esc(s.id)}" data-open="${esc(s.id)}">${esc(s.name)}</a>`).join(" · ")}</div>` : ""}
     <dl><dt>Sorun</dt><dd>${esc(b.problem)}</dd><dt>Çözüm</dt><dd>${esc(b.solution)}</dd><dt>Müşteri</dt><dd>${esc(b.target)}</dd><dt>Gelir</dt><dd>${esc(b.revenue_model)}</dd><dt>İlk 30 gün</dt><dd>${esc(b.first_step)}</dd><dt>Risk</dt><dd>${esc(b.risks)}</dd></dl>
     ${b.turkey_angle ? `<div class="tr"><b>Türkiye açısı:</b> ${esc(b.turkey_angle)}</div>` : ""}
   </article>`;
@@ -285,7 +305,7 @@ function videoHTML(v) {
     <summary>
       <span class="v-date">${fmtDate(v.date)}</span>
       <${T} class="v-title">${esc(v.title_tr || v.title)}</${T}>
-      <span class="v-meta"><span class="tag ${promo ? "promo" : ""}">${esc(v.category)}</span><br><span class="mono">${fmtN(v.views)} izlenme · ${ideas.length} fikir</span></span>
+      <span class="v-meta"><span class="tag ${promo ? "promo" : ""}">${esc(v.category)}</span><br><span class="mono">${fmtN(v.views)} izlenme · ${ideas.length} fikir${ideas.some(total) ? ` · en iyi ${Math.max(...ideas.map(total))}/10` : ""}</span></span>
       <span class="v-orig">${esc(v.title)}</span>
     </summary>
     <div class="body">
@@ -298,7 +318,7 @@ function videoHTML(v) {
         <section><div class="label">Şema</div><div class="figure"><div class="ftitle">${esc(v.diagram?.title)}</div>${diagramHTML(v.diagram)}</div></section>
       </div>
       ${(v.numbers||[]).length ? `<section><div class="label">Videoda geçen rakamlar</div><div class="nums">${v.numbers.map(n => `<div class="num"><b>${fmtV(n.value)} ${esc(n.unit)}</b><span>${esc(n.label)}${n.context ? " · " + esc(n.context) : ""}</span></div>`).join("")}</div></section>` : ""}
-      <section><div class="label">İş fikirleri</div><div class="ideas">${ideas.map(ideaCard).join("")}</div></section>
+      <section><div class="label">İş fikirleri</div><div class="ideas">${ideas.map(b => ideaCard(b, v)).join("")}</div></section>
       ${(v.skeptic_notes||[]).length ? `<section class="skeptic"><div class="label" style="color:var(--seal)">Şüpheyle bakılacak noktalar</div><ul>${v.skeptic_notes.map(s => `<li>${esc(s)}</li>`).join("")}</ul></section>` : ""}
     </div>
   </details>`;
@@ -311,20 +331,21 @@ function filtered() {
     && (!q || JSON.stringify([v.title, v.title_tr, v.summary_tr, v.region, v.key_points, v.business_ideas]).toLocaleLowerCase("tr").includes(q)));
 }
 
-let sortKey = "date", sortDir = -1;
+let sortKey = "total", sortDir = -1;
 function render() {
   const vids = filtered();
   $("#view-videos").innerHTML = vids.length ? vids.map(videoHTML).join("") : `<div class="empty">Bu filtreyle eşleşen video yok. Aramayı veya kategoriyi değiştirin.</div>`;
   const cap = $("#cap").value;
   const rows = vids.flatMap(v => (v.business_ideas||[]).filter(b => !cap || b.capital === cap).map(b => ({...b, v})));
   const capOrd = {"Düşük":1,"Orta":2,"Yüksek":3};
+  const keyOf = (r, k) => k==="date" ? r.v.date : k==="capital" ? capOrd[r.capital]||0 : k==="difficulty" ? +r.difficulty : k==="originality" ? +r.originality||0 : k==="problem" ? +r.problem_solving||0 : k==="total" ? total(r) : r.name;
   rows.sort((a, b) => {
-    const k = sortKey, A = k==="date" ? a.v.date : k==="capital" ? capOrd[a.capital]||0 : k==="difficulty" ? +a.difficulty : a.name, B = k==="date" ? b.v.date : k==="capital" ? capOrd[b.capital]||0 : k==="difficulty" ? +b.difficulty : b.name;
-    return (A > B ? 1 : A < B ? -1 : 0) * sortDir;
+    const A = keyOf(a, sortKey), B = keyOf(b, sortKey);
+    return ((A > B ? 1 : A < B ? -1 : 0) * sortDir) || (RANK.get(rankKey(a.v, a)) || 0) - (RANK.get(rankKey(b.v, b)) || 0);
   });
   $("#view-ideas").innerHTML = rows.length ? `<div class="tablewrap"><table class="ideas-t"><thead><tr>
-    <th data-k="name">Fikir</th><th>Çözüm</th><th data-k="capital">Sermaye</th><th data-k="difficulty">Zorluk</th><th>Türkiye açısı</th><th data-k="date">Kaynak video</th></tr></thead><tbody>
-    ${rows.map(r => `<tr><td><b>${esc(r.name)}</b><div class="muted" style="font-size:.82rem">${esc(r.target)}</div></td><td>${esc(r.solution)}</td><td><span class="badge cap-${esc(r.capital)}">${esc(r.capital)}</span></td><td class="n">${esc(r.difficulty)}</td><td style="font-size:.85rem">${esc(r.turkey_angle)}</td><td style="font-size:.85rem"><a href="#v-${esc(r.v.id)}" data-open="${esc(r.v.id)}">${esc(r.v.title_tr || r.v.title)}</a><div class="mono muted" style="font-size:.75rem">${fmtDate(r.v.date)}</div></td></tr>`).join("")}
+    <th data-k="total">Sıra</th><th data-k="name">Fikir</th><th data-k="originality">Özgünlük</th><th data-k="problem">Sorun çözme</th><th data-k="total">Toplam</th><th>Değerlendirme</th><th data-k="capital">Sermaye</th><th data-k="difficulty">Zorluk</th><th data-k="date">Kaynak video</th></tr></thead><tbody>
+    ${rows.map(r => `<tr><td class="n">${RANK.get(rankKey(r.v, r)) || "—"}</td><td><b>${esc(r.name)}</b><div class="muted" style="font-size:.82rem">${esc(r.target)}</div></td><td class="n">${esc(r.originality ?? "—")}</td><td class="n">${esc(r.problem_solving ?? "—")}</td><td class="n"><b>${total(r) || "—"}</b></td><td style="font-size:.85rem">${esc(r.score_note)}${(r.similar||[]).length ? `<div class="muted" style="font-size:.78rem">Benzer: ${r.similar.map(s => esc(s.name)).join(" · ")}</div>` : ""}</td><td><span class="badge cap-${esc(r.capital)}">${esc(r.capital)}</span></td><td class="n">${esc(r.difficulty)}</td><td style="font-size:.85rem"><a href="#v-${esc(r.v.id)}" data-open="${esc(r.v.id)}">${esc(r.v.title_tr || r.v.title)}</a><div class="mono muted" style="font-size:.75rem">${fmtDate(r.v.date)}</div></td></tr>`).join("")}
     </tbody></table></div>` : `<div class="empty">Bu filtreyle eşleşen fikir yok.</div>`;
 }
 
@@ -336,7 +357,8 @@ function renderOverview() {
   const ideas = DATA.videos.reduce((a, v) => a + (v.business_ideas||[]).length, 0);
   const views = DATA.videos.reduce((a, v) => a + (v.views||0), 0);
   $("#stats").innerHTML = [
-    [DATA.videos.length, "video analiz edildi"], [ideas, "iş fikri"], [fmtN(views), "toplam izlenme"],
+    [DATA.videos.length, "video analiz edildi"], [ideas, "iş fikri"],
+    [DATA.videos.flatMap(v => v.business_ideas || []).filter(b => total(b) >= 8).length, "fikir 8+/10 puanlı"], [fmtN(views), "toplam izlenme"],
     [`${fmtDate(vids[0].date)} – ${fmtDate(vids.at(-1).date)}`, "kapsanan dönem"]
   ].map(([b, s]) => `<div class="stat"><b class="mono">${b}</b><span>${s}</span></div>`).join("");
   // timeline: one bar per video, log scale, colored by category
@@ -375,11 +397,13 @@ function renderPrint() {
     <li><span class="mono muted">—</span><a href="#fikirler">${esc(IDEAS_INDEX_TITLE)}</a><span class="mono toc-page" data-id="fikirler"></span></li></ol>`;
   $("#view-videos").before(toc);
   const idx = document.createElement("section"); idx.className = "ideas-index"; idx.id = "fikirler";
-  const groups = ["Düşük", "Orta", "Yüksek"].map(cap => [cap, vids.flatMap(v => (v.business_ideas || []).filter(b => b.capital === cap).map(b => ({...b, v})))]);
-  idx.innerHTML = `<h2>${esc(IDEAS_INDEX_TITLE)}</h2>` + groups.map(([cap, rows]) => `<h3>${esc(cap)} sermaye · ${rows.length} fikir</h3>
-    <table><thead><tr><th>Fikir</th><th>Çözüm</th><th>Zorluk</th><th>Kaynak video</th></tr></thead><tbody>
-    ${rows.map(r => `<tr><td><b>${esc(r.name)}</b><div class="muted" style="font-size:.8rem">${esc(r.target)}</div></td><td>${esc(r.solution)}</td><td class="mono">${esc(r.difficulty)}/5</td><td><a href="#v-${esc(r.v.id)}">${esc(r.v.title_tr || r.v.title)}</a><div class="mono muted" style="font-size:.75rem">${fmtDate(r.v.date)}</div></td></tr>`).join("")}
-    </tbody></table>`).join("");
+  const ranked = rankedIdeas();
+  const bands = [["8-10 puan: öne çıkanlar", r => total(r) >= 8], ["7 puan", r => total(r) === 7], ["6 puan", r => total(r) === 6], ["5 puan ve altı", r => total(r) <= 5]];
+  idx.innerHTML = `<h2>${esc(IDEAS_INDEX_TITLE)}</h2><p class="muted" style="max-width:72ch">Her fikir iki eksende 1-5 puanlandı: <b>özgünlük</b> (piyasada benzeri var mı, videodaki içgörüye ne kadar özgü) ve <b>sorun çözme derecesi</b> (sorun ne kadar gerçek, çözüm ne kadarını kapatıyor, ödeyen belli mi). Sıralama toplam puana göredir; eşitlikte sorun çözme öne geçer. Puanlar yorumdur, bağımsız pazar doğrulaması değildir.</p>`
+    + bands.map(([label, f]) => { const rows = ranked.filter(f); return rows.length ? `<h3>${esc(label)} · ${rows.length} fikir</h3>
+    <table><thead><tr><th>Sıra</th><th>Fikir</th><th>Özg.</th><th>Sorun</th><th>Toplam</th><th>Değerlendirme</th><th>Sermaye</th><th>Kaynak video</th></tr></thead><tbody>
+    ${rows.map(r => `<tr><td class="mono">${RANK.get(rankKey(r.v, r))}</td><td><b>${esc(r.name)}</b><div class="muted" style="font-size:.78rem">${esc(r.target)}</div></td><td class="mono">${esc(r.originality)}</td><td class="mono">${esc(r.problem_solving)}</td><td class="mono"><b>${total(r)}</b></td><td style="font-size:.82rem">${esc(r.score_note)}${(r.similar||[]).length ? `<div class="muted" style="font-size:.75rem">Benzer: ${r.similar.map(s => esc(s.name)).join(" · ")}</div>` : ""}</td><td style="font-size:.82rem">${esc(r.capital)}</td><td style="font-size:.82rem"><a href="#v-${esc(r.v.id)}">${esc(r.v.title_tr || r.v.title)}</a><div class="mono muted" style="font-size:.72rem">${fmtDate(r.v.date)}</div></td></tr>`).join("")}
+    </tbody></table>` : ""; }).join("");
   $("#view-videos").after(idx);
   document.fonts.ready.then(() => { window.__printReady = true; });
 }
@@ -387,7 +411,7 @@ function renderPrint() {
 window.setTocPages = map => { document.querySelectorAll(".toc-page").forEach(el => { if (map[el.dataset.id]) el.textContent = map[el.dataset.id]; }); };
 
 fetch("data.json").then(r => r.json()).then(d => {
-  DATA = d; renderOverview(); render();
+  DATA = d; buildRank(); renderOverview(); render();
   if (PRINT) { renderPrint(); return; }
   setTab(tab);
   const first = document.querySelector("details.video"); if (first && tab === "videos") first.open = true;
@@ -398,12 +422,12 @@ $("#q").addEventListener("input", render); $("#cat").addEventListener("change", 
 $("#tab-videos").onclick = () => setTab("videos"); $("#tab-ideas").onclick = () => setTab("ideas");
 document.addEventListener("click", e => {
   const c = e.target.closest("[data-cat]"); if (c) { $("#cat").value = $("#cat").value === c.dataset.cat ? "" : c.dataset.cat; render(); setTab("videos"); }
-  const th = e.target.closest("th[data-k]"); if (th) { sortDir = sortKey === th.dataset.k ? -sortDir : 1; sortKey = th.dataset.k; render(); }
+  const th = e.target.closest("th[data-k]"); if (th) { sortDir = sortKey === th.dataset.k ? -sortDir : (th.dataset.k === "name" ? 1 : -1); sortKey = th.dataset.k; render(); }
   const o = e.target.closest("[data-open]"); if (o) { e.preventDefault(); setTab("videos"); const el = document.getElementById("v-" + o.dataset.open); if (el) { el.open = true; el.scrollIntoView({behavior: "smooth"}); } }
 });
 
 // The latest PDF build lives in the artifact's asset store; update.py's workflow replaces this one line.
-const PDF_URL = "/_blob/fafcec3c69951afa691c30409a0a0dc2";
+const PDF_URL = "/_blob/ab84e260020c42381694f2f163887e74";
 $("#pdf-open").href = PDF_URL;
 (async () => {
   const btn = $("#pdf-save"), status = $("#pdf-status");

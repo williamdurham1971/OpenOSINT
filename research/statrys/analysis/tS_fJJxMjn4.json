@@ -1,117 +1,289 @@
 {
-  "id": "tS_fJJxMjn4",
-  "title_tr": "BYD: Otomotiv sektörünü sarsan yükseliş ve arkasındaki tartışmalı noktalar",
-  "category": "Şirket vakası",
-  "region": ["Çin", "Avrupa", "Güneydoğu Asya", "Brezilya"],
-  "summary_tr": "Video, bir batarya üreticisi olarak başlayan BYD'nin Alman, Japon ve Amerikan otomotiv devlerini nasıl sıkıştırdığını ve Tayland, Brezilya, Avrupa gibi pazarlarda hızla pay kaptığını anlatıyor. Resmi başarı hikâyesi üç karara dayandırılıyor: neredeyse tüm parçaları şirket içinde üretmek, şarj altyapısı zayıf Çin için şarj edilebilir hibritlere yüklenmek ve daha ucuz, güvenli LFP tabanlı Blade bataryayı geliştirmek. Ardından sunucu bu tablonun eksik olduğunu, BYD'nin yıllarca büyük devlet sübvansiyonlarıyla desteklendiğini ve Made in China 2025 stratejisinin aracı olduğunu savunuyor. Son bölümde tedarikçilere çok geç ödeme yoluyla gizlenen borç iddiası, sıfır kilometre ikinci el satış uygulaması, geri çağırmalar, Brezilya'daki işçi davası ve düşen kâr ile satışlar gibi çatlaklar sıralanıyor; ancak şirketin yakın vadede çökeceği iddia edilmiyor.",
-  "key_points": [
-    "Batı ve Japon üreticilerinin kâr kayıpları ve işten çıkarmaları büyük ölçüde Çinli rekabete, özellikle BYD'ye bağlanıyor.",
-    "BYD'nin dikey entegrasyonu çip krizi ve lityum fiyat artışı gibi şoklarda avantaj sağladı.",
-    "Şarj edilebilir hibrit stratejisi, şarj altyapısı zayıf geniş Çin pazarına erişim ve ölçek ekonomisi getirdi.",
-    "Video, BYD'nin rekabet gücünün önemli bir kısmının devlet sübvansiyonları ve sanayi politikasından geldiğini savunuyor.",
-    "Bağımsız bir araştırma firmasına göre tedarikçi finansmanı yoluyla bilançoda görünmeyen borç, resmi rakamın yaklaşık sekiz katı.",
-    "Kalite sorunları, işçi davası ve 2025-2026'daki kâr ve satış düşüşleri büyümenin sürdürülebilirliğini sorgulatıyor."
-  ],
-  "numbers": [
-    {"label": "Mercedes kâr düşüşü", "value": 28, "unit": "%", "context": "Son üç yıldaki otomotiv krizini örneklemek için verildi."},
-    {"label": "Porsche kâr düşüşü", "value": 92, "unit": "%", "context": "Tek yılda net kârdaki kayıp."},
-    {"label": "Stellantis zararı", "value": 26, "unit": "milyar $", "context": "Grubun tarihindeki en büyük zarar."},
-    {"label": "Volkswagen işten çıkarma", "value": 15000, "unit": "kişi", "context": "Duyurulan iş kesintisi."},
-    {"label": "BYD Tayland EV payı", "value": 40, "unit": "%", "context": "18 ayda ulaşılan elektrikli araç pazar payı."},
-    {"label": "Mazda Tayland üretim kesintisi", "value": 60, "unit": "%", "context": "Çinli rekabet sonrası üretimdeki azalma."},
-    {"label": "Singapur'da BYD payı", "value": 20, "unit": "% (beşte bir)", "context": "Geçen yıl satılan her beş yeni otomobilden biri."},
-    {"label": "Çinli markaların Avrupa EV payı", "value": 11, "unit": "% (üzeri)", "context": "Avrupa elektrikli araç satışlarındaki pay."},
-    {"label": "BYD Brezilya EV payı", "value": 72, "unit": "%", "context": "Tek yılda ulaşılan pay."},
-    {"label": "Merz'in Pekin heyeti", "value": 30, "unit": "CEO", "context": "Alman Başbakanın beraberindeki üst yönetici sayısı."},
-    {"label": "Kuruluş borcu", "value": 40000, "unit": "$", "context": "Wang Chuanfu'nun 1995'te kuzeninden aldığı borç."},
-    {"label": "2003 hisse değer kaybı", "value": 2.7, "unit": "milyar HKD", "context": "Otomobil fabrikası alımı sonrası iki günde kaybedilen piyasa değeri."},
-    {"label": "Doğrudan devlet sübvansiyonu 2015-2020", "value": 4.3, "unit": "milyar $", "context": "Bu dönemde alındığı söylenen toplam doğrudan sübvansiyon."},
-    {"label": "Araç başına kamu desteği (alt)", "value": 2000, "unit": "$", "context": "Analist tahminine göre zirve dönemde araç başına destek alt sınırı."},
-    {"label": "Araç başına kamu desteği (üst)", "value": 4000, "unit": "$", "context": "Aynı tahminin üst sınırı."},
-    {"label": "Resmi borç", "value": 42, "unit": "milyar yuan", "context": "BYD'nin raporladığı borç."},
-    {"label": "GMT Research tahmini borç", "value": 323, "unit": "milyar yuan", "context": "Tedarikçi finansmanı dahil edildiğinde hesaplanan borç."},
-    {"label": "Tedarikçiye ortalama ödeme süresi", "value": 275, "unit": "gün", "context": "Sektör normu 50-60 gün iken BYD'nin ortalaması."},
-    {"label": "Geçen yıl satış", "value": 4.25, "unit": "milyon araç", "context": "BYD'nin açıkladığı ve sıfır km uygulaması nedeniyle sorgulanan satış rakamı."},
-    {"label": "Eylül 2024 geri çağırma", "value": 97000, "unit": "araç (yaklaşık)", "context": "Direksiyon kolonu kusuru nedeniyle."},
-    {"label": "Ekim 2025 geri çağırma", "value": 115000, "unit": "araç", "context": "Başka bir kusur nedeniyle."},
-    {"label": "Haftalık resmi şikâyet", "value": 5000, "unit": "şikâyet", "context": "Çin sosyal medyasında tek haftada ulaşılan resmi başvuru sayısı."},
-    {"label": "Brezilya davasındaki işçi", "value": 163, "unit": "kişi", "context": "Pasaportlarına el konulduğu iddia edilen Çinli işçiler."},
-    {"label": "2025 net kâr değişimi", "value": -19, "unit": "%", "context": "BYD'nin 2025 net kârındaki düşüş."},
-    {"label": "Ocak 2026 küresel satış değişimi", "value": -41, "unit": "%", "context": "Yıllık bazda düşüş."}
-  ],
-  "chart": {
-    "type": "hbar",
-    "title": "Videoda anılan kâr düşüşleri",
-    "unit": "% (kârdaki düşüş)",
-    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. Dönemler farklı: Porsche tek yıl, Mercedes son üç yıllık anlatım içinde, BYD 2025 yılı.",
-    "data": [
-      {"label": "Porsche", "value": 92},
-      {"label": "Mercedes", "value": 28},
-      {"label": "BYD (2025)", "value": 19}
-    ]
+ "id": "tS_fJJxMjn4",
+ "title_tr": "BYD: Otomotiv sektörünü sarsan yükseliş ve arkasındaki tartışmalı noktalar",
+ "category": "Şirket vakası",
+ "region": [
+  "Çin",
+  "Avrupa",
+  "Güneydoğu Asya",
+  "Brezilya"
+ ],
+ "summary_tr": "Video, bir batarya üreticisi olarak başlayan BYD'nin Alman, Japon ve Amerikan otomotiv devlerini nasıl sıkıştırdığını ve Tayland, Brezilya, Avrupa gibi pazarlarda hızla pay kaptığını anlatıyor. Resmi başarı hikâyesi üç karara dayandırılıyor: neredeyse tüm parçaları şirket içinde üretmek, şarj altyapısı zayıf Çin için şarj edilebilir hibritlere yüklenmek ve daha ucuz, güvenli LFP tabanlı Blade bataryayı geliştirmek. Ardından sunucu bu tablonun eksik olduğunu, BYD'nin yıllarca büyük devlet sübvansiyonlarıyla desteklendiğini ve Made in China 2025 stratejisinin aracı olduğunu savunuyor. Son bölümde tedarikçilere çok geç ödeme yoluyla gizlenen borç iddiası, sıfır kilometre ikinci el satış uygulaması, geri çağırmalar, Brezilya'daki işçi davası ve düşen kâr ile satışlar gibi çatlaklar sıralanıyor; ancak şirketin yakın vadede çökeceği iddia edilmiyor.",
+ "key_points": [
+  "Batı ve Japon üreticilerinin kâr kayıpları ve işten çıkarmaları büyük ölçüde Çinli rekabete, özellikle BYD'ye bağlanıyor.",
+  "BYD'nin dikey entegrasyonu çip krizi ve lityum fiyat artışı gibi şoklarda avantaj sağladı.",
+  "Şarj edilebilir hibrit stratejisi, şarj altyapısı zayıf geniş Çin pazarına erişim ve ölçek ekonomisi getirdi.",
+  "Video, BYD'nin rekabet gücünün önemli bir kısmının devlet sübvansiyonları ve sanayi politikasından geldiğini savunuyor.",
+  "Bağımsız bir araştırma firmasına göre tedarikçi finansmanı yoluyla bilançoda görünmeyen borç, resmi rakamın yaklaşık sekiz katı.",
+  "Kalite sorunları, işçi davası ve 2025-2026'daki kâr ve satış düşüşleri büyümenin sürdürülebilirliğini sorgulatıyor."
+ ],
+ "numbers": [
+  {
+   "label": "Mercedes kâr düşüşü",
+   "value": 28,
+   "unit": "%",
+   "context": "Son üç yıldaki otomotiv krizini örneklemek için verildi."
   },
-  "diagram": {
-    "type": "flow",
-    "title": "Videoya göre BYD'nin yükseliş ve kırılganlık mekanizması",
-    "steps": [
-      {"label": "Batarya uzmanlığı", "detail": "Şirket, aracı motor yerine batarya etrafında tasarlama fikriyle otomotive girdi."},
-      {"label": "Dikey entegrasyon", "detail": "Çip, motor, elektronik ve camlara kadar parçaları kendisi üretti."},
-      {"label": "Hibrit ile ölçek", "detail": "Şarj altyapısı zayıf pazarlarda hibrit satışlarıyla hacim ve maliyet avantajı kazandı."},
-      {"label": "Devlet desteği", "detail": "Sübvansiyon, ucuz kredi ve kamu ihaleleri maliyet altı fiyatlamayı mümkün kıldı."},
-      {"label": "Küresel fiyat baskısı", "detail": "Rakipler aynı fiyatla kâr edemeyince pazar payı kaybetti."},
-      {"label": "Tedarikçi finansmanı", "detail": "Uzun ödeme vadeleri bilanço dışı bir borç yükü oluşturdu."},
-      {"label": "Çatlaklar", "detail": "Kalite sorunları, düşen kâr ve satış ile fiyat savaşı uyarıları kırılganlığı artırıyor."}
-    ]
+  {
+   "label": "Porsche kâr düşüşü",
+   "value": 92,
+   "unit": "%",
+   "context": "Tek yılda net kârdaki kayıp."
   },
-  "business_ideas": [
-    {
-      "name": "Çinli OEM tedarikçileri için alacak vadesi finansmanı ve risk analizi",
-      "insight": "BYD'nin tedarikçilerine sektör normunun çok üzerinde, ortalama 275 günde ödeme yaptığı iddiası.",
-      "problem": "Çinli otomotiv üreticilerine parça satmaya başlayan yerel tedarikçiler, çok uzun vadeler nedeniyle işletme sermayesi sıkışıklığı ve karşı taraf riski yaşıyor.",
-      "solution": "Tedarikçilere sözleşme öncesi vade ve ödeme davranışı analizi sunan, onaylı faturaları faktoring/kredi sigortası kuruluşlarıyla eşleştiren bir platform.",
-      "target": "Yabancı EV üreticilerine parça satan otomotiv yan sanayi KOBİ'leri",
-      "revenue_model": "Finansman eşleştirmesinde komisyon + risk raporu aboneliği",
-      "first_step": "Bursa, Kocaeli ve Manisa'daki 15 yan sanayi firmasıyla görüşüp Çinli müşterilerden ödeme vadesi tecrübelerini ve finansman ihtiyacını belgelemek; 2 faktoring şirketiyle ön mutabakat aramak.",
-      "capital": "Orta",
-      "difficulty": 3,
-      "turkey_angle": "BYD'nin Türkiye'de üretim yatırımı yerel tedarikçiler için hem fırsat hem vade riski yaratıyor; faktoring ve kredi sigortası mevzuatı Türkiye'de oturmuş durumda.",
-      "risks": "Faktoring lisansı gerektirmemek için yalnızca aracılık modeli kurulmalı; OEM'lerin tedarikçilerin veri paylaşımını sözleşmeyle kısıtlaması; ekonomik daralmada temerrüt riski."
-    },
-    {
-      "name": "Bağımsız elektrikli araç ve batarya sağlık ekspertizi",
-      "insight": "Videodaki sıfır kilometre ikinci el araç uygulaması, büyük geri çağırmalar ve yazılım/donanım şikâyetleri.",
-      "problem": "Çinli markaların elektrikli araçları ikinci el piyasasına girerken alıcılar batarya sağlığını, geri çağırma durumunu ve aracın gerçek geçmişini bilemiyor.",
-      "solution": "Batarya sağlık ölçümü, açık geri çağırma kontrolü, yazılım hata kodu taraması ve tescil geçmişini birleştiren, ikinci el ilanlarına eklenebilen standart bir EV ekspertiz raporu.",
-      "target": "İkinci el EV alıcıları, galericiler, filo kiralama şirketleri, sigortacılar",
-      "revenue_model": "Rapor başına ücret; galeri ve filo şirketleri için toplu fiyat; ilan platformlarıyla entegrasyon geliri",
-      "first_step": "Batarya teşhis cihazı tedarikçileriyle görüşüp maliyet çıkarmak ve 3 galeriyle 30 araçlık ücretli pilot yapmak.",
-      "capital": "Orta",
-      "difficulty": 3,
-      "turkey_angle": "Türkiye'de Çinli EV ithalatı ve yerli üretim hızla artıyor; mevcut ekspertiz sektörü içten yanmalı motora odaklı, EV bilgisi sınırlı.",
-      "risks": "Üreticilerin teşhis verisine erişimi kısıtlaması; yanlış rapor kaynaklı hukuki sorumluluk; büyük ekspertiz zincirlerinin hızla taklit etmesi."
-    },
-    {
-      "name": "Karşı taraf bilanço dışı borç taraması",
-      "insight": "Bağımsız bir araştırma firmasının tedarikçi finansmanı üzerinden gizli borcu ortaya çıkarması.",
-      "problem": "B2B satıcılar ve küçük yatırımcılar büyük müşterilerinin raporlanan borcuna bakıyor, ticari borç vadesi ve tedarikçi finansmanı programlarındaki riski görmüyor.",
-      "solution": "Halka açık şirketlerin finansal raporlarından ticari borç gün sayısı, tedarikçi finansmanı dipnotları ve nakit dönüşüm döngüsünü çıkarıp sektör ortalamasıyla karşılaştıran uyarı sistemi.",
-      "target": "Büyük müşterilere vadeli satış yapan ihracatçılar, kredi sigortası ekipleri, bireysel yatırımcılar",
-      "revenue_model": "Şirket izleme listesi başına abonelik",
-      "first_step": "BIST ve Hong Kong borsasından 30 şirket için ticari borç gün sayısını elle hesaplayıp ihracatçı kredi yöneticilerine gösterip ödeme isteğini test etmek.",
-      "capital": "Düşük",
-      "difficulty": 3,
-      "turkey_angle": "KAP verileri yapılandırılmış olduğu için Türk şirketleriyle başlamak kolay; ihracatçıların yabancı müşterileri için de genişletilebilir.",
-      "risks": "Yatırım tavsiyesi olarak algılanırsa SPK düzenlemelerine takılma; muhasebe dipnotlarının şirketler arası tutarsızlığı; yanlış alarm."
-    }
-  ],
-  "skeptic_notes": [
-    "Başlık BYD'yi 'dolandırıcılık' olarak sunuyor, ancak video sonunda şirketin çökmek üzere olmadığını kabul ediyor; tık odaklı başlık.",
-    "323 milyar yuanlık borç tahmini tek bir küçük araştırma firmasına (GMT Research) dayanıyor; Evergrande benzetmesi spekülatif.",
-    "Sıfır kilometre ikinci el uygulaması ve satıcı itirafları anonim kaynaklara dayanıyor; 4,25 milyon satışın ne kadarının gerçek olduğu belirsiz bırakılıyor.",
-    "Sübvansiyon tutarları ve araç başına 2.000-4.000 dolar desteği analist tahmini olarak veriliyor; kaynak belirtilmiyor.",
-    "Ocak 2026'daki %41 düşüş tek bir aya ait; mevsimsellik nedeniyle genel eğilimi yansıtmayabilir.",
-    "Pazar payı rakamlarının tabanı farklı: Singapur rakamı tüm yeni otomobiller, Tayland ve Brezilya rakamları yalnızca EV pazarı için.",
-    "Altyazıdaki 'Seal Lion' büyük olasılıkla bir BYD model adının yanlış yazımı; 'alpha dozen' ifadesi 'half a dozen' (yarım düzine) olmalı.",
-    "Avrupalı üreticilerin kâr kayıplarının tamamen BYD'ye bağlanması basitleştirme; başka etkenler videoda tartışılmıyor."
+  {
+   "label": "Stellantis zararı",
+   "value": 26,
+   "unit": "milyar $",
+   "context": "Grubun tarihindeki en büyük zarar."
+  },
+  {
+   "label": "Volkswagen işten çıkarma",
+   "value": 15000,
+   "unit": "kişi",
+   "context": "Duyurulan iş kesintisi."
+  },
+  {
+   "label": "BYD Tayland EV payı",
+   "value": 40,
+   "unit": "%",
+   "context": "18 ayda ulaşılan elektrikli araç pazar payı."
+  },
+  {
+   "label": "Mazda Tayland üretim kesintisi",
+   "value": 60,
+   "unit": "%",
+   "context": "Çinli rekabet sonrası üretimdeki azalma."
+  },
+  {
+   "label": "Singapur'da BYD payı",
+   "value": 20,
+   "unit": "% (beşte bir)",
+   "context": "Geçen yıl satılan her beş yeni otomobilden biri."
+  },
+  {
+   "label": "Çinli markaların Avrupa EV payı",
+   "value": 11,
+   "unit": "% (üzeri)",
+   "context": "Avrupa elektrikli araç satışlarındaki pay."
+  },
+  {
+   "label": "BYD Brezilya EV payı",
+   "value": 72,
+   "unit": "%",
+   "context": "Tek yılda ulaşılan pay."
+  },
+  {
+   "label": "Merz'in Pekin heyeti",
+   "value": 30,
+   "unit": "CEO",
+   "context": "Alman Başbakanın beraberindeki üst yönetici sayısı."
+  },
+  {
+   "label": "Kuruluş borcu",
+   "value": 40000,
+   "unit": "$",
+   "context": "Wang Chuanfu'nun 1995'te kuzeninden aldığı borç."
+  },
+  {
+   "label": "2003 hisse değer kaybı",
+   "value": 2.7,
+   "unit": "milyar HKD",
+   "context": "Otomobil fabrikası alımı sonrası iki günde kaybedilen piyasa değeri."
+  },
+  {
+   "label": "Doğrudan devlet sübvansiyonu 2015-2020",
+   "value": 4.3,
+   "unit": "milyar $",
+   "context": "Bu dönemde alındığı söylenen toplam doğrudan sübvansiyon."
+  },
+  {
+   "label": "Araç başına kamu desteği (alt)",
+   "value": 2000,
+   "unit": "$",
+   "context": "Analist tahminine göre zirve dönemde araç başına destek alt sınırı."
+  },
+  {
+   "label": "Araç başına kamu desteği (üst)",
+   "value": 4000,
+   "unit": "$",
+   "context": "Aynı tahminin üst sınırı."
+  },
+  {
+   "label": "Resmi borç",
+   "value": 42,
+   "unit": "milyar yuan",
+   "context": "BYD'nin raporladığı borç."
+  },
+  {
+   "label": "GMT Research tahmini borç",
+   "value": 323,
+   "unit": "milyar yuan",
+   "context": "Tedarikçi finansmanı dahil edildiğinde hesaplanan borç."
+  },
+  {
+   "label": "Tedarikçiye ortalama ödeme süresi",
+   "value": 275,
+   "unit": "gün",
+   "context": "Sektör normu 50-60 gün iken BYD'nin ortalaması."
+  },
+  {
+   "label": "Geçen yıl satış",
+   "value": 4.25,
+   "unit": "milyon araç",
+   "context": "BYD'nin açıkladığı ve sıfır km uygulaması nedeniyle sorgulanan satış rakamı."
+  },
+  {
+   "label": "Eylül 2024 geri çağırma",
+   "value": 97000,
+   "unit": "araç (yaklaşık)",
+   "context": "Direksiyon kolonu kusuru nedeniyle."
+  },
+  {
+   "label": "Ekim 2025 geri çağırma",
+   "value": 115000,
+   "unit": "araç",
+   "context": "Başka bir kusur nedeniyle."
+  },
+  {
+   "label": "Haftalık resmi şikâyet",
+   "value": 5000,
+   "unit": "şikâyet",
+   "context": "Çin sosyal medyasında tek haftada ulaşılan resmi başvuru sayısı."
+  },
+  {
+   "label": "Brezilya davasındaki işçi",
+   "value": 163,
+   "unit": "kişi",
+   "context": "Pasaportlarına el konulduğu iddia edilen Çinli işçiler."
+  },
+  {
+   "label": "2025 net kâr değişimi",
+   "value": -19,
+   "unit": "%",
+   "context": "BYD'nin 2025 net kârındaki düşüş."
+  },
+  {
+   "label": "Ocak 2026 küresel satış değişimi",
+   "value": -41,
+   "unit": "%",
+   "context": "Yıllık bazda düşüş."
+  }
+ ],
+ "chart": {
+  "type": "hbar",
+  "title": "Videoda anılan kâr düşüşleri",
+  "unit": "% (kârdaki düşüş)",
+  "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. Dönemler farklı: Porsche tek yıl, Mercedes son üç yıllık anlatım içinde, BYD 2025 yılı.",
+  "data": [
+   {
+    "label": "Porsche",
+    "value": 92
+   },
+   {
+    "label": "Mercedes",
+    "value": 28
+   },
+   {
+    "label": "BYD (2025)",
+    "value": 19
+   }
   ]
+ },
+ "diagram": {
+  "type": "flow",
+  "title": "Videoya göre BYD'nin yükseliş ve kırılganlık mekanizması",
+  "steps": [
+   {
+    "label": "Batarya uzmanlığı",
+    "detail": "Şirket, aracı motor yerine batarya etrafında tasarlama fikriyle otomotive girdi."
+   },
+   {
+    "label": "Dikey entegrasyon",
+    "detail": "Çip, motor, elektronik ve camlara kadar parçaları kendisi üretti."
+   },
+   {
+    "label": "Hibrit ile ölçek",
+    "detail": "Şarj altyapısı zayıf pazarlarda hibrit satışlarıyla hacim ve maliyet avantajı kazandı."
+   },
+   {
+    "label": "Devlet desteği",
+    "detail": "Sübvansiyon, ucuz kredi ve kamu ihaleleri maliyet altı fiyatlamayı mümkün kıldı."
+   },
+   {
+    "label": "Küresel fiyat baskısı",
+    "detail": "Rakipler aynı fiyatla kâr edemeyince pazar payı kaybetti."
+   },
+   {
+    "label": "Tedarikçi finansmanı",
+    "detail": "Uzun ödeme vadeleri bilanço dışı bir borç yükü oluşturdu."
+   },
+   {
+    "label": "Çatlaklar",
+    "detail": "Kalite sorunları, düşen kâr ve satış ile fiyat savaşı uyarıları kırılganlığı artırıyor."
+   }
+  ]
+ },
+ "business_ideas": [
+  {
+   "name": "Çinli OEM tedarikçileri için alacak vadesi finansmanı ve risk analizi",
+   "insight": "BYD'nin tedarikçilerine sektör normunun çok üzerinde, ortalama 275 günde ödeme yaptığı iddiası.",
+   "problem": "Çinli otomotiv üreticilerine parça satmaya başlayan yerel tedarikçiler, çok uzun vadeler nedeniyle işletme sermayesi sıkışıklığı ve karşı taraf riski yaşıyor.",
+   "solution": "Tedarikçilere sözleşme öncesi vade ve ödeme davranışı analizi sunan, onaylı faturaları faktoring/kredi sigortası kuruluşlarıyla eşleştiren bir platform.",
+   "target": "Yabancı EV üreticilerine parça satan otomotiv yan sanayi KOBİ'leri",
+   "revenue_model": "Finansman eşleştirmesinde komisyon + risk raporu aboneliği",
+   "first_step": "Bursa, Kocaeli ve Manisa'daki 15 yan sanayi firmasıyla görüşüp Çinli müşterilerden ödeme vadesi tecrübelerini ve finansman ihtiyacını belgelemek; 2 faktoring şirketiyle ön mutabakat aramak.",
+   "capital": "Orta",
+   "difficulty": 3,
+   "turkey_angle": "BYD'nin Türkiye'de üretim yatırımı yerel tedarikçiler için hem fırsat hem vade riski yaratıyor; faktoring ve kredi sigortası mevzuatı Türkiye'de oturmuş durumda.",
+   "risks": "Faktoring lisansı gerektirmemek için yalnızca aracılık modeli kurulmalı; OEM'lerin tedarikçilerin veri paylaşımını sözleşmeyle kısıtlaması; ekonomik daralmada temerrüt riski.",
+   "originality": 3,
+   "problem_solving": 4,
+   "score_note": "Faktoring var; Çinli OEM vade riski analizi fark.",
+   "similar": []
+  },
+  {
+   "name": "Bağımsız elektrikli araç ve batarya sağlık ekspertizi",
+   "insight": "Videodaki sıfır kilometre ikinci el araç uygulaması, büyük geri çağırmalar ve yazılım/donanım şikâyetleri.",
+   "problem": "Çinli markaların elektrikli araçları ikinci el piyasasına girerken alıcılar batarya sağlığını, geri çağırma durumunu ve aracın gerçek geçmişini bilemiyor.",
+   "solution": "Batarya sağlık ölçümü, açık geri çağırma kontrolü, yazılım hata kodu taraması ve tescil geçmişini birleştiren, ikinci el ilanlarına eklenebilen standart bir EV ekspertiz raporu.",
+   "target": "İkinci el EV alıcıları, galericiler, filo kiralama şirketleri, sigortacılar",
+   "revenue_model": "Rapor başına ücret; galeri ve filo şirketleri için toplu fiyat; ilan platformlarıyla entegrasyon geliri",
+   "first_step": "Batarya teşhis cihazı tedarikçileriyle görüşüp maliyet çıkarmak ve 3 galeriyle 30 araçlık ücretli pilot yapmak.",
+   "capital": "Orta",
+   "difficulty": 3,
+   "turkey_angle": "Türkiye'de Çinli EV ithalatı ve yerli üretim hızla artıyor; mevcut ekspertiz sektörü içten yanmalı motora odaklı, EV bilgisi sınırlı.",
+   "risks": "Üreticilerin teşhis verisine erişimi kısıtlaması; yanlış rapor kaynaklı hukuki sorumluluk; büyük ekspertiz zincirlerinin hızla taklit etmesi.",
+   "originality": 3,
+   "problem_solving": 4,
+   "score_note": "Avrupa'daki batarya test hizmetlerinin benzeri; Türkiye'de erken ama gelecek.",
+   "similar": []
+  },
+  {
+   "name": "Karşı taraf bilanço dışı borç taraması",
+   "insight": "Bağımsız bir araştırma firmasının tedarikçi finansmanı üzerinden gizli borcu ortaya çıkarması.",
+   "problem": "B2B satıcılar ve küçük yatırımcılar büyük müşterilerinin raporlanan borcuna bakıyor, ticari borç vadesi ve tedarikçi finansmanı programlarındaki riski görmüyor.",
+   "solution": "Halka açık şirketlerin finansal raporlarından ticari borç gün sayısı, tedarikçi finansmanı dipnotları ve nakit dönüşüm döngüsünü çıkarıp sektör ortalamasıyla karşılaştıran uyarı sistemi.",
+   "target": "Büyük müşterilere vadeli satış yapan ihracatçılar, kredi sigortası ekipleri, bireysel yatırımcılar",
+   "revenue_model": "Şirket izleme listesi başına abonelik",
+   "first_step": "BIST ve Hong Kong borsasından 30 şirket için ticari borç gün sayısını elle hesaplayıp ihracatçı kredi yöneticilerine gösterip ödeme isteğini test etmek.",
+   "capital": "Düşük",
+   "difficulty": 3,
+   "turkey_angle": "KAP verileri yapılandırılmış olduğu için Türk şirketleriyle başlamak kolay; ihracatçıların yabancı müşterileri için de genişletilebilir.",
+   "risks": "Yatırım tavsiyesi olarak algılanırsa SPK düzenlemelerine takılma; muhasebe dipnotlarının şirketler arası tutarsızlığı; yanlış alarm.",
+   "originality": 3,
+   "problem_solving": 3,
+   "score_note": "Finansal analiz aracı; alıcı dar.",
+   "similar": []
+  }
+ ],
+ "skeptic_notes": [
+  "Başlık BYD'yi 'dolandırıcılık' olarak sunuyor, ancak video sonunda şirketin çökmek üzere olmadığını kabul ediyor; tık odaklı başlık.",
+  "323 milyar yuanlık borç tahmini tek bir küçük araştırma firmasına (GMT Research) dayanıyor; Evergrande benzetmesi spekülatif.",
+  "Sıfır kilometre ikinci el uygulaması ve satıcı itirafları anonim kaynaklara dayanıyor; 4,25 milyon satışın ne kadarının gerçek olduğu belirsiz bırakılıyor.",
+  "Sübvansiyon tutarları ve araç başına 2.000-4.000 dolar desteği analist tahmini olarak veriliyor; kaynak belirtilmiyor.",
+  "Ocak 2026'daki %41 düşüş tek bir aya ait; mevsimsellik nedeniyle genel eğilimi yansıtmayabilir.",
+  "Pazar payı rakamlarının tabanı farklı: Singapur rakamı tüm yeni otomobiller, Tayland ve Brezilya rakamları yalnızca EV pazarı için.",
+  "Altyazıdaki 'Seal Lion' büyük olasılıkla bir BYD model adının yanlış yazımı; 'alpha dozen' ifadesi 'half a dozen' (yarım düzine) olmalı.",
+  "Avrupalı üreticilerin kâr kayıplarının tamamen BYD'ye bağlanması basitleştirme; başka etkenler videoda tartışılmıyor."
+ ]
 }

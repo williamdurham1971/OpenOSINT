@@ -79,7 +79,7 @@ def tidy_outline_titles(writer):
 def main():
     data = json.loads((SITE / "data.json").read_text())
     title_to_id = {squash(v.get("title_tr") or v["title"]): v["id"] for v in data["videos"]}
-    title_to_id[squash("Tüm iş fikirleri (sermaye ihtiyacına göre)")] = "fikirler"
+    title_to_id[squash("Tüm iş fikirleri: özgünlük ve sorun çözme sıralaması")] = "fikirler"
     WRAP.write_text(SKELETON.replace("{page}", (SITE / "index.html").read_text()))
     pw = playwright_module()
     srv = serve(SITE)

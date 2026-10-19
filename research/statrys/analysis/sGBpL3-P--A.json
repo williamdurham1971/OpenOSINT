@@ -1,103 +1,223 @@
 {
-  "id": "sGBpL3-P--A",
-  "title_tr": "Çin'in 15. Beş Yıllık Planı: hedeflenen sektörler ve Batı için anlamı",
-  "category": "Çin ekonomisi",
-  "region": ["Çin", "Avrupa", "ABD", "Güney Kore", "Japonya"],
-  "summary_tr": "Video, Çin'in beş yıllık planlarının güneş paneli, batarya, elektrikli araç, gemi inşası ve hızlı tren gibi sektörlerde küresel hakimiyetin önceden ilan edilmiş yol haritası olduğunu savunuyor. Plan bir sektörü listelediğinde devlet bankaları kredi önceliğini değiştiriyor, terfisi büyüme hedeflerine bağlı atanmış belediye başkanları da arazi, vergi tatili ve hatta doğrudan sermaye ile yatırımı çekmek için yarışıyor. Mart 2026'da kabul edilen 15. plan robotik, biyoteknoloji, havacılık, kuantum, hidrojen, yarı iletkenler ve YZ gibi alanları hedefliyor; ilaçta Çin'in artık kopyalayıcı değil mucit olmaya başladığı örneklerle anlatılıyor. Batı'nın seçim döngülerine bağlı kısa ömürlü sanayi politikalarının Çin'in süreklilik ve ölçeğiyle yarışamadığı, ancak sistemin aşırı kapasite ve büyük zararlar da ürettiği belirtiliyor. Önerilen strateji, Çin'le üretimde kafa kafaya yarışmak yerine ucuzlayan ürünlerin bir adım aşağısındaki (kurulum, entegrasyon, finansman) işlere konumlanmak.",
-  "key_points": [
-    "Beş yıllık planda yer alan sektörlere devlet bankaları ucuz ve hızlı kredi akıtıyor.",
-    "Yerel yöneticilerin terfisi hedeflere bağlı olduğu için şehirler yatırımları çekmek için yarışıyor.",
-    "Güneş paneli, gemi inşası ve hızlı trende Çin plan sonrası küresel liderliğe ulaştı.",
-    "15. plan robotik, biyoteknoloji, havacılık, kuantum, hidrojen, yarı iletken ve YZ'yi hedefliyor.",
-    "Batı'nın sanayi politikaları seçimlerle değişirken Çin'in hedefleri yıllarca sabit kalıyor.",
-    "Sistem aşırı kapasite ve büyük sektör zararları da üretiyor; fırsat değer zincirinin aşağısında yatıyor."
-  ],
-  "numbers": [
-    {"label": "Panel maliyet düşüşü", "value": 90, "unit": "%", "context": "Bir güneş panelinin on yılda kaybettiği maliyet."},
-    {"label": "Çin'in güneş paneli payı", "value": 80, "unit": "%", "context": "Dünyadaki panellerin 'yüzde 80'den fazlası' Çin'den geliyor."},
-    {"label": "Plan belgesi uzunluğu", "value": 141, "unit": "sayfa", "context": "Mart 2026'da yayımlanan yeni planın sayfa sayısı."},
-    {"label": "Hefei'nin NIO yatırımı", "value": 5, "unit": "milyar yuan", "context": "Hefei şehrinin 2020'de zor durumdaki NIO'ya koyduğu kamu parası."},
-    {"label": "Hefei'nin NIO hissesi", "value": 17, "unit": "%", "context": "Bu yatırımla alınan pay."},
-    {"label": "EV devlet desteği", "value": 230, "unit": "milyar $", "context": "Elektrikli araçlara verilen en az devlet desteği (muhafazakâr tahmin)."},
-    {"label": "Çin'in yeni gemi siparişi payı", "value": 70, "unit": "%", "context": "2024'te Çin tersanelerinin aldığı dünya yeni gemi siparişlerinin payı."},
-    {"label": "Çin'deki hızlı tren hattı payı", "value": 70, "unit": "%", "context": "Dünyadaki hızlı tren hatlarının Çin'deki payı."},
-    {"label": "Çin'deki diyabet hastası", "value": 148, "unit": "milyon kişi", "context": "Ozempic jenerikleri için hedef pazar büyüklüğü."},
-    {"label": "Novo Nordisk lisans ödemesi", "value": 2, "unit": "milyar $", "context": "Novo'nun Guangdong'daki bir şirketten zayıflama molekülü için 'en fazla' ödeyeceği tutar."},
-    {"label": "Çin kaynaklı ilaç lisans payı", "value": 33, "unit": "%", "context": "2025'te büyük ilaç şirketlerinin lisans harcamalarının üçte biri Çin'de icat edilen moleküllere gitti."},
-    {"label": "SolarEdge çeyreklik gelir artışı", "value": 42, "unit": "%", "context": "2026 başında panel üreticileri zarar ederken SolarEdge'in bir çeyrekteki büyümesi."},
-    {"label": "Güneş sektörü zararı (2024)", "value": 60, "unit": "milyar $", "context": "Aşırı kapasite nedeniyle sektörün 2024'teki yaklaşık zararı."}
-  ],
-  "chart": {
-    "type": "hbar",
-    "title": "Plan hedefine alınan sektörlerde Çin'in küresel payı",
-    "unit": "%",
-    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı",
-    "data": [
-      {"label": "Güneş paneli üretimi (en az)", "value": 80},
-      {"label": "Yeni gemi siparişleri (2024)", "value": 70},
-      {"label": "Hızlı tren hattı uzunluğu", "value": 70}
-    ]
+ "id": "sGBpL3-P--A",
+ "title_tr": "Çin'in 15. Beş Yıllık Planı: hedeflenen sektörler ve Batı için anlamı",
+ "category": "Çin ekonomisi",
+ "region": [
+  "Çin",
+  "Avrupa",
+  "ABD",
+  "Güney Kore",
+  "Japonya"
+ ],
+ "summary_tr": "Video, Çin'in beş yıllık planlarının güneş paneli, batarya, elektrikli araç, gemi inşası ve hızlı tren gibi sektörlerde küresel hakimiyetin önceden ilan edilmiş yol haritası olduğunu savunuyor. Plan bir sektörü listelediğinde devlet bankaları kredi önceliğini değiştiriyor, terfisi büyüme hedeflerine bağlı atanmış belediye başkanları da arazi, vergi tatili ve hatta doğrudan sermaye ile yatırımı çekmek için yarışıyor. Mart 2026'da kabul edilen 15. plan robotik, biyoteknoloji, havacılık, kuantum, hidrojen, yarı iletkenler ve YZ gibi alanları hedefliyor; ilaçta Çin'in artık kopyalayıcı değil mucit olmaya başladığı örneklerle anlatılıyor. Batı'nın seçim döngülerine bağlı kısa ömürlü sanayi politikalarının Çin'in süreklilik ve ölçeğiyle yarışamadığı, ancak sistemin aşırı kapasite ve büyük zararlar da ürettiği belirtiliyor. Önerilen strateji, Çin'le üretimde kafa kafaya yarışmak yerine ucuzlayan ürünlerin bir adım aşağısındaki (kurulum, entegrasyon, finansman) işlere konumlanmak.",
+ "key_points": [
+  "Beş yıllık planda yer alan sektörlere devlet bankaları ucuz ve hızlı kredi akıtıyor.",
+  "Yerel yöneticilerin terfisi hedeflere bağlı olduğu için şehirler yatırımları çekmek için yarışıyor.",
+  "Güneş paneli, gemi inşası ve hızlı trende Çin plan sonrası küresel liderliğe ulaştı.",
+  "15. plan robotik, biyoteknoloji, havacılık, kuantum, hidrojen, yarı iletken ve YZ'yi hedefliyor.",
+  "Batı'nın sanayi politikaları seçimlerle değişirken Çin'in hedefleri yıllarca sabit kalıyor.",
+  "Sistem aşırı kapasite ve büyük sektör zararları da üretiyor; fırsat değer zincirinin aşağısında yatıyor."
+ ],
+ "numbers": [
+  {
+   "label": "Panel maliyet düşüşü",
+   "value": 90,
+   "unit": "%",
+   "context": "Bir güneş panelinin on yılda kaybettiği maliyet."
   },
-  "diagram": {
-    "type": "flow",
-    "title": "Beş yıllık planın sektöre etkisi",
-    "steps": [
-      {"label": "Plan sektörü listeler", "detail": "Pekin beş yıllık planda hedef sektörleri kamuya açık şekilde ilan eder."},
-      {"label": "Devlet bankaları kredi açar", "detail": "Kredi memurları plana uyan projeleri iyi kredi sayar, finansman hızlı ve ucuzlar."},
-      {"label": "Yerel yöneticiler yarışır", "detail": "Terfi peşindeki atanmış yöneticiler arazi, vergi tatili ve sermaye sunar."},
-      {"label": "Kapasite patlar", "detail": "Çok sayıda firma sektöre girer, üretim dünya talebini aşabilir."},
-      {"label": "Fiyatlar çöker", "detail": "Aşırı arz fiyatları düşürür, yabancı ve yerli zayıf üreticiler elenir."},
-      {"label": "Aşağı akış fırsatı doğar", "detail": "Ucuzlayan ürünü kuran, entegre eden ve finanse eden işler büyür."}
-    ]
+  {
+   "label": "Çin'in güneş paneli payı",
+   "value": 80,
+   "unit": "%",
+   "context": "Dünyadaki panellerin 'yüzde 80'den fazlası' Çin'den geliyor."
   },
-  "business_ideas": [
-    {
-      "name": "KOBİ çatı güneş + batarya entegrasyonu ve kiralama",
-      "insight": "Videoda panel fiyatları çökünce panel üreticilerinin battığı, ancak kurulum, elektronik ve finansman işlerinin büyüdüğü anlatılıyor.",
-      "problem": "Türk KOBİ'leri yüksek elektrik maliyetinden yakınıyor ama çatı GES ve depolama yatırımının ön maliyetinden ve teknik karmaşıklığından çekiniyor.",
-      "solution": "Uygun maliyetli panel ve bataryaları, inverter ve izleme yazılımıyla birleştirip peşinatsız kiralama veya elektrik tasarrufu paylaşımı modeliyle sunan entegratör.",
-      "target": "Sanayi sitelerindeki atölyeler, soğuk hava depoları, oteller",
-      "revenue_model": "Aylık kira veya tasarruf paylaşımı; bakım-izleme aboneliği",
-      "first_step": "Bir organize sanayi bölgesinde 10 işletmenin elektrik faturalarını toplayıp tasarruf senaryosu hazırlamak ve 2'sinden niyet mektubu almak.",
-      "capital": "Yüksek",
-      "difficulty": 3,
-      "turkey_angle": "Türkiye'nin güneşlenme süresi yüksek ve lisanssız üretim mevzuatı mevcut; finansmanı leasing şirketleriyle ortak kurmak sermaye yükünü azaltır.",
-      "risks": "Çin menşeli panellere uygulanan ek gümrük/anti-damping önlemleri, mevzuat değişiklikleri, kur riski, tahsilat riski."
-    },
-    {
-      "name": "Tarım dronu hizmet ağı",
-      "insight": "Video, Çin'in hedeflediği ürünler (drone dahil) ucuzladıkça asıl fırsatın donanımı üretmek değil onunla yapılabilecek işlerde olduğunu söylüyor.",
-      "problem": "Türk çiftçileri ilaçlama ve gübreleme için pahalı ve verimsiz yöntemler kullanıyor; dronu tek başına almak küçük üretici için mantıksız.",
-      "solution": "Ucuzlayan tarım dronlarıyla dekar başı ücretle ilaçlama, haritalama ve verim analizi hizmeti veren bölgesel operatör ağı.",
-      "target": "Orta ölçekli çiftçiler, tarım kooperatifleri, sözleşmeli üretim yapan gıda firmaları",
-      "revenue_model": "Dekar başı hizmet ücreti; kooperatiflerle sezonluk sözleşme",
-      "first_step": "Bir ilçede 2 kooperatifle görüşüp 500 dekarlık pilot ilaçlama teklifi vermek ve gerekli pilot/izin şartlarını netleştirmek.",
-      "capital": "Orta",
-      "difficulty": 3,
-      "turkey_angle": "Türkiye'nin geniş tarım alanı ve kooperatif yapısı ölçeklenmeye uygun.",
-      "risks": "SHGM drone kayıt ve pilot lisansı kuralları, zirai ilaç uygulama mevzuatı, hava koşulları, ihracat kısıtlarıyla tedarik sorunları."
-    },
-    {
-      "name": "Çin plan radarı: sektör maruziyet raporu",
-      "insight": "Videoya göre plan belgesi ücretsiz ve önceden yayımlanıyor; Batılı şirketler bu sinyali okumadığı için kaybediyor.",
-      "problem": "Türk üreticiler, kendi sektörlerinin Çin'in hedef listesine girip girmediğini ve fiyat baskısının ne zaman geleceğini takip etmiyor.",
-      "solution": "Çin plan ve teşvik belgelerini Türkçeye özetleyip GTİP kodu bazında Türk ihracatıyla eşleştiren, sektör derneklerine yönelik çeyreklik risk-fırsat raporu.",
-      "target": "Sektör dernekleri, ihracatçı birlikleri, orta-büyük üreticiler",
-      "revenue_model": "Kurumsal abonelik; özel sektör raporları",
-      "first_step": "15. planın hedef sektörlerini Türkiye'nin ilk 50 ihraç kalemiyle eşleştiren ücretsiz bir örnek rapor hazırlayıp 3 ihracatçı birliğine sunmak.",
-      "capital": "Düşük",
-      "difficulty": 2,
-      "turkey_angle": "Türkiye'nin beyaz eşya, otomotiv yan sanayi ve tekstil gibi sektörleri Çin kapasitesine doğrudan açık.",
-      "risks": "Çince kaynakları doğru yorumlama zorluğu; raporun somut karara dönüşmemesi halinde yenileme düşüklüğü."
-    }
-  ],
-  "skeptic_notes": [
-    "Başlık ('tarihi değiştirecek') abartılı; videonun kendisi planların başarısız olabileceğini ve aşırı kapasite ürettiğini kabul ediyor.",
-    "Hefei-NIO yatırımının tutarı ve payı (5 milyar yuan, %17) bağımsız kaynaklarla doğrulanmalı.",
-    "Novo Nordisk'in 'en fazla 2 milyar dolar' ödemesi büyük ihtimalle kilometre taşı ödemeleri dahil manşet rakam; peşin ödeme çok daha düşük olabilir.",
-    "'Çin'in hızlı tren hattı payı %70' ile kanalın başka bir videosundaki 'üçte iki' ifadesi yakın ama birebir aynı değil.",
-    "SolarEdge'in yüzde 42 büyümesi tek bir çeyreğe ait ve düşük bazdan gelmiş olabilir; seçici örnek.",
-    "Altyazı hataları: 'Front Row' ve 'Sam list' gibi ifadeler bozuk ('same list' kastediliyor olabilir); 'it sets direction for 2035' bağlamı belirsiz.",
-    "Statrys'in şirket kurma ve para transferi hizmetlerine gönderme var (reklam içeriği)."
+  {
+   "label": "Plan belgesi uzunluğu",
+   "value": 141,
+   "unit": "sayfa",
+   "context": "Mart 2026'da yayımlanan yeni planın sayfa sayısı."
+  },
+  {
+   "label": "Hefei'nin NIO yatırımı",
+   "value": 5,
+   "unit": "milyar yuan",
+   "context": "Hefei şehrinin 2020'de zor durumdaki NIO'ya koyduğu kamu parası."
+  },
+  {
+   "label": "Hefei'nin NIO hissesi",
+   "value": 17,
+   "unit": "%",
+   "context": "Bu yatırımla alınan pay."
+  },
+  {
+   "label": "EV devlet desteği",
+   "value": 230,
+   "unit": "milyar $",
+   "context": "Elektrikli araçlara verilen en az devlet desteği (muhafazakâr tahmin)."
+  },
+  {
+   "label": "Çin'in yeni gemi siparişi payı",
+   "value": 70,
+   "unit": "%",
+   "context": "2024'te Çin tersanelerinin aldığı dünya yeni gemi siparişlerinin payı."
+  },
+  {
+   "label": "Çin'deki hızlı tren hattı payı",
+   "value": 70,
+   "unit": "%",
+   "context": "Dünyadaki hızlı tren hatlarının Çin'deki payı."
+  },
+  {
+   "label": "Çin'deki diyabet hastası",
+   "value": 148,
+   "unit": "milyon kişi",
+   "context": "Ozempic jenerikleri için hedef pazar büyüklüğü."
+  },
+  {
+   "label": "Novo Nordisk lisans ödemesi",
+   "value": 2,
+   "unit": "milyar $",
+   "context": "Novo'nun Guangdong'daki bir şirketten zayıflama molekülü için 'en fazla' ödeyeceği tutar."
+  },
+  {
+   "label": "Çin kaynaklı ilaç lisans payı",
+   "value": 33,
+   "unit": "%",
+   "context": "2025'te büyük ilaç şirketlerinin lisans harcamalarının üçte biri Çin'de icat edilen moleküllere gitti."
+  },
+  {
+   "label": "SolarEdge çeyreklik gelir artışı",
+   "value": 42,
+   "unit": "%",
+   "context": "2026 başında panel üreticileri zarar ederken SolarEdge'in bir çeyrekteki büyümesi."
+  },
+  {
+   "label": "Güneş sektörü zararı (2024)",
+   "value": 60,
+   "unit": "milyar $",
+   "context": "Aşırı kapasite nedeniyle sektörün 2024'teki yaklaşık zararı."
+  }
+ ],
+ "chart": {
+  "type": "hbar",
+  "title": "Plan hedefine alınan sektörlerde Çin'in küresel payı",
+  "unit": "%",
+  "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı",
+  "data": [
+   {
+    "label": "Güneş paneli üretimi (en az)",
+    "value": 80
+   },
+   {
+    "label": "Yeni gemi siparişleri (2024)",
+    "value": 70
+   },
+   {
+    "label": "Hızlı tren hattı uzunluğu",
+    "value": 70
+   }
   ]
+ },
+ "diagram": {
+  "type": "flow",
+  "title": "Beş yıllık planın sektöre etkisi",
+  "steps": [
+   {
+    "label": "Plan sektörü listeler",
+    "detail": "Pekin beş yıllık planda hedef sektörleri kamuya açık şekilde ilan eder."
+   },
+   {
+    "label": "Devlet bankaları kredi açar",
+    "detail": "Kredi memurları plana uyan projeleri iyi kredi sayar, finansman hızlı ve ucuzlar."
+   },
+   {
+    "label": "Yerel yöneticiler yarışır",
+    "detail": "Terfi peşindeki atanmış yöneticiler arazi, vergi tatili ve sermaye sunar."
+   },
+   {
+    "label": "Kapasite patlar",
+    "detail": "Çok sayıda firma sektöre girer, üretim dünya talebini aşabilir."
+   },
+   {
+    "label": "Fiyatlar çöker",
+    "detail": "Aşırı arz fiyatları düşürür, yabancı ve yerli zayıf üreticiler elenir."
+   },
+   {
+    "label": "Aşağı akış fırsatı doğar",
+    "detail": "Ucuzlayan ürünü kuran, entegre eden ve finanse eden işler büyür."
+   }
+  ]
+ },
+ "business_ideas": [
+  {
+   "name": "KOBİ çatı güneş + batarya entegrasyonu ve kiralama",
+   "insight": "Videoda panel fiyatları çökünce panel üreticilerinin battığı, ancak kurulum, elektronik ve finansman işlerinin büyüdüğü anlatılıyor.",
+   "problem": "Türk KOBİ'leri yüksek elektrik maliyetinden yakınıyor ama çatı GES ve depolama yatırımının ön maliyetinden ve teknik karmaşıklığından çekiniyor.",
+   "solution": "Uygun maliyetli panel ve bataryaları, inverter ve izleme yazılımıyla birleştirip peşinatsız kiralama veya elektrik tasarrufu paylaşımı modeliyle sunan entegratör.",
+   "target": "Sanayi sitelerindeki atölyeler, soğuk hava depoları, oteller",
+   "revenue_model": "Aylık kira veya tasarruf paylaşımı; bakım-izleme aboneliği",
+   "first_step": "Bir organize sanayi bölgesinde 10 işletmenin elektrik faturalarını toplayıp tasarruf senaryosu hazırlamak ve 2'sinden niyet mektubu almak.",
+   "capital": "Yüksek",
+   "difficulty": 3,
+   "turkey_angle": "Türkiye'nin güneşlenme süresi yüksek ve lisanssız üretim mevzuatı mevcut; finansmanı leasing şirketleriyle ortak kurmak sermaye yükünü azaltır.",
+   "risks": "Çin menşeli panellere uygulanan ek gümrük/anti-damping önlemleri, mevzuat değişiklikleri, kur riski, tahsilat riski.",
+   "originality": 2,
+   "problem_solving": 4,
+   "score_note": "Kalabalık pazar; finansman modeli tek fark.",
+   "similar": []
+  },
+  {
+   "name": "Tarım dronu hizmet ağı",
+   "insight": "Video, Çin'in hedeflediği ürünler (drone dahil) ucuzladıkça asıl fırsatın donanımı üretmek değil onunla yapılabilecek işlerde olduğunu söylüyor.",
+   "problem": "Türk çiftçileri ilaçlama ve gübreleme için pahalı ve verimsiz yöntemler kullanıyor; dronu tek başına almak küçük üretici için mantıksız.",
+   "solution": "Ucuzlayan tarım dronlarıyla dekar başı ücretle ilaçlama, haritalama ve verim analizi hizmeti veren bölgesel operatör ağı.",
+   "target": "Orta ölçekli çiftçiler, tarım kooperatifleri, sözleşmeli üretim yapan gıda firmaları",
+   "revenue_model": "Dekar başı hizmet ücreti; kooperatiflerle sezonluk sözleşme",
+   "first_step": "Bir ilçede 2 kooperatifle görüşüp 500 dekarlık pilot ilaçlama teklifi vermek ve gerekli pilot/izin şartlarını netleştirmek.",
+   "capital": "Orta",
+   "difficulty": 3,
+   "turkey_angle": "Türkiye'nin geniş tarım alanı ve kooperatif yapısı ölçeklenmeye uygun.",
+   "risks": "SHGM drone kayıt ve pilot lisansı kuralları, zirai ilaç uygulama mevzuatı, hava koşulları, ihracat kısıtlarıyla tedarik sorunları.",
+   "originality": 2,
+   "problem_solving": 3,
+   "score_note": "Türkiye'de hizmet verenler var.",
+   "similar": [
+    {
+     "id": "K9Xu_jW17NM",
+     "name": "Tarım ve denetim dronları için Çin kaynaklı ekipmanla hizmet işletmesi"
+    }
+   ]
+  },
+  {
+   "name": "Çin plan radarı: sektör maruziyet raporu",
+   "insight": "Videoya göre plan belgesi ücretsiz ve önceden yayımlanıyor; Batılı şirketler bu sinyali okumadığı için kaybediyor.",
+   "problem": "Türk üreticiler, kendi sektörlerinin Çin'in hedef listesine girip girmediğini ve fiyat baskısının ne zaman geleceğini takip etmiyor.",
+   "solution": "Çin plan ve teşvik belgelerini Türkçeye özetleyip GTİP kodu bazında Türk ihracatıyla eşleştiren, sektör derneklerine yönelik çeyreklik risk-fırsat raporu.",
+   "target": "Sektör dernekleri, ihracatçı birlikleri, orta-büyük üreticiler",
+   "revenue_model": "Kurumsal abonelik; özel sektör raporları",
+   "first_step": "15. planın hedef sektörlerini Türkiye'nin ilk 50 ihraç kalemiyle eşleştiren ücretsiz bir örnek rapor hazırlayıp 3 ihracatçı birliğine sunmak.",
+   "capital": "Düşük",
+   "difficulty": 2,
+   "turkey_angle": "Türkiye'nin beyaz eşya, otomotiv yan sanayi ve tekstil gibi sektörleri Çin kapasitesine doğrudan açık.",
+   "risks": "Çince kaynakları doğru yorumlama zorluğu; raporun somut karara dönüşmemesi halinde yenileme düşüklüğü.",
+   "originality": 3,
+   "problem_solving": 3,
+   "score_note": "Dernekler için rapor.",
+   "similar": [
+    {
+     "id": "K9Xu_jW17NM",
+     "name": "15. Beş Yıllık Plan sektörleri için Türkçe tedarikçi ve pazar istihbaratı"
+    }
+   ]
+  }
+ ],
+ "skeptic_notes": [
+  "Başlık ('tarihi değiştirecek') abartılı; videonun kendisi planların başarısız olabileceğini ve aşırı kapasite ürettiğini kabul ediyor.",
+  "Hefei-NIO yatırımının tutarı ve payı (5 milyar yuan, %17) bağımsız kaynaklarla doğrulanmalı.",
+  "Novo Nordisk'in 'en fazla 2 milyar dolar' ödemesi büyük ihtimalle kilometre taşı ödemeleri dahil manşet rakam; peşin ödeme çok daha düşük olabilir.",
+  "'Çin'in hızlı tren hattı payı %70' ile kanalın başka bir videosundaki 'üçte iki' ifadesi yakın ama birebir aynı değil.",
+  "SolarEdge'in yüzde 42 büyümesi tek bir çeyreğe ait ve düşük bazdan gelmiş olabilir; seçici örnek.",
+  "Altyazı hataları: 'Front Row' ve 'Sam list' gibi ifadeler bozuk ('same list' kastediliyor olabilir); 'it sets direction for 2035' bağlamı belirsiz.",
+  "Statrys'in şirket kurma ve para transferi hizmetlerine gönderme var (reklam içeriği)."
+ ]
 }

@@ -1,107 +1,239 @@
 {
-  "id": "RdpeOHdSv1E",
-  "title_tr": "Yapay zekâ beyaz yakalı işleri eritiyor: girişimciler için açılan fırsat penceresi",
-  "category": "Teknoloji & YZ",
-  "region": ["ABD", "Küresel"],
-  "summary_tr": "Video, büyük teknoloji ve danışmanlık şirketlerindeki toplu işten çıkarmaların yapay zekâ gerekçesiyle hızlandığını ve yalnızca giriş seviyesi değil hukuk, yazılım, finans analizi gibi uzmanlık işlerinin de tehdit altında olduğunu savunuyor. Sunucuya göre yapay zekâ bazı şirketler için gerçek bir verimlilik aracı, bazıları için ise borsada ödüllendirilen bir küçülme bahanesi. Aynı güç, eskiden 10-20 kişilik ekip ve risk sermayesi gerektiren bir şirketi kurmanın maliyetini birkaç yazılım aboneliğine indirdiği için girişimciler için büyük bir kaldıraç yaratıyor. Ancak bu avantajın kalıcı olmadığı, araçlar yaygınlaştıkça farkın kapanacağı ve erken başlayanların müşteri tabanı ile güvenilirlik biriktireceği vurgulanıyor; başlıktaki iki yıllık süre bu argümana dayanıyor.",
-  "key_points": [
-    "Amazon, Microsoft, Meta, Salesforce, Block ve Oracle gibi şirketlerin küçülmeleri yapay zekâ gerekçesiyle anlatılıyor ve piyasanın bu kararları ödüllendirdiği iddia ediliyor.",
-    "McKinsey örneğiyle, giriş seviyesi analist işlerinin otomasyonla bir kuşak kariyer basamağını ortadan kaldırdığı öne sürülüyor.",
-    "Yapay zekâ bilgiye erişimi ucuzlattığı için bilgi üzerine kurulu mesleklerin rekabet avantajı aşınıyor.",
-    "Ürün, marka, pazarlama ve destek işlerini yapay zekâ ile yürüten tek kişilik girişimlerin aylık maliyeti 200 doların altına inebiliyor.",
-    "Kodak örneği, yeni teknolojiye geç geçen şirketlerin pazar liderliğini kaybettiğini göstermek için kullanılıyor.",
-    "Yapay zekâ ile her şeyin kolayca taklit edilebildiği ortamda en kıt varlığın güvenilirlik ve geçmiş performans olduğu savunuluyor."
-  ],
-  "numbers": [
-    {"label": "ABD'de geçen yıl kaybedilen iş", "value": 1.2, "unit": "milyon kişi", "context": "ABD'de bir yılda işini kaybedenlerin sayısı olarak verildi."},
-    {"label": "Amazon işten çıkarma", "value": 16000, "unit": "kişi", "context": "Amazon'un son toplu işten çıkarması."},
-    {"label": "Microsoft işten çıkarma", "value": 15000, "unit": "kişi", "context": "Microsoft'un işten çıkardığı kişi sayısı."},
-    {"label": "Meta planlanan küçülme", "value": 20, "unit": "%", "context": "Meta'nın tüm iş gücünün bu oranını çıkarmak üzere olduğu söylendi."},
-    {"label": "Salesforce müşteri destek ekibi (önce)", "value": 9000, "unit": "kişi", "context": "Salesforce destek ekibinin küçülmeden önceki büyüklüğü."},
-    {"label": "Salesforce müşteri destek ekibi (sonra)", "value": 5000, "unit": "kişi", "context": "Yapay zekânın etkileşimlerin yarısını üstlenmesiyle ekibin indiği büyüklük."},
-    {"label": "Block küçülmesi", "value": 40, "unit": "%", "context": "Block'un Şubat'ta şirketin bu oranını çıkardığı söylendi."},
-    {"label": "Block hisse artışı", "value": 22, "unit": "%", "context": "İşten çıkarma duyurusu sonrası tek günde hisse yükselişi."},
-    {"label": "Oracle risk altındaki işler", "value": 30000, "unit": "kişi", "context": "Altyapı yatırımına nakit ayırmak için kesilebilecek en fazla iş sayısı."},
-    {"label": "McKinsey yapay zekâ ajanları", "value": 25000, "unit": "ajan", "context": "40.000 insan çalışanın yanında çalıştığı söylenen ajan sayısı."},
-    {"label": "McKinsey insan çalışan", "value": 40000, "unit": "kişi", "context": "McKinsey'in çalışan sayısı."},
-    {"label": "Otomatikleşen junior analist saati", "value": 1.5, "unit": "milyon saat", "context": "McKinsey'de geçen yıl otomasyona devredilen iş saati."},
-    {"label": "Anthropic'te yapay zekânın yazdığı kod", "value": 90, "unit": "%", "context": "Şirket içi kodun bu oranının yapay zekâ tarafından yazıldığı söylendi."},
-    {"label": "Girişimcinin aylık araç maliyeti", "value": 200, "unit": "$ (üst sınır)", "context": "Tüm yapay zekâ ve altyapı yığınının aylık maliyetinin bu tutarın altında olduğu iddiası."},
-    {"label": "YZ unicorn kurucularının ortalama yaşı (önce)", "value": 40, "unit": "yaş", "context": "4 yıl önceki ortalama kurucu yaşı."},
-    {"label": "YZ unicorn kurucularının ortalama yaşı (şimdi)", "value": 29, "unit": "yaş", "context": "Bugünkü ortalama kurucu yaşı."},
-    {"label": "Abone olmayan izleyici", "value": 84, "unit": "%", "context": "Kanal içi abonelik çağrısında verilen oran."}
-  ],
-  "chart": {
-    "type": "hbar",
-    "title": "Videoda anılan şirket bazlı işten çıkarmalar",
-    "unit": "kişi",
-    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. Oracle için verilen rakam 'en fazla' ifadesiyle söylendi.",
-    "data": [
-      {"label": "Oracle (en fazla)", "value": 30000},
-      {"label": "Amazon", "value": 16000},
-      {"label": "Microsoft", "value": 15000}
-    ]
+ "id": "RdpeOHdSv1E",
+ "title_tr": "Yapay zekâ beyaz yakalı işleri eritiyor: girişimciler için açılan fırsat penceresi",
+ "category": "Teknoloji & YZ",
+ "region": [
+  "ABD",
+  "Küresel"
+ ],
+ "summary_tr": "Video, büyük teknoloji ve danışmanlık şirketlerindeki toplu işten çıkarmaların yapay zekâ gerekçesiyle hızlandığını ve yalnızca giriş seviyesi değil hukuk, yazılım, finans analizi gibi uzmanlık işlerinin de tehdit altında olduğunu savunuyor. Sunucuya göre yapay zekâ bazı şirketler için gerçek bir verimlilik aracı, bazıları için ise borsada ödüllendirilen bir küçülme bahanesi. Aynı güç, eskiden 10-20 kişilik ekip ve risk sermayesi gerektiren bir şirketi kurmanın maliyetini birkaç yazılım aboneliğine indirdiği için girişimciler için büyük bir kaldıraç yaratıyor. Ancak bu avantajın kalıcı olmadığı, araçlar yaygınlaştıkça farkın kapanacağı ve erken başlayanların müşteri tabanı ile güvenilirlik biriktireceği vurgulanıyor; başlıktaki iki yıllık süre bu argümana dayanıyor.",
+ "key_points": [
+  "Amazon, Microsoft, Meta, Salesforce, Block ve Oracle gibi şirketlerin küçülmeleri yapay zekâ gerekçesiyle anlatılıyor ve piyasanın bu kararları ödüllendirdiği iddia ediliyor.",
+  "McKinsey örneğiyle, giriş seviyesi analist işlerinin otomasyonla bir kuşak kariyer basamağını ortadan kaldırdığı öne sürülüyor.",
+  "Yapay zekâ bilgiye erişimi ucuzlattığı için bilgi üzerine kurulu mesleklerin rekabet avantajı aşınıyor.",
+  "Ürün, marka, pazarlama ve destek işlerini yapay zekâ ile yürüten tek kişilik girişimlerin aylık maliyeti 200 doların altına inebiliyor.",
+  "Kodak örneği, yeni teknolojiye geç geçen şirketlerin pazar liderliğini kaybettiğini göstermek için kullanılıyor.",
+  "Yapay zekâ ile her şeyin kolayca taklit edilebildiği ortamda en kıt varlığın güvenilirlik ve geçmiş performans olduğu savunuluyor."
+ ],
+ "numbers": [
+  {
+   "label": "ABD'de geçen yıl kaybedilen iş",
+   "value": 1.2,
+   "unit": "milyon kişi",
+   "context": "ABD'de bir yılda işini kaybedenlerin sayısı olarak verildi."
   },
-  "diagram": {
-    "type": "flow",
-    "title": "Videonun neden-sonuç zinciri: işten çıkarmadan girişim fırsatına",
-    "steps": [
-      {"label": "Yapay zekâ maliyeti düşürüyor", "detail": "Kod, destek, analiz gibi işler birkaç dolarlık aboneliklerle yapılabilir hale geliyor."},
-      {"label": "Şirketler kadro küçültüyor", "detail": "Küçülme yapay zekâ gerekçesiyle duyuruluyor ve hisse fiyatı çoğu zaman yükseliyor."},
-      {"label": "Bilgi avantajı aşınıyor", "detail": "Uzmanlık mesleklerinin erişim üstünlüğü ucuz araçlarla ortadan kalkıyor."},
-      {"label": "Girişim maliyeti çöküyor", "detail": "Ekip ve sermaye ihtiyacı azaldığı için tek kişi şirket kurabiliyor."},
-      {"label": "Erken başlayan güven biriktiriyor", "detail": "Müşteri tabanı, işlem geçmişi ve itibar zamanla kazanılan ve kopyalanamayan varlıklar."},
-      {"label": "Araçlar yaygınlaşınca fark kapanıyor", "detail": "Herkes aynı araçlara sahip olduğunda avantaj yalnızca önceden kurulmuş işlerde kalıyor."}
-    ]
+  {
+   "label": "Amazon işten çıkarma",
+   "value": 16000,
+   "unit": "kişi",
+   "context": "Amazon'un son toplu işten çıkarması."
   },
-  "business_ideas": [
-    {
-      "name": "Türkçe KOBİ müşteri destek ajanı kurulum paketi",
-      "insight": "Salesforce örneğindeki gibi müşteri etkileşimlerinin büyük kısmının yapay zekâ ile yürütülebilmesi.",
-      "problem": "Türkiye'deki küçük e-ticaret ve hizmet işletmeleri WhatsApp, Instagram ve telefon üzerinden gelen tekrarlayan sorulara yanıt vermek için personel ayırıyor ve mesai dışında müşteri kaybediyor.",
-      "solution": "İşletmenin ürün kataloğu, kargo ve iade kurallarıyla beslenen, WhatsApp Business API ve Trendyol/Hepsiburada soru kutularına bağlanan, insana devretme kuralları olan hazır bir destek ajanı kurulumu ve aylık bakım hizmeti.",
-      "target": "Aylık yüzlerce mesaj alan 1-20 çalışanlı e-ticaret satıcıları, klinikler, kurslar",
-      "revenue_model": "Tek seferlik kurulum ücreti + mesaj hacmine göre aylık abonelik",
-      "first_step": "10 e-ticaret satıcısından son bir aylık müşteri mesajlarını (anonimleştirilmiş) alıp ne kadarının otomatik yanıtlanabileceğini ölçmek ve 3 işletmede ücretsiz pilot yapmak.",
-      "capital": "Düşük",
-      "difficulty": 2,
-      "turkey_angle": "Türkçe dil kalitesi ve yerel pazar yeri entegrasyonları yabancı rakiplere karşı avantaj; KVKK uyumlu veri işleme sözleşmesi şart.",
-      "risks": "Büyük platformların kendi yerleşik yapay zekâ yanıtlarını sunması; yanlış bilgi verme kaynaklı müşteri şikâyeti; KVKK ve yurt dışına veri aktarımı kuralları."
-    },
-    {
-      "name": "Yeni dijital işletmeler için doğrulanmış güven profili",
-      "insight": "Videonun, yapay zekâ ile her şeyin taklit edilebildiği dünyada en kıt varlığın güvenilirlik olduğu tespiti.",
-      "problem": "Yurt dışındaki alıcılar ve Türkiye'deki B2B müşteriler, birkaç günde kurulmuş profesyonel görünümlü sitelerin arkasında gerçek bir şirket olup olmadığını ayırt edemiyor.",
-      "solution": "Ticaret sicili, vergi levhası, banka hesabı sahipliği, adres ve geçmiş sipariş referanslarını kontrol edip işletmeye sitesine yerleştirebileceği, doğrulama tarihini gösteren bir güven rozeti ve herkese açık profil sayfası veren hizmet.",
-      "target": "İhracata yeni başlayan KOBİ'ler, B2B tedarikçiler, freelance ajanslar",
-      "revenue_model": "Yıllık doğrulama aboneliği; alıcı tarafına toplu sorgu API'si",
-      "first_step": "Yurt dışına satış yapan 20 Türk KOBİ'siyle ve onların 10 yabancı alıcısıyla görüşüp güven sorununun satın alma kararını gerçekten geciktirip geciktirmediğini doğrulamak.",
-      "capital": "Orta",
-      "difficulty": 3,
-      "turkey_angle": "MERSİS ve Ticaret Sicili Gazetesi kamuya açık veri sağlıyor; ihracatçı birlikleri ile ortaklık dağıtım kanalı olabilir.",
-      "risks": "Rozetin kendisinin taklit edilmesi; yanlış doğrulama halinde hukuki sorumluluk; ağ etkisi oluşmadan değer üretmemesi."
-    },
-    {
-      "name": "Tek kişilik ihracat girişimi için hazır operasyon yığını",
-      "insight": "Videonun, ödeme, dağıtım ve destek altyapısının hazır olduğu ve tek kişinin şirket işletebildiği iddiası.",
-      "problem": "Türkiye'den yurt dışına dijital ürün veya hizmet satmak isteyen tek kişilik girişimciler, Stripe'ın Türkiye'de doğrudan sunulmaması, şirket türü seçimi, fatura ve döviz tahsilatı gibi konularda haftalar kaybediyor.",
-      "solution": "Şahıs şirketi/limited seçimi, uygun ödeme altyapıları, e-fatura/e-arşiv, döviz tahsilatı ve yapay zekâ araçlarını adım adım kuran, mali müşavir ağıyla desteklenen paketlenmiş bir kurulum hizmeti.",
-      "target": "Yazılım, tasarım, eğitim içeriği satan bireysel girişimciler ve yeni işten çıkarılmış beyaz yakalılar",
-      "revenue_model": "Sabit fiyatlı kurulum paketi + mali müşavir ve ödeme sağlayıcı yönlendirme komisyonu",
-      "first_step": "Freelance ve indie hacker topluluklarında 50 kişilik bir anket yapıp en çok zaman kaybettikleri 3 adımı belirlemek, ardından 5 kişiye manuel kurulum yapıp süreyi ölçmek.",
-      "capital": "Düşük",
-      "difficulty": 2,
-      "turkey_angle": "Hizmet ihracatı için mevcut vergi teşvikleri ve gençlere yönelik istisnalar paketin değer önerisine eklenebilir; tamamen Türkiye'den yürütülebilir.",
-      "risks": "Vergi ve döviz mevzuatındaki sık değişiklikler; yanlış yönlendirme halinde müşterinin vergi cezası alması, bu yüzden her kurulumda yetkili mali müşavir onayı gerekli; düşük giriş bariyeri nedeniyle rekabet."
-    }
-  ],
-  "skeptic_notes": [
-    "İşten çıkarma rakamlarının (1,2 milyon, Amazon, Microsoft, Meta, Oracle) kaynağı videoda verilmiyor; Meta ve Oracle için ifadeler 'olmak üzere' ve 'en fazla' şeklinde, kesinleşmiş rakam değil.",
-    "Dario Amodei'ye atfedilen 'yazılım mühendislerinin 12 ay içinde tamamen yerini alacak' ifadesi güçlü bir yorum gibi duruyor; orijinal konuşmadan doğrulanmalı.",
-    "Altyazıdaki 'charges 14 500 companies' ifadesi büyük olasılıkla 'Fortune 500 companies' olarak söylenmiş; bir rakam olarak kullanılmadı.",
-    "Tek kişilik girişimlerin tüm yeni girişimlerin üçte birinden fazlası olduğu ve YZ unicorn kurucu yaşının 40'tan 29'a düştüğü iddiaları kaynaksız.",
-    "Başlıktaki 'Harvard mezunları bile iş bulamıyor' iddiası videoda hiç işlenmiyor; tık odaklı başlık.",
-    "'İki yıl kaldı' süresi analitik bir hesaba değil, sunucunun sezgisine dayanıyor.",
-    "Video sonunda Hong Kong/Singapur şirket kurulumu videosuna yönlendirme var; Statrys hizmetlerine dolaylı reklam içeriyor."
+  {
+   "label": "Microsoft işten çıkarma",
+   "value": 15000,
+   "unit": "kişi",
+   "context": "Microsoft'un işten çıkardığı kişi sayısı."
+  },
+  {
+   "label": "Meta planlanan küçülme",
+   "value": 20,
+   "unit": "%",
+   "context": "Meta'nın tüm iş gücünün bu oranını çıkarmak üzere olduğu söylendi."
+  },
+  {
+   "label": "Salesforce müşteri destek ekibi (önce)",
+   "value": 9000,
+   "unit": "kişi",
+   "context": "Salesforce destek ekibinin küçülmeden önceki büyüklüğü."
+  },
+  {
+   "label": "Salesforce müşteri destek ekibi (sonra)",
+   "value": 5000,
+   "unit": "kişi",
+   "context": "Yapay zekânın etkileşimlerin yarısını üstlenmesiyle ekibin indiği büyüklük."
+  },
+  {
+   "label": "Block küçülmesi",
+   "value": 40,
+   "unit": "%",
+   "context": "Block'un Şubat'ta şirketin bu oranını çıkardığı söylendi."
+  },
+  {
+   "label": "Block hisse artışı",
+   "value": 22,
+   "unit": "%",
+   "context": "İşten çıkarma duyurusu sonrası tek günde hisse yükselişi."
+  },
+  {
+   "label": "Oracle risk altındaki işler",
+   "value": 30000,
+   "unit": "kişi",
+   "context": "Altyapı yatırımına nakit ayırmak için kesilebilecek en fazla iş sayısı."
+  },
+  {
+   "label": "McKinsey yapay zekâ ajanları",
+   "value": 25000,
+   "unit": "ajan",
+   "context": "40.000 insan çalışanın yanında çalıştığı söylenen ajan sayısı."
+  },
+  {
+   "label": "McKinsey insan çalışan",
+   "value": 40000,
+   "unit": "kişi",
+   "context": "McKinsey'in çalışan sayısı."
+  },
+  {
+   "label": "Otomatikleşen junior analist saati",
+   "value": 1.5,
+   "unit": "milyon saat",
+   "context": "McKinsey'de geçen yıl otomasyona devredilen iş saati."
+  },
+  {
+   "label": "Anthropic'te yapay zekânın yazdığı kod",
+   "value": 90,
+   "unit": "%",
+   "context": "Şirket içi kodun bu oranının yapay zekâ tarafından yazıldığı söylendi."
+  },
+  {
+   "label": "Girişimcinin aylık araç maliyeti",
+   "value": 200,
+   "unit": "$ (üst sınır)",
+   "context": "Tüm yapay zekâ ve altyapı yığınının aylık maliyetinin bu tutarın altında olduğu iddiası."
+  },
+  {
+   "label": "YZ unicorn kurucularının ortalama yaşı (önce)",
+   "value": 40,
+   "unit": "yaş",
+   "context": "4 yıl önceki ortalama kurucu yaşı."
+  },
+  {
+   "label": "YZ unicorn kurucularının ortalama yaşı (şimdi)",
+   "value": 29,
+   "unit": "yaş",
+   "context": "Bugünkü ortalama kurucu yaşı."
+  },
+  {
+   "label": "Abone olmayan izleyici",
+   "value": 84,
+   "unit": "%",
+   "context": "Kanal içi abonelik çağrısında verilen oran."
+  }
+ ],
+ "chart": {
+  "type": "hbar",
+  "title": "Videoda anılan şirket bazlı işten çıkarmalar",
+  "unit": "kişi",
+  "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. Oracle için verilen rakam 'en fazla' ifadesiyle söylendi.",
+  "data": [
+   {
+    "label": "Oracle (en fazla)",
+    "value": 30000
+   },
+   {
+    "label": "Amazon",
+    "value": 16000
+   },
+   {
+    "label": "Microsoft",
+    "value": 15000
+   }
   ]
+ },
+ "diagram": {
+  "type": "flow",
+  "title": "Videonun neden-sonuç zinciri: işten çıkarmadan girişim fırsatına",
+  "steps": [
+   {
+    "label": "Yapay zekâ maliyeti düşürüyor",
+    "detail": "Kod, destek, analiz gibi işler birkaç dolarlık aboneliklerle yapılabilir hale geliyor."
+   },
+   {
+    "label": "Şirketler kadro küçültüyor",
+    "detail": "Küçülme yapay zekâ gerekçesiyle duyuruluyor ve hisse fiyatı çoğu zaman yükseliyor."
+   },
+   {
+    "label": "Bilgi avantajı aşınıyor",
+    "detail": "Uzmanlık mesleklerinin erişim üstünlüğü ucuz araçlarla ortadan kalkıyor."
+   },
+   {
+    "label": "Girişim maliyeti çöküyor",
+    "detail": "Ekip ve sermaye ihtiyacı azaldığı için tek kişi şirket kurabiliyor."
+   },
+   {
+    "label": "Erken başlayan güven biriktiriyor",
+    "detail": "Müşteri tabanı, işlem geçmişi ve itibar zamanla kazanılan ve kopyalanamayan varlıklar."
+   },
+   {
+    "label": "Araçlar yaygınlaşınca fark kapanıyor",
+    "detail": "Herkes aynı araçlara sahip olduğunda avantaj yalnızca önceden kurulmuş işlerde kalıyor."
+   }
+  ]
+ },
+ "business_ideas": [
+  {
+   "name": "Türkçe KOBİ müşteri destek ajanı kurulum paketi",
+   "insight": "Salesforce örneğindeki gibi müşteri etkileşimlerinin büyük kısmının yapay zekâ ile yürütülebilmesi.",
+   "problem": "Türkiye'deki küçük e-ticaret ve hizmet işletmeleri WhatsApp, Instagram ve telefon üzerinden gelen tekrarlayan sorulara yanıt vermek için personel ayırıyor ve mesai dışında müşteri kaybediyor.",
+   "solution": "İşletmenin ürün kataloğu, kargo ve iade kurallarıyla beslenen, WhatsApp Business API ve Trendyol/Hepsiburada soru kutularına bağlanan, insana devretme kuralları olan hazır bir destek ajanı kurulumu ve aylık bakım hizmeti.",
+   "target": "Aylık yüzlerce mesaj alan 1-20 çalışanlı e-ticaret satıcıları, klinikler, kurslar",
+   "revenue_model": "Tek seferlik kurulum ücreti + mesaj hacmine göre aylık abonelik",
+   "first_step": "10 e-ticaret satıcısından son bir aylık müşteri mesajlarını (anonimleştirilmiş) alıp ne kadarının otomatik yanıtlanabileceğini ölçmek ve 3 işletmede ücretsiz pilot yapmak.",
+   "capital": "Düşük",
+   "difficulty": 2,
+   "turkey_angle": "Türkçe dil kalitesi ve yerel pazar yeri entegrasyonları yabancı rakiplere karşı avantaj; KVKK uyumlu veri işleme sözleşmesi şart.",
+   "risks": "Büyük platformların kendi yerleşik yapay zekâ yanıtlarını sunması; yanlış bilgi verme kaynaklı müşteri şikâyeti; KVKK ve yurt dışına veri aktarımı kuralları.",
+   "originality": 1,
+   "problem_solving": 4,
+   "score_note": "En kalabalık alan, ama ihtiyaç gerçek.",
+   "similar": [
+    {
+     "id": "keH-LdEt53Y",
+     "name": "KOBİ'ler için açık kaynak LLM tabanlı müşteri hizmetleri kurulumu"
+    }
+   ]
+  },
+  {
+   "name": "Yeni dijital işletmeler için doğrulanmış güven profili",
+   "insight": "Videonun, yapay zekâ ile her şeyin taklit edilebildiği dünyada en kıt varlığın güvenilirlik olduğu tespiti.",
+   "problem": "Yurt dışındaki alıcılar ve Türkiye'deki B2B müşteriler, birkaç günde kurulmuş profesyonel görünümlü sitelerin arkasında gerçek bir şirket olup olmadığını ayırt edemiyor.",
+   "solution": "Ticaret sicili, vergi levhası, banka hesabı sahipliği, adres ve geçmiş sipariş referanslarını kontrol edip işletmeye sitesine yerleştirebileceği, doğrulama tarihini gösteren bir güven rozeti ve herkese açık profil sayfası veren hizmet.",
+   "target": "İhracata yeni başlayan KOBİ'ler, B2B tedarikçiler, freelance ajanslar",
+   "revenue_model": "Yıllık doğrulama aboneliği; alıcı tarafına toplu sorgu API'si",
+   "first_step": "Yurt dışına satış yapan 20 Türk KOBİ'siyle ve onların 10 yabancı alıcısıyla görüşüp güven sorununun satın alma kararını gerçekten geciktirip geciktirmediğini doğrulamak.",
+   "capital": "Orta",
+   "difficulty": 3,
+   "turkey_angle": "MERSİS ve Ticaret Sicili Gazetesi kamuya açık veri sağlıyor; ihracatçı birlikleri ile ortaklık dağıtım kanalı olabilir.",
+   "risks": "Rozetin kendisinin taklit edilmesi; yanlış doğrulama halinde hukuki sorumluluk; ağ etkisi oluşmadan değer üretmemesi.",
+   "originality": 3,
+   "problem_solving": 3,
+   "score_note": "Rozet modeli; benimsetme zor.",
+   "similar": []
+  },
+  {
+   "name": "Tek kişilik ihracat girişimi için hazır operasyon yığını",
+   "insight": "Videonun, ödeme, dağıtım ve destek altyapısının hazır olduğu ve tek kişinin şirket işletebildiği iddiası.",
+   "problem": "Türkiye'den yurt dışına dijital ürün veya hizmet satmak isteyen tek kişilik girişimciler, Stripe'ın Türkiye'de doğrudan sunulmaması, şirket türü seçimi, fatura ve döviz tahsilatı gibi konularda haftalar kaybediyor.",
+   "solution": "Şahıs şirketi/limited seçimi, uygun ödeme altyapıları, e-fatura/e-arşiv, döviz tahsilatı ve yapay zekâ araçlarını adım adım kuran, mali müşavir ağıyla desteklenen paketlenmiş bir kurulum hizmeti.",
+   "target": "Yazılım, tasarım, eğitim içeriği satan bireysel girişimciler ve yeni işten çıkarılmış beyaz yakalılar",
+   "revenue_model": "Sabit fiyatlı kurulum paketi + mali müşavir ve ödeme sağlayıcı yönlendirme komisyonu",
+   "first_step": "Freelance ve indie hacker topluluklarında 50 kişilik bir anket yapıp en çok zaman kaybettikleri 3 adımı belirlemek, ardından 5 kişiye manuel kurulum yapıp süreyi ölçmek.",
+   "capital": "Düşük",
+   "difficulty": 2,
+   "turkey_angle": "Hizmet ihracatı için mevcut vergi teşvikleri ve gençlere yönelik istisnalar paketin değer önerisine eklenebilir; tamamen Türkiye'den yürütülebilir.",
+   "risks": "Vergi ve döviz mevzuatındaki sık değişiklikler; yanlış yönlendirme halinde müşterinin vergi cezası alması, bu yüzden her kurulumda yetkili mali müşavir onayı gerekli; düşük giriş bariyeri nedeniyle rekabet.",
+   "originality": 2,
+   "problem_solving": 4,
+   "score_note": "Danışmanlar yapıyor; paketleme fark.",
+   "similar": []
+  }
+ ],
+ "skeptic_notes": [
+  "İşten çıkarma rakamlarının (1,2 milyon, Amazon, Microsoft, Meta, Oracle) kaynağı videoda verilmiyor; Meta ve Oracle için ifadeler 'olmak üzere' ve 'en fazla' şeklinde, kesinleşmiş rakam değil.",
+  "Dario Amodei'ye atfedilen 'yazılım mühendislerinin 12 ay içinde tamamen yerini alacak' ifadesi güçlü bir yorum gibi duruyor; orijinal konuşmadan doğrulanmalı.",
+  "Altyazıdaki 'charges 14 500 companies' ifadesi büyük olasılıkla 'Fortune 500 companies' olarak söylenmiş; bir rakam olarak kullanılmadı.",
+  "Tek kişilik girişimlerin tüm yeni girişimlerin üçte birinden fazlası olduğu ve YZ unicorn kurucu yaşının 40'tan 29'a düştüğü iddiaları kaynaksız.",
+  "Başlıktaki 'Harvard mezunları bile iş bulamıyor' iddiası videoda hiç işlenmiyor; tık odaklı başlık.",
+  "'İki yıl kaldı' süresi analitik bir hesaba değil, sunucunun sezgisine dayanıyor.",
+  "Video sonunda Hong Kong/Singapur şirket kurulumu videosuna yönlendirme var; Statrys hizmetlerine dolaylı reklam içeriyor."
+ ]
 }
