@@ -49,6 +49,11 @@ logger = logging.getLogger(__name__)
 
 _MAX_TOKENS = 4096
 
+DEFAULT_ANTHROPIC_MODEL = "claude-opus-5-5"
+# Opus 5.5 always thinks, and thinking tokens count toward max_tokens, so the
+# Anthropic agent needs more headroom than the 4096 the other providers use.
+_ANTHROPIC_MAX_TOKENS = 16000
+
 # ---------------------------------------------------------------------------
 # Tool definitions — Anthropic format
 # ---------------------------------------------------------------------------
@@ -575,7 +580,7 @@ class OpenOSINTAgent:
     def __init__(
         self,
         api_key: str | None = None,
-        model: str = "claude-sonnet-4-20250514",
+        model: str = DEFAULT_ANTHROPIC_MODEL,
     ) -> None:
         self.client = anthropic.AsyncAnthropic(
             api_key=api_key or os.environ.get("ANTHROPIC_API_KEY", "")
@@ -615,7 +620,7 @@ class OpenOSINTAgent:
             while True:
                 response = await self.client.messages.create(
                     model=self.model,
-                    max_tokens=_MAX_TOKENS,
+                    max_tokens=_ANTHROPIC_MAX_TOKENS,
                     system=SYSTEM_PROMPT,
                     tools=TOOL_DEFINITIONS,  # type: ignore[arg-type]
                     messages=messages,  # type: ignore[arg-type]

@@ -31,7 +31,12 @@ from rich.markdown import Markdown
 from rich.panel import Panel
 
 from openosint import __version__
-from openosint.agent import OllamaAgent, OpenAICompatibleAgent, OpenOSINTAgent
+from openosint.agent import (
+    DEFAULT_ANTHROPIC_MODEL,
+    OllamaAgent,
+    OpenAICompatibleAgent,
+    OpenOSINTAgent,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -309,7 +314,7 @@ class OpenOSINTRepl:
             self._display_model = openai_model
         else:
             self._agent = OpenOSINTAgent(api_key=self._api_key)
-            self._display_model = "claude-sonnet-4-20250514"
+            self._display_model = DEFAULT_ANTHROPIC_MODEL
 
         self._last_response: str = ""
         self._session_start: datetime = datetime.now()
