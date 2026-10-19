@@ -1,0 +1,200 @@
+{
+  "id": "pira0yipY9c",
+  "title_tr": "2026'da offshore bankacılık için öne çıkan 8 ülke",
+  "category": "Küresel finans & bankacılık",
+  "region": [
+    "Hong Kong",
+    "Singapur",
+    "Birleşik Arap Emirlikleri",
+    "Cayman Adaları",
+    "Panama",
+    "Mauritius",
+    "İsviçre",
+    "Belize"
+  ],
+  "summary_tr": "Video, sınır ötesi çalışan girişimciler için yurt dışı (offshore) banka hesabı açılabilecek sekiz ülkeyi; uzaktan hesap açma imkânı, asgari mevduat ve uyum (KYC) yükü açısından karşılaştırıyor. Hong Kong ve Singapur, güvenilirlik ile erişilebilirlik dengesi nedeniyle öne çıkarılıyor; BAE Orta Doğu/Afrika, Panama Amerika, Mauritius Hindistan/Afrika odaklı işler için konumlanıyor. Cayman ve İsviçre yüksek giriş eşiğiyle varlık yönetimine, Belize ise düşük maliyetli ama temel hizmetlere hitap ediyor. Genel mesaj, fintech sağlayıcıların geleneksel bankalara göre daha düşük eşik ve uzaktan başvuru sunduğu; yerel şirket kurmanın onay şansını artırdığı yönünde. Video aynı zamanda Statrys'in Hong Kong/Singapur şirket kuruluşu ve çok dövizli hesap hizmetinin reklamını yapıyor.",
+  "key_points": [
+    "Hong Kong'un bölgesel (territorial) vergi sistemi, yurt dışı kaynaklı geliri doğru yapılandırıldığında genellikle yerel vergi dışında bırakıyor.",
+    "Geleneksel bankalar çoğunlukla şube ziyareti veya video görüşme ve asgari bakiye isterken fintech sağlayıcılar uzaktan, düşük eşikle hesap açıyor.",
+    "BAE'de serbest bölgeler yabancı şirketlere yol açıyor, ancak pratikte yerel telefon numarası veya BAE'de imza yetkilisi sıkça gerekiyor.",
+    "Cayman ve İsviçre FATCA/CRS gibi uluslararası raporlamaya tam uyumlu; yani gizlilik değil, istikrar ve varlık yönetimi ön planda.",
+    "Mauritius'ta vergi avantajları ekonomik öz (substance) şartlarına bağlı; Belize daha ucuz ama hizmetleri daha temel.",
+    "Yabancı girişimci için hedef ülkede şirket kurmak hesap onayı ihtimalini belirgin biçimde artırıyor."
+  ],
+  "numbers": [
+    {
+      "label": "Hong Kong geleneksel banka asgari bakiye",
+      "value": 10000,
+      "unit": "HKD",
+      "context": "Geleneksel Hong Kong bankalarının istediği yaklaşık asgari bakiye (altyazıda '$10,000 Hong Kong dollars')."
+    },
+    {
+      "label": "Singapur asgari açılış mevduatı (alt)",
+      "value": 1000,
+      "unit": "SGD",
+      "context": "Geleneksel bankalarda 1.000-5.000 SGD aralığının alt sınırı."
+    },
+    {
+      "label": "Singapur asgari açılış mevduatı (üst)",
+      "value": 5000,
+      "unit": "SGD",
+      "context": "Geleneksel bankalarda 1.000-5.000 SGD aralığının üst sınırı."
+    },
+    {
+      "label": "BAE asgari bakiye (alt)",
+      "value": 5000,
+      "unit": "AED",
+      "context": "Geleneksel bankalarda banka ve hesap seviyesine göre 5.000-50.000 dirhem ve üzeri."
+    },
+    {
+      "label": "BAE asgari bakiye (üst)",
+      "value": 50000,
+      "unit": "AED",
+      "context": "Aynı aralığın üst sınırı; bazı bankalarda daha yüksek."
+    },
+    {
+      "label": "Cayman asgari mevduat (başlangıç)",
+      "value": 10000,
+      "unit": "USD",
+      "context": "Yaklaşık 10.000 $'dan başlayıp hesap türüne göre ciddi artan eşik."
+    },
+    {
+      "label": "Panama asgari mevduat (alt)",
+      "value": 1000,
+      "unit": "USD",
+      "context": "Geleneksel bankalarda 1.000-5.000 $; yerleşik olmayan şirketlere daha yüksek."
+    },
+    {
+      "label": "Panama asgari mevduat (üst)",
+      "value": 5000,
+      "unit": "USD",
+      "context": "Aynı aralığın üst sınırı."
+    },
+    {
+      "label": "Mauritius asgari mevduat (alt)",
+      "value": 5000,
+      "unit": "USD",
+      "context": "Geleneksel bankalarda 5.000-10.000 $ veya üzeri."
+    },
+    {
+      "label": "İsviçre asgari mevduat (başlangıç)",
+      "value": 10000,
+      "unit": "USD",
+      "context": "Geleneksel bankalarda yaklaşık 10.000 $'dan başlıyor; özel bankacılıkta çok daha yüksek."
+    },
+    {
+      "label": "Belize asgari mevduat (alt)",
+      "value": 1000,
+      "unit": "USD",
+      "context": "Hesap türüne göre yaklaşık 1.000-2.000 $ (altyazıda 'a,000')."
+    }
+  ],
+  "chart": {
+    "type": "hbar",
+    "title": "USD cinsinden verilen asgari mevduat eşikleri (alt sınır)",
+    "unit": "USD",
+    "source_note": "Videoda belirtilen 'tipik' rakamlar; bağımsız doğrulanmadı. HKD, SGD ve AED cinsinden verilen eşikler birim farkı nedeniyle grafiğe alınmadı.",
+    "data": [
+      {
+        "label": "Cayman Adaları",
+        "value": 10000
+      },
+      {
+        "label": "İsviçre",
+        "value": 10000
+      },
+      {
+        "label": "Mauritius",
+        "value": 5000
+      },
+      {
+        "label": "Panama",
+        "value": 1000
+      },
+      {
+        "label": "Belize",
+        "value": 1000
+      }
+    ]
+  },
+  "diagram": {
+    "type": "flow",
+    "title": "Offshore hesap için ülke seçme ve başvuru süreci",
+    "steps": [
+      {
+        "label": "Hedef pazarı belirle",
+        "detail": "Asya, Orta Doğu, Amerika veya Hindistan/Afrika odağı uygun ülkeyi daraltır."
+      },
+      {
+        "label": "Ülkeyi eşleştir",
+        "detail": "Örneğin Çin bağlantısı için Hong Kong, Latin Amerika için Panama, varlık yönetimi için İsviçre."
+      },
+      {
+        "label": "Yerel şirket kur",
+        "detail": "Hedef ülkede tüzel kişilik, yabancı girişimcinin hesap onay şansını artırır."
+      },
+      {
+        "label": "Banka mı fintech mi seç",
+        "detail": "Banka: ziyaret ve asgari bakiye; fintech: uzaktan başvuru, düşük eşik, aylık ücret."
+      },
+      {
+        "label": "KYC/AML dosyasını hazırla",
+        "detail": "Kimlik, iş modeli ve fon kaynağı belgeleriyle sıkı uyum kontrolünden geçilir."
+      },
+      {
+        "label": "Uyumu sürdür",
+        "detail": "CRS/FATCA raporlaması ve gereken yerlerde ekonomik öz şartları karşılanır."
+      }
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "Yurt dışı hesap başvurusu için KYC dosya hazırlık hizmeti",
+      "insight": "Videoya göre onay şansını belirleyen ana etkenler sıkı KYC, net iş modeli ve yerel şirket varlığı.",
+      "problem": "Türk ihracatçı ve yazılım şirketlerinin Hong Kong/Singapur/BAE hesap başvuruları eksik belge ve belirsiz fon kaynağı nedeniyle reddediliyor veya uzuyor.",
+      "solution": "Başvurudan önce şirket yapısı, müşteri/tedarikçi sözleşmeleri, fatura örnekleri ve fon kaynağı belgelerini bankaların beklediği formatta derleyen, İngilizce iş modeli özeti hazırlayan sabit fiyatlı paket.",
+      "target": "Yurt dışına hizmet/mal satan Türk KOBİ'ler ve freelancer şirketleri",
+      "revenue_model": "Dosya başına sabit ücret + başarılı hesap açılışında küçük ek ücret",
+      "first_step": "Son 1 yılda yurt dışı hesap başvurusu reddedilmiş 15 Türk girişimciyle görüşüp ret nedenlerini sınıflandırmak ve 3 pilot dosya hazırlamak.",
+      "capital": "Düşük",
+      "difficulty": 2,
+      "turkey_angle": "Tamamen uzaktan, Türkiye'den yürütülebilir; İngilizce yazışma ve uyum bilgisi yeterli. Türkiye'de yerleşik kişilerin yurt dışı hesap ve gelirlerini Türk vergi mevzuatına göre beyan yükümlülüğü ayrıca anlatılmalı.",
+      "risks": "Bankaların kararını garanti edememe; kara para aklama riski taşıyan müşteriyi kabul etmek itibar ve hukuki risk doğurur, bu nedenle hizmet kendi müşteri taramasını da yapmalı."
+    },
+    {
+      "name": "Türk vergi mukimleri için offshore yapı uyum kontrol aracı",
+      "insight": "Video vergi optimizasyonunu çekici gösterse de tüm önerilen ülkelerin CRS/FATCA ile bilgi paylaştığını vurguluyor.",
+      "problem": "Girişimciler 'vergisiz ülke' algısıyla şirket kurup Türkiye'deki beyan ve kontrol edilen yabancı kurum kurallarını gözden kaçırıyor.",
+      "solution": "Kullanıcının ikametgâhı, ortaklık oranı, gelir türü ve hedef ülkeye göre hangi beyanların gerektiğini, otomatik bilgi değişimiyle neyin görünür olacağını özetleyen ve bir mali müşavire yönlendiren soru-cevap aracı.",
+      "target": "Yurt dışında şirket veya hesap açmayı düşünen Türk girişimciler",
+      "revenue_model": "Ücretsiz ön test + mali müşavir/hukuk bürolarından yönlendirme komisyonu veya rapor başına ücret",
+      "first_step": "Türkçe bir ön test formu yayınlayıp 100 yanıt toplamak; 3 mali müşavirle sonuçların doğruluğunu birlikte kontrol etmek.",
+      "capital": "Düşük",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye'ye özgü mevzuat bilgisi gerektirdiği için yerli ekip avantajlı; içerik mutlaka meslek mensubu denetiminden geçmeli.",
+      "risks": "Vergi tavsiyesi sayılma riski; içerik yasal sınırları aşmamalı, mevzuat değişikliklerinde güncellenmeli. Araç vergiden kaçınma değil, beyan ve uyum odaklı olmalı."
+    },
+    {
+      "name": "Mauritius/BAE yapıları için ekonomik öz (substance) takip hizmeti",
+      "insight": "Video, Mauritius'ta avantajların ancak ekonomik öz şartları sağlanırsa geçerli olduğunu, BAE'de yerel temsilci gerektiğini belirtiyor.",
+      "problem": "Afrika ve Körfez'e açılan küçük şirketler, yerel ofis, yönetici, toplantı ve harcama şartlarını takip etmeyip yaptırım riskine giriyor.",
+      "solution": "Şirket bazında yıllık öz şartlarını takvime döken, belge kanıtlarını (yönetim kurulu tutanakları, yerel harcamalar) toplayan ve yerel hizmet sağlayıcılarla eşleştiren takip paneli.",
+      "target": "Afrika ve Körfez'e yapı kurmuş Türk müteahhit, ticaret ve lojistik şirketleri",
+      "revenue_model": "Şirket başına yıllık abonelik",
+      "first_step": "Mauritius ve BAE'de yapı kurmuş 10 Türk şirketiyle görüşüp en çok aksayan 3 uyum adımını belirlemek.",
+      "capital": "Orta",
+      "difficulty": 3,
+      "turkey_angle": "Türk şirketlerinin Afrika'daki varlığı bu nişi anlamlı kılıyor; yerel ortak kurum (corporate service provider) anlaşmaları şart.",
+      "risks": "Ülke kurallarının sık değişmesi; hizmetin yanlış uyum güvencesi vermesi durumunda sorumluluk riski."
+    }
+  ],
+  "skeptic_notes": [
+    "Reklam içeriği: video Statrys'in Hong Kong/Singapur şirket kuruluşu ve çok dövizli hesabını iki kez tanıtıyor; Hong Kong ve Singapur'un öne çıkarılması bu çıkarla örtüşüyor.",
+    "Altyazıda Statrys 'Status'/'status.com' olarak geçiyor; ayrıca 'FATKA' = FATCA, 'Maicius' = Mauritius, 'Bise/Biz' = Belize, 'Baloa' = Balboa olarak okunmalı.",
+    "Hong Kong eşiği altyazıda '$10,000 Hong Kong dollars' diye geçiyor; HKD 10.000 olarak okundu, USD olup olmadığı belirsiz.",
+    "Belize için 'a,000 to $2,000' ifadesi 1.000-2.000 $ olarak okundu; altyazı hatası olabilir.",
+    "Tüm mevduat eşikleri 'tipik' olarak verilmiş, banka adı veya kaynak yok; bankadan bankaya büyük farklılık gösterir.",
+    "Kapanıştaki özette Panama için 'bölgesel vergi özellikleri' deniyor, ama ana bölümde bundan söz edilmiyor; vergi iddiaları ülke bazında ayrıca doğrulanmalı.",
+    "Videoda 'vergi maruziyetini optimize etmek' bir amaç olarak sunuluyor; oysa kişinin yerleşik olduğu ülkedeki beyan yükümlülükleri hiç anılmıyor."
+  ]
+}

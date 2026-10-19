@@ -1,0 +1,126 @@
+{
+  "id": "CBqmA_84OAY",
+  "title_tr": "Filipinler'de büyümeyi ne yavaşlattı: yolsuzluk skandalı, enerji şoku ve demografi",
+  "category": "Güneydoğu Asya",
+  "region": ["Filipinler", "Vietnam", "Güneydoğu Asya"],
+  "summary_tr": "Video, Filipinler'de taşkın önleme projelerindeki yaklaşık 10 milyar dolarlık yolsuzluk skandalının ardından ekonominin nasıl yavaşladığını anlatıyor. Ana tez, soruşturma korkusuyla memurların proje onaylarını durdurması ve kamu inşaat harcamalarının bir çeyrekte %43,5 düşmesi; yani temizlik çabasının kısa vadede hırsızlıktan daha pahalıya mal olması. Ülkede zaten faaliyet gösteren yabancı şirketlerin yan kuruluşlarına para transferini kesmesi, Hürmüz kaynaklı enerji krizi ve yüksek enflasyon tabloyu ağırlaştırıyor. Buna karşın elektronik ihracatı, işçi dövizleri ve rezervler ekonomiyi ayakta tutuyor. Anlatıcı asıl uzun vadeli riskin doğurganlık hızının bir kuşakta %60 düşmesi olduğunu savunuyor.",
+  "key_points": [
+    "Taşkın önleme projelerinin bir kısmının hiç var olmadığı ortaya çıktı; senatör tutuklandı, meclis başkanı yargılanıyor.",
+    "Soruşturmalar nedeniyle memurlar imza atmaktan kaçındı ve kamu altyapı harcamaları bir çeyrekte %43,5 düştü.",
+    "Açıklanan yabancı yatırım taahhütleri artarken fiilen gelen yatırım %33,4 düştü; en sert düşüş ana şirketten yan kuruluşa transferlerde.",
+    "Ham petrolün %98'inin Orta Doğu'dan gelmesi, Hürmüz krizinde ulusal enerji acil durumuna yol açtı.",
+    "Elektronik ihracatı %20,7 büyüyerek ihracatın %59'una ulaştı ve ekonomiyi taşıyan ana kalem oldu.",
+    "Doğurganlık hızı 1993'teki 4,1'den 1,7'ye düştü; genç nüfus avantajı aşınıyor."
+  ],
+  "numbers": [
+    {"label": "Taşkın önleme bütçesi (3 yıl)", "value": 10, "unit": "milyar $", "context": "Setler, drenaj ve nehir bariyerleri için ayrılan kamu parası"},
+    {"label": "İncelenen proje", "value": 8000, "unit": "proje", "context": "Müfettişlerin incelediği yaklaşık proje sayısı"},
+    {"label": "15 müteahhide verilen ihale", "value": 2, "unit": "milyar $", "context": "15 müteahhidin aldığı kamu sözleşmeleri"},
+    {"label": "Meclis başkanıyla yargılanan kişi", "value": 86, "unit": "kişi", "context": "Eski meclis başkanıyla birlikte suçlananlar"},
+    {"label": "2010-2019 ortalama büyüme", "value": 6.41, "unit": "%", "context": "Yıllık ortalama büyüme"},
+    {"label": "Geçen yıl büyüme", "value": 4.4, "unit": "%", "context": "2025 büyümesi"},
+    {"label": "2026 ilk yarı büyüme", "value": 2.6, "unit": "%", "context": "Yılın ilk yarısı"},
+    {"label": "2026 1. çeyrek büyüme", "value": 2.3, "unit": "%", "context": "Altyapı harcamaları çökerken açıklanan büyüme"},
+    {"label": "Kamu altyapı harcaması düşüşü (2026 Ç1)", "value": -43.5, "unit": "%", "context": "Soruşturma korkusuyla onayların durması"},
+    {"label": "Çağrı merkezi/arka ofis çalışanı", "value": 1.9, "unit": "milyon kişi", "context": "Geçen yıl hizmet ihracatı sektöründe çalışanlar"},
+    {"label": "Hizmet ihracatı", "value": 40, "unit": "milyar $ (üzeri)", "context": "Çağrı merkezi ve arka ofis ihracatı"},
+    {"label": "İşçi dövizleri (2025)", "value": 39.62, "unit": "milyar $", "context": "Yurt dışındaki işçilerin gönderdiği para"},
+    {"label": "Nakit dövizin ekonomiye oranı", "value": 7.3, "unit": "% GSYH", "context": "İşçi dövizlerinin nakit kısmı"},
+    {"label": "Nüfus", "value": 112, "unit": "milyon kişi", "context": "Ülke nüfusu"},
+    {"label": "Yoksulluk oranı 2023", "value": 15.5, "unit": "%", "context": "İki yıl önce %18,1'di"},
+    {"label": "Elektrik fiyatı", "value": 200, "unit": "$/MWh", "context": "Bölgedeki en yüksek fiyat olarak anılıyor"},
+    {"label": "Ticaret açığı (Ocak-Temmuz)", "value": 37, "unit": "milyar $", "context": "İthalat 1991'den beri en yüksek seviyede"},
+    {"label": "Pirinç ithalatı (6 ay)", "value": 2.75, "unit": "milyon ton", "context": "%86'sı Vietnam'dan; dünyanın en büyük pirinç ithalatçısı"},
+    {"label": "Savcılığa sevk edilen yetkili", "value": 65, "unit": "kişi", "context": "Soruşturma komisyonunun sevk ettiği memurlar"},
+    {"label": "Yabancı yatırım taahhüdü artışı (2026 Ç2)", "value": 68.2, "unit": "%", "context": "Onaylanan yatırım taahhütleri; çoğu imalat"},
+    {"label": "Fiili yabancı yatırım düşüşü (ilk 5 ay)", "value": -33.4, "unit": "%", "context": "Merkez bankasının saydığı gerçekleşen yatırım"},
+    {"label": "Mayıs ayı yabancı yatırım", "value": 210, "unit": "milyon $", "context": "11 yılın en zayıf ayı"},
+    {"label": "Borçlanma araçları kalemi düşüşü", "value": -49.5, "unit": "%", "context": "Ana şirketten yan kuruluşa para transferleri"},
+    {"label": "Vietnam'a gelen yabancı yatırım (1 çeyrek)", "value": 5.4, "unit": "milyar $", "context": "Filipinler'in 5 ayda çektiğinin iki katından fazlası"},
+    {"label": "Orta Doğu'dan gelen ham petrol payı", "value": 98, "unit": "%", "context": "Ülkenin kullandığı ham petrolün kaynağı"},
+    {"label": "Kapanan akaryakıt istasyonu", "value": 425, "unit": "istasyon", "context": "24 Mart enerji acil durumu sırasında"},
+    {"label": "Yakıt stoku", "value": 45, "unit": "gün", "context": "57 günden 45 güne düştü"},
+    {"label": "Enflasyon (Nisan)", "value": 7.2, "unit": "%", "context": "Mart'ta %4,1'di"},
+    {"label": "Politika faizi", "value": 5, "unit": "%", "context": "Üst üste üç artış sonrası"},
+    {"label": "Peso rekor düşük", "value": 62.565, "unit": "peso/$", "context": "Dört seans üst üste tarihi dip"},
+    {"label": "Elektronik ihracatı (6 ay)", "value": 26.1, "unit": "milyar $", "context": "%20,7 artış; toplam ihracatın %59'u"},
+    {"label": "Elektronik sektörü rekor hedefi", "value": 54, "unit": "milyar $", "context": "Sektör birliğinin ikiye katladığı yıllık tahmin"},
+    {"label": "İşsizlik", "value": 4.9, "unit": "%", "context": "Güncel işsizlik oranı"},
+    {"label": "Eğitim harcaması artışı (Ç2)", "value": 12.7, "unit": "%", "context": "Taşkın bütçesinden geri alınan paranın yönlendirilmesi"},
+    {"label": "Doğurganlık hızı", "value": 1.7, "unit": "çocuk/kadın", "context": "1993'te 4,1; şehirlerde 1,5; yenilenme düzeyi 2,1"}
+  ],
+  "chart": {
+    "type": "bar",
+    "title": "Filipinler'de büyüme hızının düşüşü",
+    "unit": "% (yıllık reel büyüme)",
+    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. Dönemler farklı uzunlukta (on yıllık ortalama, yıl, yarıyıl, çeyrek).",
+    "data": [
+      {"label": "2010-2019 ortalaması", "value": 6.41},
+      {"label": "2025", "value": 4.4},
+      {"label": "2026 ilk yarı", "value": 2.6},
+      {"label": "2026 1. çeyrek", "value": 2.3}
+    ]
+  },
+  "diagram": {
+    "type": "flow",
+    "title": "Yolsuzluk temizliğinin büyümeyi yavaşlatma zinciri",
+    "steps": [
+      {"label": "Taşkın projelerinde yolsuzluk", "detail": "Kamu bayındırlık bütçesinden milyarlarca dolar kayboldu."},
+      {"label": "Soruşturma ve tutuklamalar", "detail": "Komisyon 65 yetkiliyi savcılığa sevk etti, üst düzey politikacılar yargılandı."},
+      {"label": "İmza korkusu", "detail": "Taşradaki memurlar adları listeye girmesin diye onayları erteledi."},
+      {"label": "Kamu inşaatı çöküyor", "detail": "Altyapı harcaması bir çeyrekte %43,5 düştü."},
+      {"label": "Büyüme ve güven düşüyor", "detail": "Büyüme %2,3'e geriledi, Fitch görünümü negatife çevirdi."},
+      {"label": "Mevcut yatırımcılar para çekiyor", "detail": "Ülkedeki yabancı şirketler yan kuruluşlarına transferi kesip bekliyor."}
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "Kamu altyapı projeleri için uydu görüntüsüyle ilerleme doğrulama",
+      "insight": "İncelenen taşkın projelerinin bir kısmının fiilen hiç inşa edilmediği ortaya çıktı.",
+      "problem": "Finansörler, denetçiler ve gazeteciler kâğıt üzerindeki bir altyapı projesinin sahada var olup olmadığını hızlı ve ucuz şekilde kontrol edemiyor.",
+      "solution": "İhale kayıtlarındaki koordinatları ticari uydu görüntüleriyle karşılaştırıp tarih bazlı inşaat ilerlemesi raporu üreten bir platform.",
+      "target": "Teminat mektubu veren bankalar, kalkınma bankaları, denetim kurumları, araştırmacı gazeteciler ve STK'lar",
+      "revenue_model": "Proje başına doğrulama raporu ve kurumsal izleme aboneliği",
+      "first_step": "Kamuya açık ihale verisinden 20 tamamlanmış görünen projeyi seçip uydu görüntüsüyle elle doğrulayarak bir örnek rapor yayımlamak",
+      "capital": "Orta",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye'den uzaktan yürütülebilir; aynı yöntem Türkiye'deki EKAP ihaleleri ve uluslararası kalkınma bankası projeleri için de uygulanabilir.",
+      "risks": "Uydu çözünürlüğünün küçük projeler için yetersizliği; siyasi baskı ve hukuki itirazlar; kamu kurumlarının satın alma süreçlerinin yavaşlığı."
+    },
+    {
+      "name": "Kamu onay süreçleri için denetim izi ve dosya tamlık aracı",
+      "insight": "Memurlar soruşturma korkusuyla imza atmayı bırakınca projeler durdu ve büyüme çöktü.",
+      "problem": "Onay yetkilileri, imzaladıkları dosyanın mevzuata uygun ve eksiksiz olduğunu belgeleyemediği için karar almaktan kaçınıyor.",
+      "solution": "Her proje türü için mevzuat kontrol listesi, belge tamlık kontrolü ve zaman damgalı değiştirilemez denetim izi sunan iş akışı yazılımı; imzacının neye dayanarak onay verdiğini kayda geçirir.",
+      "target": "Yerel yönetimler, kamu kurumları ve kamuya iş yapan büyük müteahhitler",
+      "revenue_model": "Kurum başına yıllık lisans ve kurulum ücreti",
+      "first_step": "Bir belediyenin imar/altyapı onay sürecindeki 10 dosyayı inceleyip eksik belge ve gecikme noktalarını haritalamak",
+      "capital": "Orta",
+      "difficulty": 4,
+      "turkey_angle": "Türkiye'de e-imza ve EBYS altyapısı yaygın; belediyelere ve kamu iktisadi teşebbüslerine modüler ürün olarak sunulabilir.",
+      "risks": "Kamu satın alma süreçlerinin uzunluğu; mevcut EBYS sağlayıcılarıyla rekabet; aracın yolsuzluğu önlemede yetersiz kalırsa güven kaybı."
+    },
+    {
+      "name": "Filipinler'de ticari çatı GES için Türk üretici distribütörlüğü",
+      "insight": "Filipinler'de elektrik 200 $/MWh ile bölgenin en pahalılarından ve ülke ithal yakıta bağımlı.",
+      "problem": "Filipin işletmeleri yüksek elektrik maliyeti ve enerji kesintileri nedeniyle rekabet gücünü kaybediyor.",
+      "solution": "Türk panel ve inverter üreticilerinin ürünlerini yerel kurulumcular ağıyla, depolama dahil paketler halinde ticari işletmelere sunmak.",
+      "target": "Filipinler'deki fabrikalar, soğuk zincir depoları, alışveriş merkezleri ve otel işletmeleri",
+      "revenue_model": "Distribütör marjı ve kurulumculardan hacim bazlı komisyon",
+      "first_step": "3 Türk panel üreticisinden ihracat fiyatı alıp Manila'daki 5 kurulum firmasıyla çevrimiçi görüşerek fiyat rekabetçiliğini test etmek",
+      "capital": "Orta",
+      "difficulty": 4,
+      "turkey_angle": "Türkiye'nin güçlü bir GES ekipman üretim sanayisi var; ancak Çin menşeli ürünlerle fiyat rekabeti zor olabilir.",
+      "risks": "Çin ürünlerine karşı fiyat dezavantajı; uzak pazar lojistiği; yerel sertifikasyon ve şebeke bağlantı mevzuatı; kur riski."
+    }
+  ],
+  "skeptic_notes": [
+    "Girişte 'büyüme bir yılda %2,3 düştü' deniyor, sonra 2026 1. çeyrek büyümesinin %2,3 olduğu söyleniyor; büyük olasılıkla ikincisi doğru.",
+    "Elektrik fiyatı önce 'bölgenin en yükseği', sonra 'bölgenin ikinci en pahalısı' olarak anılıyor; çelişkili.",
+    "Kamu inşaatı düşüşü girişte %43, ilerde %43,5 olarak veriliyor (yuvarlama).",
+    "'The Philippines even shares a seat in this year' ifadesi anlaşılmıyor (muhtemelen bölgesel bir dönem başkanlığına atıf; altyazı hatası).",
+    "'Dünyanın en büyük pirinç ithalatçısı' iddiası doğrulanmalı.",
+    "Hürmüz Boğazı'nın kapanması, ulusal enerji acil durumu ve Rusya'dan petrol alımı gibi olaylar tek anlatıcıya dayalı; bağımsız kaynaktan kontrol edilmeli.",
+    "Başlıktaki 'kötü bir şey oluyor' vurgusu, videonun kendi sonucu olan 'ülke batmıyor' tespitine göre abartılı."
+  ]
+}

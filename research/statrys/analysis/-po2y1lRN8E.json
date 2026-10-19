@@ -1,0 +1,91 @@
+{
+  "id": "-po2y1lRN8E",
+  "title_tr": "Hong Kong, offshore servet merkezi olarak İsviçre'yi geçti: bu ne anlama geliyor?",
+  "category": "Küresel finans & bankacılık",
+  "region": ["Hong Kong", "İsviçre", "Çin", "Singapur"],
+  "summary_tr": "Video, Hong Kong'un yaklaşık 3 trilyon dolarlık sınır ötesi servetle İsviçre'yi geçerek dünyanın bir numaralı offshore servet merkezi olduğunu, ancak bunun 'küresel bir zafer' olmadığını savunuyor. Hong Kong'daki servetin yüzde 60'ından fazlası anakara Çin'den geliyor; şehir, sermaye kontrolü altındaki Çin parasının açık finans sistemine eriştiği bir 'yan kapı' işlevi görüyor. Kalan kısmın bir bölümü Avrupa ve Körfez'den Çin pazarına erişmek isteyen aile ofislerinden geliyor. Zenginlerin artık tek ülkeye bağlı kalmayıp parayı, şirketi ve yaşam yerini farklı ülkelere dağıttığı ('yargı alanı çeşitlendirmesi') anlatılıyor; İsviçre ise yaşam kalitesiyle insanları çekmeye devam ediyor. Video ayrıca küçük girişimcilerin de Hong Kong veya Singapur'da şirket kurabileceğini vurgulayarak Statrys'in hizmetlerini tanıtıyor.",
+  "key_points": [
+    "Hong Kong'un offshore servet hacmi İsviçre'yi geçti ve büyüme hızı da daha yüksek.",
+    "Hong Kong'daki paranın çoğunluğu anakara Çin'den geliyor; bu durum Delaware'in ABD şirketleri için oynadığı role benzetiliyor.",
+    "Hong Kong'un asıl avantajı gizlilik değil, Çin'e yakın kalırken uluslararası finans sistemine erişim sağlaması.",
+    "Yeni aile ofislerinin bir kısmı Avrupa ve Körfez'den gelerek Çin'e ters yönden erişmeye çalışıyor.",
+    "Rus varlıklarının dondurulması sonrası zenginler varlıklarını birden fazla ülkeye dağıtma stratejisine yöneldi.",
+    "İsviçre servetin değil insanların yaşamak için seçtiği yer olmayı sürdürüyor."
+  ],
+  "numbers": [
+    {"label": "Hong Kong'daki offshore servet", "value": 3, "unit": "trilyon $", "context": "Hong Kong'da tutulan başkalarına ait servetin yaklaşık büyüklüğü."},
+    {"label": "Hong Kong büyümesi", "value": 11, "unit": "%", "context": "Hong Kong'daki offshore servetin geçen yılki büyümesi (yaklaşık)."},
+    {"label": "İsviçre büyümesi", "value": 8, "unit": "%", "context": "İsviçre'nin geçen yıl payını büyütme oranı (yaklaşık)."},
+    {"label": "2030 farkı", "value": 600, "unit": "milyar $", "context": "Hong Kong'un 2030'da İsviçre'nin önünde olacağı öngörülen tutar."},
+    {"label": "Halka arz bekleyen şirketler (bu yıl)", "value": 500, "unit": "şirket", "context": "Hong Kong borsasında halka arz için sıradaki şirket sayısı."},
+    {"label": "Halka arz bekleyen şirketler (önceki yıl)", "value": 300, "unit": "şirket", "context": "Bir önceki yılın karşılaştırma rakamı."},
+    {"label": "Anakara Çin kaynaklı pay", "value": 60, "unit": "%", "context": "Hong Kong'daki paranın 'yüzde 60'ın üzerinde' anakara Çin'den geldiği söylendi."},
+    {"label": "Delaware'deki şirket sayısı", "value": 2, "unit": "milyon şirket", "context": "Delaware benzetmesinde eyalette kayıtlı şirket sayısı."},
+    {"label": "Shenzhen–Hong Kong mesafesi", "value": 40, "unit": "km", "context": "Paranın kapalı sistemden açık sisteme geçerken kat ettiği fiziksel mesafe."},
+    {"label": "Greater Bay Area nüfusu", "value": 86, "unit": "milyon kişi", "context": "Hong Kong, Shenzhen ve diğer şehirleri kapsayan pazarın büyüklüğü."},
+    {"label": "İsviçre'ye net milyoner göçü", "value": 3000, "unit": "kişi", "context": "Geçen yıl İsviçre'ye fiziksel olarak taşınan net milyoner sayısı."}
+  ],
+  "chart": null,
+  "diagram": {
+    "type": "flow",
+    "title": "Hong Kong 'yan kapı' mekanizması",
+    "steps": [
+      {"label": "Çin'de servet birikiyor", "detail": "Anakara Çin'de yeni servetler oluşuyor ancak yuan sıkı kontrol altında."},
+      {"label": "Ön kapı kısıtlı", "detail": "Büyük tutarları resmi kanallardan yurt dışına çıkarmak yavaş, limitli ve izleniyor."},
+      {"label": "Hong Kong'a geçiş", "detail": "Para kısa bir mesafeyle kendi para birimi ve bankaları olan açık bir sisteme geçiyor."},
+      {"label": "Küresel piyasalara erişim", "detail": "Hong Kong bankaları New York ve Londra'ya bağlı olduğu için para dünyaya açılıyor."},
+      {"label": "Ters yönde yabancı sermaye", "detail": "Avrupa ve Körfez aile ofisleri aynı kapıdan Çin teknolojisi ve tüketim pazarına giriyor."},
+      {"label": "Varlık çeşitlendirmesi", "detail": "Zenginler parayı, şirketi ve pasaportu farklı ülkelere bölerek tek ülke riskini azaltıyor."}
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "Türk e-ihracatçılar için HK/Singapur yapı karar ve uyum aracı",
+      "insight": "Videoda, Çin'den tedarik edip dünyaya satan küçük markaların da Hong Kong veya Singapur'da şirket kurarak büyük oyuncuların kullandığı sisteme girebildiği anlatılıyor.",
+      "problem": "Türk girişimciler yurt dışı şirket kurarken Türkiye'deki vergi yükümlülüklerini (kontrol edilen yabancı kurum, tam mükellefiyet, transfer fiyatlandırması) gözden kaçırıp sonradan cezayla karşılaşabiliyor.",
+      "solution": "Şirketin tedarik, satış ve ortaklık yapısına göre HK, Singapur veya Türkiye seçeneklerini karşılaştıran, Türkiye tarafındaki raporlama yükümlülüklerini listeleyen ve yerel mali müşavir/hukukçu ağına yönlendiren bir çevrim içi araç.",
+      "target": "Çin'den ürün tedarik eden Türk Amazon/Etsy satıcıları ve e-ihracat KOBİ'leri",
+      "revenue_model": "Ücretli rapor + iş ortağı mali müşavir/kuruluş hizmetlerinden komisyon",
+      "first_step": "Yurt dışı şirketi olan 15 Türk e-ihracatçı ile görüşüp yaşadıkları vergi/bankacılık sorunlarını listelemek; bir vergi uzmanıyla 10 soruluk karar ağacı prototipi çıkarmak.",
+      "capital": "Düşük",
+      "difficulty": 2,
+      "turkey_angle": "Türkiye'de e-ihracat hızla büyüyor; Türkçe ve Türk mevzuatına odaklı bir araç yabancı rakiplerden ayrışır.",
+      "risks": "Vergi danışmanlığı yetkisi gerektiren konularda yalnızca bilgilendirme yapılmalı; KVK'daki kontrol edilen yabancı kurum kazancı ve kanuni merkez kuralları nedeniyle yurt dışı şirket vergiden kaçınma aracı olarak kullanılamaz; MASAK ve CRS bildirimleri unutulmamalı."
+    },
+    {
+      "name": "Greater Bay Area'ya Türk tüketici markası sınır ötesi satış paketi",
+      "insight": "Videoda Hong Kong'un Shenzhen ve çevre şehirlerle birlikte 86 milyon kişilik tek bir pazarın kapısı olduğu vurgulanıyor.",
+      "problem": "Türk gıda, kozmetik ve tekstil markaları Çin'e girmek için anakara şirketi kurmanın maliyeti ve karmaşıklığından çekiniyor.",
+      "solution": "Hong Kong'da antrepo/temsil, sınır ötesi e-ticaret platformlarına listeleme ve Çince içerik üretimini paketleyen, ürün başına deneme satışı yapan bir hizmet.",
+      "target": "Zeytinyağı, lokum, kuru meyve, doğal kozmetik ve ev tekstili üreten Türk KOBİ markaları",
+      "revenue_model": "Kurulum ücreti + satış üzerinden komisyon",
+      "first_step": "3 Türk markasından 20'şer ürünle Hong Kong merkezli bir sınır ötesi platformda 30 günlük test kampanyası açıp dönüşüm ve iade oranlarını ölçmek.",
+      "capital": "Orta",
+      "difficulty": 4,
+      "turkey_angle": "Türk gıda ürünleri Çin'de niş ama tanınıyor; İstanbul'daki Çince bilen mezunlar içerik ekibi için kaynak olabilir.",
+      "risks": "Çin gıda/kozmetik ithalat tescil kuralları, gümrük değişiklikleri, yüksek pazarlama maliyeti ve jeopolitik riskler."
+    },
+    {
+      "name": "Varlık ve belge haritalama hizmeti (yasal çeşitlendirme için)",
+      "insight": "Videoya göre zenginler artık parayı, şirketi ve oturumu farklı ülkelere bölüyor; bu da çok ülkeli belge ve yükümlülük karmaşası yaratıyor.",
+      "problem": "Birden fazla ülkede hesap, şirket ve gayrimenkulü olan aileler hangi belgenin nerede olduğunu, hangi bildirim tarihlerinin geldiğini takip edemiyor.",
+      "solution": "Varlıkların ülke bazında haritasını çıkaran, yenileme ve beyan takvimlerini hatırlatan, uyum belgelerini güvenli kasada tutan bir yazılım; ayrıca mirasçılar için erişim protokolü.",
+      "target": "Türkiye ve Körfez'deki çok ülkeli varlığı olan aileler ve onların mali müşavirleri",
+      "revenue_model": "Yıllık abonelik; müşavirlere çoklu müşteri lisansı",
+      "first_step": "5 mali müşavir ve 10 aile ile görüşerek en çok kaçırılan son tarihleri belirlemek ve basit bir takvim/kasa prototipi test etmek.",
+      "capital": "Orta",
+      "difficulty": 3,
+      "turkey_angle": "Yurt dışında varlığı olan Türk ailelerin sayısı artıyor; Türkçe arayüz ve Türk beyan takvimi ayırt edici olur.",
+      "risks": "Veri güvenliği ve KVKK; hizmet varlık gizleme veya vergi kaçırma amacıyla kullanılmamalı, tüm yapı beyan ve uyum odaklı olmalı."
+    }
+  ],
+  "skeptic_notes": [
+    "Başlıktaki '3 trilyon dolar İsviçre'den çıktı' ifadesi yanıltıcı: video aslında Hong Kong'daki toplam sınır ötesi servetten bahsediyor, İsviçre'den o kadar paranın çıktığını söylemiyor.",
+    "Sıralama ve rakamların kaynağı (hangi danışmanlık raporu) belirtilmiyor; 2030 projeksiyonu bir tahmin.",
+    "Altyazıdaki '3,000 billion' ifadesi 3 trilyon olarak okundu.",
+    "'Shenzhen ve dokuz diğer şehir' ifadesi Greater Bay Area'nın bileşimini tam doğru aktarmıyor olabilir (Makao da bölgeye dahildir); kontrol edilmeli.",
+    "İsviçre'nin yüzde 8'lik büyümesi 'payını büyüttü' diye anlatılıyor; pay mı hacim mi olduğu belirsiz.",
+    "Video büyük ölçüde Statrys'in şirket kuruluşu ve hesap açma hizmetinin tanıtımına bağlanıyor (reklam içeriği); vergi avantajları basitleştirilmiş anlatılıyor.",
+    "Grafik için aynı birimde karşılaştırılabilir en az 3 değer bulunmadığından chart null bırakıldı."
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "id": "hFMYoItZ28A",
+  "title_tr": "Batılı markalar Asya'da neden başarısız oluyor: IKEA, Sephora ve yerelleşerek kazananlar",
+  "category": "Şirket vakası",
+  "region": ["Çin", "Japonya", "Güney Kore", "Vietnam"],
+  "summary_tr": "Video, IKEA ve Sephora başta olmak üzere birçok Batılı perakendecinin Çin ve Asya'da gerileyip çekilmesini inceliyor. Anlatıcıya göre bu şirketler pazara girerken doğru okumuş, ancak 20 yıllık başarı onları rehavete itmiş; e-ticaret, canlı yayın satışları, yerel markalar ve paralel kanallar avantajlarını hızla aşındırmış. Karşı örnek olarak KitKat Japonya, Yum China, McDonald's Çin, L'Oréal ve Adidas, ürün, yönetim veya Ar-Ge kontrolünü yerel ekiplere bırakarak başarılı olmuş. Video, pazara giren şirketlerin değer önermelerini yerel platformlarda, rakip lansmanlarında ve müşteri yorumlarında düzenli olarak test etmesini öneriyor.",
+  "key_points": [
+    "IKEA Çin geliri 2019'daki yaklaşık 2,3 milyar dolardan 2024'te 1,6 milyar dolara düştü; satışların %25,7'si çevrimiçi.",
+    "Sephora Çin 2021'deki kârdan sonra zarara geçti; yerel ortak Jahwa (altyazıda 'Jawa') %19 hissesini satarak çıktı.",
+    "Markalar kendi çevrimiçi mağazalarını açtı, gümrüksüz mağazalar ve canlı yayınlar indirimle satış yaptı; mağaza deneme yeri haline geldi.",
+    "Yerel rakipler hızla kopyalayıp daha ucuza ve hızlı teslim ediyor; Çinli markalar kozmetik pazarının %57'sini aldı.",
+    "Başarılı olanlar kontrolü bıraktı: KitKat'in yüzlerce yerel aroması, Yum China'nın ayrı şirket olması, L'Oréal'in Şanghay Ar-Ge merkezi.",
+    "Video, imza atmadan önce yerel pazar yerinde kendi ürününü aramayı ve şikâyetleri okumayı öneriyor."
+  ],
+  "numbers": [
+    {"label": "IKEA'nın Şubat 2026'da kapattığı mağaza", "value": 7, "unit": "mağaza", "context": "Tek ayda Çin'de kapanan mağazalar"},
+    {"label": "IKEA restoran cirosu (2017)", "value": 180, "unit": "milyon $", "context": "Yalnızca restoranlardan yıllık ciro"},
+    {"label": "IKEA Çin geliri (2019 zirve)", "value": 2.3, "unit": "milyar $", "context": "Yaklaşık değer"},
+    {"label": "IKEA Çin geliri (2024)", "value": 1.6, "unit": "milyar $", "context": "5 yılda gelirin üçte biri kayboldu"},
+    {"label": "IKEA son yıl gelir düşüşü", "value": -7.6, "unit": "%", "context": "Son yıldaki kayıp"},
+    {"label": "Emlak komisyoncusuna verilen IKEA binası", "value": 8, "unit": "bina", "context": "Satışa çıkarılan mülkler"},
+    {"label": "IKEA Çin çevrimiçi satış payı (2025)", "value": 25.7, "unit": "%", "context": "Satışların fiziki mağazaya ihtiyaç duymayan kısmı"},
+    {"label": "Walmart'ın Japonya'da kaldığı süre", "value": 18, "unit": "yıl", "context": "İstediği fiyatın üçte birine satarak çıktı"},
+    {"label": "Sephora ortaklık payı", "value": 81, "unit": "%", "context": "2005'te kurulan ortak girişimde Sephora'nın payı (ortak %19)"},
+    {"label": "Sephora Çin mağaza sayısı", "value": 322, "unit": "mağaza", "context": "Zirvedeki mağaza ağı"},
+    {"label": "Sephora Çin geliri (2021)", "value": 1.5, "unit": "milyar $", "context": "En iyi yıl"},
+    {"label": "Sephora Çin kârı (2021)", "value": 61, "unit": "milyon $", "context": "En iyi yıl"},
+    {"label": "Sephora Çin zararı (2024)", "value": 90, "unit": "milyon $", "context": "Yıllık zarar"},
+    {"label": "Sephora Çin zararı (2025)", "value": 70, "unit": "milyon $", "context": "Yıllık zarar; toplam zarar 200 milyon doları aştı"},
+    {"label": "Ortağın %19 hisse satış bedeli", "value": 78, "unit": "milyon $", "context": "Yaklaşık; Ağustos'ta satıldı"},
+    {"label": "Amazon'un Joyo için ödediği", "value": 75, "unit": "milyon $", "context": "2004; 15 yıl sonra %1'in altında payla çıkış"},
+    {"label": "Starbucks Çin pazar payı (önce)", "value": 34, "unit": "%", "context": "5 yıl önce"},
+    {"label": "Starbucks Çin pazar payı (sonra)", "value": 14, "unit": "%", "context": "5 yıl sonra"},
+    {"label": "Olive Young Kore pazar payı", "value": 90, "unit": "%", "context": "Sephora'nın Kore'den çıktığı dönemde"},
+    {"label": "Gümrüksüz mağaza indirimi", "value": 55, "unit": "% (üst sınır)", "context": "Liste fiyatının %30-55 altında satış"},
+    {"label": "Çinli markaların kozmetik payı", "value": 57, "unit": "%", "context": "İlk kez 141 milyar doları geçen pazarda"},
+    {"label": "Çin kozmetik pazarı", "value": 141, "unit": "milyar $", "context": "Rekor seviye"},
+    {"label": "Sephora mağaza ziyaret artışı (2025)", "value": 24, "unit": "%", "context": "Ziyaret artarken satış başka kanala kaydı"},
+    {"label": "Japonya'daki KitKat çeşidi", "value": 400, "unit": "çeşit (üzeri)", "context": "Bölgesel, mevsimlik, sınırlı üretim"},
+    {"label": "Yum China KFC restoranı", "value": 13000, "unit": "restoran (üzeri)", "context": "2.700'den fazla şehirde"},
+    {"label": "McDonald's'ın devrettiği Çin restoranı (2017)", "value": 2500, "unit": "restoran", "context": "CITIC ve Carlyle'a devir"},
+    {"label": "L'Oréal Şanghay Ar-Ge çalışanı", "value": 400, "unit": "kişi", "context": "Asya-Pasifik'teki en büyük merkez"},
+    {"label": "Adidas Büyük Çin satış düşüşü (2022)", "value": -36, "unit": "%", "context": "Şanghay tasarım merkezi kararından önce"}
+  ],
+  "chart": {
+    "type": "bar",
+    "title": "Sephora Çin: kârdan zarara",
+    "unit": "milyon $ (net kâr/zarar)",
+    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. 2022 ve 2023 için tutar verilmedi, yalnızca zarar edildiği söylendi.",
+    "data": [
+      {"label": "2021", "value": 61},
+      {"label": "2024", "value": -90},
+      {"label": "2025", "value": -70}
+    ]
+  },
+  "diagram": {
+    "type": "flow",
+    "title": "Batılı markaların Asya'da avantaj kaybı",
+    "steps": [
+      {"label": "Doğru pazar okuması", "detail": "Marka, yerelde karşılanmayan bir ihtiyaçla pazara giriyor."},
+      {"label": "Uzun başarı dönemi", "detail": "20 yıl büyüme, model değişmeden sürdürülüyor."},
+      {"label": "Kanal kayması", "detail": "E-ticaret, canlı yayın ve markaların doğrudan satışı mağazayı aşıyor."},
+      {"label": "Yerel rakip hızı", "detail": "Rakipler tasarımı haftalar içinde kopyalayıp daha ucuza satıyor."},
+      {"label": "Gelir ve kâr erimesi", "detail": "Mağazalar deneme yeri olur, satış başka kanala kayar."},
+      {"label": "Çıkış veya yerelleşme", "detail": "Ya pazardan çekiliyor ya da kontrol yerel ekibe devrediliyor."}
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "Şehre özel hediyelik sınırlı seri şekerleme programı",
+      "insight": "KitKat Japonya'da çoğu tek bir bölgede satılan 400'ü aşkın yerel ve mevsimlik çeşitle başarılı oldu.",
+      "problem": "Türkiye'deki turistik bölgelerde satılan hediyelik gıdalar standart ve ayırt edici değil.",
+      "solution": "Kapadokya, Efes, Mardin gibi destinasyonlara özel aroma ve ambalajlı, yalnızca o bölgede satılan sınırlı seri lokum/çikolata koleksiyonu; mevcut bir üreticiyle fason üretim.",
+      "target": "Yerli ve yabancı turistler; havalimanı, otel ve müze mağazaları",
+      "revenue_model": "Toptan satış marjı ve otel/müze mağazalarıyla ortak markalı seriler",
+      "first_step": "Tek bir destinasyon için 3 aroma prototipi hazırlatıp 5 hediyelik mağazasında 2 hafta deneme satışı yapmak",
+      "capital": "Orta",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye'nin turizm hacmi ve lokum geleneği doğrudan uygun; fason üretim kapasitesi yaygın.",
+      "risks": "Gıda etiketleme ve coğrafi işaret kuralları; kolay taklit edilebilirlik; mevsimsel talep."
+    },
+    {
+      "name": "Sınır ötesi markalar için pazar yeri sıralama ve fiyat izleme",
+      "insight": "Video, markaların gerçek konumunu yerel pazar yerinde kendi ürünlerini arayıp ilk 20 sonuca bakarak görebileceğini söylüyor.",
+      "problem": "Yurt dışında satan Türk markaları hedef pazardaki pazar yerlerinde (Shopee, Amazon, Noon) sıralamalarını, benzer ürün fiyatlarını ve indirimli paralel satışları düzenli izlemiyor.",
+      "solution": "Belirlenen anahtar kelimelerde ilk 20 sonucu, fiyatları, teslim sürelerini ve yetkisiz satıcıları haftalık izleyip Türkçe rapor ve uyarı üreten SaaS.",
+      "target": "Körfez, Avrupa ve Güneydoğu Asya'ya ihracat yapan Türk tekstil, kozmetik ve ev ürünleri markaları",
+      "revenue_model": "Pazar ve anahtar kelime sayısına göre aylık abonelik",
+      "first_step": "3 ihracatçı markanın Noon ve Amazon.de üzerindeki ilk 20 sonucunu elle derleyip örnek rapor sunmak",
+      "capital": "Düşük",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye'den yürütülebilir; e-ihracat teşvikleri kapsamında markaların bu tür hizmetlere bütçesi olabilir.",
+      "risks": "Pazar yerlerinin veri kazıma kısıtları ve kullanım koşulları; global rakip araçlar."
+    },
+    {
+      "name": "Müşteri şikâyet madenciliği ile kategori içgörü raporu",
+      "insight": "Video, müşterilerin satış ekibine söylemediklerini yorum bölümlerinde ve sosyal platformlarda yazdığını vurguluyor.",
+      "problem": "Markalar kategorilerindeki tekrarlayan şikâyetleri sistematik olarak okumuyor ve ürün geliştirmeye aktaramıyor.",
+      "solution": "Şikâyetvar, Trendyol/Hepsiburada yorumları ve sosyal medya gönderilerini kategori bazında toplayıp konu kümelerine ayıran, rakip kıyaslamalı aylık rapor.",
+      "target": "Türkiye'de satış yapan yerli ve yabancı tüketici markaları, özellikle pazara yeni girenler",
+      "revenue_model": "Kategori raporu satışı ve markaya özel aylık izleme aboneliği",
+      "first_step": "Tek bir kategoride (ör. süpürge robotu) 2.000 yorumu analiz eden ücretsiz örnek raporu 10 markaya göndermek",
+      "capital": "Düşük",
+      "difficulty": 2,
+      "turkey_angle": "Türk tüketicisi şikâyet platformlarını yoğun kullanıyor; veri bol ve Türkçe.",
+      "risks": "Platformların veri kullanım koşulları ve KVKK; raporun jenerik kalıp değer üretmemesi."
+    }
+  ],
+  "skeptic_notes": [
+    "Jahwa'nın hissesini 'sıfır değerle' yazdığı söyleniyor, ama aynı hisse yaklaşık 78 milyon dolara satılmış; anlatıcının yorumu muhasebe değerlemesiyle karıştırılmış olabilir.",
+    "Anlatıcı geçmişte Sephora'nın avukatı olduğunu söylüyor; olası çıkar çatışması.",
+    "'Guests closed every store' ifadesindeki markanın adı belirsiz (muhtemelen bir moda markası; altyazı hatası).",
+    "Altyazıda birçok isim bozuk: 'Kur' = Carrefour, 'Sunning' = Suning, 'Oshan' = Auchan, 'Sitic and Carlile' = CITIC ve Carlyle, 'Xpang' = XPeng, 'T-Mo' = Tmall, 'Highlands' = muhtemelen Hainan, 'Xiaoongu/doin' = Xiaohongshu/Douyin, 'Mateong' belirsiz.",
+    "'This sold 60% of its Chinese business' cümlesindeki şirket muhtemelen Starbucks; özne altyazıda kaybolmuş.",
+    "IKEA'nın düşüşünün ne kadarının emlak krizine, ne kadarının strateji hatasına bağlı olduğu ayrıştırılmıyor; başarı örnekleri seçici (hayatta kalan yanlılığı).",
+    "Videonun sonunda kanalın ücretsiz bülteni tanıtılıyor (kendi tanıtım içeriği)."
+  ]
+}

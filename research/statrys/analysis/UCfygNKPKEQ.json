@@ -1,0 +1,104 @@
+{
+  "id": "UCfygNKPKEQ",
+  "title_tr": "Çin'in nüfus sorunu: 'Gerçek nüfus 300 milyon' iddiası ve asıl demografik kriz",
+  "category": "Çin ekonomisi",
+  "region": ["Çin"],
+  "summary_tr": "Video, Çin'in gerçek nüfusunun 300 milyon olduğu veya COVID'de 400 milyon kişinin öldüğü gibi viral iddiaları reddediyor; ciddi demografların tartışmasının en fazla on milyonlarca kişilik bir sapma üzerine olduğunu söylüyor. Asıl sorunun düşen doğum sayısı ve hızlı yaşlanma olduğunu, bunun da tek çocuk politikasının uzun vadeli sonucu olduğunu anlatıyor. Çin'in zenginleşmeden yaşlandığı, emeklilik fonlarının açık verdiği ve ucuz işgücüne dayalı büyüme modelinin tükendiği vurgulanıyor. Hükümetin çocuk parası, evlilik kolaylığı, emeklilik yaşını yükseltme, robotlaşma ve yabancı yetenek vizesi gibi önlemlerinin yalnızca zaman kazandırdığı savunuluyor.",
+  "key_points": [
+    "Resmi verilere göre nüfus dördüncü yıl üst üste azaldı ve 2025'teki doğum sayısı 1949'dan bu yana en düşük seviyede.",
+    "En agresif ciddi tahmin (Yi Fuxian) bile nüfusu resmi rakamın 100-130 milyon altında görüyor; 'missing billion' iddiaları dayanaksız.",
+    "Boş görünen sokakların nedeni göç, düşük doğum, yavaşlayan ekonomi ve online alışveriş.",
+    "Tek çocuk politikası kaldırılsa da toplum tek çocuk veya çocuksuz yaşama alıştığı için doğurganlık geri dönmüyor.",
+    "Çin, Japonya ve Kore'nin aksine orta gelir seviyesindeyken yaşlanıyor; emeklilik sistemi bu yüke hazır değil.",
+    "Nakit teşvikler, emeklilik yaşı artışı ve robotlar semptomları yönetiyor ancak doğum sayısını artırmıyor."
+  ],
+  "numbers": [
+    {"label": "Viral iddiadaki 'gerçek' nüfus", "value": 300, "unit": "milyon kişi", "context": "Videonun çürüttüğü YouTube iddiası"},
+    {"label": "COVID'de öldüğü iddia edilen kişi", "value": 400, "unit": "milyon kişi", "context": "Videonun dayanaksız bulduğu iddia"},
+    {"label": "Nüfustaki yıllık azalma", "value": 3.39, "unit": "milyon kişi", "context": "Çin istatistik bürosunun Ocak'ta açıkladığı tek yıllık düşüş"},
+    {"label": "Resmi nüfus", "value": 1.4, "unit": "milyar kişi", "context": "Düşüş sonrası 'biraz üzerinde' 1,4 milyar"},
+    {"label": "2025'te doğan çocuk", "value": 7.92, "unit": "milyon kişi", "context": "1949'dan bu yana en düşük"},
+    {"label": "Doğum sayısındaki yıllık düşüş", "value": 17, "unit": "%", "context": "Bir önceki yıla göre"},
+    {"label": "Yi Fuxian'ın nüfus tahmini", "value": 1.28, "unit": "milyar kişi", "context": "Resmi rakamın 100-130 milyon altında"},
+    {"label": "Nüfusu sabit tutan doğurganlık hızı", "value": 2.1, "unit": "çocuk/kadın", "context": "Çin 1990'ların başından beri bunun altında"},
+    {"label": "60 yaş üstü nüfus", "value": 323, "unit": "milyon kişi", "context": "Nüfusun yaklaşık %23'ü"},
+    {"label": "Çalışma çağındaki nüfusun yıllık azalması", "value": 6, "unit": "milyon kişi", "context": "Yılda 6 milyondan fazla; Singapur büyüklüğünde bir şehir"},
+    {"label": "Kişi başı GSYH (2024)", "value": 13000, "unit": "$", "context": "ABD'nin yaklaşık altıda biri, Meksika ile benzer"},
+    {"label": "Ulusal çocuk parası", "value": 3600, "unit": "yuan/yıl", "context": "3 yaş altı her çocuk için; yaklaşık 500 $"},
+    {"label": "Kore'nin doğum teşviki harcaması", "value": 200, "unit": "milyar $", "context": "200 milyar $'dan fazla harcanmasına rağmen doğum oranı düştü"},
+    {"label": "Erkeklerde yeni emeklilik yaşı", "value": 63, "unit": "yaş", "context": "60'tan 63'e, 15 yıl içinde kademeli artış"},
+    {"label": "Çin fabrikalarındaki endüstriyel robot", "value": 2, "unit": "milyon adet", "context": "2 milyondan fazla; dünyada satılan robotların yarısından fazlası Çin'e kuruluyor"}
+  ],
+  "chart": {
+    "type": "bar",
+    "title": "Çin nüfusu: resmi rakam, akademik tahmin ve viral iddia",
+    "unit": "milyar kişi",
+    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı",
+    "data": [
+      {"label": "Resmi rakam", "value": 1.4},
+      {"label": "Yi Fuxian tahmini", "value": 1.28},
+      {"label": "Viral YouTube iddiası", "value": 0.3}
+    ]
+  },
+  "diagram": {
+    "type": "flow",
+    "title": "Çin'in demografik krizinin neden-sonuç zinciri",
+    "steps": [
+      {"label": "Tek çocuk politikası (1980)", "detail": "Zorlayıcı yöntemlerle aile büyüklüğü bire indirildi."},
+      {"label": "Küçük aile normalleşti", "detail": "Doğurganlık 30 yılı aşkın süre 2,1'in altında kaldı."},
+      {"label": "Politika kaldırıldı, etkisi yok", "detail": "Yüksek konut ve çocuk maliyeti nedeniyle doğumlar artmadı."},
+      {"label": "Hızlı yaşlanma", "detail": "Kalabalık kuşak emekliliğe girerken çalışan nüfus yılda milyonlarca azalıyor."},
+      {"label": "Ucuz emek modeli tükeniyor", "detail": "Ücretler yükseliyor, emeklilik fonları açık veriyor."},
+      {"label": "Telafi önlemleri", "detail": "Çocuk parası, geç emeklilik, robotlaşma ve yabancı yetenek vizesi devreye giriyor."}
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "Çin'den üretim kaydıran firmalar için Türkiye tedarikçi eşleştirme",
+      "insight": "Videoya göre Çin'de çalışma çağındaki nüfus hızla azalıyor ve fabrika maliyetleri yükseliyor.",
+      "problem": "Çin'deki işgücü maliyeti artışı nedeniyle alternatif üretim arayan Avrupalı alıcılar güvenilir tedarikçi bulmakta zorlanıyor.",
+      "solution": "Belirli bir dikeyde (ör. ev tekstili, metal aksam) Türk üreticileri denetleyip, numune ve fiyat karşılaştırmasıyla Avrupalı alıcılara sunan eşleştirme hizmeti.",
+      "target": "Çin'den alım yapan orta ölçekli Avrupalı markalar ve ithalatçılar",
+      "revenue_model": "Alıcıdan başarı komisyonu (sipariş değerinin %3-5'i) ve fabrika denetim ücreti",
+      "first_step": "Tek bir ürün kategorisinde Çin'den alım yapan 30 Avrupalı firmaya ulaşıp Türkiye'ye geçiş için fiyat eşiğini sormak ve 5 Türk üreticiden teklif toplamak",
+      "capital": "Düşük",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye'nin AB gümrük birliği ve yakınlık avantajı doğrudan kullanılabilir.",
+      "risks": "Türk üretim maliyetlerinin enflasyonla yükselmesi, Çin'in robotlaşmayla maliyeti düşürebilmesi"
+    },
+    {
+      "name": "Fabrika otomasyonu için robot entegrasyon ve bakım hizmeti",
+      "insight": "Çin'in işgücü açığına dünyadaki endüstriyel robotların yarısından fazlasını kurarak yanıt vermesi, otomasyonun emek açığına standart cevap olduğunu gösteriyor.",
+      "problem": "KOBİ ölçekli üreticiler robot almak istiyor ama entegrasyon, programlama ve bakım bilgisine sahip değil.",
+      "solution": "Uygun fiyatlı Çin menşeli cobot'ları Türk KOBİ fabrikalarına anahtar teslim kuran, operatör eğitimi ve kiralama modeli sunan entegratör.",
+      "target": "Türkiye'deki ara mamul üreten KOBİ fabrikalar (OSB'ler)",
+      "revenue_model": "Kurulum ücreti, aylık robot kiralama ve bakım sözleşmesi",
+      "first_step": "Bir OSB'de 15 fabrikayla görüşüp en çok tekrarlanan elle yapılan görevi tespit etmek ve bir pilot hücre için ödeme isteğini ölçmek",
+      "capital": "Orta",
+      "difficulty": 4,
+      "turkey_angle": "Türkiye'de de genç nüfus artışı yavaşlıyor; KOSGEB ve teşvik programları finansmanı destekleyebilir.",
+      "risks": "Döviz kuru nedeniyle ithal ekipman maliyeti, teknik personel bulma güçlüğü, Çinli tedarikçinin servis sürekliliği"
+    },
+    {
+      "name": "Yaşlanan toplumlar için yaşlı bakım teknolojisi ihracatı",
+      "insight": "Video, Çin'de 60 yaş üstü nüfusun 300 milyonu aştığını ve emeklilik/sağlık sisteminin bu yüke hazır olmadığını vurguluyor.",
+      "problem": "Tek çocuklu ailelerde bir yetişkin iki ebeveyn ve dört büyükanne-büyükbabaya bakmak zorunda kalıyor; evde bakım çözümleri eksik.",
+      "solution": "Evde yaşayan yaşlılar için düşme algılama, ilaç hatırlatma ve aile bilgilendirme sunan basit cihaz + uygulama paketi; önce Türkiye'de kanıtlanıp yaşlanan pazarlara uyarlanması.",
+      "target": "Yaşlı ebeveynine uzaktan bakan çalışan yetişkinler; özel bakım şirketleri",
+      "revenue_model": "Cihaz satışı ve aylık izleme aboneliği",
+      "first_step": "Hazır bir düşme sensörüyle 20 ailede 30 günlük pilot yapmak ve aylık ücret ödeme istekliliğini ölçmek",
+      "capital": "Orta",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye'de de yaşlı nüfus hızla artıyor; yurt içi pazarda doğrulanıp sonra ihraç edilebilir. Çin pazarına doğrudan girmek yerine benzer demografiye sahip pazarlar hedeflenmeli.",
+      "risks": "Sağlık verisi mevzuatı, ucuz Çin ürünleriyle fiyat rekabeti, düşük teknoloji okuryazarlığı"
+    }
+  ],
+  "skeptic_notes": [
+    "Doğumlarda bir yılda %17 düşüş çok sert bir değişim; altyazının veya anlatıcının hatası olabilir, resmi istatistikle karşılaştırılmalı.",
+    "Tek çocuk politikasının 2016'da kaldırıldığı ve hemen ardından sınırsız çocuğa izin verildiği anlatımı zaman çizelgesini sıkıştırıyor; aşamalar ayrıca doğrulanmalı.",
+    "'Çin dünyada satılan endüstriyel robotların yarısından fazlasını kuruyor' ve 'Kore doğum teşviklerine 200 milyar $ harcadı' iddialarına kaynak verilmemiş.",
+    "Anlatıcı burada Asya'da 26 yıldır iş yaptığını ve 'Londra'dan değil' anlattığını söylüyor; aynı kanalın başka videosundaki tanıtım cümlesiyle çelişebilir.",
+    "Videonun ortasında Statrys'in girişimcilere Asya'da şirket kurma hizmetine dair kısa bir tanıtım bulunuyor (reklam içeriği).",
+    "Başlık ('Something WEIRD') tık odaklı; içerik aslında viral iddiaları çürüten ve resmi verilere dayanan ölçülü bir anlatım."
+  ]
+}

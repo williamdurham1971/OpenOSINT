@@ -1,0 +1,110 @@
+{
+  "id": "c8uF2LD728Q",
+  "title_tr": "Çin'in nükleer enerji ve toryum reaktörü atağı",
+  "category": "Çin ekonomisi",
+  "region": ["Çin", "ABD", "Fransa", "Birleşik Krallık", "Almanya"],
+  "summary_tr": "Video, Çin'in dünyadaki inşaat halindeki reaktörlerin yaklaşık yarısını yürüttüğünü ve standart tasarımları seri halde inşa ederek reaktörleri Batı'dan çok daha hızlı ve ucuz kurduğunu anlatıyor. Batı'nın Three Mile Island, Çernobil ve Fukuşima sonrası nükleerden çekilerek inşa becerisini kaybettiğini; Flamanville ve Hinkley Point projelerinin aşırı maliyet ve gecikmelerini örnek veriyor. Çin'in ABD'nin 1960'larda bıraktığı erimiş tuz reaktörü araştırmalarını devralarak toryum reaktörü geliştirdiğini ve nadir toprak madenciliğinden çıkan toryumu yakıt olarak kullanmayı planladığını söylüyor. Ana tez, ucuz ve istikrarlı elektriğin sanayi ve yapay zeka rekabetini belirleyeceği ve Çin'in bu yarışta öne geçtiği.",
+  "key_points": [
+    "Çin yaklaşık 60 reaktör işletiyor, yaklaşık 40 reaktör inşa ediyor ve 2022'den beri yılda 10 civarında yeni reaktör onaylıyor.",
+    "Standart tasarım (Hualong One), aynı sahada seri inşa ve kesintisiz tedarik zinciri maliyeti ve süreyi düşürüyor.",
+    "Batı'da kazalar sonrası projeler iptal edildi, beceriler kayboldu; yeni projeler bütçeyi kat kat aşıyor.",
+    "Çin'in petrol ve uranyumda dışa bağımlılığı, kendi rezervindeki toryuma yönelmesinin stratejik nedeni.",
+    "Erimiş tuz reaktörleri soğutma suyu gerektirmediği için çöl bölgelerine kurulabiliyor.",
+    "Sanayi elektriği fiyat farkı, Avrupa sanayisinin rekabet gücünü aşındırıyor ve yapay zeka veri merkezleri bu farkı büyütecek."
+  ],
+  "numbers": [
+    {"label": "Çin'de işletmedeki reaktör", "value": 60, "unit": "reaktör", "context": "Fransa ile dünya ikinciliğini paylaşıyor"},
+    {"label": "Çin'de inşa halindeki reaktör", "value": 40, "unit": "reaktör", "context": "Yaklaşık 40; dünyadaki inşaatların yarısı"},
+    {"label": "Yıllık yeni reaktör onayı", "value": 10, "unit": "reaktör/yıl", "context": "2022'den beri"},
+    {"label": "2030 nükleer kapasite hedefi", "value": 110, "unit": "GW", "context": "Hedefe ulaşılırsa dünyanın en büyük nükleer üreticisi olacak"},
+    {"label": "Çin'de reaktör inşa süresi (üst sınır)", "value": 7, "unit": "yıl", "context": "Boş araziden elektrik üretimine 5-7 yıl"},
+    {"label": "Vogtle reaktörleri inşa süresi", "value": 15, "unit": "yıl", "context": "ABD'nin son tamamladığı iki reaktörün her biri yaklaşık 15 yıl sürdü"},
+    {"label": "Çin'de reaktör maliyeti", "value": 3, "unit": "milyar $", "context": "Reaktör başına yaklaşık maliyet"},
+    {"label": "ABD'nin son reaktörlerinin maliyeti", "value": 15, "unit": "milyar $", "context": "Her biri 15 milyar $'ın üzerinde"},
+    {"label": "ABD'de iptal edilen planlı reaktör", "value": 67, "unit": "reaktör", "context": "Three Mile Island kazasını izleyen on yılda"},
+    {"label": "Siemens'in kurduğu Alman santrali", "value": 17, "unit": "santral", "context": "Almanya 2023'te tüm reaktörlerini kapattı"},
+    {"label": "Flamanville maliyeti (ilk)", "value": 3, "unit": "milyar €", "context": "12 yılda 13 milyar €'nun üzerine çıktı"},
+    {"label": "Flamanville maliyeti (son)", "value": 13, "unit": "milyar €", "context": "2024 sonunda şebekeye bağlandı"},
+    {"label": "Flamanville proje süresi", "value": 12, "unit": "yıl", "context": "Maliyetin katlandığı süre"},
+    {"label": "Hinkley Point vaat edilen maliyet", "value": 18, "unit": "milyar £", "context": "Maliyet yaklaşık 50 milyar £'a çıktı"},
+    {"label": "Hinkley Point güncel maliyet", "value": 50, "unit": "milyar £", "context": "Başlangıç tarihi defalarca ertelendi"},
+    {"label": "Çin'in petrol ithalat oranı", "value": 70, "unit": "%", "context": "Deniz yollarına bağımlılık"},
+    {"label": "Kazakistan'ın dünya uranyum üretimindeki payı", "value": 40, "unit": "%", "context": "Uranyumda tek ülkeye bağımlılık riski"},
+    {"label": "Bayan Obo toryumunun yetebileceği süre", "value": 60000, "unit": "yıl", "context": "Çin'in kendi araştırmasına göre teorik olarak tüm ülkeye yetecek süre"},
+    {"label": "Almanya sanayi elektriği", "value": 20, "unit": "sent/kWh", "context": "Çinli rakibin yaklaşık 6 sent ödediği elektriğe karşılık"},
+    {"label": "Çin sanayi elektriği", "value": 6, "unit": "sent/kWh", "context": "Alman fabrikasıyla karşılaştırma"}
+  ],
+  "chart": {
+    "type": "bar",
+    "title": "Bir reaktörün inşa/proje süresi",
+    "unit": "yıl",
+    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. Çin için 5-7 yıl aralığının üst sınırı kullanıldı.",
+    "data": [
+      {"label": "Çin (üst sınır)", "value": 7},
+      {"label": "Flamanville (Fransa)", "value": 12},
+      {"label": "Vogtle (ABD, reaktör başına)", "value": 15}
+    ]
+  },
+  "diagram": {
+    "type": "flow",
+    "title": "Çin'in nükleer maliyet avantajının işleyişi",
+    "steps": [
+      {"label": "Standart reaktör tasarımı", "detail": "Her proje sıfırdan değil, birkaç standart modelden biriyle başlıyor."},
+      {"label": "Seri inşa", "detail": "Aynı sahada altı-sekiz reaktör art arda inşa ediliyor."},
+      {"label": "Deneyimli ekip ve tedarik", "detail": "Ekipler ve parça fabrikaları kesintisiz çalışarak öğrenme birikiyor."},
+      {"label": "Hızlı onay ve devlet finansmanı", "detail": "Tanıdık tasarım onayı hızlandırıyor, devlet bankaları finansman sağlıyor."},
+      {"label": "Düşük maliyet, kısa süre", "detail": "Reaktörler Batı'dakinin çok altında maliyet ve sürede tamamlanıyor."},
+      {"label": "Ucuz sanayi elektriği", "detail": "Ucuz enerji fabrikalara ve veri merkezlerine rekabet avantajı sağlıyor."}
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "Nükleer tedarik zinciri için Türk üretici yeterlilik danışmanlığı",
+      "insight": "Videoya göre Çin'in avantajı, parça fabrikalarının hiç durmadan seri üretim yapmasından geliyor; Batı'da ise bu tedarik becerisi kayboldu.",
+      "problem": "Akkuyu ve olası yeni santral projeleri için yerli imalatçılar nükleer kalite standartlarına (ör. ASME, nükleer kalite güvencesi) nasıl uyacaklarını bilmiyor.",
+      "solution": "Metal işleme, vana, kablo ve beton gibi alanlardaki Türk firmalarını nükleer tedarikçi yeterliliğine hazırlayan, belgelendirme sürecini yöneten ve ana yüklenicilerle eşleştiren niş hizmet.",
+      "target": "Ağır sanayi ve makine imalatı yapan Türk KOBİ'ler",
+      "revenue_model": "Proje bazlı yeterlilik danışmanlık ücreti ve kazanılan sözleşmelerden başarı primi",
+      "first_step": "Akkuyu tedarik zincirinde yer alan veya yer almak isteyen 10 imalatçıyla görüşüp karşılaştıkları belgelendirme engellerini listelemek",
+      "capital": "Düşük",
+      "difficulty": 4,
+      "turkey_angle": "Türkiye'nin ilk nükleer santrali ve planlanan yeni projeler yerli tedarik ihtiyacı doğuruyor.",
+      "risks": "Projelerin siyasi ve finansal belirsizliği, ana yüklenicilerin kendi ülke tedarikçilerini tercih etmesi, uzman bulma zorluğu"
+    },
+    {
+      "name": "Sanayi tesisleri için enerji maliyeti kıyaslama ve tedarik optimizasyonu",
+      "insight": "Video, sanayi elektriği fiyat farkının fabrikaların rekabetçiliğini belirleyen temel maliyet olduğunu vurguluyor.",
+      "problem": "Enerji yoğun KOBİ'ler elektrik tarifelerini, ikili anlaşma seçeneklerini ve öz tüketim (GES) fırsatlarını sistematik olarak karşılaştırmıyor.",
+      "solution": "Fabrikanın fatura ve tüketim verisini analiz edip ikili anlaşma, çatı GES ve yük kaydırma senaryolarını hesaplayan SaaS + danışmanlık hizmeti.",
+      "target": "Tekstil, plastik, metal gibi enerji yoğun sektörlerdeki KOBİ fabrikalar",
+      "revenue_model": "Sağlanan tasarruftan pay (paylaşılan tasarruf modeli) veya aylık abonelik",
+      "first_step": "10 fabrikadan son 12 aylık faturaları toplayıp manuel analizle ortalama tasarruf potansiyelini hesaplamak",
+      "capital": "Düşük",
+      "difficulty": 2,
+      "turkey_angle": "Türk sanayisi Avrupa'ya ihracat yapıyor ve enerji maliyeti baskısı altında; serbest tüketici mekanizması uygun zemin sağlıyor.",
+      "risks": "Düzenleyici tarife değişiklikleri, büyük enerji tedarikçilerinin aynı hizmeti ücretsiz sunması"
+    },
+    {
+      "name": "Nadir toprak ve kritik mineral tedarik riski izleme servisi",
+      "insight": "Video, Çin'in nadir toprak elementlerinin çoğunu kontrol ettiğini ve uranyumda tek ülkeye bağımlılığın stratejik risk olduğunu anlatıyor.",
+      "problem": "Mıknatıs, batarya ve elektronik kullanan üreticiler kritik minerallerdeki tedarik şoklarını ve ihracat kısıtlamalarını geç fark ediyor.",
+      "solution": "Kritik mineral ihracat düzenlemeleri, fiyatlar ve alternatif tedarikçiler hakkında Türkçe/İngilizce haftalık risk bülteni ve tedarikçi veritabanı.",
+      "target": "Otomotiv yan sanayi, elektrikli motor ve elektronik üreticileri",
+      "revenue_model": "Kurumsal abonelik ve özel tedarikçi araştırma raporları",
+      "first_step": "Ücretsiz bir deneme bülteni yayınlayıp 30 günde 100 sanayi profesyoneline ulaşmak ve ücretli aboneliğe dönüşüm niyetini ölçmek",
+      "capital": "Düşük",
+      "difficulty": 2,
+      "turkey_angle": "Türkiye'nin Beylikova'daki nadir toprak ve toryum rezervleri ile güçlü otomotiv sanayi bu bilgiye ilgiyi artırır.",
+      "risks": "Ücretsiz kaynaklarla rekabet, verinin güncel ve doğru tutulmasının maliyeti"
+    }
+  ],
+  "skeptic_notes": [
+    "Çin'in çalışan bir toryum reaktörüne kapatmadan yakıt eklediği ve bunun dünyada ilk olduğu iddiası tek kaynaklı; bağımsız doğrulanmalı.",
+    "Bayan Obo'daki toryumun ülkeye 60.000 yıl yeteceği iddiası videonun da belirttiği gibi teorik bir tahmin; ekonomik olarak çıkarılabilirlik ayrı bir konu.",
+    "Hinkley Point maliyetindeki '50' rakamı altyazıda belirsiz biçimde geçiyor ('what 50'); yaklaşık bir değer olarak alınmalı.",
+    "Reaktör maliyet karşılaştırması (3 milyar $ vs. 15 milyar $) farklı tasarım, kapasite ve muhasebe yöntemlerini göz ardı ediyor olabilir.",
+    "'Shell gas' altyazı hatası; kastedilen kaya gazı (shale gas). 'Stadris' ise Statrys'in hatalı yazımı.",
+    "Anlatıcı burada Fransız olduğunu ve Asya'da 26 yıldır iş yaptığını söylüyor; Statrys'in iş kurma hizmetlerine dair tanıtım cümleleri içeriyor (reklam içeriği).",
+    "Elektrik fiyat karşılaştırmasında (Almanya 20 sent, Çin 6 sent) 'yaklaşık 2 kat' ve '%50 daha pahalı' ifadeleri birbiriyle tam örtüşmüyor; hangi tarife ve yıl kullanıldığı belirtilmemiş."
+  ]
+}

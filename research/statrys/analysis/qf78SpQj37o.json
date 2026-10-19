@@ -1,0 +1,112 @@
+{
+  "id": "qf78SpQj37o",
+  "title_tr": "Çin'in laboratuvar elmas üretimi ve doğal elmas piyasasının çöküşü",
+  "category": "Çin ekonomisi",
+  "region": ["Çin", "Güney Afrika", "ABD", "Hindistan", "Belçika"],
+  "summary_tr": "Video, Çin'in Henan eyaletinde yoğunlaşan sentetik elmas üretiminin laboratuvar elmas fiyatlarını on yılda %90'dan fazla düşürdüğünü ve De Beers'in yüzyıllık arz kontrolüne dayalı fiyat modelini çökerttiğini anlatıyor. De Beers'in madenleri ve stokları kontrol ederek arzı kısması ve 'A diamond is forever' kampanyasıyla talebi şekillendirmesi sayesinde fiyatların uzun süre yüksek kaldığı açıklanıyor. Çin'in sentetik elmas üretimine aslında sanayi ihtiyacı için başladığı, yüksek basınç-yüksek sıcaklık (HPHT) preslerinin zamanla mücevher kalitesine ulaştığı belirtiliyor. Ana tez, mücevher piyasasının yan hasar olduğu; asıl hedefin çip soğutma, kuantum algılama ve savunmada kullanılan stratejik bir malzemeyi kontrol etmek olduğu ve Pekin'in Ekim 2025'te sentetik elmasa ihracat lisansı getirdiği.",
+  "key_points": [
+    "Laboratuvar elmasının küresel satışlardaki payı birkaç yılda %1'den %20'ye, ABD'de yaklaşık yarıya çıktı.",
+    "De Beers'in fiyat gücü madenlere, stoklara ve pazarlamaya dayalı yapay kıtlıktan geliyordu; ucuz üretim bu modeli çökertti.",
+    "Çin dünya laboratuvar elmasının %60'ından fazlasını ve endüstriyel elmasın neredeyse tamamını üretiyor, kapasitenin çoğu Henan'da.",
+    "Elmasın yüksek ısı iletkenliği onu çip soğutma, güç yarı iletkenleri ve kuantum sensörleri için stratejik hale getiriyor.",
+    "Çin ham kristal ve üretim ekipmanı ihracatını lisansa bağladı ama bitmiş bileşen satmaya devam ediyor.",
+    "Müşteri profili kuyumcudan çip üreticisine kayınca Henan üreticileri fiyat artırmaya başladı."
+  ],
+  "numbers": [
+    {"label": "1 karat laboratuvar elmas toptan fiyatı (2015)", "value": 4000, "unit": "$", "context": "Bugün 300-500 $ aralığında"},
+    {"label": "1 karat laboratuvar elmas toptan fiyatı (bugün, üst sınır)", "value": 500, "unit": "$", "context": "10 yılda %90'dan fazla düşüş"},
+    {"label": "Laboratuvar elmasının küresel satış payı (2015)", "value": 1, "unit": "%", "context": "Pazar payı değişimini göstermek için"},
+    {"label": "Laboratuvar elmasının küresel satış payı (2024)", "value": 20, "unit": "%", "context": "Pazar payı değişimini göstermek için"},
+    {"label": "ABD'de laboratuvar elmas payı (2019)", "value": 12, "unit": "%", "context": "ABD pazarındaki dönüşüm"},
+    {"label": "ABD'de laboratuvar elmas payı (2024)", "value": 50, "unit": "%", "context": "'Yaklaşık yarısı' olarak ifade edildi"},
+    {"label": "De Beers'in zirvedeki arz payı", "value": 90, "unit": "%", "context": "Dünya ham elmas arzının yaklaşık payı"},
+    {"label": "De Beers kârı (2023)", "value": 72, "unit": "milyon $", "context": "Çöküş öncesi son kârlı yıl"},
+    {"label": "De Beers zararı (2024)", "value": -25, "unit": "milyon $", "context": "Zarara geçiş"},
+    {"label": "De Beers zararı (2025)", "value": -511, "unit": "milyon $", "context": "Zararın derinleşmesi"},
+    {"label": "De Beers defter değeri (önce)", "value": 9.2, "unit": "milyar $", "context": "3 yılda 2,3 milyar $'a düştü"},
+    {"label": "De Beers defter değeri (sonra)", "value": 2.3, "unit": "milyar $", "context": "Anglo American şirketten çıkmak istiyor"},
+    {"label": "HPHT üretim süresi", "value": 7, "unit": "gün", "context": "Doğada bir milyar yıldan fazla süren süreç"},
+    {"label": "Bölgenin üretim artışı", "value": 300, "unit": "kat", "context": "2015'ten sonraki on yılda"},
+    {"label": "Çin'in laboratuvar elmas üretimindeki payı", "value": 60, "unit": "%", "context": "%60'tan fazla"},
+    {"label": "Çin'in yıllık mücevher kalitesinde ham üretimi", "value": 22, "unit": "milyon karat", "context": "22 milyon karatın üzerinde"},
+    {"label": "Çin'in endüstriyel elmas üretimindeki payı (üst sınır)", "value": 98, "unit": "%", "context": "%95-98 aralığı; kapasitenin %80'i Henan'da"},
+    {"label": "Elmasın ısı iletkenliği (bakıra göre)", "value": 5, "unit": "kat", "context": "Silisyuma göre 13 kat"},
+    {"label": "Büyük tek kristallere fiyat artışı (Mart 2026)", "value": 15, "unit": "%", "context": "Henan fabrikalarının müşterilere bildirdiği artış"},
+    {"label": "Bir Henan elmas şirketinin haftalık hisse artışı", "value": 51, "unit": "%", "context": "Çip ısı yayıcı testlerini geçtiği haberinin ardından"},
+    {"label": "SF Diamond hisse artışı", "value": 40, "unit": "%", "context": "Aynı hafta içinde"}
+  ],
+  "chart": {
+    "type": "bar",
+    "title": "Laboratuvarda üretilen elmasın satış payı",
+    "unit": "%",
+    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. ABD 2024 için 'yaklaşık yarısı' ifadesi %50 olarak alındı.",
+    "data": [
+      {"label": "Dünya – 2015", "value": 1},
+      {"label": "ABD – 2019", "value": 12},
+      {"label": "Dünya – 2024", "value": 20},
+      {"label": "ABD – 2024", "value": 50}
+    ]
+  },
+  "diagram": {
+    "type": "flow",
+    "title": "Sanayi ihtiyacından stratejik malzeme kontrolüne",
+    "steps": [
+      {"label": "Sanayi için elmas ihtiyacı", "detail": "Batı'dan elmas alamayan Çin, kesme ve taşlama için kendi sentetik elmasını geliştirdi."},
+      {"label": "HPHT preslerinde birikim", "detail": "Henan'da onlarca yıl aşındırıcı toz üretimiyle teknik bilgi biriktirildi."},
+      {"label": "Mücevher kalitesine geçiş", "detail": "2015 civarında saflık ve kristal boyutu mücevher eşiğini aştı."},
+      {"label": "Seri üretim ve fiyat çöküşü", "detail": "Üretim katlandı, fiyatlar düştü, De Beers'in kıtlık modeli çöktü."},
+      {"label": "Teknoloji müşterisine kayış", "detail": "Çip soğutma ve kuantum algılama yeni yüksek değerli talep yarattı."},
+      {"label": "İhracat kontrolü ve fiyat gücü", "detail": "Pekin ham madde ve ekipmanı lisansa bağladı, üreticiler fiyat artırdı."}
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "Kuyumcular için doğal/laboratuvar elmas ayrımı ve şeffaf beyan hizmeti",
+      "insight": "Videoya göre doğal ve laboratuvar elmasları çıplak gözle ayırt edilemiyor ve fiyat farkı çok büyük.",
+      "problem": "Tüketiciler laboratuvar elmasının doğal diye satılması riskiyle karşı karşıya; kuyumcular da tedarikçiden gelen taşları doğrulayamıyor.",
+      "solution": "Kuyumculara cihaz kiralama veya taş başına test hizmeti sunup, sonucu QR kodlu dijital sertifikayla tüketiciye ileten bağımsız test ve beyan sistemi.",
+      "target": "Kapalıçarşı ve büyük şehirlerdeki kuyumcular, ikinci el mücevher alıcıları",
+      "revenue_model": "Taş başına test ücreti ve kuyumculara aylık cihaz kiralama aboneliği",
+      "first_step": "20 kuyumcuyla görüşüp karışık partilerle karşılaşma sıklığını ve test için ödeme isteğini ölçmek; tarama cihazı tedarikçilerinden fiyat almak",
+      "capital": "Orta",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye'de tektaş ve düğün takısı geleneği güçlü; laboratuvar elması yaygınlaştıkça beyan ve güven ihtiyacı artacak.",
+      "risks": "Test cihazlarının yanılma payı ve buna bağlı sorumluluk, sektörün şeffaflığa direnci, cihaz maliyeti"
+    },
+    {
+      "name": "Elektronik üreticileri için tek kaynak tedarik riski denetimi",
+      "insight": "Video, %15 fiyat artışı bildirimini alan şirketlerin ikinci tedarikçileri olmadığını fark ettiğini anlatıyor.",
+      "problem": "KOBİ ölçekli elektronik ve makine üreticileri, kritik bileşen ve malzemelerinin tek bir ülke veya bölgeye bağımlı olduğunu bilmiyor.",
+      "solution": "Malzeme listesini tarayıp ihracat kontrolüne tabi veya tek kaynaklı kalemleri işaretleyen, alternatif tedarikçi ve stok stratejisi öneren denetim hizmeti.",
+      "target": "Güç elektroniği, savunma tedarik zinciri ve otomotiv elektroniği üreten firmalar",
+      "revenue_model": "Proje bazlı denetim ücreti ve yıllık izleme aboneliği",
+      "first_step": "3 üreticinin malzeme listesini ücretsiz inceleyip tek kaynaklı kalem oranını raporlamak ve ücretli devam isteğini ölçmek",
+      "capital": "Düşük",
+      "difficulty": 3,
+      "turkey_angle": "Türk savunma ve elektronik sanayisi büyüyor ve ihracat kontrollerinden etkilenebilir.",
+      "risks": "Gizli tedarik verisine erişimde güven sorunu, büyük danışmanlık firmalarıyla rekabet"
+    },
+    {
+      "name": "Şeffaf fiyatlı laboratuvar elması tektaş markası",
+      "insight": "Toptan fiyatların on yılda %90'dan fazla düşmesi, perakende fiyatların ise buna ayak uyduramaması marj boşluğu yaratıyor.",
+      "problem": "Genç çiftler yüksek tektaş fiyatları nedeniyle ya bütçelerini zorluyor ya da hangi taşın ne olduğunu bilmeden alım yapıyor.",
+      "solution": "Laboratuvar elmasını açıkça beyan eden, sertifikalı taş ve maliyet dökümü paylaşan, online tasarım ve showroom randevusuyla satan doğrudan tüketiciye marka.",
+      "target": "Türkiye'de nişan ve evlilik hazırlığındaki 25-35 yaş çiftler",
+      "revenue_model": "Ürün satışı; işçilik ve tasarıma dayalı marj",
+      "first_step": "10 tasarımı 3D görsellerle hazırlayıp sosyal medyada ön sipariş kampanyası yürütmek ve 30 günde kaç ön talep geldiğini ölçmek",
+      "capital": "Orta",
+      "difficulty": 3,
+      "turkey_angle": "Türk kuyumculuk işçiliği güçlü; Çin'den taş, Türkiye'de işçilik ile maliyet avantajı yakalanabilir. Gümrük ve kıymetli taş ithalat kuralları kontrol edilmeli.",
+      "risks": "Laboratuvar elmas fiyatlarının düşmeye devam etmesi (stok değer kaybı), doğal elmas algısına karşı tüketici direnci, ithalat ve vergi mevzuatı"
+    }
+  ],
+  "skeptic_notes": [
+    "Henan'daki ilçe adı transkriptte 'Jiyuan' ve 'Jurong' olarak farklı geçiyor; altyazı hatası olabilir, doğru yer adı doğrulanmalı.",
+    "'Verban Surat' muhtemelen Antwerp ve Surat; 'Zheng Hong Ai School' ve 'Zhengzhou We Feng' gibi kurum/şirket adları altyazıda bozulmuş olabilir.",
+    "De Beers'in 2023 kârının yalnızca 72 milyon $ olarak verilmesi, şirketin ölçeği düşünüldüğünde şüpheli; farklı bir kâr ölçüsü (ör. düzeltilmiş kalem) kastedilmiş olabilir.",
+    "Tek bir ilçenin Güney Afrika, Botsvana ve Rusya toplamından fazla elmas ürettiği iddiası laboratuvar ve doğal elmas hacimlerini karşılaştırıyor; karat bazında mı değer bazında mı olduğu belirsiz.",
+    "Nvidia'nın yeni çiplerinde elmas kompozit soğutma kullanılabileceği iddiası 'possibly' kaydıyla verildi; kesinleşmiş bilgi değil.",
+    "Video izleyicileri ücretsiz bir 'Çin endüstri kümeleri rehberi' indirmeye yönlendiriyor ve Statrys'in hizmetlerine atıf yapıyor (reklam ve potansiyel müşteri toplama içeriği).",
+    "Başlıktaki 'elmas dolandırıcılığı' ifadesi abartılı; video yasa dışı bir dolandırıcılıktan değil, kartel ve pazarlama yoluyla sürdürülen fiyat yapısından söz ediyor."
+  ]
+}

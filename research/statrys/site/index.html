@@ -1,0 +1,342 @@
+<title>Statrys Fikir Defteri</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: a ledger of videos — summary band, filter rail, then one expandable dossier per video (summary → chart → mechanism → ideas → caveats). */
+:root {
+  --bg: #f3f5f4;
+  --surface: #ffffff;
+  --ink: #15201d;
+  --muted: #5b6b66;
+  --line: #d9e1de;
+  --jade: #0e6b5a;
+  --jade-soft: #dcefe9;
+  --seal: #b8402c;
+  --seal-soft: #f8e4df;
+  --amber: #9a6a00;
+  --c1: #0e6b5a; --c2: #3a7bc8; --c3: #c06a2b; --c4: #7b5bb6; --c5: #b8402c; --c6: #5d8a2e; --c7: #2b8f9e; --c8: #8a6d3b;
+  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --font-data: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0f1614; --surface: #17201d; --ink: #e4ece9; --muted: #93a39e; --line: #2a3632;
+  --jade: #4fc1a6; --jade-soft: #1a3a33; --seal: #ee7d68; --seal-soft: #3d2420; --amber: #e0b14a;
+  --c1: #4fc1a6; --c2: #6fa6e8; --c3: #e3935a; --c4: #a68ae0; --c5: #ee7d68; --c6: #93c060; --c7: #5cc4d2; --c8: #c9a76a;
+  color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0f1614; --surface: #17201d; --ink: #e4ece9; --muted: #93a39e; --line: #2a3632;
+  --jade: #4fc1a6; --jade-soft: #1a3a33; --seal: #ee7d68; --seal-soft: #3d2420; --amber: #e0b14a;
+  --c1: #4fc1a6; --c2: #6fa6e8; --c3: #e3935a; --c4: #a68ae0; --c5: #ee7d68; --c6: #93c060; --c7: #5cc4d2; --c8: #c9a76a;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 16px/1.55 var(--font-body); }
+.wrap { max-width: 1080px; margin: 0 auto; padding-block: 28px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3, h4 { font-family: var(--font-display); text-wrap: balance; margin: 0; line-height: 1.15; }
+h1 { font-size: clamp(1.9rem, 4.5vw, 2.8rem); font-weight: 700; letter-spacing: -0.02em; }
+h2 { font-size: 1.35rem; font-weight: 700; }
+h3 { font-size: 1.12rem; font-weight: 700; }
+h4 { font-size: .78rem; font-family: var(--font-data); font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+a { color: var(--jade); }
+.mono { font-family: var(--font-data); font-variant-numeric: tabular-nums; }
+.muted { color: var(--muted); }
+header.top { display: grid; gap: 10px; margin-bottom: 22px; }
+.eyebrow { font-family: var(--font-data); font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; color: var(--jade); }
+.lede { max-width: 68ch; color: var(--muted); margin: 0; }
+.stats { display: flex; flex-wrap: wrap; gap: 8px 28px; margin-top: 6px; }
+.stat b { display: block; font-family: var(--font-display); font-size: 1.7rem; line-height: 1.1; }
+.stat span { font-size: .82rem; color: var(--muted); }
+.overview { display: grid; grid-template-columns: 1.6fr 1fr; gap: 16px; margin: 18px 0 26px; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; min-width: 0; }
+.panel h4 { margin-bottom: 10px; }
+@media (max-width: 760px) { .overview { grid-template-columns: 1fr; } }
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin-bottom: 14px; }
+.tab { font: 600 .95rem var(--font-body); background: none; border: 0; border-bottom: 2px solid transparent; padding: 8px 12px; color: var(--muted); cursor: pointer; }
+.tab[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--jade); }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 14px; }
+.chip { font: 600 .82rem var(--font-body); border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px; padding: 5px 11px; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--jade); border-color: var(--jade); color: var(--surface); }
+input[type="search"], select { font: inherit; font-size: .92rem; padding: 7px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); min-width: 0; }
+input[type="search"] { flex: 1 1 220px; }
+:focus-visible { outline: 2px solid var(--jade); outline-offset: 2px; }
+.list { display: grid; gap: 10px; }
+details.video { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; min-width: 0; }
+details.video[open] { border-color: var(--jade); }
+details.video > summary { list-style: none; cursor: pointer; padding: 14px 16px; display: grid; grid-template-columns: 88px 1fr auto; gap: 4px 14px; align-items: baseline; }
+details.video > summary::-webkit-details-marker { display: none; }
+.v-date { font-family: var(--font-data); font-size: .8rem; color: var(--muted); }
+.v-title { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; line-height: 1.25; min-width: 0; }
+.v-orig { grid-column: 2; font-size: .82rem; color: var(--muted); min-width: 0; overflow-wrap: anywhere; }
+.v-meta { grid-column: 3; grid-row: 1 / span 2; text-align: right; font-size: .8rem; color: var(--muted); white-space: nowrap; }
+.tag { display: inline-block; font: 600 .72rem var(--font-data); letter-spacing: .03em; padding: 2px 7px; border-radius: 4px; background: var(--jade-soft); color: var(--jade); }
+.tag.promo { background: var(--seal-soft); color: var(--seal); }
+@media (max-width: 560px) {
+  details.video > summary { grid-template-columns: 1fr; }
+  .v-orig, .v-meta { grid-column: 1; grid-row: auto; text-align: left; white-space: normal; }
+}
+.body { padding: 4px 16px 18px; display: grid; gap: 20px; border-top: 1px solid var(--line); }
+.body > * { min-width: 0; }
+.body section { display: grid; gap: 8px; min-width: 0; align-content: start; }
+.bars { display: grid; gap: 7px; }
+.bar-row { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: 4px 10px; align-items: center; font-size: .84rem; }
+.bar-row .bl { min-width: 0; overflow-wrap: anywhere; line-height: 1.3; }
+.bar-track { display: flex; align-items: center; gap: 6px; min-width: 0; }
+.bar-fill { height: 14px; border-radius: 3px; background: var(--jade); flex: none; }
+.bar-fill.neg { background: var(--seal); }
+.bar-val { font-family: var(--font-data); font-size: .78rem; white-space: nowrap; font-variant-numeric: tabular-nums; }
+@media (max-width: 480px) { .bar-row { grid-template-columns: 1fr; } }
+.pie { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.pie svg { flex: none; }
+.legend { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; font-size: .84rem; flex: 1 1 180px; min-width: 0; }
+.legend li { display: grid; grid-template-columns: 12px 1fr auto; gap: 8px; align-items: baseline; }
+.legend i { width: 11px; height: 11px; border-radius: 2px; display: inline-block; }
+.line-svg { min-width: 440px; }
+.summary { max-width: 72ch; margin: 0; }
+ul.points { margin: 0; padding-left: 1.1em; display: grid; gap: 3px; max-width: 74ch; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 760px) { .two { grid-template-columns: 1fr; } }
+.figure { background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 12px; min-width: 0; overflow-x: auto; }
+.figure .ftitle { font-weight: 600; font-size: .95rem; margin-bottom: 6px; }
+.figure .fnote { font-size: .76rem; color: var(--muted); margin-top: 6px; }
+svg text { fill: var(--ink); font-family: var(--font-data); }
+svg .lab { fill: var(--muted); }
+.flow { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; counter-reset: s; }
+.flow li { position: relative; padding: 8px 10px 8px 40px; border-left: 2px solid var(--jade); margin-left: 14px; }
+.flow li::before { counter-increment: s; content: counter(s); position: absolute; left: -14px; top: 7px; width: 26px; height: 26px; border-radius: 50%; background: var(--jade); color: var(--surface); font: 600 .78rem/26px var(--font-data); text-align: center; }
+.flow li:last-child { border-left-color: transparent; }
+.flow b { display: block; font-size: .95rem; }
+.flow span { font-size: .86rem; color: var(--muted); }
+.flow.cycle li:last-child { border-left-color: transparent; }
+.cycle-note { font-size: .8rem; color: var(--jade); font-family: var(--font-data); margin-left: 14px; }
+.nums { display: flex; flex-wrap: wrap; gap: 8px; }
+.num { border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; background: var(--bg); max-width: 260px; }
+.num b { font-family: var(--font-data); font-size: .98rem; display: block; }
+.num span { font-size: .78rem; color: var(--muted); }
+.ideas { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(290px, 100%), 1fr)); gap: 12px; }
+.idea { border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; display: grid; gap: 6px; align-content: start; background: var(--surface); min-width: 0; }
+.idea h3 { font-size: 1.02rem; }
+.idea dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 3px 10px; font-size: .88rem; }
+.idea dt { color: var(--muted); font-weight: 600; }
+.idea dd { margin: 0; min-width: 0; }
+.idea .insight { font-size: .86rem; font-style: italic; color: var(--muted); }
+.badges { display: flex; gap: 6px; flex-wrap: wrap; }
+.badge { font: 600 .72rem var(--font-data); padding: 2px 7px; border-radius: 4px; border: 1px solid var(--line); }
+.badge.cap-Düşük { color: var(--jade); border-color: var(--jade); }
+.badge.cap-Orta { color: var(--amber); border-color: var(--amber); }
+.badge.cap-Yüksek { color: var(--seal); border-color: var(--seal); }
+.tr { font-size: .86rem; background: var(--jade-soft); border-radius: 6px; padding: 6px 8px; }
+.skeptic { border-left: 3px solid var(--seal); background: var(--seal-soft); border-radius: 0 8px 8px 0; padding: 10px 14px; }
+.skeptic ul { margin: 4px 0 0; padding-left: 1.1em; font-size: .9rem; display: grid; gap: 3px; }
+table.ideas-t { width: 100%; border-collapse: collapse; font-size: .9rem; min-width: 720px; }
+.ideas-t th, .ideas-t td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.ideas-t th { font: 600 .74rem var(--font-data); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); cursor: pointer; white-space: nowrap; }
+.ideas-t td.n { font-family: var(--font-data); text-align: center; }
+.tablewrap { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+.empty { padding: 30px; text-align: center; color: var(--muted); }
+footer { margin-top: 30px; font-size: .82rem; color: var(--muted); max-width: 80ch; }
+@media (prefers-reduced-motion: no-preference) { details.video[open] .body { animation: fade .25s ease; } @keyframes fade { from { opacity: .4 } to { opacity: 1 } } }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div class="eyebrow">YouTube · @Statrys · her yeni videoda güncellenir</div>
+    <h1>Statrys Fikir Defteri</h1>
+    <p class="lede">Kanalın Kasım 2025'ten bu yana yayımladığı videoların transkriptlerinden çıkarılmış Türkçe özetler, videoda geçen rakamlarla çizilmiş grafikler, neden-sonuç şemaları ve her video için iş fikirleri. Rakamlar videodaki iddialardır ve bağımsız olarak doğrulanmamıştır; kırmızı kutular şüpheyle yaklaşılması gereken noktaları gösterir.</p>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <div class="overview">
+    <div class="panel"><h4>İzlenme · video başına (log ölçek)</h4><div id="timeline" style="overflow-x:auto"></div></div>
+    <div class="panel"><h4>Konu dağılımı</h4><div id="cats"></div></div>
+  </div>
+
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" id="tab-videos" aria-selected="true">Videolar</button>
+    <button class="tab" role="tab" id="tab-ideas" aria-selected="false">Tüm iş fikirleri</button>
+  </div>
+
+  <div class="controls">
+    <input type="search" id="q" placeholder="Başlık, ülke, şirket veya fikir ara" aria-label="Ara">
+    <select id="cat" aria-label="Kategori"><option value="">Tüm kategoriler</option></select>
+    <select id="cap" aria-label="Sermaye"><option value="">Her sermaye seviyesi</option><option>Düşük</option><option>Orta</option><option>Yüksek</option></select>
+  </div>
+
+  <div id="view-videos" class="list"></div>
+  <div id="view-ideas" hidden></div>
+
+  <footer id="foot"></footer>
+</div>
+
+<script>
+const CAT_COLORS = ["--c1","--c2","--c3","--c4","--c5","--c6","--c7","--c8"];
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmtDate = d => d ? `${d.slice(6,8)}.${d.slice(4,6)}.${d.slice(0,4)}` : "";
+const fmtN = n => n == null ? "—" : n >= 1e6 ? (n/1e6).toLocaleString("tr-TR",{maximumFractionDigits:1})+" Mn" : n >= 1e3 ? Math.round(n/1e3).toLocaleString("tr-TR")+" B" : n.toLocaleString("tr-TR");
+const fmtV = v => typeof v === "number" ? v.toLocaleString("tr-TR", {maximumFractionDigits: 2}) : esc(v);
+let DATA = null, catColor = {}, tab = "videos";
+try { tab = localStorage.getItem("sfd-tab") || "videos"; } catch (e) {}
+
+function css(v) { return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
+
+function niceMax(m) { if (m <= 0) return 1; const p = Math.pow(10, Math.floor(Math.log10(m))); for (const k of [1,2,2.5,5,10]) if (k*p >= m) return k*p; return 10*p; }
+
+function chartSVG(ch) {
+  const data = (ch.data || []).filter(d => typeof d.value === "number" && isFinite(d.value));
+  if (data.length < 2) return "";
+  const n = data.length, max = niceMax(Math.max(...data.map(d => d.value)));
+  const unit = ch.unit ? esc(ch.unit) : "";
+  const withUnit = v => `${fmtV(v)}${unit && unit !== "%" ? " " : ""}${unit}`;
+  if (ch.type === "pie" && data.every(d => d.value >= 0)) {
+    // donut + HTML legend so long labels wrap instead of running out of the SVG
+    const tot = data.reduce((a, d) => a + d.value, 0); let ang = -Math.PI/2;
+    const R = 62, r = 34, c = 70;
+    let s = `<svg viewBox="0 0 140 140" width="140" height="140" role="img" aria-label="${esc(ch.title)}">`;
+    const legend = [];
+    data.forEach((d, i) => {
+      const a2 = ang + d.value / tot * Math.PI * 2, large = a2 - ang > Math.PI ? 1 : 0, col = css(CAT_COLORS[i % 8]);
+      const p = (rad, a) => `${c + rad*Math.cos(a)},${c + rad*Math.sin(a)}`;
+      s += `<path d="M${p(R, ang)} A${R},${R} 0 ${large} 1 ${p(R, a2)} L${p(r, a2)} A${r},${r} 0 ${large} 0 ${p(r, ang)} Z" fill="${col}" stroke="${css('--bg')}" stroke-width="1.5"><title>${esc(d.label)}</title></path>`;
+      legend.push(`<li><i style="background:${col}"></i><span>${esc(d.label)}</span><span class="mono">${withUnit(d.value)} · ${Math.round(d.value/tot*100)}%</span></li>`);
+      ang = a2;
+    });
+    return `<div class="pie">${s}</svg><ul class="legend">${legend.join("")}</ul></div>`;
+  }
+  if (ch.type === "line") {
+    const W = 520, H = 210, L = 52, B = 34, T = 14, Rr = 16, iw = W-L-Rr, ih = H-T-B;
+    const min0 = Math.min(0, ...data.map(d => d.value));
+    const y = v => T + ih - (v - min0) / (max - min0) * ih, x = i => L + (n === 1 ? iw/2 : i * iw/(n-1));
+    let s = `<svg class="line-svg" viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="${esc(ch.title)}">`;
+    for (let k = 0; k <= 4; k++) { const v = min0 + (max-min0)*k/4; s += `<line x1="${L}" x2="${W-Rr}" y1="${y(v)}" y2="${y(v)}" stroke="${css('--line')}"/><text class="lab" x="${L-6}" y="${y(v)+4}" font-size="10" text-anchor="end">${fmtV(+v.toPrecision(3))}</text>`; }
+    const pts = data.map((d,i) => `${x(i)},${y(d.value)}`).join(" ");
+    s += `<polygon points="${x(0)},${y(min0)} ${pts} ${x(n-1)},${y(min0)}" fill="${css('--jade-soft')}"/><polyline points="${pts}" fill="none" stroke="${css('--jade')}" stroke-width="2.2"/>`;
+    data.forEach((d,i) => { s += `<circle cx="${x(i)}" cy="${y(d.value)}" r="${i===n-1?4.5:3}" fill="${css('--jade')}"/><text class="lab" x="${x(i)}" y="${H-B+16}" font-size="10" text-anchor="middle">${esc(String(d.label).slice(0,12))}</text>`; });
+    return s + "</svg>";
+  }
+  // bar / hbar: HTML rows so long Turkish labels wrap and stay readable on phones.
+  // Bar length is |value| / max|value|; negative values are drawn in the warning color.
+  const amax = Math.max(...data.map(d => Math.abs(d.value))) || 1;
+  return `<div class="bars" role="img" aria-label="${esc(ch.title)}">${data.map(d =>
+    `<div class="bar-row"><span class="bl">${esc(d.label)}</span><span class="bar-track"><span class="bar-fill ${d.value < 0 ? "neg" : ""}" style="width:calc(${(Math.abs(d.value) / amax * 100).toFixed(1)}% - 4.5em)"></span><span class="bar-val">${withUnit(d.value)}</span></span></div>`).join("")}</div>`;
+}
+
+function diagramHTML(dg) {
+  if (!dg || !dg.steps || !dg.steps.length) return "";
+  const items = dg.steps.map(s => `<li><b>${esc(s.label)}</b><span>${esc(s.detail)}</span></li>`).join("");
+  return `<ol class="flow ${dg.type === "cycle" ? "cycle" : ""}">${items}</ol>${dg.type === "cycle" ? `<div class="cycle-note">↺ son adım ilk adımı yeniden besler</div>` : ""}`;
+}
+
+function ideaCard(b) {
+  return `<article class="idea">
+    <h3>${esc(b.name)}</h3>
+    <div class="badges"><span class="badge cap-${esc(b.capital)}">Sermaye: ${esc(b.capital)}</span><span class="badge">Zorluk ${esc(b.difficulty)}/5</span></div>
+    ${b.insight ? `<div class="insight">${esc(b.insight)}</div>` : ""}
+    <dl><dt>Sorun</dt><dd>${esc(b.problem)}</dd><dt>Çözüm</dt><dd>${esc(b.solution)}</dd><dt>Müşteri</dt><dd>${esc(b.target)}</dd><dt>Gelir</dt><dd>${esc(b.revenue_model)}</dd><dt>İlk 30 gün</dt><dd>${esc(b.first_step)}</dd><dt>Risk</dt><dd>${esc(b.risks)}</dd></dl>
+    ${b.turkey_angle ? `<div class="tr"><b>Türkiye açısı:</b> ${esc(b.turkey_angle)}</div>` : ""}
+  </article>`;
+}
+
+function videoHTML(v) {
+  const promo = /Şirket kurma/.test(v.category || "");
+  const ideas = (v.business_ideas || []);
+  return `<details class="video" id="v-${esc(v.id)}">
+    <summary>
+      <span class="v-date">${fmtDate(v.date)}</span>
+      <span class="v-title">${esc(v.title_tr || v.title)}</span>
+      <span class="v-meta"><span class="tag ${promo ? "promo" : ""}">${esc(v.category)}</span><br><span class="mono">${fmtN(v.views)} izlenme · ${ideas.length} fikir</span></span>
+      <span class="v-orig">${esc(v.title)}</span>
+    </summary>
+    <div class="body">
+      <section><h4>Özet</h4><p class="summary">${esc(v.summary_tr)}</p>
+        <ul class="points">${(v.key_points||[]).map(p => `<li>${esc(p)}</li>`).join("")}</ul>
+        <div class="muted" style="font-size:.85rem"><a href="${esc(v.url)}" target="_blank" rel="noopener">Videoyu YouTube'da aç</a> · ${Math.round((v.duration||0)/60)} dk · ${esc((v.region||[]).join(", "))}</div>
+      </section>
+      <div class="two">
+        <section><h4>İnfografik</h4>${v.chart ? `<div class="figure"><div class="ftitle">${esc(v.chart.title)}</div>${chartSVG(v.chart)}<div class="fnote">Birim: ${esc(v.chart.unit)} · ${esc(v.chart.source_note || "Videoda belirtilen rakamlar")}</div></div>` : `<div class="figure muted" style="font-size:.9rem">Bu videoda karşılaştırılabilir yeterli rakam yok; grafik yerine aşağıdaki öne çıkan sayılara bakın.</div>`}</section>
+        <section><h4>Şema</h4><div class="figure"><div class="ftitle">${esc(v.diagram?.title)}</div>${diagramHTML(v.diagram)}</div></section>
+      </div>
+      ${(v.numbers||[]).length ? `<section><h4>Videoda geçen rakamlar</h4><div class="nums">${v.numbers.map(n => `<div class="num"><b>${fmtV(n.value)} ${esc(n.unit)}</b><span>${esc(n.label)}${n.context ? " · " + esc(n.context) : ""}</span></div>`).join("")}</div></section>` : ""}
+      <section><h4>İş fikirleri</h4><div class="ideas">${ideas.map(ideaCard).join("")}</div></section>
+      ${(v.skeptic_notes||[]).length ? `<section class="skeptic"><h4 style="color:var(--seal)">Şüpheyle bakılacak noktalar</h4><ul>${v.skeptic_notes.map(s => `<li>${esc(s)}</li>`).join("")}</ul></section>` : ""}
+    </div>
+  </details>`;
+}
+
+function filtered() {
+  const q = $("#q").value.trim().toLocaleLowerCase("tr"), cat = $("#cat").value, cap = $("#cap").value;
+  return DATA.videos.filter(v => (!cat || v.category === cat)
+    && (!cap || (v.business_ideas||[]).some(b => b.capital === cap))
+    && (!q || JSON.stringify([v.title, v.title_tr, v.summary_tr, v.region, v.key_points, v.business_ideas]).toLocaleLowerCase("tr").includes(q)));
+}
+
+let sortKey = "date", sortDir = -1;
+function render() {
+  const vids = filtered();
+  $("#view-videos").innerHTML = vids.length ? vids.map(videoHTML).join("") : `<div class="empty">Bu filtreyle eşleşen video yok. Aramayı veya kategoriyi değiştirin.</div>`;
+  const cap = $("#cap").value;
+  const rows = vids.flatMap(v => (v.business_ideas||[]).filter(b => !cap || b.capital === cap).map(b => ({...b, v})));
+  const capOrd = {"Düşük":1,"Orta":2,"Yüksek":3};
+  rows.sort((a, b) => {
+    const k = sortKey, A = k==="date" ? a.v.date : k==="capital" ? capOrd[a.capital]||0 : k==="difficulty" ? +a.difficulty : a.name, B = k==="date" ? b.v.date : k==="capital" ? capOrd[b.capital]||0 : k==="difficulty" ? +b.difficulty : b.name;
+    return (A > B ? 1 : A < B ? -1 : 0) * sortDir;
+  });
+  $("#view-ideas").innerHTML = rows.length ? `<div class="tablewrap"><table class="ideas-t"><thead><tr>
+    <th data-k="name">Fikir</th><th>Çözüm</th><th data-k="capital">Sermaye</th><th data-k="difficulty">Zorluk</th><th>Türkiye açısı</th><th data-k="date">Kaynak video</th></tr></thead><tbody>
+    ${rows.map(r => `<tr><td><b>${esc(r.name)}</b><div class="muted" style="font-size:.82rem">${esc(r.target)}</div></td><td>${esc(r.solution)}</td><td><span class="badge cap-${esc(r.capital)}">${esc(r.capital)}</span></td><td class="n">${esc(r.difficulty)}</td><td style="font-size:.85rem">${esc(r.turkey_angle)}</td><td style="font-size:.85rem"><a href="#v-${esc(r.v.id)}" data-open="${esc(r.v.id)}">${esc(r.v.title_tr || r.v.title)}</a><div class="mono muted" style="font-size:.75rem">${fmtDate(r.v.date)}</div></td></tr>`).join("")}
+    </tbody></table></div>` : `<div class="empty">Bu filtreyle eşleşen fikir yok.</div>`;
+}
+
+function renderOverview() {
+  const vids = [...DATA.videos].sort((a, b) => a.date.localeCompare(b.date));
+  const cats = [...new Set(DATA.videos.map(v => v.category))].sort();
+  cats.forEach((c, i) => catColor[c] = CAT_COLORS[i % 8]);
+  $("#cat").innerHTML += cats.map(c => `<option>${esc(c)}</option>`).join("");
+  const ideas = DATA.videos.reduce((a, v) => a + (v.business_ideas||[]).length, 0);
+  const views = DATA.videos.reduce((a, v) => a + (v.views||0), 0);
+  $("#stats").innerHTML = [
+    [DATA.videos.length, "video analiz edildi"], [ideas, "iş fikri"], [fmtN(views), "toplam izlenme"],
+    [`${fmtDate(vids[0].date)} – ${fmtDate(vids.at(-1).date)}`, "kapsanan dönem"]
+  ].map(([b, s]) => `<div class="stat"><b class="mono">${b}</b><span>${s}</span></div>`).join("");
+  // timeline: one bar per video, log scale, colored by category
+  const W = Math.max(560, vids.length * 9 + 60), H = 170, L = 44, B = 24, T = 8, ih = H - T - B;
+  const lmax = Math.ceil(Math.log10(Math.max(...vids.map(v => v.views || 1))));
+  const y = v => T + ih - Math.log10(Math.max(v, 1)) / lmax * ih, bw = (W - L - 10) / vids.length;
+  let s = `<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="Video başına izlenme">`;
+  for (let k = 2; k <= lmax; k++) s += `<line x1="${L}" x2="${W-6}" y1="${y(10**k)}" y2="${y(10**k)}" stroke="${css('--line')}"/><text class="lab" x="${L-6}" y="${y(10**k)+4}" font-size="10" text-anchor="end">${fmtN(10**k)}</text>`;
+  vids.forEach((v, i) => { s += `<rect x="${L + i*bw + 1}" y="${y(v.views||1)}" width="${Math.max(2, bw-2)}" height="${T + ih - y(v.views||1)}" rx="1.5" fill="${css(catColor[v.category])}"><title>${esc(v.title_tr || v.title)} · ${fmtN(v.views)}</title></rect>`; });
+  // month ticks at the first video of each month; skip a tick that would collide with the previous one
+  let lastX = -Infinity; const seen = new Set();
+  vids.forEach((v, i) => { const m = v.date.slice(0, 6); if (seen.has(m)) return; seen.add(m);
+    const xx = L + i*bw; if (xx - lastX < 34) return; lastX = xx;
+    s += `<line x1="${xx}" x2="${xx}" y1="${T+ih}" y2="${T+ih+4}" stroke="${css('--muted')}"/><text class="lab" x="${xx}" y="${H-6}" font-size="9.5">${m.slice(4)}.${m.slice(2,4)}</text>`; });
+  $("#timeline").innerHTML = s + "</svg>";
+  // category bars
+  const cnt = cats.map(c => [c, DATA.videos.filter(v => v.category === c).length]).sort((a, b) => b[1] - a[1]);
+  const cm = Math.max(...cnt.map(c => c[1]));
+  $("#cats").innerHTML = cnt.map(([c, n]) => `<button class="chip" data-cat="${esc(c)}" style="display:grid;grid-template-columns:1fr auto;gap:8px;width:100%;border-radius:6px;text-align:left;margin-bottom:5px;background:linear-gradient(90deg, color-mix(in srgb, var(${catColor[c]}) 22%, transparent) ${n/cm*100}%, var(--surface) 0)"><span>${esc(c)}</span><span class="mono">${n}</span></button>`).join("");
+  $("#foot").innerHTML = `Kaynak: <a href="${esc(DATA.channel)}" target="_blank" rel="noopener">youtube.com/@Statrys</a> otomatik İngilizce altyazıları. Özetler ve fikirler Claude tarafından üretilmiştir; ham transkript yayımlanmaz. Altyazı kaynaklı sayı hataları olabilir. Son güncelleme: <span class="mono">${esc(DATA.generated)}</span>.`;
+}
+
+function setTab(t) {
+  tab = t; try { localStorage.setItem("sfd-tab", t); } catch (e) {}
+  $("#tab-videos").setAttribute("aria-selected", t === "videos"); $("#tab-ideas").setAttribute("aria-selected", t === "ideas");
+  $("#view-videos").hidden = t !== "videos"; $("#view-ideas").hidden = t !== "ideas";
+}
+
+fetch("data.json").then(r => r.json()).then(d => {
+  DATA = d; renderOverview(); render(); setTab(tab);
+  const first = document.querySelector("details.video"); if (first && tab === "videos") first.open = true;
+  const h = location.hash.slice(1); if (h) { const el = document.getElementById(h); if (el) { el.open = true; el.scrollIntoView(); } }
+}).catch(() => { $("#view-videos").innerHTML = `<div class="empty">Veri dosyası yüklenemedi. Sayfayı yenileyin.</div>`; });
+
+$("#q").addEventListener("input", render); $("#cat").addEventListener("change", render); $("#cap").addEventListener("change", render);
+$("#tab-videos").onclick = () => setTab("videos"); $("#tab-ideas").onclick = () => setTab("ideas");
+document.addEventListener("click", e => {
+  const c = e.target.closest("[data-cat]"); if (c) { $("#cat").value = $("#cat").value === c.dataset.cat ? "" : c.dataset.cat; render(); setTab("videos"); }
+  const th = e.target.closest("th[data-k]"); if (th) { sortDir = sortKey === th.dataset.k ? -sortDir : 1; sortKey = th.dataset.k; render(); }
+  const o = e.target.closest("[data-open]"); if (o) { e.preventDefault(); setTab("videos"); const el = document.getElementById("v-" + o.dataset.open); if (el) { el.open = true; el.scrollIntoView({behavior: "smooth"}); } }
+});
+</script>

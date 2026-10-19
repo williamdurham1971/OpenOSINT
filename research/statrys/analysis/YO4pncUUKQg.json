@@ -1,0 +1,116 @@
+{
+  "id": "YO4pncUUKQg",
+  "title_tr": "Güney Kore kültürü nasıl bir ihracat makinesine dönüştürdü",
+  "category": "Doğu Asya (Japonya/Kore)",
+  "region": ["Güney Kore", "ABD", "Japonya"],
+  "summary_tr": "Video, Güney Kore'nin 1990'larda filmlerin ek kopya maliyetinin sıfıra yakın olduğunu fark edip 1997 krizinden sonra kültür endüstrisini yasayla desteklediğini anlatıyor. K-pop şirketleri fotoğraf kartı ve çekiliş gibi 'belirsiz ödül' mekanizmalarıyla albüm satışlarını, Weverse ve ücretli mesaj abonelikleriyle hayranla süreklilik arz eden bir ilişkiyi paraya çeviriyor. Müzik kapıyı açıyor; asıl gelir gıda, kozmetik ve turizmden geliyor ve hükümet artık bunları 'K-kültür ihracatı' içinde sayıyor, böylece kültür ihracatı otomotivle başa baş görünüyor. Öte yandan HYBE'nin kâr marjının çökmesi, kurucusu hakkındaki soruşturma ve aşırı ticarileşme eleştirileri sektörün kırılganlığını gösteriyor; video girişimcilere Kore fason üreticileri ve 'ürün çıkmadan önce kitle oluşturma' önerisiyle bitiyor.",
+  "key_points": [
+    "Kore, 1993'te bir Hollywood filminin gelirini otomobil ihracatıyla kıyaslayıp kültürün marjinal maliyet avantajını gördü ve 1999'da kültür endüstrisi yasasını çıkardı.",
+    "K-pop albümü müzik değil, rastgele fotoğraf kartı ve çekiliş hakkı satan bir 'makbuz' gibi işliyor; aynı ürünü tekrar tekrar satın aldırıyor.",
+    "HYBE'de kayıtlı müzik geliri düşerken konser ve lisans/ürün gelirleri hızla artıyor; asıl ürün hayranla kurulan ilişki.",
+    "Kültür hayranlığı gıda ve kozmetik ihracatını taşıyor; kazananlar çoğu zaman Kolmar, Cosmax gibi fason üreticiler ve Samyang gibi gıda şirketleri.",
+    "Hükümet gıda, güzellik, moda ve turizmi K-kültür ihracatına dahil ederek rakamı otomotivle neredeyse eşitledi.",
+    "HYBE'nin faaliyet kârı sert düştü, kurucusuna soruşturma sürüyor ve izleyiciler aşırı ticarileşmeden şikayet ediyor."
+  ],
+  "numbers": [
+    {"label": "Jurassic Park ile kıyaslanan Hyundai satışı", "value": 1.5, "unit": "milyon araç", "context": "Hükümete göre filmin geliri bu kadar Hyundai satışından fazlaydı"},
+    {"label": "En çok satan 10 albümden Kore'nin payı", "value": 7, "unit": "albüm", "context": "Geçen yıl dünyada en çok satan 10 albümün 7'si Koreli"},
+    {"label": "Stray Kids tek albüm satışı", "value": 3.49, "unit": "milyon kopya", "context": "Geçen yılın küresel albüm listesi"},
+    {"label": "Seventeen tek albüm satışı", "value": 2.63, "unit": "milyon kopya", "context": "Geçen yılın küresel albüm listesi"},
+    {"label": "Altyazıda 'I fan' geçen grubun albüm satışı", "value": 2.13, "unit": "milyon kopya", "context": "Grup adı altyazıda bozuk"},
+    {"label": "Kore'nin yıllık albüm satışı", "value": 93.5, "unit": "milyon albüm", "context": "Tek yılda satılan toplam"},
+    {"label": "HYBE geliri", "value": 1.86, "unit": "milyar $", "context": "Geçen yıl"},
+    {"label": "HYBE kayıtlı müzik geliri değişimi", "value": -10.2, "unit": "%", "context": "Geçen yıl"},
+    {"label": "HYBE ürün ve lisans geliri değişimi", "value": 35.8, "unit": "%", "context": "Geçen yıl"},
+    {"label": "HYBE konser geliri değişimi", "value": 69.4, "unit": "%", "context": "Geçen yıl"},
+    {"label": "Weverse aylık kullanıcı", "value": 14.43, "unit": "milyon kişi", "context": "Geçen ay platformu açan kişi"},
+    {"label": "Sanatçı mesaj aboneliği", "value": 3, "unit": "$/ay", "context": "Bir grup üyesinden özel mesaj almak için aylık ücret"},
+    {"label": "Mesaj servisindeki sanatçı", "value": 247, "unit": "sanatçı", "context": "25 ajanstan"},
+    {"label": "Yurt dışındaki ödeme yapan kullanıcı payı", "value": 70, "unit": "%", "context": "Mesaj servisine ödeme yapanların Kore dışında yaşayan kısmı"},
+    {"label": "Kore gıda ihracatı", "value": 13.62, "unit": "milyar $", "context": "10 yıl üst üste büyüme sonrası yıllık"},
+    {"label": "Hazır erişte ihracatı", "value": 1.5, "unit": "milyar $", "context": "Tek başına geçtiği eşik"},
+    {"label": "Kore cilt bakım/kozmetik ihracatı", "value": 11.4, "unit": "milyar $", "context": "Geçen yıl, tarihin en iyi yılı"},
+    {"label": "Samyang'ın marj farkı", "value": 11, "unit": "kat", "context": "Samyang Foods'un marjı HYBE'nin 11 katı"},
+    {"label": "Yarı iletken ihracatı", "value": 173.4, "unit": "milyar $", "context": "Kore ihracat tablosu"},
+    {"label": "Otomobil ihracatı", "value": 72, "unit": "milyar $", "context": "Kore ihracat tablosu"},
+    {"label": "K-kültür ihracatı (yeni tanım)", "value": 71.8, "unit": "milyar $", "context": "Gıda, güzellik, moda ve turist harcaması dahil"},
+    {"label": "K-kültür ihracatı hedefi (2030)", "value": 110, "unit": "milyar $", "context": "Seul'ün 2030 hedefi"},
+    {"label": "İddia edilen yasa dışı kazanç", "value": 129, "unit": "milyon $", "context": "HYBE kurucusu hakkında polisin tahmini"},
+    {"label": "HYBE faaliyet kârı değişimi", "value": -72.9, "unit": "%", "context": "Düşüş"},
+    {"label": "HYBE faaliyet marjı (önce → sonra)", "value": 1.9, "unit": "%", "context": "%8,2'den %1,9'a geriledi"}
+  ],
+  "chart": {
+    "type": "bar",
+    "title": "Güney Kore ihracat tablosu: K-kültür otomotivle başa baş",
+    "unit": "milyar $",
+    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. K-kültür rakamı gıda, güzellik, moda ve turizmi kapsayan yeni ve geniş bir tanıma dayanıyor.",
+    "data": [
+      {"label": "Yarı iletkenler", "value": 173.4},
+      {"label": "Otomobiller", "value": 72},
+      {"label": "K-kültür (geniş tanım)", "value": 71.8},
+      {"label": "K-kültür 2030 hedefi", "value": 110}
+    ]
+  },
+  "diagram": {
+    "type": "flow",
+    "title": "K-kültürün müşteri kazanım hunisi",
+    "steps": [
+      {"label": "Devlet desteği ve yasa", "detail": "1997 krizinden sonra kültür endüstrisi yasayla ve fonlarla desteklenir."},
+      {"label": "Dizi ve K-pop kapıyı açar", "detail": "Düşük maliyetli, kolay ihraç edilen içerik yabancı izleyiciye ulaşır."},
+      {"label": "Belirsiz ödüllü albüm", "detail": "Fotoğraf kartı ve çekilişler aynı ürünün tekrar alınmasını sağlar."},
+      {"label": "Sürekli hayran ilişkisi", "detail": "Weverse ve ücretli mesajlar hayranı düzenli ödeyen aboneye çevirir."},
+      {"label": "Gıda, kozmetik, turizm", "detail": "Kültüre bağlanan tüketici Kore ürünleri ve seyahat satın alır."},
+      {"label": "Fason üreticiler kazanır", "detail": "Kolmar, Cosmax gibi üreticiler ve gıda şirketleri talebin karını toplar."}
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "Kore fason (OEM/ODM) kozmetik ile Türk markası kurma aracılığı",
+      "insight": "Video, Kolmar ve Cosmax gibi Kore fason üreticilerinin herkesin siparişini aldığını ve kozmetik ihracatının rekor kırdığını söylüyor.",
+      "problem": "Türk girişimciler K-beauty talebini görüyor ama Koreli fason üreticilere ulaşma, brif yazma, numune ve ithalat süreçlerini bilmiyor.",
+      "solution": "Kore'deki fason üreticilerle Türk markaları buluşturan; brif, numune, minimum sipariş pazarlığı, ithalat ve Türkiye kozmetik bildirim süreçlerini yöneten paket hizmet.",
+      "target": "Türkiye'de kendi cilt bakım markasını kurmak isteyen girişimciler, eczane zincirleri, sosyal medya fenomenleri",
+      "revenue_model": "Proje başı sabit ücret + ilk siparişlerden komisyon",
+      "first_step": "3 Kore fason üreticisinden minimum sipariş ve numune koşullarını almak; 10 potansiyel Türk marka sahibiyle görüşüp 2'sinden ön ödeme almaya çalışmak.",
+      "capital": "Düşük",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye'de K-beauty ilgisi yüksek; ürünlerin TİTCK ÜTS kozmetik bildirimi ve etiket mevzuatına uygun olması gerekir.",
+      "risks": "Yüksek minimum sipariş adetleri, kur riski, Türkiye kozmetik mevzuatı ve gümrük maliyetleri."
+    },
+    {
+      "name": "Ürün üretilmeden önce kitle doğrulayan 'açıkta inşa' ön sipariş platformu",
+      "insight": "Video, girişimcilere ürün çıkmadan 6 ay önce numuneleri ve süreci paylaşarak alıcı kitlesini önceden oluşturmayı öneriyor.",
+      "problem": "Küçük markalar stok aldıktan sonra talep olmadığını fark edip sermaye kaybediyor.",
+      "solution": "Markaların numune, fabrika teklifi ve tasarım sürecini paylaşıp ön sipariş/depozito topladığı, belirli eşik aşılınca üretimin tetiklendiği Türkçe platform.",
+      "target": "Fason üretimle ürün çıkaran küçük kozmetik, gıda ve aksesuar markaları",
+      "revenue_model": "Başarılı kampanyalardan yüzde komisyon + öne çıkarma ücretleri",
+      "first_step": "Instagram'da ön sipariş toplayan 20 küçük markayla görüşüp mevcut yöntemlerini ve iade sorunlarını öğrenmek; 3 markayla manuel pilot kampanya yürütmek.",
+      "capital": "Orta",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye'de ön sipariş ve kitlesel fonlama mevzuatı (mesafeli satış, SPK paya dayalı fonlama ayrımı) dikkate alınmalı; ödül/ön satış modeli daha basit.",
+      "risks": "Teslim edilemeyen ürünlerde tüketici şikayetleri, ödeme kuruluşu kısıtları, Kickstarter benzeri küresel platformlarla rekabet."
+    },
+    {
+      "name": "Kore gıda ürünleri için helal sertifika ve dağıtım köprüsü",
+      "insight": "Video, Kore gıda ihracatının 10 yıl üst üste büyüdüğünü ve Buldak gibi ürünlerin dev hacimlere ulaştığını söylüyor.",
+      "problem": "Türkiye ve Orta Doğu'da Kore atıştırmalık ve eriştelerine talep var ama helal belgesi, Türkçe etiket ve düzenli tedarik eksik.",
+      "solution": "Kore'deki orta ölçekli gıda üreticilerinin helal belgelendirme ve Türkiye ithalat/etiket süreçlerini yöneten, ardından zincir marketlere dağıtan bir ithalatçı-distribütör.",
+      "target": "Zincir marketler, online gıda satıcıları, genç tüketiciler",
+      "revenue_model": "Toptan satış marjı + üreticilerden belgelendirme hizmet ücreti",
+      "first_step": "Türkiye'de satılan Kore ürünlerinin raf fiyatlarını ve helal durumunu çıkarmak; 5 Kore üreticisine helal sürecine ilgileri için yazmak.",
+      "capital": "Orta",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye helal sertifika (HAK) ve Tarım Bakanlığı ithalat izinleri gerektirir; Türkiye ayrıca Orta Doğu'ya yeniden ihracat merkezi olabilir.",
+      "risks": "İthalat vergileri, raf ömrü ve lojistik maliyeti, büyük ithalatçıların aynı markaları alması."
+    }
+  ],
+  "skeptic_notes": [
+    "'BTS bu yaz tek çeyrekte neredeyse 1 milyon dolar kazandı' ifadesi büyük olasılıkla altyazı/konuşma hatası (muhtemelen çok daha büyük bir tutar kastedildi); sayı listesine alınmadı.",
+    "Üçüncü grubun adı altyazıda 'I fan' olarak geçiyor; gerçek grup adı doğrulanmalı.",
+    "71,8 milyar dolarlık K-kültür ihracatı, gıda, güzellik, moda ve turist harcamalarını sonradan tanıma ekleyen bir hesaplama; otomotivle karşılaştırma tanımsal bir seçim.",
+    "Samyang'ın marjının HYBE'nin 11 katı olduğu iddiası, HYBE marjının çok düştüğü tek bir yıla dayanıyor olabilir.",
+    "HYBE kurucusu hakkındaki iddialar soruşturma aşamasında; video da suçlama ya da tutuklama olmadığını belirtiyor.",
+    "Videoda 'Imperial Palace' ifadesi geçiyor; Kore bağlamında saray adı muhtemelen yanlış ifade edilmiş.",
+    "Video, Statrys'in şirket kurma ve won ödemeleri hizmetini tanıtıyor (reklam içeriği)."
+  ]
+}

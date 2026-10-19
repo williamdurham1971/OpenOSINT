@@ -1,0 +1,109 @@
+{
+  "id": "_Bs6RMa8FKI",
+  "title_tr": "Hong Kong yeniden faturalama yapısı ve offshore muafiyetle kurumlar vergisinin sıfıra indirilmesi",
+  "category": "Şirket kurma & vergi (Statrys hizmet videoları)",
+  "region": [
+    "Hong Kong",
+    "Çin",
+    "ABD",
+    "Avrupa"
+  ],
+  "summary_tr": "Statrys'in kurucusu, Asya'dan mal tedarik edip başka pazarlara satan tüccarların iki sorununu anlatıyor: Asya'ya ödemelerin bankalarca riskli görülüp geciktirilmesi veya engellenmesi ve yüksek döviz komisyonları ile kurumlar vergisi. Çözüm olarak Hong Kong şirketinin bir yeniden faturalama merkezi olarak kullanılması öneriliyor: tedarikçi Hong Kong şirketine, Hong Kong şirketi de son müşteriye fatura kesiyor; mallar Hong Kong'a uğramadan doğrudan gönderiliyor. Hong Kong'un ülkesel (territorial) vergi sistemi sayesinde alım, satım ve yönetim Hong Kong dışında yapılıyorsa offshore muafiyet başvurusuyla şirket kârına sıfır vergi uygulanabileceği söyleniyor. Video, muafiyetin otomatik olmadığını ve kâr çekilirken kişisel vergi, kontrol edilen yabancı kurum kuralları, CRS ve transfer fiyatlandırması gibi konuların vergi uzmanıyla değerlendirilmesi gerektiğini de belirtiyor.",
+  "key_points": [
+    "Asya'daki tedarikçilere yerel bankalardan yapılan ödemeler sık sık yüksek riskli görülüp geciktiriliyor veya engelleniyor.",
+    "Döviz dönüşüm komisyonları ve yüksek kurumlar vergisi ticaret marjını eritiyor.",
+    "Yeniden faturalama yapısında mallar doğrudan Asya'dan müşteriye gider, fatura ve kâr Hong Kong şirketinde toplanır.",
+    "Hong Kong yalnızca Hong Kong'da üretilen kârı vergilendirir; faaliyetler tamamen dışarıdaysa offshore muafiyet başvurusu yapılabilir.",
+    "Muafiyet otomatik değildir; kârın gerçekten offshore faaliyetten geldiği kanıtlanmalıdır.",
+    "Kâr maaş veya temettü olarak çekilirken kurucunun kendi ülkesindeki vergi kuralları devreye girer."
+  ],
+  "numbers": [
+    {
+      "label": "Offshore muafiyetle hedeflenen kurumlar vergisi",
+      "value": 0,
+      "unit": "%",
+      "context": "Offshore kâr muafiyeti onaylanırsa Hong Kong şirketinin kârına uygulanacağı söylenen vergi oranı."
+    }
+  ],
+  "chart": null,
+  "diagram": {
+    "type": "flow",
+    "title": "Yeniden faturalama yapısında mal, fatura ve para akışı",
+    "steps": [
+      {
+        "label": "Asyalı tedarikçi",
+        "detail": "Ürünleri Hong Kong şirketine faturalıyor ve malı doğrudan son müşteriye gönderiyor."
+      },
+      {
+        "label": "Hong Kong şirketi",
+        "detail": "Alım faturasını alıp son müşteriye kendi satış faturasını kesiyor; kâr burada toplanıyor."
+      },
+      {
+        "label": "Son müşteri ödemesi",
+        "detail": "ABD veya Avrupa'daki müşteri, Hong Kong'daki çok para birimli hesaba ödeme yapıyor."
+      },
+      {
+        "label": "Tedarikçiye ödeme",
+        "detail": "Hong Kong hesabından Çin'deki tedarikçiye yerel para biriminde ödeme yapılıyor."
+      },
+      {
+        "label": "Offshore muafiyet başvurusu",
+        "detail": "Faaliyetlerin Hong Kong dışında olduğu kanıtlanırsa şirket kârı vergiden muaf tutulabiliyor."
+      },
+      {
+        "label": "Kişisel vergi kontrolü",
+        "detail": "Kâr çekilirken kurucunun ikamet ülkesindeki vergi kuralları uygulanıyor."
+      }
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "Offshore muafiyet kanıt dosyası (substance) hazırlama aracı",
+      "insight": "Video, muafiyetin otomatik olmadığını ve kârın offshore faaliyetten geldiğinin kanıtlanması gerektiğini söylüyor.",
+      "problem": "Tüccarlar muafiyet başvurusunda sözleşme, yazışma, seyahat ve karar alma yerini gösteren kanıtları dağınık tutuyor; vergi idaresinin sorularına zayıf yanıt veriyor.",
+      "solution": "Her işlem için müzakere yeri, sözleşme imza yeri, sevkiyat belgeleri ve yazışmaları etiketleyerek arşivleyen ve muhasebeci/vergi danışmanına hazır dosya üreten yazılım.",
+      "target": "Hong Kong şirketi üzerinden ticaret yapan KOBİ'ler ve onların muhasebe/vergi danışmanları",
+      "revenue_model": "Şirket başına yıllık abonelik; muhasebe firmalarına toplu lisans",
+      "first_step": "Hong Kong'da offshore başvurusu yürüten 5 muhasebe firmasıyla en sık istenen belge türlerini listelemek ve basit bir belge etiketleme prototipi göstermek.",
+      "capital": "Orta",
+      "difficulty": 3,
+      "turkey_angle": "Yazılım Türkiye'den geliştirilebilir; Türk tüccarların yazışma ve belgelerini Türkçe-İngilizce eşleştirmek ek değer.",
+      "risks": "Araç muafiyet garantisi vermemeli; gerçekte Hong Kong'da yürütülen faaliyetleri gizlemek veya belge üretmek vergi kaçakçılığıdır. Muafiyet kararı Hong Kong vergi idaresine aittir ve kurucunun ikamet ülkesindeki kurallar ayrıca uygulanır."
+    },
+    {
+      "name": "Türk tüccarlar için Hong Kong yapısının Türkiye vergi uyum kontrolü",
+      "insight": "Video, şirket düzeyinde sıfır vergi mümkün olsa da kâr çekilirken kişisel vergi, CFC kuralları ve transfer fiyatlandırmasının kontrol edilmesi gerektiğini vurguluyor.",
+      "problem": "Türkiye'de tam mükellef olan girişimciler Hong Kong yapısının Türkiye'de kontrol edilen yabancı kurum kazancı, transfer fiyatlandırması ve kâr dağıtımı vergilendirmesi doğurabileceğini bilmeden yapı kuruyor.",
+      "solution": "Yeminli mali müşavir ve vergi avukatlarıyla birlikte hazırlanan, ortaklık yapısı, ikamet ve işlem akışını soran bir ön değerlendirme anketi ve uzmana yönlendirmeli uyum raporu.",
+      "target": "Asya'dan ithalat/ihracat yapan ve Hong Kong şirketi kurmayı düşünen Türk tüccarlar",
+      "revenue_model": "Rapor başına ücret ve uzman danışmanlara yönlendirme payı",
+      "first_step": "3 YMM/vergi avukatıyla ortaklık kurup 10 tüccara ücretsiz ön değerlendirme yapmak ve kaç tanesinin ücretli rapora dönüştüğünü ölçmek.",
+      "capital": "Düşük",
+      "difficulty": 3,
+      "turkey_angle": "Doğrudan Türkiye pazarına yönelik; Türk vergi mevzuatı bilgisi rekabet avantajı.",
+      "risks": "Vergi danışmanlığı yetkili meslek mensuplarınca yapılmalı; yapının yalnızca vergi avantajı için kurulduğu durumlar Türk vergi idaresince örtülü kazanç veya CFC kapsamında değerlendirilebilir; CRS ile hesap bilgileri otomatik paylaşılır."
+    },
+    {
+      "name": "Asya tedarikçi ödemeleri için uyum ön dosyası servisi",
+      "insight": "Video, Asya'ya giden ödemelerin bankalarca yüksek riskli görülerek bekletildiğini veya engellendiğini anlatıyor.",
+      "problem": "İthalatçılar ödeme bekletildiğinde bankanın istediği proforma, sözleşme, tedarikçi bilgisi ve sevkiyat belgelerini hızlıca sunamıyor; tedarik zinciri aksıyor.",
+      "solution": "Her tedarikçi için doğrulanmış şirket bilgisi, sözleşme, proforma ve sevkiyat belgelerini önceden hazırlayan ve banka/fintech talebinde tek tıkla paylaşılabilen bir tedarikçi uyum dosyası hizmeti.",
+      "target": "Çin ve Güneydoğu Asya'dan ithalat yapan Türk ve Avrupalı KOBİ'ler",
+      "revenue_model": "Tedarikçi başına doğrulama ücreti ve aylık abonelik",
+      "first_step": "Çin'den ithalat yapan 10 Türk KOBİ'ye son 12 ayda bekletilen ödemelerini ve bankanın istediği belgeleri sormak.",
+      "capital": "Düşük",
+      "difficulty": 2,
+      "turkey_angle": "Türkiye'nin Çin'den yoğun ithalatı nedeniyle doğrudan talep var; Türkçe hizmet avantajı.",
+      "risks": "Tedarikçi doğrulaması hatalı olursa sorumluluk doğar; yaptırım listesi taramasında güncel veri kaynağı gerekir; servis bankanın uyum kararını garanti edemez."
+    }
+  ],
+  "skeptic_notes": [
+    "Bu video Statrys'in kendi hizmetlerini tanıtan bir reklam/tanıtım içeriğidir; anlatım tarafsız değildir. Video Statrys hesabını ve kuruluş hizmetini doğrudan satıyor.",
+    "Otomatik altyazı şirket adını çoğu yerde 'Status' veya 'statris' olarak yazmış; doğrusu Statrys. Kurucunun adı altyazıda 'Petron' olarak geçiyor; büyük olasılıkla hatalı yazım, doğrulanmalı.",
+    "Başlıktaki 'vergiyi sıfıra indirme' vaadi abartılı bir çerçeveleme: muafiyet başvuruya ve vergi idaresinin onayına bağlı, sonuç garanti değil.",
+    "Muafiyetin kanıtlanmasının 'büyük bir sorun olmadığı' iddiası tek taraflı; offshore başvurular vergi idaresince ayrıntılı sorgulanabilir.",
+    "Şirket düzeyindeki sıfır vergi, kurucunun kendi ülkesindeki vergi yükümlülüğünü ortadan kaldırmaz; video bunu belirtse de başlık ve ana mesaj bunu geri plana itiyor.",
+    "Altyazıda 'remoting the Eden fees' bozuk yazılmış; büyük olasılıkla renminbi (RMB) ile ödeme ve 'gizli ücret olmadan' anlamı kastediliyor.",
+    "Banka ücretleri ve kur komisyonu hakkında hiçbir somut rakam verilmiyor; tek sayı %0 olduğundan chart null bırakıldı."
+  ]
+}

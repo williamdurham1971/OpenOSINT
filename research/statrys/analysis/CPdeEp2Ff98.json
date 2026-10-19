@@ -1,0 +1,105 @@
+{
+  "id": "CPdeEp2Ff98",
+  "title_tr": "Doğu Asya'nın sınav odaklı eğitim sistemi ve yeteneklerin bölgede kalmaya başlaması",
+  "category": "Çin ekonomisi",
+  "region": ["Çin", "Güney Kore", "Japonya", "Tayvan", "Singapur", "Hong Kong", "Malezya", "Tayland"],
+  "summary_tr": "Video, Çin'in Gaokao'su, Kore'nin Suneung'u ve Japonya'nın sınav sistemi gibi yüksek baskılı eğitim modellerinin acımasız ama sonuç veren bir mantığa dayandığını savunuyor. Güçlü sosyal güvenlik ağı olmayan toplumlarda sınavın, parayla satın alınamayan tek sosyal hareketlilik aracı olduğunu söylüyor. PISA matematik sıralamasında ilk altıda yalnızca Doğu Asya ülkelerinin bulunduğunu, ABD ve Fransa'nın ise gerilediğini vurguluyor. Son olarak yurtdışına giden Çinli öğrenci sayısının azaldığını, yabancı diplomanın getirisi düştüğü için yeteneklerin Asya içinde kaldığını ve küresel eğitimin ağırlık merkezinin doğuya kaydığını öne sürüyor.",
+  "key_points": [
+    "Gaokao ve benzeri sınavlar Asya'da kariyer, maaş ve sosyal statüyü belirleyen tek ve kamusal bir eleme mekanizması işlevi görüyor.",
+    "Hengshui gibi 'sınav fabrikaları' disiplini uç noktaya taşırken Shenzhen'deki okullar ileri teknoloji donanımına yatırım yapıyor.",
+    "Son PISA matematik sıralamasında ilk altı ülke/bölgenin tamamı Doğu Asya'dan; ABD ortalamanın altında.",
+    "Batı'nın 'testler yaratıcılığı ölçmüyor' itirazı kısmen doğru olsa da skor tablosu aleyhine dönünce öne çıkarılıyor.",
+    "Yurtdışındaki Çinli öğrenci sayısı düşüyor, ABD'ye ilgi azalıyor; Malezya, Tayland, Hong Kong ve Singapur'a ilgi artıyor.",
+    "Çinli işverenlerin yabancı diplomaya verdiği prim azaldığı için aileler pahalı yurtdışı eğitimi sorguluyor."
+  ],
+  "numbers": [
+    {"label": "Gaokao süresi", "value": 9, "unit": "saat", "context": "İki güne yayılan sınavın toplam süresi"},
+    {"label": "Singapur PISA matematik puanı", "value": 575, "unit": "puan", "context": "Testin tarihindeki en yüksek ülke puanı olarak sunuldu"},
+    {"label": "ABD'nin PISA matematik sırası", "value": 30, "unit": "sıra", "context": "Yaklaşık 30'uncu, OECD ortalamasının altında"},
+    {"label": "Fransa ile Singapur arasındaki fark", "value": 100, "unit": "puan", "context": "100 puanı aşan fark, yaklaşık 3 yıllık öğrenme"},
+    {"label": "Yurtdışındaki Çinli öğrenci (2019)", "value": 703000, "unit": "kişi", "context": "Düşüşün başlangıç noktası"},
+    {"label": "Yurtdışındaki Çinli öğrenci (2025)", "value": 570000, "unit": "kişi", "context": "Yaklaşık %20 düşüş"},
+    {"label": "ABD programlarına Çinli kayıt düşüşü (2020'den beri)", "value": 30, "unit": "%", "context": "Beş yıl üst üste düşüş"},
+    {"label": "Çin'e giden Amerikalı öğrenci (pandemi öncesi)", "value": 11000, "unit": "kişi", "context": "Bugün 2.000'in altına düştüğü söyleniyor"},
+    {"label": "Çinli öğrencinin ortalama yurtdışı bütçesi", "value": 605000, "unit": "yuan", "context": "80.000 $'ın üzerinde, son on yılın en yükseği"},
+    {"label": "Malezya'daki Çinli öğrenci (önce)", "value": 9000, "unit": "kişi", "context": "5 yıl içinde 47.000'e çıktı"},
+    {"label": "Malezya'daki Çinli öğrenci (5 yıl sonra)", "value": 47000, "unit": "kişi", "context": "Bölge içi eğitime kayışın örneği"},
+    {"label": "Tayland'daki Çinli öğrenci (önce)", "value": 6000, "unit": "kişi", "context": "28.000'e çıktı"},
+    {"label": "Tayland'daki Çinli öğrenci (sonra)", "value": 28000, "unit": "kişi", "context": "Bölge içi eğitime kayışın örneği"},
+    {"label": "Singapur'daki uluslararası öğrencilerde Çinlilerin payı", "value": 50, "unit": "%", "context": "'Yarısı' olarak ifade edildi"}
+  ],
+  "chart": {
+    "type": "bar",
+    "title": "Malezya ve Tayland'daki Çinli öğrenci sayısı: önce ve 5 yıl sonra",
+    "unit": "kişi",
+    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı",
+    "data": [
+      {"label": "Malezya – önce", "value": 9000},
+      {"label": "Malezya – 5 yıl sonra", "value": 47000},
+      {"label": "Tayland – önce", "value": 6000},
+      {"label": "Tayland – sonra", "value": 28000}
+    ]
+  },
+  "diagram": {
+    "type": "flow",
+    "title": "Sınav baskısından yeteneğin bölgede kalmasına",
+    "steps": [
+      {"label": "Zayıf sosyal güvenlik ağı", "detail": "İkinci şans mekanizmaları az olduğu için tek sınav geleceği belirliyor."},
+      {"label": "Yüksek baskılı sınav sistemi", "detail": "Aileler ve okullar tüm kaynaklarını sınav başarısına yönlendiriyor."},
+      {"label": "Yüksek uluslararası başarı", "detail": "Doğu Asya PISA gibi karşılaştırmalı testlerde zirvede."},
+      {"label": "Yabancı diplomanın değeri düşüyor", "detail": "Yurt içi işverenler yurtdışı mezunlarına eskisi kadar prim vermiyor."},
+      {"label": "Öğrenciler bölgede kalıyor", "detail": "Aileler Malezya, Tayland, Hong Kong ve Singapur gibi yakın ve ucuz seçenekleri tercih ediyor."},
+      {"label": "Ağırlık merkezi doğuya kayıyor", "detail": "Yetenek Batı'ya akmak yerine Asya'daki şirket ve laboratuvarlarda kalıyor."}
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "Çinli ve Orta Asyalı öğrencilere Türk üniversitesi yerleştirme ajansı",
+      "insight": "Çinli aileler ABD yerine daha ucuz, yakın alternatiflere yöneliyor; Malezya ve Tayland'daki kayıtlar birkaç kat arttı.",
+      "problem": "Pahalı Batı eğitimine alternatif arayan aileler, İngilizce eğitim veren uygun maliyetli ülkeler hakkında bilgi ve güvenilir aracıya sahip değil.",
+      "solution": "Türkiye'deki İngilizce programlı vakıf üniversiteleriyle anlaşmalı, vize, konaklama ve staj desteği içeren uçtan uca yerleştirme hizmeti; Malezya modelinin Türkiye'ye uyarlanması.",
+      "target": "Orta gelirli Çinli, Orta Asyalı ve Körfez ülkelerinden aileler",
+      "revenue_model": "Üniversitelerden öğrenci başı komisyon ve ailelerden hizmet paketi ücreti",
+      "first_step": "5 vakıf üniversitesiyle komisyon anlaşması koşullarını görüşmek ve Çince/Rusça bir tanıtım sayfasıyla 30 günde gelen başvuru sayısını ölçmek",
+      "capital": "Düşük",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye uygun maliyet, İngilizce programlar ve Avrupa-Asya köprüsü konumuyla Malezya'nın rakibi olabilir.",
+      "risks": "Diploma tanınırlığı, Türk lirası ve siyasi algı nedeniyle ailelerin güven sorunu, acentelere yönelik YÖK düzenlemeleri"
+    },
+    {
+      "name": "Singapur matematik yöntemine dayalı Türkçe online matematik programı",
+      "insight": "Videoya göre Singapur PISA matematikte rekor puan alırken Batı ülkelerinin puanları geriliyor.",
+      "problem": "Türk velileri ezbere dayalı dershane modeli dışında kavramsal matematik öğreten, kanıtlanmış bir yöntem arıyor.",
+      "solution": "Somut-görsel-soyut yaklaşımını kullanan, ilkokul 2-5. sınıflar için Türkçe video, çalışma kağıdı ve haftalık canlı grup dersi içeren abonelik programı.",
+      "target": "Büyükşehirlerde ilkokul çağında çocuğu olan orta-üst gelirli veliler",
+      "revenue_model": "Aylık abonelik ve okullara lisans satışı",
+      "first_step": "Bir sınıf düzeyi için 4 haftalık pilot içerik hazırlayıp 30 aileyle ücretli deneme yapmak ve önce/sonra test sonuçlarını ölçmek",
+      "capital": "Düşük",
+      "difficulty": 2,
+      "turkey_angle": "Türkiye'nin PISA'daki konumu ve velilerin yüksek eğitim harcaması güçlü bir talep zemini oluşturuyor.",
+      "risks": "Yöntem adının ve materyallerin telif/marka hakları, yoğun ed-tech rekabeti, çocukları ekstra baskıya sokma eleştirisi"
+    },
+    {
+      "name": "Asya'da kariyer yapmak isteyen gençler için bölgesel staj eşleştirme",
+      "insight": "Video, Asya'da kalan yeteneklerin yükselen yerel şirket ve laboratuvarlarda kariyer kurduğunu ve Batılı girişimcilerin de bölgeye yöneldiğini söylüyor.",
+      "problem": "Türk üniversite öğrencileri ve genç mezunlar Asya'daki büyüyen şirketlerde staj ve iş fırsatlarına erişemiyor.",
+      "solution": "Singapur, Malezya ve Hong Kong'daki şirketlerle Türk öğrencileri eşleştiren, uzaktan veya yerinde staj programları düzenleyen platform.",
+      "target": "Mühendislik ve işletme öğrencileri; Türkiye pazarına açılmak isteyen Asya şirketleri",
+      "revenue_model": "Şirketlerden yerleştirme ücreti, öğrencilerden hazırlık eğitimi ücreti",
+      "first_step": "Türkiye ile iş yapan 20 Asya şirketine ulaşıp uzaktan stajyer talebini ölçmek ve 3 pilot yerleştirme yapmak",
+      "capital": "Düşük",
+      "difficulty": 3,
+      "turkey_angle": "Türk öğrencilerin Asya'ya ilgisi düşük; yeni bir niş ve Türkiye-Asya ticaretine insan kaynağı köprüsü olabilir.",
+      "risks": "Çalışma izni ve vize kuralları, şirketlerin Türk öğrencilere ilgisinin sınırlı olması"
+    }
+  ],
+  "skeptic_notes": [
+    "Çin'deki beyin dalgası okuyan kafa bandı uygulaması ve C919 simülatörlü okul gibi örnekler tekil vakalar; genel sistemi temsil etmeyebilir.",
+    "'Dünyanın en büyük klima üreticisi yurtdışı mezunu işe almayacak' iddiası tek bir yöneticinin açıklamasına dayanıyor; sektörel eğilim olarak genellenmemeli.",
+    "Fransız öğrencilerin yarısının 'üç çeyrek saatte kaç çeyrek saat olduğunu' hesaplayamadığı iddiası kaynak gösterilmeden aktarılıyor.",
+    "Yurtdışı Çinli öğrenci sayısındaki düşüşün (703 bin → 570 bin) kaynağı belirtilmemiş; ABD'nin ilk iki hedeften düşmesi de doğrulanmalı.",
+    "Singapur'daki uluslararası öğrencilerin 'yarısının' Çinli olduğu ifadesi yaklaşık bir oran; kesin değer değil.",
+    "Video Statrys'in Asya'da iş kurma hizmetine atıf yapan kısa bir tanıtım içeriyor (reklam içeriği).",
+    "PISA puanlarının neyi ölçtüğü tartışmalı; video bunu kabul etse de sonuçları başarı göstergesi olarak öne çıkarıyor."
+  ]
+}

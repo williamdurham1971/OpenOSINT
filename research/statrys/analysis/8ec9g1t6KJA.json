@@ -1,0 +1,108 @@
+{
+  "id": "8ec9g1t6KJA",
+  "title_tr": "AirAsia'da neler oluyor: yakıt şoku, borç vadesi ve devletin B planı",
+  "category": "Şirket vakası",
+  "region": ["Malezya", "Güneydoğu Asya"],
+  "summary_tr": "Video, AirAsia hissesinin sert düşüşünü ve iflas söylentilerini, şirketin yakıt fiyatlarına karşı hiç hedge yapmamış olmasına bağlıyor. Körfez'deki savaş ve Hürmüz Boğazı'nın kapanmasıyla jet yakıtı fiyatı birkaç günde katlanınca, maliyetin yaklaşık %30'u bilet fiyatlarına yansıtılamadı ve çeyreklik zarar ortaya çıktı. Filonun yaklaşık üçte biri yerde, kira ve bakım ödemeleri erteleniyor, 12 ay içinde 4,5 milyar dolarlık yükümlülük vadesi geliyor. Malezya hükümeti şirket henüz hiçbir başvuru yapmamışken danışman tutup rakip havayollarına iç hatları devralıp alamayacaklarını sormuş. Anlatıcıya göre Fernandes'in asıl kozu, iç hat uçuşlarının %60'ını taşıyan şirketin batmasına devletin izin veremeyecek olması.",
+  "key_points": [
+    "AirAsia Malezya grubu yakıtının %0'ını hedge etmişti; Cebu Pacific ve Thai AirAsia kısmi koruma almıştı.",
+    "239 uçaklık filonun 78'i yerde bekliyor ama kiraların çoğu işlemeye devam ediyor.",
+    "Şirket, yakıt verimli yeni A321neo'ların bir kısmını kiralayıp geri almadan sattı; bu nakit ihtiyacına işaret olarak yorumlanıyor.",
+    "Devlete ait Malaysia Airports'a 120 milyon doları aşan ödenmemiş harç borcu var; devlet sorunu piyasadan önce faturalardan gördü.",
+    "Düşük maliyetli model, yakıtın en büyük gider kalemi olması nedeniyle fiyat şoklarına karşı yapısal olarak savunmasız.",
+    "Yerel para ile satış yapıp dolarla maliyet ödemek, çeyreklik zararın 81 milyon dolarlık kısmını kur farkına bağladı."
+  ],
+  "numbers": [
+    {"label": "Tek seanslık hisse düşüşü", "value": 21, "unit": "%", "context": "Perşembe günü hissenin tek seansta kaybı; 2022'den beri en düşük seviye"},
+    {"label": "Şubat'tan beri hisse kaybı", "value": 75, "unit": "%", "context": "Hissenin Şubat ayından bu yana toplam düşüşü"},
+    {"label": "Son çeyrek zararı", "value": 202, "unit": "milyon $", "context": "Son 4 yılın en büyük çeyreklik zararı"},
+    {"label": "12 ay içinde vadesi gelen yükümlülük", "value": 4.5, "unit": "milyar $", "context": "Önümüzdeki 12 ayda ödenmesi gereken faturalar ve borçlar"},
+    {"label": "Jet yakıtı (savaş öncesi)", "value": 90, "unit": "$/varil", "context": "Asya'da jet yakıtının savaş öncesi fiyatı"},
+    {"label": "Jet yakıtı (savaş sonrası zirve)", "value": 231, "unit": "$/varil", "context": "Hürmüz'ün kapanmasından birkaç gün sonra ulaşılan fiyat"},
+    {"label": "Malaysia Airports'a borç", "value": 120, "unit": "milyon $", "context": "Devlet şirketine ödenmemiş iniş ve park ücretleri (üzeri)"},
+    {"label": "Toplam filo", "value": 239, "unit": "uçak", "context": "Haziran sonu itibarıyla sahip olunan veya kiralanan uçaklar"},
+    {"label": "Uçan uçak", "value": 161, "unit": "uçak", "context": "Filonun aktif uçan kısmı"},
+    {"label": "Yerde bekleyen uçak", "value": 78, "unit": "uçak", "context": "Gelir getirmeyen, yerde bekleyen uçaklar"},
+    {"label": "Satılan yeni A321neo", "value": 6, "unit": "uçak", "context": "Teslim alınan 10 yeni A321neo'dan hiç yolcu taşımadan BBAM'e satılanlar"},
+    {"label": "A321neo yakıt tasarrufu", "value": 20, "unit": "%", "context": "Eski jetlere göre yaklaşık yakıt tasarrufu"},
+    {"label": "Bilete yansıtılan yakıt artışı", "value": 70, "unit": "%", "context": "İkinci çeyrekte yakıt maliyeti artışının bilet fiyatlarına aktarılabilen kısmı"},
+    {"label": "Kur kaynaklı zarar", "value": 81, "unit": "milyon $", "context": "Son çeyrek zararının döviz hareketlerinden kaynaklanan kısmı"},
+    {"label": "Hedeflenen uluslararası borçlanma", "value": 1, "unit": "milyar $", "context": "Aralık-Ocak'a kadar imzalanması hedeflenen uluslararası borç"},
+    {"label": "Malezya bankalarından hedeflenen kredi", "value": 170, "unit": "milyon $", "context": "Uluslararası borca ek yerel finansman"},
+    {"label": "Malezya'daki uçak sayısı", "value": 100, "unit": "uçak", "context": "Ülkedeki iç hat uçuşlarının %60'ını karşılayan filo"},
+    {"label": "İç hat payı", "value": 60, "unit": "%", "context": "AirAsia'nın Malezya iç hat uçuşlarındaki payı"}
+  ],
+  "chart": {
+    "type": "hbar",
+    "title": "Yakıt hedge oranları: AirAsia ve rakipleri",
+    "unit": "% (hedge edilen yakıt payı)",
+    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. Kapsamlar farklı: Cebu Pacific için genel oran, Thai AirAsia için 3. çeyrek.",
+    "data": [
+      {"label": "Cebu Pacific (<120 $/varil)", "value": 30},
+      {"label": "Thai AirAsia (3. çeyrek, 89 $)", "value": 13},
+      {"label": "AirAsia Malezya grubu", "value": 0}
+    ]
+  },
+  "diagram": {
+    "type": "flow",
+    "title": "AirAsia krizinin neden-sonuç zinciri",
+    "steps": [
+      {"label": "Hedge yapılmaması", "detail": "Şirket yakıtını her gün piyasa fiyatından alıyor, hiçbir koruma yok."},
+      {"label": "Körfez savaşı ve yakıt şoku", "detail": "Hürmüz'ün kapanmasıyla jet yakıtı birkaç günde iki katından fazla arttı."},
+      {"label": "Maliyet bilete tam yansımıyor", "detail": "Artışın yaklaşık %70'i bilete aktarılabildi, kalan %30 zarara dönüştü."},
+      {"label": "Nakit sıkışması", "detail": "Kira, bakım ve havalimanı ödemeleri ertelendi, yeni uçaklar satıldı."},
+      {"label": "Devletin B planı", "detail": "Hükümet danışman tuttu, rakiplere iç hatları devralma kapasitesini sordu."},
+      {"label": "Borç arayışı ve pazarlık", "detail": "Şirket 1,17 milyar dolarlık yeni finansman ararken iç hat pazarındaki ağırlığını koz olarak kullanıyor."}
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "B2B alacak erken uyarı servisi",
+      "insight": "Devlet, AirAsia'daki sorunu yatırımcılardan önce ödenmeyen havalimanı faturalarından fark etti.",
+      "problem": "Tedarikçiler büyük müşterilerinin mali sıkıntısını genellikle iş işten geçtikten sonra öğreniyor.",
+      "solution": "Müşterinin ödeme gecikme günlerini, vade uzatma taleplerini ve kamuya açık sinyalleri (icra, konkordato ilanları, kredi notu değişiklikleri) birleştiren bir risk puanı paneli.",
+      "target": "Büyük kurumsal müşterilere vadeli satış yapan orta ölçekli Türk tedarikçiler (lojistik, yakıt, catering, bakım)",
+      "revenue_model": "İzlenen müşteri sayısına göre aylık abonelik",
+      "first_step": "10 tedarikçiyle görüşüp son 2 yıldaki tahsil edilemeyen alacak vakalarında hangi sinyallerin önceden göründüğünü listelemek",
+      "capital": "Düşük",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye'de konkordato ve icra verisi kamuya açık; yüksek enflasyon ortamında vade uzatma talepleri güçlü bir erken sinyal.",
+      "risks": "Veri kalitesi ve KVKK uyumu; ticari sırların paylaşılmasına müşteri direnci; büyük kredi bürolarıyla rekabet."
+    },
+    {
+      "name": "Tur operatörleri için havayolu iflas koruması",
+      "insight": "Spirit Airlines tek günde tüm uçuşlarını iptal etti; düşük maliyetli taşıyıcılar art arda çöküyor.",
+      "problem": "Asya paket turu satan acenteler, düşük maliyetli havayolu batınca müşterileri yeniden uçurmanın maliyetini kendileri üstleniyor.",
+      "solution": "Paket tur satışına eklenen, havayolu faaliyetini durdurursa alternatif bilet maliyetini karşılayan bir sigorta ürünü ve otomatik yeniden rezervasyon hizmeti; sigorta şirketiyle ortak tasarlanır.",
+      "target": "Güneydoğu Asya'ya tur düzenleyen Türk seyahat acenteleri",
+      "revenue_model": "Poliçe başına komisyon ve yeniden rezervasyon hizmet ücreti",
+      "first_step": "5 acenteden son 3 yıldaki havayolu kaynaklı iptal maliyetlerini toplayıp bir sigortacıya fiyatlama için sunmak",
+      "capital": "Orta",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye'den Uzak Doğu turları büyüyor; sigorta acenteliği lisansı olan bir ortakla yürütülebilir.",
+      "risks": "Sigorta mevzuatı ve lisans gereksinimi; toplu iflaslarda hasar yoğunlaşması; düşük talep."
+    },
+    {
+      "name": "İthalatçılar için kur ve yakıt duyarlılık hesaplayıcısı",
+      "insight": "AirAsia'nın zararının bir kısmı tamamen yerel para ile satıp dolarla ödeme yapmaktan doğdu.",
+      "problem": "Dövizle maliyet, TL ile satış yapan KOBİ'ler kur ve emtia şoklarının marja etkisini önceden hesaplamıyor.",
+      "solution": "Muhasebe verisinden döviz pozisyonunu çıkaran, kur ve navlun/yakıt senaryolarında brüt marjı gösteren ve hangi tutarın korunması gerektiğini öneren basit bir web aracı.",
+      "target": "Yıllık 1-20 milyon dolar ithalat yapan Türk KOBİ'ler",
+      "revenue_model": "Aylık SaaS aboneliği; bankalara yönlendirme ortaklığı",
+      "first_step": "Logo/Mikro kullanan 10 ithalatçının verisiyle elle senaryo raporu hazırlayıp ödeme isteklerini ölçmek",
+      "capital": "Düşük",
+      "difficulty": 2,
+      "turkey_angle": "TL oynaklığı nedeniyle ihtiyaç yüksek; vadeli işlem ürünleri bankalarda mevcut, araç yalnızca karar desteği sağlar.",
+      "risks": "Yatırım danışmanlığı sayılabilecek öneriler SPK düzenlemesine takılabilir; bankaların kendi araçlarıyla rekabet."
+    }
+  ],
+  "skeptic_notes": [
+    "Yakıt fiyatı bir yerde 231 $/varil, başka yerde 183 $/varil olarak geçiyor; hangisinin güncel olduğu belirsiz.",
+    "Sipariş defteri bir yerde 500 uçak, sonda '300 yeni uçak' olarak anılıyor; tutarsız.",
+    "'Sun Foo Kok Airways' büyük olasılıkla Sun PhuQuoc Airways'in altyazı hatası.",
+    "Orta Doğulu yatırımcının 1 milyar dolarlık teklifi yalnızca Fernandes'in beyanına dayanıyor.",
+    "Malezya hükümetinin rakip havayollarıyla görüşmeleri Reuters haberine dayandırılıyor; tek kaynak.",
+    "Fernandes'in 'likidite güçlü, kurtarma paketi gerekmiyor' açıklamasıyla yerdeki uçak sayısı çelişkili; şirket henüz resmi bir iflas başvurusu yapmamış, başlıktaki 'çöktü' ifadesi abartılı.",
+    "Videoda Statrys'in kur kilitleme hizmeti tanıtılıyor (reklam içeriği)."
+  ]
+}

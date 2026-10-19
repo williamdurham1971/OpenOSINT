@@ -1,0 +1,105 @@
+{
+  "id": "w5xQsTlwLp0",
+  "title_tr": "Bankalar neden milyonlarca hesabı kapatıyor? Uyum sisteminin içeriden işleyişi",
+  "category": "Küresel finans & bankacılık",
+  "region": ["ABD", "İngiltere", "Küresel"],
+  "summary_tr": "Video, banka hesabı kapatmalarının bir çöküş belirtisi değil, kara para aklamayla mücadele sisteminin tasarımı gereği ortaya çıkan bir sonuç olduğunu anlatıyor. Bankalar şüpheli işlem bildirimi (SAR) yaptıklarında müşteriye gerekçe söylemeleri yasal olarak yasak; fazla bildirim için ceza almıyor, tek bir kaçırılan vaka için ise milyarlarca dolar ödüyorlar. Bu yüzden algoritmalar sıradan işlemleri de işaretliyor, bankalar riskli gördükleri ülke ve profillerden topluca çekiliyor. Sunucuya göre en yaygın kapanma nedeni, işletmenin büyüyüp bankaya bildirdiği ilk profilden uzaklaşması; çözüm olarak farklı bankalarda hesap tutmak, faaliyet değişikliklerini önceden bildirmek ve işin yapısına uygun finansal altyapı seçmek öneriliyor. Son bölüm Statrys'in hesap hizmetinin tanıtımı.",
+  "key_points": [
+    "Şüpheli işlem bildirimi yapılan müşteriye bunu açıklamak birçok ülkede suç sayıldığı için bankalar kapatma gerekçesini söylemiyor.",
+    "Bankaların teşvik yapısı aşırı temkini ödüllendiriyor: fazla bildirim cezasız, tek bir hata ise rekor cezalara yol açabiliyor.",
+    "Büyük cezalar sonrası sektör genelinde sınır ötesi işletmeler ve yerleşik olmayanlar gibi profillerden toplu çıkış yaşanıyor.",
+    "Bankalar tek tek müşterilerden değil, gelir getirmeyen ülke koridorlarından da tamamen çekilebiliyor (coğrafi risk azaltma).",
+    "Bildirilen hesap profili ile büyüyen işletmenin gerçek faaliyeti arasındaki fark (profil kayması) en sık kapanma nedeni olarak gösteriliyor.",
+    "Önerilen korunma: farklı kurumlarda hesap, faaliyet değişikliğini önceden bildirme ve uygun altyapı seçimi."
+  ],
+  "numbers": [
+    {"label": "İngiltere'de kapatılan KOBİ hesabı", "value": 140000, "unit": "hesap/yıl", "context": "Büyük İngiliz bankalarının bir yılda kapattığı küçük işletme hesabı sayısı (en az)."},
+    {"label": "ABD'de yıllık SAR sayısı", "value": 4.6, "unit": "milyon bildirim", "context": "ABD bankalarının geçen yıl yaptığı şüpheli işlem bildirimi."},
+    {"label": "BPI örneklemi", "value": 640000, "unit": "bildirim", "context": "Bank Policy Institute çalışmasında incelenen SAR sayısı (en az)."},
+    {"label": "Kolluk takibine dönüşen SAR", "value": 4, "unit": "%", "context": "İncelenen bildirimlerden herhangi bir takibe yol açanların oranı."},
+    {"label": "TD Bank cezası", "value": 3, "unit": "milyar $", "context": "2024'te ABD bankacılık tarihinin en büyük cezası olarak verildi."},
+    {"label": "TD Bank taranmayan işlem payı", "value": 92, "unit": "%", "context": "Hiç taranmadan sistemden geçen işlem hacmi oranı."},
+    {"label": "TD Bank taranmayan hacim", "value": 18, "unit": "trilyon $", "context": "Taranmadan geçtiği söylenen işlem hacmi."},
+    {"label": "Danske Bank cezası", "value": 2, "unit": "milyar", "context": "Danimarka bankasının ödediği ceza (para birimi belirtilmedi)."},
+    {"label": "Westpac cezası", "value": 1.3, "unit": "milyar", "context": "Avustralya bankasının ödediği ceza (para birimi belirtilmedi)."},
+    {"label": "HSBC cezası", "value": 1.9, "unit": "milyar $", "context": "Meksika operasyonuna bağlı uyum hataları için; altyazıda bozuk yazılmış."},
+    {"label": "HSBC'nin çekildiği pazar", "value": 20, "unit": "pazar (en az)", "context": "Son on yılda çıkılan ülke sayısı."},
+    {"label": "ABD nakit bildirim eşiği", "value": 10000, "unit": "$", "context": "1970'te belirlenen ve hiç güncellenmeyen otomatik bildirim eşiği."},
+    {"label": "Eşiğin enflasyona göre karşılığı", "value": 80000, "unit": "$ (yaklaşık)", "context": "Eşik enflasyona göre güncellenseydi bugün olacağı değer."},
+    {"label": "Örnek danışmanlık beyan hacmi", "value": 20000, "unit": "aylık (para birimi yok)", "context": "Profil kayması örneğinde hesabın açılışta beyan edilen aylık hacmi."}
+  ],
+  "chart": {
+    "type": "bar",
+    "title": "Videoda anılan kara para uyum cezaları",
+    "unit": "milyar (TD Bank ve HSBC için $; diğerlerinde para birimi belirtilmedi)",
+    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. HSBC rakamı altyazıdaki bozuk ifadenin en makul okumasıdır.",
+    "data": [
+      {"label": "TD Bank (ABD)", "value": 3},
+      {"label": "Danske Bank (Danimarka)", "value": 2},
+      {"label": "HSBC (Meksika bağlantılı)", "value": 1.9},
+      {"label": "Westpac (Avustralya)", "value": 1.3}
+    ]
+  },
+  "diagram": {
+    "type": "flow",
+    "title": "Bir hesabın kapatılmasına giden zincir",
+    "steps": [
+      {"label": "Rekor ceza haberi", "detail": "Bir bankaya verilen büyük ceza tüm sektörde risk iştahını düşürüyor."},
+      {"label": "Algoritma işaretliyor", "detail": "Eski eşikler ve kalıp kuralları yuvarlak tutarları, yeni ülkeleri veya hacim artışını alarm olarak görüyor."},
+      {"label": "Profil ile faaliyet karşılaştırılıyor", "detail": "Uyum görevlisi beyan edilen profil ile gerçek işlemler arasındaki farkı inceliyor."},
+      {"label": "SAR ve gizlilik", "detail": "Bildirim yapıldıysa bankanın müşteriye gerekçe söylemesi yasak hale geliyor."},
+      {"label": "Maliyet-fayda kararı", "detail": "Müşteriyle konuşmak yerine hesabı kapatmak daha ucuz ve güvenli görülüyor."},
+      {"label": "Tüm ilişkinin kapanması", "detail": "Aynı bankadaki tüm hesaplar ve bağlantılı kişilerin hesapları aynı anda kapanabiliyor."}
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "Banka profili kayma alarmı",
+      "insight": "Videonun en sık kapanma nedeni olarak gösterdiği, beyan edilen profil ile büyüyen faaliyet arasındaki fark.",
+      "problem": "İhracat yapan KOBİ'ler yeni ülke, yeni para birimi veya hacim artışını bankaya bildirmeyi unutuyor ve hesapları beklenmedik şekilde dondurulabiliyor.",
+      "solution": "Muhasebe yazılımı veya banka ekstresine bağlanıp işletmenin başlangıçta bankaya beyan ettiği profil ile güncel işlemleri karşılaştıran, sapma eşiği aşıldığında bankaya gönderilecek bilgilendirme yazısını ve destek belgelerini otomatik hazırlayan bir SaaS.",
+      "target": "Birden fazla ülkeyle çalışan ihracatçı KOBİ'ler, e-ihracat yapan pazar yeri satıcıları, mali müşavirler",
+      "revenue_model": "Bağlı hesap başına aylık abonelik; mali müşavir büroları için toplu lisans",
+      "first_step": "15 ihracatçı KOBİ ve 5 mali müşavirle görüşüp son iki yılda yaşanan hesap dondurma/bilgi talebi vakalarını ve nedenlerini toplamak.",
+      "capital": "Orta",
+      "difficulty": 3,
+      "turkey_angle": "Türk bankaları da MASAK düzenlemeleri ve muhabir bankaların baskısıyla benzer bilgi talepleri yapıyor; özellikle Rusya ve Orta Asya ile çalışan ihracatçılar için güçlü ihtiyaç var.",
+      "risks": "Banka verisine erişim için açık bankacılık izinleri gerekiyor; araç uyum tavsiyesi verir gibi algılanırsa hukuki sorumluluk; bankaların süreçleri değiştikçe kuralların güncellenmesi."
+    },
+    {
+      "name": "Uyum hazır belge kasası (KYC dosyası)",
+      "insight": "Bankanın müşteriye bir soru sorup 5 dakikada çözebileceği durumları kapatmayla sonuçlandırması.",
+      "problem": "Bankalardan gelen fon kaynağı, sözleşme, fatura-ödeme eşleşmesi gibi taleplere KOBİ'ler günlerce belge toplayarak yanıt veriyor; gecikme hesap kapanmasına dönüşebiliyor.",
+      "solution": "Her önemli yurt dışı işlem için sözleşme, proforma, fatura, gümrük beyannamesi ve karşı taraf bilgisini otomatik eşleştirip tek tıkla bankaya gönderilecek paket haline getiren belge yönetim aracı.",
+      "target": "İthalat-ihracat yapan KOBİ'ler, dış ticaret sermaye şirketleri",
+      "revenue_model": "Aylık abonelik + işlem başına paket üretim ücreti",
+      "first_step": "3 bankanın uyum ekiplerinin KOBİ'lere gönderdiği tipik bilgi talebi şablonlarını toplayıp 5 pilot firmada yanıt süresini ölçmek.",
+      "capital": "Düşük",
+      "difficulty": 2,
+      "turkey_angle": "e-Fatura ve e-Gümrük verilerinin dijital olması Türkiye'de otomatik eşleştirmeyi kolaylaştırıyor.",
+      "risks": "Hassas ticari veri barındırdığı için güvenlik ve KVKK yükümlülükleri; ERP sağlayıcılarının benzer modül eklemesi."
+    },
+    {
+      "name": "Yanlış alarm azaltan işlem izleme önceliklendirme",
+      "insight": "Videodaki bildirimlerin yalnızca küçük bir kısmının kolluk takibine dönüştüğü ve algoritmaların bağlam sormadan alarm ürettiği gözlemi.",
+      "problem": "Banka, ödeme kuruluşu ve elektronik para kuruluşlarının uyum ekipleri çok sayıda yanlış alarmla boğuluyor; bu hem maliyet hem de gereksiz müşteri kaybı yaratıyor.",
+      "solution": "Mevcut kural tabanlı izleme sistemlerinin ürettiği alarmları müşteri geçmişi, sektör ve işlem bağlamıyla zenginleştirip önceliklendiren, uyum görevlisinin kararını açıklanabilir şekilde destekleyen bir katman (karar yine insanda).",
+      "target": "Türkiye'deki ödeme ve elektronik para kuruluşları, kripto varlık hizmet sağlayıcıları, küçük bankalar",
+      "revenue_model": "Kurumsal lisans; incelenen alarm başına kullanım ücreti",
+      "first_step": "2-3 ödeme kuruluşunun uyum yöneticisiyle görüşüp aylık alarm hacmi, yanlış alarm oranı ve inceleme süresini öğrenmek; anonim veriyle kavram kanıtı teklif etmek.",
+      "capital": "Yüksek",
+      "difficulty": 4,
+      "turkey_angle": "MASAK yükümlülükleri ve büyüyen fintech/kripto sektörü yerel talep yaratıyor; düzenleyici kabul için yerel referans önemli.",
+      "risks": "Gerçek şüpheli işlemi düşük önceliğe atma halinde ağır düzenleyici sonuç; uzun kurumsal satış döngüsü; model açıklanabilirliği ve denetim gereklilikleri."
+    }
+  ],
+  "skeptic_notes": [
+    "'Bildirimlerin %96'sı hiçbir yanlış yapmamış insanlar' çıkarımı abartılı: kolluk takibine dönüşmemek, bildirimin yersiz olduğunu kanıtlamaz.",
+    "HSBC cezası altyazıda 'won point nine billion' olarak geçiyor; 1,9 milyar dolar olarak okundu, doğrulanmalı.",
+    "Danske Bank ve Westpac cezalarında para birimi söylenmiyor; grafikte aynı eksende gösterilmeleri yaklaşık bir karşılaştırma.",
+    "TD Bank için 'düzenleyici bankanın varlıklarını tuttu' ifadesi büyük olasılıkla varlık büyüme sınırı (asset cap) kastediliyor; altyazı veya anlatım hatası olabilir.",
+    "10.000 dolarlık eşiğin bugün yaklaşık 80.000 dolar olacağı hesabı videoda kaynaksız verildi.",
+    "New York'taki bar sahibi hikâyesi tek bir anekdot; kaynağı belirtilmedi.",
+    "Videonun son üçte biri Statrys'in çok para birimli hesap hizmetinin doğrudan reklamı (altyazıda 'Status' olarak geçiyor); sorun anlatımı ile satılan çözüm aynı kaynaktan geliyor."
+  ]
+}

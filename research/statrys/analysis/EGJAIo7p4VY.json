@@ -1,0 +1,116 @@
+{
+  "id": "EGJAIo7p4VY",
+  "title_tr": "Batılı ilaç devleri yeni molekülleri neden Çin'den lisanslıyor?",
+  "category": "Çin ekonomisi",
+  "region": ["Çin", "ABD", "Avrupa", "Fransa"],
+  "summary_tr": "Video, büyük Batılı ilaç şirketlerinin yaklaşan patent sürelerinin bitişiyle oluşacak gelir boşluğunu kapatmak için erken klinik aşamayı Çin'de tamamlamış molekülleri lisanslamaya yöneldiğini anlatıyor; bu sayede yıllar ve milyarlarca dolarlık Ar-Ge'den tasarruf ediyorlar. Akeso örneğiyle Çinli biyoteknoloji şirketlerinin artık kopya değil yenilikçi ilaç ürettiği, ancak Çin'deki devlet fiyat pazarlığı ve azalan risk sermayesi nedeniyle moleküllerini ucuza ve erken lisanslamak zorunda kaldığı vurgulanıyor. Manşet anlaşma değerlerinin büyük kısmı kilometre taşlarına bağlı olduğu için gerçekte el değiştiren nakit çok daha düşük. Avrupa'nın parasetamol gibi temel etken maddelerde Asya'ya bağımlı hale gelmesi ve ABD'de Çin'den molekül alıp şirket kuran biyoteknoloji modeli de anlatılıyor. Çin'in biyoteknolojiyi beş yıllık planda öncelikli sektör yapması ve yurt içi ödeme sistemini güçlendirmesiyle bu dengenin Çin lehine değişebileceği savunuluyor.",
+  "key_points": [
+    "Büyük ilaç şirketleri patent bitişleri nedeniyle hızlı ürün ihtiyacı duyuyor ve Çin'de erken testleri tamamlanmış molekülleri satın alıyor.",
+    "Çinli biyoteknoloji şirketleri yenilikçi ilaçlar geliştiriyor, bazıları Batı'nın en çok satan ilaçlarıyla doğrudan kıyaslanıyor.",
+    "Lisans anlaşmalarının manşet değerinin çok küçük bir kısmı peşin ödeniyor, kalanı kilometre taşlarına bağlı.",
+    "Çin'deki devlet fiyat pazarlığı ve azalan risk sermayesi Çinli laboratuvarları erken lisanslamaya itiyor.",
+    "Avrupa etken madde üretimindeki liderliğini kaybetti ve temel ilaçlarda Asya'ya bağımlı hale geldi.",
+    "Çin biyoteknolojiyi plan önceliği yapıp yurt içi ödeme sistemini güçlendirerek Batı'ya bağımlılığı azaltmayı hedefliyor."
+  ],
+  "numbers": [
+    {"label": "Keytruda yıllık satışı", "value": 31.7, "unit": "milyar $", "context": "Merck'in kanser ilacının geçen yılki geliri, şirket gelirinin yaklaşık yarısı."},
+    {"label": "Patent korumasını kaybedecek satış", "value": 300, "unit": "milyar $", "context": "2030'dan önce patent korumasını kaybedecek reçeteli ilaç satışı (altyazıda birim eksik), sektörün yaklaşık beşte biri."},
+    {"label": "Yeni ilaç geliştirme maliyeti", "value": 2.2, "unit": "milyar $", "context": "Büyük bir ilaç şirketi için bir ilacı piyasaya çıkarmanın maliyeti."},
+    {"label": "İlk insan denemesinden onaya süre", "value": 8, "unit": "yıl", "context": "Yaklaşık bekleme süresi."},
+    {"label": "GSK peşin ödemesi", "value": 500, "unit": "milyon $", "context": "GSK'nın 12'ye kadar ilaç programı için Çinli şirkete peşin ödemesi."},
+    {"label": "GSK potansiyel ek ödeme", "value": 12.5, "unit": "milyar $", "context": "İlaçlar başarılı olursa ödenebilecek ek tutar."},
+    {"label": "Akeso kuruluş sermayesi", "value": 3, "unit": "milyon $", "context": "Şirketin 3 milyon doların altında sermayeyle kurulduğu söylendi."},
+    {"label": "Summit lisans ödemesi", "value": 500, "unit": "milyon $", "context": "2022'de Çin dışı satış hakları için peşin ödeme."},
+    {"label": "Ölüm riskinde azalma", "value": 34, "unit": "%", "context": "Çin kaynaklı ilacın rakip immünoterapiye karşı sonuçları."},
+    {"label": "Çinli laboratuvarların lisans anlaşması", "value": 157, "unit": "anlaşma", "context": "Geçen yıl imzalanan anlaşma sayısı."},
+    {"label": "Anlaşmaların manşet değeri", "value": 135.7, "unit": "milyar $", "context": "Basın bültenlerindeki toplam değer."},
+    {"label": "Gerçekte ödenen tutar", "value": 7, "unit": "milyar $", "context": "Manşet değerin yaklaşık ödenmiş kısmı."},
+    {"label": "Çin fiyat pazarlığında indirim", "value": 63, "unit": "%", "context": "Son turda geri ödeme listesine giren şirketlerin talep ettiği fiyattan vazgeçtiği oran."},
+    {"label": "Ortalama peşin ödeme (3 yıl önce)", "value": 52, "unit": "milyon $", "context": "Bir lisans anlaşmasının ortalama peşin ödemesi."},
+    {"label": "Ortalama peşin ödeme (2026)", "value": 172, "unit": "milyon $", "context": "Güncel ortalama peşin ödeme."},
+    {"label": "Avrupa'nın geçmişteki etken madde payı", "value": 80, "unit": "%", "context": "Değer bazında dünya etken madde üretiminde Avrupa'nın eski payı ('yüzde 80'in üzerinde')."},
+    {"label": "Avrupa'nın bugünkü etken madde payı", "value": 30, "unit": "%", "context": "Bugünkü yaklaşık pay."},
+    {"label": "Çin'in etken madde payı", "value": 35, "unit": "%", "context": "Çin'in bugünkü payı."},
+    {"label": "Fransa'da parasetamol üretim maliyet farkı", "value": 60, "unit": "%", "context": "Fransa'da üretmenin Asya'dan almaya göre ek maliyeti."},
+    {"label": "Çin/Hindistan kaynaklı etken madde", "value": 80, "unit": "%", "context": "Avrupa ilaçlarında kullanılan etken maddelerin 'yüzde 80'e kadarı'."},
+    {"label": "Klinik aşamadaki şirketlere giden fon", "value": 67, "unit": "%", "context": "Bu yılın ilk yarısında ABD biyoteknoloji fon turlarının üçte ikisi."},
+    {"label": "Kapanan ABD biyoteknoloji şirketi", "value": 219, "unit": "şirket", "context": "Son 4 yılda kapanan şirket sayısı."},
+    {"label": "Çin'de tedavi edilen hasta", "value": 40000, "unit": "kişi", "context": "ABD'de onaysız ilacın Çin'de tedavi ettiği hasta sayısı ('40 binden fazla')."},
+    {"label": "Bir hücre tedavisinin ABD fiyatı", "value": 475000, "unit": "$", "context": "ABD'de hasta başına üst fiyat."},
+    {"label": "Aynı tedavinin Çin fiyatı", "value": 140000, "unit": "$", "context": "Çin'deki alt fiyat."}
+  ],
+  "chart": {
+    "type": "bar",
+    "title": "Dünya etken madde (API) üretiminde değer bazında paylar",
+    "unit": "%",
+    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı",
+    "data": [
+      {"label": "Avrupa (geçmiş)", "value": 80},
+      {"label": "Avrupa (bugün)", "value": 30},
+      {"label": "Çin (bugün)", "value": 35}
+    ]
+  },
+  "diagram": {
+    "type": "flow",
+    "title": "Çin'den ilaç lisanslama zincirinin işleyişi",
+    "steps": [
+      {"label": "Patent uçurumu yaklaşıyor", "detail": "Batılı şirketler büyük gelir kaynağı ilaçların patent bitişiyle boşluk görüyor."},
+      {"label": "Çin'de erken geliştirme", "detail": "Çinli laboratuvarlar molekülü daha hızlı ve ucuza erken klinik aşamaya taşıyor."},
+      {"label": "Yurt içinde fiyat baskısı", "detail": "Devlet fiyat pazarlığı ve azalan sermaye Çinli firmayı nakit aramaya itiyor."},
+      {"label": "Lisans anlaşması", "detail": "Küçük peşin ödeme ve büyük kilometre taşlarıyla Çin dışı haklar satılıyor."},
+      {"label": "Batı'da marka ve fiyat", "detail": "Lisans alan şirket denemeleri tamamlayıp ilacı kendi markası ve fiyatıyla satıyor."},
+      {"label": "Çin bağımlılığı azaltıyor", "detail": "Plan desteği ve yeni sigorta sistemiyle Çinli firmalar ileride daha pahalıya satabilecek."}
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "Çin kaynaklı moleküller için Türkiye/MENA bölgesel lisans aracılığı",
+      "insight": "Videoya göre Çinli laboratuvarlar yurt içinde düşük fiyat ve azalan sermaye nedeniyle nakit arıyor ve haklarını bölgelere bölerek satıyor.",
+      "problem": "Türk ilaç şirketleri yenilikçi ürün portföyü için Batılı devlerle rekabet edemiyor; Çinli biyoteknoloji şirketleri ise Türkiye ve Orta Doğu gibi bölgeleri ayrı pazarlamakla uğraşmıyor.",
+      "solution": "Çinli biyoteknoloji şirketlerinin portföylerini tarayıp Türkiye, Orta Doğu ve Orta Asya bölgesel haklarını Türk ilaç firmalarıyla buluşturan, ön değerlendirme ve müzakere desteği sunan iş geliştirme butiği.",
+      "target": "Orta-büyük Türk ilaç şirketleri ve bölgesel distribütörler",
+      "revenue_model": "Başarı ücreti (peşin ödeme ve kilometre taşlarından pay) + aylık hizmet bedeli",
+      "first_step": "Çin dışı hakları satılmamış 20 molekülü kamuya açık kaynaklardan listeleyip 3 Türk ilaç firmasının iş geliştirme birimine sunmak ve ilgi düzeyini ölçmek.",
+      "capital": "Düşük",
+      "difficulty": 4,
+      "turkey_angle": "Türkiye'nin güçlü bir jenerik ilaç sanayii ve bölgeye ihracat ağı var; TİTCK ruhsat süreçleri ve fiyat kararnamesi değerlendirmeye dahil edilmeli.",
+      "risks": "Uzun ruhsat süreçleri, Türkiye'nin referans fiyat sistemi nedeniyle düşük fiyatlar, ABD-Çin gerilimlerinden doğan uyum riskleri, fikri mülkiyet uyuşmazlıkları."
+    },
+    {
+      "name": "Batılı lisans alıcıları için Türkiye klinik araştırma merkezi ağı",
+      "insight": "Videoda Batılı düzenleyicilerin Çin verilerini yeterli bulmayıp Batılı hastalarda yapılan denemeleri beklediği ve bunun onayı geciktirdiği anlatılıyor.",
+      "problem": "Çin'den molekül lisanslayan ABD/Avrupa biyoteknoloji şirketleri Çin dışı hasta verisini hızlı ve uygun maliyetle toplamak zorunda.",
+      "solution": "Türkiye'deki üniversite ve özel hastanelerden onkoloji ve metabolizma odaklı araştırma merkezlerini standartlaştırıp hızlı hasta alımı ve kaliteli veri sunan bir saha yönetim organizasyonu.",
+      "target": "Çin kaynaklı moleküllerle kurulmuş ABD/Avrupa biyoteknoloji şirketleri ve CRO'lar",
+      "revenue_model": "Hasta başı ve merkez başı hizmet ücretleri",
+      "first_step": "5 hastanenin onkoloji kliniğiyle görüşüp hasta havuzu ve etik kurul sürelerini belgeleyen bir yetenek dosyası hazırlamak ve 10 ABD biyoteknoloji firmasına göndermek.",
+      "capital": "Orta",
+      "difficulty": 4,
+      "turkey_angle": "Türkiye'nin büyük hasta havuzu ve AB'ye yakınlığı avantaj; klinik araştırma mevzuatı ve etik kurul süreleri belirleyici.",
+      "risks": "İyi Klinik Uygulamalar denetimleri, kişisel sağlık verisi (KVKK) uyumu, Biosecure gibi ABD düzenlemelerinin kapsamı genişlerse talebin etkilenmesi."
+    },
+    {
+      "name": "Etken madde tedarik zinciri risk haritası",
+      "insight": "Videoda Avrupa ilaçlarındaki etken maddelerin büyük bölümünün Çin veya Hindistan'dan geldiği ve yerli üretimin çok daha pahalı olduğu anlatılıyor.",
+      "problem": "İlaç üreticileri ve hastane alımcıları hangi ürünlerinin tek bir ülkeye veya tek bir etken madde üreticisine bağımlı olduğunu sistematik görmüyor.",
+      "solution": "Ürün bazında etken madde kaynak ülke ve üretici yoğunluğunu haritalayan, alternatif onaylı tedarikçileri listeleyen ve kesinti riskinde uyarı veren bir SaaS.",
+      "target": "Türk jenerik ilaç üreticileri, hastane satın alma birimleri, ecza depoları",
+      "revenue_model": "Kurumsal abonelik",
+      "first_step": "En çok kullanılan 30 jenerik etken madde için kamuya açık sertifika veri tabanlarından kaynak ülke dağılımını çıkarıp 3 üreticiye örnek rapor sunmak.",
+      "capital": "Düşük",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye de etken maddede büyük ölçüde ithalata bağımlı; ilaç kıtlıkları gündemde olduğu için talep olabilir.",
+      "risks": "Üretici bazlı verilere erişim zorluğu, firmaların tedarik bilgisini paylaşmak istememesi."
+    }
+  ],
+  "skeptic_notes": [
+    "Başlıktaki 'Batı ilaç yarışını kaybetti' ifadesi abartılı; video Batılı şirketlerin hâlâ marka ve fiyat gücünü elinde tuttuğunu da anlatıyor.",
+    "'Dünyadaki yeni ilaç denemelerinin yarısı Çin'de başlıyor' iddiası kaynaksız ve tanımı belirsiz.",
+    "'2030'dan önce patent kaybedecek 300' ifadesinde birim altyazıda eksik; bağlamdan milyar dolar olduğu varsayıldı.",
+    "Altyazıda ciddi isim hataları var: kurucu 'Michelle Sia/Xia' olarak, şirketin bulunduğu şehir hem 'Zhangjiang' hem 'Zhongshan' olarak geçiyor ve ilacın kodu 'IBI301' olarak yazılmış; Akeso'nun ilacının kodu farklı olabilir, doğrulanmalı.",
+    "GSK'nın 500 milyon dolarlık anlaşmasının karşı tarafı altyazıda 'HutchMed' olarak geçiyor; bu şirket adı doğrulanmalı.",
+    "Fiyat indirimi bir yerde yüzde 63, başka yerde yüzde 58-80 aralığı olarak veriliyor; farklı bağlamlar olabilir.",
+    "Bir hücre tedavisinin ABD ve Çin fiyat karşılaştırması tek bir ürün örneğine dayanıyor; genelleme yapılmamalı.",
+    "Altyazıda 'Statista' geçiyor; bağlam Statrys'i kastediyor (reklam/kanal tanıtımı)."
+  ]
+}

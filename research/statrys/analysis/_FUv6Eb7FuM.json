@@ -1,0 +1,119 @@
+{
+  "id": "_FUv6Eb7FuM",
+  "title_tr": "Labubu'nun yükselişi ve düşüşü: Pop Mart kıtlığı nasıl kendi eliyle bitirdi",
+  "category": "Şirket vakası",
+  "region": ["Çin", "Hong Kong", "ABD", "Birleşik Krallık", "Güneydoğu Asya"],
+  "summary_tr": "Video, Pop Mart'ın Labubu karakterinin ünlü paylaşımlarından çok daha derin bir 'makine' sayesinde patladığını anlatıyor: kör kutu (blind box) ile belirsiz ödül, nadir 'gizli figür', bilinçli olarak talebin altında tutulan arz ve bu kıtlıktan doğan ikinci el fiyat primi, ürünü bir yatırım nesnesi gibi hissettirdi. Talep patlayınca şirket üretimi kısa sürede yüz kat artırdı; kıtlık bitince ikinci el fiyatlar çöktü, arama ilgisi ve hisse değeri sert düştü, sahte ürünler yayıldı. Buna rağmen Pop Mart hâlâ çok kârlı ve yurt dışı gelirleri hızla büyümüş durumda; video bunu bir Çin markasının Batı'da 'arzu' üretebildiğinin kanıtı olarak görüyor. Şirket artık Disney benzeri bir karakter evreni (film, tema parkı, mücevher) kurarak modası geçmemeye çalışıyor.",
+  "key_points": [
+    "Labubu 2015'teki bir resimli kitap karakterinden doğdu ve 2023'te peluş anahtarlık formatıyla patladı.",
+    "Kör kutu modeli, kumar makinelerine benzer şekilde belirsiz ödül psikolojisiyle tekrar satın almayı tetikliyor.",
+    "Kıtlık ve ikinci el primi, oyuncağı 'değer kazanan varlık' gibi algılattı; Pop Mart bu satışlardan doğrudan para kazanmadı.",
+    "Üretimin yüz kat artırılması kıtlığı yok etti, ikinci el fiyatlar ve marka ilgisi çöktü.",
+    "Rekor gelire rağmen hisse ciddi değer kaybetti; yatırımcılar büyümenin motorunun yavaşladığını gördü.",
+    "Pop Mart, yüksek brüt marjı ve Batı'daki mağazalarıyla Çin markalarının küresel talep yaratabildiğini gösterdi."
+  ],
+  "numbers": [
+    {"label": "Rekor müzayede fiyatı", "value": 170000, "unit": "$", "context": "Bir Labubu'nun müzayedede satıldığı fiyat."},
+    {"label": "Pop Mart yıllık geliri", "value": 5.5, "unit": "milyar $", "context": "Şirketin tek bir yılda ulaştığı gelir (sonra 5,4 milyar olarak da anılıyor)."},
+    {"label": "Kör kutu fiyatı (alt)", "value": 10, "unit": "$", "context": "Kapalı kutunun fiyat aralığının alt ucu."},
+    {"label": "Kör kutu fiyatı (üst)", "value": 30, "unit": "$", "context": "Kapalı kutunun fiyat aralığının üst ucu."},
+    {"label": "Gizli figür olasılığı", "value": 72, "unit": "1/x", "context": "Gizli figürün çıkma ihtimali yaklaşık 72'de 1."},
+    {"label": "Labubu geliri 2024", "value": 430, "unit": "milyon $", "context": "Labubu serisinin 2024'teki yaklaşık geliri."},
+    {"label": "Labubu gelir artışı 2024", "value": 700, "unit": "%", "context": "Bir yılda 'yüzde 700'ün üzerinde' artış."},
+    {"label": "Labubu geliri 2025", "value": 1.95, "unit": "milyar $", "context": "Serinin 2025'teki geliri."},
+    {"label": "Labubu'nun toplam satıştaki payı", "value": 38, "unit": "%", "context": "Tek karakterin şirketin tüm satışlarındaki payı."},
+    {"label": "Nadir figür primi", "value": 2000, "unit": "%", "context": "Nadir sürümlerin perakende fiyatın üzerindeki primi."},
+    {"label": "Kayıtlı üye (anakara Çin)", "value": 72, "unit": "milyon kişi", "context": "2025 sonunda anakara Çin'deki kayıtlı üye sayısı."},
+    {"label": "Tekrar satın alma oranı", "value": 55.7, "unit": "%", "context": "Bir kez alanların tekrar alma oranı."},
+    {"label": "Aylık üretim (2024 başı)", "value": 300000, "unit": "adet/ay", "context": "Peluş üretiminin başlangıç seviyesi."},
+    {"label": "Aylık üretim (2025 sonu)", "value": 30000000, "unit": "adet/ay", "context": "Yüz kat artırılmış üretim seviyesi."},
+    {"label": "3. çeyrek 2025 gelir artışı", "value": 250, "unit": "%", "context": "İkinci el fiyatlar çökerken bile gelir artışı."},
+    {"label": "Arama ilgisindeki düşüş", "value": 90, "unit": "%", "context": "Labubu aramalarının zirveye göre düşüşü."},
+    {"label": "Kaybedilen piyasa değeri", "value": 33, "unit": "milyar $", "context": "Yaz zirvesinden bu yana silinen piyasa değeri."},
+    {"label": "Açıklanan yıllık gelir artışı", "value": 185, "unit": "%", "context": "Mart'ta açıklanan rekor sonuçlardaki gelir artışı."},
+    {"label": "Açıklanan kâr artışı", "value": 300, "unit": "%", "context": "Aynı sonuçlarda 'yüzde 300'ün üzerinde' kâr artışı."},
+    {"label": "Sonuç günü hisse düşüşü", "value": 22, "unit": "%", "context": "Rekor sonuçların açıklandığı gün hissenin düşüşü."},
+    {"label": "Sahte ürün ilan payı", "value": 40, "unit": "%", "context": "Bazı platformlarda ilanların sahte olduğu söylenen kısmı."},
+    {"label": "İngiltere'de el konulan sahte ürün", "value": 3.5, "unit": "milyon £", "context": "Birleşik Krallık makamlarının el koyduğu sahte ürün değeri."},
+    {"label": "Amerika kıtası satışları", "value": 940, "unit": "milyon $", "context": "2025'te sekiz kattan fazla artarak ulaşılan seviye."},
+    {"label": "Yurt dışı gelir payı", "value": 44, "unit": "%", "context": "Yurt dışı pazarların toplam gelirdeki payı."},
+    {"label": "Mağaza sayısı", "value": 630, "unit": "mağaza", "context": "20 ülkedeki mağaza sayısı."},
+    {"label": "Brüt marj", "value": 72, "unit": "%", "context": "Pop Mart'ın 2025 brüt marjı, lüks markalarla kıyaslanıyor."},
+    {"label": "Yıllık kâr", "value": 1.8, "unit": "milyar $", "context": "Şirketin güncel yıllık kârı."}
+  ],
+  "chart": {
+    "type": "bar",
+    "title": "Pop Mart / Labubu: videoda geçen büyüme oranları",
+    "unit": "%",
+    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı",
+    "data": [
+      {"label": "Labubu geliri 2024 artışı", "value": 700},
+      {"label": "Kâr artışı (Mart'ta açıklanan)", "value": 300},
+      {"label": "Gelir artışı 3. çeyrek 2025", "value": 250},
+      {"label": "Gelir artışı (Mart'ta açıklanan)", "value": 185}
+    ]
+  },
+  "diagram": {
+    "type": "cycle",
+    "title": "Kör kutu-kıtlık döngüsü ve tersine dönüşü",
+    "steps": [
+      {"label": "Belirsiz ödül", "detail": "Kör kutu içindekinin bilinmemesi alımı oyuna dönüştürüyor."},
+      {"label": "Gizli figür avı", "detail": "Nadir figür olasılığı tek alımı onlarca alıma çeviriyor."},
+      {"label": "Bilinçli kıtlık", "detail": "Arz talebin altında tutulunca müşteriler ürünü kovalayan avcılara dönüşüyor."},
+      {"label": "İkinci el primi", "detail": "Yüksek ikinci el fiyatı oyuncağı yatırım gibi hissettiriyor."},
+      {"label": "Viral kutu açılışları", "detail": "Ücretsiz içerik yeni alıcıları döngüye çekiyor."},
+      {"label": "Seri üretim kıtlığı bitiriyor", "detail": "Üretim yüz kat artınca prim çöküyor ve döngü tersine dönüyor."}
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "Koleksiyon oyuncağı doğrulama ve orijinallik sertifikası",
+      "insight": "Videoda sahte ürünlerin bazı platformlarda ilanların büyük kısmını oluşturduğu ve değeri tamamen orijinalliğe dayanan bir ürün için bunun zehir olduğu anlatılıyor.",
+      "problem": "İkinci el koleksiyon oyuncakları alan kişiler orijinal ile sahteyi ayırt edemiyor, satıcılar da güven veremiyor.",
+      "solution": "Fotoğraf ve fiziksel inceleme ile doğrulama yapan, onaylanan ürüne QR kodlu mühür ve kayıt veren bir hizmet; ikinci el platformlarıyla entegrasyon.",
+      "target": "Türkiye'deki koleksiyoncular, ikinci el platform satıcıları, hobi mağazaları",
+      "revenue_model": "Ürün başı doğrulama ücreti; platformlarla gelir paylaşımı",
+      "first_step": "50 orijinal ve sahte ürün örneği toplayıp ayırt edici özellik kataloğu oluşturmak; 2 hobi mağazasıyla pilot doğrulama günü düzenlemek.",
+      "capital": "Düşük",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye'de sahte ürün yaygınlığı yüksek; aynı altyapı spor ayakkabı ve kart koleksiyonlarına genişletilebilir.",
+      "risks": "Hatalı doğrulamadan doğan sorumluluk; marka sahiplerinin işbirliği yapmaması; trendin hızla sönmesi."
+    },
+    {
+      "name": "Şeffaf olasılıklı Türk tasarım oyuncak markası",
+      "insight": "Video, bir illüstratörün karakterinin lisanslanıp sınırlı arzla küresel bir talep nesnesine dönüşebildiğini, ancak aşırı üretimin bunu bitirdiğini gösteriyor.",
+      "problem": "Türk illüstratörlerin karakterleri fiziksel ürüne ve koleksiyon pazarına nadiren dönüşüyor; mevcut kör kutu ürünleri olasılıkları gizlediği için eleştiriliyor.",
+      "solution": "Yerel illüstratörlerle lisans anlaşmasıyla numaralı, sınırlı sayıda seriler üreten; kör kutu kullanılıyorsa olasılıkları açıkça yazan ve yaş sınırı koyan bir tasarım oyuncak markası.",
+      "target": "18-35 yaş koleksiyoncu ve hediye alıcıları; müze ve kitapçı mağazaları",
+      "revenue_model": "Doğrudan satış, sınırlı seri ön siparişleri, illüstratöre telif payı",
+      "first_step": "2 illüstratörle 200 adetlik numaralı bir ön sipariş kampanyası açıp 30 günde satılma oranını ölçmek.",
+      "capital": "Orta",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye'de oyuncak/peluş üretim kapasitesi ve güçlü illüstrasyon topluluğu var; Avrupa'ya yakınlık lojistik avantajı sağlar.",
+      "risks": "Kör kutu mekaniğinin kumar benzeri olduğu eleştirisi ve olası düzenlemeler; oyuncak güvenlik standartları (CE); talep tahmini hatası."
+    },
+    {
+      "name": "Koleksiyon ürünü ikinci el fiyat endeksi",
+      "insight": "Videoda ikinci el fiyatların çöküşünün, şirket satışları büyürken bile talebin öldüğünü önceden gösterdiği anlatılıyor.",
+      "problem": "Perakendeciler, ithalatçılar ve koleksiyoncular bir trendin zirve yapıp yapmadığını görebilecek düzenli bir fiyat verisine sahip değil.",
+      "solution": "Pazar yeri ilanlarını tarayıp model bazında ikinci el fiyat / perakende fiyat oranını izleyen ve trend bozulmasında uyarı veren bir panel.",
+      "target": "Oyuncak ve hobi ürünü ithalatçıları, perakendeciler, koleksiyoncular",
+      "revenue_model": "Abonelik; ithalatçılar için özel stok uyarısı paketi",
+      "first_step": "10 popüler koleksiyon ürününün fiyatlarını 4 hafta boyunca elle kaydedip ithalatçılara örnek rapor sunmak ve ödeme niyetini sormak.",
+      "capital": "Düşük",
+      "difficulty": 2,
+      "turkey_angle": "Türk ithalatçılar trend ürünleri genellikle geç stoklayıp elde kalma riski yaşıyor; erken uyarı somut bir değer sağlar.",
+      "risks": "Platformların veri toplama kısıtları ve kullanım şartları; küçük pazar."
+    }
+  ],
+  "skeptic_notes": [
+    "Şirket geliri bir yerde 5,5 milyar $, başka bir yerde 5,4 milyar $ olarak geçiyor; tutarsız, ayrıca dolar çevirisi muhtemelen yaklaşık.",
+    "Pop Mart'ın piyasa değerinin Hasbro, Mattel ve Sanrio'nun toplamını geçtiği iddiası belirli bir tarihe bağlı; doğrulanmalı.",
+    "Altyazıda 'Lisa paylaşımından sonra satışlar sabah 6'da arttı' ifadesi bozuk; muhtemelen sabahın erken saatlerinde kuyruklar kastediliyor.",
+    "'Co-COO' ve CEO'ya dair ifadeler altyazıda bozuk aktarılmış.",
+    "Videodaki 'Labubu birkaç dolara mal oluyor, kalan 25 dolar marka' hesabı yaklaşık bir örnek, şirket verisi değil.",
+    "Grafikteki büyüme oranları farklı dönemlere ve kalemlere ait; birbirine doğrudan oranlanmamalı.",
+    "Dopamin ve kumar benzetmesi basitleştirilmiş bir psikoloji anlatımı.",
+    "Sunucu Statrys'ten bahsediyor; doğrudan ürün tanıtımı sınırlı ama kanal Statrys'in pazarlama kanalıdır."
+  ]
+}

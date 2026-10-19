@@ -1,0 +1,119 @@
+{
+  "id": "XxpvOAoMGZI",
+  "title_tr": "Endonezya'da güven krizi: rupi çöküşü, sermaye kaçışı ve sermaye kontrolleri",
+  "category": "Güneydoğu Asya",
+  "region": ["Endonezya"],
+  "summary_tr": "Video, istikrarlı büyümesi, genç nüfusu ve nikel rezervleriyle uzun süre Asya'nın 'sessiz başarılı' ülkesi olan Endonezya'da yatırımcı güveninin hızla kaybolduğunu anlatıyor. Rupi tarihi dip seviyeye geriledi, borsa sert düştü, yabancılardan çok daha fazla para yerli yatırımcılar tarafından ülke dışına çıkarıldı. Bunun nedeni olarak sürekli yüzde 5 civarında açıklanan büyüme verisinin güvenilirliğine dair şüpheler, Prabowo hükümetinin büyük ücretsiz okul yemeği programı, yükselen petrol fiyatlarıyla zorlanan bütçe kuralı, merkez bankası bağımsızlığına dair kaygılar ve yolsuzluk skandalları gösteriliyor. Hükümet güveni yeniden kurmak yerine ihracatçı dövizlerini bloke eden, döviz alım limitini düşüren ve emtia ihracatını bir devlet aracısına bağlayan sermaye kontrollerine yöneldi. Video, ucuzlayan varlıkları alan iyimser yatırımcılar da olduğunu not ederek izlenmesi gereken asıl göstergenin bu 'kapıların' açılıp açılmayacağı olduğunu söylüyor.",
+  "key_points": [
+    "Endonezya'nın temelleri (nüfus, nikel, düşük kamu borcu) güçlü görünse de kurumlara güven azaldı.",
+    "Rupi tarihi dip seviyeye indi; yerli sermaye çıkışı yabancı çıkışının yaklaşık üç katı.",
+    "Her koşulda yüzde 5 civarında açıklanan büyüme verisi, stok birikimi ve elektrik tüketimi gibi göstergelerle tutarsız bulunuyor.",
+    "Orta sınıf daralırken bütçe, büyük sosyal programlar ve yüksek petrol fiyatlarıyla baskı altında.",
+    "Hükümet döviz tutma zorunluluğu, düşük döviz alım limiti ve devlet ihracat aracısı gibi sermaye kontrolleri getirdi.",
+    "Tedarikçilerin ödemeyi yurt dışı hesaplara istemesi, ülke riskinin erken uyarı işareti olarak görülüyor."
+  ],
+  "numbers": [
+    {"label": "Baskında bulunan altın", "value": 74, "unit": "kg", "context": "Yolsuzlukla mücadele savcısının evinde bulunan altın külçe."},
+    {"label": "Baskında bulunan nakit", "value": 26, "unit": "milyon $", "context": "Aynı baskında bulunan nakit."},
+    {"label": "Borsa düşüşü", "value": 26, "unit": "%", "context": "Borsanın kaybı; başka bir yerde Prabowo döneminde 'dörtte birden fazla' olarak geçiyor."},
+    {"label": "Yıllık büyüme", "value": 5, "unit": "%", "context": "Endonezya'nın yaklaşık 20 yıldır açıkladığı büyüme oranı."},
+    {"label": "Nüfus", "value": 280, "unit": "milyon kişi", "context": "Dünyanın dördüncü büyük nüfusu."},
+    {"label": "Dünya nikel rezervi payı", "value": 42, "unit": "%", "context": "Endonezya'nın dünya nikel rezervlerindeki payı."},
+    {"label": "Bütçe açığı yasal sınırı", "value": 3, "unit": "% GSYH", "context": "1998 krizinden sonra yasayla getirilen açık sınırı."},
+    {"label": "Rupi/dolar kuru", "value": 18000, "unit": "rupi/$", "context": "Haziranda aşılan, tarihin en zayıf seviyesi."},
+    {"label": "Yabancı sermaye çıkışı", "value": 8.9, "unit": "milyar $", "context": "Yabancı yatırımcıların Endonezya varlıklarından çektiği para."},
+    {"label": "Yerli sermaye çıkışı", "value": 28.2, "unit": "milyar $", "context": "Endonezyalıların ülke dışına çıkardığı para."},
+    {"label": "Ödemeler dengesi açığı", "value": 9, "unit": "milyar $", "context": "İki yıl önceki fazladan dönüşen açık."},
+    {"label": "Rezerv kaybı (ilk yarı)", "value": 10, "unit": "milyar $", "context": "Merkez bankasının bu yılın ilk yarısında harcadığı rezerv."},
+    {"label": "1. çeyrek büyüme", "value": 5.6, "unit": "%", "context": "Kur krizinin ortasında açıklanan üç yılın en yüksek büyümesi."},
+    {"label": "Orta sınıf (2019)", "value": 57, "unit": "milyon kişi", "context": "2019'da orta sınıf sayılan kişi sayısı."},
+    {"label": "Orta sınıf (bugün)", "value": 47, "unit": "milyon kişi", "context": "Bugün 'kırk yedi milyondan az' olduğu söylendi."},
+    {"label": "Orta sınıf adayı grup", "value": 142, "unit": "milyon kişi", "context": "Orta sınıfın hemen altındaki 'aspiring' grup."},
+    {"label": "Prabowo büyüme hedefi", "value": 8, "unit": "%", "context": "Seçim vaadi olan büyüme oranı."},
+    {"label": "Ücretsiz yemek programı kapsamı", "value": 80, "unit": "milyon kişi", "context": "Okul çocukları ve hamile kadınlar."},
+    {"label": "Yemek programının bütçe payı", "value": 10, "unit": "%", "context": "Programın devlet bütçesindeki yaklaşık payı."},
+    {"label": "Petrol fiyatı", "value": 90, "unit": "$/varil", "context": "İran'daki savaş sonrası aşılan seviye."},
+    {"label": "Ülkede tutulacak döviz", "value": 80, "unit": "milyar $", "context": "İhracatçı döviz tutma zorunluluğuyla ülkede kalacak döviz."},
+    {"label": "Döviz alım limiti (önce)", "value": 100000, "unit": "$", "context": "Belgesiz döviz alım sınırının dokuz ay önceki hali."},
+    {"label": "Döviz alım limiti (şimdi)", "value": 10000, "unit": "$", "context": "Yüzde 90 düşürülmüş yeni sınır."},
+    {"label": "Rupinin 18 aylık kaybı", "value": 14, "unit": "%", "context": "Tedarikçi maliyetlerini etkileyen kur kaybı."},
+    {"label": "Temmuz borsa yükselişi", "value": 10, "unit": "%", "context": "Jakarta endeksinin Temmuzdaki 'yüzde 10'dan fazla' yükselişi."},
+    {"label": "2. çeyrek doğrudan yatırım artışı", "value": 27, "unit": "%", "context": "Rekor doğrudan yabancı yatırımın yıllık artışı."}
+  ],
+  "chart": {
+    "type": "hbar",
+    "title": "Endonezya'dan sermaye çıkışı ve dış denge kalemleri",
+    "unit": "milyar $",
+    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı",
+    "data": [
+      {"label": "Yerli sermaye çıkışı", "value": 28.2},
+      {"label": "Rezerv kaybı (bu yılın ilk yarısı)", "value": 10},
+      {"label": "Ödemeler dengesi açığı", "value": 9},
+      {"label": "Yabancı sermaye çıkışı", "value": 8.9}
+    ]
+  },
+  "diagram": {
+    "type": "flow",
+    "title": "Güven kaybından sermaye kontrolüne",
+    "steps": [
+      {"label": "Veri ve kurum şüphesi", "detail": "Büyüme verisinin güvenilirliği ve merkez bankası bağımsızlığı sorgulanıyor."},
+      {"label": "Mali baskı", "detail": "Büyük sosyal program ve yüksek petrol fiyatı bütçe kuralını zorluyor."},
+      {"label": "Sermaye kaçışı", "detail": "Önce yabancılar, ardından daha büyük ölçekte yerli yatırımcılar parayı çıkarıyor."},
+      {"label": "Rupi çöküyor", "detail": "Kur tarihi dibe iniyor, merkez bankası rezerv harcıyor."},
+      {"label": "Kapılar kapanıyor", "detail": "Döviz tutma zorunluluğu, düşük alım limiti ve devlet ihracat aracısı devreye giriyor."},
+      {"label": "Güven daha da azalıyor", "detail": "Kontroller kalıcılaşırsa yatırımcılar kuralların yine değişeceğini fiyatlıyor."}
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "Gelişen ülke tedarikçi ödeme riski izleme servisi",
+      "insight": "Videoya göre bir ülke parayı tuzağa düşürmeye başladığında ilk tepki veren yerel tedarikçiler oluyor; ödemeyi yurt dışı hesaplara istemeye ve daha yüksek peşinata başlıyorlar.",
+      "problem": "İthalatçılar tedarikçilerin ödeme talimatı değişikliklerini hem ülke riski sinyali hem de olası dolandırıcılık veya mevzuat ihlali riski olarak değerlendiremiyor.",
+      "solution": "Ülke bazlı sermaye kontrolü kurallarını takip eden, tedarikçinin ödeme talimatı değişikliğini doğrulayan (hesap sahipliği, şirket kaydı) ve bunun ihracatçı ülke mevzuatına uygun olup olmadığını işaretleyen bir uyum aracı.",
+      "target": "Endonezya ve diğer gelişen ülkelerden mal alan Türk ithalatçılar",
+      "revenue_model": "Abonelik ve doğrulama başı ücret",
+      "first_step": "Endonezya'dan ithalat yapan 10 Türk firmasıyla görüşüp son bir yılda ödeme talimatı değişikliği yaşayıp yaşamadıklarını öğrenmek; Endonezya döviz kurallarının Türkçe özet kontrol listesini hazırlamak.",
+      "capital": "Düşük",
+      "difficulty": 3,
+      "turkey_angle": "Türk ithalatçılar Asya tedarikinde Çin'e alternatif arıyor; Türkçe uyum içeriği boşluk dolduruyor.",
+      "risks": "Üçüncü ülke hesabına ödeme yapmak tedarikçi ülkenin döviz kurallarını ihlal edebilir; hizmet bunu kolaylaştıran değil tespit eden tarafta konumlanmalı. Kural değişikliklerini güncel tutmanın maliyeti."
+    },
+    {
+      "name": "Alternatif veriyle gelişen ülke büyüme 'şüphe endeksi'",
+      "insight": "Videoda açıklanan imalat büyümesiyle düşen elektrik tüketiminin çeliştiği ve piyasaların resmi verilere güvenmeyi bıraktığı anlatılıyor.",
+      "problem": "Yatırımcılar ve ihracatçılar resmi büyüme verilerinin gerçek ekonomik aktiviteyi yansıtıp yansıtmadığını bağımsız olarak kontrol edemiyor.",
+      "solution": "Elektrik tüketimi, liman hareketleri, gece ışığı uydu verisi ve ithalat istatistiklerini birleştirip resmi büyümeyle sapmayı gösteren ülke bazlı gösterge.",
+      "target": "Fon yöneticileri, ihracatçılar, kredi sigortası şirketleri, araştırmacı gazeteciler",
+      "revenue_model": "Abonelik veri servisi ve özel ülke raporları",
+      "first_step": "Endonezya için kamuya açık elektrik ve dış ticaret verilerinden son 12 çeyreği karşılaştıran örnek bir analiz yayımlayıp 30 kurumsal hedefe göndermek.",
+      "capital": "Orta",
+      "difficulty": 4,
+      "turkey_angle": "İstanbul'dan veri bilimi ekibiyle yürütülebilir; Türkiye ve komşu ülkelere de uygulanabilir.",
+      "risks": "Veri erişimi ve kalitesi, metodoloji eleştirileri, ülke yönetimleriyle hukuki/itibari gerilim."
+    },
+    {
+      "name": "Akreditifli Endonezya özel kahve ithalatı",
+      "insight": "Videoya göre rupi 18 ayda belirgin değer kaybetti; bu, dolarla alım yapanlar için Endonezya ürünlerini görece ucuzlatıyor ama ödeme riskini artırıyor.",
+      "problem": "Türkiye'deki üçüncü dalga kahve dükkânları Endonezya'nın özel kahvelerine aracılar üzerinden yüksek fiyatla erişiyor; doğrudan ithalat ödeme riski nedeniyle ürkütücü.",
+      "solution": "Endonezyalı kooperatiflerden akreditif ve resmi bankacılık kanallarıyla doğrudan alım yapıp küçük partiler halinde kavurucu ve kafelere satan butik ithalatçı.",
+      "target": "Türkiye'deki butik kahve kavurucuları ve kafe zincirleri",
+      "revenue_model": "Ürün satış marjı; ön siparişli parti satışı",
+      "first_step": "10 kavurucudan numune talebi toplayıp 2 Endonezya kooperatifinden numune getirtmek ve akreditif maliyetini bankayla netleştirmek.",
+      "capital": "Orta",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye'de özel kahve pazarı büyüyor; gıda ithalatında Tarım Bakanlığı kontrol belgeleri ve gümrük vergileri hesaba katılmalı.",
+      "risks": "Endonezya'nın emtia ihracatını devlet aracısına bağlama genişlemesi, döviz kuralları, kalite tutarlılığı, navlun maliyeti."
+    }
+  ],
+  "skeptic_notes": [
+    "Başlık ('tuhaf bir şey oluyor') clickbait; içerik büyük ölçüde makro veri ve politika yorumu.",
+    "Devlet yatırım fonu altyazıda 'Danareksa' olarak geçiyor; bağlam büyük olasılıkla Danantara'yı kastediyor, isim doğrulanmalı.",
+    "Altyazıda 'D size' muhtemelen DSI, 'Statues' ise Statrys olarak okunmalı.",
+    "Devlet tahvili alanlara cezai ve vergisel dokunulmazlık tanındığı iddiası çok güçlü; yasa metniyle kontrol edilmeli.",
+    "Altın ve nakit bulunan savcı baskını, merkez bankasına akrabanın atanması ve finans bakanının görevden alınması gibi iddialar isim ve tarih verilmeden aktarılıyor.",
+    "Borsa kaybı bir yerde yüzde 26, başka yerde 'dörtte birden fazla' olarak geçiyor; dönem tanımı belirsiz.",
+    "Büyümenin stok birikimiyle şişirildiği ve elektrik tüketiminin düştüğü iddiaları ayrıntılı veriyle desteklenmiyor; video da verilerin sahte olduğunun kanıtlanamadığını kabul ediyor.",
+    "'Yüzde 100 kurumlar vergisi indirimi' fiilen sıfır vergi anlamına geliyor; finans merkezi yasasının detayları doğrulanmalı.",
+    "Statrys'in ödeme hizmetine atıf var (reklam içeriği)."
+  ]
+}

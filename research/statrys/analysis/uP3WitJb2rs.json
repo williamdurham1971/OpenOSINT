@@ -1,0 +1,157 @@
+{
+  "id": "uP3WitJb2rs",
+  "title_tr": "Uluslararası havalenizin neden eksik ulaştığı: aracı bankalar",
+  "category": "Küresel finans & bankacılık",
+  "region": [
+    "Küresel"
+  ],
+  "summary_tr": "Video, uluslararası havalelerin alıcıya eksik ulaşmasının ana nedeni olarak muhabir/aracı bankaları gösteriyor. Gönderen ve alıcı bankanın doğrudan bağlantısı yoksa ödeme bir veya daha fazla büyük bankadan geçiyor ve her biri kendi ücretini kesiyor. Gönderici kaç aracı banka olacağını ve ne kadar ücret kesileceğini önceden bilemiyor; MT103 belgesi ödeme rotasını ve kesintileri gösterebiliyor. Masrafın kimde kalacağı OUR, SHA ve BEN seçenekleriyle belirleniyor. Kapanışta Statrys'in sabit SWIFT ücreti, takip ve yerel ödeme ağları seçeneği tanıtılıyor.",
+  "key_points": [
+    "Gönderen ile alıcı bankanın doğrudan ilişkisi yoksa ödeme, aktarmalı uçuş gibi bir veya birkaç aracı bankadan geçer.",
+    "Her aracı banka kendi işlem ücretini keser; videoya göre bu ortalama banka başına 15-30 $ arasında.",
+    "Ücreti etkileyen faktörler: aracı banka sayısı, geçilen ülkeler, döviz türü ve transfer tutarı; az kullanılan dövizler daha pahalı.",
+    "MT103 belgesi ödemenin rotasını, dahil olan bankaları ve kesintileri gösterir; bazı bankalar bunun için ücret alır.",
+    "OUR'da tüm masrafı gönderici, SHA'da taraflar paylaşır, BEN'de tamamını alıcı öder; tedarikçi ödemelerinde OUR tam tutarın ulaşmasını sağlar."
+  ],
+  "numbers": [
+    {
+      "label": "Örnek transfer tutarı",
+      "value": 1000,
+      "unit": "USD",
+      "context": "ABD'deki Alex'in yurt dışındaki Jamie'ye gönderdiği örnek tutar."
+    },
+    {
+      "label": "Örnek aracı banka ücreti",
+      "value": 20,
+      "unit": "USD",
+      "context": "Aracı banka B'nin örnekte kestiği ücret."
+    },
+    {
+      "label": "Alıcıya ulaşan tutar",
+      "value": 980,
+      "unit": "USD",
+      "context": "Aracı banka kesintisi sonrası Jamie'nin hesabına geçen tutar."
+    },
+    {
+      "label": "Aracı banka ücreti (alt)",
+      "value": 15,
+      "unit": "USD/banka",
+      "context": "Ortalama aracı banka ücreti aralığının alt sınırı."
+    },
+    {
+      "label": "Aracı banka ücreti (üst)",
+      "value": 30,
+      "unit": "USD/banka",
+      "context": "Ortalama aracı banka ücreti aralığının üst sınırı."
+    },
+    {
+      "label": "OUR seçeneği ek masraf (alt)",
+      "value": 60,
+      "unit": "USD",
+      "context": "OUR'da bankaların ortalamaya göre transfer tutarına eklediği tahmini masraf, 60-70 $."
+    },
+    {
+      "label": "OUR seçeneği ek masraf (üst)",
+      "value": 70,
+      "unit": "USD",
+      "context": "Aynı aralığın üst sınırı."
+    },
+    {
+      "label": "OUR ile hesaptan çekilen tutar",
+      "value": 1070,
+      "unit": "USD",
+      "context": "1.000 $ gönderimde hesaptan çekilebilecek tutar (altyazıda '$1,70')."
+    },
+    {
+      "label": "SHA'da gönderici banka ücreti",
+      "value": 15,
+      "unit": "USD",
+      "context": "SHA'da göndericinin kendi bankasına ödediği ücret, 15-30 $ arası."
+    }
+  ],
+  "chart": {
+    "type": "bar",
+    "title": "1.000 $'lık örnek transferde tutarlar",
+    "unit": "USD",
+    "source_note": "Videoda belirtilen örnek rakamlar; bağımsız doğrulanmadı. 1.070 $ altyazıdaki '$1,70' ifadesinin en makul okumasıdır.",
+    "data": [
+      {
+        "label": "Gönderilen (talimat)",
+        "value": 1000
+      },
+      {
+        "label": "Alıcıya ulaşan (tek aracı banka, 20 $ kesinti)",
+        "value": 980
+      },
+      {
+        "label": "OUR ile hesaptan çekilen",
+        "value": 1070
+      }
+    ]
+  },
+  "diagram": {
+    "type": "flow",
+    "title": "Aracı bankalı bir SWIFT transferinde paranın yolu",
+    "steps": [
+      {
+        "label": "Gönderici talimat verir",
+        "detail": "Banka A, 1.000 $ için ödeme talimatı oluşturur ve masraf seçeneğini (OUR/SHA/BEN) belirler."
+      },
+      {
+        "label": "Doğrudan bağlantı yok",
+        "detail": "Banka A ile alıcının bankası C arasında ilişki olmadığı için ödeme aracıya gider."
+      },
+      {
+        "label": "Aracı banka ücret keser",
+        "detail": "Banka B talimatı işler, 20 $ keser ve 980 $'lık talimatı iletir."
+      },
+      {
+        "label": "Olası ek aracılar",
+        "detail": "Rota uzarsa her ek banka süreyi ve kesintiyi artırır."
+      },
+      {
+        "label": "Alıcı banka hesaba geçirir",
+        "detail": "Banka C mutabakat sonrası kalan tutarı alıcının hesabına yatırır."
+      },
+      {
+        "label": "MT103 ile iz sür",
+        "detail": "Eksik ulaşan ödemede MT103 rotayı ve kesinti noktalarını gösterir."
+      }
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "İhracatçılar için eksik tahsilat tespit ve takip aracı",
+      "insight": "Video, alıcının eksik tutar almasının görünmeyen aracı banka kesintilerinden kaynaklandığını ve MT103 ile izlenebildiğini anlatıyor.",
+      "problem": "İhracatçılar fatura tutarı ile hesaba geçen döviz arasındaki farkı fark etmiyor veya müşteriyle tartışmalı alacak olarak bırakıyor.",
+      "solution": "Kesilen faturalarla gelen havaleleri eşleştirip farkları otomatik işaretleyen, MT103 talep yazısını ve müşteriye gönderilecek fark bildirimini hazırlayan yazılım.",
+      "target": "Düzenli döviz tahsilatı yapan ihracatçılar ve dış ticaret şirketleri",
+      "revenue_model": "Aylık abonelik veya işlem hacmine göre kademeli ücret",
+      "first_step": "5 ihracatçının 6 aylık tahsilatlarını faturalarla karşılaştırıp toplam eksik tahsilat tutarını ortaya koyan bir pilot rapor üretmek.",
+      "capital": "Düşük",
+      "difficulty": 2,
+      "turkey_angle": "Türkiye'nin geniş ihracatçı tabanı ve döviz tahsilatı yoğunluğu iyi bir pazar; banka ekstrelerini okuyabilecek entegrasyon gerekir.",
+      "risks": "Bankalardan veri alma zorluğu; MT103 belgelerinin ücretli olması; fark tutarlarının küçük kalması halinde ödeme isteğinin düşük olması."
+    },
+    {
+      "name": "Ülke-döviz koridoru bazında havale maliyeti karşılaştırma veritabanı",
+      "insight": "Video, ücretlerin ülkeye, dövize ve tutara göre değiştiğini, az kullanılan dövizlerde daha yüksek olduğunu söylüyor.",
+      "problem": "Şirketler belirli bir ülkeye ödeme yaparken hangi bankanın, hangi masraf seçeneğinin ve hangi rotanın daha ucuz olacağını bilemiyor.",
+      "solution": "Kullanıcıların anonim olarak gerçekleşen gönderilen/ulaşan tutarları paylaştığı, koridor bazında ortalama kesintileri ve tavsiye edilen masraf seçeneğini gösteren veri platformu.",
+      "target": "Afrika, Orta Asya ve Orta Doğu'ya ödeme yapan Türk ithalatçı/müteahhit firmalar",
+      "revenue_model": "Ücretsiz temel veri + detaylı koridor raporları için abonelik; ödeme sağlayıcılardan reklam",
+      "first_step": "50 şirketten son transferlerinin gönderilen/ulaşan tutarlarını toplayıp 5 koridorda ilk karşılaştırma tablosunu yayınlamak.",
+      "capital": "Düşük",
+      "difficulty": 3,
+      "turkey_angle": "Türk şirketlerinin az kullanılan dövizlerle ve muhabir ağı zayıf ülkelerle çalışması bu verinin değerini artırır.",
+      "risks": "Yeterli veri toplanamaması; kullanıcı beyanlarının doğruluğu; ticari sır kaygısı."
+    }
+  ],
+  "skeptic_notes": [
+    "Reklam içeriği: kapanışta Statrys'in sabit SWIFT ücretleri, gerçek zamanlı takip ve yerel ödeme seçenekleri tanıtılıyor.",
+    "Altyazıda '$1,70' geçiyor; 1.000 $'a 60-70 $ eklendiğine göre en makul okuma 1.070 $.",
+    "15-30 $ ve 60-70 $ ücret aralıkları 'ortalama' olarak verilmiş, kaynak gösterilmemiş; bankaya ve koridora göre değişir.",
+    "Videoda örnek aracı bankalar ekranda gösterilmiş ama transkriptte isim geçmiyor.",
+    "Altyazı hataları: 'inseary bank' = intermediary bank, 'Statis/statris' = Statrys, 'phone reach the beneficiary' = funds reach."
+  ]
+}

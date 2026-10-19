@@ -1,0 +1,122 @@
+{
+  "id": "3jy1-9jq6-g",
+  "title_tr": "Her işletme sahibinin bilmesi gereken 7 ticari banka hesabı türü",
+  "category": "Küresel finans & bankacılık",
+  "region": [
+    "Küresel",
+    "ABD"
+  ],
+  "summary_tr": "Video, işletmelerin kullanabileceği yedi hesap türünü (vadesiz, tasarruf, para piyasası, vadeli mevduat/CD, üye işyeri hesabı, tek döviz hesabı ve çok dövizli hesap) ne işe yaradıklarıyla birlikte anlatıyor. Ana uyarı, kişisel hesabı işletme için kullanmanın muhasebe, vergi ve hesap kapatılma riskleri doğurduğu. Önerilen yaklaşım tek bir hesap değil, işlevlere göre katmanlı bir hesap yapısı kurmak. Seçimde özellikler, işlem hacmi ve büyüdükçe değişen ücretler esas alınmalı. Kapanışta Statrys'in banka olmayan çok dövizli hesabı tanıtılıyor.",
+  "key_points": [
+    "Kişisel hesabı ticari amaçla kullanmak karışık defter, vergi sorunu ve hatta hesabın kapatılmasına yol açabilir.",
+    "Vadesiz ticari hesap günlük işlemlerin temelidir ve genellikle faiz getirmez.",
+    "Tasarruf, para piyasası ve vadeli hesaplar, erişim kısıtı karşılığında daha yüksek getiri sunar; vadeli hesapta erken çekim cezası vardır.",
+    "Kartla tahsilat için üye işyeri (merchant) hesabı gerekir; para önce bu hesaba gelir, komisyonlar düşülüp vadesiz hesaba aktarılır.",
+    "Tek döviz hesapları kur maliyetini düşürür ama her döviz için ayrı hesap gerektirir; çok dövizli hesap bunları tek yerde toplar.",
+    "Seçim üç ölçüte göre yapılmalı: işleyişe uygun özellikler, işlem hacmi ve uzun vadeli ücret yapısı."
+  ],
+  "numbers": [
+    {
+      "label": "Anlatılan hesap türü sayısı",
+      "value": 7,
+      "unit": "adet",
+      "context": "Videonun ele aldığı ticari hesap türü sayısı."
+    },
+    {
+      "label": "En kısa vadeli mevduat süresi",
+      "value": 3,
+      "unit": "ay",
+      "context": "CD vadesi için verilen örnekler 3, 6, 9 ay, 1 yıl ve 5 yıl."
+    },
+    {
+      "label": "En uzun vadeli mevduat süresi",
+      "value": 5,
+      "unit": "yıl",
+      "context": "Vade uzadıkça faizin genellikle arttığı söyleniyor."
+    },
+    {
+      "label": "Hesap seçiminde ölçüt sayısı",
+      "value": 3,
+      "unit": "adet",
+      "context": "Özellikler, işlem hacmi ve ücretler."
+    }
+  ],
+  "chart": null,
+  "diagram": {
+    "type": "flow",
+    "title": "Katmanlı ticari hesap yapısında paranın akışı",
+    "steps": [
+      {
+        "label": "Kartla tahsilat",
+        "detail": "Müşteri kartla öder, tutar önce üye işyeri hesabına düşer."
+      },
+      {
+        "label": "Komisyon kesintisi",
+        "detail": "İşlem sonrası ücretler düşülerek bakiye vadesiz hesaba geçer."
+      },
+      {
+        "label": "Vadesiz hesapta operasyon",
+        "detail": "Maaş, tedarikçi ve günlük ödemeler buradan yapılır."
+      },
+      {
+        "label": "Fazlayı yedekte tut",
+        "detail": "Acil durum ve vergi karşılığı tasarruf ya da para piyasası hesabına alınır."
+      },
+      {
+        "label": "Kullanılmayacak parayı vadeye bağla",
+        "detail": "Kesin ihtiyaç olmayan fazla, farklı vadeli mevduat merdiveniyle değerlendirilir."
+      },
+      {
+        "label": "Döviz akışını ayrı yönet",
+        "detail": "Yurt dışı tahsilat ve ödemeler döviz veya çok dövizli hesaptan yürütülür."
+      }
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "KOBİ'ler için otomatik nakit katmanlama aracı",
+      "insight": "Video, atıl nakdi vadesiz hesapta bekletmek yerine yedek ve vadeli hesaplara ayırmayı ve vade merdiveni kurmayı öneriyor.",
+      "problem": "Türk KOBİ'leri yüksek faiz ortamında bile nakdi vadesiz hesapta bekletiyor veya elle, düzensiz vadeye bağlıyor.",
+      "solution": "Açık bankacılık üzerinden hesap hareketlerini okuyup önümüzdeki ödemelere göre güvenli bakiyeyi hesaplayan, fazlayı farklı vadelere bölmeyi öneren nakit planlama yazılımı.",
+      "target": "Aylık cirosu düzenli, nakit fazlası olan KOBİ'ler ve serbest meslek şirketleri",
+      "revenue_model": "Aylık SaaS aboneliği",
+      "first_step": "20 KOBİ'nin son 6 aylık hesap dökümünü (izinle) inceleyip ortalama atıl bakiyeyi ve kaçırılan getiriyi hesaplayan bir demo rapor hazırlamak.",
+      "capital": "Orta",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye'de açık bankacılık (hesap bilgisi hizmeti) altyapısı mevcut; lisanslı bir aracıyla entegrasyon gerekir.",
+      "risks": "Yatırım danışmanlığı sayılma riski; öneriler bilgi amaçlı kalmalı. Banka API erişimi ve veri güvenliği yükümlülükleri."
+    },
+    {
+      "name": "E-ticaret için POS ve ödeme komisyonu denetim hizmeti",
+      "insight": "Video üye işyeri hesaplarının çok sayıda ücret içerdiğini ve fiyatlandırmanın önceden anlaşılması gerektiğini vurguluyor.",
+      "problem": "Online satıcılar sanal POS, taksit, iade ve döviz komisyonlarını kalem kalem görmediği için fazla ödüyor.",
+      "solution": "Ödeme kuruluşu ve banka raporlarını içe aktarıp gerçekleşen efektif komisyon oranını hesaplayan, sözleşmeyle karşılaştırıp pazarlık için rapor çıkaran araç.",
+      "target": "Aylık kartlı cirosu yüksek e-ticaret şirketleri",
+      "revenue_model": "Tespit edilen tasarruftan pay veya aylık abonelik",
+      "first_step": "5 e-ticaret firmasının 3 aylık POS raporunu ücretsiz analiz edip efektif oran ile sözleşme oranı arasındaki farkı göstermek.",
+      "capital": "Düşük",
+      "difficulty": 2,
+      "turkey_angle": "Türkiye'de taksitli satış ve çoklu sanal POS yaygın olduğu için karmaşıklık yüksek, ihtiyaç net.",
+      "risks": "Rapor formatlarının kuruluşa göre farklı olması; büyük ödeme kuruluşlarının kendi raporlamalarını iyileştirmesi."
+    },
+    {
+      "name": "Döviz hesapları için muhasebe mutabakat eklentisi",
+      "insight": "Video, her döviz için ayrı hesabın büyüdükçe yönetimi zorlaştırdığını ve muhasebe yazılımı entegrasyonunun zaman kazandırdığını söylüyor.",
+      "problem": "İhracatçılar birden fazla döviz hesabı ve çok dövizli fintech hesabındaki hareketleri muhasebeye elle işliyor, kur farkı hesapları hatalı oluyor.",
+      "solution": "Banka ve fintech döviz hareketlerini çekip yaygın Türk muhasebe programlarına kur bilgisiyle birlikte kayıt önerisi olarak aktaran eklenti.",
+      "target": "Döviz bazlı çalışan ihracatçılar ve onların mali müşavirleri",
+      "revenue_model": "Şirket veya mali müşavir başına aylık lisans",
+      "first_step": "10 mali müşavirle görüşüp döviz hesabı mutabakatına ayda kaç saat harcandığını ölçmek ve en çok kullanılan muhasebe programını belirlemek.",
+      "capital": "Orta",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye'deki yerel muhasebe yazılımları ve kur değerleme kuralları bilgisi yerli ekibe avantaj sağlar.",
+      "risks": "Muhasebe yazılımı firmalarının API kısıtları; hatalı kur kaydının vergi sonuçları nedeniyle sorumluluk."
+    }
+  ],
+  "skeptic_notes": [
+    "Reklam içeriği: kapanışta Statrys'in banka olmayan (non-bank) çok dövizli hesabı tanıtılıyor; banka dışı hesapların mevduat güvencesi kapsamı videoda konuşulmuyor, ayrıca doğrulanmalı.",
+    "Anlatım ABD bankacılığına dayalı (CD, money market hesabı, çek yazma); bu ürünler Türkiye'de ve birçok ülkede birebir aynı biçimde bulunmuyor.",
+    "Altyazı hataları: 'CD lettering' = CD laddering (vade merdiveni), 'logging the money away' = locking, 'statris/statuses' = Statrys, 'econom' muhtemelen 'account number'.",
+    "Videoda faiz oranı, ücret veya bakiye gibi somut rakam yok; karşılaştırma tamamen nitel."
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "id": "9AfRgYkqq_g",
+  "title_tr": "Muhasebe skandalı yaşayan Luckin Coffee'nin geri dönüşü ve Starbucks'ın Çin'deki gerilemesi",
+  "category": "Şirket vakası",
+  "region": ["Çin", "ABD", "Singapur", "Malezya"],
+  "summary_tr": "Video, 2020'de sahte satış skandalıyla Nasdaq'tan çıkarılan Luckin Coffee'nin büyük hissedarı Centurium Capital'in desteğiyle yeniden yapılandırılıp Çin'in en büyük kahve zincirine dönüşmesini anlatıyor. Ana tez, Luckin'in aslında bir kahve şirketi değil, uygulama üzerinden toplanan tüketici verisi, veriyle ürün geliştirme ve franchise ortaklarına zorunlu tedarik satışı üzerine kurulu bir platform olduğu. Starbucks ise deneyim ve marka odaklı klasik modelde kaldığı için Çin pazar payını büyük ölçüde kaybetti ve Çin operasyonunun çoğunluğunu sattı. Luckin şimdi ABD, Singapur ve Malezya'ya açılıyor ve Nasdaq'a geri dönmeye hazırlanıyor.",
+  "key_points": [
+    "Luckin, anonim bir açığa satış raporu ve ardından iç soruşturmayla 310 milyon dolarlık sahte satışın ortaya çıkmasıyla çöktü.",
+    "Centurium Capital zararı yazıp çıkmak yerine yeniden sermaye koydu ve operasyonu bilen yeni bir yönetim getirdi.",
+    "Siparişlerin yalnızca uygulama üzerinden verilmesi, yeni ürünleri veriyle geliştirmeye imkân tanıyor.",
+    "Sıfır giriş ücretli franchise modelinde ortaklar ekipman ve tüm malzemeyi Luckin'den almak zorunda; bu istikrarlı bir tedarik geliri sağlıyor.",
+    "Starbucks'ın Çin pazar payı yüzde 42'den yüzde 14'e düştü ve şirket Çin operasyonunun yüzde 60'ını Boyu Capital'e sattı.",
+    "Son çeyrekte büyüme yavaşladı ve teslimat siparişleri marjları aşındırıyor; başarı garanti değil."
+  ],
+  "numbers": [
+    {"label": "Starbucks Çin mağaza sayısı", "value": 7000, "unit": "mağaza", "context": "Starbucks'ın Çin'de kurduğu mağaza ağı"},
+    {"label": "Starbucks pazar payı 2017", "value": 42, "unit": "%", "context": "Çin kahve pazarındaki pay"},
+    {"label": "Starbucks pazar payı 2024", "value": 14, "unit": "%", "context": "Çin kahve pazarındaki pay"},
+    {"label": "Satılan Çin operasyonu payı", "value": 60, "unit": "%", "context": "Boyu Capital'e satılan pay"},
+    {"label": "Satış bedeli", "value": 5, "unit": "milyar $", "context": "Yaklaşık işlem değeri"},
+    {"label": "Sahte satış", "value": 310, "unit": "milyon $", "context": "Luckin'in uydurduğu satış tutarı"},
+    {"label": "Luckin mağaza sayısı", "value": 31000, "unit": "mağaza", "context": "Bugünkü toplam mağaza sayısı"},
+    {"label": "Açığa satış raporu", "value": 89, "unit": "sayfa", "context": "Ocak 2020'de dolaşan anonim rapor"},
+    {"label": "Tam zamanlı araştırmacı", "value": 92, "unit": "kişi", "context": "Rapor için tutulan araştırmacılar"},
+    {"label": "Yarı zamanlı araştırmacı", "value": 1400, "unit": "kişi", "context": "Mağaza önlerinde sayım yapanlar"},
+    {"label": "İzlenen mağaza", "value": 620, "unit": "mağaza", "context": "Gözlem yapılan Luckin mağazası"},
+    {"label": "Video kaydı", "value": 11000, "unit": "saat", "context": "Toplanan gözlem kaydı (11.000 saatin üzerinde)"},
+    {"label": "Toplanan fiş", "value": 25000, "unit": "fiş", "context": "Siparişleri kontrol için toplanan müşteri fişleri (25.000'in üzerinde)"},
+    {"label": "Tek günde hisse kaybı", "value": 80, "unit": "%", "context": "Skandalın doğrulandığı gün"},
+    {"label": "Silinen piyasa değeri", "value": 5, "unit": "milyar $", "context": "Tek günde kaybedilen yaklaşık değer"},
+    {"label": "SEC cezası", "value": 180, "unit": "milyon $", "context": "ABD Menkul Kıymetler ve Borsa Komisyonu cezası"},
+    {"label": "Kayıtlı kullanıcı", "value": 290, "unit": "milyon", "context": "Luckin uygulamasının Çin'deki kayıtlı kullanıcısı"},
+    {"label": "Hindistan cevizli latte", "value": 300, "unit": "milyon fincan", "context": "Bu üründen satılan fincan sayısı"},
+    {"label": "Moutai latte ilk gün satışı", "value": 100, "unit": "milyon yuan", "context": "2023'teki iş birliği ürününün ilk gün cirosu"},
+    {"label": "2024'te yeni içecek", "value": 120, "unit": "ürün", "context": "Bir yılda piyasaya sürülen yeni içecek"},
+    {"label": "Mixue mağaza sayısı", "value": 53000, "unit": "mağaza", "context": "Aynı tedarik modelini kullanan Çinli bubble tea zinciri"},
+    {"label": "Ortaklık mağazası", "value": 8000, "unit": "mağaza", "context": "Luckin'in franchise/ortaklık mağazaları"},
+    {"label": "2025'te açılan mağaza", "value": 8700, "unit": "mağaza", "context": "Günde ortalama 23,8 yeni mağaza"},
+    {"label": "Brian Niccol imza paketi", "value": 85, "unit": "milyon $", "context": "Starbucks'ın yeni CEO'ya ödediği nakit ve hisse"},
+    {"label": "Manhattan mağazası", "value": 10, "unit": "mağaza", "context": "Starbucks anlaşmasıyla aynı ay açılan 10. mağaza"},
+    {"label": "Singapur mağazası", "value": 68, "unit": "mağaza", "context": "Pazara girişten üç yıl sonra"},
+    {"label": "Malezya mağazası", "value": 45, "unit": "mağaza", "context": "Ortak işletilen lokasyonlar"},
+    {"label": "Shenzhen amiral mağaza", "value": 4500, "unit": "ft²", "context": "Şubat 2026'da açılan premium mağaza"},
+    {"label": "Blue Bottle 2017 alım bedeli", "value": 225, "unit": "milyon $", "context": "Videoya göre Nestlé'nin ödediği bedel"},
+    {"label": "Önceki çeyreklerde gelir artışı", "value": 50, "unit": "%", "context": "Son çeyrekte sert yavaşlama öncesi büyüme hızı"}
+  ],
+  "chart": {
+    "type": "bar",
+    "title": "Videoda geçen zincirlerin mağaza sayıları",
+    "unit": "mağaza",
+    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. Starbucks rakamı yalnızca Çin içindir.",
+    "data": [
+      {"label": "Mixue (toplam)", "value": 53000},
+      {"label": "Luckin (toplam)", "value": 31000},
+      {"label": "Starbucks (Çin)", "value": 7000}
+    ]
+  },
+  "diagram": {
+    "type": "cycle",
+    "title": "Luckin'in platform iş modelinin işleyişi",
+    "steps": [
+      {"label": "Ucuz kahve ve indirim", "detail": "Kahve, müşteriyi uygulamaya çekmek için kullanılan giriş ürünü."},
+      {"label": "Sadece uygulamadan sipariş", "detail": "Her sipariş ne, ne zaman, nerede ve hangi indirimle alındığını kaydediyor."},
+      {"label": "Veriyle ürün geliştirme", "detail": "Algoritma hangi tadın hangi kitlede tutacağını önceden gösteriyor."},
+      {"label": "Hızlı mağaza açılışı", "detail": "Sıfır giriş ücretli franchise ile küçük şehirlere hızla yayılıyor."},
+      {"label": "Zorunlu tedarik geliri", "detail": "Ortaklar makine ve tüm malzemeyi Luckin'den alıyor."},
+      {"label": "Daha fazla kullanıcı ve veri", "detail": "Ağ büyüdükçe veri ve tedarik ölçeği büyüyerek döngüyü besliyor."}
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "Perakende ziyaretçi sayımıyla yatırımcı ve kiraya veren doğrulama hizmeti",
+      "insight": "Luckin'in sahte satışları, mağaza önlerinde yapılan sistematik sayım ve fiş toplama ile ortaya çıkarıldı.",
+      "problem": "Franchise satın alanlar, AVM'ler ve yatırımcılar zincirlerin beyan ettiği mağaza başı satışları doğrulayamıyor.",
+      "solution": "Kamuya açık alanlarda anonim kişi sayımı (bilgisayarlı görü) ve örnek fiş analiziyle bağımsız trafik ve ciro tahmini raporu sunmak.",
+      "target": "Franchise alıcıları, girişim sermayesi fonları, AVM yönetimleri ve bankaların kredi birimleri",
+      "revenue_model": "Rapor başına ücret ve sürekli izleme aboneliği",
+      "first_step": "İstanbul'da 5 kahve zinciri mağazasında bir hafta sayım yapıp örnek bir doğrulama raporu hazırlamak ve 3 franchise danışmanına sunmak",
+      "capital": "Düşük",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye'de hızla büyüyen yerli kahve ve tatlı zincirlerinde franchise satışı yaygın; bağımsız doğrulama ihtiyacı yüksek.",
+      "risks": "KVKK kapsamında görüntü işleme kuralları (yüz tanıma yapılmamalı, anonimleştirme şart); hukuki itirazlar ve ölçüm doğruluğu."
+    },
+    {
+      "name": "Franchise sözleşmesi ve tedarik zorunluluğu maliyet analizi aracı",
+      "insight": "Luckin ve Mixue'nin 'giriş ücreti yok' franchise modelinde asıl gelir, ortakların zorunlu malzeme alımından geliyor.",
+      "problem": "Franchise alanlar sözleşmedeki zorunlu tedarik fiyatlarının uzun vadede kârlılığa etkisini hesaplayamıyor.",
+      "solution": "Sözleşme maddelerini ve tedarik fiyat listelerini girerek 3 yıllık nakit akışı ve piyasa fiyatıyla kıyas çıkaran çevrimiçi araç ve uzman inceleme.",
+      "target": "Türkiye'de kahve, döner, tatlı ve bubble tea franchise'ı almayı düşünen girişimciler",
+      "revenue_model": "Analiz başına ücret; franchise fuarlarında kurumsal ortaklık",
+      "first_step": "10 mevcut franchise sahibiyle görüşüp tedarik maliyeti farklarını belgeleyen kısa bir çalışma yapmak ve aracın basit bir tablo sürümünü test etmek",
+      "capital": "Düşük",
+      "difficulty": 2,
+      "turkey_angle": "Türkiye'de franchise sayısı hızlı artıyor ve yatırımcıların çoğu ilk kez girişimci; doğrudan uygulanabilir.",
+      "risks": "Franchise verenlerin tepkisi; fiyat listelerine erişim güçlüğü; hukuki danışmanlık sınırlarının aşılmaması gerekir."
+    },
+    {
+      "name": "Plaza odaklı, yalnızca uygulamadan siparişli mikro kahve kioskları",
+      "insight": "Luckin ilk mağazasını ofis kulesi altında QR kodla sipariş alınan küçük bir kiosk olarak açtı ve veriyle menüyü şekillendirdi.",
+      "problem": "Ofis çalışanları sabah kuyruklarında zaman kaybediyor; geleneksel kafelerin kira ve personel maliyeti yüksek.",
+      "solution": "Plaza lobilerinde 5-10 m²'lik kiosklar ve önceden sipariş uygulaması; satış verisiyle haftalık menü testi yapan bir zincir.",
+      "target": "İstanbul, Ankara ve İzmir'deki ofis kuleleri ve üniversite kampüsleri",
+      "revenue_model": "Kahve satışı + kurumsal toplu sipariş anlaşmaları + abonelik paketleri",
+      "first_step": "Tek bir plazada bina yönetimiyle 30 günlük deneme anlaşması yapıp günlük sipariş, tekrar oranı ve ortalama sepeti ölçmek",
+      "capital": "Orta",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye'de kahve tüketimi hızla büyüyor ve plaza yoğunluğu büyükşehirlerde yüksek.",
+      "risks": "Yoğun rekabet ve fiyat savaşı; kahve çekirdeği fiyatının döviz bağlantısı; indirimle büyümenin kârsız kalması."
+    }
+  ],
+  "skeptic_notes": [
+    "Videonun sonunda 'Meituan, 53.000 mağazalı Çinli bubble tea devi' deniyor; bu bir karışıklık. Önceki kısımda bu rakam Mixue için verilmişti; Meituan bir teslimat platformu.",
+    "Starbucks'ın Çin operasyonunu sattığı tarih bir yerde 'iki ay önce', başka yerde 'Kasım 2025' olarak geçiyor; video tarihiyle tutarsız.",
+    "'DALI' olarak geçen isim altyazı hatası olabilir; Centurium Capital'in kurucusu kastediliyor olabilir.",
+    "Blue Bottle için verilen 2017 bedeli (225 milyon $) ve Centurium'un satın alımının 'dün' onaylandığı bilgisi ayrıca doğrulanmalı.",
+    "Luckin'in 'dünyanın en büyük kahve zinciri' olduğu ve Starbucks pazar payı rakamlarının hangi kaynaktan geldiği belirtilmemiş.",
+    "Franchise modelinin 'karanlık' olarak nitelenmesi yorum; sözleşme koşulları kamuya açık belgelerle karşılaştırılmalı.",
+    "8.700 mağaza / 365 gün ≈ 23,8 hesabı tutarlı; ancak 'her saat bir mağaza' ifadesi yuvarlamadır."
+  ]
+}

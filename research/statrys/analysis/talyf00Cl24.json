@@ -1,0 +1,118 @@
+{
+  "id": "talyf00Cl24",
+  "title_tr": "Çin'in tek ürüne uzmanlaşmış sanayi kasabaları ve doğrudan tedarik yöntemleri",
+  "category": "Çin ekonomisi",
+  "region": ["Çin", "Vietnam", "Hindistan"],
+  "summary_tr": "Video, Çin'in üretim üstünlüğünün artık ucuz işçilikten değil, tek bir ürüne odaklanmış ve tüm tedarik zincirini birkaç kilometreye sığdıran sanayi kümelerinden geldiğini savunuyor. Üretimin onlarca küçük adıma bölünmesi, ortak hammadde alımı ve bilginin sokak hızında yayılması maliyeti ve tasarım değişim süresini düşürüyor. Vietnam ve Hindistan'a kayan üretimin çoğunlukla son montaj adımı olduğu, tedarik zincirinin hâlâ Çin'de kaldığı öne sürülüyor. Yiwu, Shenzhen, Dongguan/Humen, Qiaotou, Guzhen gibi örneklerin ardından alıcılara 1688.com, Çince arama terimleri, Kanton Fuarı ve mevcut tedarikçiye fabrika adresini sormak gibi aracıyı atlama yöntemleri öneriliyor.",
+  "key_points": [
+    "Çin'deki rekabet avantajının asıl kaynağı tek ürüne uzmanlaşmış ve onlarca yılda oluşmuş yoğun sanayi kümeleri.",
+    "Kümelerde üretim küçük adımlara bölündüğü için tek makineli atölyeler bile pazara girebiliyor ve fiyatlar sürekli aşağı itiliyor.",
+    "Vietnam'a taşınan üretimin büyük kısmı son montaj; kumaş ve bileşen gibi girdiler hâlâ Çin'den geliyor.",
+    "Hindistan'ın düşük ücretine rağmen küresel imalattaki payının küçük kalmasının nedeni altyapı açığı olarak gösteriliyor.",
+    "Alibaba'daki birçok tedarikçi aslında aracı ticaret şirketi; doğrudan küme fabrikalarına ulaşmak fiyatı düşürüyor.",
+    "1688.com, Çince sektör kuşağı aramaları, Kanton Fuarı ve tedarikçiye fabrika adresini sormak kümeyi bulmanın yolları olarak öneriliyor."
+  ],
+  "numbers": [
+    {"label": "Datang yıllık çorap üretimi", "value": 25, "unit": "milyar çift", "context": "Tek kasabanın yıllık çorap üretimi."},
+    {"label": "Datang tedarik zinciri mesafesi", "value": 15, "unit": "dakika", "context": "Tüm tedarik adımlarının bu sürüşte ulaşılabilir olduğu."},
+    {"label": "Pearl River Delta bileşen maliyet farkı", "value": 30, "unit": "%", "context": "Elektronik bileşenlerin Çin'in geri kalanına göre ucuzluğu."},
+    {"label": "Vietnam'ın Çin'den ithalatı (2025)", "value": 200, "unit": "milyar $ (yaklaşık)", "context": "Üretimin taşınmasının Çin'e bağımlılığı bitirmediğini göstermek için."},
+    {"label": "Vietnam tekstil ihracatında Çin kumaşı", "value": 60, "unit": "%", "context": "Vietnam'ın tekstil ihracatında Çin kumaşından yapılan pay."},
+    {"label": "Hindistan nüfusu", "value": 1.5, "unit": "milyar kişi", "context": "Hindistan ile Çin karşılaştırması."},
+    {"label": "Hindistan'ın küresel imalat payı", "value": 3, "unit": "% (altı)", "context": "Dünya imalatındaki pay."},
+    {"label": "Çin'in küresel imalat payı", "value": 35, "unit": "%", "context": "Dünya imalatındaki pay."},
+    {"label": "Yiwu stant sayısı", "value": 75000, "unit": "stant", "context": "Dünyanın en büyük toptan pazarı olarak tanıtılan Yiwu'daki stantlar."},
+    {"label": "Yiwu alanı", "value": 6.4, "unit": "milyon m²", "context": "Yaklaşık 1.000 futbol sahası büyüklüğünde olduğu söylendi."},
+    {"label": "Yiwu ürün kategorisi", "value": 26, "unit": "kategori", "context": "Sergilenen ürünlerin bölündüğü kategori sayısı."},
+    {"label": "Yiwu günlük konteyner", "value": 1500, "unit": "konteyner/gün", "context": "Her gün kasabadan çıkan yaklaşık konteyner sayısı."},
+    {"label": "Shenzhen nüfusu 1980", "value": 300000, "unit": "kişi", "context": "Balıkçı köyü dönemindeki nüfus."},
+    {"label": "Shenzhen nüfusu bugün", "value": 18, "unit": "milyon kişi", "context": "45 yıl sonraki nüfus."},
+    {"label": "Shenzhen'in tüketici elektroniği payı", "value": 90, "unit": "% (üzeri)", "context": "Dünya tüketici elektroniği üretimindeki iddia edilen pay."},
+    {"label": "Huaqiangbei işletme sayısı", "value": 38000, "unit": "işletme", "context": "Elektronik bileşen pazarındaki işletmeler."},
+    {"label": "Dongguan tekstil-hazır giyim işletmesi", "value": 100000, "unit": "işletme (üzeri)", "context": "Tekstil ve konfeksiyon tedarik zincirindeki işletmeler."},
+    {"label": "Humen hazır giyim üretimi", "value": 42, "unit": "milyar yuan/yıl", "context": "Yaklaşık 6 milyar dolar olarak çevrildi."},
+    {"label": "Qiaotou küresel düğme payı", "value": 60, "unit": "%", "context": "Dünya düğme üretimindeki pay."},
+    {"label": "Qiaotou küresel fermuar payı", "value": 80, "unit": "%", "context": "Dünya fermuar üretimindeki pay."},
+    {"label": "Guzhen aydınlatma işletmesi", "value": 45000, "unit": "işletme", "context": "50 km²'lik bölgede yalnızca aydınlatma satan işletmeler."},
+    {"label": "Guzhen aydınlatma caddesi", "value": 10, "unit": "km", "context": "Aydınlatma caddesinin uzunluğu."},
+    {"label": "Shaodong küresel çakmak payı", "value": 75, "unit": "%", "context": "Altyazıda 'sliders' olarak geçiyor; çakmak (lighters) olarak okundu."},
+    {"label": "1688 fiyat avantajı (alt)", "value": 20, "unit": "%", "context": "Aynı ürünün Alibaba ihracat ilanına göre ucuzluğu, alt sınır."},
+    {"label": "1688 fiyat avantajı (üst)", "value": 40, "unit": "%", "context": "Aynı karşılaştırmanın üst sınırı."},
+    {"label": "Kanton Fuarı stant sayısı", "value": 130000, "unit": "stant", "context": "Yılda iki kez Guangzhou'da kümelerin bir araya geldiği fuar."}
+  ],
+  "chart": {
+    "type": "hbar",
+    "title": "Videoya göre tek kümelerin dünya üretimindeki payı",
+    "unit": "%",
+    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. Shaodong için ürün adı altyazıdan çıkarımdır.",
+    "data": [
+      {"label": "Shenzhen – tüketici elektroniği", "value": 90},
+      {"label": "Qiaotou – fermuar", "value": 80},
+      {"label": "Shaodong – çakmak", "value": 75},
+      {"label": "Qiaotou – düğme", "value": 60}
+    ]
+  },
+  "diagram": {
+    "type": "flow",
+    "title": "Sanayi kümesinden alıcıya: fiyat nasıl oluşuyor, aracı nasıl atlanıyor",
+    "steps": [
+      {"label": "Yerel yönetim sektör seçer", "detail": "Yol, enerji ve eğitim altyapısı tek bir ürün etrafında kurulur."},
+      {"label": "Üretim adımlara bölünür", "detail": "Her adımı çok sayıda küçük atölye üstlenir ve rekabet fiyatı düşürür."},
+      {"label": "Ortak hacim ve hızlı bilgi", "detail": "Toplu hammadde alımı maliyeti, yakınlık da tasarım değişim süresini kısaltır."},
+      {"label": "Aracı ticaret şirketi", "detail": "Yabancı alıcı çoğu zaman fabrikayı değil, marj ekleyen aracıyı görür."},
+      {"label": "Kümeyi bulma", "detail": "1688, Çince sektör kuşağı aramaları, Kanton Fuarı veya tedarikçiye fabrika adresini sorma."},
+      {"label": "Doğrudan pazarlık", "detail": "Aynı sokaktaki onlarca fabrika alıcıya fiyat kaldıracı sağlar."}
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "Türk pazar yeri satıcıları için 1688 doğrudan tedarik masası",
+      "insight": "1688'deki fiyatların aynı ürünün Alibaba ihracat ilanından yüzde 20-40 düşük olduğu iddiası.",
+      "problem": "Trendyol, Hepsiburada ve Amazon satıcıları Çince bilmediği için Alibaba aracılarına bağımlı kalıyor ve ithalat maliyetlerini kontrol edemiyor.",
+      "solution": "Türkçe arayüzle 1688'de küme bazlı tedarikçi bulma, numune toplama, kalite kontrol ve konsolide sevkiyatı yöneten; her teklifte Türkiye ithalat vergisi ve ek mali yükümlülük hesabını önceden gösteren hizmet.",
+      "target": "Çin'den ürün getiren küçük ve orta ölçekli e-ticaret satıcıları",
+      "revenue_model": "Sipariş değeri üzerinden şeffaf hizmet komisyonu + kalite kontrol ücreti",
+      "first_step": "20 satıcının en çok sattığı 3'er ürün için 1688 ile mevcut tedarik fiyatlarını karşılaştırıp, ithalat vergileri dahil gerçek tasarrufu hesaplayan ücretsiz rapor sunmak.",
+      "capital": "Orta",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye'nin Çin menşeli ürünlere uyguladığı ek gümrük vergileri ve gözetim uygulamaları tasarrufu azaltabilir; hizmetin değeri tam maliyeti doğru hesaplamakta.",
+      "risks": "Ek gümrük vergileri, anti-damping ve TSE/CE uygunluk gereklilikleri; Çin'de güvenilir ortak bulma; düşük marjlı ürünlerde lojistik maliyetinin tasarrufu yemesi."
+    },
+    {
+      "name": "Fabrika mı aracı mı? Tedarikçi doğrulama raporu",
+      "insight": "Alıcıların fabrika sandığı tedarikçilerin çoğunun büyük şehirlerdeki aracı ticaret şirketleri olduğu gözlemi.",
+      "problem": "İthalatçılar karşı tarafın gerçek üretici olup olmadığını, üretim kapasitesini ve hangi kümede bulunduğunu bilmeden sipariş veriyor.",
+      "solution": "Çin şirket sicili kayıtları, üretim adresi, ihracat geçmişi ve yerinde video denetim ile tedarikçinin üretici mi aracı mı olduğunu ve aynı kümedeki alternatifleri gösteren sabit fiyatlı rapor.",
+      "target": "Türk ithalatçılar, özel marka (private label) girişimleri, satın alma departmanları",
+      "revenue_model": "Rapor başına sabit ücret; yıllık tedarikçi izleme paketi",
+      "first_step": "Çin'de yaşayan 2-3 Türk veya Çinli serbest denetçiyle anlaşıp 10 ücretli pilot raporu hazırlamak ve alıcıların gerçek fiyat farkı bulup bulmadığını ölçmek.",
+      "capital": "Düşük",
+      "difficulty": 2,
+      "turkey_angle": "Türkçe raporlama ve Türk ithalat mevzuatına uygun belge kontrolü yerel rakipsizlik sağlar.",
+      "risks": "Saha denetçilerinin güvenilirliği; Çin'de veri erişiminin kısıtlanması; büyük uluslararası denetim firmalarıyla fiyat rekabeti."
+    },
+    {
+      "name": "Türkiye sanayi kümeleri ihracat haritası",
+      "insight": "Videonun asıl rekabet avantajının taşınamayan küme ekosistemi olduğu ve alıcıların kümeleri bilmediği tespiti.",
+      "problem": "Çin'e bağımlılığı azaltmak isteyen Avrupalı alıcılar, Türkiye'deki uzmanlaşmış kümeleri (ör. Denizli havlu, Gaziantep halı, Bursa tekstil) ve buradaki doğrudan üreticileri bulmakta zorlanıyor.",
+      "solution": "Türkiye'deki ürün kümelerini, üretici listelerini, minimum sipariş ve teslim sürelerini İngilizce/Almanca sunan, alıcı talebini kümelerdeki üreticilere yönlendiren bir B2B dizin ve eşleştirme platformu.",
+      "target": "Yakın kaynak (nearshoring) arayan Avrupalı perakendeciler ve markalar; ihracat yapmak isteyen küme üreticileri",
+      "revenue_model": "Üretici tarafında üyelik + başarılı eşleştirmede komisyon",
+      "first_step": "Tek bir küme (ör. Denizli ev tekstili) için 30 üreticiyi listeleyip 10 Avrupalı satın almacıyla görüşerek talep ve sipariş büyüklüğünü test etmek.",
+      "capital": "Düşük",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye'nin AB Gümrük Birliği'ndeki konumu ve yakınlığı, videodaki Vietnam/Hindistan alternatiflerinden farklı bir avantaj sunuyor.",
+      "risks": "Üreticilerin kendi ihracat ağlarını korumak için platformu atlaması; ihracatçı birliklerinin mevcut dizinleriyle rekabet; kalite tutarlılığı."
+    }
+  ],
+  "skeptic_notes": [
+    "'Shenzhen dünya tüketici elektroniğinin %90'ından fazlasını üretiyor' iddiası çok geniş görünüyor; tanımı belirsiz, doğrulanmalı.",
+    "Yiwu için altyazıda '1.8 different products' geçiyor; büyük olasılıkla '1,8 milyon ürün' kastedildi ama birim eksik olduğu için sayı kullanılmadı.",
+    "Altyazıdaki 'Shaodong does 75% of world's sliders' büyük olasılıkla 'lighters' (çakmak); videonun başında çakmak kasabasından söz edilmesi bunu destekliyor.",
+    "Kanton Fuarı için verilen 130.000 stant rakamı tek kaynaklı; dönem ve tanım belirtilmedi.",
+    "Oyuncak kümesi için geçen 'HaHa' altyazı hatası; kasaba adı anlaşılamıyor.",
+    "Datang'ın 25 milyar çift ve Foshan'ın tüm Avrupa'dan fazla seramik ürettiği iddiaları videoda kaynaksız.",
+    "Videodaki ücretsiz küme haritası bir potansiyel müşteri toplama aracı; Statrys'e yönlendiren pazarlama unsuru içeriyor.",
+    "Hindistan'ın imalat payının '%3'ün altında' olduğu iddiası tanıma (katma değer mi, ihracat mı) göre değişebilir."
+  ]
+}

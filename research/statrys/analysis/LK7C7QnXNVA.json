@@ -1,0 +1,113 @@
+{
+  "id": "LK7C7QnXNVA",
+  "title_tr": "Çinli milyarderler: Gösterişten sessizliğe ve servetin yurt dışına taşınması",
+  "category": "Çin ekonomisi",
+  "region": ["Çin", "Hong Kong", "Hainan"],
+  "summary_tr": "Video, kâr etmenin bir zamanlar suç sayıldığı Çin'de hızla zenginleşen kuşağın servetini altın ve gösterişli harcamalarla, iş dünyasında güvenilirlik sinyali olarak sergilediğini anlatıyor. 2024'te düzenleyicinin zenginlik gösterisini hedef alan yönergesiyle platformlar büyük hesapları kapattı ve zenginler görünmez oldu. Harcama, vergisiz alışveriş ve düşük kurumlar/gelir vergisi sunan Hainan'daki Sanya'ya kaydı; ancak bu servet hâlâ Çin yargı yetkisinde kalıyor. Video, sermaye kontrollerini aşmak için kullanılan kota bölme, sanat eseri ve düşük faturalama gibi yöntemleri ve yasal yol olarak Hong Kong'daki aile ofislerini açıklıyor.",
+  "key_points": [
+    "Çin'de spekülasyon ve vurgunculuk 1997'ye kadar suçtu; ilk dolar milyarderleri 2004'te ortaya çıktı.",
+    "Altın, Çin kültüründe yaygın bir değer aracı; gösterişli harcama iş görüşmelerinde güvenilirlik sinyali işlevi gördü.",
+    "Nisan 2024 yönergesinden sonra platformlar zenginlik gösterisi yapan hesapları ve binlerce gönderiyi kaldırdı.",
+    "Hainan, vergisiz alışveriş ve %15 kurumlar ile kişisel gelir vergisi tavanıyla zenginlerin harcamayı taşıdığı yer oldu.",
+    "Kişi başı yıllık döviz kotası, kota bölme, sanat eseri ve düşük faturalama gibi yöntemlerle aşılmaya çalışılıyor; bankalar bu desenleri izliyor.",
+    "Yasal yol olarak servet, Hong Kong'daki aile ofisleri aracılığıyla yönetiliyor."
+  ],
+  "numbers": [
+    {"label": "Köpeğin taktığı her Apple Watch", "value": 15000, "unit": "$", "context": "Altın Apple Watch başına yaklaşık fiyat"},
+    {"label": "Çin'in ilk dolar milyarderleri (2004)", "value": 3, "unit": "kişi", "context": "Ülkenin ilk dolar milyarderleri"},
+    {"label": "Çin'deki milyarder sayısı (bugün)", "value": 1110, "unit": "kişi", "context": "Bugünkü sayı"},
+    {"label": "Altın mücevher sahibi Çinli tüketici", "value": 81, "unit": "%", "context": "Altının kültürel yaygınlığı"},
+    {"label": "Yeniden inşa edilen Fransız şatosu", "value": 50, "unit": "milyon $", "context": "Bir emlak geliştiricisinin harcaması"},
+    {"label": "Canlı yayında satılan roket", "value": 5.6, "unit": "milyon $", "context": "2020'de en büyük canlı alışveriş kanalında"},
+    {"label": "Görgü kursu ücreti", "value": 14000, "unit": "$", "context": "Pekin'de 12 günlük kurs"},
+    {"label": "Kapatılan fenomen 1 takipçisi", "value": 4.3, "unit": "milyon takipçi", "context": "Douyin'de, gösterişli kıyafetleriyle bilinen fenomen"},
+    {"label": "Kapatılan fenomen 2 takipçisi", "value": 2.9, "unit": "milyon takipçi", "context": "Porsche ve Hermès çantalarıyla bilinen hesap"},
+    {"label": "Kapatılan fenomen 3 takipçisi", "value": 2.3, "unit": "milyon takipçi", "context": "Kurutulmuş deniz kulağı servetli aileden"},
+    {"label": "Douyin'in kaldırdığı gönderi", "value": 4701, "unit": "gönderi", "context": "Mayıs'ın ilk haftası, 11 hesapla birlikte"},
+    {"label": "Xiaohongshu'nun kaldırdığı gönderi", "value": 4273, "unit": "gönderi", "context": "383 hesapla birlikte"},
+    {"label": "Sanya otel süiti", "value": 3000, "unit": "$/gece", "context": "Lüks süit fiyatı"},
+    {"label": "Ana karada ithalat vergisi farkı", "value": 30, "unit": "%", "context": "Lüks ürünlerin ana karada daha pahalı olma oranı"},
+    {"label": "Haitang Bay duty-free alanı", "value": 400000, "unit": "m²", "context": "Yaklaşık; yaklaşık 1.000 marka"},
+    {"label": "Sanya duty-free cirosu", "value": 20, "unit": "milyar yuan", "context": "Geçen yıl, yaklaşık 3 milyar $"},
+    {"label": "Kişi başı vergisiz alışveriş limiti", "value": 100000, "unit": "yuan/yıl", "context": "18 Aralık 2025'ten itibaren"},
+    {"label": "Hainan kurumlar vergisi", "value": 15, "unit": "%", "context": "Ana karada %25"},
+    {"label": "Hainan kişisel gelir vergisi tavanı", "value": 15, "unit": "%", "context": "Ana karada %45'e kadar"},
+    {"label": "Yıllık serbest döviz kotası", "value": 50000, "unit": "$", "context": "Kişi başı, izinsiz çevrilebilecek tutar"},
+    {"label": "Dış ticaret beyan farkı", "value": 7, "unit": "trilyon $", "context": "On yılda Çin ihracat beyanı ile partner ülke beyanı arasındaki fark (yaklaşık)"}
+  ],
+  "chart": {
+    "type": "bar",
+    "title": "Vergi oranları: Hainan ve Çin ana karası",
+    "unit": "%",
+    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. Kişisel gelir vergisi için en üst dilim oranı verilmiştir.",
+    "data": [
+      {"label": "Kurumlar vergisi – Hainan", "value": 15},
+      {"label": "Kurumlar vergisi – ana kara", "value": 25},
+      {"label": "Kişisel gelir vergisi tavanı – Hainan", "value": 15},
+      {"label": "Kişisel gelir vergisi tavanı – ana kara", "value": 45}
+    ]
+  },
+  "diagram": {
+    "type": "flow",
+    "title": "Çinli zenginlerin davranış değişiminin zinciri",
+    "steps": [
+      {"label": "Hızlı ve yeni servet", "detail": "Kâr etmenin suç olduğu dönemden sonra kısa sürede büyük servetler oluşur."},
+      {"label": "Altınla gösteriş", "detail": "Kültürel olarak tanıdık altın ve lüks, başarının ve güvenilirliğin sinyali olur."},
+      {"label": "Devlet müdahalesi", "detail": "2024 yönergesiyle platformlar zenginlik gösterisi yapan hesapları kapatır."},
+      {"label": "Harcama Hainan'a kayar", "detail": "Vergisiz ve gözden uzak Sanya, lüks tüketimin yeni merkezi olur."},
+      {"label": "Yurt dışında varlık arayışı", "detail": "Sermaye kontrolleri nedeniyle servetin bir kısmı başka hukuk sistemine taşınmak istenir."},
+      {"label": "Hong Kong aile ofisleri", "detail": "Yasal yol olarak servet Hong Kong'daki aile ofislerinde yönetilir."}
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "Dış ticarette fatura fiyatı anomalisi tespit aracı (TBML uyumu)",
+      "insight": "Video, ilişkili şirketlere düşük fatura kesip farkı yurt dışında bırakma yönteminin, ihracat ve partner beyanları arasında devasa farklar yarattığını söylüyor.",
+      "problem": "Bankalar, faktoring şirketleri ve gümrük müşavirleri, ticari işlemlerdeki birim fiyat manipülasyonunu tespit edecek araca sahip değil.",
+      "solution": "Fatura ve gümrük beyanlarındaki birim fiyatları GTİP bazında piyasa ve ayna istatistikleriyle karşılaştırıp anormal düşük/yüksek fiyatları işaretleyen uyum yazılımı.",
+      "target": "Bankaların dış ticaret ve uyum birimleri, faktoring şirketleri, gümrük müşavirlikleri",
+      "revenue_model": "İşlem hacmine göre SaaS lisansı + uyum raporlama hizmeti",
+      "first_step": "Açık dış ticaret istatistikleriyle 20 GTİP kodu için fiyat bantları oluşturup 2 bankanın dış ticaret uyum yöneticisine demo göstermek.",
+      "capital": "Orta",
+      "difficulty": 4,
+      "turkey_angle": "Türkiye, FATF gri listesinden çıkış sürecinde ticaret bazlı aklama kontrollerini güçlendirdi; MASAK yükümlüleri için yerli araç ihtiyacı var.",
+      "risks": "Fiyat verisinin kalitesi, yüksek yanlış alarm oranı, bankalarla uzun satış döngüsü."
+    },
+    {
+      "name": "Sanat eseri ve antika menşe (provenance) doğrulama servisi",
+      "insight": "Video, sanat eserlerinin iki hukuk sistemi arasındaki boşluk nedeniyle para taşımak için kullanıldığını anlatıyor.",
+      "problem": "Galeriler, müzayede evleri ve alıcılar, eserin yasal ihraç edilip edilmediğini ve sahiplik zincirini doğrulamakta zorlanıyor.",
+      "solution": "Eser sahiplik zinciri, ihraç belgeleri, çalıntı eser veritabanı taraması ve alıcı/satıcı kimlik kontrolünü birleştiren rapor hizmeti.",
+      "target": "Türkiye'deki müzayede evleri, galeriler, koleksiyoncular ve sanat eseri teminatlı kredi veren kurumlar",
+      "revenue_model": "Eser başı rapor ücreti + kurumsal yıllık abonelik",
+      "first_step": "İstanbul'daki 5 müzayede evinin mevcut KYC ve menşe kontrol süreçlerini öğrenmek; Interpol çalıntı eser veritabanı erişim koşullarını araştırmak.",
+      "capital": "Düşük",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye'de kültür varlıklarının yurt dışına çıkarılması sıkı yasalarla korunuyor; sanat piyasası MASAK yükümlüsü kapsamında olduğundan uyum ihtiyacı artıyor.",
+      "risks": "Belgelerin eksikliği, uzmanlık gerektiren değerlendirmeler, piyasanın şeffaflığa direnci."
+    },
+    {
+      "name": "Türk lüks ve tasarım markalarını Hainan duty-free kanalına taşıma",
+      "insight": "Video, Hainan'ın yaklaşık 1.000 markalık dev duty-free alanı ve kişi başı yüksek vergisiz alışveriş limitiyle Çinli lüks tüketimin merkezi olduğunu anlatıyor.",
+      "problem": "Türk mücevher, deri ve tasarım markaları Çin'in yüksek ithalat vergileri nedeniyle ana karaya girmekte zorlanıyor ve Hainan kanalını bilmiyor.",
+      "solution": "Hainan duty-free operatörleri ve distribütörleriyle bağlantı, Çin pazarı için ambalaj/etiket uyarlaması ve Xiaohongshu tanıtımını kapsayan pazara giriş programı.",
+      "target": "İhracat kapasitesi olan Türk altın/mücevher, deri, halı ve tasarım markaları",
+      "revenue_model": "Pazara giriş proje ücreti + satışlardan komisyon",
+      "first_step": "Hainan duty-free'de satılan mücevher ve deri markalarını listeleyip 2 distribütörle görüşmek; 5 Türk markanın ilgisini ölçmek.",
+      "capital": "Orta",
+      "difficulty": 4,
+      "turkey_angle": "Türk altın mücevher sektörü güçlü ve Çin'in altın kültürüyle örtüşüyor; ihracat destekleri (Ticaret Bakanlığı pazara giriş destekleri) kullanılabilir.",
+      "risks": "Çin'de marka tanınırlığının düşüklüğü, distribütör bağımlılığı, Hainan politikalarının değişmesi, Çin'de marka tescili sorunları."
+    }
+  ],
+  "skeptic_notes": [
+    "Videoda anlatılan kota bölme, sanat eseri ve düşük faturalama yöntemleri sermaye kontrollerini aşmaya yönelik; iş fikirleri bu yöntemleri taklit etmez, tespit ve uyum tarafına odaklanır.",
+    "'1,110 milyarder' rakamı kaynak belirtilmeden veriliyor; farklı listeler farklı sayılar verir.",
+    "On yılda 7 trilyon dolarlık ticari beyan farkı yalnızca kaçırılan sermaye değildir; nakliye, sigorta ve yeniden ihracat gibi istatistiksel farklar da içerir.",
+    "Altyazıda 'Haikou Bay' geçiyor; Sanya'daki büyük duty-free kompleks Haitang Bay'dir, en makul okuma kullanıldı.",
+    "'14.000 $ vergisiz alışveriş cep harçlığı' ifadesi, 100.000 yuan limitin dolar karşılığı olarak anlaşılıyor.",
+    "Hainan'daki %15 vergi oranları belirli şartlara (nitelikli sektör, ikamet) bağlı; video bu şartları ayrıntılandırmıyor.",
+    "Fenomen isimleri altyazıda bozuk geçiyor; takipçi sayıları doğrulanmadı.",
+    "Video, Statrys'in Hong Kong ve Singapur şirket kurma hizmetlerini tanıtıyor (reklam içeriği)."
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "id": "IF6UdjjiHh0",
+  "title_tr": "2 trilyon dolarlık özel kredi piyasasındaki sıkışma ve Asya'ya olası etkileri",
+  "category": "Küresel finans & bankacılık",
+  "region": ["ABD", "Avrupa", "Asya-Pasifik", "Singapur", "Hong Kong", "Güney Kore"],
+  "summary_tr": "Video, bankaların kredi vermediği orta ölçekli şirketlere fonların doğrudan borç verdiği yaklaşık 2 trilyon dolarlık özel kredi (private credit) piyasasında para çekme taleplerinin kısıtlandığını ve temerrütlerin arttığını anlatıyor. Değişken faizli kredilerin yükselen faizlerle ağırlaşması ve piyasanın önemli bir kısmının YZ'den etkilenebilecek yazılım şirketlerine bağlı olması temel kırılganlıklar olarak gösteriliyor. Riskin emeklilik fonları, sigortacılar ve bu fonlara kredi veren büyük bankalar üzerinden sisteme yayılabileceği savunuluyor. Asya'nın kendi özel kredi piyasası küçük ve daha muhafazakâr olsa da, bölgedeki egemen fonlar ve aile ofisleri ABD fonlarına yatırım yaptığı için dolaylı olarak maruz kaldığı; ayrıca bir kredi şokunun kur dalgalanmasına dönüşerek ithalat-ihracat yapan girişimcilerin marjını vurabileceği belirtiliyor. Video, Statrys'in kur sabitleme hizmetinin tanıtımıyla bitiyor.",
+  "key_points": [
+    "Apollo, BlackRock, Blackstone ve Blue Owl gibi yöneticiler bazı özel kredi fonlarında para çekmeyi sınırladı veya dondurdu.",
+    "Kredilerin çoğu değişken faizli olduğu için faiz artışı borçluların faiz yükünü katlayarak temerrüt riskini büyüttü.",
+    "Piyasa sermayesinin önemli kısmı emeklilik fonları ve sigortacılardan geldiği için kayıplar sıradan tasarruf sahiplerine yansıyabilir.",
+    "Büyük Avrupa bankaları bu fonlara teminatlı kredi vererek dolaylı maruziyet taşıyor.",
+    "Asya'nın yerel özel kredi piyasası küçük, sabit faizli ve daha güvenceli; ancak bölge sermayesi ABD fonları üzerinden riske açık.",
+    "Kredi şoku hızla dolara kaçışa ve kur oynaklığına dönüşerek uluslararası ticaret yapan şirketlerin marjını etkileyebilir."
+  ],
+  "numbers": [
+    {"label": "Özel kredi piyasası büyüklüğü", "value": 2, "unit": "trilyon $", "context": "Videoda piyasanın ulaştığı toplam büyüklük olarak verildi."},
+    {"label": "Apollo fonunda çıkış talebi", "value": 17, "unit": "%", "context": "Apollo'nun bir fonunda yatırımcıların çıkmak için sıraya girdiği pay."},
+    {"label": "Resmî temerrüt oranı", "value": 6, "unit": "%", "context": "Bu bahar ulaşıldığı söylenen rekor temerrüt oranı."},
+    {"label": "Yeniden yapılandırma dahil temerrüt", "value": 9, "unit": "%", "context": "Yeniden yapılandırmalar sayıldığında 'gerçek' oranın yaklaştığı seviye."},
+    {"label": "Emeklilik fonu payı", "value": 28, "unit": "%", "context": "Özel kredi sermayesinin emeklilik fonlarından gelen kısmı."},
+    {"label": "Sigorta şirketi payı", "value": 9, "unit": "%", "context": "Özel kredi sermayesinin sigortacılardan gelen kısmı."},
+    {"label": "Yazılım şirketlerine bağlı pay", "value": 25, "unit": "%", "context": "Piyasanın yazılım şirketleriyle ilişkili olduğu söylenen yaklaşık kısmı."},
+    {"label": "Örnek faiz yükü (önce)", "value": 4, "unit": "milyon $/yıl", "context": "Faizler yükselmeden önce örnek bir şirketin yıllık faiz ödemesi."},
+    {"label": "Örnek faiz yükü (sonra)", "value": 8, "unit": "milyon $/yıl", "context": "Aynı borç için faiz artışı sonrası yıllık ödeme."},
+    {"label": "Yatırımcı getirisi (alt)", "value": 8, "unit": "%/yıl", "context": "Likidite kısıtını kabul eden yatırımcıya sunulan yıllık getiri aralığının alt ucu."},
+    {"label": "Yatırımcı getirisi (üst)", "value": 12, "unit": "%/yıl", "context": "Aynı getiri aralığının üst ucu."},
+    {"label": "Apollo'nun sigortacısındaki varlık", "value": 250, "unit": "milyar $", "context": "Apollo'ya ait sigorta şirketinin yönettiği para."},
+    {"label": "KKR'nin aldığı sigortacı", "value": 100, "unit": "milyar $", "context": "KKR'nin satın aldığı sigortacının büyüklüğü."},
+    {"label": "Deutsche Bank maruziyeti", "value": 30, "unit": "milyar $", "context": "Bankanın özel kredi piyasasına açıkladığı maruziyet."},
+    {"label": "BNP maruziyeti", "value": 25, "unit": "milyar $", "context": "BNP'nin yaklaşık maruziyeti."},
+    {"label": "Barclays maruziyeti", "value": 20, "unit": "milyar $", "context": "Barclays'in yaklaşık maruziyeti."},
+    {"label": "Asya-Pasifik özel kredi piyasası", "value": 100, "unit": "milyar $", "context": "Bölgenin tüm özel kredi piyasasının 'biraz üzeri' olduğu söylenen büyüklük."},
+    {"label": "Asya'da sponsor olmayan anlaşmalar", "value": 90, "unit": "%", "context": "Asya'daki özel kredilerde dışarıdan (kaldıraçlı alım yapan) yatırımcı bulunmayan anlaşmaların payı."}
+  ],
+  "chart": {
+    "type": "hbar",
+    "title": "Avrupa bankalarının özel kredi piyasasına maruziyeti",
+    "unit": "milyar $",
+    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı",
+    "data": [
+      {"label": "Deutsche Bank", "value": 30},
+      {"label": "BNP Paribas", "value": 25},
+      {"label": "Barclays", "value": 20}
+    ]
+  },
+  "diagram": {
+    "type": "flow",
+    "title": "Özel kredi krizinin yayılma zinciri",
+    "steps": [
+      {"label": "Faizler yükseliyor", "detail": "Değişken faizli kredilerde borçlunun faiz yükü katlanıyor."},
+      {"label": "Borçlular zorlanıyor", "detail": "Temerrütler artıyor, özellikle yazılım şirketlerinin geleceği sorgulanıyor."},
+      {"label": "Fonlarda çıkış talebi", "detail": "Yatırımcılar çıkmak istiyor, likit olmayan krediler hızla nakde çevrilemiyor."},
+      {"label": "Çekim sınırı ve panik", "detail": "Fonlar çıkışı kısıtlıyor, bu da diğer fonlarda da kaçışı tetikliyor."},
+      {"label": "Kayıp zincirde yukarı çıkıyor", "detail": "Emeklilik fonları, sigortacılar ve teminatlı kredi veren bankalar değer kaybediyor."},
+      {"label": "Dolara kaçış, kur şoku", "detail": "Riskten kaçış doları güçlendiriyor, diğer kurlar sert oynuyor."},
+      {"label": "Girişimcinin marjı eriyor", "detail": "Farklı para birimlerinde alım-satım yapan şirketlerin önceden anlaşılmış kârı kur farkıyla azalıyor."}
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "Fatura bazlı kur maruziyeti panosu",
+      "insight": "Videoda girişimcilerin tedarik ve navlun maliyetini izleyip kur riskini 'arka plan gürültüsü' saydığı ve şok anında marjı kaybettiği vurgulanıyor.",
+      "problem": "KOBİ ihracatçı/ithalatçılar açık döviz pozisyonlarını fatura ve sipariş düzeyinde göremiyor; kur şoku geldiğinde iş işten geçmiş oluyor.",
+      "solution": "Muhasebe/e-fatura verisini çekip para birimi bazında vadesi gelecek alacak-borçları gösteren, belirlenen eşik aşılınca uyarı veren ve bankaların forward tekliflerini karşılaştırmaya yönlendiren bir SaaS.",
+      "target": "Çin'den tedarik edip dolar/euro ile fatura kesen Türk ithalatçı ve e-ihracatçı KOBİ'ler",
+      "revenue_model": "Aylık abonelik; bankalara/aracı kurumlara yönlendirme için referans ücreti (lisans ve mevzuat izin verdiği ölçüde)",
+      "first_step": "20 ithalatçı KOBİ ile görüşüp son 12 ayda kur farkından kaybettikleri tutarı ve bunu nasıl takip ettiklerini öğrenmek; 5'inin verisiyle Excel prototipi hazırlamak.",
+      "capital": "Düşük",
+      "difficulty": 2,
+      "turkey_angle": "Türk KOBİ'lerinde kur riski çok bilinen bir sorun; Logo, Mikro, Paraşüt gibi yaygın muhasebe yazılımlarıyla entegrasyon hızlı dağıtım sağlar.",
+      "risks": "Doğrudan türev ürün satmak SPK/BDDK izni gerektirir; araç yalnızca bilgi ve yönlendirme sunmalı. Bankaların kendi ücretsiz araçlarıyla rekabet."
+    },
+    {
+      "name": "Emeklilik/BES fonu dolaylı maruziyet şeffaflık aracı",
+      "insight": "Videoya göre Asya'daki bir emeklilik fonu üyesi, birikiminin donmuş bir ABD fonunda olduğunu bilmeden değer kaybedebiliyor.",
+      "problem": "Bireysel tasarruf sahipleri ve küçük kurumlar, fonlarının hangi alternatif varlık sınıflarına (özel kredi, özel sermaye) dolaylı yatırım yaptığını görmüyor.",
+      "solution": "Kamuya açık fon portföy raporlarını ayrıştırıp fon-içinde-fon yapılarını görselleştiren ve likit olmayan varlık payını puanlayan bir web aracı/veri servisi.",
+      "target": "Bireysel yatırımcılar, aile ofisleri, finans gazetecileri, küçük vakıf ve sandıklar",
+      "revenue_model": "Freemium; kurumsal veri aboneliği ve API",
+      "first_step": "TEFAS/KAP'taki 30 fonun portföy dağılım raporlarını tarayıp yabancı fon ve alternatif varlık payını çıkaran bir pilot tablo yayınlamak ve ilgiyi ölçmek.",
+      "capital": "Düşük",
+      "difficulty": 3,
+      "turkey_angle": "TEFAS ve KAP verileri kamuya açık; Türkiye'den başlanıp Körfez ve Asya fonlarına genişletilebilir.",
+      "risks": "Yatırım tavsiyesi sınırına dikkat (SPK); veri kalitesi ve fon raporlarının gecikmeli olması."
+    },
+    {
+      "name": "Özel kredi fonu likidite kuyruğu takip bülteni",
+      "insight": "Videoda bir fonun çekim sınırı koymasının diğer fonlarda da kaçışı tetiklediği, FSB'nin piyasayı izlenemeyecek kadar şeffaf olmayan bulduğu anlatılıyor.",
+      "problem": "Körfez ve Asya'daki aile ofisleri, hangi fonların çekim kısıtına gittiğini ve geri ödeme kuyruklarını dağınık kaynaklardan takip ediyor.",
+      "solution": "Fon duyurularını, düzenleyici dosyalamaları ve basın haberlerini derleyip fon bazında 'çekim kısıtı / değerleme indirimi' olaylarını haftalık sunan ücretli bülten ve veri tabanı.",
+      "target": "Körfez, Türkiye ve Asya'daki aile ofisleri, varlık yöneticileri, özel bankacılar",
+      "revenue_model": "Yıllık abonelik",
+      "first_step": "Son 6 ayın çekim kısıtı olaylarını kamuya açık kaynaklardan derleyip ücretsiz bir örnek rapor hazırlamak ve 50 hedef kişiye göndererek ödeme niyetini sormak.",
+      "capital": "Düşük",
+      "difficulty": 3,
+      "turkey_angle": "İstanbul'dan İngilizce yürütülebilir; Türkiye'nin Körfez sermayesine yakınlığı müşteri erişimini kolaylaştırır.",
+      "risks": "Kaynak verilerin eksikliği; kriz geçince talebin düşmesi; ticari veri sağlayıcılarla rekabet."
+    }
+  ],
+  "skeptic_notes": [
+    "Başlıktaki '2008'den kötü' ve 'saatli bomba' ifadeleri abartılı; videonun kendisi de krizin gerçekleşip gerçekleşmeyeceğinin bilinmediğini kabul ediyor.",
+    "Yüzde 6 rekor temerrüt oranının hangi endeks veya kuruluşa ait olduğu belirtilmiyor; yüzde 9'luk 'gerçek oran' da kaynaksız.",
+    "Banka maruziyeti rakamları (Deutsche 30, BNP 25, Barclays 20 milyar) yaklaşık verilmiş ve para birimi açıkça söylenmemiş; şirket açıklamalarıyla doğrulanmalı.",
+    "Jamie Dimon'a atfedilen cümle altyazıda bozuk aktarılmış; tam ifadenin hissedar mektubundan kontrolü gerekir.",
+    "'Egemen fonların yarıya yakını özel krediye doğrudan yatırım yapıyor' iddiası kaynak gösterilmeden verildi.",
+    "Altyazı hataları: 'frozen fountain' muhtemelen 'frozen fund', 'market bids big' anlaşılmaz durumda.",
+    "Videonun sonundaki kur sabitleme önerisi Statrys'in kendi hizmetinin reklamıdır (reklam içeriği)."
+  ]
+}

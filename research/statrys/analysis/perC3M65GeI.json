@@ -1,0 +1,256 @@
+{
+  "id": "perC3M65GeI",
+  "title_tr": "İran saldırılarının ardından Dubai'den sermaye ve girişimci çıkışı",
+  "category": "Jeopolitik & ticaret",
+  "region": [
+    "Birleşik Arap Emirlikleri",
+    "İran",
+    "Singapur",
+    "Hong Kong",
+    "Orta Doğu"
+  ],
+  "summary_tr": "Video, 28 Şubat'ta İran'ın Dubai'ye füze ve İHA saldırısının ardından şehrin 'güvenli liman' imajının çöktüğünü ve varlıklı kişiler ile girişimcilerin parayı ve şirketlerini Singapur ile Hong Kong'a taşımaya başladığını savunuyor. Dayanak olarak havalimanı ve Jebel Ali limanındaki aksamalar, bankacılık sistemindeki teknik arıza, gıda ithalatına bağımlılık ve Hürmüz Boğazı'ndaki trafik düşüşü gösteriliyor. Ağırlıklı kanıt, isimsiz servet danışmanları ve kurucuların anekdotları. Konuşmacı paranın bir kısmının çatışma biterse döneceğini, ama güven kırıldığı için bir kısmının kalıcı olarak gideceğini öne sürüyor. Asıl ders olarak tek bir merkeze bağlı iş kurgusundan kaçınıp çok merkezli yapı kurmayı öneriyor.",
+  "key_points": [
+    "Videoya göre Dubai bir önceki yıl yaklaşık 10.000 milyonerin taşındığı bir numaralı hedefti ve bu kişiler 63 milyar $ getirmişti.",
+    "Saldırılar sonrası havalimanının kapanması, limandaki yangın ve bankacılıktaki teknik aksama iş akışını dondurdu; bazı transferler gerçekleşemedi.",
+    "BAE'nin gıdasının %90'ını ithal etmesi ve Hürmüz'den geçen sevkiyatın %90 düşmesi kırılganlık olarak sunuluyor.",
+    "Singapur'daki bir servet avukatının 20 Dubai müşterisinden 6-7'si bir haftada iletişime geçmiş, 3'ü acil transfer planlıyor (anekdot).",
+    "Singapur ve Hong Kong; istikrar algısı, ortak hukuk sistemi ve derin bankacılık altyapısı nedeniyle doğal alternatif olarak gösteriliyor.",
+    "Girişimciler üretimi Çin'de, dağıtımı Malezya'da, satışı Avrupa'da tutan 'Çin+1+1' gibi çok merkezli yapılara yöneliyor."
+  ],
+  "numbers": [
+    {
+      "label": "Geçen yıl Dubai'ye taşınan milyoner",
+      "value": 10000,
+      "unit": "kişi",
+      "context": "Dubai'nin milyoner göçünde bir numaralı hedef olduğunu göstermek için 'yaklaşık 10.000'."
+    },
+    {
+      "label": "Taşınan milyonerlerin getirdiği servet",
+      "value": 63,
+      "unit": "milyar $",
+      "context": "Bu milyonerlerle Dubai'ye gelen tahmini servet."
+    },
+    {
+      "label": "Saldırıdaki füze sayısı",
+      "value": 137,
+      "unit": "adet",
+      "context": "28 Şubat'ta İran'ın Dubai'ye attığı söylenen füze sayısı."
+    },
+    {
+      "label": "Saldırıdaki İHA sayısı",
+      "value": 209,
+      "unit": "adet",
+      "context": "Aynı saldırıdaki İHA sayısı."
+    },
+    {
+      "label": "Dubai gelirinde liman ve havalimanı payı",
+      "value": 60,
+      "unit": "%",
+      "context": "Altyapı kesintisinin önemini vurgulamak için verilen pay."
+    },
+    {
+      "label": "Transferi engellenen kurucuların tutarı",
+      "value": 100000,
+      "unit": "USD (kişi başı, üzeri)",
+      "context": "İki kurucunun Singapur'a göndermeye çalıştığı ama sistemin izin vermediği tutar."
+    },
+    {
+      "label": "BAE gıda ithalat oranı",
+      "value": 90,
+      "unit": "%",
+      "context": "BAE'nin gıdasının ithal edilen kısmı."
+    },
+    {
+      "label": "Hürmüz'den geçen dünya petrolü",
+      "value": 20,
+      "unit": "%",
+      "context": "Boğazın önemi için verilen pay."
+    },
+    {
+      "label": "Hürmüz sevkiyat düşüşü",
+      "value": 90,
+      "unit": "%",
+      "context": "Boğazdan geçen sevkiyatın düştüğü söylenen oran."
+    },
+    {
+      "label": "BAE gıda stoku (alt)",
+      "value": 4,
+      "unit": "ay",
+      "context": "Hükümetin açıkladığı söylenen 4-6 aylık gıda rezervi."
+    },
+    {
+      "label": "BAE gıda stoku (üst)",
+      "value": 6,
+      "unit": "ay",
+      "context": "Aynı aralığın üst sınırı."
+    },
+    {
+      "label": "Kalıcı risk primi olasılığı",
+      "value": 70,
+      "unit": "%",
+      "context": "Edmond de Rothschild'den bir portföy yöneticisine atfedilen olasılık."
+    },
+    {
+      "label": "Servet avukatının Dubai müşterileri",
+      "value": 20,
+      "unit": "müşteri",
+      "context": "Singapur'daki avukatın Dubai merkezli müşteri sayısı."
+    },
+    {
+      "label": "Bir haftada iletişime geçen müşteri",
+      "value": 6,
+      "unit": "müşteri",
+      "context": "Videoda '6 ya da 7' deniyor; ortalama varlıkları 50 milyon $."
+    },
+    {
+      "label": "Acil transfer planlayan müşteri",
+      "value": 3,
+      "unit": "müşteri",
+      "context": "Aynı avukatın müşterilerinden acil transfer planlayanlar."
+    },
+    {
+      "label": "Müşteri başına ortalama varlık",
+      "value": 50,
+      "unit": "milyon $",
+      "context": "İletişime geçen müşterilerin ortalama varlığı."
+    },
+    {
+      "label": "Başka danışmanın UAE müşterisi",
+      "value": 13,
+      "unit": "müşteri",
+      "context": "Bir başka danışmanın görüştüğü, yarısından fazlası taşınmayı ciddi düşünen müşteri sayısı."
+    },
+    {
+      "label": "BAE'nin yurt dışı finansal varlıkları",
+      "value": 700,
+      "unit": "milyar $",
+      "context": "BAE'nin geçen yıl elinde tuttuğu söylenen yurt dışı finansal varlık."
+    },
+    {
+      "label": "BAE'de kurulan vakıf sayısı",
+      "value": 2270,
+      "unit": "vakıf",
+      "context": "Asya sermayesinin yaklaşık dörtte birini oluşturduğu söylenen vakıf sayısı ('2.270'ten fazla')."
+    },
+    {
+      "label": "Dubai Chamber'ın çektiği çok uluslulardan Asya payı",
+      "value": 47,
+      "unit": "%",
+      "context": "2025'te Dubai International Chamber'ın çektiği çok uluslu şirketlerde Asya'nın payı."
+    },
+    {
+      "label": "2009 krizinde Dubai konut fiyat düşüşü",
+      "value": 50,
+      "unit": "% (50-60)",
+      "context": "Dubai'nin daha önce de toparlandığını göstermek için verilen düşüş aralığının alt sınırı."
+    },
+    {
+      "label": "Singapur GDP büyümesi",
+      "value": 5,
+      "unit": "%",
+      "context": "Singapur ekonomisinin geçen yıl 'yaklaşık %5' büyüdüğü söyleniyor."
+    }
+  ],
+  "chart": {
+    "type": "bar",
+    "title": "Singapur'daki bir servet avukatının Dubai merkezli müşterileri",
+    "unit": "müşteri",
+    "source_note": "Videoda aktarılan tek bir isimsiz avukatın anekdotu; bağımsız doğrulanmadı. Videoda '6 ya da 7' denen değer için alt sınır (6) kullanıldı.",
+    "data": [
+      {
+        "label": "Toplam Dubai müşterisi",
+        "value": 20
+      },
+      {
+        "label": "Bir haftada iletişime geçen (6-7)",
+        "value": 6
+      },
+      {
+        "label": "Acil transfer planlayan",
+        "value": 3
+      }
+    ]
+  },
+  "diagram": {
+    "type": "flow",
+    "title": "Videoya göre Dubai'den sermaye çıkışının neden-sonuç zinciri",
+    "steps": [
+      {
+        "label": "Füze ve İHA saldırısı",
+        "detail": "28 Şubat'ta Dubai'ye yönelik saldırılar şehrin güvenli liman algısını sarstı."
+      },
+      {
+        "label": "Altyapı aksadı",
+        "detail": "Havalimanı kapandı, limanda yangın çıktı, bulut altyapısındaki hasar bankacılığa sıçradı."
+      },
+      {
+        "label": "Ticaret ve tedarik dondu",
+        "detail": "Sevkiyatlar depolarda kaldı, Hürmüz trafiği ve gıda ithalatı riske girdi."
+      },
+      {
+        "label": "Güven kırıldı",
+        "detail": "Varlıklı kişiler ve kurucular paraya erişememe riskini somut olarak yaşadı."
+      },
+      {
+        "label": "Sermaye yer değiştiriyor",
+        "detail": "Transfer, şirket ve hesap taşıma talepleri Singapur ve Hong Kong'a yöneldi."
+      },
+      {
+        "label": "Çok merkezli yapı",
+        "detail": "Girişimciler tek ülkeye bağlı kalmayan üretim-dağıtım-satış kurgusuna geçiyor."
+      }
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "Körfez bağlantılı şirketler için iş sürekliliği ve ikinci bankacılık hattı kurulumu",
+      "insight": "Videoda iki kurucunun saldırı sonrası tek bankalarından transfer yapamadığı, birinin ancak başka bir BAE bankasıyla çıkabildiği anlatılıyor.",
+      "problem": "Dubai'de operasyonu olan şirketlerin ödeme, hesap ve belge altyapısı tek ülkede ve tek bankada toplanmış durumda.",
+      "solution": "Şirketin Körfez bağımlılığını haritalayan, farklı ülkelerde yedek hesap, yedek imza yetkisi, yedek lojistik rotası ve kriz anı ödeme planı kuran kısa süreli proje hizmeti.",
+      "target": "Dubai'de şirketi veya önemli ticari ilişkisi olan Türk ticaret, inşaat ve lojistik firmaları",
+      "revenue_model": "Proje bazlı sabit ücret + yıllık tatbikat/güncelleme aboneliği",
+      "first_step": "Dubai'de faaliyeti olan 15 Türk şirketine kriz dönemindeki ödeme ve sevkiyat aksaklıklarını soran kısa bir anket yapıp en sık yaşanan 3 sorunu belirlemek.",
+      "capital": "Düşük",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye, Dubai'deki Türk şirketleri için hem yakın hem de alternatif merkez olabilir; ancak Türkiye'nin de bölgesel risklere yakın olduğu dürüstçe anlatılmalı.",
+      "risks": "Kriz geçince talebin hızla düşmesi; bankaların yeni hesap açmadaki sıkı KYC süreçleri."
+    },
+    {
+      "name": "BAE'ye alternatif kaynaklı taze gıda tedariği",
+      "insight": "Video, BAE'nin gıdasının %90'ını ithal ettiğini ve İran'ın taze ürün ihracatını durdurduğunu söylüyor.",
+      "problem": "BAE'deki perakendeci ve otel-restoran zincirleri İran'dan gelen taze meyve-sebzenin yerini dolduracak güvenilir tedarikçi arıyor olabilir.",
+      "solution": "Türk üreticilerden soğuk zincirle hava ve kara-deniz kombine rotalarla BAE alıcılarına düzenli taze ürün tedarik eden, sertifika ve gümrük süreçlerini yöneten ihracat aracısı.",
+      "target": "BAE'deki süpermarket zincirleri, HoReCa toptancıları",
+      "revenue_model": "Ürün başına marj veya komisyon",
+      "first_step": "BAE'de 10 gıda ithalatçısıyla görüşüp İran kaynaklı hangi ürün kalemlerinde açık oluştuğunu ve fiyat/teslim beklentisini öğrenmek.",
+      "capital": "Orta",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye büyük taze meyve-sebze ihracatçısı ve coğrafi olarak yakın; ihracatçı birlikleri ve fuarlar üzerinden hızla başlanabilir.",
+      "risks": "Videodaki ihracat yasağı ve sevkiyat düşüşü iddiaları doğrulanmalı; çatışma lojistiği tümden aksatabilir; soğuk zincir ve sigorta maliyetleri yüksek."
+    },
+    {
+      "name": "Dubai'den taşınan girişimciler için şirket ve yaşam taşıma paketi",
+      "insight": "Video, taşınmanın sadece para değil şirket, hesap, uyum yapısı, oturum izni ve okul gibi bileşenlerin birlikte yeniden kurulması olduğunu vurguluyor.",
+      "problem": "Taşınmak isteyen girişimciler şirket, banka, vize, okul ve konut süreçlerini ayrı ayrı sağlayıcılarla dağınık yürütüyor.",
+      "solution": "Hedef ülke seçiminden şirket kuruluşuna, bankacılıktan aile yerleşimine kadar tek proje yöneticisi altında koordine edilen taşınma hizmeti; yerel lisanslı ortaklarla çalışır.",
+      "target": "Dubai'de yaşayan Türk ve bölgesel girişimciler ile aileleri",
+      "revenue_model": "Paket ücreti + ortak hizmet sağlayıcılardan yönlendirme komisyonu",
+      "first_step": "Dubai'deki Türk iş insanı topluluklarında 20 kişiyle görüşüp gerçekten taşınmayı planlayanların oranını ve hedef ülkelerini ölçmek.",
+      "capital": "Orta",
+      "difficulty": 3,
+      "turkey_angle": "İstanbul'a dönmek isteyen Türk girişimciler ve Türkiye'ye taşınmayı düşünen yabancılar için yerel ağ avantajı; oturum izni ve şirket kuruluşu süreçleri iyi bilinmeli.",
+      "risks": "Talebin geçici olması; videonun 'kitlesel göç' iddiasının abartılı çıkması; lisans gerektiren hizmetlerde (vize danışmanlığı, hukuk) yetkili ortak gerekliliği."
+    }
+  ],
+  "skeptic_notes": [
+    "Başlık sansasyonel; 'Dubai bitti' sözü isimsiz bir Singapurlu servet yöneticisine atfediliyor.",
+    "Ana kanıtlar isimsiz anekdotlar (servet avukatı, danışman, aile ofisi CEO'su, iki kurucu); ölçülebilir bir veri kaynağı gösterilmiyor.",
+    "Statrys'in çıkarı açık: video Hong Kong ve Singapur'a şirket ve hesap taşımayı teşvik ediyor ve 'Statrys'te bunu bizzat görüyoruz' diyor; reklam niteliği taşıyor.",
+    "28 Şubat saldırısı (137 füze, 209 İHA), Amazon veri merkezine şarapnel isabeti ve İran'ın gıda ihracatını yasaklaması gibi iddialar tek kaynaklı; bağımsız haberlerle teyit edilmeli.",
+    "'Dubai gelirinin %60'ı liman ve havalimanından' ve 'Hürmüz sevkiyatı %90 düştü' iddiaları kaynak gösterilmeden veriliyor.",
+    "Vakıf sayısı cümlesi altyazıda bozuk ('roughly a quarter of more than the 2,270 foundations'); 2.270 değeri en makul okuma.",
+    "'Bir haftada 6-7 müşteri' ifadesi aralık olarak verildiği için grafikte alt sınır kullanıldı.",
+    "Videodaki 'D7 visas' muhtemelen Portekiz'in D7 vizesini kastediyor; bağlam açıklanmıyor."
+  ]
+}

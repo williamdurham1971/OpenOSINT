@@ -1,0 +1,117 @@
+{
+  "id": "N0BMDU3R_dM",
+  "title_tr": "Phuket'te aşırı turizm: Altyapı krizi ve Tayland'ın vize politikası",
+  "category": "Güneydoğu Asya",
+  "region": ["Tayland", "Vietnam"],
+  "summary_tr": "Video, Phuket'teki yerel öfkenin sorunlu turist davranışlarından çok, adanın taşıyabileceğinden fazla insanı ağırlamasından kaynaklandığını savunuyor. Yaklaşık 400 bin kişiye göre kurulmuş altyapı; kalıcı nüfus, göçmen işçiler ve yılda 13 milyon turistin yüküyle çöp dağlarına, gece su kesintilerine ve yükselen konut fiyatlarına yol açıyor. Ayrıca kapalı devre çalışan Rus ve Çin topluluklarında turist parasının yerel işletmelere pek ulaşmadığını anlatıyor. Covid sonrası gelir arayan hükümetin vizesiz giriş ve uzun süreli vize açılımları ziyaretçi sayısını artırdı ama ziyaretçi başına harcamayı artırmadı; şimdi Tayland kapıyı sıkılaştırıp 'nitelikli turizme' yönelirken ziyaretçiler daha ucuz Vietnam'a kayıyor.",
+  "key_points": [
+    "Phuket'in altyapısı yaklaşık 400 bin kişi için tasarlandı; kalıcı sakinler, göçmen işçiler ve geçici çalışanlarla birlikte bu kapasite çok aşıldı.",
+    "Ada günde ürettiği çöpün bir kısmını yakabiliyor, kalanı yıllardır biriken bir çöp dağına dönüştü; geri dönüşüm oranı çok düşük.",
+    "Barajın doluluk oranı düşünce Patong'da gece su kesiliyor; kalıcı çözüm olan boru hattı projesi hâlâ fizibilite aşamasında.",
+    "Kapalı devre çalışan tur grupları ve topluluklar nedeniyle turist parası yerel işletmelere az ulaşıyor.",
+    "Vizesiz giriş ve dijital göçebe vizesi ziyaretçi sayısını artırdı ama düşük bütçeli uzun süreli kalışları teşvik etti; hükümet şimdi denetimleri sertleştiriyor.",
+    "Tayland'ın ziyaretçi sayısı salgın dışı ilk kez düşerken Vietnam ucuzluk ve kolay vizeyle Çinli turistlerde öne geçti."
+  ],
+  "numbers": [
+    {"label": "Phuket yıllık turist", "value": 13, "unit": "milyon kişi", "context": "Adanın taşıdığı yıllık ziyaretçi"},
+    {"label": "Rus ve Çinli günlük yolcu", "value": 12000, "unit": "yolcu/gün", "context": "Havalimanında günlük 10.000-12.000 (üst sınır)"},
+    {"label": "Altyapının tasarlandığı nüfus", "value": 400000, "unit": "kişi", "context": "Boru, yol ve çöp sahalarının boyutlandırıldığı nüfus (yaklaşık)"},
+    {"label": "Kalıcı sakin", "value": 418000, "unit": "kişi", "context": "Phuket'in kalıcı nüfusu"},
+    {"label": "Kayıtlı göçmen işçi", "value": 130000, "unit": "kişi", "context": "Kalıcı nüfusa ek"},
+    {"label": "Ekonomiyi döndürmek için gelen diğer kişiler", "value": 400000, "unit": "kişi", "context": "Kalıcı nüfusa ek"},
+    {"label": "Günlük çöp", "value": 1000, "unit": "ton/gün", "context": "Adanın topladığı çöp"},
+    {"label": "Yakma tesisi kapasitesi", "value": 700, "unit": "ton/gün", "context": "Kalanı 20 yılı aşkın süredir toprağa gömülüyor"},
+    {"label": "Yüzeyde biriken çöp", "value": 1.3, "unit": "milyon ton", "context": "Valinin Nisan'daki açıklaması; gömülenlerle 2 milyon ton"},
+    {"label": "Geri dönüşüm oranı", "value": 10, "unit": "%", "context": "Kirlilik Kontrol Dairesi tahmini"},
+    {"label": "Bang Wad baraj doluluğu", "value": 27, "unit": "%", "context": "Mayıs'ta, gece su kesintisine yol açtı"},
+    {"label": "Su boru hattı maliyeti", "value": 790, "unit": "milyon $", "context": "Anakaradaki barajdan kalıcı çözüm, inşaat başlamadı"},
+    {"label": "Tayland ekonomisinin daralması (2020)", "value": -6.1, "unit": "%", "context": "Yirmi yılı aşkın sürenin en kötü yılı"},
+    {"label": "Tayland ziyaretçi (2024)", "value": 35.5, "unit": "milyon kişi", "context": "Rekora yakın"},
+    {"label": "Vizesiz ülke sayısı (Temmuz 2024)", "value": 93, "unit": "ülke", "context": "Önceki 57'den çıkarıldı, kalış 60 güne uzatıldı"},
+    {"label": "Dijital göçebe vizesi tasarruf şartı", "value": 15000, "unit": "$", "context": "5 yıllık, giriş başına 180 günlük vize için"},
+    {"label": "Dijital göçebe vizesi başvurusu", "value": 35000, "unit": "kişi", "context": "İlk 12 ayda"},
+    {"label": "Turizm geliri (2025)", "value": 46, "unit": "milyar $", "context": "Turizm bakanlığı sayımı, bir önceki yıldan kötü"},
+    {"label": "Ziyaretçi başına harcama (2019)", "value": 1450, "unit": "$", "context": "2025'ten yaklaşık 50 $ fazla"},
+    {"label": "Ortalama kalış süresi", "value": 9, "unit": "gün", "context": "Tayland'a gelen ortalama ziyaretçi"},
+    {"label": "Sınırda geri çevrilen yabancı", "value": 30000, "unit": "kişi", "context": "2026'nın ilk 5 ayında (yaklaşık)"},
+    {"label": "Tutuklanan yabancı", "value": 14000, "unit": "kişi", "context": "Vize ihlali veya izinsiz çalışma, 14.000'den fazla"},
+    {"label": "Kara listeye alınan isim", "value": 169000, "unit": "kişi", "context": "169.000'den fazla"},
+    {"label": "Turizmin ekonomideki payı", "value": 12, "unit": "%", "context": "Tayland'ın kazancı içinde"},
+    {"label": "Tayland yabancı ziyaretçi (2025)", "value": 32.9, "unit": "milyon kişi", "context": "Önceki yıla göre %7,2 düşüş"},
+    {"label": "Vietnam ziyaretçi artışı", "value": 13.8, "unit": "%", "context": "Hanoi yıl sonu için 25 milyon hedefliyor"}
+  ],
+  "chart": {
+    "type": "bar",
+    "title": "Phuket: altyapı kapasitesi ve üzerine binen nüfus",
+    "unit": "kişi",
+    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. Yıllık 13 milyon turist bu grafiğe dahil değildir.",
+    "data": [
+      {"label": "Altyapının tasarlandığı nüfus", "value": 400000},
+      {"label": "Kalıcı sakinler", "value": 418000},
+      {"label": "Kayıtlı göçmen işçiler", "value": 130000},
+      {"label": "Ekonomi için gelen diğer kişiler", "value": 400000}
+    ]
+  },
+  "diagram": {
+    "type": "flow",
+    "title": "Phuket krizinin neden-sonuç zinciri",
+    "steps": [
+      {"label": "Covid ekonomik şoku", "detail": "Turizmin durması ekonomiyi sert biçimde daraltır."},
+      {"label": "Kapıları ardına kadar açma", "detail": "Vizesiz giriş ve uzun süreli vizelerle ziyaretçi sayısı hızla artırılır."},
+      {"label": "Altyapı kapasitesi aşılır", "detail": "Çöp, su ve yol sistemi nüfusun çok altında kalır."},
+      {"label": "Gelir artmaz", "detail": "Düşük bütçeli uzun kalışlar ve kapalı devre turlar yerel ekonomiye az para bırakır."},
+      {"label": "Yerel tepki ve sıkılaştırma", "detail": "Hükümet sınır denetimini, kara listeyi ve vize şartlarını sertleştirir."},
+      {"label": "Rakiplere kayış", "detail": "Ziyaretçiler daha ucuz ve kolay vizeli Vietnam'a yönelir."}
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "Otel ve tatil siteleri için gri su geri kazanım ve su verimliliği paketi",
+      "insight": "Phuket'te baraj düşünce oteller özel tedarikçilerden su almak ve maliyeti üstlenmek zorunda kalıyor.",
+      "problem": "Kıyı turizm bölgelerinde yaz aylarında şebeke suyu yetersiz kalıyor ve oteller tanker suya yüksek bedel ödüyor.",
+      "solution": "Duş/lavabo gri suyunu arıtıp sulama ve rezervuarlarda kullanan modüler sistem, sayaç bazlı tüketim izleme ve tasarruf garantili performans sözleşmesi.",
+      "target": "Bodrum, Çeşme, Antalya ve Kapadokya'daki butik ve orta ölçekli oteller",
+      "revenue_model": "Tasarruf paylaşımlı (ESCO tipi) sözleşme veya kurulum + yıllık bakım",
+      "first_step": "Bodrum'da 10 otelin yaz aylarındaki tanker su harcamalarını öğrenip 1 otelle sayaç verisi toplayarak tasarruf potansiyelini hesaplamak.",
+      "capital": "Orta",
+      "difficulty": 3,
+      "turkey_angle": "Bodrum ve Çeşme gibi bölgeler benzer yaz su kesintileri yaşıyor; gri su kullanımı için yerel belediye ve sağlık mevzuatına uyum gerekir.",
+      "risks": "Otellerin ön yatırıma isteksizliği, hijyen düzenlemeleri, kurulumun mevcut tesisata uyum zorluğu."
+    },
+    {
+      "name": "Turistin parasını yerel esnafa yönlendiren deneyim pazaryeri",
+      "insight": "Video, kapalı devre tur gruplarının adada günler geçirip parayı hiç yerel işletmeye bırakmadığını anlatıyor.",
+      "problem": "Turizm geliri tur operatörü ağlarında kalıyor, küçük yerel işletmeler ziyaretçi artışından pay alamıyor.",
+      "solution": "Yalnızca yerel sahipli işletmelerin (aile restoranı, zanaat atölyesi, köy kahvaltısı) listelendiği, yabancı dilde rezervasyon ve ödeme sunan, otellerle çapraz tanıtım yapan platform.",
+      "target": "Bireysel yabancı turistler; tarafında yerel küçük işletmeler",
+      "revenue_model": "Rezervasyon başı komisyon + otellerle ortaklık ücreti",
+      "first_step": "Tek bir ilçede (ör. Kaş) 20 yerel işletmeyi listeleyip 3 otelin resepsiyonunda QR kodlu pilot yürütmek ve 30 günde rezervasyon sayısını ölçmek.",
+      "capital": "Düşük",
+      "difficulty": 2,
+      "turkey_angle": "Türkiye'de de paket turların alışveriş noktası düzeni benzer; yerel belediyeler ve kalkınma ajanslarından destek alınabilir.",
+      "risks": "GetYourGuide/Airbnb Experiences gibi küresel rakipler, küçük işletmelerin dijital kapasitesi, kalite tutarlılığı."
+    },
+    {
+      "name": "Belediyeler için turizm taşıma kapasitesi izleme panosu",
+      "insight": "Phuket'te altyapı yaklaşık 400 bin kişiye göre kurulmuşken üzerine çok daha fazla insan bindi ve kimse bunu zamanında ölçmedi.",
+      "problem": "Turistik ilçeler, gerçek anlık nüfusu ve çöp/su/trafik yükünü ölçemediği için yatırım ve kısıtlama kararlarını geç alıyor.",
+      "solution": "Mobil operatör anonim yoğunluk verisi, konaklama kayıtları, çöp tonajı ve su tüketimini birleştirip anlık nüfus ve altyapı stres göstergesi sunan pano.",
+      "target": "Kıyı ve turistik ilçe belediyeleri, il özel idareleri, su ve atık idareleri",
+      "revenue_model": "Belediye başına yıllık lisans + kurulum ve analiz hizmeti",
+      "first_step": "Bir turistik ilçe belediyesinin açık verileriyle (atık tonajı, su tüketimi, konaklama istatistiği) geriye dönük bir yaz raporu hazırlayıp belediyeye sunmak.",
+      "capital": "Orta",
+      "difficulty": 4,
+      "turkey_angle": "Türkiye'de turistik ilçelerin yaz nüfusu kışın birkaç katına çıkıyor; kamu ihale süreçleri ve KVKK'ya uygun anonim veri gerekir.",
+      "risks": "Kamu satış döngüsünün uzunluğu, mobil operatör verisinin maliyeti, siyasi değişimler."
+    }
+  ],
+  "skeptic_notes": [
+    "Video Covid'in Tayland'ı vurmasını '2019'a tarihliyor; sınırlar 2020'de kapandı, muhtemelen konuşma hatası.",
+    "'2019'da ziyaretçi başına 1.450 $, 2025'ten yaklaşık 50 $ fazla' ifadesi belirsiz; hangi yöne fark olduğu ve hesap yöntemi doğrulanmalı.",
+    "Turizm gelirinin 46 milyar dolar olduğu ve 2024'ten düşük olduğu bilgisi kur dönüşümüne bağlı olabilir.",
+    "Kalıcı sakinler, göçmen işçiler ve diğer gelenler toplanabilir gibi görünse de kategoriler çakışabilir; video toplam vermiyor, grafikte toplam hesaplanmadı.",
+    "Bireysel şiddet olayları ve dijital göçebe profili anekdot düzeyinde; genellemeye uygun değil.",
+    "Altyazıda yer adları bozuk ('Bengaluru' muhtemelen Bangla Road, 'Le Cat Mio' bir Paris banliyösüne gönderme, 'Bang Wad' baraj adı); en makul okumalar kullanıldı.",
+    "Başlıktaki 'cehennem' ifadesi abartılı; video da sorunun turist davranışından çok kapasite olduğunu söylüyor."
+  ]
+}

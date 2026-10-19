@@ -1,0 +1,113 @@
+{
+  "id": "ndC1ZG9r8Gk",
+  "title_tr": "Asya'nın estetik cerrahi ve medikal turizm endüstrisinin karanlık yüzü",
+  "category": "Doğu Asya (Japonya/Kore)",
+  "region": ["Güney Kore", "Tayland", "Malezya", "Endonezya", "Çin", "Türkiye", "Hindistan"],
+  "summary_tr": "Video, Asya ülkelerinin estetik cerrahi ve medikal turizmi devlet destekli bir ihracat ürününe dönüştürdüğünü anlatıyor: Kore göz/yüz, Türkiye saç ve diş, Tayland cinsiyet uyum ameliyatları, Hindistan ise karmaşık cerrahi üzerinden fiyat avantajıyla hasta çekiyor. Talep tarafında 'güzellik primi' araştırmaları, Kore'de 1997 krizi sonrası iş bulmak için yapılan estetik ve sosyal medya filtrelerinin yarattığı beden algısı öne çıkarılıyor. Hızlı büyümenin kaliteyi değil hacmi teşvik ettiği; Kore'deki 'hayalet cerrahi', Türkiye'deki İngiliz hasta ölümleri ve Çin'deki yasadışı bacak uzatma ameliyatlarıyla örnekleniyor. Son olarak K-pop, K-kozmetik ve GLP-1 ilaçlarının yarattığı 'Ozempic yüzü' gibi döngülerin, müşterinin hiç tam tatmin olmamasına dayanan bir iş modeli kurduğu savunuluyor.",
+  "key_points": [
+    "Hükümetler vize kolaylığı, akreditasyon, vergi iadesi ve paket tur anlaşmalarıyla yabancı hastaları aktif olarak çekmeye çalışıyor.",
+    "Kore verisine göre yabancı hastaların harcamasının yalnızca küçük bir kısmı tıbbi işleme, büyük kısmı otel, yeme-içme ve alışverişe gidiyor.",
+    "Her ülke bir uzmanlık alanı seçmiş: Kore estetik yüz, Türkiye saç ve diş, Hindistan kalp/ortopedi, Tayland cinsiyet uyum ve genel sağlık.",
+    "Hacim baskısı Kore'de hayalet cerrahiye, Türkiye'de komplikasyon ve ölümlere, Çin'de yasadışı kliniklere yol açıyor.",
+    "Kore'nin kozmetik ihracatı, eğlence sektörü ve cerrahi endüstrisi birbirini besleyen bir döngü oluşturuyor.",
+    "GLP-1 zayıflama ilaçları, yüz hacmi kaybını düzeltmek isteyen yeni bir estetik hasta kitlesi yaratıyor."
+  ],
+  "numbers": [
+    {"label": "Kore'ye gelen yabancı hasta (yıllık, giriş)", "value": 2.5, "unit": "milyon kişi", "context": "Videonun açılışında Kore'nin her yıl aldığı yabancı hasta sayısı olarak söylendi"},
+    {"label": "Küresel estetik cerrahi pazarı (2026, alt sınır)", "value": 60, "unit": "milyar $", "context": "Tanıma göre 60-90 milyar $ aralığı verildi"},
+    {"label": "Küresel estetik cerrahi pazarı (2026, üst sınır)", "value": 90, "unit": "milyar $", "context": "Aralığın üst ucu; 2030'ların ortasına kadar yaklaşık iki katına çıkması bekleniyor"},
+    {"label": "Asya-Pasifik'in medikal turizm harcamasındaki payı", "value": 40, "unit": "%", "context": "Medikal seyahate harcanan paranın yaklaşık payı"},
+    {"label": "Kore'de yabancı hastaların toplam harcaması (2025)", "value": 8.4, "unit": "milyar $", "context": "2 milyon yabancı hasta ve refakatçilerinin toplam harcaması"},
+    {"label": "Bunun tıbbi işlemlere giden kısmı", "value": 2.2, "unit": "milyar $", "context": "Kalanı otel, restoran, alışveriş ve vergilere gitti"},
+    {"label": "Diz protezi – Bangkok", "value": 12000, "unit": "$", "context": "ABD ile fiyat karşılaştırması"},
+    {"label": "Diz protezi – ABD", "value": 50000, "unit": "$", "context": "Bangkok fiyatıyla karşılaştırma"},
+    {"label": "Burun estetiği – Seul", "value": 3500, "unit": "$", "context": "Sidney fiyatıyla karşılaştırma"},
+    {"label": "Burun estetiği – Sidney", "value": 15000, "unit": "$", "context": "Yaklaşık fiyat"},
+    {"label": "En çekici üçte birin gelir primi", "value": 5, "unit": "%", "context": "Hamermesh'in 'Beauty Pays' kitabındaki bulgu"},
+    {"label": "Kariyer boyu güzellik farkı", "value": 230000, "unit": "$", "context": "En az ve en çok çekici gruplar arasındaki toplam gelir farkı"},
+    {"label": "İş başvurusunda fotoğraf isteyen Kore şirketleri", "value": 93, "unit": "%", "context": "Görünüşe dayalı işe alım baskısını göstermek için"},
+    {"label": "Gangnam 'üçlü kombo' paket fiyatı (üst sınır)", "value": 15000, "unit": "$", "context": "Göz kapağı, burun ve V-çene paketi 5.000-15.000 $"},
+    {"label": "İstanbul'daki saç ekimi klinikleri", "value": 500, "unit": "klinik", "context": "Yalnızca İstanbul'da bu modeli uygulayan klinik sayısı (500'den fazla)"},
+    {"label": "Hindistan'da bypass ameliyatı", "value": 5000, "unit": "$", "context": "OECD fiyatlarından %70-80 daha ucuz"},
+    {"label": "Hindistan medikal turizm pazarı", "value": 8, "unit": "milyar $", "context": "On yıl içinde üç katına çıkması bekleniyor"},
+    {"label": "Kwon Dae-hee'nin kaybettiği kan", "value": 3.5, "unit": "litre", "context": "2016'da Gangnam'daki çene ameliyatında hayatını kaybeden öğrenci; Kore ameliyathanelerde CCTV'yi zorunlu kıldı"},
+    {"label": "Türkiye'de ölen İngiliz vatandaşı (2025)", "value": 7, "unit": "kişi", "context": "Tıbbi işlemler sonrası ölümler; 2019-Mart 2024 arası toplam 28"},
+    {"label": "Kore kozmetik ihracatı (2025)", "value": 11.4, "unit": "milyar $", "context": "Bir önceki yıla göre %11,8 artış; Fransa'nın ardından dünya ikincisi"},
+    {"label": "GLP-1 ilacı kullanan Amerikalı", "value": 31, "unit": "milyon kişi", "context": "Ozempic yüzü kaynaklı yeni hasta kitlesini açıklamak için"}
+  ],
+  "chart": {
+    "type": "bar",
+    "title": "Aynı işlemin ülkelere göre fiyatı",
+    "unit": "$",
+    "source_note": "Videoda belirtilen yaklaşık rakamlar; bağımsız doğrulanmadı",
+    "data": [
+      {"label": "Diz protezi – Bangkok", "value": 12000},
+      {"label": "Diz protezi – ABD", "value": 50000},
+      {"label": "Burun estetiği – Seul", "value": 3500},
+      {"label": "Burun estetiği – Sidney", "value": 15000}
+    ]
+  },
+  "diagram": {
+    "type": "cycle",
+    "title": "Güzellik ekonomisinin kendini besleyen döngüsü",
+    "steps": [
+      {"label": "Güzellik standardı belirlenir", "detail": "K-pop, diziler ve sosyal medya filtreleri tek tip bir görünüm idealini yayar."},
+      {"label": "Güvensizlik ve ekonomik baskı", "detail": "İş ve sosyal hayatta görünüşe dayalı avantaj algısı talebi artırır."},
+      {"label": "Kozmetik tüketimi normalleşir", "detail": "Kozmetik ürünler görünüşle uğraşmayı gündelik hale getirir."},
+      {"label": "Ucuz cerrahi paketleri", "detail": "Devlet destekli klinikler fiyat avantajıyla yabancı hastaları çeker."},
+      {"label": "Hacim baskısı ve riskler", "detail": "Kalite yerine hacim öne çıkar; hayalet cerrahi ve komplikasyonlar artar."},
+      {"label": "Yeni kusurlar, yeni talepler", "detail": "Tatminsizlik veya ilaç yan etkileri bir sonraki işleme talep doğurur."}
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "Medikal turizm klinik doğrulama ve şeffaflık platformu",
+      "insight": "Videodaki hayalet cerrahi ve Türkiye'deki ölüm vakaları, hastaların kimin ameliyat ettiğini ve kliniğin yeterliliğini bilemediğini gösteriyor.",
+      "problem": "Yabancı hastalar kliniğin akreditasyonunu, cerrahın gerçek kimliğini ve komplikasyon geçmişini doğrulayamıyor.",
+      "solution": "Klinikleri lisans, akreditasyon, ameliyathane kamera kaydı politikası, cerrah kimliği taahhüdü ve hasta sonuç anketlerine göre puanlayan bağımsız bir doğrulama ve rozet sistemi.",
+      "target": "Avrupa ve Körfez'den Türkiye'ye saç, diş ve estetik için gelen hastalar; kaliteli klinikler",
+      "revenue_model": "Kliniklerden denetim/sertifikasyon ücreti ve yıllık abonelik; hastalardan ücretsiz kullanım, isteğe bağlı ikinci görüş hizmeti",
+      "first_step": "İstanbul'daki 20 saç/diş kliniğiyle görüşüp bağımsız denetim için ödeme isteğini ölçmek ve İngiltere'deki 50 potansiyel hastaya hangi kriterlere güvendiklerini soran bir anket yapmak",
+      "capital": "Orta",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye saç ve diş turizminin merkezi olduğu için pazar yerinde; Sağlık Bakanlığı'nın sağlık turizmi yetki belgesi verileriyle entegrasyon güven yaratabilir.",
+      "risks": "Kötü puan alan kliniklerden hukuki baskı, tarafsızlık algısının korunması, sağlık verisi gizliliği (KVKK/GDPR) yükümlülükleri"
+    },
+    {
+      "name": "Medikal turist için operasyon sonrası uzaktan takip hizmeti",
+      "insight": "İngiltere'nin, yurtdışı işlem komplikasyonlarını NHS'e ek yük olarak görmesi; hastaların eve dönünce bakımın koptuğunu gösteriyor.",
+      "problem": "Hasta birkaç gün içinde ülkesine dönüyor; enfeksiyon gibi komplikasyonlar geç fark ediliyor ve sorumluluk belirsiz kalıyor.",
+      "solution": "Klinikle hasta arasında fotoğraf tabanlı yara takibi, belirti kontrol listesi, hasta ülkesinde anlaşmalı hekime yönlendirme ve komplikasyon sigortası paketi sunan uygulama.",
+      "target": "Saç, diş ve estetik klinikleri (B2B), medikal turizm aracı firmaları",
+      "revenue_model": "Klinik başına hasta başı ücret; sigorta ortaklığından komisyon",
+      "first_step": "5 klinikle pilot anlaşma yapıp 30 gün boyunca WhatsApp tabanlı manuel takip yürütmek ve yakalanan erken komplikasyon sayısını kaydetmek",
+      "capital": "Orta",
+      "difficulty": 3,
+      "turkey_angle": "Türk klinikleri yurtdışı itibar sorunu yaşıyor; kalite güvencesi olarak pazarlanabilir.",
+      "risks": "Tıbbi sorumluluk ve uzaktan sağlık hizmeti mevzuatı, hasta ülkesindeki hekim ağını kurmanın zorluğu"
+    },
+    {
+      "name": "GLP-1 kullanıcılarına yönelik yüz ve cilt bakım protokolleri",
+      "insight": "Videoya göre hızlı kilo kaybı yüzde hacim kaybı yaratıyor ve daha önce estetiği düşünmeyen yeni bir kitle oluşturuyor.",
+      "problem": "GLP-1 kullananlar kilo kaybının yüz ve cilt üzerindeki etkisine hazırlıksız ve doğrudan invaziv işlemlere yönlendiriliyor.",
+      "solution": "Dermatologlarla geliştirilen, ameliyatsız (beslenme, cilt bakımı, protein takibi) aşamalı bir takip programı ve gerektiğinde güvenilir hekime yönlendirme.",
+      "target": "Türkiye ve Avrupa'da GLP-1 kullanan yetişkinler, obezite klinikleri",
+      "revenue_model": "Aylık abonelik programı ve klinik ortaklıklarından yönlendirme ücreti",
+      "first_step": "Bir obezite kliniğiyle anlaşıp 30 GLP-1 hastasına yüz/cilt endişelerini soran anket yapmak ve ücretli program için ön kayıt toplamak",
+      "capital": "Düşük",
+      "difficulty": 2,
+      "turkey_angle": "Türkiye'de obezite cerrahisi ve GLP-1 kullanımı yaygın; mevcut klinik ağına eklenebilir.",
+      "risks": "Sağlık iddialarında reklam mevzuatı, ilaç kullanımına dair tavsiye vermeme zorunluluğu, trendin kalıcılığı"
+    }
+  ],
+  "skeptic_notes": [
+    "Kore'ye gelen yabancı hasta sayısı açılışta 2,5 milyon, ilerleyen kısımda 2025 için 2 milyon olarak geçiyor; iki rakam tutarsız.",
+    "Pazar büyüklüğü için hem '90 milyar $ endüstri' hem de '60-90 milyar $' aralığı veriliyor; kesin rakam değil, tanıma bağlı tahmin.",
+    "Erkeklerde her santimetre boy için yıllık 998 $ ek aile geliri iddiası altyazıda bozulmuş veya bağlamından kopmuş olabilir; kaynak belirtilmemiş.",
+    "'Swimming conductors' ifadesi büyük olasılıkla 'semiconductors' (yarı iletkenler) kelimesinin altyazı hatası; Korece terim de bozuk yazılmış (muhtemelen 'chwieop seonghyeong', yani iş için estetik).",
+    "Anlatıcı açılışta Londra'dan yayın yaptığını söylüyor gibi görünse de aynı cümlede Asya'da şirket işlettiğini belirtiyor; altyazı hatası olabilir.",
+    "Kore'nin kozmetikte ABD'yi geçip dünya ikincisi olduğu ve Çin'in Asya-Pasifik'in medikal turizm harcamasının %40'ını aldığı gibi iddialar tek kaynaklı; doğrulanmalı.",
+    "'31 milyon Amerikalı GLP-1 kullanıyor' ile 'yetişkinlerin beşte biri kullandı' ifadeleri farklı ölçütler (şu an kullanan ve hiç kullanmış olan); karıştırılmamalı.",
+    "Başlık ve anlatım duygusal ve abartılı ('en karanlık endüstri'); sektörün tamamını tekil trajik vakalarla genelleme eğilimi var."
+  ]
+}

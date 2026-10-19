@@ -1,0 +1,100 @@
+{
+  "id": "TXXOlOdV0Ys",
+  "title_tr": "Jack Ma'nın Alibaba hisse alımı ve Çin'de girişimcilerin sessizliği",
+  "category": "Çin ekonomisi",
+  "region": ["Çin", "Hong Kong"],
+  "summary_tr": "Video, Jack Ma'nın Alibaba'nın büyük ek hisse satışından sonra yaklaşık 77 milyon dolarlık hisse almasını, yıllardır süren sessizliğinin ardından bir sinyal olarak ele alıyor. Anlatıcı, Ma'nın 2020'deki Bund Zirvesi'nde düzenleyicileri eleştirmesinin Ant Group'un rekor halka arzının durdurulmasına, Alibaba'ya rekabet soruşturmasına ve Ma'nın Ant'taki oy haklarının %53,4'ten %6,2'ye düşmesine yol açtığını anlatıyor. Ma hiçbir suçlama almadı, zengin kalmaya devam etti ama kamusal rolünü kaybetti. Kısa görünümleri Alibaba hissesini hâlâ hareket ettiriyor. Video, diğer Çinli milyarderlerin de bu dersi alıp görünürlükten çekildiğini savunuyor.",
+  "key_points": [
+    "Ma, Alibaba'nın yatırımcıların tepki gösterdiği ek hisse satışından günler sonra hisse aldı ve hisse %1,5 yükseldi.",
+    "Ekim 2020'deki konuşması, başkan yardımcısının finansal istikrar mesajının hemen ardından bir meydan okuma olarak algılandı.",
+    "Ant Group'un 34,5 milyar dolarlık halka arzı işlem başlamadan askıya alındı.",
+    "Hissedar anlaşmasının değişmesiyle Ma, Ant'taki ekonomik payını koruyup kontrolünü kaybetti.",
+    "Ma'nın kısa video ve fotoğraflarla görünmesi Alibaba hissesinde günlük %4-8,5 hareketlere yol açtı.",
+    "ByteDance ve Pinduoduo kurucuları gibi diğer milyarderler de görünür rollerden çekildi."
+  ],
+  "numbers": [
+    {"label": "Ma'nın hisse alımı", "value": 77, "unit": "milyon $", "context": "600 milyon HK$'ı aşkın Alibaba hissesi"},
+    {"label": "Alibaba ek hisse satışı", "value": 10.2, "unit": "milyar $", "context": "Hong Kong'da yeni hisse satışı; yapay zekâ altyapısı için"},
+    {"label": "Satış sonrası günlük düşüş", "value": -10, "unit": "%", "context": "Hissenin tek günde en fazla kaybı"},
+    {"label": "Yeni hisse adedi", "value": 710, "unit": "milyon hisse", "context": "Hong Kong'daki en büyük ek halka arz"},
+    {"label": "Ma alımı sonrası yükseliş", "value": 1.5, "unit": "%", "context": "Haberin ardından hissenin tepkisi"},
+    {"label": "Ma'nın serveti (Forbes)", "value": 27, "unit": "milyar $", "context": "Ağustos sonu; dünyanın 87. en zengini"},
+    {"label": "Ant halka arz büyüklüğü", "value": 34.5, "unit": "milyar $", "context": "Tarihin en büyük halka arzı olacaktı"},
+    {"label": "Ant değerlemesi (2020)", "value": 313, "unit": "milyar $", "context": "Altyazıda '300 13 billion'; en makul okuma 313 milyar $"},
+    {"label": "Bireysel yatırımcı talebi", "value": 3, "unit": "trilyon $", "context": "Ant hisseleri için rekor talep"},
+    {"label": "Rekabet soruşturması günü düşüş", "value": -9, "unit": "%", "context": "24 Aralık 2020, Alibaba Hong Kong hissesi (yaklaşık)"},
+    {"label": "CCTV yanlış haberi günü düşüş", "value": -9.5, "unit": "%", "context": "Mayıs 2022; 26,5 milyar $ değer kaybı"},
+    {"label": "CCTV haberiyle silinen değer", "value": 26.5, "unit": "milyar $", "context": "Bir saat sonra düzeltilen haber"},
+    {"label": "Ma'nın Ant oy hakkı (önce)", "value": 53.4, "unit": "%", "context": "Hissedar anlaşması değişmeden önce"},
+    {"label": "Ma'nın Ant oy hakkı (sonra)", "value": 6.2, "unit": "%", "context": "Ocak 2023 sonrası"},
+    {"label": "Ma'nın Ant ekonomik payı", "value": 9.9, "unit": "%", "context": "Payı korundu ama kontrol kalmadı"},
+    {"label": "Yurt dışında geçen süre", "value": 16, "unit": "ay", "context": "Çin'e dönmeden önce"},
+    {"label": "Ant geri alım değerlemesi", "value": 78.54, "unit": "milyar $", "context": "2020 halka arz değerine göre %75 iskonto"},
+    {"label": "Öğretmen videosu sonrası yükseliş", "value": 8.5, "unit": "%", "context": "Ocak 2021, 50 saniyelik video"},
+    {"label": "Okul ziyareti fotoğrafları sonrası", "value": 4, "unit": "% (üzeri)", "context": "Hangzhou'daki okul ziyareti"},
+    {"label": "Xi görüşmesi haberi sonrası", "value": 6.3, "unit": "%", "context": "Şubat 2025"},
+    {"label": "Yat uzunluğu", "value": 88, "unit": "m", "context": "Zen isimli süper yat"}
+  ],
+  "chart": {
+    "type": "bar",
+    "title": "Jack Ma ile ilgili haberlerde Alibaba hissesinin günlük tepkisi",
+    "unit": "% (günlük değişim)",
+    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. Okul ziyaretinde 'yüzde 4'ten fazla' denildiği için alt sınır gösterildi.",
+    "data": [
+      {"label": "Ara 2020 rekabet soruşturması", "value": -9},
+      {"label": "Oca 2021 öğretmen videosu", "value": 8.5},
+      {"label": "May 2022 CCTV yanlış haberi", "value": -9.5},
+      {"label": "2023 okul ziyareti", "value": 4},
+      {"label": "Şub 2025 Xi görüşmesi haberi", "value": 6.3},
+      {"label": "2026 Ma'nın hisse alımı", "value": 1.5}
+    ]
+  },
+  "diagram": {
+    "type": "flow",
+    "title": "Jack Ma'nın kontrolü kaybetme süreci",
+    "steps": [
+      {"label": "Bund Zirvesi konuşması", "detail": "Ma, başkan yardımcısının ardından düzenleyicileri açıkça eleştirdi."},
+      {"label": "Finansal istikrar açıklaması", "detail": "Üst kurul tüm finansal faaliyetlerin denetime tabi olduğunu duyurdu."},
+      {"label": "Düzenleyici görüşmesi", "detail": "Ma ve Ant yöneticileri menkul kıymetler kuruluna çağrıldı."},
+      {"label": "Halka arz askıya alındı", "detail": "Ant'ın rekor halka arzı işlem başlamadan durduruldu."},
+      {"label": "Rekabet soruşturması ve sessizlik", "detail": "Alibaba'ya soruşturma açıldı, Ma kamuoyundan çekildi."},
+      {"label": "Kontrolün devri", "detail": "Hissedar anlaşması değişti, Ma'nın oy hakkı %6,2'ye düştü."}
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "Hong Kong borsası yönetici ve büyük ortak işlem bildirimi takibi",
+      "insight": "Ma'nın hisse alımı bir işlem bildirimiyle ortaya çıktı ve piyasa bunu sinyal olarak okudu.",
+      "problem": "Türk yatırımcılar ve analistler Hong Kong'da işlem gören Çin şirketlerinin içeriden alım-satım bildirimlerini dil ve erişim nedeniyle takip edemiyor.",
+      "solution": "HKEX'in kamuya açık pay bildirimlerini otomatik toplayıp Türkçe özetleyen, belirli şirketler için uyarı gönderen bir bülten ve panel; yatırım tavsiyesi vermeden yalnızca veri sunar.",
+      "target": "Türk portföy yöneticileri, aracı kurum analistleri ve yabancı hisse yatırımcıları",
+      "revenue_model": "Aylık abonelik; aracı kurumlara kurumsal lisans",
+      "first_step": "20 büyük Çin şirketi için son 3 ayın bildirimlerini derleyen örnek bülteni 10 analiste gönderip geri bildirim almak",
+      "capital": "Düşük",
+      "difficulty": 2,
+      "turkey_angle": "Türk yatırımcıların yabancı hisse ilgisi artıyor; Türkçe kaynak yok denecek kadar az.",
+      "risks": "SPK yatırım danışmanlığı ve yatırım tavsiyesi sınırları; bildirim verisinin gecikmeli olması; dar pazar."
+    },
+    {
+      "name": "Çin düzenleyici sinyal bülteni",
+      "insight": "Ant'ın halka arzı, finans istikrar kurulunun Ma'yı hiç anmayan kısa açıklamasıyla başlayan bir süreçle durduruldu; sinyal önceden okunabilirdi.",
+      "problem": "Çin'le iş yapan yabancı şirketler, resmi kurumların kısa ve dolaylı açıklamalarını kendi sektörleri açısından yorumlayamıyor.",
+      "solution": "Çin'in ilgili düzenleyici kurumlarının açıklamalarını sektör bazında izleyip özetleyen ve Türk şirketleri için olası etkileri açıklayan iki haftalık bülten.",
+      "target": "Çin'den tedarik yapan veya Çin'e ihracat yapan Türk şirketleri, hukuk büroları ve dış ticaret danışmanları",
+      "revenue_model": "Ücretli bülten aboneliği ve sektör bazlı özel brifingler",
+      "first_step": "Tek bir sektörde (ör. e-ticaret veya batarya) son 6 ayın düzenleyici açıklamalarını özetleyen ücretsiz örnek sayı yayımlayıp abone ilgisini ölçmek",
+      "capital": "Düşük",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye'den Çince bilen bir ekiple yürütülebilir; Türkçe benzer bir kaynak bulunmuyor.",
+      "risks": "Çince kaynak yorumlamada hata; Çin'deki bilgi erişim kısıtları; ödeme isteğinin düşük olması."
+    }
+  ],
+  "skeptic_notes": [
+    "Ant değerlemesi altyazıda '300 13 billion' olarak geçiyor; 313 milyar $ olarak okundu.",
+    "Ma'nın 'altı yıllık sessizliği bozduğu' başlığı abartılı; video da onun hiçbir şey söylemediğini kabul ediyor.",
+    "Bireysel yatırımcıların 3 trilyon dolarlık talebi çok yüksek; para biriminin farklı olabileceği kontrol edilmeli.",
+    "Ma'nın Tokyo'da 'yaklaşık 6 ay' kaldığı ve '16 ay yurt dışında' olduğu bilgileri birbirini tamamlıyor ama zaman çizelgesi net değil.",
+    "Ma'nın hisse alımının 'sinyal' olarak okunması anlatıcının ve piyasa söylentilerinin yorumu; bağımsız bir kanıt sunulmuyor.",
+    "Videoda kanalın ücretsiz bülteni tanıtılıyor (kendi tanıtım içeriği)."
+  ]
+}

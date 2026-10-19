@@ -1,0 +1,127 @@
+{
+  "id": "pHmPPc2dTEk",
+  "title_tr": "Asya'daki kumar ekonomisi aslında bir sermaye kaçışı mekanizması mı?",
+  "category": "Küresel finans & bankacılık",
+  "region": ["Çin", "Makao", "Filipinler", "Kamboçya", "Güney Kore", "Endonezya", "Japonya", "Tayland", "Vietnam"],
+  "summary_tr": "Video, Asya'daki dev kumar rakamlarının bağımlılıktan çok Çin'in sermaye kontrollerini aşma ihtiyacını yansıttığını savunuyor. Çin vatandaşlarının yılda yurtdışına çıkarabileceği tutar sınırlıyken Makao'nun VIP salonlarına akan para bu sınırla açıklanamayacak kadar büyüktü. 'Junket' aracıları Çin'de yuan alıp Makao'da kredi vererek parayı resmi olarak sınırdan geçirmeden döviz haline getiren bir sistem kurdu. 2021'deki Suncity operasyonu ve sonrasındaki düzenlemelerle bu model Makao'da çöktü, ancak faaliyetler Filipinler, Kamboçya, Myanmar ve Laos'a kayarak dolandırıcılık merkezlerine dönüştü.",
+  "key_points": [
+    "Makao'nun kumar gelirleri Las Vegas Strip'i defalarca aşıyor ve ziyaretçilerin büyük kısmı kumarın yasak olduğu Çin'den geliyor.",
+    "Çin'in kişi başı yıllık döviz çıkış sınırı, Makao VIP gelirlerinin büyüklüğünü açıklayamıyor.",
+    "Junket aracıları kredi, borç tahsilatı ve yerel hesaplar aracılığıyla yuanı yurtdışında kullanılabilir paraya çeviriyordu.",
+    "Suncity'nin kurucusu Alvin Chau 18 yıl hapis cezası aldı; junket sayısı ve VIP modeli çöktü.",
+    "Baskı yapılan her ülkede operatörler daha zayıf denetimli ülkelere taşındı; Kamboçya'daki eski kumarhaneler dolandırıcılık merkezlerine dönüştü.",
+    "Sunucu, asıl nedenin Asya'da paranın serbestçe dolaşamaması olduğunu ve paranın her zaman paralel kanallar bulduğunu söylüyor."
+  ],
+  "numbers": [
+    {"label": "Makao / Las Vegas Strip oranı (geçen yıl)", "value": 3.5, "unit": "kat", "context": "Makao'nun geçen yıl kazandığı gelirin Las Vegas Strip'e oranı"},
+    {"label": "Filipinler online kumar hesabı", "value": 32, "unit": "milyon hesap", "context": "Kayıtlı online kumar hesabı"},
+    {"label": "Japonya pachinko ekonomisi", "value": 150, "unit": "milyar $/yıl (üzeri)", "context": "Eğlence olarak sınıflanan paralel kumar ekonomisi"},
+    {"label": "Makao kumar geliri 2013", "value": 45, "unit": "milyar $", "context": "Zirve yılı"},
+    {"label": "Makao nüfusu", "value": 700000, "unit": "kişi", "context": "Bölgenin nüfusu"},
+    {"label": "Makao / Las Vegas Strip oranı (2013)", "value": 7, "unit": "kat", "context": "2013'teki oran"},
+    {"label": "Çin'den gelen ziyaretçi payı", "value": 70, "unit": "% (üzeri)", "context": "Makao kumarhane ziyaretçileri arasında"},
+    {"label": "Çin'de kumar bağımlılığı oranı (alt)", "value": 2.5, "unit": "%", "context": "Yetişkin nüfus içinde; aralığın alt ucu"},
+    {"label": "Çin'de kumar bağımlılığı oranı (üst)", "value": 4, "unit": "%", "context": "Yetişkin nüfus içinde; aralığın üst ucu"},
+    {"label": "Çin'deki kumarbaz sayısı", "value": 55, "unit": "milyon kişi", "context": "Videodaki tahmin"},
+    {"label": "Kore yasa dışı / yasal kumar oranı", "value": 5, "unit": "kat", "context": "Yasa dışı pazarın yasal pazara göre büyüklüğü"},
+    {"label": "Endonezya hapis cezası", "value": 6, "unit": "yıl (en fazla)", "context": "Kumar için öngörülen ceza"},
+    {"label": "Endonezya yasa dışı bahisçi", "value": 3.7, "unit": "milyon kişi", "context": "2024'te yasa dışı bahis yapanlar"},
+    {"label": "Endonezya yasa dışı bahis hacmi", "value": 20, "unit": "milyar $ (üzeri)", "context": "2024"},
+    {"label": "Endonezya ortalama aylık ücret", "value": 250, "unit": "$", "context": "Karşılaştırma için"},
+    {"label": "Çin yıllık döviz çıkış sınırı", "value": 50000, "unit": "$/kişi", "context": "20 yılı aşkın süredir geçerli limit"},
+    {"label": "Sıkı doğrulama eşiği", "value": 1000, "unit": "$", "context": "Ocak 2026'dan itibaren bu tutarın üstündeki transferler"},
+    {"label": "Kayıt saklama süresi", "value": 10, "unit": "yıl", "context": "5 yıldan 10 yıla çıkarıldı"},
+    {"label": "Lisanslı junket 2013", "value": 235, "unit": "operatör", "context": "Zirve dönemi"},
+    {"label": "Junket'lerin gelir payı", "value": 60, "unit": "% (üzeri)", "context": "Makao kumar gelirindeki payları"},
+    {"label": "Suncity'nin junket pazar payı", "value": 40, "unit": "%", "context": "Yaklaşık"},
+    {"label": "Suncity VIP geliri", "value": 11, "unit": "milyar $", "context": "Makao'nun en iyi yılında tahmini"},
+    {"label": "Alvin Chau suçlama sayısı", "value": 289, "unit": "suçlama", "context": "Dolandırıcılık, kara para aklama vb."},
+    {"label": "Alvin Chau hapis cezası", "value": 18, "unit": "yıl", "context": "Ocak 2023"},
+    {"label": "İade emri", "value": 24.87, "unit": "milyar HK$", "context": "Yaklaşık 3,2 milyar ABD doları yasa dışı kazanç"},
+    {"label": "Levo Chan hapis cezası", "value": 14, "unit": "yıl", "context": "İkinci büyük junket'in yöneticisi"},
+    {"label": "Junket sayısı 2023", "value": 36, "unit": "operatör", "context": "Düzenleme sonrası"},
+    {"label": "Aktif junket (bugün)", "value": 23, "unit": "operatör", "context": "Üst sınır 50"},
+    {"label": "Makao gelir çöküşü", "value": 80, "unit": "%", "context": "Baskı ve pandeminin birleşik etkisi"},
+    {"label": "Makao geliri 2025", "value": 30.84, "unit": "milyar $", "context": "Pandemi sonrası rekor"},
+    {"label": "Vergi oranı (videodaki)", "value": 86.5, "unit": "%", "context": "Videoya göre hükümetin kumarhane gelirinden aldığı pay"},
+    {"label": "Kamboçya dolandırıcılık merkezi çalışanı", "value": 150000, "unit": "kişi", "context": "Eski kumarhane binalarında tahmini"},
+    {"label": "Kamboçya dolandırıcılık geliri (alt)", "value": 12, "unit": "milyar $/yıl", "context": "Tahmin aralığının alt ucu"},
+    {"label": "Kamboçya dolandırıcılık geliri (üst)", "value": 19, "unit": "milyar $/yıl", "context": "Tahmin aralığının üst ucu"},
+    {"label": "Kamboçya GSYH payı", "value": 60, "unit": "%", "context": "Dolandırıcılık gelirinin olası GSYH oranı"},
+    {"label": "Tayland engellenen URL", "value": 184000, "unit": "URL", "context": "Ekim 2025 - Ocak 2026; bir önceki yılın dört katı"},
+    {"label": "Vietnam aklama ağı", "value": 354, "unit": "milyon $", "context": "16 bankada 125 hesap üzerinden"}
+  ],
+  "chart": {
+    "type": "line",
+    "title": "Makao'daki lisanslı junket operatörü sayısı",
+    "unit": "operatör",
+    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. 'Bugün' videonun yayın yılı (2026) olarak alınmıştır.",
+    "data": [
+      {"label": "2013", "value": 235},
+      {"label": "2023", "value": 36},
+      {"label": "2026", "value": 23}
+    ]
+  },
+  "diagram": {
+    "type": "flow",
+    "title": "Junket sisteminde para akışı",
+    "steps": [
+      {"label": "Sermaye kontrolü", "detail": "Çin vatandaşı yasal sınırın üzerinde parayı yurtdışına çıkaramıyor."},
+      {"label": "Junket'ten kredi", "detail": "Aracı, Makao'da kumarhane fişi şeklinde kredi açıyor."},
+      {"label": "Makao'da oyun", "detail": "Müşteri kısa süre oynayıp kalan fişleri dövize çeviriyor veya yurtdışına aktarıyor."},
+      {"label": "Borcun Çin'de ödenmesi", "detail": "Borç yuan olarak aracının Çin'deki ağı üzerinden kapatılıyor."},
+      {"label": "Baskı ve çöküş", "detail": "2021 tutuklamaları ve yeni kurallar VIP modelini bitirdi."},
+      {"label": "Faaliyetin göçü", "detail": "Ağlar Filipinler, Kamboçya, Myanmar ve Laos'a kayarak dolandırıcılığa evrildi."}
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "Ödeme kuruluşları için yasa dışı bahis ve kiralık hesap tespit motoru",
+      "insight": "Videoda Vietnam'da 125 banka hesabı üzerinden para aklanması ve operatörlerin denetimi zayıf kanallara göç etmesi anlatılıyor.",
+      "problem": "Türk banka ve ödeme/elektronik para kuruluşları, yasa dışı bahis tahsilatı için kullanılan kiralık (aracı) hesapları geç tespit ediyor.",
+      "solution": "İşlem desenlerinden (çok sayıda küçük gelen transfer, hızlı çıkış, gece yoğunluğu) şüpheli hesapları puanlayan ve MASAK bildirimine hazır rapor üreten izleme yazılımı.",
+      "target": "Türkiye'deki ödeme kuruluşları, elektronik para kuruluşları ve dijital bankalar",
+      "revenue_model": "İşlem hacmine göre SaaS lisansı + kurulum ücreti",
+      "first_step": "Bir ödeme kuruluşunun anonimleştirilmiş işlem verisiyle kural tabanlı bir model kurup mevcut yöntemlere göre ek tespit oranını gösteren pilot yapmak",
+      "capital": "Orta",
+      "difficulty": 4,
+      "turkey_angle": "Türkiye'de yasa dışı bahis ve kiralık hesap sorunu yaygın; düzenleyici baskı nedeniyle talep yüksek.",
+      "risks": "Uzun kurumsal satış döngüsü; veri paylaşımında KVKK ve banka sırrı kısıtları; yanlış pozitiflerin müşteri şikâyeti yaratması."
+    },
+    {
+      "name": "Yurtdışı iş teklifi ve yatırım dolandırıcılığı doğrulama hattı",
+      "insight": "Kamboçya'daki merkezlerde çalışanların sahte iş vaatleriyle getirilip zorla dolandırıcılık yaptırıldığı ve yatırım dolandırıcılığının yaygınlaştığı anlatılıyor.",
+      "problem": "İş arayanlar ve bireysel yatırımcılar sahte yurtdışı iş ilanlarını ve sahte yatırım platformlarını ayırt edemiyor.",
+      "solution": "Şirket sicili, alan adı yaşı, bilinen dolandırıcılık kalıpları ve kullanıcı bildirimleriyle iş teklifi veya yatırım sitesini kontrol eden mesajlaşma botu ve tarayıcı eklentisi.",
+      "target": "Yurtdışında iş arayan gençler, bireysel kripto/forex yatırımcıları, işe alım platformları",
+      "revenue_model": "Bireyler için ücretsiz; işe alım platformları, bankalar ve sigortacılara API lisansı",
+      "first_step": "Bilinen 200 dolandırıcılık ilanı ve sitesini toplayıp basit bir kontrol botu yapmak, 100 kullanıcıyla test etmek",
+      "capital": "Düşük",
+      "difficulty": 2,
+      "turkey_angle": "Türkiye'de sahte yatırım ve 'yurtdışında yüksek maaşlı iş' dolandırıcılığı yaygın; Türkçe içerik avantaj sağlar.",
+      "risks": "Hatalı uyarıların itibar ve hukuki sorun yaratması; dolandırıcıların hızla yöntem değiştirmesi; gelir modelinin oturması zaman alabilir."
+    },
+    {
+      "name": "Çin ile ticaret yapan Türk KOBİ'ler için yuan ödeme uyum asistanı",
+      "insight": "Videonun sonunda Asya'da paranın düzenlenmiş ve şeffaf kanallarla taşınmasının uzun vadede tek sürdürülebilir yol olduğu vurgulanıyor.",
+      "problem": "Çin'den ithalat yapan KOBİ'ler tedarikçilere ödemeyi bazen kayıt dışı aracılarla yapıyor; bu da kara para ve vergi riski doğuruyor.",
+      "solution": "Lisanslı ödeme kuruluşlarıyla ortaklık içinde, fatura-sözleşme eşleştirmesi ve belge kontrolü yapan, uyumlu yuan ödeme sürecini yöneten hizmet.",
+      "target": "Çin'den düzenli ithalat yapan Türk KOBİ'leri",
+      "revenue_model": "İşlem başına ücret ve kur farkı paylaşımı (lisanslı ortak üzerinden)",
+      "first_step": "20 ithalatçıyla görüşüp mevcut ödeme yöntemlerini, maliyetlerini ve yaşadıkları belge sorunlarını belgelemek",
+      "capital": "Orta",
+      "difficulty": 4,
+      "turkey_angle": "Türkiye-Çin ticaret hacmi büyük; ancak ödeme hizmeti için BDDK/TCMB lisansı veya lisanslı ortak zorunlu.",
+      "risks": "Lisans gereklilikleri; kur ve yaptırım riskleri; kayıt dışı kanallarla fiyat rekabeti."
+    }
+  ],
+  "skeptic_notes": [
+    "2015 için verilen rakam altyazıda yarım kalmış ('an estimated $676...'); birim ve bağlam anlaşılamadığı için kullanılmadı.",
+    "Makao hükümetinin gelirin yüzde 86,5'ini vergi olarak aldığı iddiası olağan dışı yüksek; muhtemelen hükümet gelirinin kumardan gelen payı ile karıştırılmış, doğrulanmalı.",
+    "Kamboçya dolandırıcılık gelirinin GSYH'nin yüzde 60'ına ulaşabileceği iddiası çok yüksek bir tahmin; kaynak altyazıda bozuk ('Ava's Asia Center').",
+    "Makao/Las Vegas oranı videonun başında 3,5 kat (geçen yıl), sonra 7 kat (2013) olarak veriliyor; dönem farkına dikkat edilmeli.",
+    "Junket sisteminin işleyişi videoda varsayımsal bir örnekle anlatılıyor; her işlemin sermaye kaçışı olduğu sonucu genelleme içeriyor.",
+    "'Photo operations' ifadesi muhtemelen 'fraud operations' (dolandırıcılık operasyonları) için altyazı hatası.",
+    "Statrys'in Hong Kong ve Singapur'daki şirket ve ödeme hizmetleri videonun sonunda tanıtılıyor; bu bölüm reklam içeriği niteliğinde."
+  ]
+}

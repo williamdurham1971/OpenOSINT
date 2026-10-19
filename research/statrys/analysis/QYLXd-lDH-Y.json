@@ -1,0 +1,106 @@
+{
+  "id": "QYLXd-lDH-Y",
+  "title_tr": "Dolandırıcılık merkezleri Güneydoğu Asya'dan Avrupa'ya yayılıyor",
+  "category": "Güneydoğu Asya",
+  "region": ["Kamboçya", "Myanmar", "Laos", "Sri Lanka", "Arnavutluk", "Avrupa", "ABD"],
+  "summary_tr": "Video, Kamboçya, Myanmar ve Laos merkezli dolandırıcılık merkezlerinin, ekipler, hedefler ve primlerle işleyen kurumsal bir sanayiye dönüştüğünü anlatıyor. Asıl ustalığın para aklama zincirinde olduğunu; kiralık hesaplar, sahte faturalar, emanet (escrow) sunan bir kripto pazar yeri, lisanslı ödeme şirketi ve banka, gayrimenkul, kumarhane ve Bitcoin madeni üzerinden paranın temize çekildiğini açıklıyor. FBI'ın blokzincir analiziyle 15 milyar dolarlık Bitcoin'e el koyması ve ABD yaptırımları, Kamboçya'da bir bankada panik çekilişine ve bankanın tasfiyesine yol açtı. Model artık Sri Lanka ve Arnavutluk gibi ülkelere, hatta zorla çalıştırma olmadan maaşlı çağrı merkezleri şeklinde ihraç ediliyor; video, bireyler ve şirketler için basit korunma kuralları ve YZ'nin riski büyüteceği uyarısıyla bitiyor.",
+  "key_points": [
+    "Dolandırıcılık merkezleri ilk temas, güven inşası ve yatırım teklifi için ayrı ekiplerin çalıştığı çağrı merkezi gibi örgütleniyor.",
+    "Çalınan kripto para; kiralık kimlikli hesaplar, sahte faturalar ve emanet hizmeti veren bir pazar yeri üzerinden küçük parçalara bölünerek aklanıyor.",
+    "Aklama zinciri lisanslı ödeme şirketi ve banka ile tamamlanıyor; yaptırım sonrası şirket yeni adla yeniden lisans alabildi.",
+    "FBI blokzincirdeki bölme-birleştirme desenlerinden yola çıkarak rekor el koyma yaptı ve yaptırımlar bir bankanın çöküşünü tetikledi.",
+    "Model Sri Lanka ve Arnavutluk'a, dil gruplarına ayrılmış maaşlı ekiplerle yayılıyor; mağdurlar 'para kurtarma' vaadiyle ikinci kez dolandırılıyor.",
+    "FATF listeleri ülke içindeki gerçek riski ölçmüyor; şirketlerin tek kişinin para gönderemeyeceği kontroller ve 'şirkete kendi adıyla öde' kuralı uygulaması öneriliyor."
+  ],
+  "numbers": [
+    {"label": "Kamboçya/Myanmar/Laos ağlarının yıllık geliri", "value": 43.8, "unit": "milyar $", "context": "Bu ağların her yıl aldığı para"},
+    {"label": "Üç ülkenin yasal üretimine oranı", "value": 40, "unit": "%", "context": "Dolandırıcılık gelirinin üç ülkenin yasal üretiminin %40'ından fazlası olduğu iddiası"},
+    {"label": "Asya ve Avustralya'da 2025 mağdur kaybı", "value": 114.1, "unit": "milyar $", "context": "BM'nin saydığı üst sınır ('up to')"},
+    {"label": "Merkezlerde çalışan kişi", "value": 300000, "unit": "kişi", "context": "BM'ye göre Güneydoğu Asya'da en az"},
+    {"label": "Kimlik kiralama bedeli", "value": 200, "unit": "$", "context": "Öğrencilere kimliklerinin hesap açmak için kullanılması karşılığı ödenen"},
+    {"label": "Kripto pazar yeri işlem hacmi", "value": 14.9, "unit": "milyar $", "context": "Kamboçya merkezli pazar yerinin 2021'den beri işlediği kripto"},
+    {"label": "FBI'ın el koyduğu Bitcoin", "value": 15, "unit": "milyar $", "context": "Ekim 2025, ABD Adalet Bakanlığı tarihindeki en büyük el koyma"},
+    {"label": "Cüzdan kümesi", "value": 13, "unit": "küme", "context": "FBI analistlerinin cüzdanları ayırdığı küme sayısı"},
+    {"label": "Yaptırım hedefi", "value": 146, "unit": "hedef", "context": "Tek ağdan belirlenen hedefler; 117'si şirket"},
+    {"label": "Bankanın şube sayısı", "value": 36, "unit": "şube", "context": "Çöken Kamboçya bankasının 22 ildeki şubeleri"},
+    {"label": "Sri Lanka'da tutuklanan yabancı", "value": 1000, "unit": "kişi", "context": "Ocak-Mayıs arası siber suçtan (üstü)"},
+    {"label": "Chilaw'daki tek otel baskını", "value": 152, "unit": "kişi", "context": "Nisan'da tutuklanan yabancılar"},
+    {"label": "Arnavutluk çağrı merkezlerinin kaybettirdiği", "value": 50, "unit": "milyon €", "context": "Europol operasyonu, 10 tutuklama (üstü)"},
+    {"label": "Tiran'daki operatör maaşı", "value": 800, "unit": "€/ay", "context": "Artı artan komisyon"},
+    {"label": "FATF gri listedeki ülke", "value": 20, "unit": "ülke", "context": "20'den fazla"},
+    {"label": "Şüpheli tedarikçi indirimi", "value": 30, "unit": "%", "context": "Herkesten %30 ucuz teklif veren tedarikçi uyarı işareti"}
+  ],
+  "chart": {
+    "type": "hbar",
+    "title": "Dolandırıcılık ekonomisinin büyüklüğü: videoda geçen tutarlar",
+    "unit": "milyar $",
+    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. Değerler farklı kapsam ve dönemlere ait (yıllık kayıp, yıllık gelir, kümülatif hacim, tek seferlik el koyma).",
+    "data": [
+      {"label": "Asya+Avustralya mağdur kaybı, 2025 (BM, üst sınır)", "value": 114.1},
+      {"label": "Kamboçya/Myanmar/Laos ağları, yıllık", "value": 43.8},
+      {"label": "FBI Bitcoin el koyması, Ekim 2025", "value": 15},
+      {"label": "Kripto pazar yeri hacmi, 2021'den beri", "value": 14.9}
+    ]
+  },
+  "diagram": {
+    "type": "flow",
+    "title": "Dolandırıcılık parasının aklanma zinciri",
+    "steps": [
+      {"label": "Mağdurdan kripto toplama", "detail": "Sahte yatırım veya romantik dolandırıcılıkla para çoğunlukla kripto olarak alınır."},
+      {"label": "Kiralık hesaplara bölme", "detail": "Başkalarının adına açılmış binlerce hesaba küçük transferler yapılır."},
+      {"label": "Emanetli kripto pazar yeri", "detail": "Suç aktörleri arası alım satım, garantili bir pazar yerinde stablecoin ile yapılır."},
+      {"label": "Lisanslı ödeme şirketi", "detail": "Stablecoin girer, düzenlenmiş kurumdan normal havale çıkar."},
+      {"label": "Varlıklara yatırma", "detail": "Gayrimenkul, otel, kumarhane ve Bitcoin madeni parayı meşrulaştırır."},
+      {"label": "Paravan şirket ağı", "detail": "Yüzlerce şirket üzerinden maaş, kira ve vergi ödenerek para tamamen temizlenir."}
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "KOBİ'ler için ödeme talimatı doğrulama (IBAN-unvan eşleştirme) aracı",
+      "insight": "Video, şirketlere 'tedarikçiye kendi adına ve kendi ülkesinde öde' kuralının dolandırıcılığın çoğunu önlediğini söylüyor.",
+      "problem": "KOBİ'ler sahte fatura ve 'hesap numaramız değişti' e-postalarıyla tedarikçi yerine dolandırıcıya para gönderiyor.",
+      "solution": "Ödeme öncesi IBAN sahibinin unvanını sözleşmedeki unvanla, ülkeyi ve geçmiş ödeme kayıtlarını karşılaştıran; hesap değişikliğinde ikinci onay isteyen muhasebe eklentisi.",
+      "target": "İthalat yapan KOBİ'ler, muhasebe büroları, ön muhasebe yazılımı kullanıcıları",
+      "revenue_model": "Şirket başına aylık abonelik + muhasebe yazılımlarıyla gelir paylaşımı",
+      "first_step": "10 ithalatçı KOBİ ve 3 mali müşavirle görüşüp son 2 yılda yaşanan sahte hesap değişikliği vakalarını toplamak ve basit bir onay akışı prototipini test etmek.",
+      "capital": "Düşük",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye'de e-fatura ve ön muhasebe yazılımları yaygın; bu yazılımlara entegrasyonla hızlı dağıtım mümkün. Banka hesap sahibi sorgusu için bankalarla veya açık bankacılık API'leriyle çalışmak gerekir.",
+      "risks": "KVKK ve banka sırrı kısıtları, bankaların benzer hizmeti kendisinin sunması."
+    },
+    {
+      "name": "Kripto ve fintech şirketleri için blokzincir işlem desen analizi (AML) hizmeti",
+      "insight": "FBI, paranın küçük parçalara bölünüp birkaç cüzdanda toplanması desenini tespit ederek ağı çözdü; video bunun bir uyum ekibinin kolayca işaretleyeceği bir desen olduğunu söylüyor.",
+      "problem": "Küçük kripto platformları ve ödeme kuruluşları, dolandırıcılıkla bağlantılı cüzdanlardan gelen fonları tespit edecek uyum kapasitesine sahip değil.",
+      "solution": "Bölme-birleştirme ve hızlı geçiş desenlerini işaretleyen, Türkçe raporlama sunan yönetilen AML izleme ve vaka inceleme hizmeti.",
+      "target": "Türkiye'deki kripto varlık hizmet sağlayıcıları, ödeme ve elektronik para kuruluşları",
+      "revenue_model": "İzlenen işlem hacmine göre aylık ücret + vaka başı inceleme ücreti",
+      "first_step": "SPK lisans sürecindeki 5 kripto platformunun uyum sorumlusuyla görüşüp mevcut araçlarını ve MASAK raporlama sıkıntılarını öğrenmek.",
+      "capital": "Orta",
+      "difficulty": 4,
+      "turkey_angle": "Türkiye'de kripto platformlarına SPK lisansı ve MASAK yükümlülükleri getirildi; yerli, Türkçe destekli uyum hizmetine talep oluşuyor.",
+      "risks": "Chainalysis gibi büyük küresel rakipler, yüksek veri maliyeti, hatalı alarmların itibar riski."
+    },
+    {
+      "name": "Dolandırıcılık mağdurlarına 'para kurtarma' tuzağına karşı doğrulama ve yönlendirme hattı",
+      "insight": "Arnavutluk'taki çete aynı mağdurları aylar sonra 'paranızı geri alırız' vaadiyle ikinci kez dolandırdı.",
+      "problem": "Mağdurlar kaybettikleri parayı geri almak için başvuracakları güvenilir kanalı bilmiyor ve sahte 'kurtarma' firmalarına düşüyor.",
+      "solution": "Mağdurlara ücretsiz ön değerlendirme yapan, savcılığa ve bankaya bildirim belgelerini hazırlayan, lisanslı avukatlara yönlendiren ve sahte kurtarma firmalarının listesini tutan bir platform.",
+      "target": "Yatırım dolandırıcılığı mağdurları, bankaların müşteri hizmetleri, tüketici dernekleri",
+      "revenue_model": "Bankalar ve sigortacılarla kurumsal sözleşme + avukat yönlendirme ücreti (mağdura başarıya bağlı vaatte bulunmadan)",
+      "first_step": "Şikayet sitelerinde ve forumlarda 'para kurtarma' ilanlarını tarayıp 50 vakayı derlemek; 2 tüketici derneği ve 1 avukatlık bürosuyla ortaklık görüşmek.",
+      "capital": "Düşük",
+      "difficulty": 2,
+      "turkey_angle": "Türkiye'de sahte yatırım platformu şikayetleri yaygın; avukatlık reklam yasağı ve meslek kurallarına uygun bir model kurulmalı.",
+      "risks": "Avukatlık mevzuatına aykırılık, mağdurlarda gerçekçi olmayan beklenti, platformun kendisinin dolandırıcılarca taklit edilmesi."
+    }
+  ],
+  "skeptic_notes": [
+    "Video, rakamlar üzerinde uzlaşı olmadığını kendisi kabul ediyor; 114,1 milyar dolar bir üst sınır ve 43,8 milyar dolar ile kapsamı farklı.",
+    "'Üç ülkenin yasal üretiminin %40'ından fazlası' iddiası Myanmar ve Laos'un GSYH verisine bağlı ve doğrulanması gerekir.",
+    "Dolandırıcılık gelirinin bölgedeki uyuşturucu pazarına eşit olduğu iddiası tek bir karşılaştırmaya dayanıyor.",
+    "Banka, pazar yeri ve grup isimleri verilmiyor; 15 milyar dolarlık el koyma ve 146 hedef gibi rakamlar resmi açıklamalarla teyit edilmeli.",
+    "Ağustos 2026'da üç bankanın kapandığı ve Interpol'ün Afrika'daki siber suçların yarısından fazlasını YZ'ye bağladığı iddiaları tek kaynaklı görünüyor.",
+    "Statrys kendi lisanslı para transferi ve uyum faaliyetini öne çıkarıyor; kanalın tanıtım bağlamı göz önünde tutulmalı."
+  ]
+}

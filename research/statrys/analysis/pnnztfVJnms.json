@@ -1,0 +1,117 @@
+{
+  "id": "pnnztfVJnms",
+  "title_tr": "Çin neden Tayvan'ı işgal etmeyecek? Savaşın ekonomik maliyeti ve çip tekeli",
+  "category": "Jeopolitik & ticaret",
+  "region": ["Tayvan", "Çin", "ABD", "Japonya", "Güney Kore", "Avrupa"],
+  "summary_tr": "Video, Çin'in Tayvan'ı işgal etmesinin duygusal ve tarihsel gerekçelerine rağmen ekonomik açıdan rasyonel olmadığını savunuyor. Bloomberg Economics'e atfedilen senaryoya göre tam ölçekli bir savaş ilk yılda küresel ekonomiye yaklaşık 10,6 trilyon dolara mal olur ve en ağır kayıplardan birini Çin'in kendisi yaşar. Tayvan'ın asıl caydırıcılığı ileri çip üretimindeki TSMC tekeli olarak gösteriliyor: işgal bu kapasiteye erişim sağlamaz, ASML makineleri, Japon kimyasalları ve mühendisler çekileceği için onu yok eder. Sunucu en olası senaryonun işgal değil, gri bölge baskısı ve tedarik zincirlerinde süregelen belirsizlik olduğunu, bunun da işletmelere marj, teslim süresi ve fiyat olarak yansıyacağını söylüyor; son kısımda Statrys tanıtımı yer alıyor.",
+  "key_points": [
+    "Tam ölçekli bir Tayvan savaşının ilk yıl maliyeti küresel GSYH'nin yaklaşık %9,6'sı olarak aktarılıyor.",
+    "Çin'in ihracata dayalı ekonomisi Batı pazarlarının kapanmasına Rusya'dan çok daha kırılgan olarak gösteriliyor.",
+    "Tayvan Boğazı küresel deniz ticaretinin önemli bir kısmını taşıdığı için çatışma ticareti yavaşlatmaz, durdurur.",
+    "TSMC'nin ileri çiplerdeki tekeli ve onlarca yılda kurulmuş ekosistemi işgali kendi kendini yok eden bir hamleye dönüştürüyor.",
+    "Savaş senaryosunda doğrudan taraf olmayan Güney Kore ve Japonya gibi ülkeler bile çok ağır GSYH kaybı yaşıyor.",
+    "En olası senaryo yavaş gerilim; değişen ihracat kontrolleri ve tedarik riski işletmelerin maliyet ve teslim sürelerini etkiliyor."
+  ],
+  "numbers": [
+    {"label": "Tayvan nüfusu", "value": 23, "unit": "milyon kişi", "context": "Süper gücü caydıran küçük ada vurgusu."},
+    {"label": "Savaşın ilk yıl küresel maliyeti", "value": 10.6, "unit": "trilyon $", "context": "Bloomberg Economics'e atfedilen tam ölçekli savaş senaryosu."},
+    {"label": "Küresel GSYH kaybı", "value": 9.6, "unit": "%", "context": "Aynı senaryoda ilk 12 ayda silinen küresel GSYH."},
+    {"label": "Çin GSYH kaybı", "value": 11, "unit": "%", "context": "Savaşın ilk yılında; yaklaşık 2 trilyon dolar olarak ifade edildi."},
+    {"label": "Çin'in risk altındaki yıllık ihracatı", "value": 1, "unit": "trilyon $ (üzeri)", "context": "ABD ve AB pazarlarının kapanması halinde."},
+    {"label": "Boğazdan geçen deniz ticareti payı", "value": 20, "unit": "% (üzeri)", "context": "Küresel deniz ticaretinin Tayvan Boğazı'ndan geçen kısmı."},
+    {"label": "Boğazdan geçen yıllık mal değeri", "value": 2.4, "unit": "trilyon $", "context": "Her yıl boğazdan geçen ticaret."},
+    {"label": "TSMC/Tayvan ileri mantık çipi payı", "value": 90, "unit": "% (yaklaşık)", "context": "Dünyanın en gelişmiş mantık yarı iletkenlerindeki pay."},
+    {"label": "TSMC küresel dökümhane geliri payı", "value": 70, "unit": "% (yaklaşık)", "context": "Küresel foundry gelirindeki pay."},
+    {"label": "Nvidia YZ çipi fiyatı", "value": 40000, "unit": "$/adet", "context": "Tayvan'da üretilen yapay zekâ çiplerinin birim fiyatı örneği."},
+    {"label": "TSMC'nin ilk 10 müşterisinin piyasa değeri", "value": 14, "unit": "trilyon $", "context": "Nvidia, Apple, Amazon gibi müşterilerin toplam değeri."},
+    {"label": "ASML makinesi fiyatı", "value": 400, "unit": "milyon $/adet", "context": "Modern çip üretimi için gereken litografi makinesi."},
+    {"label": "Tayvan GSYH kaybı", "value": 40, "unit": "%", "context": "Savaş senaryosunda ilk yıl."},
+    {"label": "ABD GSYH kaybı", "value": 6.6, "unit": "%", "context": "Savaş senaryosunda ilk yıl."},
+    {"label": "AB GSYH kaybı", "value": 11, "unit": "% (yaklaşık)", "context": "Videoda 'neredeyse %11' olarak ifade edildi."},
+    {"label": "Japonya GSYH kaybı", "value": 14.7, "unit": "%", "context": "Savaş senaryosunda ilk yıl."},
+    {"label": "Güney Kore GSYH kaybı", "value": 23, "unit": "%", "context": "Çatışmaya doğrudan dahil olmayan bir ülke olarak vurgulandı."},
+    {"label": "Akıllı telefon satış düşüşü", "value": 80, "unit": "% (en fazla)", "context": "Mevcut stoklar tükendikten sonra."},
+    {"label": "Risk altındaki Alman araç üretimi", "value": 1.9, "unit": "milyon araç", "context": "BMW, Mercedes ve Volkswagen için."},
+    {"label": "Çin'in en büyük denizcilik şirketi gelir kaybı", "value": 68, "unit": "% (en fazla)", "context": "Savaş senaryosunda."},
+    {"label": "Güney Kore taşıyıcıları gelir kaybı", "value": 40, "unit": "%", "context": "Savaş senaryosunda."},
+    {"label": "ABD ihracat kontrolündeki yeni tarife", "value": 25, "unit": "%", "context": "2026 başında ABD'nin Çin'e çip/teknoloji ihracatında vaka bazlı incelemeye geçişiyle birlikte anılan tarife."}
+  ],
+  "chart": {
+    "type": "hbar",
+    "title": "Tayvan savaşı senaryosunda ilk yıl GSYH kaybı",
+    "unit": "% GSYH",
+    "source_note": "Videoda belirtilen rakamlar (Bloomberg Economics senaryosuna atfedildi); bağımsız doğrulanmadı. AB değeri 'neredeyse %11' ifadesinin yaklaşık karşılığıdır.",
+    "data": [
+      {"label": "Tayvan", "value": 40},
+      {"label": "Güney Kore", "value": 23},
+      {"label": "Japonya", "value": 14.7},
+      {"label": "Çin", "value": 11},
+      {"label": "Avrupa Birliği", "value": 11},
+      {"label": "Küresel ortalama", "value": 9.6},
+      {"label": "ABD", "value": 6.6}
+    ]
+  },
+  "diagram": {
+    "type": "flow",
+    "title": "Tayvan riskinin işletmelere ulaşan aktarım zinciri",
+    "steps": [
+      {"label": "Gerilim veya çatışma", "detail": "Askeri baskı, gri bölge eylemleri veya en kötü durumda savaş."},
+      {"label": "Çip üretimi aksar", "detail": "İleri çiplerin büyük kısmını üreten tesislerin çıktısı durur veya belirsizleşir."},
+      {"label": "Boğazda ticaret durur", "detail": "Sigortacılar teminatı çeker, konteyner taşımacılığı aksar."},
+      {"label": "Çipe bağlı sanayiler durur", "detail": "Telefon, otomotiv ve elektrikli araç üretimi stoklar bitince yavaşlar."},
+      {"label": "Taşıma ve tedarik maliyeti artar", "detail": "Navlun ve teslim süreleri öngörülemez hale gelir."},
+      {"label": "İşletme marjları daralır", "detail": "Uzayan teslim süreleri, yüksek depozito talepleri ve fiyat artışları son kullanıcıya yansır."}
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "Elektronik bileşen tedarik riski izleme paneli",
+      "insight": "Videonun asıl tehdidin işgal değil, tedarik zincirlerine yerleşen yavaş belirsizlik olduğu tespiti.",
+      "problem": "Türk beyaz eşya, otomotiv yan sanayi ve elektronik üreticileri kullandıkları çiplerin hangi fabrikalara ve ülkelere bağımlı olduğunu ve teslim süresi eğilimlerini sistematik izlemiyor.",
+      "solution": "Malzeme listesini (BOM) yükleyen firmaya her bileşenin üretim yeri yoğunlaşmasını, distribütör stok ve teslim süresi eğilimini, ihracat kontrolü değişikliklerini ve alternatif parça önerilerini gösteren bir risk paneli.",
+      "target": "Elektronik içeren ürün üreten orta ölçekli Türk sanayi şirketleri",
+      "revenue_model": "BOM büyüklüğüne göre yıllık SaaS aboneliği",
+      "first_step": "Manisa ve Bursa'daki 10 üreticinin satın alma müdürüyle görüşüp son 3 yıldaki çip kaynaklı üretim duruşlarını ve mevcut takip yöntemlerini öğrenmek.",
+      "capital": "Orta",
+      "difficulty": 4,
+      "turkey_angle": "Türkiye'nin beyaz eşya ve otomotiv ihracatı çipe yoğun bağımlı; 2021 çip krizindeki duruşlar ihtiyacı kanıtladı.",
+      "risks": "Distribütör ve üretici verisine erişim maliyeti; büyük global tedarik zinciri yazılımlarıyla rekabet; müşterilerin BOM paylaşma isteksizliği."
+    },
+    {
+      "name": "İhracat kontrolü ve yeniden ihracat uyum asistanı",
+      "insight": "Videodaki, ABD ihracat kontrol kurallarının çeyrekten çeyreğe değiştiği gözlemi.",
+      "problem": "ABD menşeli çip veya teknoloji içeren ürünleri yeniden ihraç eden Türk firmaları, değişen kontrol listeleri nedeniyle farkında olmadan ihlal riskine ve yabancı tedarikçilerin satışı kesmesine maruz kalıyor.",
+      "solution": "Ürünlerdeki kontrollü bileşenleri sınıflandırmaya yardım eden, hedef ülke ve son kullanıcıya göre risk uyarısı veren ve beyan belgelerini hazırlayan, karar için uzman onayı öngören bir uyum aracı.",
+      "target": "Elektronik, makine ve savunma dışı ikili kullanım ürünleri ihraç eden KOBİ'ler",
+      "revenue_model": "Ürün sayısına göre abonelik + uzman inceleme ücreti",
+      "first_step": "Son kullanıcı beyanı talebi almış 10 ihracatçıyla görüşüp en çok zorlandıkları adımları belirlemek ve bir dış ticaret hukukçusuyla ortaklık kurmak.",
+      "capital": "Orta",
+      "difficulty": 4,
+      "turkey_angle": "Türkiye üzerinden yeniden ihracat konusunda uluslararası denetim arttığı için ihracatçıların kendini belgeleme ihtiyacı yüksek.",
+      "risks": "Yanlış sınıflandırma halinde ağır ceza ve hukuki sorumluluk; araç uzman görüşünün yerine geçmemeli; kuralların hızlı değişmesi."
+    },
+    {
+      "name": "KOBİ'ler için kritik bileşen tampon stok ortaklığı",
+      "insight": "Savaş senaryosunda telefon ve otomobil üretiminin stoklar bittiği anda durması.",
+      "problem": "Küçük üreticiler tek başına güvenlik stoku tutamayacak kadar küçük alım yapıyor ve kriz anında distribütörlerin öncelik listesinin sonunda kalıyor.",
+      "solution": "Aynı yaygın bileşenleri kullanan KOBİ'lerin talebini birleştirip ortak güvenlik stoku tutan, üyelere kriz anında tahsis kuralıyla dağıtan bir satın alma kooperatifi/platformu.",
+      "target": "Organize sanayi bölgelerindeki elektronik kart kullanan küçük üreticiler",
+      "revenue_model": "Üyelik ücreti + stok yönetimi marjı",
+      "first_step": "Bir OSB'de 15 üreticinin en sık kullandığı 50 bileşeni çıkarıp ortaklık oranını ölçmek ve 2 yetkili distribütörden toplu fiyat teklifi almak.",
+      "capital": "Yüksek",
+      "difficulty": 4,
+      "turkey_angle": "OSB yapıları ve sanayi odaları kooperatif modeli için hazır bir örgütlenme zemini sunuyor.",
+      "risks": "Stokta tutulan bileşenlerin eskimesi ve değer kaybı; işletme sermayesi ihtiyacı; kriz anında üyeler arası tahsis anlaşmazlıkları."
+    }
+  ],
+  "skeptic_notes": [
+    "'ABD istihbaratı Pekin'in işgal planlamadığını kabul etti' ifadesi güçlü bir yorum; orijinal değerlendirmenin dili doğrulanmalı.",
+    "10,6 trilyon dolar ve ülke bazlı GSYH kayıpları bir model senaryosu; tahmin değil, varsayımlara çok duyarlı.",
+    "Çin'in çip sanayisine yaptığı yatırım altyazıda '$100 15 billion' olarak bozuk geçiyor; 115 veya 150 milyar dolar olabilir, rakam kullanılmadı.",
+    "Altyazıda kanal 'Steroids' olarak geçiyor; Statrys kastediliyor.",
+    "'Küresel konteyner filosunun neredeyse yarısı boğazdan geçiyor' iddiası tanıma göre değişebilir; doğrulanmalı.",
+    "iPhone fiyatları ve otomobil teslim sürelerinin Tayvan'a bağlanması nedensellik açısından zayıf; birçok başka etken var.",
+    "2026 başındaki %25 tarife ve 'AI OverWatch Act' gibi düzenleyici ayrıntılar videoda kaynaksız verildi ve hızla değişebilir.",
+    "Video sonunda Statrys hizmetlerinin tanıtımı var (reklam içeriği)."
+  ]
+}

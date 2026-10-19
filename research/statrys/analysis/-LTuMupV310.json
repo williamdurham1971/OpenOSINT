@@ -1,0 +1,127 @@
+{
+  "id": "-LTuMupV310",
+  "title_tr": "Tayland çöküyor mu? Zayıf makro veriler ile rekor yabancı yatırım arasındaki çelişki",
+  "category": "Güneydoğu Asya",
+  "region": ["Tayland", "Güneydoğu Asya"],
+  "summary_tr": "Video önce Tayland ekonomisinin zayıf tablosunu sıralıyor: bölgedeki en düşük büyüme, GSYH'ye yakın hane halkı borcu, uzun süreli negatif enflasyon, pandemi öncesinin gerisinde kalan turizm geliri, 2025'te dünyanın en kötü performans gösteren büyük borsa endeksi ve hızla yaşlanan nüfus. Ardından bu tabloyla çelişen bir veri seti sunuluyor: Moody's'in görünümü durağana çekmesi, Yatırım Kurulu'nun (BOI) 60 yıllık tarihindeki en yüksek yabancı yatırım başvuruları. Sunucuya göre paranın aktığı üç alan bulut/veri merkezi (AWS, Google, Microsoft, ByteDance), Çinli elektrikli araç üreticileri ve baskılı devre kartı (PCB) üretimi; Tayland, Çin artı bir stratejisinde sermaye yoğun ve teknik açıdan karmaşık işleri çekiyor. Altyapı projelerindeki gecikmeler ise bu iyimser hikâyenin zayıf yanı olarak not ediliyor.",
+  "key_points": [
+    "Tayland, büyümede Güneydoğu Asya'nın son sırasında ve IMF 2026 tahminini daha da düşürdü.",
+    "Yüksek hane halkı borcu, daralan krediler ve negatif enflasyon iç tüketimi bastırıyor; Japonya tipi deflasyon riski dile getiriliyor.",
+    "Borsa skandalları ve yabancı çıkışları SET50'yi 2025'te dünyanın en kötü büyük endeksi yaptı.",
+    "Buna karşın Yatırım Kurulu başvuruları rekor kırdı ve dijital altyapı ilk kez en büyük yatırım kategorisi oldu.",
+    "Çinli EV üreticileri Tayland'ı Avrupa'ya ihracat üssü olarak kullanıyor; Çinli markalar EV pazarına hâkim.",
+    "PCB üreticilerinin akını, Tayland'ın Çin artı bir stratejisinde yüksek katma değerli üretimi çektiğini gösteriyor."
+  ],
+  "numbers": [
+    {"label": "Vietnam büyümesi", "value": 7, "unit": "%", "context": "Geçen yılki ekonomik büyüme."},
+    {"label": "Endonezya büyümesi", "value": 5, "unit": "%", "context": "Geçen yılki ekonomik büyüme."},
+    {"label": "Filipinler büyümesi", "value": 4.5, "unit": "%", "context": "Geçen yılki ekonomik büyüme."},
+    {"label": "Tayland büyümesi", "value": 2.4, "unit": "%", "context": "Geçen yılki büyüme; bölgede son sırada."},
+    {"label": "IMF Tayland 2026 tahmini", "value": 1.6, "unit": "%", "context": "IMF'nin düşürdüğü büyüme tahmini."},
+    {"label": "Hane halkı borcu", "value": 90, "unit": "% GSYH (yakın)", "context": "Asya'nın en yüksek oranlarından biri."},
+    {"label": "Negatif enflasyon süresi", "value": 12, "unit": "ay", "context": "Pandemiden bu yana en uzun deflasyon serisi."},
+    {"label": "Turizm işletmelerinin 2019'a göre geliri", "value": 44, "unit": "%", "context": "Ortalama otel, restoran ve tur operatörünün 2019 gelirine oranı."},
+    {"label": "Tüketici kredisinde daralma süresi", "value": 4, "unit": "çeyrek", "context": "Art arda daralan tüketici kredileri."},
+    {"label": "Bankacılıkta negatif kredi büyümesi", "value": 6, "unit": "çeyrek", "context": "2009'dan bu yana en uzun seri."},
+    {"label": "SET50 düşüşü (2025)", "value": 23, "unit": "%", "context": "Dünyanın en kötü performans gösteren büyük endeksi."},
+    {"label": "Yabancı net çıkış", "value": 100, "unit": "milyar baht (üzeri)", "context": "2025'te yabancı yatırımcıların borsadan net çıkışı."},
+    {"label": "İş gücü kaybı (2040'lar)", "value": 1, "unit": "%/yıl (yaklaşık)", "context": "Yaşlanma nedeniyle her yıl kaybedilebilecek iş gücü."},
+    {"label": "BOI yabancı yatırım başvurusu (9 ay, 2025)", "value": 1.37, "unit": "trilyon baht", "context": "Yaklaşık 42 milyar dolar; kurumun 60 yıllık tarihindeki en yüksek seviye."},
+    {"label": "Yıllık başvuru artışı", "value": 67, "unit": "%", "context": "Tüm yıl toplamının bir önceki yıla göre artışı."},
+    {"label": "Doğrudan yabancı yatırımın payı", "value": 72, "unit": "%", "context": "Toplam başvurular içindeki DYY payı."},
+    {"label": "AWS taahhüdü", "value": 5, "unit": "milyar $", "context": "15 yıla yayılan Tayland bulut bölgesi yatırımı."},
+    {"label": "AWS GSYH katkısı tahmini", "value": 10, "unit": "milyar $", "context": "AWS'nin projenin Tayland GSYH'sine katkı tahmini."},
+    {"label": "AWS yıllık istihdam", "value": 11000, "unit": "iş/yıl", "context": "AWS tahmini."},
+    {"label": "Google yatırımı", "value": 1, "unit": "milyar $", "context": "Bangkok bulut bölgesi."},
+    {"label": "Google ekonomik değer tahmini", "value": 41, "unit": "milyar $", "context": "5 yılda Tayland'a sağlanacağı öngörülen değer."},
+    {"label": "Google istihdam tahmini", "value": 130000, "unit": "iş/yıl (ortalama)", "context": "Google projeksiyonu."},
+    {"label": "Microsoft taahhüdü", "value": 1, "unit": "milyar $ (üzeri)", "context": "2 yılda bulut ve YZ altyapısı."},
+    {"label": "Toplam hiper ölçekli yatırım", "value": 15, "unit": "milyar $ (yaklaşık)", "context": "18 ayda Tayland'a gelen bulut yatırımları toplamı."},
+    {"label": "Dijital sektör projesi (2025)", "value": 119, "unit": "proje", "context": "BOI'nin sınıflandırdığı dijital projeler; değeri 600 milyar baht üzeri."},
+    {"label": "Great Wall Motor yatırımı", "value": 647, "unit": "milyon $", "context": "Tayland fabrikası."},
+    {"label": "Changan yatırımı", "value": 300, "unit": "milyon $ (yakın)", "context": "Tayland üretimi."},
+    {"label": "Çinli EV üreticilerinin toplam yatırımı", "value": 3, "unit": "milyar $ (üzeri)", "context": "Tayland'daki üretim yatırımları."},
+    {"label": "Onaylı EV kapasitesi", "value": 270000, "unit": "araç/yıl (üzeri)", "context": "Çinli üreticilerin onaylı üretim kapasitesi."},
+    {"label": "Çinli markaların EV pazar payı", "value": 85, "unit": "% (yakın)", "context": "Tayland EV segmentinde."},
+    {"label": "BYD'nin EV pazar payı", "value": 40, "unit": "% (yaklaşık)", "context": "Tayland EV segmentinde."},
+    {"label": "PCB yatırımı (2022'den beri)", "value": 200, "unit": "milyar baht (üzeri)", "context": "Tayland baskılı devre kartı üretimine giren yatırım."},
+    {"label": "Zhen Ding ortak girişimi", "value": 2, "unit": "milyar $", "context": "Prachinburi'de YZ sunucuları için devre kartı tesisi; 5.600 iş."},
+    {"label": "Western Digital yeni onaylar", "value": 23, "unit": "milyar baht", "context": "Tayland operasyon genişlemesi."}
+  ],
+  "chart": {
+    "type": "bar",
+    "title": "Güneydoğu Asya'da ekonomik büyüme (videoda verilen)",
+    "unit": "%",
+    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. Son çubuk gerçekleşme değil, IMF'nin 2026 tahminidir.",
+    "data": [
+      {"label": "Vietnam", "value": 7},
+      {"label": "Endonezya", "value": 5},
+      {"label": "Filipinler", "value": 4.5},
+      {"label": "Tayland", "value": 2.4},
+      {"label": "Tayland 2026 (IMF tahmini)", "value": 1.6}
+    ]
+  },
+  "diagram": {
+    "type": "flow",
+    "title": "Zayıf iç ekonomi ile yabancı yatırım akımının birlikte işleyişi",
+    "steps": [
+      {"label": "İç talep zayıf", "detail": "Hane halkı borcu ve kredi daralması tüketimi ve fiyatları baskılıyor."},
+      {"label": "Borsa ve turizm geride", "detail": "Skandallar ve pahalı/az harcayan turizm yatırımcı güvenini düşürüyor."},
+      {"label": "Tarife ve Çin artı bir baskısı", "detail": "Şirketler ABD tarifelerinden kaçınmak için üretimi Çin dışına kaydırıyor."},
+      {"label": "Teşvik ve altyapı başvurusu", "detail": "BOI başvuruları bulut, EV ve PCB yatırımlarıyla rekor kırıyor."},
+      {"label": "İhracat üssü oluşumu", "detail": "Tayland'dan Avrupa'ya araç ve dünyaya elektronik bileşen ihracatı başlıyor."},
+      {"label": "Risk: altyapı gecikmesi", "detail": "Hızlı tren, havalimanı ve liman projelerindeki gecikmeler dönüşümü yavaşlatabilir."}
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "Tayland veri merkezi yapımına Türk enerji ve soğutma ekipmanı ihracatı",
+      "insight": "18 ayda yaklaşık 15 milyar dolarlık hiper ölçekli bulut yatırımının Tayland'a yönelmesi.",
+      "problem": "Hızla kurulan veri merkezleri jeneratör, kablo kanalı, pano, soğutma ve yükseltilmiş taban gibi ekipmanlarda tedarik darboğazı ve uzun teslim süreleriyle karşılaşıyor.",
+      "solution": "Bu kategorilerde rekabetçi Türk üreticileri bir araya getirip Tayland'daki EPC yüklenicileri ve veri merkezi inşaat firmalarına sertifikalı ürün paketi sunan bir ihracat konsorsiyumu ve yerel temsilcilik.",
+      "target": "Tayland'da veri merkezi inşa eden yükleniciler ve mühendislik firmaları",
+      "revenue_model": "Üreticilerden ihracat komisyonu veya distribütör marjı",
+      "first_step": "BOI'nin açıkladığı dijital projelerden yüklenici isimlerini çıkarıp 20 firmaya ulaşmak ve hangi ekipmanlarda teslim süresi sorunu yaşadıklarını öğrenmek.",
+      "capital": "Orta",
+      "difficulty": 4,
+      "turkey_angle": "Türkiye jeneratör, kablo ve elektrik panosu ihracatında güçlü; Uzak Doğu'ya konteyner lojistiği maliyeti ve sertifikasyon (IEC/TIS) planlanmalı.",
+      "risks": "Çinli ve Japon tedarikçilerle fiyat rekabeti; yerel sertifikasyon süresi; hiper ölçekli şirketlerin global tedarikçi sözleşmeleri."
+    },
+    {
+      "name": "Güneydoğu Asya yatırım onayı takip veri ürünü",
+      "insight": "Videonun, manşetler ile paranın gerçekte nereye gittiği arasındaki farkı BOI verileriyle göstermesi.",
+      "problem": "Sanayi tedarikçileri ve ihracatçılar yeni kurulan fabrikaları ve yatırımları ancak basında çıktıktan sonra öğreniyor; satış fırsatını geç yakalıyor.",
+      "solution": "Tayland BOI, Vietnam ve Malezya yatırım ajanslarının onay duyurularını düzenli tarayıp şirket, sektör, yatırım tutarı ve lokasyona göre sınıflandıran, sektöre özel potansiyel müşteri listesi sunan abonelik servisi.",
+      "target": "Makine, otomasyon, ambalaj ve endüstriyel malzeme ihracatçıları; lojistik firmaları",
+      "revenue_model": "Sektör bazlı aylık abonelik",
+      "first_step": "Son 6 ayın Tayland BOI duyurularını elle tablolaştırıp 10 Türk makine ihracatçısına örnek liste gönderip ücret ödemeye istekli olup olmadıklarını sormak.",
+      "capital": "Düşük",
+      "difficulty": 2,
+      "turkey_angle": "Tamamen Türkiye'den yürütülebilir; Türk makine ve otomasyon ihracatçılarının uzak pazarlarda erken bilgiye ihtiyacı var.",
+      "risks": "Başvuru ve onayların gerçekleşmiş yatırıma dönüşmemesi; kaynak sitelerin format değiştirmesi; veri lisansı ve yeniden yayın kısıtları."
+    },
+    {
+      "name": "Çinli EV fabrikaları için yerel tedarikçi hazırlık programı",
+      "insight": "Çinli EV üreticilerinin Tayland'da kısa sürede yüksek hacme ulaşıp oradan Avrupa'ya ihracata başlaması.",
+      "problem": "Çinli otomotiv üreticileri yeni ülkelere geldiğinde yerli içerik ve tedarik ihtiyacı doğuyor, ancak yerel yan sanayi firmaları Çinli OEM'lerin kalite, fiyat ve iletişim beklentilerini bilmiyor.",
+      "solution": "Tayland örneğinden derlenen süreç ve fiyat beklentileriyle Türk yan sanayi firmalarını Çinli OEM tedarikçi denetimlerine hazırlayan, Çince belge ve iletişim desteği veren bir program.",
+      "target": "Türkiye'deki Çinli otomotiv yatırımlarına parça satmak isteyen yan sanayi KOBİ'leri",
+      "revenue_model": "Program ücreti + tedarikçi onayı alındığında başarı primi",
+      "first_step": "Tayland'da Çinli OEM'lere tedarikçi olmuş 3-5 yerel firmayla görüşüp onay süreci ve vade koşullarını belgelemek; ardından 10 Türk yan sanayi firmasına sunmak.",
+      "capital": "Düşük",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye'de de Çinli EV üretim yatırımları başladığı için Tayland deneyimi doğrudan aktarılabilir.",
+      "risks": "Çinli OEM'lerin kendi Çinli tedarikçilerini beraberinde getirmesi; uzun ödeme vadeleri; yatırım takviminin siyasi nedenlerle değişmesi."
+    }
+  ],
+  "skeptic_notes": [
+    "BOI rakamları yatırım başvurusu; gerçekleşmiş yatırım değil. Başvuruların ne kadarının hayata geçeceği belirsiz.",
+    "AWS ve Google'ın GSYH katkısı ve istihdam rakamları şirketlerin kendi projeksiyonları; bağımsız tahmin değil.",
+    "Yaklaşık 15 milyar dolarlık toplam, ByteDance için belirsiz 'birkaç milyar' ifadesini içeriyor.",
+    "Altyazıdaki 'interest rates that would be legal in most Western countries' ifadesi büyük olasılıkla 'illegal' (yasa dışı) olarak söylenmiş.",
+    "'Spoiler, part of it comes from startups. Guess the number.' kısmı altyazıda anlamsız; ilgili rakam verilmiyor.",
+    "Skandal şirket isimleri ('JK', 'Global or Energy Absolute') ve 'AI density circuit boards' altyazıda bozuk; büyük olasılıkla JKN, Energy Absolute ve yüksek yoğunluklu (HDI) devre kartları kastediliyor.",
+    "Turizm için 'gelir yarıya yakın' ve 'işletmeler 2019'un %44'ünde' rakamları farklı ölçütler; karıştırılmamalı.",
+    "Statrys'in Bangkok ofisi olduğu belirtiliyor; video bölgeye ilgi çekerek dolaylı tanıtım içeriyor."
+  ]
+}

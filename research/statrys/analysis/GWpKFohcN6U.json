@@ -1,0 +1,121 @@
+{
+  "id": "GWpKFohcN6U",
+  "title_tr": "Yapay zekânın görünmeyen darboğazı: Güney Kore'deki HBM bellek üretimi",
+  "category": "Doğu Asya (Japonya/Kore)",
+  "region": ["Güney Kore", "Kuzey Kore", "ABD"],
+  "summary_tr": "Video, YZ çiplerinin vazgeçilmez bileşeni olan yüksek bant genişlikli belleğin (HBM) büyük çoğunluğunun Güney Kore'de, SK Hynix ve Samsung'un birbirine yakın tesislerinde üretildiğini anlatıyor. Bu yoğunlaşma bir darboğaz yaratıyor: yeni fabrikalar yıllar ve milyarlarca dolar gerektiriyor, bellek fiyatları hızla yükseliyor ve PC gibi ürünlerin maliyeti artıyor. Aynı süreçte KOSPI endeksi ve çip hisseleri büyük yükseliş yaşarken ekonominin geri kalanı durgun kaldı ve 'K tipi' bir ayrışma oluştu. Son olarak tesislerin Kuzey Kore topçu menzilinde olması, düşük olasılıklı ama yüksek etkili bir risk olarak ele alınıyor.",
+  "key_points": [
+    "Dünyadaki HBM çiplerinin yaklaşık onda dokuzu iki Kore kümesinden çıkıyor.",
+    "SK Hynix 2026 üretiminin tamamını ve 2027'nin büyük kısmını şimdiden satmış durumda.",
+    "Yeni bir HBM fabrikası 10 milyar dolardan fazlaya ve yaklaşık 5 yıla mal oluyor; kısa vadede yedek plan yok.",
+    "KOSPI ve SK Hynix hisseleri büyük yükselirken Kore ekonomisi yalnızca yaklaşık yüzde 1 büyüdü.",
+    "Çip çalışanlarına yüksek primler, diğer kesimlerde ise konut krizi, düşük doğurganlık ve rekor işyeri kapanışları görülüyor.",
+    "Bellek kapasitesinin HBM'e kayması, normal bellek ve PC fiyatlarını yükselterek tüm işletmeleri etkiliyor."
+  ],
+  "numbers": [
+    {"label": "Sınıra uzaklık", "value": 50, "unit": "mil", "context": "Fabrika kümesinin Kuzey Kore sınırına uzaklığı"},
+    {"label": "Kore'deki HBM payı", "value": 90, "unit": "% (yaklaşık)", "context": "Her 10 HBM çipinden 9'u"},
+    {"label": "SK Hynix HBM payı", "value": 53, "unit": "%", "context": "Küresel HBM üretimi"},
+    {"label": "Samsung HBM payı", "value": 35, "unit": "%", "context": "Küresel HBM üretimi"},
+    {"label": "Micron HBM payı", "value": 11, "unit": "%", "context": "Tek Kore dışı üretici"},
+    {"label": "HBM fabrikası maliyeti", "value": 10, "unit": "milyar $ (üzeri)", "context": "Yeni bir tesisin maliyeti"},
+    {"label": "Fabrika kurulum süresi", "value": 5, "unit": "yıl", "context": "Temelden kullanılabilir çipe"},
+    {"label": "Nvidia oyun GPU kesintisi (alt)", "value": 30, "unit": "%", "context": "Tüketici GPU üretimindeki azaltma aralığının alt ucu"},
+    {"label": "Nvidia oyun GPU kesintisi (üst)", "value": 40, "unit": "%", "context": "Tüketici GPU üretimindeki azaltma aralığının üst ucu"},
+    {"label": "Bellek fiyat artışı", "value": 3, "unit": "kat", "context": "Son birkaç ayda yüksek hızlı bellek fiyatı"},
+    {"label": "KOSPI 2025 getirisi", "value": 75, "unit": "%", "context": "1999'dan beri en iyi yıl"},
+    {"label": "KOSPI 2026 getirisi", "value": 90, "unit": "%", "context": "Haziran başına kadar"},
+    {"label": "KOSPI 2024 kapanışı", "value": 2399, "unit": "puan", "context": "Yaklaşık yüzde 10 düşüşle"},
+    {"label": "KOSPI zirvesi", "value": 8400, "unit": "puan (üzeri)", "context": "2026'da aşılan seviye"},
+    {"label": "SK Hynix 2025 getirisi", "value": 274, "unit": "%", "context": "Hisse performansı"},
+    {"label": "SK Hynix 2026 getirisi", "value": 188, "unit": "%", "context": "Hisse performansı"},
+    {"label": "SK Hynix kümülatif getiri", "value": 900, "unit": "% (yaklaşık)", "context": "Yaklaşık bir yılda"},
+    {"label": "Samsung ve SK Hynix değerlemesi", "value": 1, "unit": "trilyon $", "context": "Her ikisinin de aştığı piyasa değeri"},
+    {"label": "Kore ekonomik büyümesi 2025", "value": 1, "unit": "%", "context": "Borsadaki yükselişe karşın reel büyüme"},
+    {"label": "SK Hynix kâr paylaşımı", "value": 10, "unit": "%", "context": "Faaliyet kârının çalışanlara prim olarak dağıtılan kısmı"},
+    {"label": "Ortalama SK Hynix primi", "value": 700, "unit": "milyon won", "context": "Videoda yaklaşık 400.000 dolar olarak çevriliyor"},
+    {"label": "Samsung protestosu", "value": 40000, "unit": "kişi", "context": "Pyeongtaek kampüsünde toplanan çalışanlar (bazı sayımlara göre)"},
+    {"label": "Grev tehdidi", "value": 18, "unit": "gün", "context": "Samsung çalışanlarının tehdit ettiği grev süresi"},
+    {"label": "Seul konut fiyatı / yıllık maaş", "value": 14, "unit": "kat", "context": "Genç bir profesyonel için"},
+    {"label": "Doğurganlık hızı", "value": 0.75, "unit": "çocuk/kadın", "context": "Dünyada kaydedilmiş en düşük seviye"},
+    {"label": "OECD genç yaşam memnuniyeti sırası", "value": 31, "unit": "sıra (38 ülke içinde)", "context": "Kore'nin konumu"},
+    {"label": "2024'te kapanan işletme", "value": 1, "unit": "milyon (üzeri)", "context": "1995'ten beri en yüksek"},
+    {"label": "Yeniden dağıtım önerisi sonrası düşüş", "value": 5, "unit": "%", "context": "Borsanın birkaç saat içindeki kaybı"},
+    {"label": "KN-09 menzili (üst)", "value": 200, "unit": "km", "context": "300 mm roketatar; 180-200 km aralığı"},
+    {"label": "PC fiyat artışı (alt)", "value": 15, "unit": "%", "context": "Dell ve Lenovo uyarısı; aralığın alt ucu"},
+    {"label": "PC fiyat artışı (üst)", "value": 20, "unit": "%", "context": "Dell ve Lenovo uyarısı; aralığın üst ucu"}
+  ],
+  "chart": {
+    "type": "pie",
+    "title": "Küresel HBM üretim payları",
+    "unit": "%",
+    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı. Paylar toplamı yuvarlama nedeniyle 99'dur.",
+    "data": [
+      {"label": "SK Hynix", "value": 53},
+      {"label": "Samsung", "value": 35},
+      {"label": "Micron", "value": 11}
+    ]
+  },
+  "diagram": {
+    "type": "flow",
+    "title": "HBM darboğazının ekonomik etki zinciri",
+    "steps": [
+      {"label": "YZ çip talebi patlaması", "detail": "Her gelişmiş YZ çipi, yanında HBM bellek gerektiriyor."},
+      {"label": "İki Kore kümesi", "detail": "Üretimin büyük kısmı SK Hynix ve Samsung tesislerinde yoğunlaşıyor."},
+      {"label": "Kapasite yetersizliği", "detail": "Yeni fabrika yıllar alıyor; üretim önceden satılmış durumda."},
+      {"label": "Kapasite HBM'e kayıyor", "detail": "Normal bellek üretimi azalıyor, fiyatlar yükseliyor."},
+      {"label": "Maliyet herkese yansıyor", "detail": "PC, sunucu ve donanım üreticileri fiyat artırıyor."},
+      {"label": "K tipi ayrışma", "detail": "Çip sektörü zenginleşirken Kore'nin geri kalanı durgun kalıyor."}
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "Elektronik üreticileri için bellek ve kritik bileşen fiyat erken uyarı servisi",
+      "insight": "Videoda bellek fiyatlarının birkaç ayda üç katına çıktığı ve yalnızca bellek kullanan bir müşterinin üretim planının iki Kore şirketine bağlı kaldığı anlatılıyor.",
+      "problem": "Türk elektronik ve endüstriyel cihaz üreticileri bellek fiyat sıçramalarını geç fark edip pahalı alım yapıyor veya üretimi durduruyor.",
+      "solution": "Spot fiyat, distribütör stokları ve üretici açıklamalarını izleyip ileri alım zamanlaması ve alternatif parça önerisi sunan abonelik servisi.",
+      "target": "Türkiye'deki elektronik kart, akıllı cihaz, savunma ve beyaz eşya yan sanayi üreticileri",
+      "revenue_model": "Aylık abonelik + toplu alım koordinasyonundan komisyon",
+      "first_step": "10 üreticinin satın alma sorumlusuyla görüşüp son 12 aydaki bellek alım maliyetlerini ve gecikmeleri belgelemek, haftalık e-posta bülteniyle ödeme isteğini test etmek",
+      "capital": "Düşük",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye'de elektronik üretim ve savunma sanayisi büyüyor; ithal bileşen bağımlılığı yüksek.",
+      "risks": "Güvenilir fiyat verisine erişim; büyük distribütörlerin benzer hizmet sunması; tahminlerin tutmaması."
+    },
+    {
+      "name": "Kullanılmış sunucu ve dizüstü belleklerini geri kazanma ve test edip satma",
+      "insight": "HBM'e kayan kapasite nedeniyle normal bellek fiyatlarının yükseldiği anlatılıyor.",
+      "problem": "Şirketlerin elden çıkardığı bilgisayar ve sunuculardaki bellek modülleri değerinin altında hurdaya gidiyor.",
+      "solution": "Kurumsal BT varlıklarını veri imhası sertifikasıyla toplayıp bellek modüllerini test eden, derecelendiren ve garantiyle yeniden satan hizmet.",
+      "target": "Elden çıkarma yapan bankalar, kamu kurumları ve veri merkezleri; alıcı tarafta KOBİ'ler ve sistem toplayıcılar",
+      "revenue_model": "Toplama hizmet ücreti + test edilmiş modüllerin satış marjı",
+      "first_step": "3 kurumla pilot toplama yapıp 500 modülü test etmek ve ikinci el pazarda satış fiyatı ile iade oranını ölçmek",
+      "capital": "Orta",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye'de kurumsal BT yenileme döngüsü büyük; ithal bellek fiyatları kur nedeniyle daha ağır hissediliyor.",
+      "risks": "Veri güvenliği sorumluluğu (KVKK uyumlu sertifikalı imha şart); bellek fiyatları düşerse stok değer kaybı; elektronik atık mevzuatı."
+    },
+    {
+      "name": "YZ uygulamaları için bellek ihtiyacını azaltan model sıkıştırma hizmeti",
+      "insight": "Video, YZ donanımında belleğin en kıt ve en pahalı kaynak haline geldiğini gösteriyor.",
+      "problem": "Kendi sunucusunda YZ modeli çalıştırmak isteyen şirketler yüksek bellekli GPU fiyatları nedeniyle projeyi erteliyor.",
+      "solution": "Kuantizasyon ve damıtma ile modelleri daha az bellekli, daha ucuz donanımda çalışır hale getiren ve performans kaybını raporlayan teknik hizmet.",
+      "target": "Kurum içi YZ kurmak isteyen bankalar, sanayi şirketleri ve yazılım firmaları",
+      "revenue_model": "Proje bazlı ücret + yıllık optimizasyon bakımı",
+      "first_step": "Açık kaynak bir modeli iki farklı sıkıştırma seviyesinde test edip bellek, hız ve doğruluk karşılaştırmasını yayınlamak ve 5 potansiyel müşteriye sunmak",
+      "capital": "Düşük",
+      "difficulty": 4,
+      "turkey_angle": "Türkiye'de GPU erişimi pahalı ve kur riskli; donanım tasarrufu güçlü bir argüman.",
+      "risks": "Doğruluk kaybının kabul edilmemesi; teknik yetkinliği yüksek ekip gereksinimi; araçların hızla metalaşması."
+    }
+  ],
+  "skeptic_notes": [
+    "700 milyon won videoda yaklaşık 400.000 dolar olarak çevriliyor; güncel kurlarla bu çevrim tutarsız görünebilir, doğrulanmalı.",
+    "HBM payları (53+35+11) toplamı 99; ayrıca CXMT gibi Çinli üreticilerin göz ardı edildiği 'yalnızca üç şirket' ifadesi kontrol edilmeli.",
+    "SK Hynix için '2025'te yüzde 274, 2026'da yüzde 188' getiriler bileşik olarak yaklaşık yüzde 977'ye denk geliyor; 'yaklaşık yüzde 900' yuvarlama.",
+    "KOSPI'nin 8.400 puanı aşması, Samsung ve SK Hynix'in 1 trilyon dolar değerlemesi gibi rakamlar yayın tarihine bağlı ve bağımsız kontrol gerektirir.",
+    "'Cheap engineer' altyazı hatası, 'chip engineer' kastediliyor. 'Current stock market' ifadesi muhtemelen Kore borsası için hata. 'Statista' ifadesi büyük olasılıkla 'Statrys'.",
+    "Tesislerin Kuzey Kore sınırına 50 mil uzaklıkta olduğu ve KN-09 menzil iddiaları savunma analistlerine atfediliyor; videoda da düşük olasılıklı bir risk olarak sunuluyor.",
+    "Statrys müşterisine ait anekdot tek kaynaklı; Statrys'in hizmetlerine birkaç kez atıf yapılıyor (kısmen tanıtım)."
+  ]
+}

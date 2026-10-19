@@ -1,0 +1,97 @@
+{
+  "id": "TNJD0_CHwAc",
+  "title_tr": "Amazon'un pazar yeri modeli: Çinli satıcılar, reklam geliri ve güven sorunu",
+  "category": "Şirket vakası",
+  "region": ["ABD", "Çin"],
+  "summary_tr": "Video, Amazon'un artık ürün satan bir mağaza değil, satıcılardan komisyon, depolama ve reklam geliri toplayan bir 'ev sahibi' olduğunu savunuyor. Amazon'un 2015'ten itibaren Çinli üreticileri aktif olarak platforma çektiği ve FBA hizmetiyle fabrikadan tüketiciye engelleri kaldırdığı anlatılıyor. Satıcı sayısı arttıkça reklam alanları için rekabet ve dolayısıyla Amazon'un geliri artıyor; ancak bu durum sahte yorum ekonomisini besleyerek güveni aşındırıyor. Temu ve Shein'ın şeffaf ucuzluk modeli ve Çin vergi idaresiyle veri paylaşımı, bu modele yönelik yeni baskılar olarak sunuluyor.",
+  "key_points": [
+    "Amazon, Global Selling programı, Çin'deki ofisler ve fuarlarla Çinli üreticileri doğrudan satıcı yaptı.",
+    "Çinli satıcıların en çok satanlar içindeki payı yüzde 26'dan yüzde 50'nin üzerine çıktı.",
+    "Komisyon, FBA, depolama ve reklam ücretleriyle Amazon'un üçüncü taraf satıcı gelirinden aldığı pay yaklaşık yüzde 50'ye çıktı.",
+    "Daha fazla satıcı, reklam açık artırmasında daha yüksek teklif ve daha fazla Amazon geliri anlamına geliyor.",
+    "Sahte yorum aracıları sistemi besliyor; Amazon'un kalite rozetleri ürünün menşeini veya yorumların gerçekliğini garanti etmiyor.",
+    "Sunucu satıcılara Amazon'u iş değil kanal olarak görmelerini ve kendi kitlelerini kurmalarını öneriyor."
+  ],
+  "numbers": [
+    {"label": "Çinli satıcı payı (önce)", "value": 26, "unit": "%", "context": "Amazon ABD'de en çok satan satıcılar arasında"},
+    {"label": "Çinli satıcı payı (bugün)", "value": 50, "unit": "% (üzeri)", "context": "Amazon ABD'de en çok satan satıcılar arasında"},
+    {"label": "1 milyon $ üzeri satan Çinli satıcı artışı", "value": 55, "unit": "%", "context": "Son 2 yılda"},
+    {"label": "10 milyon $ üzeri satan Çinli satıcı artışı", "value": 60, "unit": "%", "context": "Son 2 yılda"},
+    {"label": "Standart komisyon", "value": 15, "unit": "%", "context": "Yönlendirme (referral) ücreti"},
+    {"label": "Yakıt ek ücreti", "value": 3.5, "unit": "%", "context": "Tüm FBA ücretlerine eklenen 'geçici' ücret"},
+    {"label": "Amazon'un satıcı gelirinden aldığı pay (bugün)", "value": 50, "unit": "sent/$ (yaklaşık)", "context": "Her 1 dolarlık satıcı gelirinden"},
+    {"label": "Amazon'un satıcı gelirinden aldığı pay (2016)", "value": 33, "unit": "sent/$", "context": "Karşılaştırma yılı"},
+    {"label": "Satıcı hizmet ücretleri 2025", "value": 172, "unit": "milyar $", "context": "Amazon'un satıcı hizmetleri geliri"},
+    {"label": "Reklam geliri 2025", "value": 68, "unit": "milyar $", "context": "Amazon reklam geliri"},
+    {"label": "Pazar yeri toplam geliri", "value": 243, "unit": "milyar $", "context": "Videoya göre pazar yerinden toplam gelir"},
+    {"label": "Sahte yorum fiyatı (alt)", "value": 5, "unit": "$/yorum", "context": "Aracıya ödenen ücret aralığının alt ucu"},
+    {"label": "Sahte yorum fiyatı (üst)", "value": 10, "unit": "$/yorum", "context": "Aracıya ödenen ücret aralığının üst ucu"},
+    {"label": "Kapatılan aracı sitesi", "value": 100, "unit": "site (üzeri)", "context": "Sahte yorum aracısı web siteleri"},
+    {"label": "Çin'de ortak baskın", "value": 70, "unit": "baskın (üzeri)", "context": "Sahtecilik ve yorum dolandırıcılığına karşı"},
+    {"label": "İmha edilen sahte ürün", "value": 15, "unit": "milyon adet", "context": "2025'te dünya genelinde"},
+    {"label": "Temu fiyat farkı", "value": 70, "unit": "%", "context": "Tüketicinin güveni ikinci plana attığı fiyat farkı örneği"}
+  ],
+  "chart": null,
+  "diagram": {
+    "type": "cycle",
+    "title": "Amazon'un 'ev sahibi' gelir döngüsü",
+    "steps": [
+      {"label": "Çinli üreticileri çekmek", "detail": "Fuarlar, ofisler ve eğitimlerle fabrikalar doğrudan satıcı yapıldı."},
+      {"label": "FBA ile engelsiz satış", "detail": "Amazon depolama, paketleme ve teslimatı üstlenip ürünü Prime rozetiyle sundu."},
+      {"label": "Ücret toplama", "detail": "Komisyon, lojistik ve depolama ücretleri satıştan bağımsız tahsil ediliyor."},
+      {"label": "Reklam açık artırması", "detail": "Daha çok satıcı, sponsorlu alanlar için daha yüksek teklif demek."},
+      {"label": "Sahte yorum baskısı", "detail": "Geçmişi olmayan markalar görünürlük için sahte yoruma başvuruyor."},
+      {"label": "Güven erozyonu", "detail": "Kalite düşüşü müşteriyi Temu gibi açıkça ucuz alternatiflere itebilir."}
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "Türk pazar yerleri için şüpheli yorum ve yeni marka uyarı eklentisi",
+      "insight": "Videoda yorumların e-ticaretin tek güven altyapısı olduğu ve sahte yorumların ayırt edilemediği anlatılıyor.",
+      "problem": "Tüketiciler Trendyol, Hepsiburada, Amazon.com.tr gibi platformlarda yorumların ve markaların güvenilirliğini değerlendiremiyor.",
+      "solution": "Yorum zamanlaması, dil benzerliği, satıcı yaşı ve marka tescil geçmişine bakarak güven puanı gösteren tarayıcı eklentisi ve mobil paylaşım aracı.",
+      "target": "Online alışveriş yapan tüketiciler; ikinci aşamada markalar ve tüketici dernekleri",
+      "revenue_model": "Ücretsiz eklenti; markalara rakip/sahte yorum izleme raporu satışı",
+      "first_step": "Bir kategoride 500 ürünün yorumlarını analiz edip şüpheli desenleri gösteren bir rapor yayınlamak ve eklenti bekleme listesi açmak",
+      "capital": "Düşük",
+      "difficulty": 3,
+      "turkey_angle": "Türk e-ticaretinde yorum güveni tartışmalı bir konu; Türkçe dil modeliyle yerel avantaj elde edilir.",
+      "risks": "Platformların veri erişimini engellemesi; yanlış etiketlenen satıcılardan hukuki itiraz; kullanıcıya ulaşma maliyeti."
+    },
+    {
+      "name": "Amazon'a ihracat yapan Türk markaları için ücret ve reklam kârlılık analizi",
+      "insight": "Video, Amazon'un aldığı payın yaklaşık yüzde 50'ye çıktığını ve yeni satıcıların reklam bütçesi olmadan görünmez kaldığını söylüyor.",
+      "problem": "Türk üreticiler Amazon'a girerken komisyon, FBA, depolama ve reklam maliyetlerini toplayınca gerçek kârlılığı hesaplamıyor.",
+      "solution": "Ürün bazında tüm ücretleri ve kategori reklam tıklama maliyetlerini hesaplayıp girmeye değer ürünleri ve kendi web sitesi kanalını karşılaştıran analiz hizmeti.",
+      "target": "Ev tekstili, kozmetik ve gıda gibi alanlarda ABD/Avrupa Amazon'una açılmak isteyen Türk markalar",
+      "revenue_model": "Ürün portföyü başına sabit ücretli analiz + aylık reklam optimizasyonu",
+      "first_step": "10 Türk ürünü için tam maliyet hesabı yapıp ücretsiz rapor sunmak ve en az 2 ücretli müşteriye dönüştürmek",
+      "capital": "Düşük",
+      "difficulty": 2,
+      "turkey_angle": "Türkiye'de Amazon Global Selling ve e-ihracat teşvikleri yaygın; birçok firma maliyet hesabını eksik yapıyor.",
+      "risks": "Amazon ücret yapısının sık değişmesi; ajans pazarında yoğun rekabet; müşteri sonuçlarının pazara bağlı olması."
+    },
+    {
+      "name": "Sınır ötesi e-ticaret satıcıları için vergi uyum ve gelir beyanı hizmeti",
+      "insight": "Amazon'un satıcı verilerini Çin vergi idaresine aktarmaya başlamasıyla vergi kaçırmaya dayalı fiyat avantajının sona erdiği anlatılıyor.",
+      "problem": "Pazar yerleri satıcı verisini vergi idareleriyle daha fazla paylaştıkça, mikro ihracat ve yurtdışı pazar yeri gelirlerini doğru beyan etmeyen satıcılar ceza riskiyle karşılaşıyor.",
+      "solution": "Pazar yeri satış raporlarını otomatik çekip Türk mevzuatına (mikro ihracat, e-ihracat teşvikleri, KDV) uygun beyan dosyası hazırlayan muhasebe entegrasyonu.",
+      "target": "Amazon, Etsy ve eBay'de satış yapan Türk mikro ihracatçılar ve onların mali müşavirleri",
+      "revenue_model": "Aylık abonelik; mali müşavirlere toplu lisans",
+      "first_step": "15 e-ihracatçının mali müşaviriyle görüşüp en zaman alan beyan adımlarını listelemek ve bir rapor dönüştürücüsü prototipini test etmek",
+      "capital": "Düşük",
+      "difficulty": 3,
+      "turkey_angle": "Türkiye'de e-ihracat hızla büyüyor ve mevzuat karmaşık; yerel uzmanlık doğal bir giriş bariyeri.",
+      "risks": "Vergi mevzuatı sık değişiyor; hizmet mali müşavirlik yetkisi gerektiren işleri kapsamamalı ve beyanın yasal sorumluluğu sahibinde kalır; hatalı hesaplamada sorumluluk riski."
+    }
+  ],
+  "skeptic_notes": [
+    "'Amazon, Amerikalı kılığında bir Çin pazar yeri' tezi abartılı bir genelleme; Çinli satıcı payı yalnızca en çok satan satıcılar için veriliyor.",
+    "Satıcı hizmetleri (172) ve reklam (68) toplamı 240 milyar dolar ederken videoda toplam 243 milyar dolar deniyor; altyazı veya yuvarlama farkı olabilir. Reklam gelirinin tamamının pazar yeri satıcılarından gelmediği de dikkate alınmalı.",
+    "Amazon'un her dolardan yaklaşık 50 sent aldığı iddiası reklamı da içeren bir toplam tahmini; kaynak belirtilmemiş.",
+    "'Amazon Hall' altyazı hatası, muhtemelen Amazon Haul. 'Statista' ifadesi de büyük olasılıkla 'Statrys' için altyazı hatası.",
+    "Grafik için aynı birimde ve karşılaştırılabilir en az üç değer bulunmadığından chart null bırakıldı.",
+    "Amazon'un Ekim ayında Çin vergi idaresine satıcı verisi aktarmaya başladığı iddiası ayrıca doğrulanmalı.",
+    "Sunucu 'sponsor yok' dese de kendi şirketi Statrys'in e-ticaret girişimcileriyle çalıştığını belirtiyor; kısmen kendi hizmetine yönlendirme içeriyor."
+  ]
+}

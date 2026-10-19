@@ -1,0 +1,115 @@
+{
+  "id": "twAjdRV3u-0",
+  "title_tr": "Çin'in dev altyapı projeleri: hızın arkasındaki sistem, kalite sorunları ve borç yükü",
+  "category": "Çin ekonomisi",
+  "region": ["Çin", "Guizhou", "Japonya", "Avrupa"],
+  "summary_tr": "Video, dünyanın en yüksek köprüsünün Çin'in en yoksul illerinden Guizhou'da birkaç yılda inşa edilmesinden yola çıkarak Çin'in altyapıyı neden bu kadar hızlı kurabildiğini anlatıyor: terfisi büyüme ve kilometre hedeflerine bağlı yöneticiler, yerel yönetimlerin kurduğu ve devlet bankalarından borçlanan finansman şirketleri ve devlete ait arazi sayesinde kamulaştırma davalarının olmaması. Öte yandan yolsuzluk kaynaklı kalitesiz inşaat ('tofu dregs'), çöken köprüler ve 2008 Sichuan depreminde yıkılan okullar gibi bedeller de hatırlatılıyor; video 2008 sonrası denetimlerin sıkılaştığını ve viral çöküş videolarının resmin tamamını göstermediğini savunuyor. Asıl kırılganlık mühendislikte değil finansmanda: yerel finansman araçlarındaki gizli borç, Guizhou'nun ağır borç yükü ve kendi maliyetini çıkaramayan hızlı tren hatları. Sistem, borcun büyük kısmı yuan cinsinden ve devlet içinde olduğu için çökmeden sürüyor, ancak her yeni projenin getirisi azalıyor.",
+  "key_points": [
+    "Çin, Guizhou gibi yoksul bölgelerde özel yatırımcının finanse etmeyeceği dev projeleri birkaç yılda tamamlıyor.",
+    "Hızın arkasında hedef odaklı terfi sistemi, yerel yönetim finansman şirketleri ve devlet arazisi var.",
+    "Yolsuzluk kaynaklı kalitesiz inşaat ciddi can kayıplarına yol açtı; 2008 sonrası denetimler sıkılaştırıldı.",
+    "Yerel finansman araçlarındaki gizli borç resmi devlet borcunun üzerine ekleniyor.",
+    "Hızlı tren ağının yalnızca küçük bir kısmı kendi maliyetini karşılıyor; bazı yeni istasyonlar kapandı.",
+    "Altyapı hızı, Çin'deki üretimin ülke içinden limana hızlı ulaşmasını sağlayarak tedarik zinciri avantajı yaratıyor."
+  ],
+  "numbers": [
+    {"label": "Köprü yüksekliği (yoldan suya)", "value": 625, "unit": "m", "context": "Huajiang Grand Canyon köprüsünde yoldan suya düşüş mesafesi."},
+    {"label": "İnşaat süresi", "value": 44, "unit": "ay", "context": "Köprünün 3 yıl 8 ayda (44 ay) tamamlandığı söylendi."},
+    {"label": "Köprü maliyeti", "value": 280, "unit": "milyon $", "context": "Köprünün yaklaşık maliyeti."},
+    {"label": "Guizhou gelir farkı", "value": 40, "unit": "%", "context": "Guizhou'daki ortalama gelirin ülke ortalamasından düşük olduğu oran."},
+    {"label": "Duge köprüsüne uzaklık", "value": 200, "unit": "km", "context": "Önceki rekor sahibi köprünün aynı nehirde yukarıdaki konumu."},
+    {"label": "Duge'nin rekor süresi", "value": 9, "unit": "yıl", "context": "Önceki köprünün rekoru elinde tuttuğu süre."},
+    {"label": "Günlük hızlı tren yolcusu", "value": 16, "unit": "milyon kişi", "context": "Hızlı trene her gün binen kişi sayısı."},
+    {"label": "Çin hızlı tren ağı", "value": 50000, "unit": "km", "context": "Ağın aştığı uzunluk; dünyadaki hızlı tren hatlarının yaklaşık üçte ikisi."},
+    {"label": "Japonya Shinkansen ağı", "value": 3000, "unit": "km", "context": "1964'ten beri yaklaşık 60 yılda ulaşılan uzunluk."},
+    {"label": "Çin'in geçen yıl döşediği hat", "value": 3000, "unit": "km", "context": "Çin'in geçen yıl 'neredeyse' Japonya'nın tüm ağı kadar hat döşediği söylendi."},
+    {"label": "Guizhou'nun dağlık alanı", "value": 92, "unit": "%", "context": "İlin dağ ve uçurumlardan oluşan kısmı."},
+    {"label": "Guizhou'daki köprü sayısı", "value": 32000, "unit": "köprü", "context": "Tek bir ilde inşa edilen köprü sayısı."},
+    {"label": "Kanyonu geçiş süresi (önce)", "value": 120, "unit": "dakika", "context": "Köprüden önce virajlı yollarla geçiş süresi."},
+    {"label": "Kanyonu geçiş süresi (sonra)", "value": 2, "unit": "dakika", "context": "Köprüyle geçiş süresi."},
+    {"label": "Şanghay köprü çöküşünde ölen işçi", "value": 12, "unit": "kişi", "context": "Ağustosta yapım aşamasındaki demiryolu köprüsünün çökmesinde."},
+    {"label": "2024 yazı yol/köprü çöküşü ölümleri", "value": 100, "unit": "kişi", "context": "'100'den fazla' kişinin öldüğü söylendi."},
+    {"label": "2008 Sichuan okul ölümleri", "value": 5000, "unit": "kişi", "context": "Depremde çöken okullarda ölen 'beş binden fazla' çocuk."},
+    {"label": "Yerel finansman araçlarındaki borç", "value": 9, "unit": "trilyon $", "context": "IMF'ye atfedilen, resmi borcun üzerindeki gizli borç tahmini."},
+    {"label": "Guizhou borç/üretim oranı", "value": 75, "unit": "%", "context": "İlin borcunun yıllık üretiminin yaklaşık dörtte üçü olduğu söylendi."},
+    {"label": "Devlet demiryolu şirketi borcu", "value": 860, "unit": "milyar $", "context": "6,2 trilyon yuanlık borcun dolar karşılığı."},
+    {"label": "Kapanan yeni istasyonlar", "value": 20, "unit": "istasyon", "context": "2010'dan bu yana kapanan yaklaşık istasyon sayısı."},
+    {"label": "Bilet fiyatı artışı", "value": 20, "unit": "%", "context": "Kârlı hatlarda 'yüzde 20'ye kadar' fiyat artışı."},
+    {"label": "Hızlı trene bağlı büyük şehirler", "value": 97, "unit": "%", "context": "Büyük şehirlerin hızlı tren ağına bağlı oranı."},
+    {"label": "Alternatif ülke fabrika teklifi farkı", "value": 20, "unit": "%", "context": "Başka ülkedeki fabrikanın teklifinin daha ucuz görünmesi; tasarruf lojistikte eriyor."}
+  ],
+  "chart": {
+    "type": "bar",
+    "title": "Yüksek hızlı tren hattı karşılaştırması",
+    "unit": "km",
+    "source_note": "Videoda belirtilen rakamlar; bağımsız doğrulanmadı",
+    "data": [
+      {"label": "Çin toplam ağ", "value": 50000},
+      {"label": "Japonya toplam ağ (yaklaşık 60 yılda)", "value": 3000},
+      {"label": "Çin'in geçen yıl döşediği (yaklaşık)", "value": 3000}
+    ]
+  },
+  "diagram": {
+    "type": "flow",
+    "title": "Çin altyapı makinesinin işleyişi ve bedeli",
+    "steps": [
+      {"label": "Hedefe bağlı terfi", "detail": "Yöneticiler büyüme ve kilometre hedeflerini tutturursa terfi ediyor."},
+      {"label": "Yerel finansman şirketi", "detail": "İl yönetimi araziyi bir şirkete devrediyor, şirket devlet bankalarından borçlanıyor."},
+      {"label": "Hızlı inşaat", "detail": "Arazi devlete ait olduğu için kamulaştırma davası olmadan inşaat başlıyor."},
+      {"label": "Kalite ve yolsuzluk riski", "detail": "Her katmanda pay alınması kalitesiz inşaata ve kazalara yol açabiliyor."},
+      {"label": "Borç birikiyor", "detail": "Projeler nakit getirmediği için yerel borçlar ve demiryolu borcu büyüyor."},
+      {"label": "Devlet içi yeniden yapılandırma", "detail": "Pekin sorunlu kredileri ucuz kredilerle değiştiriyor, sistem çökmeden ama azalan getiriyle sürüyor."}
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "Çin tedarikçisi uzaktan fabrika doğrulama hizmeti",
+      "insight": "Videoda müşterilerin büyük bir avans göndermeden önce fabrika binasını görmek için Çin'e uçtuğu ve 'tofu dregs' algısının güveni zedelediği anlatılıyor.",
+      "problem": "Türk ithalatçılar yüksek peşinat öncesi tedarikçinin gerçekten var olduğunu, tesisinin ve kapasitesinin beyan edildiği gibi olduğunu doğrulamakta zorlanıyor.",
+      "solution": "Çin'deki yerel denetçi ağıyla canlı video turu, belge ve ticaret sicili kontrolü, numune ve sevkiyat öncesi kontrolü standart bir raporda birleştiren hizmet.",
+      "target": "Çin'den makine, yapı malzemesi ve elektronik ithal eden Türk KOBİ'ler",
+      "revenue_model": "Denetim başı sabit ücret; sık ithalatçılar için yıllık paket",
+      "first_step": "Çin'de 3 serbest denetçiyle anlaşıp 5 Türk ithalatçıya indirimli pilot denetim yapmak ve rapor formatını test etmek.",
+      "capital": "Düşük",
+      "difficulty": 2,
+      "turkey_angle": "Türkiye-Çin ticaret hacmi büyük; Türkçe rapor ve Türk ithalatçının diliyle iletişim ayırt edici olur.",
+      "risks": "Büyük uluslararası denetim firmalarıyla rekabet; denetçi güvenilirliği ve sorumluluk."
+    },
+    {
+      "name": "Fabrikadan limana gerçek maliyet karşılaştırma aracı",
+      "insight": "Videoya göre başka ülkedeki fabrika teklifi kağıt üzerinde daha ucuz görünse de tasarruf fabrika ile liman arasındaki yolda eriyor.",
+      "problem": "İthalatçılar Çin dışı alternatifleri (Vietnam, Hindistan vb.) yalnızca birim fiyatla karşılaştırıyor, iç taşıma, süre ve stok maliyetini hesaba katmıyor.",
+      "solution": "Fabrika konumu, iç taşıma, liman, navlun, transit süre ve stok finansman maliyetini birlikte hesaplayan, Türkiye limanlarına teslim maliyetini gösteren web aracı.",
+      "target": "Tedarik çeşitlendirmesi yapan Türk ithalatçılar ve satın alma müdürleri",
+      "revenue_model": "Freemium; detaylı rapor ve forwarder tekliflerine yönlendirme komisyonu",
+      "first_step": "3 ürün için Çin ve iki alternatif ülkeden gerçek teklif ve navlun verisi toplayıp örnek karşılaştırma hazırlamak, 10 satın almacıya göstermek.",
+      "capital": "Düşük",
+      "difficulty": 3,
+      "turkey_angle": "Türk forwarder şirketleriyle ortaklık veri ve dağıtım sağlar.",
+      "risks": "Navlun ve iç taşıma verisinin hızla değişmesi; veri toplamanın emek yoğun olması."
+    },
+    {
+      "name": "Köprü ve bina yapısal sağlık izleme sensörleri",
+      "insight": "Videoda 2008 sonrası Çin'in altyapıya sensör yerleştirerek ve erken tespitle çöken bir köprüde can kaybını önlediği anlatılıyor.",
+      "problem": "Deprem riski yüksek Türkiye'de birçok köprü, okul ve sanayi binasında sürekli yapısal izleme yok; sorunlar ancak hasar oluşunca fark ediliyor.",
+      "solution": "Uygun maliyetli ivme ve çatlak sensörleriyle yapıları sürekli izleyen, eşik aşımında uyarı veren abonelik tabanlı izleme hizmeti.",
+      "target": "Belediyeler, özel okullar, hastaneler, OSB'lerdeki fabrikalar, site yönetimleri",
+      "revenue_model": "Kurulum ücreti + aylık izleme aboneliği",
+      "first_step": "Bir inşaat mühendisliği bölümüyle iş birliği yapıp 2 binada 30 günlük pilot sensör kurulumu yapmak ve veri raporunu yöneticilere sunmak.",
+      "capital": "Orta",
+      "difficulty": 4,
+      "turkey_angle": "Türkiye'de deprem farkındalığı yüksek; yerli sensör ve yazılım üretimi kamu alımlarında avantaj sağlayabilir.",
+      "risks": "Kamu satış süreçlerinin uzunluğu, yanlış alarm sorumluluğu, mühendislik sertifikasyonu gereklilikleri."
+    }
+  ],
+  "skeptic_notes": [
+    "Altyazıda '1.4 million people' geçiyor; bağlam Çin halkını kastettiği için muhtemelen 1,4 milyar olmalı.",
+    "Köprüdeki kafenin vadi tabanından 800 m yüksekte olduğu söyleniyor, oysa yoldan suya düşüş 625 m; kule yüksekliği farklı ölçülüyor olabilir, tutarsız görünüyor.",
+    "Köprü adı altyazıda bir yerde 'Huajong' olarak bozuk yazılmış (Huajiang).",
+    "IMF'ye atfedilen 9 trilyon dolarlık gizli borç ve 'Almanya ile Japonya'nın GSYH toplamı kadar' kıyaslaması bağımsız kontrol gerektirir.",
+    "Şanghay'daki köprü çöküşünde 12 işçinin öldüğü bilgisinin yeri ve tarihi doğrulanmalı.",
+    "Zhu Rongji'nin 'tofu dregs' sözüne dair hikaye anekdot niteliğinde.",
+    "Çöken köprüde kimsenin ölmediği ve sebebin heyelan olduğu iddiası tek bir olaya dayanıyor; genel kalite tartışmasını kapatmaz.",
+    "Statrys'in Çin tedarikçi ödemeleri hizmetine atıf var (reklam içeriği)."
+  ]
+}

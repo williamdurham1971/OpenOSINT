@@ -1,0 +1,125 @@
+{
+  "id": "9DnHqNPfSjw",
+  "title_tr": "Singapur'da şirket kurmanın 9 temel şartı - 2. bölüm",
+  "category": "Şirket kurma & vergi (Statrys hizmet videoları)",
+  "region": [
+    "Singapur"
+  ],
+  "summary_tr": "Serinin ikinci bölümü yerel (nominee) direktör, asgari sermaye ve şirket sekreteri şartlarını ele alıyor. Her Singapur şirketinde Singapur'da olağan ikametli en az bir direktör bulunması gerekiyor; bu kişi diğer direktörlerle aynı hukuki sorumluluğu taşıdığı için hizmetin yıllık ücreti yüksek. Asgari sermaye sembolik düzeyde, şirket yüzde yüz yabancı sermayeli olabiliyor. Kuruluştan sonraki altı ay içinde yerel bir şirket sekreteri atanması zorunlu ve tek direktörlü şirkette direktör aynı zamanda sekreter olamıyor.",
+  "key_points": [
+    "Her şirkette Singapur'da olağan ikametli en az bir direktör zorunlu; vatandaş, daimi oturum veya onaylı çalışma izni sahibi olabilir.",
+    "Nominee direktör diğer direktörlerle aynı yasal sorumluluğu taşıdığı için hizmet ücreti yüksek ve güvence depozitosu isteniyor.",
+    "Kuruluş için en az bir hisse ve bir hissedar yeterli; özel limited şirkette hissedar sayısı sınırlı.",
+    "Singapur şirketleri tamamen yabancı sermayeli olabilir; hissedarlar dünyanın her yerinden kişi veya şirket olabilir.",
+    "Şirket sekreteri kuruluştan sonra altı ay içinde atanmalı; tek direktör aynı zamanda sekreter olamaz.",
+    "Sekreter ACRA dosyalamaları, yasal defterler, yönetim kurulu kararları ve yıllık beyanlardan sorumlu."
+  ],
+  "numbers": [
+    {
+      "label": "Nominee direktör yıllık ücreti (alt sınır)",
+      "value": 2400,
+      "unit": "SGD/yıl",
+      "context": "Yerel direktör hizmetinin tipik yıllık maliyetinin alt ucu (depozito hariç)."
+    },
+    {
+      "label": "Nominee direktör yıllık ücreti (üst sınır)",
+      "value": 5400,
+      "unit": "SGD/yıl",
+      "context": "Yerel direktör hizmetinin tipik yıllık maliyetinin üst ucu (depozito hariç)."
+    },
+    {
+      "label": "Direktör asgari yaşı",
+      "value": 18,
+      "unit": "yaş",
+      "context": "Direktör olabilmek için gereken asgari yaş."
+    },
+    {
+      "label": "Asgari ödenmiş sermaye",
+      "value": 1,
+      "unit": "SGD",
+      "context": "Kuruluş için en az bir hissenin taşıması gereken asgari değer."
+    },
+    {
+      "label": "Azami hissedar sayısı",
+      "value": 50,
+      "unit": "hissedar",
+      "context": "Özel limited şirkette izin verilen en fazla hissedar sayısı."
+    },
+    {
+      "label": "Yabancı sahiplik oranı",
+      "value": 100,
+      "unit": "%",
+      "context": "Singapur şirketlerinin tamamen yabancılara ait olabileceği vurgusu."
+    },
+    {
+      "label": "Sekreter atama süresi",
+      "value": 6,
+      "unit": "ay",
+      "context": "Kuruluştan sonra şirket sekreterinin atanması gereken azami süre."
+    }
+  ],
+  "chart": null,
+  "diagram": {
+    "type": "flow",
+    "title": "Yabancı kurucunun yerel yönetim şartlarını karşılama süreci",
+    "steps": [
+      {
+        "label": "Yerel direktör ihtiyacı",
+        "detail": "Kurucu Singapur'da ikamet etmiyorsa yerel bir direktör bulması gerekiyor."
+      },
+      {
+        "label": "Nominee direktör atama",
+        "detail": "Hizmet sağlayıcı yıllık ücret ve depozito karşılığı uygun bir direktör atıyor."
+      },
+      {
+        "label": "Sermaye ve hisse yapısı",
+        "detail": "En az bir hisse ve hissedarla, gelecekteki yatırım planı düşünülerek yapı kuruluyor."
+      },
+      {
+        "label": "Sekreter atama",
+        "detail": "Altı ay içinde yerel uygunluğu olan, direktörden ayrı bir sekreter atanıyor."
+      },
+      {
+        "label": "Süreklilik ve uyum",
+        "detail": "Sekreter dosyalamaları ve kayıtları yürüterek şirketin şirketler hukukuna uyumunu sağlıyor."
+      }
+    ]
+  },
+  "business_ideas": [
+    {
+      "name": "Nominee direktör risk ve uyum izleme yazılımı",
+      "insight": "Video, nominee direktörün diğer direktörlerle aynı yasal sorumluluğu taşıdığını ve bu riskin ücreti yükselttiğini söylüyor.",
+      "problem": "Nominee direktör sağlayan firmalar, sorumlu oldukları yüzlerce şirketin faaliyetlerini, banka hareketlerindeki kırmızı bayrakları ve dosyalama tarihlerini manuel izliyor.",
+      "solution": "Hizmet sağlayıcıların portföyündeki şirketler için dosyalama takvimi, yaptırım listesi taraması, olağandışı faaliyet uyarısı ve belge talebi akışı sunan SaaS.",
+      "target": "Singapur ve Hong Kong'daki kurumsal hizmet sağlayıcıları",
+      "revenue_model": "Yönetilen şirket başına aylık abonelik",
+      "first_step": "Singapur'daki 10 kurumsal hizmet sağlayıcısıyla nominee direktör portföylerini nasıl izlediklerine dair görüşme yapıp en çok zaman alan 3 işi belirlemek.",
+      "capital": "Orta",
+      "difficulty": 4,
+      "turkey_angle": "Yazılım ekibi Türkiye'de kurulabilir; satış için bölgede yerel ortak gerekir.",
+      "risks": "Kişisel veri ve gizlilik mevzuatı (Singapur PDPA) uyumu; yaptırım veri kaynaklarının lisans maliyeti; satış döngüsü uzun."
+    },
+    {
+      "name": "Kap tablosu ve hisse planlama aracı (Asya şirketleri için)",
+      "insight": "Video, kuruluşta kaç hisse ihraç edileceği ve kimin tutacağının sahiplik yapısını ve gelecekteki yatırım turlarını etkilediğini vurguluyor.",
+      "problem": "Küçük kurucular hisse yapısını kuruluşta rastgele belirliyor ve sonraki yatırım turunda yeniden yapılandırma maliyetiyle karşılaşıyor.",
+      "solution": "Singapur/Hong Kong şirket kuralına uygun şablonlarla kurucu payları, opsiyon havuzu ve yatırım senaryolarını modelleyen, sekreterlik firmasına aktarılabilir çıktı üreten basit araç.",
+      "target": "Asya'da şirket kuran erken aşama girişimciler, Türk kurucu ekipler",
+      "revenue_model": "Kurucu başına tek seferlik ücret; sekreterlik firmalarına beyaz etiket",
+      "first_step": "20 erken aşama kurucuyla kuruluşta hisse yapısını nasıl belirlediklerini sorup prototipi Excel olarak test ettirmek.",
+      "capital": "Düşük",
+      "difficulty": 2,
+      "turkey_angle": "Singapur'da şirket kurup Türkiye'de ekip tutan girişimler yaygınlaştıkça talep artıyor; Türkçe arayüz avantaj.",
+      "risks": "Pazarda kurulu rakipler var; araç hukuki/vergisel tavsiye sunmamalı, sınırlar belirtilmeli."
+    }
+  ],
+  "skeptic_notes": [
+    "Bu video Statrys'in kendi hizmetlerini tanıtan bir reklam/tanıtım içeriğidir; anlatım tarafsız değildir. Nominee direktör ve sekreter hizmetinin Statrys paketinde olduğu açıkça vurgulanıyor.",
+    "Otomatik altyazı şirket adını çoğu yerde 'Status' veya 'statris' olarak yazmış; doğrusu Statrys.",
+    "Altyazıda 'nominally director', 'normally director services' gibi bozulmalar var; bağlamdan 'nominee director' kastedildiği anlaşılıyor.",
+    "Altyazıda 'entree pass' ve 'spass' geçiyor; büyük olasılıkla EntrePass ve S Pass kastediliyor.",
+    "Altyazıda '$1' ifadesi geçiyor; bağlamdan bunun 1 Singapur doları olduğu anlaşılıyor.",
+    "2.400-5.400 SGD aralığı sağlayıcıya göre değişen bir tahmin; depozito tutarı belirtilmiyor.",
+    "Aynı birimde karşılaştırılabilir en az üç değer olmadığından chart null bırakıldı."
+  ]
+}
