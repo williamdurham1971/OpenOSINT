@@ -20,6 +20,7 @@ CLOB_REST = "https://clob.polymarket.com"
 CLOB_WS = "wss://ws-subscriptions-clob.polymarket.com/ws/market"
 RTDS_WS = "wss://ws-live-data.polymarket.com"
 WINDOW = 900
+JOIN_LATE = 20.0       # still join a window that began up to this many seconds ago
 OUT = Path(__file__).parent / "data"
 
 
@@ -296,7 +297,7 @@ async def stream_market(tokens, end, handler):
         for b in books.values():
             b.snapshot([], [])
         try:
-            async with websockets.connect(CLOB_WS, ping_interval=None) as ws:
+            async with websockets.connect(CLOB_WS, ping_interval=None, close_timeout=1) as ws:   # default 10s close wait made us miss the next window
                 await ws.send(json.dumps({"assets_ids": list(tokens.values()), "type": "market"}))
 
                 async def pinger():
@@ -583,12 +584,14 @@ async def run(args):
         while True:
             now = time.time()
             cand = int(now - now % WINDOW)
-            start = cand if now - cand < 3 else cand + WINDOW   # a boundary that just passed is still ours
+            start = cand if now - cand < JOIN_LATE else cand + WINDOW   # a boundary that just passed is still ours
             if state.vol.sigma() is None and start - now < 90:    # first window: need ~60s of ticks to estimate vol
                 start += WINDOW
             if args.max_windows is not None and args.max_windows <= 0:
                 break
             await asyncio.sleep(max(0, start - now))
+            if now - start > 1:
+                print(f"[{start}] joining {now - start:.1f}s late")
             records, strike = [], None
             try:
                 strike = await trade_window(args, state, session, start, records, tickcsv)
