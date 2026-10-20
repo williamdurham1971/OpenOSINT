@@ -1264,6 +1264,133 @@ def backtest_report(sets, args, out=print):
         "stands in for Chainlink spot. A positive 'Q' result is a reason to keep paper-trading, not proof you could capture it.")
 
 
+
+# ---------- replay: evaluate on the live 1 Hz ticks (real asks, fresh quotes, fresh spot) ----------
+
+def load_ticks(paths):
+    """Read ticks.csv files -> {window: [tick dicts sorted by time]}. Columns: ts, window, tau, btc, sigma, fair, up bid/ask, down bid/ask."""
+    def num(x):
+        try:
+            return float(x)
+        except ValueError:
+            return None
+    by_win, seen = collections.defaultdict(list), set()
+    for path in paths:
+        if not Path(path).exists():
+            continue
+        for rec in csv.reader(open(path)):
+            if len(rec) < 10:
+                continue
+            ts, win, tau, fair = num(rec[0]), num(rec[1]), num(rec[2]), num(rec[5])
+            if None in (ts, win, tau, fair) or (win, ts) in seen:
+                continue
+            seen.add((win, ts))
+            by_win[int(win)].append(dict(ts=ts, tau=tau, fair=fair, ub=num(rec[6]), ua=num(rec[7]), db=num(rec[8]), da=num(rec[9])))
+    for v in by_win.values():
+        v.sort(key=lambda r: r["ts"])
+    return dict(by_win)
+
+
+def replay_samples(ticks, outcomes, latency_s=1.0):
+    """One sample per (window, bucket): decided on the FIRST tick of the bucket that has both asks, filled at the first
+    tick at least latency_s later (so the price can move against us). Returns dicts ready for evaluation."""
+    out = []
+    for win, rows in ticks.items():
+        up = outcomes.get(win)
+        if up is None:
+            continue
+        for label, lo, hi in BUCKETS:
+            i = next((k for k, r in enumerate(rows) if lo <= r["tau"] < hi and r["ua"] is not None and r["da"] is not None), None)
+            if i is None:
+                continue
+            d = rows[i]
+            f = next((r for r in rows[i:] if r["ts"] >= d["ts"] + latency_s and r["ua"] is not None and r["da"] is not None), None)
+            if f is None:
+                continue
+            mid = (d["ub"] + d["ua"]) / 2 if d["ub"] is not None else None
+            out.append(dict(window=win, bucket=label, fair=d["fair"], mid=mid, ua=d["ua"], da=d["da"],
+                            fua=f["ua"], fda=f["da"], up=up))
+    return out
+
+
+def replay_trade(sm, thr, rate=0.07, exp=1.0):
+    """Decide on the decision-tick asks, pay the fill-tick ask. Returns (side, claimed_edge, pnl_per_share) or None."""
+    best = None
+    for side, fair, ask, fill in (("up", sm["fair"], sm["ua"], sm["fua"]), ("down", 1 - sm["fair"], sm["da"], sm["fda"])):
+        edge = fair - ask - fee_per_share(ask, rate, exp)
+        if best is None or edge > best[1]:
+            won = sm["up"] if side == "up" else not sm["up"]
+            best = (side, edge, (1.0 if won else 0.0) - fill - fee_per_share(fill, rate, exp))
+    return best if best[1] >= thr else None
+
+
+def replay_report(samples, out=print):
+    wins = sorted({x["window"] for x in samples})
+    out(f"{len(wins)} windows, {len(samples)} (window, bucket) samples; real best asks, 1 Hz ticks")
+    out("\n1) Model vs market mid at the same tick (Brier, lower = better; paired by window)")
+    out(f"   {'bucket':14s} {'n':>4s} {'model':>7s} {'market':>7s} {'model-market (SE)':>20s}")
+    for label, _, _ in BUCKETS:
+        sub = [x for x in samples if x["bucket"] == label and x["mid"] is not None]
+        if len(sub) < 3:
+            continue
+        bm = [(x["fair"] - x["up"]) ** 2 for x in sub]; bk = [(x["mid"] - x["up"]) ** 2 for x in sub]
+        d, se = mean_se([a - b for a, b in zip(bm, bk)])
+        out(f"   {label:14s} {len(sub):4d} {statistics.mean(bm):7.4f} {statistics.mean(bk):7.4f} {d:+9.4f} ({se:.4f})")
+    out("\n2) Taker P&L per share: decide at the quoted ask, fill at the ask one latency later, official fee")
+    out(f"   {'bucket':14s} {'thr':>4s} {'windows':>7s} {'trades':>6s} {'avg claimed':>11s} {'avg realised (SE)':>20s} {'hit':>5s}")
+    pooled = []
+    for label, _, _ in BUCKETS:
+        sub = [x for x in samples if x["bucket"] == label]
+        for thr in (0.0, 0.02, 0.04, 0.06):
+            tr = [t for t in (replay_trade(x, thr) for x in sub) if t]
+            if not tr:
+                continue
+            mu, se = mean_se([t[2] for t in tr])
+            out(f"   {label:14s} {thr:4.2f} {len(sub):7d} {len(tr):6d} {statistics.mean(t[1] for t in tr):+11.3f} {mu:+9.4f} ({se:.4f}) {sum(t[2] > 0 for t in tr)/len(tr):5.0%}")
+            if thr == 0.04:
+                pooled += [t[2] for t in tr]
+    if len(pooled) >= 5:
+        mu, se = mean_se(pooled)
+        sd = se * math.sqrt(len(pooled))
+        out(f"\n3) Pooled at thr 0.04: {len(pooled)} trades, {mu:+.4f} +/- {se:.4f} per share. To pin the mean to +/-0.02 at this "
+            f"variance you need ~{math.ceil((sd / 0.02) ** 2)} trades (~{math.ceil((sd / 0.02) ** 2 / 3)} windows).")
+    if len(wins) < 100:
+        out(f"\nNOTE: {len(wins)} windows is far too few to conclude anything. Keep `run` going and re-run `replay` as ticks.csv grows.")
+
+
+async def replay(args):
+    OUT.mkdir(exist_ok=True)
+    paths = [Path(p) for p in (args.ticks or [str(OUT / "ticks.csv")])]
+    ticks = load_ticks(paths)
+    if not ticks:
+        print("no ticks found in: " + ", ".join(map(str, paths))); return
+    # outcomes: our own windows.jsonl first, then Gamma (cached)
+    outcomes = {}
+    for f in (OUT / "windows.jsonl", OUT / "run3" / "windows.jsonl"):
+        for r in read_jsonl(f):
+            if r.get("outcome_official"):
+                outcomes[r["window"]] = r["outcome_official"] == "up"
+    cache = OUT / "hist" / "outcomes.json"
+    cache.parent.mkdir(parents=True, exist_ok=True)
+    cached = json.load(open(cache)) if cache.exists() else {}
+    outcomes.update({int(k): v for k, v in cached.items()})
+    missing = [w for w in ticks if w not in outcomes and w + WINDOW < time.time() - 180]
+    if missing:
+        async with aiohttp.ClientSession() as session:
+            for w in missing:
+                try:
+                    o, _, _ = await official_result(session, w)
+                except Exception:
+                    o = None
+                if o:
+                    outcomes[w] = o == "up"; cached[str(w)] = outcomes[w]
+        json.dump(cached, open(cache, "w"))
+    skipped = [w for w in ticks if w not in outcomes]
+    if skipped:
+        print(f"{len(skipped)} window(s) without a resolved outcome yet (skipped)")
+    replay_report(replay_samples(ticks, outcomes, args.latency_s))
+
+
 # ---------- self-test ----------
 
 def _selftest():
@@ -1425,6 +1552,24 @@ def _selftest():
     assert len(gaps) == 1 and gaps[0][1] is not None and 0.4 < gaps[0][1] - gaps[0][0] < 2.5, gaps      # ~0.5s pause + connect
     assert books["up"].best_ask() == 0.5 and books["up"].best_bid() == 0.4
     assert any(json.loads(l)["kind"] == "clob_reconnect" for l in open(OUT / "events.jsonl")), "reconnect was not logged"
+    # replay: decision on the first bucket tick, fill one latency later at the then-current ask
+    def tk(ts, tau, fair, ua, da, ub=None):
+        return dict(ts=float(ts), tau=float(tau), fair=fair, ub=ub if ub is not None else (ua - 0.01 if ua is not None else None), ua=ua, db=da - 0.01, da=da)
+    tw = {100: [tk(0, 700, 0.70, 0.50, 0.52), tk(1, 699, 0.70, 0.55, 0.47), tk(2, 698, 0.70, 0.56, 0.46)],     # Up looks cheap, ask moves up by the fill
+          200: [tk(0, 700, 0.30, 0.52, 0.50), tk(1, 699, 0.30, 0.52, 0.50)],                                     # Down looks cheap
+          300: [tk(0, 700, 0.50, None, 0.50)]}                                                                    # missing ask: no sample
+    sm = replay_samples(tw, {100: True, 200: True, 300: True}, latency_s=1.0)
+    assert [x["window"] for x in sm if x["bucket"] == "13-8 min left"] == [100, 200], sm
+    a1 = next(x for x in sm if x["window"] == 100)
+    side, claimed, pnl1 = replay_trade(a1, 0.0)
+    assert side == "up" and abs(claimed - (0.70 - 0.50 - fee_per_share(0.50, 0.07, 1))) < 1e-12        # edge judged at the quoted 0.50
+    assert abs(pnl1 - (1 - 0.55 - fee_per_share(0.55, 0.07, 1))) < 1e-12                                # but paid 0.55 one tick later
+    side2, _, pnl2 = replay_trade(next(x for x in sm if x["window"] == 200), 0.0)
+    assert side2 == "down" and pnl2 < -0.5                                                              # bought Down, Up won
+    assert replay_trade(a1, 0.5) is None                                                                # threshold respected
+    tf = Path(OUT) / "t.csv"
+    tf.write_text("1.0,100,700,81000,1e-5,0.7,0.49,0.5,0.52,0.53\n1.0,100,700,81000,1e-5,0.7,0.49,0.5,0.52,0.53\n2.0,100,699,81000,1e-5,0.6,,,0.5,0.51\nbad,row\n")
+    lt = load_ticks([tf]); assert len(lt[100]) == 2 and lt[100][1]["ua"] is None and lt[100][0]["ua"] == 0.5     # dedup, blanks -> None
     # an order must not go live on an empty book (queue ahead would read 0 after a reconnect)
     ms3 = MakerSim(args, 0.01)
     books3 = {k: Book() for k in ("up", "down")}
@@ -1479,6 +1624,9 @@ if __name__ == "__main__":
     m.add_argument("--bin", type=float, default=0.5, help="sampling bin, seconds")
     m.add_argument("--horizon", type=float, default=1.0, help="price-change horizon, seconds")
     m.add_argument("--max-lag", type=float, default=20, help="largest lag searched, seconds")
+    rp = sp.add_parser("replay", help="evaluate on the live 1 Hz ticks (real asks); the proper test once ticks.csv has hundreds of windows")
+    rp.add_argument("--ticks", action="append", help="ticks.csv path (repeatable; default data/ticks.csv)")
+    rp.add_argument("--latency-s", type=float, default=1.0, help="fill at the first tick this many seconds after the decision")
     bt_ = sp.add_parser("backtest", help="model vs market forecast quality and taker P&L over many past windows")
     bt_.add_argument("--days", type=int, default=7)
     bt_.add_argument("--max-age", type=float, default=15, help="A-fresh: max quote age in seconds")
@@ -1496,6 +1644,7 @@ if __name__ == "__main__":
     elif a.cmd == "report": report(a)
     elif a.cmd == "verify": asyncio.run(verify(a))
     elif a.cmd == "backtest": asyncio.run(backtest(a))
+    elif a.cmd == "replay": asyncio.run(replay(a))
     elif a.cmd == "summary": sys.exit(summary(a))
     else:
         try: asyncio.run(run(a) if a.cmd == "run" else measure(a))

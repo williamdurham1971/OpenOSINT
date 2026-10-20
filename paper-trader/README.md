@@ -12,6 +12,7 @@ python paper_trader.py run --mode both          # taker + maker side by side; le
 python paper_trader.py report
 python paper_trader.py backtest --days 14       # many past windows: is the model better than the market?
 python paper_trader.py summary                  # health check + P&L digest (exit code 2 = alerts)
+python paper_trader.py replay                   # evaluate on the live 1 Hz ticks (the proper test, needs hundreds of windows)
 ```
 
 ## What it does each 15-minute window
@@ -68,6 +69,15 @@ are printed on purpose: `Q` decides at each quote's own timestamp with the last 
 unfair to the model), `A-fresh` uses only quotes at most 15 s old, and `A-all` pairs a quote that can be 90 s old with the
 latest spot. `A-all` shows large, "significant" profits that are an artifact of stale quotes; never trust a backtest
 that does not control for quote age. It cannot say anything about sub-second latency or maker economics.
+
+## `replay`: the proper evaluation, on your own ticks
+`run` logs a 1 Hz line per window to `data/ticks.csv` (price, model fair value, best bid/ask of both books). `replay` joins it
+with the official outcomes (from `windows.jsonl`, else Gamma, cached) and, per window and time bucket, decides on the first
+tick that has both asks and pays the ask one `--latency-s` later (default 1 s), with the official fee. Unlike `backtest`, the
+quote and the spot are the same instant, the ask includes the real spread, and the model sees the real Chainlink feed. It
+prints the model-vs-market Brier score, claimed vs realised edge per threshold, and how many trades you need before the
+mean P&L is better than +/-0.02 per share. It cannot evaluate maker orders (no queue information at 1 Hz) and it only knows
+the best ask, not the depth. With under ~100 windows treat every number as noise; the report says so.
 
 ## Caveats you must verify
 - Feeds can go silent without an error; `run_feed` reconnects after `STALL_S` seconds without data.
