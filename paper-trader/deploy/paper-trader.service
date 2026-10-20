@@ -1,0 +1,17 @@
+# systemd unit: keeps the paper trader running and restarts it if it ever dies.
+# Install:  sudo cp deploy/paper-trader.service /etc/systemd/system/ && sudo systemctl enable --now paper-trader
+# Edit User and the two paths first. Logs: journalctl -u paper-trader -f
+[Unit]
+Description=Polymarket 15m BTC paper trader
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=CHANGE_ME
+WorkingDirectory=/opt/paper-trader
+ExecStart=/usr/bin/python3 /opt/paper-trader/paper_trader.py run --feed chainlink --mode both
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

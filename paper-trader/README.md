@@ -10,6 +10,8 @@ python paper_trader.py selftest
 python paper_trader.py measure --minutes 60     # FIRST: how late is Polymarket really?
 python paper_trader.py run --mode both          # taker + maker side by side; leave running for days
 python paper_trader.py report
+python paper_trader.py backtest --days 14       # many past windows: is the model better than the market?
+python paper_trader.py summary                  # health check + P&L digest (exit code 2 = alerts)
 ```
 
 ## What it does each 15-minute window
@@ -50,6 +52,22 @@ good fill rate with poor realised PnL.
   it was std 3.7 USD vs 15-31 USD. Windows are settled with Gamma's resolved outcome; our own estimate is kept for comparison.
 - **Taker fee** = `C * 0.07 * p * (1-p)` (docs and the market's `feeSchedule`: rate 0.07, exponent 1, takerOnly): 3.5% of
   notional at 50c, 1.4% at 80c. Makers pay nothing; the 20% maker rebate program is ignored (conservative).
+
+## Running unattended
+`deploy/paper-trader.service` (systemd, restarts on failure) keeps `run` alive; `deploy/crontab.example` schedules a daily
+digest and an hourly check that posts only on alerts. `summary` reports windows logged vs missing, our boundary price vs
+the official result, feed/websocket reconnects, P&L per mode with its standard error, and roughly how many fills you need
+before the P&L is more than noise. Alerts: no completed window for `--stale-min`, any disagreement with the official
+result, too many feed reconnects, unsettled windows. `--webhook` posts plain text, Slack (`{"text"}`) or Discord
+(`{"content"}`); nothing leaves the machine unless you pass it. Disk use is a few MB per day (`feed_*.csv`, `ticks.csv`).
+
+## `backtest`: what 1-minute history says (read the caveats)
+Uses Gamma (official strike/outcome), the CLOB price history (about one quote per minute) and Coinbase 1-minute candles.
+It compares the model's Brier score with the market's and simulates taker trades with the official fee. Three data sets
+are printed on purpose: `Q` decides at each quote's own timestamp with the last completed candle (no look-ahead, slightly
+unfair to the model), `A-fresh` uses only quotes at most 15 s old, and `A-all` pairs a quote that can be 90 s old with the
+latest spot. `A-all` shows large, "significant" profits that are an artifact of stale quotes; never trust a backtest
+that does not control for quote age. It cannot say anything about sub-second latency or maker economics.
 
 ## Caveats you must verify
 - Feeds can go silent without an error; `run_feed` reconnects after `STALL_S` seconds without data.

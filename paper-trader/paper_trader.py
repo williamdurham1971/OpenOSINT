@@ -25,6 +25,16 @@ JOIN_LATE = 20.0       # still join a window that began up to this many seconds 
 OUT = Path(__file__).parent / "data"
 
 
+def log_event(kind, **kw):
+    """Append an operational event to data/events.jsonl (read by `summary`); never raises."""
+    try:
+        OUT.mkdir(exist_ok=True)
+        with open(OUT / "events.jsonl", "a") as f:
+            f.write(json.dumps(dict(t=time.time(), kind=kind, **kw)) + "\n")
+    except OSError:
+        pass
+
+
 # ---------- pure maths (unit-tested in `selftest`) ----------
 
 def norm_cdf(x):
@@ -258,6 +268,7 @@ async def run_feed(name, state, lag_sink=None, log_path=None):
                 pass
             except Exception as e:
                 print(f"[feed:{name}] {type(e).__name__}: {str(e) or 'no data for %gs' % STALL_S}; reconnecting in {backoff}s", file=sys.stderr)
+                log_event("feed_reconnect", feed=name, error=type(e).__name__, stalled=isinstance(e, asyncio.TimeoutError))
             finally:
                 await it.aclose()
             await asyncio.sleep(backoff); backoff = min(backoff * 2, 30)
@@ -334,6 +345,7 @@ async def stream_market(tokens, end, handler):
             break                                    # window over
         except Exception as e:
             print(f"[clob-ws] {type(e).__name__}: {e}; reconnecting", file=sys.stderr)
+            log_event("clob_reconnect", error=type(e).__name__, detail=str(e)[:120])
         await asyncio.sleep(0.5)
     return books
 
@@ -450,6 +462,7 @@ async def trade_window(args, state, session, start, records, tickcsv):
         await asyncio.sleep(0.5)
     if strike is None:
         print(f"[{start}] no feed history covering the window start, skipping")
+        log_event("window_skipped", window=start, reason="no feed history at window start")
         await asyncio.sleep(max(0, end - time.time())); return None
     fs = meta.get("feeSchedule") or {}
     fee_rate, fee_exp = float(fs.get("rate", args.fee_rate)), float(fs.get("exponent", args.fee_exp))
@@ -571,9 +584,11 @@ async def settle(state, session, start, records, strike_proxy):
                                 outcome_proxy=proxy, outcome_official=outcome,
                                 price_to_beat=beat, final_price=fin)) + "\n")
     if outcome and proxy and outcome != proxy:
+        log_event("proxy_mismatch", window=start, proxy=proxy, official=outcome)
         print(f"[{start}] PROXY MISMATCH: we said {proxy} (final {final_proxy:.2f} vs strike {strike_proxy:.2f}), "
               f"Polymarket resolved {outcome}")
     if result is None:
+        log_event("unsettled", window=start)
         print(f"[{start}] could not determine an outcome; trades left unsettled"); return
     with open(OUT / "trades.jsonl", "a") as f:
         for r in records:
@@ -604,6 +619,7 @@ async def run(args):
             await asyncio.sleep(max(0, start - now))
             if now - start > 1:
                 print(f"[{start}] joining {now - start:.1f}s late")
+                log_event("late_join", window=start, seconds=round(now - start, 1))
             records, strike = [], None
             try:
                 strike = await trade_window(args, state, session, start, records, tickcsv)
@@ -801,6 +817,103 @@ def report(_):
 
 
 
+
+# ---------- summary / health check for unattended runs ----------
+
+def build_summary(hours, stale_min, max_reconnects, now=None):
+    """Return (markdown, alerts). Reads data/windows.jsonl, trades.jsonl, events.jsonl."""
+    now = now or time.time()
+    since = now - hours * 3600
+    wins = sorted((r for r in read_jsonl(OUT / "windows.jsonl") if r["window"] >= since), key=lambda r: r["window"])
+    trades = [r for r in read_jsonl(OUT / "trades.jsonl") if r["window"] >= since]
+    events = [r for r in read_jsonl(OUT / "events.jsonl") if r["t"] >= since]
+    alerts, L = [], []
+    L.append(f"# paper-trader summary, last {hours:g} h")
+    # coverage
+    all_wins = sorted(r["window"] for r in read_jsonl(OUT / "windows.jsonl"))
+    if not all_wins:
+        alerts.append("no windows logged yet: is `run` running?")
+    else:
+        age_min = (now - (all_wins[-1] + WINDOW)) / 60
+        if age_min > stale_min:
+            alerts.append(f"last completed window ended {age_min:.0f} min ago (> {stale_min:g}): `run` looks dead or stuck")
+    if wins:
+        span = (wins[-1]["window"] - wins[0]["window"]) // WINDOW + 1
+        skipped = [e for e in events if e["kind"] == "window_skipped"]
+        L.append(f"- windows logged: {len(wins)} of {span} in span ({span - len(wins)} missing; "
+                 f"{len(skipped)} skipped with a recorded reason, {sum(e['kind']=='late_join' for e in events)} late joins)")
+        both = [r for r in wins if r.get("outcome_proxy") and r.get("outcome_official")]
+        bad = [r for r in both if r["outcome_proxy"] != r["outcome_official"]]
+        L.append(f"- our close vs Polymarket's official result: {len(both) - len(bad)}/{len(both)} agree"
+                 + (f" ({len(wins) - len(both)} not comparable)" if len(wins) != len(both) else ""))
+        if bad:
+            alerts.append(f"{len(bad)} window(s) where our boundary-price estimate disagreed with the official result: "
+                          + ", ".join(str(r['window']) for r in bad[:5]))
+    else:
+        L.append("- no windows in this period")
+    # health
+    fr = [e for e in events if e["kind"] == "feed_reconnect"]
+    cr = [e for e in events if e["kind"] == "clob_reconnect"]
+    stalls = sum(bool(e.get("stalled")) for e in fr)
+    L.append(f"- feed reconnects: {len(fr)} ({stalls} silent stalls); CLOB websocket reconnects: {len(cr)}")
+    if len(fr) > max_reconnects:
+        alerts.append(f"{len(fr)} feed reconnects in {hours:g} h (> {max_reconnects}): the price feed is unstable")
+    uns = [e for e in events if e["kind"] == "unsettled"]
+    if uns:
+        alerts.append(f"{len(uns)} window(s) could not be settled")
+    # P&L by mode
+    L.append("")
+    for mode in ("taker", "maker"):
+        rows = [r for r in trades if r.get("mode", "taker") == mode]
+        filled = [r for r in rows if r["shares"] > 0 and "pnl" in r]
+        if not rows:
+            continue
+        if not filled:
+            L.append(f"- {mode}: {len(rows)} orders, none filled"); continue
+        pnl = [r["pnl"] for r in filled]
+        per_sh = [r["pnl"] / r["shares"] for r in filled]
+        cost = sum(r["shares"] * r["fill"] + r["fee"] for r in filled)
+        mu, se = mean_se(per_sh)
+        line = (f"- **{mode}**: {len(filled)} fills, hit {sum(p > 0 for p in pnl)/len(filled):.0%}, net ${sum(pnl):+.2f} "
+                f"(ROI {sum(pnl)/cost:+.1%}), per share {mu:+.3f} +/- {se:.3f}")
+        if mode == "maker":
+            line += f", fill-rate {len(filled)/len(rows):.0%}"
+        L.append(line)
+        if len(filled) >= 5 and se == se and se > 0:
+            sd = se * math.sqrt(len(filled))
+            L.append(f"  - to pin per-share P&L down to +/-0.02 you need ~{math.ceil((sd / 0.02) ** 2)} fills at this variance "
+                     f"(have {len(filled)}); anything smaller is noise")
+    L.append("")
+    L.append("Alerts: " + ("none" if not alerts else ""))
+    L += [f"- ALERT: {a}" for a in alerts]
+    return "\n".join(L), alerts
+
+
+def post_webhook(url, text, fmt):
+    import urllib.request
+    if fmt == "slack":
+        body, ctype = json.dumps({"text": text}).encode(), "application/json"
+    elif fmt == "discord":
+        body, ctype = json.dumps({"content": text[:1900]}).encode(), "application/json"
+    else:                                              # plain text, e.g. ntfy.sh
+        body, ctype = text.encode(), "text/plain; charset=utf-8"
+    req = urllib.request.Request(url, data=body, headers={"Content-Type": ctype, "User-Agent": "paper-trader"})
+    urllib.request.urlopen(req, timeout=15).read()
+
+
+def summary(args):
+    text, alerts = build_summary(args.hours, args.stale_min, args.max_reconnects)
+    print(text)
+    if args.webhook and (alerts or not args.only_alerts):
+        try:
+            post_webhook(args.webhook, text, args.webhook_format)
+            print("\n(posted to webhook)")
+        except Exception as e:
+            print(f"\nwebhook failed: {type(e).__name__}: {e}", file=sys.stderr)
+            return 3
+    return 2 if alerts else 0
+
+
 # ---------- verify: our boundary price vs Polymarket's official one ----------
 
 class Series:
@@ -918,9 +1031,215 @@ async def verify(_):
               "Keep `run`/`measure` going for hours to separate them.")
 
 
+
+# ---------- backtest: is the model better than the market? (1-minute data, many windows) ----------
+
+def edge_pnl(fair_up_p, p_up, outcome_up, half_spread, rate=0.07, exp=1.0):
+    """Best taker trade on one Up/Down quote: buy Up at p+h or Down at (1-p)+h. Returns (side, edge, pnl_per_share)."""
+    best = None
+    for side, fair, price in (("up", fair_up_p, p_up + half_spread), ("down", 1 - fair_up_p, 1 - p_up + half_spread)):
+        if not 0 < price < 1:
+            continue
+        fee = fee_per_share(price, rate, exp)
+        edge = fair - price - fee
+        if best is None or edge > best[1]:
+            won = outcome_up if side == "up" else not outcome_up
+            best = (side, edge, (1.0 if won else 0.0) - price - fee)
+    return best
+
+
+def sigma_from_closes(closes, n=60):
+    """Per-second log vol from the last n+1 one-minute closes (None if too few)."""
+    c = [x for x in closes[-(n + 1):] if x]
+    if len(c) < n * 0.8:
+        return None
+    r = [math.log(b / a) for a, b in zip(c, c[1:])]
+    return statistics.pstdev(r) / math.sqrt(60)
+
+
+def coinbase_url(t0, t1):
+    f = lambda t: datetime.datetime.fromtimestamp(t, datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    return f"https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=60&start={f(t0)}&end={f(t1)}"
+
+
+async def jget(session, url, tries=4):
+    for i in range(tries):
+        try:
+            async with session.get(url, headers=UA) as r:
+                if r.status == 200:
+                    return await r.json()
+                if r.status in (429, 403):
+                    await asyncio.sleep(1 + 2 * i)
+        except Exception:
+            await asyncio.sleep(1 + i)
+    return None
+
+
+def read_jsonl(path):
+    return [json.loads(l) for l in open(path)] if path.exists() else []
+
+
+async def backtest(args):
+    H = OUT / "hist"; H.mkdir(parents=True, exist_ok=True)
+    now = int(time.time())
+    last = now - now % WINDOW - 3 * WINDOW           # official values need ~20 min to appear
+    starts = [last - WINDOW * i for i in range(args.days * 96)][::-1]
+    sem = asyncio.Semaphore(8)
+    async with aiohttp.ClientSession() as session:
+        # 1) official strike/final/outcome + Up token per window (cached)
+        evs = {r["start"]: r for r in read_jsonl(H / "events.jsonl")}
+        async def one_event(st):
+            async with sem:
+                try:
+                    e = await gamma_event(session, st)
+                except Exception:
+                    return
+            if not e:
+                return
+            md, m = e.get("eventMetadata") or {}, (e.get("markets") or [{}])[0]
+            try:
+                toks, outs = json.loads(m["clobTokenIds"]), [o.lower() for o in json.loads(m["outcomes"])]
+                beat, fin = md.get("priceToBeat"), md.get("finalPrice")
+                if beat is None or fin is None or not e.get("closed"):
+                    return
+                evs[st] = dict(start=st, beat=float(beat), final=float(fin), up_token=toks[outs.index("up")])
+                with open(H / "events.jsonl", "a") as f:
+                    f.write(json.dumps(evs[st]) + "\n")
+            except (KeyError, ValueError, TypeError):
+                pass
+        todo = [st for st in starts if st not in evs]
+        print(f"windows requested {len(starts)}, cached events {len(starts)-len(todo)}, fetching {len(todo)} ...")
+        await asyncio.gather(*[one_event(st) for st in todo])
+        wins = [evs[st] for st in starts if st in evs]
+        print(f"official results for {len(wins)} windows")
+        # 2) Polymarket Up price history per window (cached)
+        pm = {r["start"]: r["hist"] for r in read_jsonl(H / "pm_hist.jsonl")}
+        async def one_hist(w):
+            async with sem:
+                d = await jget(session, f"{CLOB_REST}/prices-history?market={w['up_token']}"
+                                        f"&startTs={w['start']}&endTs={w['start'] + WINDOW}&fidelity=1")
+            if d is None:
+                return
+            pm[w["start"]] = [(x["t"], x["p"]) for x in d.get("history", [])]
+            with open(H / "pm_hist.jsonl", "a") as f:
+                f.write(json.dumps(dict(start=w["start"], hist=pm[w["start"]])) + "\n")
+        todo = [w for w in wins if w["start"] not in pm]
+        print(f"price history: fetching {len(todo)} ...")
+        await asyncio.gather(*[one_hist(w) for w in todo])
+        # 3) Coinbase 1-minute candles (cached as ts,close)
+        cf = H / "candles.csv"
+        close = {}
+        if cf.exists():
+            for l in open(cf):
+                a = l.strip().split(",")
+                if len(a) == 2:
+                    close[int(a[0])] = float(a[1])
+        if wins:
+            t0, t1 = wins[0]["start"] - 4000, wins[-1]["start"] + WINDOW + 120
+            need = [t for t in range(t0 - t0 % 60, t1, 60) if t not in close]
+            print(f"candles: {len(need)} minutes missing")
+            if need:
+                lo, hi = min(need), max(need)
+                with open(cf, "a") as f:
+                    for a in range(lo, hi + 1, 300 * 60):
+                        d = await jget(session, coinbase_url(a, min(a + 300 * 60, hi + 60)))
+                        for row in d or []:
+                            if int(row[0]) not in close:
+                                close[int(row[0])] = float(row[4]); f.write(f"{int(row[0])},{row[4]}\n")
+                        await asyncio.sleep(0.2)
+    # 4) decision rows. "A" = per-minute decisions using the *latest* spot but a quote that may be up to 90s old
+    #    (look-ahead style bias: stale quote vs fresh spot). "Q" = one row per quote, decided at the quote's own
+    #    timestamp with the last *completed* 1-minute close as spot (up to 60s stale = against the model, no look-ahead).
+    rowsA, rowsQ = [], []
+    def closes_upto(floor):
+        return [close.get(floor - 60 * k) for k in range(61, 0, -1)]
+    for w in wins:
+        st, hist = w["start"], pm.get(w["start"]) or []
+        if len(hist) < 8:
+            continue
+        ht = [t for t, _ in hist]
+        up = w["final"] >= w["beat"]
+        for m in range(1, 14):
+            t = st + 60 * m
+            i = bisect.bisect_right(ht, t) - 1
+            S, sig = close.get(t - 60), sigma_from_closes(closes_upto(t))
+            if i >= 0 and S and sig is not None:
+                tau = st + WINDOW - t
+                rowsA.append(dict(start=st, tau=tau, fair=fair_up(S, w["beat"], sig, tau), p=hist[i][1], up=up, age=t - ht[i]))
+        for ts, price in hist:
+            floor = ts - ts % 60
+            S, sig = close.get(floor - 60), sigma_from_closes(closes_upto(floor))
+            tau = st + WINDOW - ts
+            if S and sig is not None and 60 <= tau <= 840:
+                rowsQ.append(dict(start=st, tau=tau, fair=fair_up(S, w["beat"], sig, tau), p=price, up=up, age=0))
+    d0 = lambda t: datetime.datetime.fromtimestamp(t, datetime.timezone.utc)
+    print(f"{len(wins)} windows {d0(wins[0]['start']):%Y-%m-%d} .. {d0(wins[-1]['start']):%Y-%m-%d}; "
+          f"rows: per-minute {len(rowsA)}, per-quote {len(rowsQ)}")
+    if rowsQ:
+        backtest_report({"Q (no look-ahead)": rowsQ,
+                         f"A-fresh (quote age <= {args.max_age:.0f}s)": [r for r in rowsA if r["age"] <= args.max_age],
+                         "A-all (quote up to 90s stale: biased)": rowsA}, args)
+
+
+def mean_se(v):
+    if len(v) < 2:
+        return (v[0] if v else float("nan")), float("nan")
+    return statistics.mean(v), statistics.stdev(v) / math.sqrt(len(v))
+
+
+BUCKETS = (("13-8 min left", 480, 840), ("8-3 min left", 180, 480), ("3-1 min left", 60, 180))
+
+
+def one_per_window(rows, lo, hi):
+    """First row of each window inside the tau bucket: windows stay independent."""
+    seen, out = set(), []
+    for r in sorted((r for r in rows if lo <= r["tau"] < hi), key=lambda r: (r["start"], -r["tau"])):
+        if r["start"] not in seen:
+            seen.add(r["start"]); out.append(r)
+    return out
+
+
+def backtest_report(sets, args, out=print):
+    out("\n1) Forecast quality, Brier score (lower = better), model vs market, one decision per window per bucket")
+    out(f"   {'data set':40s} {'bucket':14s} {'n':>4s} {'model':>7s} {'market':>7s} {'model-market (SE)':>20s}")
+    for name, rows in sets.items():
+        for label, lo, hi in BUCKETS:
+            sub = one_per_window(rows, lo, hi)
+            if len(sub) < 30:
+                continue
+            bm = [(r["fair"] - r["up"]) ** 2 for r in sub]; bk = [(r["p"] - r["up"]) ** 2 for r in sub]
+            d, se = mean_se([x - y for x, y in zip(bm, bk)])
+            out(f"   {name:40s} {label:14s} {len(sub):4d} {statistics.mean(bm):7.4f} {statistics.mean(bk):7.4f} {d:+9.4f} ({se:.4f})"
+                + ("  <- model better" if d < -2 * se else "  <- market better" if d > 2 * se else ""))
+    out("\n2) Taker P&L per share (buy the cheaper side at last quote + half-spread, official taker fee), same sampling")
+    out("   early/late = first 60% / last 40% of windows in time; nothing is tuned on either half")
+    for name, rows in sets.items():
+        starts = sorted({r["start"] for r in rows})
+        if not starts:
+            continue
+        cut = starts[int(len(starts) * 0.6)]
+        out(f"\n   [{name}]")
+        out(f"   {'bucket':14s} {'h':>4s} {'thr':>4s} {'windows':>7s} {'trades':>6s} {'avg pnl/sh (SE)':>18s} {'early':>8s} {'late':>8s}")
+        for label, lo, hi in BUCKETS:
+            sub = one_per_window(rows, lo, hi)
+            for h in sorted({0.0, args.half_spread}):
+                for thr in (0.0, 0.03, 0.06):
+                    res = [(r["start"], b[2]) for r in sub for b in [edge_pnl(r["fair"], r["p"], r["up"], h)] if b and b[1] >= thr]
+                    if len(res) < 20:
+                        continue
+                    mu, se = mean_se([x for _, x in res])
+                    e = [x for t, x in res if t < cut]; l = [x for t, x in res if t >= cut]
+                    out(f"   {label:14s} {h:4.2f} {thr:4.2f} {len(sub):7d} {len(res):6d} {mu:+9.4f} ({se:.4f}) "
+                        f"{(statistics.mean(e) if e else float('nan')):+8.4f} {(statistics.mean(l) if l else float('nan')):+8.4f}")
+    out("\n3 buckets x 2 spreads x 3 thresholds x 3 data sets = many looks: expect an occasional |t|~2 by chance alone. "
+        "Judge by consistency across buckets/halves, not by the best cell.\n"
+        "Caveats: the price history is the last quote/trade at ~1-minute cadence (unknown spread, no depth or queue); Coinbase "
+        "stands in for Chainlink spot. A positive 'Q' result is a reason to keep paper-trading, not proof you could capture it.")
+
+
 # ---------- self-test ----------
 
-def selftest():
+def _selftest():
     assert abs(norm_cdf(0) - 0.5) < 1e-12
     assert abs(fair_up(100, 100, 1e-4, 300) - 0.5) < 1e-9
     assert fair_up(101, 100, 1e-4, 300) > 0.9 and fair_up(99, 100, 1e-4, 300) < 0.1
@@ -1014,6 +1333,40 @@ def selftest():
         STALL_S = old_stall; FEEDS.pop("fake", None)
     assert len(calls) >= 2, f"feed was not reconnected after going silent (calls={len(calls)})"
     assert st.price is not None and len(st.hist_ts) >= 4        # samples from both connections arrived
+    # backtest helpers
+    side, edge, pnl = edge_pnl(0.60, 0.50, True, 0.0)                         # Up looks cheap: buy Up at 0.50
+    assert side == "up" and abs(edge - (0.60 - 0.50 - fee_per_share(0.50, 0.07, 1))) < 1e-12
+    assert abs(pnl - (1 - 0.50 - fee_per_share(0.50, 0.07, 1))) < 1e-12
+    side, _, pnl = edge_pnl(0.40, 0.50, True, 0.0)                            # Down looks cheap and loses
+    assert side == "down" and pnl < -0.5
+    assert abs(edge_pnl(0.5, 0.5, True, 0.01)[1] + 0.01 + fee_per_share(0.51, 0.07, 1)) < 1e-12
+    cl = [100.0 * (1 + 0.001 * ((-1) ** i)) for i in range(70)]
+    sg = sigma_from_closes(cl); assert sg is not None and abs(sg - 0.002 / math.sqrt(60)) < 5e-5
+    assert sigma_from_closes([None] * 70) is None
+    # summary: health alerts and stats from synthetic logs
+    import tempfile
+    global OUT
+    old_out, OUT = OUT, Path(tempfile.mkdtemp())
+    try:
+        T = 1_800_000_000 - 1_800_000_000 % WINDOW
+        now_ = T + 5 * WINDOW + 30
+        wl = [dict(window=T + i * WINDOW, outcome_proxy="up", outcome_official=("up" if i != 2 else "down")) for i in range(4)]
+        (OUT / "windows.jsonl").write_text("".join(json.dumps(r) + "\n" for r in wl))
+        tr = [dict(window=T, mode="taker", shares=10.0, fill=0.5, fee=0.1, pnl=4.4), dict(window=T + WINDOW, mode="taker", shares=10.0, fill=0.5, fee=0.1, pnl=-5.1),
+              dict(window=T, mode="maker", shares=0.0, fill=0.5, fee=0.0, pnl=0.0)]
+        (OUT / "trades.jsonl").write_text("".join(json.dumps(r) + "\n" for r in tr))
+        ev = [dict(t=now_ - 100, kind="feed_reconnect", stalled=True)] * 7 + [dict(t=now_ - 50, kind="clob_reconnect")]
+        (OUT / "events.jsonl").write_text("".join(json.dumps(r) + "\n" for r in ev))
+        text, al = build_summary(24, 40, 6, now=now_)
+        assert any("disagreed" in a for a in al) and any("feed reconnects" in a for a in al), al
+        assert not any("looks dead" in a for a in al)                          # last window ended 1.x windows ago
+        assert "3/4 agree" in text and "**taker**: 2 fills" in text and "maker: 1 orders, none filled" in text, text
+        text2, al2 = build_summary(24, 5, 6, now=now_ + 7200)                  # two hours later, nothing new
+        assert any("looks dead" in a for a in al2), al2
+        (OUT / "windows.jsonl").unlink(); text3, al3 = build_summary(24, 40, 6, now=now_)
+        assert any("no windows logged" in a for a in al3)
+    finally:
+        OUT = old_out
     # an order must not go live on an empty book (queue ahead would read 0 after a reconnect)
     ms3 = MakerSim(args, 0.01)
     books3 = {k: Book() for k in ("up", "down")}
@@ -1029,6 +1382,17 @@ def selftest():
     ms3.on_event(2.0, 798, "book", None, books3, fair, 1.0)
     assert o3.state == "live" and abs(o3.queue_ahead - 70) < 1e-9, (o3.state, o3.queue_ahead)   # queue read from the real book
     print("selftest OK")
+
+
+def selftest():
+    """Run the tests with OUT redirected, so they never touch real data/."""
+    import tempfile
+    global OUT
+    real, OUT = OUT, Path(tempfile.mkdtemp())
+    try:
+        _selftest()
+    finally:
+        OUT = real
 
 
 if __name__ == "__main__":
@@ -1057,11 +1421,24 @@ if __name__ == "__main__":
     m.add_argument("--bin", type=float, default=0.5, help="sampling bin, seconds")
     m.add_argument("--horizon", type=float, default=1.0, help="price-change horizon, seconds")
     m.add_argument("--max-lag", type=float, default=20, help="largest lag searched, seconds")
+    bt_ = sp.add_parser("backtest", help="model vs market forecast quality and taker P&L over many past windows")
+    bt_.add_argument("--days", type=int, default=7)
+    bt_.add_argument("--max-age", type=float, default=15, help="A-fresh: max quote age in seconds")
+    bt_.add_argument("--half-spread", type=float, default=0.01, help="assumed cost of crossing the spread, $/share")
+    sm = sp.add_parser("summary", help="health check + P&L digest for unattended runs (exit 2 if there are alerts)")
+    sm.add_argument("--hours", type=float, default=24)
+    sm.add_argument("--stale-min", type=float, default=40, help="alert if no window completed in this many minutes")
+    sm.add_argument("--max-reconnects", type=int, default=6, help="alert if more feed reconnects than this in the period")
+    sm.add_argument("--webhook", help="POST the summary to this URL (nothing is sent unless you pass it)")
+    sm.add_argument("--webhook-format", choices=("text", "slack", "discord"), default="text")
+    sm.add_argument("--only-alerts", action="store_true", help="with --webhook: post only when there are alerts")
     sp.add_parser("report"); sp.add_parser("selftest"); sp.add_parser("verify")
     a = ap.parse_args()
     if a.cmd == "selftest": selftest()
     elif a.cmd == "report": report(a)
     elif a.cmd == "verify": asyncio.run(verify(a))
+    elif a.cmd == "backtest": asyncio.run(backtest(a))
+    elif a.cmd == "summary": sys.exit(summary(a))
     else:
         try: asyncio.run(run(a) if a.cmd == "run" else measure(a))
         except KeyboardInterrupt: pass

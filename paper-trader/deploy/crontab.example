@@ -1,0 +1,6 @@
+# Daily digest at 08:00 and an hourly health check that only posts when something is wrong.
+# `summary` exits with code 2 when there are alerts, so cron mail / monitoring can use that too.
+# Nothing is sent anywhere unless you pass --webhook.
+PT=/opt/paper-trader/paper_trader.py
+0 8 * * *   python3 $PT summary --hours 24 --webhook https://example.invalid/hook --webhook-format slack
+17 * * * *  python3 $PT summary --hours 3 --only-alerts --webhook https://example.invalid/hook --webhook-format slack
