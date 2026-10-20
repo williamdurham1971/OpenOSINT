@@ -20,6 +20,7 @@ CLOB_REST = "https://clob.polymarket.com"
 CLOB_WS = "wss://ws-subscriptions-clob.polymarket.com/ws/market"
 RTDS_WS = "wss://ws-live-data.polymarket.com"
 WINDOW = 900
+STALL_S = 20.0         # reconnect a price feed that delivers nothing for this long (a half-open socket stays silent for minutes)
 JOIN_LATE = 20.0       # still join a window that began up to this many seconds ago
 OUT = Path(__file__).parent / "data"
 
@@ -244,15 +245,21 @@ async def run_feed(name, state, lag_sink=None, log_path=None):
     async with aiohttp.ClientSession() as s:
         while True:
             t_conn = time.time()
+            it = FEEDS[name](s).__aiter__()
             try:
-                async for ts, px in FEEDS[name](s):
+                while True:
+                    ts, px = await asyncio.wait_for(it.__anext__(), STALL_S)    # raises TimeoutError on a silent socket
                     if state.push(ts, px) and logf:
                         logf.write(f"{ts:.3f},{px}\n")
                     backoff = 1
                     if lag_sink is not None and ts > t_conn:
                         lag_sink.append(time.time() - ts)
+            except StopAsyncIteration:
+                pass
             except Exception as e:
-                print(f"[feed:{name}] {type(e).__name__}: {e}; retry in {backoff}s", file=sys.stderr)
+                print(f"[feed:{name}] {type(e).__name__}: {str(e) or 'no data for %gs' % STALL_S}; reconnecting in {backoff}s", file=sys.stderr)
+            finally:
+                await it.aclose()
             await asyncio.sleep(backoff); backoff = min(backoff * 2, 30)
 
 
@@ -541,6 +548,11 @@ async def settle(state, session, start, records, strike_proxy):
     end = start + WINDOW
     await asyncio.sleep(max(0, end + 2 - time.time()))
     final_proxy = boundary_value(state, end)
+    for _ in range(20):                                  # feed delivery lags ~1.5s; give it a few seconds
+        if final_proxy is not None:
+            break
+        await asyncio.sleep(1)
+        final_proxy = boundary_value(state, end)
     proxy = None
     if final_proxy is not None and strike_proxy is not None:
         proxy = "up" if final_proxy >= strike_proxy else "down"
@@ -978,6 +990,30 @@ def selftest():
     assert ser.last_before(1200) == 1199 and ser.first_at(1200) == 1200
     assert CANDIDATES["mean [B-60, B)"](ser, 1200) == statistics.mean(range(1140, 1200))
     assert CANDIDATES["mean [B, B+60)"](ser, 1290) is None                       # no coverage after the log ends
+    # watchdog: a feed that goes silent after 3 samples must be re-created
+    global STALL_S
+    calls = []
+
+    async def silent_feed(session):
+        calls.append(time.time())
+        for i in range(3):
+            yield len(calls) * 100.0 + i, 100.0 + i
+        await asyncio.sleep(3600)                        # half-open socket: no data, no error
+
+    async def watch():
+        FEEDS["fake"] = silent_feed
+        st = State()
+        t = asyncio.create_task(run_feed("fake", st))
+        await asyncio.sleep(2.6)
+        t.cancel()
+        return st
+    old_stall, STALL_S = STALL_S, 0.4
+    try:
+        st = asyncio.run(watch())
+    finally:
+        STALL_S = old_stall; FEEDS.pop("fake", None)
+    assert len(calls) >= 2, f"feed was not reconnected after going silent (calls={len(calls)})"
+    assert st.price is not None and len(st.hist_ts) >= 4        # samples from both connections arrived
     print("selftest OK")
 
 
