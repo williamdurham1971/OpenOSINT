@@ -306,11 +306,13 @@ def apply_book_msg(books, by_tok, m):
     return None, None
 
 
-async def stream_market(tokens, end, handler):
+async def stream_market(tokens, end, handler, gap_log=None):
     """Stream the Up/Down books until unix time `end`, reconnecting on errors.
-    handler(kind, trade, msg, books, recv_time) is called synchronously per message."""
+    handler(kind, trade, msg, books, recv_time) is called synchronously per message.
+    gap_log (optional list) receives (disconnect_time, first_message_after_reconnect or None) per blind gap."""
     by_tok = {v: k for k, v in tokens.items()}
     books = {k: Book() for k in tokens}
+    blind = {"since": None}
     while time.time() < end:
         for b in books.values():
             b.snapshot([], [])
@@ -331,6 +333,10 @@ async def stream_market(tokens, end, handler):
                         except ValueError:
                             continue
                         now = time.time()
+                        if blind["since"] is not None:
+                            if gap_log is not None:
+                                gap_log[-1] = (blind["since"], now)
+                            blind["since"] = None
                         for m in (msgs if isinstance(msgs, list) else [msgs]):
                             kind, tr = apply_book_msg(books, by_tok, m)
                             if kind:
@@ -345,6 +351,10 @@ async def stream_market(tokens, end, handler):
             break                                    # window over
         except Exception as e:
             print(f"[clob-ws] {type(e).__name__}: {e}; reconnecting", file=sys.stderr)
+            if blind["since"] is None:
+                blind["since"] = time.time()
+                if gap_log is not None:
+                    gap_log.append((blind["since"], None))
             log_event("clob_reconnect", error=type(e).__name__, detail=str(e)[:120])
         await asyncio.sleep(0.5)
     return books
@@ -517,12 +527,20 @@ async def trade_window(args, state, session, start, records, tickcsv):
                     asyncio.create_task(taker_fill(books, side, fair[side], ask, edge, tau))
                     break
 
-    await stream_market(tokens, end, handler)
+    gap_log = []
+    await stream_market(tokens, end, handler, gap_log)
+    gap_s = sum((b if b is not None else end) - a for a, b in gap_log)
+    for r in records:
+        r["reconnects"], r["gap_s"] = len(gap_log), round(gap_s, 1)
+    if gap_log:
+        print(f"[{start}] websocket dropped {len(gap_log)}x, {gap_s:.1f}s blind; this window's fills are flagged")
     if maker:
         for o in maker.orders:
             if o.state != "done":
                 o.state, o.reason = "done", "window_end"
         recs = maker.records(start, strike)
+        for r in recs:
+            r["reconnects"], r["gap_s"] = len(gap_log), round(gap_s, 1)
         records.extend(recs)
         for r in recs:
             print(f"[{start}] MAKER {r['side']} {r['shares']:.0f}/{r['size']:.0f} @ {r['fill']:.3f} "
@@ -786,7 +804,7 @@ def summarize(label, rows):
     print(f"[{label}] filled={len(filled)}  hit={wins/len(filled):.1%}  net=${sum(pnl):+.2f}  ROI={sum(pnl)/cost:+.1%}  "
           f"avg edge claimed={statistics.mean(r['edge'] for r in filled):+.3f}  "
           f"realised/share={sum(pnl)/sum(r['shares'] for r in filled):+.3f}  fees=${sum(r['fee'] for r in filled):.2f}")
-    if label == "maker":
+    if label.startswith("maker"):
         print(f"        orders={len(rows)}  fill-rate={len(filled)/len(rows):.0%}  "
               f"avg filled fraction={statistics.mean(r['shares']/r['size'] for r in filled):.0%}  "
               f"avg queue ahead at post={statistics.mean(r['queue_init'] for r in rows):.0f} sh")
@@ -803,6 +821,15 @@ def report(_):
         sub = [r for r in rows if r["mode"] == mode]
         if sub:
             summarize(mode, sub)
+    flagged = [r for r in rows if r.get("reconnects")]
+    if flagged:
+        clean = [r for r in rows if not r.get("reconnects")]
+        print(f"\nwebsocket gaps: {len({r['window'] for r in flagged})} window(s) had a drop ({sum(r.get('gap_s', 0) for r in flagged) / max(1, len({r['window'] for r in flagged})):.1f}s blind on average); "
+              "queue credit and fills in those windows are unreliable. Excluding them:")
+        for mode in ("taker", "maker"):
+            sub = [r for r in clean if r["mode"] == mode]
+            if sub:
+                summarize(mode + " (clean windows)", sub)
     filled = [r for r in rows if r["shares"] > 0]
     if filled:
         print("calibration (model fair vs. how often that side really won):")
@@ -1367,6 +1394,37 @@ def _selftest():
         assert any("no windows logged" in a for a in al3)
     finally:
         OUT = old_out
+    # reconnect path against a local server that drops the first connection with 1013 ("slow consumer")
+    global CLOB_WS
+    async def reconnect_case():
+        conns, seen, gaps = [], [], []
+
+        async def server_handler(ws):
+            conns.append(time.time())
+            await ws.send(json.dumps({"event_type": "book", "asset_id": "tokUP",
+                                      "bids": [{"price": "0.4", "size": "10"}], "asks": [{"price": "0.5", "size": "10"}]}))
+            if len(conns) == 1:
+                await asyncio.sleep(0.3)
+                await ws.close(code=1013, reason="slow consumer: send buffer full")
+            else:
+                await ws.send(json.dumps({"event_type": "last_trade_price", "asset_id": "tokUP", "price": "0.5", "size": "3", "side": "SELL"}))
+                await ws.wait_closed()                    # returns when the client disconnects, so the server can shut down
+        async with websockets.serve(server_handler, "127.0.0.1", 0) as srv:
+            global CLOB_WS
+            CLOB_WS = f"ws://127.0.0.1:{srv.sockets[0].getsockname()[1]}"
+            books = await stream_market({"up": "tokUP", "down": "tokDN"}, time.time() + 2.5,
+                                        lambda kind, tr, m, b, now: seen.append((kind, tr)), gaps)
+        return conns, seen, gaps, books
+    real_ws = CLOB_WS
+    try:
+        conns, seen, gaps, books = asyncio.run(reconnect_case())
+    finally:
+        CLOB_WS = real_ws
+    assert len(conns) == 2, f"expected exactly one reconnect, got {len(conns)} connections"
+    assert [k for k, _ in seen] == ["book", "book", "trade"], seen
+    assert len(gaps) == 1 and gaps[0][1] is not None and 0.4 < gaps[0][1] - gaps[0][0] < 2.5, gaps      # ~0.5s pause + connect
+    assert books["up"].best_ask() == 0.5 and books["up"].best_bid() == 0.4
+    assert any(json.loads(l)["kind"] == "clob_reconnect" for l in open(OUT / "events.jsonl")), "reconnect was not logged"
     # an order must not go live on an empty book (queue ahead would read 0 after a reconnect)
     ms3 = MakerSim(args, 0.01)
     books3 = {k: Book() for k in ("up", "down")}
