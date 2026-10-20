@@ -1,0 +1,69 @@
+68380 hourly candles 2019-01-01 .. 2026-10-20; 6 gaps (16 missing bars)
+
+=== 1h bars: 68380 bars 2019-01-01 .. 2026-10-20; train 2019-01-01..2023-09-07, test 2023-09-07..2026-10-20; fee 0.050% + slip 0.020% per side, delay 0 bar(s)
+strategy                              tr/yr  expo     CAGR  maxDD Sharpe  train   test
+ema_trend(fast=12,slow=48)              107   53%   +24.4%    62%   0.74   0.96   0.28
+ema_trend(fast=24,slow=96)               53   52%   +35.3%    64%   0.94   1.05   0.74
+ema_trend(fast=48,slow=168)              30   53%   +29.4%    67%   0.83   0.92   0.69
+ema_trend(fast=72,slow=240)              19   54%   +42.7%    54%   1.07   1.10   1.06
+ema_trend(fast=24,slow=200)              36   53%   +33.5%    68%   0.91   1.01   0.73
+ema_trend(fast=100,slow=400)             12   54%   +47.2%    56%   1.14   1.20   1.07
+donchian(n=24)                          106   40%    +1.0%    77%   0.21   0.36  -0.12
+donchian(n=48)                           58   40%   +19.4%    55%   0.67   0.72   0.59
+donchian(n=96)                           30   41%   +30.4%    54%   0.90   1.05   0.63
+donchian(n=168)                          17   42%   +43.8%    45%   1.18   1.24   1.10
+donchian(n=336)                           9   43%   +38.5%    54%   1.05   1.17   0.85
+donchian(n=720)                           5   45%   +36.0%    56%   0.98   1.17   0.63
+rsi_dip(lo=25,trend_n=200)                3    0%    -1.9%    15%  -0.62  -0.66  -0.54
+rsi_dip(lo=25,trend_n=600)                9    2%    -3.1%    33%  -0.22  -0.10  -0.62
+rsi_dip(lo=30,trend_n=200)               12    1%    -3.2%    38%  -0.42  -0.50  -0.30
+rsi_dip(lo=30,trend_n=600)               23    6%    -2.8%    39%  -0.10  -0.01  -0.34
+rsi_dip(lo=35,trend_n=200)               28    4%    -2.9%    43%  -0.19  -0.27   0.00
+rsi_dip(lo=35,trend_n=600)               42    9%    -5.0%    53%  -0.18  -0.14  -0.28
+tsmom(lookback=24)                      447   52%   -30.4%    98%  -0.67  -0.43  -1.23
+tsmom(lookback=72)                      226   53%   +20.5%    69%   0.66   0.97   0.02
+tsmom(lookback=168)                     151   53%   +18.2%    73%   0.61   0.75   0.34
+tsmom(lookback=336)                     103   55%   +38.0%    59%   0.98   1.09   0.79
+tsmom(lookback=720)                      60   57%   +57.6%    50%   1.27   1.53   0.75
+tsmom(lookback=1440)                     28   56%   +57.9%    51%   1.26   1.34   1.16
+BUY & HOLD                                0  100%   +48.9%    77%   0.96   0.95   1.04
+
+family-wise test (best of 24): best is tsmom(lookback=720) with Sharpe 1.27; random timing with the same exposure gets a best-of-24 of 0.87 (median), 1.22 (95th pct)  ->  p = 0.065 (Bonferroni x2)
+selected on TRAIN only: tsmom(lookback=720) (train Sharpe 1.53). On TEST: CAGR   +21.6%, maxDD 47%, Sharpe 0.75, 236 trades, win 25%, avg trade +0.41%; buy&hold on TEST: CAGR   +45.0%, maxDD 54%, Sharpe 1.04. Single-strategy random-timing p = 0.214
+
+=== 4h bars: 17090 bars 2019-01-01 .. 2026-10-20; train 2019-01-01..2023-09-07, test 2023-09-07..2026-10-20; fee 0.050% + slip 0.020% per side, delay 0 bar(s)
+strategy                              tr/yr  expo     CAGR  maxDD Sharpe  train   test
+ema_trend(fast=12,slow=48)               28   53%   +27.9%    70%   0.81   0.79   0.90
+ema_trend(fast=24,slow=96)               12   54%   +48.9%    58%   1.17   1.21   1.14
+ema_trend(fast=48,slow=168)               6   54%   +57.4%    63%   1.28   1.28   1.35
+ema_trend(fast=72,slow=240)               4   54%   +49.1%    49%   1.15   1.25   1.00
+ema_trend(fast=24,slow=200)               8   54%   +54.8%    53%   1.25   1.27   1.28
+ema_trend(fast=100,slow=400)              3   57%   +47.4%    48%   1.11   1.22   0.92
+donchian(n=24)                           27   41%   +29.6%    57%   0.90   1.09   0.52
+donchian(n=48)                           14   43%   +36.5%    55%   1.04   1.04   1.11
+donchian(n=96)                            7   43%   +41.6%    45%   1.12   1.23   0.95
+donchian(n=168)                           4   45%   +46.0%    46%   1.15   1.38   0.68
+donchian(n=336)                           2   45%   +48.8%    41%   1.19   1.40   0.80
+donchian(n=720)                           1   44%   +26.5%    61%   0.79   0.82   0.77
+rsi_dip(lo=25,trend_n=200)                1    0%    -0.8%    10%  -0.28  -0.25  -0.36
+rsi_dip(lo=25,trend_n=600)                3    3%    +0.8%    33%   0.13  -0.20   0.84
+rsi_dip(lo=30,trend_n=200)                3    2%    +2.3%    18%   0.27   0.19   0.49
+rsi_dip(lo=30,trend_n=600)                7    6%    +7.6%    39%   0.52   0.27   1.08
+rsi_dip(lo=35,trend_n=200)                9    5%    +1.3%    26%   0.16  -0.02   0.57
+rsi_dip(lo=35,trend_n=600)               12   11%    +3.8%    35%   0.28   0.19   0.50
+tsmom(lookback=24)                      106   53%   +15.5%    64%   0.56   0.70   0.27
+tsmom(lookback=72)                       54   55%   +32.6%    63%   0.88   1.11   0.42
+tsmom(lookback=168)                      36   56%   +56.4%    56%   1.25   1.54   0.68
+tsmom(lookback=336)                      19   57%   +55.6%    50%   1.23   1.28   1.20
+tsmom(lookback=720)                      13   54%   +44.3%    50%   1.04   1.16   0.84
+tsmom(lookback=1440)                      6   65%   +46.4%    54%   1.05   1.01   1.14
+BUY & HOLD                                0  100%   +48.9%    77%   0.97   0.95   1.05
+
+family-wise test (best of 24): best is ema_trend(fast=48,slow=168) with Sharpe 1.28; random timing with the same exposure gets a best-of-24 of 1.01 (median), 1.48 (95th pct)  ->  p = 0.329 (Bonferroni x2)
+selected on TRAIN only: tsmom(lookback=168) (train Sharpe 1.54). On TEST: CAGR   +18.3%, maxDD 45%, Sharpe 0.68, 136 trades, win 32%, avg trade +0.67%; buy&hold on TEST: CAGR   +45.3%, maxDD 53%, Sharpe 1.05. Single-strategy random-timing p = 0.392
+
+--- stress test of each timeframe's TRAIN-selected strategy: costs x3, and one extra bar of execution delay ---
+1h tsmom(lookback=720)                costs x3     : test CAGR    -1.6%, Sharpe 0.12, maxDD 65%
+1h tsmom(lookback=720)                delay +1 bar : test CAGR   +33.1%, Sharpe 1.02, maxDD 35%
+4h tsmom(lookback=168)                costs x3     : test CAGR    +4.7%, Sharpe 0.30, maxDD 56%
+4h tsmom(lookback=168)                delay +1 bar : test CAGR   +14.9%, Sharpe 0.59, maxDD 44%

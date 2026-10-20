@@ -1,0 +1,16 @@
+
+=== cross-asset test of ema_trend(fast=24,slow=200) on 4h bars (frozen from BTC; fee+slip 0.07% per side) ===
+symbol      bars       from  tr/yr  expo     CAGR  B&H CAGR  maxDD  B&H DD Sharpe   B&H null med null95      p
+BTCUSDT    17097 2019-01-01    8.1   54%   +54.8%   +48.9%    53%     77%   1.25  0.97     0.69   1.05  0.010
+ETHUSDT    17098 2019-01-01    7.4   53%   +54.1%   +45.4%    63%     81%   1.06  0.87     0.60   1.00  0.032
+SOLUSDT    13772 2020-07-08    8.3   49%  +110.5%  +117.1%    73%     97%   1.29  1.24     0.82   1.30  0.057
+BNBUSDT    16705 2019-03-07    7.6   54%   +85.9%   +66.7%    44%     78%   1.36  1.05     0.74   1.18  0.012
+XRPUSDT    16333 2019-05-08    8.6   44%   +15.7%   +22.0%    77%     85%   0.55  0.68     0.43   0.89  0.357
+DOGEUSDT   17097 2019-01-01    7.8   44%   +88.9%   +57.7%    83%     93%   1.08  0.94     0.61   0.97  0.022
+ADAUSDT    16028 2019-06-28    8.3   41%   +34.5%   +13.8%    83%     95%   0.78  0.62     0.35   0.89  0.097
+LTCUSDT    17097 2019-01-01    9.1   48%   +13.7%    +9.5%    88%     90%   0.52  0.54     0.35   0.76  0.217
+LINKUSDT   16113 2019-06-14    8.8   50%   +26.1%   +32.0%    82%     90%   0.68  0.79     0.52   0.97  0.272
+TRXUSDT    16963 2019-01-23   10.1   58%   +35.0%   +38.4%    62%     79%   0.79  0.81     0.56   0.90  0.160
+
+summary over 10 assets: Sharpe above the random-timing 95th pct in 4; lower max drawdown than buy&hold in 10; higher CAGR than buy&hold in 6; median p = 0.097; mean (Sharpe - random-timing median) = +0.37
+assets are correlated (crypto moves together) and survivors only, so read this as a sanity check, not as many independent proofs.
