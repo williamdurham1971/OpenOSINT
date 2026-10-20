@@ -373,7 +373,7 @@ class MakerSim:
 
     def _advance(self, o, now, kind, tr, books, fair):
         b = books[o.side]
-        if o.state == "pending" and now >= o.active_at:
+        if o.state == "pending" and now >= o.active_at and (b.bids or b.asks):   # empty book = after a reconnect, queue unknown
             o.state = "live"
             o.queue_ahead = o.queue_init = b.bids.get(o.price, 0.0)
         if o.state == "live" and o.filled < o.size:
@@ -1014,6 +1014,20 @@ def selftest():
         STALL_S = old_stall; FEEDS.pop("fake", None)
     assert len(calls) >= 2, f"feed was not reconnected after going silent (calls={len(calls)})"
     assert st.price is not None and len(st.hist_ts) >= 4        # samples from both connections arrived
+    # an order must not go live on an empty book (queue ahead would read 0 after a reconnect)
+    ms3 = MakerSim(args, 0.01)
+    books3 = {k: Book() for k in ("up", "down")}
+    books3["up"].snapshot([{"price": "0.40", "size": "50"}], [{"price": "0.50", "size": "50"}])
+    books3["down"].snapshot([{"price": "0.50", "size": "50"}], [{"price": "0.60", "size": "50"}])
+    ms3.on_event(0.0, 800, "book", None, books3, fair, 1.0)
+    o3 = ms3.cur; assert o3 and o3.side == "up"
+    for b_ in books3.values():
+        b_.snapshot([], [])                                                   # reconnect wipes the books
+    ms3.on_event(1.0, 799, "book", None, books3, fair, 1.0)
+    assert o3.state == "pending" and o3.filled == 0
+    books3["up"].snapshot([{"price": "0.41", "size": "70"}], [{"price": "0.50", "size": "50"}])
+    ms3.on_event(2.0, 798, "book", None, books3, fair, 1.0)
+    assert o3.state == "live" and abs(o3.queue_ahead - 70) < 1e-9, (o3.state, o3.queue_ahead)   # queue read from the real book
     print("selftest OK")
 
 

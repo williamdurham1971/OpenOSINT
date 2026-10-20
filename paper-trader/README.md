@@ -42,14 +42,21 @@ and it is cancelled (after latency) when the edge disappears. Maker fee is assum
 `report` shows fill rate, average queue ahead and PnL per mode. Adverse selection shows up as a
 good fill rate with poor realised PnL.
 
+## Verified against Polymarket
+- **Boundary price** (strike and final) = mean of the Chainlink BTC/USD feed over the 60s before the boundary.
+  `python paper_trader.py verify` compares it with Gamma's official `priceToBeat`/`finalPrice` (these appear ~20 min
+  after a window closes; the strike of a window equals the final of the previous one). On 3 boundaries from this
+  repo's own feed the error was std 0.02 USD vs 1.4-11 USD for the alternatives; on 24 boundaries using Kraken ticks
+  it was std 3.7 USD vs 15-31 USD. Windows are settled with Gamma's resolved outcome; our own estimate is kept for comparison.
+- **Taker fee** = `C * 0.07 * p * (1-p)` (docs and the market's `feeSchedule`: rate 0.07, exponent 1, takerOnly): 3.5% of
+  notional at 50c, 1.4% at 80c. Makers pay nothing; the 20% maker rebate program is ignored (conservative).
+
 ## Caveats you must verify
-- Settlement is Chainlink BTC/USD 60s TWAP (read from the market description), not Binance.
-  `--feed chainlink` uses Polymarket's own relay of that stream; `binance`/`coinbase` are proxies.
-- The fee formula (`--fee-rate 0.25 --fee-exp 2`, ~1.56% peak) is from third-party sources.
-  Check Polymarket's current fee docs. Fees and rules change.
-- The strike is approximated by the first feed sample at the window start.
+- Feeds can go silent without an error; `run_feed` reconnects after `STALL_S` seconds without data.
+- The CLOB websocket sometimes drops us as a "slow consumer" (about 2 per 3 windows here); books are rebuilt from the
+  next snapshot and queue positions are only read from a real book. Trades during the gap are not credited.
+- Maker fills depend on the simulated queue model; one live fill came right after a reconnect, so treat very
+  small samples with suspicion.
 - Check that Polymarket is legal and available to you in your jurisdiction.
-- The settlement proxy (mean of the feed over the last 60s) is unverified against Polymarket's
-  actual resolutions; compare `outcome` in trades.jsonl with the resolved market before trusting PnL.
-- A positive paper result is necessary, not sufficient: real fills, queue position and
-  competitors are worse than any simulation.
+- A positive paper result is necessary, not sufficient: real fills, queue position and competitors are worse than any
+  simulation, and a few dozen windows say nothing about edge.
