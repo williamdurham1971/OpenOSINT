@@ -22,10 +22,11 @@ class PaperBroker:
     def __init__(self, fee=0.0005, slip=0.0002):
         self.fee, self.slip = fee, slip
 
-    def buy(self, state, price):
+    def buy(self, state, price, frac=1.0):
         px = price * (1 + self.slip)
-        qty = state["cash"] * (1 - self.fee) / px
-        spent, state["cash"], state["btc"] = state["cash"], 0.0, state["btc"] + qty
+        spent = state["cash"] * frac
+        qty = spent * (1 - self.fee) / px
+        state["cash"], state["btc"] = state["cash"] - spent, state["btc"] + qty
         return dict(side="BUY", price=px, qty=qty, usdt=spent)
 
     def sell(self, state, price):
@@ -43,9 +44,9 @@ class LiveBroker:
     def __init__(self, client, max_usdt, lot=0.000001):
         self.c, self.max_usdt, self.lot = client, max_usdt, lot
 
-    def buy(self, state, price):
+    def buy(self, state, price, frac=1.0):
         bal = self.c.balances()
-        usdt = min(bal.get("USDT", 0.0), self.max_usdt, state["cash"])
+        usdt = min(bal.get("USDT", 0.0), self.max_usdt, state["cash"] * frac)
         if usdt < self.MIN_USDT:
             raise RuntimeError(f"not enough USDT to buy: {usdt:.2f} (< {self.MIN_USDT})")
         before = bal.get("BTC", 0.0)
@@ -75,10 +76,13 @@ class LiveBroker:
 # ---------------- the bot ----------------
 
 class Bot:
+    """One strategy on one symbol. `target_vol` (e.g. 0.60) sizes each buy by target / realised annual volatility
+    (last 30 days of bars, capped at 1x); the unspent part stays in USDT. None = invest all cash (the default)."""
     def __init__(self, strategy, interval, broker, name="paper", capital=1000.0, max_drawdown=None, enter_on_start=True,
-                 state_dir=STATE_DIR, log=print):
+                 state_dir=STATE_DIR, log=print, symbol=mexc.SYMBOL, target_vol=None):
         self.fam, self.params = strategy
         self.interval, self.broker, self.name = interval, broker, name
+        self.symbol, self.target_vol = symbol, target_vol
         self.max_dd, self.enter_on_start, self.log = max_drawdown, enter_on_start, log
         self.dir = Path(state_dir); self.dir.mkdir(exist_ok=True, parents=True)
         self.sp = self.dir / f"{name}_state.json"
@@ -133,7 +137,20 @@ class Bot:
         self._append("trades.csv", ["time_utc", "bar_open_utc", "side", "price", "qty", "usdt", "equity_after", "halted"],
                      [now_s(), time.strftime("%Y-%m-%d %H:%M", time.gmtime(ts / 1000)), fill["side"], f"{fill['price']:.2f}",
                       f"{fill['qty']:.6f}", f"{fill['usdt']:.2f}", f"{eq:.2f}", self.state["halted"]])
-        self.log(f"[{now_s()}] {fill['side']} {fill['qty']:.6f} BTC @ {fill['price']:.2f} (equity {eq:.2f})")
+        self.log(f"[{now_s()}] {fill['side']} {fill['qty']:.6f} {self.symbol.removesuffix('USDT')} @ {fill['price']:.2f} (equity {eq:.2f})")
+
+    def size(self, rows):
+        """Fraction of cash to spend on a buy: 1.0, or target_vol / realised volatility (capped at 1) when sizing by risk."""
+        if self.target_vol is None:
+            return 1.0
+        per_day = 86400 // mexc.TF_SECONDS[self.interval]
+        c = [r[4] for r in rows[-(30 * per_day + 1):]]
+        rets = [c[i] / c[i - 1] - 1 for i in range(1, len(c))]
+        if len(rets) < 10 * per_day:
+            return 1.0
+        mu = sum(rets) / len(rets)
+        vol = math.sqrt(sum((x - mu) ** 2 for x in rets) / (len(rets) - 1) * per_day * 365)
+        return min(1.0, self.target_vol / vol) if vol > 0 else 1.0
 
     def equity(self, price):
         return self.state["cash"] + self.state["btc"] * price
@@ -170,7 +187,7 @@ class Bot:
                 want = 0
         action = None
         if want == 1 and self.position() == 0:
-            action = self.broker.buy(st, close)
+            action = self.broker.buy(st, close, self.size(rows))
         elif want == 0 and self.position() == 1:
             action = self.broker.sell(st, close)
         eq = self.equity(close)
@@ -210,13 +227,13 @@ class Bot:
                 f"{time.strftime('%Y-%m-%d %H:%M', time.gmtime(st['last_bar']/1000)) if st['last_bar'] else 'none'}  (started {st['started']} UTC)")
 
 
-def recent_closed(interval, n=S.WARMUP, now_ms=None):
+def recent_closed(interval, symbol=mexc.SYMBOL, n=S.WARMUP, now_ms=None):
     """The latest n CLOSED candles from MEXC (the still-forming candle is dropped)."""
     step = mexc.TF_SECONDS[interval] * 1000
     now_ms = now_ms or int(time.time() * 1000)
     end = now_ms
     start = now_ms - (n + 3) * step
-    rows = mexc.klines_range(start, end, interval, pause=0.1)
+    rows = mexc.klines_range(start, end, interval, symbol=symbol, pause=0.1)
     return [r for r in rows if r[0] + step <= now_ms][-n:]
 
 
@@ -240,7 +257,7 @@ def run_forever(bot, poll_delay=8, once=False, fetch=recent_closed, sleep=time.s
 
 
 def run_lab(bots, poll_delay=8, once=False, fetch=recent_closed, sleep=time.sleep, clock=time.time):
-    """Several paper bots in one process; candles are fetched once per interval per cycle."""
+    """Several paper bots in one process; candles are fetched once per (symbol, interval) per cycle."""
     for b in bots:
         b.log(f"[{now_s()}] {b.status()}")
     step = min(b.step for b in bots) / 1000
@@ -248,10 +265,11 @@ def run_lab(bots, poll_delay=8, once=False, fetch=recent_closed, sleep=time.slee
         cache = {}
         for b in bots:
             try:
-                if b.interval not in cache:
-                    cache[b.interval] = fetch(b.interval)
+                key = (b.symbol, b.interval)
+                if key not in cache:
+                    cache[key] = fetch(b.interval, b.symbol)
                 res = None
-                for res in b.catch_up(cache[b.interval]):
+                for res in b.catch_up(cache[key]):
                     pass
                 if res:
                     b.log(f"[{now_s()}] {b.name}: bar {time.strftime('%Y-%m-%d %H:%M', time.gmtime(res['bar']/1000))} "

@@ -258,9 +258,27 @@ def t_lab_runs_several_bots():
     with tempfile.TemporaryDirectory() as d:
         bots = [B.Bot(("tsmom", dict(lookback=24)), "4h", B.PaperBroker(), name="x", state_dir=d, log=lambda *_: None),
                 B.Bot(("donchian", dict(n=24)), "60m", B.PaperBroker(), name="y", state_dir=d, log=lambda *_: None)]
+        bots.append(B.Bot(("tsmom", dict(lookback=24)), "4h", B.PaperBroker(), name="z", state_dir=d, log=lambda *_: None, symbol="ETHUSDT"))
         calls = []
-        B.run_lab(bots, once=True, fetch=lambda iv: calls.append(iv) or rows)
-        assert sorted(calls) == ["4h", "60m"] and all(b.state["last_bar"] == rows[-1][0] for b in bots)
+        B.run_lab(bots, once=True, fetch=lambda iv, sym: calls.append((sym, iv)) or rows)
+        assert sorted(calls) == [("BTCUSDT", "4h"), ("BTCUSDT", "60m"), ("ETHUSDT", "4h")], "one fetch per (symbol, interval)"
+        assert all(b.state["last_bar"] == rows[-1][0] for b in bots)
+
+
+def t_vol_sizing():
+    calm, wild = walk(1600, seed=5, drift=0.003, vol=0.002), walk(1600, seed=5, drift=0.003, vol=0.03)
+    with tempfile.TemporaryDirectory() as d:
+        mk = lambda nm, tv: B.Bot(("tsmom", dict(lookback=24)), "4h", B.PaperBroker(0, 0), name=nm, capital=100.0, state_dir=d,
+                                  log=lambda *_: None, target_vol=tv)
+        assert mk("n", None).size(wild) == 1.0, "no target: spend all cash"
+        assert mk("c", 0.6).size(calm) == 1.0, "calm coin: capped at 1x, never levered"
+        w = mk("w", 0.6)
+        f = w.size(wild)
+        ann = 0.03 * math.sqrt(6 * 365)
+        assert 0 < f < 1 and abs(f - 0.6 / ann) / (0.6 / ann) < 0.15, f"wild coin: ~target/vol, got {f:.3f} vs {0.6/ann:.3f}"
+        assert w.on_bar(wild[:1500])["position"] == 1
+        assert abs(w.state["cash"] - 100.0 * (1 - w.size(wild[:1500]))) < 1e-9 and w.state["btc"] > 0, "unspent part stays in cash"
+        assert abs(w.equity(wild[1499][4]) - 100.0) < 1e-6, "buying at the close changes no equity without costs"
 
 
 def t_catch_up_equals_bar_by_bar():

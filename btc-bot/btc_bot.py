@@ -25,6 +25,16 @@ LAB = [  # name, strategy, interval: the slow baseline next to day-trading candi
     ("lab_wedge_1h", "pattern_fw:mult10=30,hold=72", "60m"),
     ("lab_symtri_1h", "pattern_symtri:mult10=50,hold=72", "60m"),     # bullish symmetrical-triangle breakout, the 2-year standout
 ]
+# The 4h trend filter on the 10 cross-asset coins: one sleeve per coin with an equal share of the capital, each buy sized
+# by 60% / the coin's realised volatility. Reported as one bot; ~60 trades a year instead of ~8, so the forward test says
+# something within months. The coin list is survivors picked in 2026, so its backtest is the optimistic case.
+MULTI_NAME, MULTI_SPEC, MULTI_IV, MULTI_VOL = "lab_multi10_4h", DEFAULT, "4h", 0.60
+MULTI_SYMBOLS = ["BTCUSDT", "ETHUSDT", "SOLUSDT", "BNBUSDT", "XRPUSDT", "DOGEUSDT", "ADAUSDT", "LTCUSDT", "LINKUSDT", "TRXUSDT"]
+
+
+def multi_sleeves(capital, broker):
+    return [B.Bot(parse_strategy(MULTI_SPEC), MULTI_IV, broker, name=f"{MULTI_NAME}_{s.removesuffix('USDT')}",
+                  capital=capital / len(MULTI_SYMBOLS), symbol=s, target_vol=MULTI_VOL) for s in MULTI_SYMBOLS]
 
 
 def parse_strategy(spec):
@@ -110,6 +120,7 @@ def main():
         print(b.status())
     elif a.cmd == "lab":
         bots = [B.Bot(parse_strategy(spec), iv, B.PaperBroker(E.FEE, E.SLIP), name=nm, capital=a.capital) for nm, spec, iv in LAB]
+        bots += multi_sleeves(a.capital, B.PaperBroker(E.FEE, E.SLIP))
         B.run_lab(bots, once=a.once)
     elif a.cmd == "patterns":
         import pattern_study as PS
@@ -141,6 +152,23 @@ def main():
             nal = sum(1 for _ in open(alf)) - 1 if alf.exists() else 0
             print(f"{nm:18s} {spec:32s} {iv:>4s}  equity {float(last['equity']):9.2f}  buy&hold {float(last['buy_hold_equity']):9.2f}  "
                   f"position {'LONG' if last['position'] == '1' else 'FLAT'}  trades {ntr}  alerts {nal}  (last bar {last['bar_open_utc']})")
+        eq = bh = 0.0; ntr = nal = 0; held, bars = [], []
+        for s in MULTI_SYMBOLS:
+            nm, coin = f"{MULTI_NAME}_{s.removesuffix('USDT')}", s.removesuffix("USDT")
+            eqf, trf, alf = B.STATE_DIR / f"{nm}_equity.csv", B.STATE_DIR / f"{nm}_trades.csv", B.STATE_DIR / f"{nm}_alerts.csv"
+            if not eqf.exists():
+                continue
+            last = list(_csv.DictReader(open(eqf)))[-1]
+            eq += float(last["equity"]); bh += float(last["buy_hold_equity"]); bars.append(last["bar_open_utc"])
+            ntr += sum(1 for _ in open(trf)) - 1 if trf.exists() else 0
+            nal += sum(1 for _ in open(alf)) - 1 if alf.exists() else 0
+            if last["position"] == "1":
+                held.append(coin)
+        if bars:
+            print(f"{MULTI_NAME:18s} {'ema_trend 10 coins, vol-sized':32s} {MULTI_IV:>4s}  equity {eq:9.2f}  buy&hold {bh:9.2f}  "
+                  f"position LONG {len(held)}/{len(MULTI_SYMBOLS)} ({' '.join(held) or '-'})  trades {ntr}  alerts {nal}  (last bar {min(bars)})")
+        else:
+            print(f"{MULTI_NAME:18s} not started")
     elif a.cmd == "control":
         import json as _json
         B.STATE_DIR.mkdir(exist_ok=True)

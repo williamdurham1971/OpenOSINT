@@ -88,8 +88,13 @@ with hindsight from the full BTC history**; the only out-of-sample evidence is t
   53% drawdown historically, so a tight kill switch will trigger and changes the strategy; choose it as your risk limit.
 
 ## Paper lab, manual override, catalyst alerts
-`lab` runs four bots side by side with simulated money: the 4h trend filter, a fast 1h Donchian(24), all bullish patterns on
-1h and the falling wedge alone on 1h. They evaluate *forward*, on bars none of the research has seen. Each bot joins the
+`lab` runs bots side by side with simulated money: the 4h trend filter, a fast 1h Donchian(24), all bullish patterns on
+1h, the falling wedge alone on 1h, the bullish symmetrical triangle on 1h, and `lab_multi10_4h`: the 4h trend filter on
+the 10 cross-asset coins (BTC ETH SOL BNB XRP DOGE ADA LTC LINK TRX), one sleeve of capital/10 per coin, each buy sized
+by 60% / the coin's realised volatility over 30 days (capped at 1x, the rest stays in USDT). `lab-status` shows it as one
+line (summed equity, how many coins are held); each sleeve keeps its own `lab_multi10_4h_<COIN>_*` files. It exists to
+get ~60 trades a year instead of ~8, so the forward test can say something within months. The sleeves do not share cash
+(freqtrade's `EmaTrend4hMulti` does), so the two can differ slightly; the coin list is survivors picked in 2026. They evaluate *forward*, on bars none of the research has seen. Each bot joins the
 strategy's current state at start-up (e.g. a pattern trade opened in the last 72h). `lab-status` compares each with buy and hold.
 `control --name <bot> --mode pause|flat|auto` is the manual override for when you see a catalyst: `pause` keeps the current
 position and opens nothing new, `flat` sells and stays out, `auto` resumes. Every bot writes `<name>_alerts.csv` and logs
