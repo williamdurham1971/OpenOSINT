@@ -11,9 +11,10 @@ if [ "${COMMIT:-1}" = "1" ]; then
   git add -- "$BTC_BOT_STATE"
   if ! git diff --cached --quiet -- "$BTC_BOT_STATE"; then
     git commit -q -m "paper lab tick $(date -u +%Y-%m-%dT%H:%MZ)" -m "${COMMIT_TRAILER:-Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>}" -- "$BTC_BOT_STATE"
+    branch="$(git rev-parse --abbrev-ref HEAD)"
     for i in 1 2 3 4; do                                   # another tick may have pushed meanwhile
-      git push -q && break
-      git pull -q --rebase && continue
+      git push -q origin "HEAD:$branch" && break
+      git pull -q --rebase origin "$branch" && continue
       sleep $((2 ** i))
     done
   fi

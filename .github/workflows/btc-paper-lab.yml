@@ -1,0 +1,64 @@
+# Paper-trading lab for btc-bot (simulated money only; no API keys, no real orders).
+# Every hour it checks out the lab branch, processes every BTC/USDT bar that closed since the last tick
+# (btc-bot/deploy/paper_tick.sh) and commits btc-bot/paper_state/ back to that branch.
+#
+# GitHub only runs `schedule` from the copy of this file on the DEFAULT branch, so this file must be merged into
+# main for the hourly runs; the code and the state stay on LAB_BRANCH. The `push` trigger below only exists to
+# test the workflow on the lab branch itself (pushes made by this workflow's token do not re-trigger it).
+name: btc-paper-lab
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch: {}
+  push:
+    branches: [claude/great-mayer-bcwvfx]
+    paths: [".github/workflows/btc-paper-lab.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: btc-paper-lab
+  cancel-in-progress: false
+
+env:
+  LAB_BRANCH: claude/great-mayer-bcwvfx
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ env.LAB_BRANCH }}
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Can this runner reach MEXC?
+        run: |
+          curl -sS -m 20 -o /dev/null -w "MEXC ping HTTP %{http_code}\n" https://api.mexc.com/api/v3/ping
+          curl -sS -m 20 "https://api.mexc.com/api/v3/ticker/price?symbol=BTCUSDT"; echo
+
+      - name: Paper lab tick
+        env:
+          COMMIT_TRAILER: "Automated paper-lab tick (GitHub Actions run ${{ github.run_id }})"
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          btc-bot/deploy/paper_tick.sh
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo '### BTC paper lab';
+            echo '```';
+            cat btc-bot/paper_state/STATUS.txt 2>/dev/null || echo "no status yet";
+            echo '```';
+            for f in btc-bot/paper_state/*_alerts.csv; do [ -f "$f" ] && { echo "**$f** (last 3)"; echo '```'; tail -3 "$f"; echo '```'; }; done
+          } >> "$GITHUB_STEP_SUMMARY"
