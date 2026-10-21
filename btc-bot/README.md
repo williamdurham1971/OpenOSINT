@@ -14,8 +14,22 @@ python btc_bot.py lab                 # several strategies at once with simulate
 python btc_bot.py lab-status          # each lab bot's equity vs buy and hold, trades, alerts
 python btc_bot.py control --name lab_trend_4h --mode pause    # manual override: auto | pause | flat
 python btc_bot.py live-check          # validates API keys with a TEST order; nothing is traded
+python report.py backtest             # quantstats tearsheet + Monte Carlo drawdowns  ->  results/report_backtest_BTCUSDT.html
+python report.py paper                # the same for every lab bot once it has 30+ days of paper data
 ```
-Standard library only; Python 3.10+.
+Standard library only; Python 3.10+. `report.py` is the one exception and needs `pip install quantstats`.
+On a python.org build of Python for macOS, run its "Install Certificates.command" once if `fetch` fails with
+`CERTIFICATE_VERIFY_FAILED`.
+
+## Tearsheet and Monte Carlo (`report.py`, 2026-10-21)
+| 4h EMA 24/200, 2019-2026 | CAGR | Sharpe | Sortino | max DD | B&H max DD | P(1-year DD >= 35%) | worst 5% of 1-year DDs |
+|---|---|---|---|---|---|---|---|
+| BTCUSDT | +54.9% | 1.23 | 1.95 | 52% | 77% | 25% | 48% or worse |
+| ETHUSDT | +54.1% | 1.04 | 1.60 | 63% | 79% | 57% | 64% or worse |
+
+Same numbers as `research` and `cross` (the engine is shared). The Monte Carlo line answers "how likely is the 35% kill
+switch to fire in a given year": about 1 year in 4 on BTC. Shuffled daily returns ignore crash clustering, so the real
+odds are higher. quantstats assumes 252 trading days a year unless told otherwise; `report.py` passes 365.
 
 ## What the research found (MEXC BTCUSDT, 68,380 hourly bars, 2019-01-01 to 2026-10-20, taker 0.05% + 0.02% slippage)
 Raw outputs: `results/`. Protocol fixed before looking: 4 textbook families x 6 round parameter sets x {1h, 4h} bars,
@@ -83,6 +97,9 @@ position and opens nothing new, `flat` sells and stays out, `auto` resumes. Ever
 technical signals are least trustworthy and your judgement matters most.
 
 ## Going live (real money): read all of this
+**Prefer `freqtrade/` for real money.** It runs the same rule (65 trades, same backtest), with mature order handling and
+Telegram control; see `freqtrade/README.md`. The `live` command below stays for completeness.
+
 `live` needs `MEXC_API_KEY`/`MEXC_API_SECRET`, `--max-usdt N`, `--max-drawdown X` and `--yes-i-risk-real-money`.
 * Create a **spot-trading-only** key with **withdrawals disabled** and restricted to your IP.
 * Run `live-check` first (it calls MEXC's *test order* endpoint, nothing is executed).
