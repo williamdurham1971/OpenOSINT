@@ -1,0 +1,11 @@
+{
+ "cash": 100.0,
+ "btc": 0.0,
+ "last_bar": 1792555200000,
+ "start_equity": 100.0,
+ "start_price": 0.2256,
+ "peak": 100.0,
+ "halted": false,
+ "armed": true,
+ "started": "2026-10-21 11:52:54"
+}
