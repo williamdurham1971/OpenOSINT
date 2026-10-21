@@ -9,7 +9,7 @@ name: btc-paper-lab
 
 on:
   schedule:
-    - cron: "17 * * * *"
+    - cron: "41 * * * *"
   workflow_dispatch: {}
   push:
     branches: [claude/great-mayer-bcwvfx]
