@@ -23,6 +23,7 @@ LAB = [  # name, strategy, interval: the slow baseline next to day-trading candi
     ("lab_donchian_1h", "donchian:n=24", "60m"),
     ("lab_patterns_1h", "pattern_all:mult10=30,hold=72", "60m"),
     ("lab_wedge_1h", "pattern_fw:mult10=30,hold=72", "60m"),
+    ("lab_symtri_1h", "pattern_symtri:mult10=50,hold=72", "60m"),     # bullish symmetrical-triangle breakout, the 2-year standout
 ]
 
 

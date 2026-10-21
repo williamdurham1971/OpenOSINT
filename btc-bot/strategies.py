@@ -123,13 +123,18 @@ def pattern_fw(o, h, l, c, mult10=30, hold=72):
     return pattern_long(o, h, l, c, mult10, hold, "falling_wedge")
 
 
+def pattern_symtri(o, h, l, c, mult10=50, hold=72):
+    """Upward breakout of a symmetrical triangle only (the bullish side of a two-sided pattern)."""
+    return pattern_long(o, h, l, c, mult10, hold, "sym_triangle")
+
+
 GRID = (
     [("ema_trend", dict(fast=f, slow=s)) for f, s in ((12, 48), (24, 96), (48, 168), (72, 240), (24, 200), (100, 400))]
     + [("donchian", dict(n=n)) for n in (24, 48, 96, 168, 336, 720)]
     + [("rsi_dip", dict(lo=lo, trend_n=tn)) for lo in (25, 30, 35) for tn in (200, 600)]
     + [("tsmom", dict(lookback=lb)) for lb in (24, 72, 168, 336, 720, 1440)]
 )
-FUNCS = dict(ema_trend=ema_trend, donchian=donchian, rsi_dip=rsi_dip, tsmom=tsmom, pattern_all=pattern_all, pattern_fw=pattern_fw)
+FUNCS = dict(ema_trend=ema_trend, donchian=donchian, rsi_dip=rsi_dip, tsmom=tsmom, pattern_all=pattern_all, pattern_fw=pattern_fw, pattern_symtri=pattern_symtri)
 WARMUP = 1500          # bars of history a live bot should load (longest lookback in GRID is 1440)
 
 

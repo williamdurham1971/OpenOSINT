@@ -230,7 +230,7 @@ def t_patterns_causal():
 def t_pattern_strategies_causal():
     rows = walk(2200, seed=13, vol=0.012)
     o, h, l, c = cols(rows)
-    for fam in ("pattern_all", "pattern_fw"):
+    for fam in ("pattern_all", "pattern_fw", "pattern_symtri"):
         full = S.positions(fam, dict(mult10=30, hold=72), o, h, l, c)
         assert sum(full) > 0, f"{fam} never entered on random-walk data"
         for k in (700, 1300, 2100):
@@ -261,6 +261,21 @@ def t_lab_runs_several_bots():
         calls = []
         B.run_lab(bots, once=True, fetch=lambda iv: calls.append(iv) or rows)
         assert sorted(calls) == ["4h", "60m"] and all(b.state["last_bar"] == rows[-1][0] for b in bots)
+
+
+def t_catch_up_equals_bar_by_bar():
+    rows = walk(1800, seed=21, vol=0.01)
+    with tempfile.TemporaryDirectory() as d1, tempfile.TemporaryDirectory() as d2:
+        a = B.Bot(("donchian", dict(n=24)), "4h", B.PaperBroker(), name="a", state_dir=d1, log=lambda *_: None)
+        b = B.Bot(("donchian", dict(n=24)), "4h", B.PaperBroker(), name="b", state_dir=d2, log=lambda *_: None)
+        for t in range(1500, 1800):                                  # bot a: every bar as it closes
+            a.on_bar(rows[:t + 1])
+        b.on_bar(rows[:1501])                                        # bot b: starts together, then wakes only every 100 bars
+        for t in (1600, 1700, 1799):
+            list(b.catch_up(rows[:t + 1]))
+        assert a.state["last_bar"] == b.state["last_bar"] == rows[-1][0]
+        assert abs(a.equity(rows[-1][4]) - b.equity(rows[-1][4])) < 1e-9, "catching up must give the same result as running every bar"
+        assert (Path(d1) / "a_trades.csv").read_text().count("\n") == (Path(d2) / "b_trades.csv").read_text().count("\n")
 
 
 def run():

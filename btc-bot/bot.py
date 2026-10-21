@@ -8,7 +8,7 @@ from pathlib import Path
 
 import data, mexc, strategies as S
 
-STATE_DIR = Path(__file__).parent / "data"
+STATE_DIR = Path(os.environ.get("BTC_BOT_STATE") or Path(__file__).parent / "data")   # override to keep paper state in git
 
 
 def now_s():
@@ -189,6 +189,19 @@ class Bot:
         self._save()
         return dict(bar=ts, close=close, want=want, position=self.position(), equity=eq, action=action)
 
+    def catch_up(self, rows, max_bars=500):
+        """Process, in order, every closed bar after the last one handled (so the bot can run every few hours or once a day
+        without missing signals; fills are simulated at each bar's close, exactly as a bot running live would have done).
+        A brand-new bot starts at the latest bar instead of replaying history."""
+        last = self.state["last_bar"]
+        if last is None:
+            yield self.on_bar(rows); return
+        new = [i for i, r in enumerate(rows) if r[0] > last][-max_bars:]
+        for i in new:
+            res = self.on_bar(rows[:i + 1])
+            if res:
+                yield res
+
     def status(self):
         st = self.state
         p = st.get("start_price") or 0
@@ -237,7 +250,9 @@ def run_lab(bots, poll_delay=8, once=False, fetch=recent_closed, sleep=time.slee
             try:
                 if b.interval not in cache:
                     cache[b.interval] = fetch(b.interval)
-                res = b.on_bar(cache[b.interval])
+                res = None
+                for res in b.catch_up(cache[b.interval]):
+                    pass
                 if res:
                     b.log(f"[{now_s()}] {b.name}: bar {time.strftime('%Y-%m-%d %H:%M', time.gmtime(res['bar']/1000))} "
                           f"close {res['close']:.2f} -> hold {'LONG' if res['position'] else 'FLAT'}, equity {res['equity']:.2f}")
