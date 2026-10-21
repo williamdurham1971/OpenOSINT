@@ -102,6 +102,33 @@ class Bot:
                 w.writerow(header)
             w.writerow(row)
 
+    def control(self):
+        """Manual override written by `btc_bot.py control`: auto (default) | pause | flat."""
+        p = self.dir / f"{self.name}_control.json"
+        try:
+            mode = json.load(open(p)).get("mode", "auto")
+        except (OSError, ValueError):
+            return "auto"
+        return mode if mode in ("auto", "pause", "flat") else "auto"
+
+    def _alert_if_abnormal(self, rows, z_limit=4.0, window=200):
+        """A bar move beyond z_limit standard deviations of recent bars is flagged: usually news. Check before trusting TA."""
+        c = [r[4] for r in rows[-(window + 2):]]
+        if len(c) < 50:
+            return None
+        rets = [c[i] / c[i - 1] - 1 for i in range(1, len(c))]
+        last, past = rets[-1], rets[:-1]
+        mu = sum(past) / len(past)
+        sd = (sum((x - mu) ** 2 for x in past) / len(past)) ** 0.5
+        if sd <= 0 or abs(last - mu) / sd < z_limit:
+            return None
+        z = (last - mu) / sd
+        msg = f"ABNORMAL MOVE: last {self.interval} bar {last*100:+.2f}% ({z:+.1f} sigma). Likely news/catalyst: check before trusting the signal."
+        self._append("alerts.csv", ["time_utc", "bar_open_utc", "z", "move_pct", "message"],
+                     [now_s(), time.strftime("%Y-%m-%d %H:%M", time.gmtime(rows[-1][0] / 1000)), f"{z:+.1f}", f"{last*100:+.2f}", msg])
+        self.log(f"[{now_s()}] {msg}")
+        return z
+
     def _log_trade(self, ts, fill, eq):
         self._append("trades.csv", ["time_utc", "bar_open_utc", "side", "price", "qty", "usdt", "equity_after", "halted"],
                      [now_s(), time.strftime("%Y-%m-%d %H:%M", time.gmtime(ts / 1000)), fill["side"], f"{fill['price']:.2f}",
@@ -128,6 +155,12 @@ class Bot:
         if st["start_price"] is None:
             st["start_price"] = close
         want = self.desired(rows)
+        mode = self.control()
+        self._alert_if_abnormal(rows)
+        if mode == "flat":                                   # manual override: get out and stay out
+            want = 0
+        elif mode == "pause":                                # manual override: keep whatever is held, no new trades
+            want = self.position()
         if st["halted"]:
             want = 0
         elif not st["armed"]:                                # --wait-for-signal: do not join a trend that is already running
@@ -187,6 +220,29 @@ def run_forever(bot, poll_delay=8, once=False, fetch=recent_closed, sleep=time.s
                         f"-> want {'LONG' if res['want'] else 'FLAT'}, hold {'LONG' if res['position'] else 'FLAT'}, equity {res['equity']:.2f}")
         except Exception as e:                                # network hiccup, exchange error: log and retry next cycle
             bot.log(f"[{now_s()}] ERROR {type(e).__name__}: {e}")
+        if once:
+            return
+        nxt = (int(clock() // step) + 1) * step + poll_delay
+        sleep(max(5, nxt - clock()))
+
+
+def run_lab(bots, poll_delay=8, once=False, fetch=recent_closed, sleep=time.sleep, clock=time.time):
+    """Several paper bots in one process; candles are fetched once per interval per cycle."""
+    for b in bots:
+        b.log(f"[{now_s()}] {b.status()}")
+    step = min(b.step for b in bots) / 1000
+    while True:
+        cache = {}
+        for b in bots:
+            try:
+                if b.interval not in cache:
+                    cache[b.interval] = fetch(b.interval)
+                res = b.on_bar(cache[b.interval])
+                if res:
+                    b.log(f"[{now_s()}] {b.name}: bar {time.strftime('%Y-%m-%d %H:%M', time.gmtime(res['bar']/1000))} "
+                          f"close {res['close']:.2f} -> hold {'LONG' if res['position'] else 'FLAT'}, equity {res['equity']:.2f}")
+            except Exception as e:
+                b.log(f"[{now_s()}] {b.name}: ERROR {type(e).__name__}: {e}")
         if once:
             return
         nxt = (int(clock() // step) + 1) * step + poll_delay

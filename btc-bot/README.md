@@ -9,6 +9,10 @@ python btc_bot.py research            # the honest test: does textbook TA beat r
 python btc_bot.py cross               # the frozen strategy on 10 coins it has never seen
 python btc_bot.py paper --wait-for-signal --max-drawdown 0.35     # simulated money, runs forever
 python btc_bot.py status
+python btc_bot.py patterns            # chart-pattern study (falling wedge etc.): BTC fidelity, cross-coin, confirmation
+python btc_bot.py lab                 # several strategies at once with simulated money, incl. day-trading candidates
+python btc_bot.py lab-status          # each lab bot's equity vs buy and hold, trades, alerts
+python btc_bot.py control --name lab_trend_4h --mode pause    # manual override: auto | pause | flat
 python btc_bot.py live-check          # validates API keys with a TEST order; nothing is traded
 ```
 Standard library only; Python 3.10+.
@@ -37,6 +41,23 @@ asks how well *random timing with the same exposure* does (this controls for BTC
 (smaller drawdowns, especially 2022: -45% vs -64%), no demonstrated *return* edge over buying and holding, and it lags in
 strong bull years (2020, 2023, 2024). It is not a money machine, and in this data faster trading was worse, not better.
 
+## Chart patterns (falling wedge and 10 others): what the data says
+`patterns.py` detects falling/rising wedges, ascending/descending/symmetrical triangles, double tops/bottoms, (inverse)
+head and shoulders and bull/bear flags from an ATR-scaled zig-zag. A pattern fires only on the CLOSE that breaks it, using
+bars up to that close (`selftest` cuts history at every signal bar to prove it, and catches an injected look-ahead bug).
+Full output: `results/patterns_2026-10-21.txt`.
+
+* **BTC, last 2 years and full history:** no pattern beats random timing after correcting for the number of patterns tested
+  (0 of 18 and 0 of 33 groups at FDR q < 0.10, at both +24h and +72h). The falling wedge on 1h bars (181 signals) did *worse*
+  than a random long at +24h. Cells that look great have 8-15 signals and confidence intervals of +/-25 points.
+* **10 coins pooled** suggested the falling wedge (+72h): +0.93% over random, 9/10 coins positive. Clustering signals by week
+  (coins move together) cut the evidence from p=0.003 to p=0.058. **A pre-registered confirmation on 21 different coins**
+  (2019-era majors and collapsed coins such as LUNA, FTT, OMG) **failed**: -0.02% vs random (p=0.52), +0.47% in the first half
+  and -0.71% in the second. The discovery set earned +1.44% per trade, the confirmation set +0.02%: survivorship, not the pattern.
+* **Trading the bullish patterns on BTC** (enter on the breakout, exit at the swing stop, the measured-move target or 72h) made
+  -7% to +4% a year vs +49% for buy and hold, never better than random entries with the same stop/target geometry
+  (p 0.10-0.88), and still not with near-zero costs. The patterns did not predict; costs are not the reason.
+
 ## The bot
 Default strategy `ema_trend:fast=24,slow=200` on **4h** bars: hold BTC while the 24-bar EMA is above the 200-bar EMA, otherwise
 sit in USDT. About 8 trades a year, ~50% of time invested. Robust to costs x5 (CAGR 55% -> 48%) and to 3 bars of delay, and its
@@ -51,6 +72,15 @@ with hindsight from the full BTC history**; the only out-of-sample evidence is t
   marginal when you start).
 * `--max-drawdown 0.35`: kill switch, flatten and halt when equity falls 35% below its peak. Note the strategy itself had a
   53% drawdown historically, so a tight kill switch will trigger and changes the strategy; choose it as your risk limit.
+
+## Paper lab, manual override, catalyst alerts
+`lab` runs four bots side by side with simulated money: the 4h trend filter, a fast 1h Donchian(24), all bullish patterns on
+1h and the falling wedge alone on 1h. They evaluate *forward*, on bars none of the research has seen. Each bot joins the
+strategy's current state at start-up (e.g. a pattern trade opened in the last 72h). `lab-status` compares each with buy and hold.
+`control --name <bot> --mode pause|flat|auto` is the manual override for when you see a catalyst: `pause` keeps the current
+position and opens nothing new, `flat` sells and stays out, `auto` resumes. Every bot writes `<name>_alerts.csv` and logs
+`ABNORMAL MOVE` when a bar moves more than 4 standard deviations of the last 200 bars: that is usually news, the moment
+technical signals are least trustworthy and your judgement matters most.
 
 ## Going live (real money): read all of this
 `live` needs `MEXC_API_KEY`/`MEXC_API_SECRET`, `--max-usdt N`, `--max-drawdown X` and `--yes-i-risk-real-money`.

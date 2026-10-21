@@ -96,13 +96,40 @@ def tsmom(o, h, l, c, lookback):
     return [1 if i >= lookback and c[i] > c[i - lookback] else 0 for i in range(len(c))]
 
 
+def pattern_long(o, h, l, c, mult10=30, hold=72, which="all"):
+    """Long on a bullish pattern breakout (patterns.py); exit when a bar touches the swing stop or the measured-move target,
+    or after `hold` bars. Causal: entries/exits at bar t use bars <= t only."""
+    import patterns as PT
+    names = PT.LONG_NAMES if which == "all" else (which,)
+    sigs = {}
+    for sg in PT.detect(o, h, l, c, mult=mult10 / 10):
+        if sg.dir == 1 and sg.name in names:
+            sigs.setdefault(sg.t, sg)
+    pos, cur, entry_t = [], None, 0
+    for t in range(len(c)):
+        if cur is not None and t > entry_t and (l[t] <= cur.stop or h[t] >= cur.target or t - entry_t >= hold):
+            cur = None
+        if cur is None and t in sigs:
+            cur, entry_t = sigs[t], t
+        pos.append(1 if cur is not None else 0)
+    return pos
+
+
+def pattern_all(o, h, l, c, mult10=30, hold=72):
+    return pattern_long(o, h, l, c, mult10, hold, "all")
+
+
+def pattern_fw(o, h, l, c, mult10=30, hold=72):
+    return pattern_long(o, h, l, c, mult10, hold, "falling_wedge")
+
+
 GRID = (
     [("ema_trend", dict(fast=f, slow=s)) for f, s in ((12, 48), (24, 96), (48, 168), (72, 240), (24, 200), (100, 400))]
     + [("donchian", dict(n=n)) for n in (24, 48, 96, 168, 336, 720)]
     + [("rsi_dip", dict(lo=lo, trend_n=tn)) for lo in (25, 30, 35) for tn in (200, 600)]
     + [("tsmom", dict(lookback=lb)) for lb in (24, 72, 168, 336, 720, 1440)]
 )
-FUNCS = dict(ema_trend=ema_trend, donchian=donchian, rsi_dip=rsi_dip, tsmom=tsmom)
+FUNCS = dict(ema_trend=ema_trend, donchian=donchian, rsi_dip=rsi_dip, tsmom=tsmom, pattern_all=pattern_all, pattern_fw=pattern_fw)
 WARMUP = 1500          # bars of history a live bot should load (longest lookback in GRID is 1440)
 
 

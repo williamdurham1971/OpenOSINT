@@ -2,7 +2,7 @@
 import json, math, random, tempfile, types, urllib.parse
 from pathlib import Path
 
-import bot as B, engine as E, mexc, strategies as S
+import bot as B, engine as E, mexc, patterns as PT, strategies as S
 
 
 def walk(n, seed=1, drift=0.0002, vol=0.01):
@@ -170,6 +170,97 @@ def t_resample():
     rows = [(i * H, 1 + i, 2 + i, 0 + i, 1.5 + i, 1.0) for i in range(10)]
     r = S.resample(rows, 4)
     assert len(r) == 2 and r[0] == (0, 1, 5, 0, 4.5, 4.0)
+
+
+def shape_path(points, wiggle=0.15):
+    c=[]
+    for (i0,p0),(i1,p1) in zip(points,points[1:]):
+        for i in range(i0,i1): c.append(p0+(p1-p0)*(i-i0)/(i1-i0))
+    c.append(points[-1][1]); o=[c[0]]+c[:-1]
+    return o,[max(a,b)+wiggle for a,b in zip(o,c)],[min(a,b)-wiggle for a,b in zip(o,c)],c
+SHAPES={
+ "falling_wedge":([(0,100),(10,110),(20,100),(32,106),(44,98),(56,102),(68,97.5),(78,101),(86,106)],1),
+ "rising_wedge": ([(0,100),(10,90),(20,100),(32,94),(44,102),(56,97),(68,103),(78,99),(86,92)],-1),
+ "asc_triangle": ([(0,100),(10,110),(20,100),(32,110),(44,104),(56,110),(66,106),(76,111),(84,116)],1),
+ "desc_triangle":([(0,110),(10,100),(20,110),(32,100),(44,106),(56,100),(66,103),(76,99),(84,94)],-1),
+ "sym_triangle": ([(0,100),(10,112),(20,100),(32,108),(44,102),(56,106),(66,103),(76,107),(86,112)],1),
+ "double_bottom":([(0,110),(14,100),(30,110),(46,100.2),(60,110),(70,116)],1),
+ "double_top":   ([(0,90),(14,100),(30,90),(46,99.8),(60,90),(70,84)],-1),
+ "inv_head_shoulders":([(0,110),(12,100),(24,108),(36,95),(48,108),(60,100),(72,110),(82,117)],1),
+ "head_shoulders":    ([(0,90),(12,100),(24,92),(36,105),(48,92),(60,100),(72,90),(82,83)],-1),
+ "bull_flag":([(0,100),(12,125),(24,115),(36,122),(46,114),(58,128),(66,134)],1),
+ "bear_flag":([(0,125),(12,100),(24,110),(36,103),(46,111),(58,97),(66,91)],-1),
+}
+
+
+def t_patterns_fire_on_their_shapes():
+    for name, (pts, d) in SHAPES.items():
+        o, h, l, c = shape_path(pts)
+        sg = PT.detect(o, h, l, c)
+        assert any(x.name == name and x.dir == d for x in sg), f"{name} not detected: {[(x.name, x.dir, x.t) for x in sg]}"
+        assert len({(x.name, x.dir, x.t) for x in sg}) == len(sg), f"{name}: duplicate signals for one breakout"
+        mine = next(x for x in sg if x.name == name and x.dir == d)
+        assert (mine.stop < mine.entry < mine.target) if d == 1 else (mine.target < mine.entry < mine.stop), f"{name}: stop/target on the wrong side"
+
+
+def t_patterns_quiet_on_a_straight_line():
+    o, h, l, c = shape_path([(0, 100), (200, 150)])
+    assert PT.detect(o, h, l, c) == []
+
+
+def t_patterns_causal():
+    rows = walk(2500, seed=11, vol=0.012)
+    o, h, l, c = cols(rows)
+    full = PT.detect(o, h, l, c)
+    assert len(full) > 15, "random-walk data should produce some pattern signals"
+    key = lambda x: (x.name, x.dir, x.t, round(x.entry, 9), round(x.stop, 9), round(x.target, 9))
+    # cut the history exactly at each signal's bar: the signal must still be there, and must not exist one bar earlier
+    for sg in full[:40]:
+        k = sg.t + 1
+        with_bar = {key(x) for x in PT.detect(o[:k], h[:k], l[:k], c[:k])}
+        assert key(sg) in with_bar, f"{sg.name} at bar {sg.t} depends on bars after it (look-ahead)"
+        before = {(x.name, x.dir, x.t) for x in PT.detect(o[:sg.t], h[:sg.t], l[:sg.t], c[:sg.t])}
+        assert (sg.name, sg.dir, sg.t) not in before
+    for k in (900, 1700):                                      # and an arbitrary cut changes nothing earlier
+        want = [key(x) for x in full if x.t < k - 1]
+        got = [key(x) for x in PT.detect(o[:k], h[:k], l[:k], c[:k]) if x.t < k - 1]
+        assert got == want
+
+
+def t_pattern_strategies_causal():
+    rows = walk(2200, seed=13, vol=0.012)
+    o, h, l, c = cols(rows)
+    for fam in ("pattern_all", "pattern_fw"):
+        full = S.positions(fam, dict(mult10=30, hold=72), o, h, l, c)
+        assert sum(full) > 0, f"{fam} never entered on random-walk data"
+        for k in (700, 1300, 2100):
+            assert S.positions(fam, dict(mult10=30, hold=72), o[:k], h[:k], l[:k], c[:k]) == full[:k], f"{fam}: look-ahead"
+
+
+def t_manual_control_and_alerts():
+    up = walk(1700, seed=3, drift=0.003, vol=0.002)
+    with tempfile.TemporaryDirectory() as d:
+        bt = B.Bot(("tsmom", dict(lookback=24)), "4h", B.PaperBroker(0, 0), name="c", capital=1000.0, state_dir=d, log=lambda *_: None)
+        json.dump({"mode": "pause"}, open(Path(d) / "c_control.json", "w"))
+        assert bt.on_bar(up)["position"] == 0, "pause must not open a new position"
+        json.dump({"mode": "auto"}, open(Path(d) / "c_control.json", "w"))
+        nxt = up + [(up[-1][0] + 14_400_000, up[-1][4], up[-1][4] * 1.001, up[-1][4], up[-1][4] * 1.001, 1.0)]
+        assert bt.on_bar(nxt)["position"] == 1
+        json.dump({"mode": "flat"}, open(Path(d) / "c_control.json", "w"))
+        jump = nxt + [(nxt[-1][0] + 14_400_000, nxt[-1][4], nxt[-1][4] * 1.3, nxt[-1][4], nxt[-1][4] * 1.3, 1.0)]
+        assert bt.on_bar(jump)["position"] == 0, "flat must close the position even in an uptrend"
+        alerts = (Path(d) / "c_alerts.csv").read_text()
+        assert "ABNORMAL MOVE" in alerts and "+30.00" in alerts, "a +30% bar must raise an abnormal-move alert"
+
+
+def t_lab_runs_several_bots():
+    rows = walk(1600, seed=4)
+    with tempfile.TemporaryDirectory() as d:
+        bots = [B.Bot(("tsmom", dict(lookback=24)), "4h", B.PaperBroker(), name="x", state_dir=d, log=lambda *_: None),
+                B.Bot(("donchian", dict(n=24)), "60m", B.PaperBroker(), name="y", state_dir=d, log=lambda *_: None)]
+        calls = []
+        B.run_lab(bots, once=True, fetch=lambda iv: calls.append(iv) or rows)
+        assert sorted(calls) == ["4h", "60m"] and all(b.state["last_bar"] == rows[-1][0] for b in bots)
 
 
 def run():

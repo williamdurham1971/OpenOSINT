@@ -6,6 +6,9 @@
   python btc_bot.py cross                 # the frozen strategy on other coins it has never seen
   python btc_bot.py paper                 # run the bot with simulated money (default: 4h EMA 24/200 trend filter)
   python btc_bot.py status                # where is the paper bot
+  python btc_bot.py lab                   # several strategies side by side with simulated money (incl. day-trading ones)
+  python btc_bot.py lab-status            # equity of every lab bot vs buy & hold, trades, alerts
+  python btc_bot.py control --name X --mode pause|flat|auto     # manual override when you see a catalyst
   python btc_bot.py live-check            # validate API keys with a TEST order (no real order is placed)
   python btc_bot.py live ...              # real money; needs many explicit flags
 """
@@ -15,6 +18,12 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import bot as B, data, engine as E, mexc, research, strategies as S
 
 DEFAULT = "ema_trend:fast=24,slow=200"
+LAB = [  # name, strategy, interval: the slow baseline next to day-trading candidates, all with simulated money
+    ("lab_trend_4h", "ema_trend:fast=24,slow=200", "4h"),
+    ("lab_donchian_1h", "donchian:n=24", "60m"),
+    ("lab_patterns_1h", "pattern_all:mult10=30,hold=72", "60m"),
+    ("lab_wedge_1h", "pattern_fw:mult10=30,hold=72", "60m"),
+]
 
 
 def parse_strategy(spec):
@@ -72,6 +81,10 @@ def main():
     lv.add_argument("--max-usdt", type=float, required=True, help="hard cap on the USDT the bot may ever spend on one buy")
     lv.add_argument("--yes-i-risk-real-money", action="store_true")
     st = sp.add_parser("status"); st.add_argument("--name", default="paper")
+    lb = sp.add_parser("lab"); lb.add_argument("--capital", type=float, default=1000.0); lb.add_argument("--once", action="store_true")
+    sp.add_parser("lab-status")
+    sp.add_parser("patterns", help="chart-pattern study: BTC fidelity (full + last 2 years), cross-coin, confirmation, trading")
+    ct = sp.add_parser("control"); ct.add_argument("--name", required=True); ct.add_argument("--mode", required=True, choices=["auto", "pause", "flat"])
     sp.add_parser("live-check"); sp.add_parser("selftest")
     a = ap.parse_args()
 
@@ -94,6 +107,44 @@ def main():
     elif a.cmd == "status":
         b = B.Bot(parse_strategy(DEFAULT), "4h", B.PaperBroker(), name=a.name)
         print(b.status())
+    elif a.cmd == "lab":
+        bots = [B.Bot(parse_strategy(spec), iv, B.PaperBroker(E.FEE, E.SLIP), name=nm, capital=a.capital) for nm, spec, iv in LAB]
+        B.run_lab(bots, once=a.once)
+    elif a.cmd == "patterns":
+        import pattern_study as PS
+        disc = ["BTCUSDT", "ETHUSDT", "SOLUSDT", "BNBUSDT", "XRPUSDT", "DOGEUSDT", "ADAUSDT", "LTCUSDT", "LINKUSDT", "TRXUSDT"]
+        conf = ["BCHUSDT", "XLMUSDT", "XMRUSDT", "DASHUSDT", "ETCUSDT", "NEOUSDT", "ZECUSDT", "IOTAUSDT", "XTZUSDT", "VETUSDT", "ONTUSDT",
+                "QTUMUSDT", "LUNCUSDT", "FTTUSDT", "LUNAUSDT", "OMGUSDT", "BATUSDT", "ZRXUSDT", "WAVESUSDT", "DCRUSDT", "SCUSDT"]
+        for s_ in disc + conf:
+            if len(data.load("4h", s_)) < 3000:
+                data.fetch("4h", symbol=s_, verbose=False)
+        res, _ = PS.run(period_years=2.0, draws=3000)
+        PS.show(res, min_n=PS.MIN_N, top=12)
+        PS.show_pattern(res, "falling_wedge")
+        PS.cross_patterns(disc, draws=1000)
+        print("\nPRE-REGISTERED after the cross-coin scan: falling wedge (scale 3), long, +72h, 4h bars, must beat random timing on coins NOT used to find it.")
+        PS.confirm(disc, "falling_wedge", 1, 3.0, 72, "DISCOVERY set (10 survivors)")
+        PS.confirm(conf, "falling_wedge", 1, 3.0, 72, "CONFIRMATION set (21 other coins, many collapsed)")
+        PS.pattern_trading(cost=PS.RT)
+        print("\n(best case: no fee, 0.02% slippage per side)")
+        PS.pattern_trading(cost=2 * 0.0002)
+    elif a.cmd == "lab-status":
+        import csv as _csv
+        for nm, spec, iv in LAB:
+            d = B.STATE_DIR
+            eqf, trf, alf = d / f"{nm}_equity.csv", d / f"{nm}_trades.csv", d / f"{nm}_alerts.csv"
+            if not eqf.exists():
+                print(f"{nm:18s} not started"); continue
+            last = list(_csv.DictReader(open(eqf)))[-1]
+            ntr = sum(1 for _ in open(trf)) - 1 if trf.exists() else 0
+            nal = sum(1 for _ in open(alf)) - 1 if alf.exists() else 0
+            print(f"{nm:18s} {spec:32s} {iv:>4s}  equity {float(last['equity']):9.2f}  buy&hold {float(last['buy_hold_equity']):9.2f}  "
+                  f"position {'LONG' if last['position'] == '1' else 'FLAT'}  trades {ntr}  alerts {nal}  (last bar {last['bar_open_utc']})")
+    elif a.cmd == "control":
+        import json as _json
+        B.STATE_DIR.mkdir(exist_ok=True)
+        _json.dump({"mode": a.mode}, open(B.STATE_DIR / f"{a.name}_control.json", "w"))
+        print(f"{a.name}: mode set to {a.mode} (applies from the next closed bar)")
     elif a.cmd == "live-check":
         cmd_live_check(a)
     elif a.cmd == "live":
