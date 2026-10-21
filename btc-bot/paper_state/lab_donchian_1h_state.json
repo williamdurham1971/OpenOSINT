@@ -1,10 +1,10 @@
 {
  "cash": 0.0,
  "btc": 0.012018567499190653,
- "last_bar": 1792566000000,
+ "last_bar": 1792569600000,
  "start_equity": 1000.0,
  "start_price": 83146.36,
- "peak": 1000.0,
+ "peak": 1000.4038050254564,
  "halted": false,
  "armed": true,
  "started": "2026-10-21 08:16:00"
