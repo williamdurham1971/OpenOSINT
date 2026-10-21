@@ -60,5 +60,7 @@ jobs:
             echo '```';
             cat btc-bot/paper_state/STATUS.txt 2>/dev/null || echo "no status yet";
             echo '```';
-            for f in btc-bot/paper_state/*_alerts.csv; do [ -f "$f" ] && { echo "**$f** (last 3)"; echo '```'; tail -3 "$f"; echo '```'; }; done
+            for f in btc-bot/paper_state/*_alerts.csv; do
+              if [ -f "$f" ]; then echo "**$f** (last 3)"; echo '```'; tail -3 "$f"; echo '```'; fi
+            done
           } >> "$GITHUB_STEP_SUMMARY"
