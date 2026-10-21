@@ -52,6 +52,7 @@ from openosint.tools.search_paste import run_paste_osint  # noqa: E402
 from openosint.tools.search_shodan import run_shodan_osint  # noqa: E402
 from openosint.tools.search_username import run_username_osint  # noqa: E402
 from openosint.tools.search_virustotal import run_virustotal_osint  # noqa: E402
+from openosint.tools.search_wayback import run_wayback_osint  # noqa: E402
 
 logger = logging.getLogger(__name__)
 
@@ -358,6 +359,33 @@ def _build_parser() -> argparse.ArgumentParser:
         default=10,
         metavar="SECONDS",
         help="DNS query timeout (default: 10).",
+    )
+
+    # wayback
+    wayback_cmd = subparsers.add_parser(
+        "wayback",
+        help="Wayback Machine history for a domain or URL (no AI, no API key).",
+    )
+    wayback_cmd.add_argument(
+        "target",
+        type=str,
+        metavar="TARGET",
+        help="Domain (e.g. example.com) or URL (e.g. https://example.com/path).",
+    )
+    wayback_cmd.add_argument(
+        "--max-urls",
+        type=int,
+        default=25,
+        metavar="N",
+        help="Maximum archived URLs to list (default: 25).",
+    )
+    wayback_cmd.add_argument(
+        "-t",
+        "--timeout",
+        type=int,
+        default=30,
+        metavar="SECONDS",
+        help="Per-request timeout (default: 30).",
     )
 
     # abuseipdb
@@ -769,6 +797,20 @@ async def _handle_dns(
         _print_result(result)
 
 
+async def _handle_wayback(
+    target: str,
+    max_urls: int,
+    timeout: int,
+    json_output: bool = False,
+) -> None:
+    print(f"[*] Wayback Machine lookup: {target}", file=sys.stderr)
+    result = await run_wayback_osint(target=target, timeout_seconds=timeout, max_urls=max_urls)
+    if json_output:
+        _emit_json(format_tool_result("search_wayback", target, result))
+    else:
+        _print_result(result)
+
+
 async def _handle_ip2location(
     ip: str,
     timeout: int,
@@ -1100,6 +1142,8 @@ async def _async_main() -> None:
         await _handle_github(args.query, args.timeout, json_output=json_output)
     elif args.command == "dns":
         await _handle_dns(args.domain, args.timeout, json_output=json_output)
+    elif args.command == "wayback":
+        await _handle_wayback(args.target, args.max_urls, args.timeout, json_output=json_output)
     elif args.command == "abuseipdb":
         await _handle_abuseipdb(args.ip, args.timeout, json_output=json_output)
     elif args.command == "ip2location":

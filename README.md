@@ -3,7 +3,7 @@ mcp-name: io.github.OpenOSINT/openosint
 <div align="center">
   <img src="https://raw.githubusercontent.com/OpenOSINT/OpenOSINT/main/docs/logo.svg" alt="OpenOSINT" width="200" />
   <h1>OpenOSINT</h1>
-  <p>OSINT agent for security researchers and analysts: 19 investigation tools behind a natural-language interface.</p>
+  <p>OSINT agent for security researchers and analysts: 20 investigation tools behind a natural-language interface.</p>
   <p>Use it as a REPL, CLI, MCP server, or browser Web UI.</p>
   <p><em>The AI issues hard-stop tool calls; your code executes the real binary — hallucinated findings are structurally impossible.</em></p>
 </div>
@@ -122,9 +122,9 @@ openosint > investigate target@example.com
 | Capability | Details |
 |---|---|
 | AI tool chaining | The agent selects and chains tools based on findings; describe the target in plain language |
-| 19 modular tools | Email, username, breach, WHOIS, IP, subdomain, dorks, paste, phone, Shodan, VirusTotal, Censys, IP2Location, AbuseIPDB, GitHub, DNS, live dork search, URL scraping, SERP footprint |
+| 20 modular tools | Email, username, breach, WHOIS, IP, subdomain, dorks, paste, phone, Shodan, VirusTotal, Censys, IP2Location, AbuseIPDB, GitHub, DNS, Wayback Machine history, live dork search, URL scraping, SERP footprint |
 | Three AI backends | Anthropic Claude (default), local Ollama, or any OpenAI-compatible endpoint (LiteLLM, vLLM, LM Studio, ...) |
-| Native MCP server | All 19 tools exposed to Claude Code, Claude Desktop, and any MCP-compatible client — no extra config |
+| Native MCP server | All 20 tools exposed to Claude Code, Claude Desktop, and any MCP-compatible client — no extra config |
 | Parallel execution | `--parallel` runs complementary tools concurrently via `asyncio.gather()` |
 | Reports | PDF + Markdown auto-saved after every investigation (`reportlab` optional) |
 | Session history | All REPL sessions saved to `~/.openosint/history/`; browse with `openosint history` |
@@ -166,6 +166,7 @@ sources and compliance requirements, I deliver a working integration.
 | `search_abuseipdb` | AbuseIPDB v2 API | IP abuse reputation: confidence score, reports, country, ISP |
 | `search_github` | GitHub REST API | Profile, repos, commit-discovered emails, username/keyword search |
 | `search_dns` | dnspython (built-in) | A/AAAA/MX/NS/TXT/CNAME/SOA records; SPF, DMARC, DKIM analysis |
+| `search_wayback` | Wayback Machine CDX API | Archive history: first/latest capture, historical subdomains, notable archived URLs |
 | `search_dorks_live` | Bright Data SERP API | Live Google search results for dork queries (title, URL, snippet) |
 | `scrape_url` | Bright Data Web Unlocker | Fetch any URL bypassing Cloudflare/CAPTCHA — returns clean Markdown |
 | `search_footprint` | Bright Data SERP API | Entity-type-aware public search-engine footprint: detects email/username/domain/phone/name and returns structured results + Entity Correlation Graph nodes/edges |
@@ -366,6 +367,27 @@ openosint dns example.com
 [DNS] SPF: v=spf1 include:_spf.google.com ~all
 ```
 
+### search_wayback
+
+Looks a domain or URL up in the [Wayback Machine](https://web.archive.org/) via the public CDX and Availability APIs (no API key). Reports the first and latest capture, the years with captures, every hostname the archive has seen under the domain (retired subdomains), and a sample of archived URLs with notable paths flagged — robots.txt, admin panels, backups, config files. Pass a URL instead of a domain to scan only that path prefix.
+
+```bash
+openosint wayback example.com --max-urls 10
+```
+
+```text
+[Wayback] Target: example.com
+[Wayback] First capture: 2002-01-15 (HTTP 200) https://web.archive.org/web/20020115000000/http://example.com/
+[Wayback] Latest capture: 2026-08-30 (HTTP 200) http://web.archive.org/web/20260830120000/https://example.com/
+[Wayback] Years with captures (25, 2002–2026): 2002, 2003, ...
+[Wayback] Historical hosts (3):
+  • example.com
+  • old.example.com
+  • www.example.com
+[!] Notable archived paths (1):
+  • http://example.com/robots.txt  [200, text/plain]
+```
+
 ### search_dorks_live
 
 Executes live Google dork queries through the [Bright Data SERP API](https://get.brightdata.com/984ni58s2oad?utm_source=github&utm_medium=readme)¹, returning structured results (title, URL, snippet). Defaults to 5 dorks per run; each is a separate billable API call. Requires `BRIGHTDATA_API_KEY` and `BRIGHTDATA_SERP_ZONE`.
@@ -497,7 +519,7 @@ Full per-tool reference, CLI flags, and configuration options at [openosint.tech
 
 ### MCP Server
 
-Expose all 19 OpenOSINT tools to any MCP-compatible AI client. Once connected, Claude can natively invoke all 19 tools during conversations.
+Expose all 20 OpenOSINT tools to any MCP-compatible AI client. Once connected, Claude can natively invoke all 20 tools during conversations.
 
 **Claude Code:**
 
@@ -652,6 +674,7 @@ Set `ANTHROPIC_API_KEY` (and optionally `HIBP_API_KEY`, `IPINFO_TOKEN`) in a `.e
 | VirusTotal | https://www.virustotal.com | `search_virustotal` | Community | API key — free tier |
 | WHOIS (IANA) | https://www.iana.org/whois | `search_whois` | Community | None |
 | DNS (system resolver) | — | `search_dns` | Community | None |
+| Wayback Machine | https://web.archive.org | `search_wayback` | Community | None |
 | Google Search | https://www.google.com | `generate_dorks` | Community | None |
 
 ## Get the Method

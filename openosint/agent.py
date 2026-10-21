@@ -41,6 +41,7 @@ from openosint.tools.search_phone import run_phone_osint
 from openosint.tools.search_shodan import run_shodan_osint
 from openosint.tools.search_username import run_username_osint
 from openosint.tools.search_virustotal import run_virustotal_osint
+from openosint.tools.search_wayback import run_wayback_osint
 from openosint.tools.search_whois import run_whois_osint
 from openosint.tools.search_footprint import run_footprint_osint
 from openosint.pivot import investigate_graph_for_agent
@@ -311,6 +312,31 @@ TOOL_DEFINITIONS: list[dict[str, Any]] = [
         },
     },
     {
+        "name": "search_wayback",
+        "description": (
+            "Wayback Machine (Internet Archive) history for a domain or URL: first and latest "
+            "capture dates, years with captures, hostnames the archive has seen under the domain "
+            "(historical subdomains), and a sample of archived URLs with notable paths flagged "
+            "(robots.txt, admin panels, backups, config files). No API key required. "
+            "Use for domain investigations to find deleted pages, retired subdomains, and how long "
+            "a site has existed — complements search_domain and search_dns."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "target": {
+                    "type": "string",
+                    "description": "Domain (e.g. example.com) or URL (e.g. https://example.com/path).",
+                },
+                "max_urls": {
+                    "type": "integer",
+                    "description": "Maximum archived URLs to list (default 25).",
+                },
+            },
+            "required": ["target"],
+        },
+    },
+    {
         "name": "search_dorks_live",
         "description": (
             "Execute Google dork queries for a target via the Bright Data SERP API, "
@@ -401,6 +427,9 @@ _TOOL_MAP: dict[str, Any] = {
     "search_abuseipdb": lambda a: run_abuseipdb_osint(a["ip"], timeout_seconds=30),
     "search_github": lambda a: run_github_osint(a["query"], timeout_seconds=30),
     "search_dns": lambda a: run_dns_osint(a["domain"], timeout_seconds=10),
+    "search_wayback": lambda a: run_wayback_osint(
+        a["target"], timeout_seconds=30, max_urls=int(a.get("max_urls", 25))
+    ),
     "search_dorks_live": lambda a: run_dorks_live_osint(a["target"], timeout_seconds=30),
     "scrape_url": lambda a: run_scrape_url_osint(a["url"], timeout_seconds=60),
     "search_footprint": lambda a: run_footprint_osint(
@@ -426,6 +455,7 @@ INVESTIGATION STRATEGY:
 - For an email: run search_email and search_breach.
 - For a username: run search_username and search_paste.
 - For a domain: run search_whois, search_domain, and search_dns to reveal subdomains, registration data, DNS records, and email security posture.
+- For a domain's or URL's history (deleted pages, retired subdomains, site age): use search_wayback — no API key needed.
 - For an IP: run search_ip and optionally search_shodan or search_censys for open ports/services.
 - For a GitHub username or handle: use search_github to retrieve profile data, repos, and commit-discovered emails.
 - For IP reputation/abuse: use search_abuseipdb to get the abuseConfidenceScore — a score above 50% indicates a high-risk IP; combine with search_ip or search_shodan for full context.

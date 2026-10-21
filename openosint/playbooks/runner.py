@@ -24,6 +24,7 @@ from openosint.tools.search_phone import run_phone_osint
 from openosint.tools.search_shodan import run_shodan_osint
 from openosint.tools.search_username import run_username_osint
 from openosint.tools.search_virustotal import run_virustotal_osint
+from openosint.tools.search_wayback import run_wayback_osint
 from openosint.tools.search_whois import run_whois_osint
 
 logger = logging.getLogger(__name__)
@@ -35,6 +36,7 @@ logger = logging.getLogger(__name__)
 TOOL_MAP: dict[str, Callable[..., Awaitable[str]]] = {
     "search_whois": run_whois_osint,
     "search_dns": run_dns_osint,
+    "search_wayback": run_wayback_osint,
     "generate_dorks": run_dork_osint,
     "search_domain": run_domain_osint,
     "search_footprint": run_footprint_osint,
@@ -59,6 +61,7 @@ _Req = tuple[list[str], list[str], str | None]
 TOOL_REQUIREMENTS: dict[str, _Req] = {
     "search_whois": ([], [], None),
     "search_dns": ([], [], None),
+    "search_wayback": ([], [], None),
     "generate_dorks": ([], [], None),
     "search_domain": ([], ["sublist3r"], None),
     "search_footprint": (

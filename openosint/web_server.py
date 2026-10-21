@@ -53,6 +53,7 @@ from openosint.tools.search_abuseipdb import run_abuseipdb_osint
 from openosint.tools.search_breach import run_breach_osint
 from openosint.tools.search_censys import run_censys_osint
 from openosint.tools.search_dns import run_dns_osint
+from openosint.tools.search_wayback import run_wayback_osint
 from openosint.tools.search_domain import run_domain_osint
 from openosint.tools.search_dorks_live import run_dorks_live_osint
 from openosint.tools.search_email import run_email_osint
@@ -103,7 +104,7 @@ _RL_MAX_REQS: int = int(os.getenv("RATE_LIMIT_MAX", "30"))
 
 # Tools that need no API key and are therefore cheaply spammable
 _KEYLESS_TOOLS: frozenset[str] = frozenset(
-    {"search_whois", "search_dns", "generate_dorks", "search_ip", "search_paste"}
+    {"search_whois", "search_dns", "search_wayback", "generate_dorks", "search_ip", "search_paste"}
 )
 
 
@@ -288,6 +289,17 @@ _TOOL_CATALOG: list[dict] = [
         "requires_env": [],
     },
     {
+        "name": "search_wayback",
+        "description": "Wayback Machine history: first/latest capture, historical subdomains, and notable archived URLs.",
+        "input_label": "Domain or URL",
+        "input_placeholder": "example.com",
+        "category": "Recon",
+        "icon": "🕰️",
+        "tool_type": "A",
+        "requires_binary": [],
+        "requires_env": [],
+    },
+    {
         "name": "search_abuseipdb",
         "description": "Check an IP against AbuseIPDB for abuse confidence score and report history.",
         "input_label": "IP address",
@@ -459,6 +471,7 @@ _RUNNERS: dict[str, object] = {
         v, timeout_seconds=t, api_key=(keys or {}).get("IP2LOCATION_API_KEY")
     ),
     "search_dns": lambda v, t, keys=None: run_dns_osint(v, timeout_seconds=t),
+    "search_wayback": lambda v, t, keys=None: run_wayback_osint(v, timeout_seconds=t),
     "search_abuseipdb": lambda v, t, keys=None: run_abuseipdb_osint(
         v, timeout_seconds=t, api_key=(keys or {}).get("ABUSEIPDB_API_KEY")
     ),

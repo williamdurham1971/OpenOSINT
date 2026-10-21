@@ -7,6 +7,21 @@ OpenOSINT adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [Unreleased]
+
+### Added
+- **`search_wayback` — Wayback Machine history for a domain or URL** (tool
+  #20). Queries the Internet Archive's public CDX and Availability APIs — no
+  API key — and reports the first and latest capture, the years with captures,
+  every hostname the archive has seen under the domain (retired subdomains),
+  and a sample of archived URLs with notable paths flagged (robots.txt, admin
+  panels, backups, config files). Available in the agent loop, MCP server
+  (`target`, optional `max_urls`), CLI (`openosint wayback <target>`), REPL,
+  web UI, playbooks, and `investigate_graph` pivoting (domains and URLs).
+  Historical hosts feed the Entity Correlation Graph as `archived_host`
+  edges. A lookup that fails is reported as undetermined, never as "no
+  captures".
+
 ## [2.27.0] — 2026-08-26
 
 ### Added

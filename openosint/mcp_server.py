@@ -2,12 +2,13 @@
 """
 OpenOSINT MCP Server — v2.23.0
 
-Exposes all 19 OSINT tool capabilities plus multi-target investigation
+Exposes all 20 OSINT tool capabilities plus multi-target investigation
 to MCP-compliant AI clients over standard I/O. Tools include:
 search_email, search_username, search_breach, search_whois, search_ip,
 search_domain, generate_dorks, search_paste, search_phone, search_shodan,
 search_virustotal, search_censys, search_ip2location, search_abuseipdb,
-search_github, search_dns, search_dorks_live, scrape_url, search_footprint.
+search_github, search_dns, search_wayback, search_dorks_live, scrape_url,
+search_footprint.
 """
 
 from __future__ import annotations
@@ -38,6 +39,7 @@ from openosint.tools.search_phone import run_phone_osint
 from openosint.tools.search_shodan import run_shodan_osint
 from openosint.tools.search_username import run_username_osint
 from openosint.tools.search_virustotal import run_virustotal_osint
+from openosint.tools.search_wayback import run_wayback_osint
 from openosint.tools.search_whois import run_whois_osint
 from openosint.tools.search_footprint import run_footprint_osint
 
@@ -255,6 +257,30 @@ async def list_tools() -> list[Tool]:
                     "type": "object",
                     "properties": {"domain": {"type": "string"}},
                     "required": ["domain"],
+                }
+            ),
+        ),
+        Tool(
+            name="search_wayback",
+            description=(
+                "Wayback Machine (Internet Archive) history for a domain or URL: first/latest "
+                "capture, years with captures, historical hostnames seen under the domain, and "
+                "archived URLs with notable paths flagged. No API key required."
+            ),
+            inputSchema=_with_json(
+                {
+                    "type": "object",
+                    "properties": {
+                        "target": {
+                            "type": "string",
+                            "description": "Domain (example.com) or URL (https://example.com/path).",
+                        },
+                        "max_urls": {
+                            "type": "integer",
+                            "description": "Maximum archived URLs to list (default 25).",
+                        },
+                    },
+                    "required": ["target"],
                 }
             ),
         ),
@@ -494,6 +520,12 @@ _HANDLERS: dict[str, tuple] = {
     "search_dns": (
         lambda a: run_dns_osint(a["domain"], timeout_seconds=10),
         lambda a: a["domain"],
+    ),
+    "search_wayback": (
+        lambda a: run_wayback_osint(
+            a["target"], timeout_seconds=30, max_urls=int(a.get("max_urls", 25))
+        ),
+        lambda a: a["target"],
     ),
     "search_dorks_live": (
         lambda a: run_dorks_live_osint(a["target"], timeout_seconds=30),

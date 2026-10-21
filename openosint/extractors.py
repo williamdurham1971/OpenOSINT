@@ -517,6 +517,40 @@ def _extract_censys(raw: str, seed: Entity) -> tuple[list[Entity], list[Relation
     return entities, relationships
 
 
+def _extract_wayback(raw: str, seed: Entity) -> tuple[list[Entity], list[Relationship]]:
+    """Extract historical hostnames from search_wayback output.
+
+    Only the bullet list under "[Wayback] Historical hosts" is read — archived
+    URL lines are deliberately ignored so that third-party links captured in a
+    page are never promoted to entities of the target.
+    """
+    entities: list[Entity] = []
+    relationships: list[Relationship] = []
+
+    if not raw:
+        return entities, relationships
+
+    seed_value = seed.value.strip().lower()
+    in_hosts = False
+    for line in raw.splitlines():
+        stripped = line.strip()
+        if stripped.startswith("[Wayback] Historical hosts"):
+            in_hosts = True
+            continue
+        if not in_hosts:
+            continue
+        if not stripped.startswith("•"):
+            break
+        host = stripped.lstrip("•").strip().lower()
+        if not host or "." not in host or host == seed_value:
+            continue
+        e = make_entity(EntityType.DOMAIN, host, 0.8, "search_wayback")
+        entities.append(e)
+        relationships.append(Relationship(seed, e, "archived_host", "search_wayback", 0.8))
+
+    return entities, relationships
+
+
 # ---------------------------------------------------------------------------
 # Registry
 # ---------------------------------------------------------------------------
@@ -525,6 +559,7 @@ EXTRACTOR_REGISTRY: dict[str, ExtractorFn] = {
     "search_github": _extract_github,
     "search_breach": _extract_breach,
     "search_dns": _extract_dns,
+    "search_wayback": _extract_wayback,
     "search_whois": _extract_whois,
     "search_username": _extract_username,
     "search_email": _extract_email,
