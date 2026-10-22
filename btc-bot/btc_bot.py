@@ -24,6 +24,7 @@ LAB = [  # name, strategy, interval: the slow baseline next to day-trading candi
     ("lab_patterns_1h", "pattern_all:mult10=30,hold=72", "60m"),
     ("lab_wedge_1h", "pattern_fw:mult10=30,hold=72", "60m"),
     ("lab_symtri_1h", "pattern_symtri:mult10=50,hold=72", "60m"),     # bullish symmetrical-triangle breakout, the 2-year standout
+    ("lab_wedge_4h", "pattern_fw:mult10=30,hold=72", "4h"),           # falling wedge on 4h: pooled over the 10 coins its best result
 ]
 # The 4h trend filter on the 10 cross-asset coins: one sleeve per coin with an equal share of the capital, each buy sized
 # by 60% / the coin's realised volatility. Reported as one bot; ~60 trades a year instead of ~8, so the forward test says
