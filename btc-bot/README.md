@@ -89,7 +89,7 @@ with hindsight from the full BTC history**; the only out-of-sample evidence is t
 
 ## Paper lab, manual override, catalyst alerts
 `lab` runs bots side by side with simulated money: the 4h trend filter, a fast 1h Donchian(24), all bullish patterns on
-1h, the falling wedge alone on 1h and on 4h, the bullish symmetrical triangle on 1h, and `lab_multi10_4h`: the 4h trend filter on
+1h, the falling wedge alone on 4h, the bullish symmetrical triangle on 1h, and `lab_multi10_4h`: the 4h trend filter on
 the 10 cross-asset coins (BTC ETH SOL BNB XRP DOGE ADA LTC LINK TRX), one sleeve of capital/10 per coin, each buy sized
 by 60% / the coin's realised volatility over 30 days (capped at 1x, the rest stays in USDT). `lab-status` shows it as one
 line (summed equity, how many coins are held); each sleeve keeps its own `lab_multi10_4h_<COIN>_*` files. It exists to
