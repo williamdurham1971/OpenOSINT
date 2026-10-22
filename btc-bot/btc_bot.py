@@ -7,7 +7,7 @@
   python btc_bot.py paper                 # run the bot with simulated money (default: 4h EMA 24/200 trend filter)
   python btc_bot.py status                # where is the paper bot
   python btc_bot.py lab                   # several strategies side by side with simulated money (incl. day-trading ones)
-  python btc_bot.py lab-status            # equity of every lab bot vs buy & hold, trades, alerts
+  python btc_bot.py lab-status            # equity of every lab bot vs buy & hold, trades, alerts, lab total
   python btc_bot.py control --name X --mode pause|flat|auto     # manual override when you see a catalyst
   python btc_bot.py live-check            # validate API keys with a TEST order (no real order is placed)
   python btc_bot.py live ...              # real money; needs many explicit flags
@@ -141,7 +141,14 @@ def main():
         print("\n(best case: no fee, 0.02% slippage per side)")
         PS.pattern_trading(cost=2 * 0.0002)
     elif a.cmd == "lab-status":
-        import csv as _csv
+        import csv as _csv, json as _json
+        tot = dict(start=0.0, cash=0.0, eq=0.0, bh=0.0)                # whole lab: what it started with, holds and earned
+
+        def add_total(nm, last):
+            st = _json.load(open(B.STATE_DIR / f"{nm}_state.json"))
+            tot["start"] += st["start_equity"]; tot["cash"] += st["cash"]
+            tot["eq"] += float(last["equity"]); tot["bh"] += float(last["buy_hold_equity"])
+
         for nm, spec, iv in LAB:
             d = B.STATE_DIR
             eqf, trf, alf = d / f"{nm}_equity.csv", d / f"{nm}_trades.csv", d / f"{nm}_alerts.csv"
@@ -150,6 +157,7 @@ def main():
             last = list(_csv.DictReader(open(eqf)))[-1]
             ntr = sum(1 for _ in open(trf)) - 1 if trf.exists() else 0
             nal = sum(1 for _ in open(alf)) - 1 if alf.exists() else 0
+            add_total(nm, last)
             print(f"{nm:18s} {spec:32s} {iv:>4s}  equity {float(last['equity']):9.2f}  buy&hold {float(last['buy_hold_equity']):9.2f}  "
                   f"position {'LONG' if last['position'] == '1' else 'FLAT'}  trades {ntr}  alerts {nal}  (last bar {last['bar_open_utc']})")
         eq = bh = 0.0; ntr = nal = 0; held, bars = [], []
@@ -160,6 +168,7 @@ def main():
                 continue
             last = list(_csv.DictReader(open(eqf)))[-1]
             eq += float(last["equity"]); bh += float(last["buy_hold_equity"]); bars.append(last["bar_open_utc"])
+            add_total(nm, last)
             ntr += sum(1 for _ in open(trf)) - 1 if trf.exists() else 0
             nal += sum(1 for _ in open(alf)) - 1 if alf.exists() else 0
             if last["position"] == "1":
@@ -169,6 +178,10 @@ def main():
                   f"position LONG {len(held)}/{len(MULTI_SYMBOLS)} ({' '.join(held) or '-'})  trades {ntr}  alerts {nal}  (last bar {min(bars)})")
         else:
             print(f"{MULTI_NAME:18s} not started")
+        if tot["start"]:
+            pnl, bh_pnl = tot["eq"] - tot["start"], tot["bh"] - tot["start"]
+            print(f"{'TOTAL':18s} start {tot['start']:.2f}  cash {tot['cash']:.2f}  invested {tot['eq'] - tot['cash']:.2f}  "
+                  f"equity {tot['eq']:.2f}  P&L {pnl:+.2f} ({pnl / tot['start']:+.2%})  buy&hold P&L {bh_pnl:+.2f}")
     elif a.cmd == "control":
         import json as _json
         B.STATE_DIR.mkdir(exist_ok=True)

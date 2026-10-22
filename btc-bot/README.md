@@ -11,7 +11,7 @@ python btc_bot.py paper --wait-for-signal --max-drawdown 0.35     # simulated mo
 python btc_bot.py status
 python btc_bot.py patterns            # chart-pattern study (falling wedge etc.): BTC fidelity, cross-coin, confirmation
 python btc_bot.py lab                 # several strategies at once with simulated money, incl. day-trading candidates
-python btc_bot.py lab-status          # each lab bot's equity vs buy and hold, trades, alerts
+python btc_bot.py lab-status          # each lab bot's equity vs buy and hold, trades, alerts, lab total
 python btc_bot.py control --name lab_trend_4h --mode pause    # manual override: auto | pause | flat
 python btc_bot.py live-check          # validates API keys with a TEST order; nothing is traded
 python report.py backtest             # quantstats tearsheet + Monte Carlo drawdowns  ->  results/report_backtest_BTCUSDT.html
@@ -95,7 +95,7 @@ by 60% / the coin's realised volatility over 30 days (capped at 1x, the rest sta
 line (summed equity, how many coins are held); each sleeve keeps its own `lab_multi10_4h_<COIN>_*` files. It exists to
 get ~60 trades a year instead of ~8, so the forward test can say something within months. The sleeves do not share cash
 (freqtrade's `EmaTrend4hMulti` does), so the two can differ slightly; the coin list is survivors picked in 2026. They evaluate *forward*, on bars none of the research has seen. Each bot joins the
-strategy's current state at start-up (e.g. a pattern trade opened in the last 72h). `lab-status` compares each with buy and hold.
+strategy's current state at start-up (e.g. a pattern trade opened in the last 72h). `lab-status` compares each with buy and hold and ends with a TOTAL line for the whole lab (start, cash, invested, equity, P&L).
 `control --name <bot> --mode pause|flat|auto` is the manual override for when you see a catalyst: `pause` keeps the current
 position and opens nothing new, `flat` sells and stays out, `auto` resumes. Every bot writes `<name>_alerts.csv` and logs
 `ABNORMAL MOVE` when a bar moves more than 4 standard deviations of the last 200 bars: that is usually news, the moment
