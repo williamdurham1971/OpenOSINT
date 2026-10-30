@@ -1,7 +1,7 @@
 lab_trend_4h       ema_trend:fast=24,slow=200         4h  equity    975.13  buy&hold    938.03  position FLAT  trades 2  alerts 1  (last bar 2026-10-29 20:00)
-lab_donchian_1h    donchian:n=24                     60m  equity    983.71  buy&hold    938.03  position FLAT  trades 4  alerts 2  (last bar 2026-10-29 23:00)
-lab_patterns_1h    pattern_all:mult10=30,hold=72     60m  equity   1018.09  buy&hold    938.03  position FLAT  trades 4  alerts 2  (last bar 2026-10-29 23:00)
-lab_symtri_1h      pattern_symtri:mult10=50,hold=72  60m  equity   1002.08  buy&hold    938.03  position FLAT  trades 2  alerts 2  (last bar 2026-10-29 23:00)
+lab_donchian_1h    donchian:n=24                     60m  equity    983.71  buy&hold    924.03  position FLAT  trades 4  alerts 2  (last bar 2026-10-30 01:00)
+lab_patterns_1h    pattern_all:mult10=30,hold=72     60m  equity   1018.09  buy&hold    924.03  position FLAT  trades 4  alerts 2  (last bar 2026-10-30 01:00)
+lab_symtri_1h      pattern_symtri:mult10=50,hold=72  60m  equity   1002.08  buy&hold    924.03  position FLAT  trades 2  alerts 2  (last bar 2026-10-30 01:00)
 lab_wedge_4h       pattern_fw:mult10=30,hold=72       4h  equity   1000.00  buy&hold    927.43  position FLAT  trades 0  alerts 1  (last bar 2026-10-29 20:00)
 lab_multi10_4h     ema_trend 10 coins, vol-sized      4h  equity    991.23  buy&hold    917.82  position LONG 1/10 (BNB)  trades 3  alerts 6  (last bar 2026-10-29 20:00)
-TOTAL              start 6000.00  cash 5876.52  invested 93.72  equity 5970.24  P&L -29.76 (-0.50%)  buy&hold P&L -402.63
+TOTAL              start 6000.00  cash 5876.52  invested 93.72  equity 5970.24  P&L -29.76 (-0.50%)  buy&hold P&L -444.63
