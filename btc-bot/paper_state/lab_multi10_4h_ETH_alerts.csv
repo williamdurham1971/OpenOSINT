@@ -1,3 +1,4 @@
 time_utc,bar_open_utc,z,move_pct,message
 2026-11-04 16:34:00,2026-11-04 12:00,+4.3,+4.18,ABNORMAL MOVE: last 4h bar +4.18% (+4.3 sigma). Likely news/catalyst: check before trusting the signal.
 2026-11-05 16:33:54,2026-11-05 12:00,-6.8,-6.94,ABNORMAL MOVE: last 4h bar -6.94% (-6.8 sigma). Likely news/catalyst: check before trusting the signal.
+2026-11-09 00:33:23,2026-11-08 20:00,-4.1,-4.73,ABNORMAL MOVE: last 4h bar -4.73% (-4.1 sigma). Likely news/catalyst: check before trusting the signal.
