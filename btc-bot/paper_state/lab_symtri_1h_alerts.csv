@@ -6,3 +6,4 @@ time_utc,bar_open_utc,z,move_pct,message
 2026-11-08 23:07:18,2026-11-08 21:00,-5.6,-2.08,ABNORMAL MOVE: last 60m bar -2.08% (-5.6 sigma). Likely news/catalyst: check before trusting the signal.
 2026-11-13 09:56:47,2026-11-13 03:00,-4.1,-1.86,ABNORMAL MOVE: last 60m bar -1.86% (-4.1 sigma). Likely news/catalyst: check before trusting the signal.
 2026-11-15 03:02:26,2026-11-15 02:00,+8.0,+3.71,ABNORMAL MOVE: last 60m bar +3.71% (+8.0 sigma). Likely news/catalyst: check before trusting the signal.
+2026-11-20 21:31:07,2026-11-20 15:00,-5.7,-3.72,ABNORMAL MOVE: last 60m bar -3.72% (-5.7 sigma). Likely news/catalyst: check before trusting the signal.
