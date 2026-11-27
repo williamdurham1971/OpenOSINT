@@ -1,7 +1,7 @@
-lab_trend_4h       ema_trend:fast=24,slow=200         4h  equity    975.13  buy&hold    728.34  position FLAT  trades 2  alerts 4  (last bar 2026-11-26 20:00)
-lab_donchian_1h    donchian:n=24                     60m  equity    954.83  buy&hold    728.34  position FLAT  trades 12  alerts 11  (last bar 2026-11-26 23:00)
-lab_patterns_1h    pattern_all:mult10=30,hold=72     60m  equity    905.46  buy&hold    728.34  position LONG  trades 13  alerts 11  (last bar 2026-11-26 23:00)
-lab_symtri_1h      pattern_symtri:mult10=50,hold=72  60m  equity   1002.08  buy&hold    728.34  position FLAT  trades 2  alerts 11  (last bar 2026-11-26 23:00)
-lab_wedge_4h       pattern_fw:mult10=30,hold=72       4h  equity    945.62  buy&hold    720.10  position FLAT  trades 2  alerts 4  (last bar 2026-11-26 20:00)
-lab_multi10_4h     ema_trend 10 coins, vol-sized      4h  equity    984.73  buy&hold    724.77  position LONG 0/10 (-)  trades 6  alerts 25  (last bar 2026-11-26 20:00)
-TOTAL              start 6000.00  cash 4862.39  invested 905.46  equity 5767.85  P&L -232.15 (-3.87%)  buy&hold P&L -1641.77
+lab_trend_4h       ema_trend:fast=24,slow=200         4h  equity    975.13  buy&hold    741.64  position FLAT  trades 2  alerts 4  (last bar 2026-11-27 04:00)
+lab_donchian_1h    donchian:n=24                     60m  equity    958.96  buy&hold    741.14  position LONG  trades 13  alerts 11  (last bar 2026-11-27 09:00)
+lab_patterns_1h    pattern_all:mult10=30,hold=72     60m  equity    921.37  buy&hold    741.14  position LONG  trades 13  alerts 11  (last bar 2026-11-27 09:00)
+lab_symtri_1h      pattern_symtri:mult10=50,hold=72  60m  equity   1002.08  buy&hold    741.14  position FLAT  trades 2  alerts 11  (last bar 2026-11-27 09:00)
+lab_wedge_4h       pattern_fw:mult10=30,hold=72       4h  equity    945.62  buy&hold    733.25  position FLAT  trades 2  alerts 4  (last bar 2026-11-27 04:00)
+lab_multi10_4h     ema_trend 10 coins, vol-sized      4h  equity    984.73  buy&hold    742.38  position LONG 0/10 (-)  trades 6  alerts 25  (last bar 2026-11-27 04:00)
+TOTAL              start 6000.00  cash 3907.56  invested 1880.33  equity 5787.89  P&L -212.11 (-3.54%)  buy&hold P&L -1559.31
